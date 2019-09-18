@@ -1,0 +1,4 @@
+<map id="ShareOrderViewCell" name="ShareOrderViewCell">
+<area shape="rect" id="node3" href="$interface_cat_zan_button.html" title="CatZanButton" alt="" coords="147,80,251,105"/>
+<area shape="rect" id="node5" href="$interface_share_order_view_model.html" title="ShareOrderViewModel" alt="" coords="274,80,430,105"/>
+</map>

@@ -1,0 +1,140 @@
+\hypertarget{interface_q_q_api_video_object}{}\section{Q\+Q\+Api\+Video\+Object Class Reference}
+\label{interface_q_q_api_video_object}\index{Q\+Q\+Api\+Video\+Object@{Q\+Q\+Api\+Video\+Object}}
+
+
+视频\+U\+R\+L对象 用于分享目标内容为视频的\+U\+R\+L的对象  
+
+
+
+
+{\ttfamily \#import $<$Q\+Q\+Api\+Interface\+Object.\+h$>$}
+
+
+
+Inheritance diagram for Q\+Q\+Api\+Video\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{interface_q_q_api_video_object__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Q\+Q\+Api\+Video\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{interface_q_q_api_video_object__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \mbox{\hyperlink{interface_q_q_api_video_object_a2efc425ba6d89d7c5c6b88f152c72b3b}{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+Data\+:}}
+\item 
+(id) + \mbox{\hyperlink{interface_q_q_api_video_object_a8e2ef5c242834e8ebf7ebc1207ab519f}{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+U\+R\+L\+:}}
+\item 
+(id) + \mbox{\hyperlink{interface_q_q_api_video_object_a2efc425ba6d89d7c5c6b88f152c72b3b}{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+Data\+:}}
+\item 
+(id) + \mbox{\hyperlink{interface_q_q_api_video_object_a8e2ef5c242834e8ebf7ebc1207ab519f}{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+U\+R\+L\+:}}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_q_q_api_video_object_a4e040d561aaa024fb234da240e8de8be}\label{interface_q_q_api_video_object_a4e040d561aaa024fb234da240e8de8be}} 
+N\+S\+U\+RL $\ast$ \mbox{\hyperlink{interface_q_q_api_video_object_a4e040d561aaa024fb234da240e8de8be}{flash\+U\+RL}}
+\begin{DoxyCompactList}\small\item\em 视频\+U\+R\+L地址，最长512个字符 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+视频\+U\+R\+L对象 用于分享目标内容为视频的\+U\+R\+L的对象 
+
+Q\+Q\+Api\+Video\+Object类型的分享，目前在\+Android和\+PC Q\+Q上接收消息时，展现有待完善，待手机\+Q\+Q版本以后更新支持 目前如果要分享视频，推荐使用 \mbox{\hyperlink{interface_q_q_api_news_object}{Q\+Q\+Api\+News\+Object}} 类型 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_q_q_api_video_object_a2efc425ba6d89d7c5c6b88f152c72b3b}\label{interface_q_q_api_video_object_a2efc425ba6d89d7c5c6b88f152c72b3b}} 
+\index{Q\+Q\+Api\+Video\+Object@{Q\+Q\+Api\+Video\+Object}!object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+Data\+:@{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+Data\+:}}
+\index{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+Data\+:@{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+Data\+:}!Q\+Q\+Api\+Video\+Object@{Q\+Q\+Api\+Video\+Object}}
+\subsubsection{\texorpdfstring{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+Data\+:()}{objectWithURL:title:description:previewImageData:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (id) object\+With\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{url }\item[{title:(N\+S\+String $\ast$)}]{title }\item[{description:(N\+S\+String $\ast$)}]{description }\item[{previewImageData:(N\+S\+Data $\ast$)}]{data }\end{DoxyParamCaption}}
+
+获取一个autorelease的{\ttfamily \mbox{\hyperlink{interface_q_q_api_video_object}{Q\+Q\+Api\+Video\+Object}}} 
+\begin{DoxyParams}{Parameters}
+{\em url} & 视频内容的目标\+U\+RL \\
+\hline
+{\em title} & 分享内容的标题 \\
+\hline
+{\em description} & 分享内容的描述 \\
+\hline
+{\em data} & 分享内容的预览图像 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+如果url为空，调用{\ttfamily Q\+Q\+Api\+::send\+Message\+:}时将返回\+F\+A\+L\+SE 
+\end{DoxyNote}
+\mbox{\Hypertarget{interface_q_q_api_video_object_a2efc425ba6d89d7c5c6b88f152c72b3b}\label{interface_q_q_api_video_object_a2efc425ba6d89d7c5c6b88f152c72b3b}} 
+\index{Q\+Q\+Api\+Video\+Object@{Q\+Q\+Api\+Video\+Object}!object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+Data\+:@{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+Data\+:}}
+\index{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+Data\+:@{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+Data\+:}!Q\+Q\+Api\+Video\+Object@{Q\+Q\+Api\+Video\+Object}}
+\subsubsection{\texorpdfstring{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+Data\+:()}{objectWithURL:title:description:previewImageData:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (id) object\+With\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{url }\item[{title:(N\+S\+String $\ast$)}]{title }\item[{description:(N\+S\+String $\ast$)}]{description }\item[{previewImageData:(N\+S\+Data $\ast$)}]{data }\end{DoxyParamCaption}}
+
+获取一个autorelease的{\ttfamily \mbox{\hyperlink{interface_q_q_api_video_object}{Q\+Q\+Api\+Video\+Object}}} 
+\begin{DoxyParams}{Parameters}
+{\em url} & 视频内容的目标\+U\+RL \\
+\hline
+{\em title} & 分享内容的标题 \\
+\hline
+{\em description} & 分享内容的描述 \\
+\hline
+{\em data} & 分享内容的预览图像 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+如果url为空，调用{\ttfamily Q\+Q\+Api\+::send\+Message\+:}时将返回\+F\+A\+L\+SE 
+\end{DoxyNote}
+\mbox{\Hypertarget{interface_q_q_api_video_object_a8e2ef5c242834e8ebf7ebc1207ab519f}\label{interface_q_q_api_video_object_a8e2ef5c242834e8ebf7ebc1207ab519f}} 
+\index{Q\+Q\+Api\+Video\+Object@{Q\+Q\+Api\+Video\+Object}!object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+U\+R\+L\+:@{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+U\+R\+L\+:}}
+\index{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+U\+R\+L\+:@{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+U\+R\+L\+:}!Q\+Q\+Api\+Video\+Object@{Q\+Q\+Api\+Video\+Object}}
+\subsubsection{\texorpdfstring{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+U\+R\+L\+:()}{objectWithURL:title:description:previewImageURL:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (id) object\+With\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{url }\item[{title:(N\+S\+String $\ast$)}]{title }\item[{description:(N\+S\+String $\ast$)}]{description }\item[{previewImageURL:(N\+S\+U\+RL $\ast$)}]{preview\+U\+RL }\end{DoxyParamCaption}}
+
+获取一个autorelease的{\ttfamily \mbox{\hyperlink{interface_q_q_api_video_object}{Q\+Q\+Api\+Video\+Object}}} 
+\begin{DoxyParams}{Parameters}
+{\em url} & 视频内容的目标\+U\+RL \\
+\hline
+{\em title} & 分享内容的标题 \\
+\hline
+{\em description} & 分享内容的描述 \\
+\hline
+{\em preview\+U\+RL} & 分享内容的预览图像\+U\+RL \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+如果url为空，调用{\ttfamily Q\+Q\+Api\+::send\+Message\+:}时将返回\+F\+A\+L\+SE 
+\end{DoxyNote}
+\mbox{\Hypertarget{interface_q_q_api_video_object_a8e2ef5c242834e8ebf7ebc1207ab519f}\label{interface_q_q_api_video_object_a8e2ef5c242834e8ebf7ebc1207ab519f}} 
+\index{Q\+Q\+Api\+Video\+Object@{Q\+Q\+Api\+Video\+Object}!object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+U\+R\+L\+:@{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+U\+R\+L\+:}}
+\index{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+U\+R\+L\+:@{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+U\+R\+L\+:}!Q\+Q\+Api\+Video\+Object@{Q\+Q\+Api\+Video\+Object}}
+\subsubsection{\texorpdfstring{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+U\+R\+L\+:()}{objectWithURL:title:description:previewImageURL:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (id) object\+With\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{url }\item[{title:(N\+S\+String $\ast$)}]{title }\item[{description:(N\+S\+String $\ast$)}]{description }\item[{previewImageURL:(N\+S\+U\+RL $\ast$)}]{preview\+U\+RL }\end{DoxyParamCaption}}
+
+获取一个autorelease的{\ttfamily \mbox{\hyperlink{interface_q_q_api_video_object}{Q\+Q\+Api\+Video\+Object}}} 
+\begin{DoxyParams}{Parameters}
+{\em url} & 视频内容的目标\+U\+RL \\
+\hline
+{\em title} & 分享内容的标题 \\
+\hline
+{\em description} & 分享内容的描述 \\
+\hline
+{\em preview\+U\+RL} & 分享内容的预览图像\+U\+RL \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+如果url为空，调用{\ttfamily Q\+Q\+Api\+::send\+Message\+:}时将返回\+F\+A\+L\+SE 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Public/\+U\+Meng\+U\+Share/\+Tencent\+Open\+A\+P\+I/Q\+Q\+Api\+Interface\+Object.\+h\end{DoxyCompactItemize}

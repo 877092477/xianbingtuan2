@@ -1,0 +1,65 @@
+An U\+I\+Navigation\+Controller\textquotesingle{}s category to enable fullscreen pop gesture in an i\+O\+S7+ system style with A\+OP.
+
+\section*{Overview}
+
+
+
+这个扩展来自 雨 同学的这个很天才的思路，他的文章地址：\href{http://www.jianshu.com/p/d39f7d22db6c}{\tt http\+://www.\+jianshu.\+com/p/d39f7d22db6c}
+
+\section*{Usage}
+
+{\bfseries A\+OP}, just add 2 files and {\bfseries no need} for any setups, all navigation controllers will be able to use fullscreen pop gesture automatically. ~\newline
+ To disable this pop gesture of a navigation controller\+: ~\newline
+ 
+\begin{DoxyCode}
+navigationController.fd\_fullscreenPopGestureRecognizer.enabled = NO;
+\end{DoxyCode}
+
+
+To disable this pop gesture of a view controller\+: ~\newline
+ 
+\begin{DoxyCode}
+viewController.fd\_interactivePopDisabled = YES;
+\end{DoxyCode}
+
+
+Require at least i\+OS {\bfseries 7.\+0}.
+
+\section*{View Controller Based Navigation Bar Appearance}
+
+It handles navigation bar transition properly when using fullscreen gesture to push or pop a view controller\+: ~\newline
+
+\begin{DoxyItemize}
+\item with bar -\/$>$ without bar
+\item without bar -\/$>$ with bar
+\item without bar -\/$>$ without bar
+\end{DoxyItemize}
+
+
+
+This opmiziation is enabled by default, from now on you don\textquotesingle{}t need to call {\bfseries U\+I\+Navigation\+Controller}\textquotesingle{}s {\ttfamily -\/set\+Navigation\+Bar\+Hidden\+:animated\+:} method, instead, use view controller\textquotesingle{}s specific A\+PI to hide its bar\+: ~\newline
+ 
+\begin{DoxyCode}
+- (void)viewDidLoad \{
+    [super viewDidLoad];
+    self.fd\_prefersNavigationBarHidden = NO;
+\}
+\end{DoxyCode}
+
+
+And this property is {\bfseries Y\+ES} by default.
+
+\section*{Installation}
+
+Use cocoapods ~\newline
+ 
+\begin{DoxyCode}
+pod 'FDFullscreenPopGesture', '1.1'
+\end{DoxyCode}
+ \section*{Release Notes}
+
+{\bfseries 1.\+1} -\/ View controller based navigation bar appearance and transition. ~\newline
+$\ast$$\ast$1.0$\ast$$\ast$ -\/ Fullscreen pop gesture. ~\newline
+ \section*{License}
+
+M\+IT 

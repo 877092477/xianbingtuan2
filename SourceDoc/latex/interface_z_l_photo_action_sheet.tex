@@ -1,0 +1,91 @@
+\hypertarget{interface_z_l_photo_action_sheet}{}\section{Z\+L\+Photo\+Action\+Sheet Class Reference}
+\label{interface_z_l_photo_action_sheet}\index{Z\+L\+Photo\+Action\+Sheet@{Z\+L\+Photo\+Action\+Sheet}}
+
+
+Inheritance diagram for Z\+L\+Photo\+Action\+Sheet\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{interface_z_l_photo_action_sheet__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Z\+L\+Photo\+Action\+Sheet\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{interface_z_l_photo_action_sheet__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_z_l_photo_action_sheet_ab9b505c6dc5a375784b4219e8f05fd52}\label{interface_z_l_photo_action_sheet_ab9b505c6dc5a375784b4219e8f05fd52}} 
+(instancetype) -\/ {\bfseries init\+With\+Frame\+:}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_z_l_photo_action_sheet_a0dcf2f7529b740ee550d737e82f79755}{show\+With\+Sender\+:animate\+:last\+Select\+Photo\+Models\+:completion\+:}}
+\begin{DoxyCompactList}\small\item\em 显示多选照片视图 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_z_l_photo_action_sheet_abc4bcb1d6964bdd66a692e4f51d415ed}\label{interface_z_l_photo_action_sheet_abc4bcb1d6964bdd66a692e4f51d415ed}} 
+U\+I\+View\+Controller $\ast$ {\bfseries sender}
+\item 
+\mbox{\Hypertarget{interface_z_l_photo_action_sheet_abc1f61f0946bcbc432b1f012cd2c68dc}\label{interface_z_l_photo_action_sheet_abc1f61f0946bcbc432b1f012cd2c68dc}} 
+I\+B\+Outlet U\+I\+Button $\ast$ {\bfseries btn\+Camera}
+\item 
+\mbox{\Hypertarget{interface_z_l_photo_action_sheet_a5c1da24f28a7418d5b7ae18fa365e0cd}\label{interface_z_l_photo_action_sheet_a5c1da24f28a7418d5b7ae18fa365e0cd}} 
+I\+B\+Outlet U\+I\+View $\ast$ {\bfseries base\+View}
+\item 
+\mbox{\Hypertarget{interface_z_l_photo_action_sheet_aeecc0cedf3bb4a0e9ea14da958bed207}\label{interface_z_l_photo_action_sheet_aeecc0cedf3bb4a0e9ea14da958bed207}} 
+I\+B\+Outlet U\+I\+Collection\+View $\ast$ {\bfseries collection\+View}
+\item 
+N\+S\+Integer \mbox{\hyperlink{interface_z_l_photo_action_sheet_a63de056ef141d8fc4af1975d7002532e}{max\+Select\+Count}}
+\item 
+N\+S\+Integer \mbox{\hyperlink{interface_z_l_photo_action_sheet_a12cfad326e98309ba3b4a323222ff9cd}{max\+Preview\+Count}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_z_l_photo_action_sheet_a0dcf2f7529b740ee550d737e82f79755}\label{interface_z_l_photo_action_sheet_a0dcf2f7529b740ee550d737e82f79755}} 
+\index{Z\+L\+Photo\+Action\+Sheet@{Z\+L\+Photo\+Action\+Sheet}!show\+With\+Sender\+:animate\+:last\+Select\+Photo\+Models\+:completion\+:@{show\+With\+Sender\+:animate\+:last\+Select\+Photo\+Models\+:completion\+:}}
+\index{show\+With\+Sender\+:animate\+:last\+Select\+Photo\+Models\+:completion\+:@{show\+With\+Sender\+:animate\+:last\+Select\+Photo\+Models\+:completion\+:}!Z\+L\+Photo\+Action\+Sheet@{Z\+L\+Photo\+Action\+Sheet}}
+\subsubsection{\texorpdfstring{show\+With\+Sender\+:animate\+:last\+Select\+Photo\+Models\+:completion\+:()}{showWithSender:animate:lastSelectPhotoModels:completion:()}}
+{\footnotesize\ttfamily -\/ (void) show\+With\+Sender\+: \begin{DoxyParamCaption}\item[{(U\+I\+View\+Controller $\ast$)}]{sender }\item[{animate:(B\+O\+OL)}]{animate }\item[{lastSelectPhotoModels:(N\+S\+Array$<$ \mbox{\hyperlink{interface_z_l_select_photo_model}{Z\+L\+Select\+Photo\+Model}} $\ast$ $>$ $\ast$\+\_\+\+Nullable)}]{last\+Select\+Photo\+Models }\item[{completion:(void($^\wedge$)(N\+S\+Array$<$ U\+I\+Image $\ast$ $>$ $\ast$select\+Photos, N\+S\+Array$<$ \mbox{\hyperlink{interface_z_l_select_photo_model}{Z\+L\+Select\+Photo\+Model}} $\ast$ $>$ $\ast$select\+Photo\+Models))}]{completion }\end{DoxyParamCaption}}
+
+
+
+显示多选照片视图 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & 调用该空间的视图控制器 \\
+\hline
+{\em animate} & 是否显示动画效果 \\
+\hline
+{\em selected\+Assets} & 已选择的\+P\+H\+Asset，再次调用\char`\"{}show\+With\+Sender\+:animate\+:last\+Select\+Photo\+Models\+:completion\+:\char`\"{}方法之前，可以把上次回调中select\+Assets赋值给该属性，便可实现记录上次选择照片的功能，若不需要记录上次选择照片的功能，则该值传nil即可 \\
+\hline
+{\em completion} & 完成回调 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_z_l_photo_action_sheet_a12cfad326e98309ba3b4a323222ff9cd}\label{interface_z_l_photo_action_sheet_a12cfad326e98309ba3b4a323222ff9cd}} 
+\index{Z\+L\+Photo\+Action\+Sheet@{Z\+L\+Photo\+Action\+Sheet}!max\+Preview\+Count@{max\+Preview\+Count}}
+\index{max\+Preview\+Count@{max\+Preview\+Count}!Z\+L\+Photo\+Action\+Sheet@{Z\+L\+Photo\+Action\+Sheet}}
+\subsubsection{\texorpdfstring{max\+Preview\+Count}{maxPreviewCount}}
+{\footnotesize\ttfamily -\/ (N\+S\+Integer) max\+Preview\+Count\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+预览图最大显示数 default is 20 \mbox{\Hypertarget{interface_z_l_photo_action_sheet_a63de056ef141d8fc4af1975d7002532e}\label{interface_z_l_photo_action_sheet_a63de056ef141d8fc4af1975d7002532e}} 
+\index{Z\+L\+Photo\+Action\+Sheet@{Z\+L\+Photo\+Action\+Sheet}!max\+Select\+Count@{max\+Select\+Count}}
+\index{max\+Select\+Count@{max\+Select\+Count}!Z\+L\+Photo\+Action\+Sheet@{Z\+L\+Photo\+Action\+Sheet}}
+\subsubsection{\texorpdfstring{max\+Select\+Count}{maxSelectCount}}
+{\footnotesize\ttfamily -\/ (N\+S\+Integer) max\+Select\+Count\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+最大选择数 default is 10 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/\+Photo\+Browser/Z\+L\+Photo\+Action\+Sheet.\+h\end{DoxyCompactItemize}

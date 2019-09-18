@@ -1,0 +1,6 @@
+<map id="&#45;[RACSignal replay]" name="&#45;[RACSignal replay]">
+<area shape="rect" id="node2" href="$interface_r_a_c_subject.html#a80ceeef3605f5bf5c76c45ecb5532bf6" title="Returns a new subject. " alt="" coords="203,5,358,31"/>
+<area shape="rect" id="node3" href="$interface_r_a_c_signal.html#a55b43f4fbef7e430a4587ce13eab18cb" title="&#45;[RACSignal multicast:]" alt="" coords="201,55,360,80"/>
+<area shape="rect" id="node5" href="$interface_r_a_c_multicast_connection.html#a62299415a12cbd53ba5fded7e89584ef" title="&#45;[RACMulticastConnection\l connect]" alt="" coords="192,104,369,143"/>
+<area shape="rect" id="node4" href="$interface_r_a_c_stream.html#aedc0b75ca3e6d0f81f006c7c3c6a1d76" title="&#45;[RACStream setNameWithFormat:]" alt="" coords="417,55,651,80"/>
+</map>

@@ -1,0 +1,345 @@
+\href{https://travis-ci.org/rs/SDWebImage}{\tt } \href{http://cocoadocs.org/docsets/SDWebImage/}{\tt } \href{http://cocoadocs.org/docsets/SDWebImage/}{\tt } \href{https://www.apache.org/licenses/LICENSE-2.0.html}{\tt } \href{https://www.versioneye.com/objective-c/sdwebimage/3.3}{\tt } \href{https://www.versioneye.com/objective-c/sdwebimage/references}{\tt } \href{https://github.com/rs/SDWebImage}{\tt }
+
+This library provides a category for U\+I\+Image\+View with support for remote images coming from the web.
+
+It provides\+:
+
+
+\begin{DoxyItemize}
+\item An {\ttfamily U\+I\+Image\+View} category adding web image and cache management to the Cocoa Touch framework
+\item An asynchronous image downloader
+\item An asynchronous memory + disk image caching with automatic cache expiration handling
+\item Animated G\+IF support
+\item WebP format support
+\item A background image decompression
+\item A guarantee that the same U\+RL won\textquotesingle{}t be downloaded several times
+\item A guarantee that bogus U\+R\+Ls won\textquotesingle{}t be retried again and again
+\item A guarantee that main thread will never be blocked
+\item Performances!
+\item Use G\+CD and A\+RC
+\item Arm64 support
+\end{DoxyItemize}
+
+N\+O\+TE\+: The version 3.\+0 of S\+D\+Web\+Image isn\textquotesingle{}t fully backward compatible with 2.\+0 and requires i\+OS 5.\+1.\+1 minimum deployment version. If you need i\+OS $<$ 5.\+0 support, please use the last \href{https://github.com/rs/SDWebImage/tree/2.0-compat}{\tt 2.\+0 version}.
+
+\href{https://github.com/rs/SDWebImage/wiki/How-is-SDWebImage-better-than-X%3F}{\tt How is S\+D\+Web\+Image better than X?}
+
+\subsection*{Who Use It }
+
+Find out \href{https://github.com/rs/SDWebImage/wiki/Who-Uses-SDWebImage}{\tt who uses S\+D\+Web\+Image} and add your app to the list.
+
+\subsection*{How To Use }
+
+A\+PI documentation is available at \href{http://cocoadocs.org/docsets/SDWebImage/}{\tt Cocoa\+Docs -\/ S\+D\+Web\+Image}
+
+\subsubsection*{Using U\+I\+Image\+View+\+Web\+Cache category with U\+I\+Table\+View}
+
+Just \#import the U\+I\+Image\+View+\+Web\+Cache.h header, and call the sd\+\_\+set\+Image\+With\+U\+R\+L\+:placeholder\+Image\+: method from the table\+View\+:cell\+For\+Row\+At\+Index\+Path\+: \mbox{\hyperlink{class_u_i_table_view_data_source-p}{U\+I\+Table\+View\+Data\+Source}} method. Everything will be handled for you, from async downloads to caching management.
+
+
+\begin{DoxyCode}
+#import <SDWebImage/UIImageView+WebCache.h>
+
+...
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath \{
+    static NSString *MyIdentifier = @"MyIdentifier";
+
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
+    if (cell == nil) \{
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                       reuseIdentifier:MyIdentifier] autorelease];
+    \}
+
+    // Here we use the new provided sd\_setImageWithURL: method to load the web image
+    [cell.imageView sd\_setImageWithURL:[NSURL URLWithString:@"http://www.domain.com/path/to/image.jpg"]
+                      placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
+
+    cell.textLabel.text = @"My Text";
+    return cell;
+\}
+\end{DoxyCode}
+
+
+\subsubsection*{Using blocks}
+
+With blocks, you can be notified about the image download progress and whenever the image retrieval has completed with success or not\+:
+
+
+\begin{DoxyCode}
+// Here we use the new provided sd\_setImageWithURL: method to load the web image
+[cell.imageView sd\_setImageWithURL:[NSURL URLWithString:@"http://www.domain.com/path/to/image.jpg"]
+                      placeholderImage:[UIImage imageNamed:@"placeholder.png"]
+                             completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL
+       *imageURL) \{
+                                ... completion code here ...
+                             \}];
+\end{DoxyCode}
+
+
+Note\+: neither your success nor failure block will be call if your image request is canceled before completion.
+
+\subsubsection*{Using \mbox{\hyperlink{interface_s_d_web_image_manager}{S\+D\+Web\+Image\+Manager}}}
+
+The \mbox{\hyperlink{interface_s_d_web_image_manager}{S\+D\+Web\+Image\+Manager}} is the class behind the U\+I\+Image\+View+\+Web\+Cache category. It ties the asynchronous downloader with the image cache store. You can use this class directly to benefit from web image downloading with caching in another context than a U\+I\+View (ie\+: with Cocoa).
+
+Here is a simple example of how to use \mbox{\hyperlink{interface_s_d_web_image_manager}{S\+D\+Web\+Image\+Manager}}\+:
+
+
+\begin{DoxyCode}
+SDWebImageManager *manager = [SDWebImageManager sharedManager];
+[manager downloadImageWithURL:imageURL
+                      options:0
+                     progress:^(NSInteger receivedSize, NSInteger expectedSize) \{
+                         // progression tracking code
+                     \}
+                     completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished,
+       NSURL *imageURL) \{
+                         if (image) \{
+                             // do something with image
+                         \}
+                     \}];
+\end{DoxyCode}
+
+
+\subsubsection*{Using Asynchronous Image Downloader Independently}
+
+It\textquotesingle{}s also possible to use the async image downloader independently\+:
+
+
+\begin{DoxyCode}
+SDWebImageDownloader *downloader = [SDWebImageDownloader sharedDownloader];
+[downloader downloadImageWithURL:imageURL
+                         options:0
+                        progress:^(NSInteger receivedSize, NSInteger expectedSize) \{
+                            // progression tracking code
+                        \}
+                       completed:^(UIImage *image, NSData *data, NSError *error, BOOL finished) \{
+                            if (image && finished) \{
+                                // do something with image
+                            \}
+                        \}];
+\end{DoxyCode}
+
+
+\subsubsection*{Using Asynchronous Image Caching Independently}
+
+It is also possible to use the async based image cache store independently. \mbox{\hyperlink{interface_s_d_image_cache}{S\+D\+Image\+Cache}} maintains a memory cache and an optional disk cache. Disk cache write operations are performed asynchronous so it doesn\textquotesingle{}t add unnecessary latency to the UI.
+
+The \mbox{\hyperlink{interface_s_d_image_cache}{S\+D\+Image\+Cache}} class provides a singleton instance for convenience but you can create your own instance if you want to create separated cache namespace.
+
+To lookup the cache, you use the {\ttfamily query\+Disk\+Cache\+For\+Key\+:done\+:} method. If the method returns nil, it means the cache doesn\textquotesingle{}t currently own the image. You are thus responsible for generating and caching it. The cache key is an application unique identifier for the image to cache. It is generally the absolute U\+RL of the image.
+
+
+\begin{DoxyCode}
+SDImageCache *imageCache = [[SDImageCache alloc] initWithNamespace:@"myNamespace"];
+[imageCache queryDiskCacheForKey:myCacheKey done:^(UIImage *image) \{
+    // image is not nil if image was found
+\}];
+\end{DoxyCode}
+
+
+By default \mbox{\hyperlink{interface_s_d_image_cache}{S\+D\+Image\+Cache}} will lookup the disk cache if an image can\textquotesingle{}t be found in the memory cache. You can prevent this from happening by calling the alternative method {\ttfamily image\+From\+Memory\+Cache\+For\+Key\+:}.
+
+To store an image into the cache, you use the store\+Image\+:for\+Key\+: method\+:
+
+
+\begin{DoxyCode}
+[[SDImageCache sharedImageCache] storeImage:myImage forKey:myCacheKey];
+\end{DoxyCode}
+
+
+By default, the image will be stored in memory cache as well as on disk cache (asynchronously). If you want only the memory cache, use the alternative method store\+Image\+:for\+Key\+:to\+Disk\+: with a negative third argument.
+
+\subsubsection*{Using cache key filter}
+
+Sometime, you may not want to use the image U\+RL as cache key because part of the U\+RL is dynamic (i.\+e.\+: for access control purpose). \mbox{\hyperlink{interface_s_d_web_image_manager}{S\+D\+Web\+Image\+Manager}} provides a way to set a cache key filter that takes the N\+S\+U\+RL as input, and output a cache key N\+S\+String.
+
+The following example sets a filter in the application delegate that will remove any query-\/string from the U\+RL before to use it as a cache key\+:
+
+
+\begin{DoxyCode}
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary
+       *)launchOptions \{
+    SDWebImageManager.sharedManager.cacheKeyFilter = ^(NSURL *url) \{
+        url = [[NSURL alloc] initWithScheme:url.scheme host:url.host path:url.path];
+        return [url absoluteString];
+    \};
+
+    // Your app init code...
+    return YES;
+\}
+\end{DoxyCode}
+
+
+\subsection*{Common Problems }
+
+\subsubsection*{Using dynamic image size with U\+I\+Table\+View\+Cell}
+
+U\+I\+Table\+View determines the size of the image by the first image set for a cell. If your remote images don\textquotesingle{}t have the same size as your placeholder image, you may experience strange anamorphic scaling issue. The following article gives a way to workaround this issue\+:
+
+\href{http://www.wrichards.com/blog/2011/11/sdwebimage-fixed-width-cell-images/}{\tt http\+://www.\+wrichards.\+com/blog/2011/11/sdwebimage-\/fixed-\/width-\/cell-\/images/}
+
+\subsubsection*{Handle image refresh}
+
+S\+D\+Web\+Image does very aggressive caching by default. It ignores all kind of caching control header returned by the H\+T\+TP server and cache the returned images with no time restriction. It implies your images U\+R\+Ls are static U\+R\+Ls pointing to images that never change. If the pointed image happen to change, some parts of the U\+RL should change accordingly.
+
+If you don\textquotesingle{}t control the image server you\textquotesingle{}re using, you may not be able to change the U\+RL when its content is updated. This is the case for Facebook avatar U\+R\+Ls for instance. In such case, you may use the {\ttfamily S\+D\+Web\+Image\+Refresh\+Cached} flag. This will slightly degrade the performance but will respect the H\+T\+TP caching control headers\+:
+
+
+\begin{DoxyCode}
+[imageView sd\_setImageWithURL:[NSURL URLWithString:@"https://graph.facebook.com/olivier.poitrey/picture"]
+                 placeholderImage:[UIImage imageNamed:@"avatar-placeholder.png"]
+                          options:SDWebImageRefreshCached];
+\end{DoxyCode}
+
+
+\subsubsection*{Add a progress indicator}
+
+See this category\+: \href{https://github.com/JJSaccolo/UIActivityIndicator-for-SDWebImage}{\tt https\+://github.\+com/\+J\+J\+Saccolo/\+U\+I\+Activity\+Indicator-\/for-\/\+S\+D\+Web\+Image}
+
+\subsection*{Installation }
+
+There are three ways to use S\+D\+Web\+Image in your project\+:
+\begin{DoxyItemize}
+\item using Cocoapods
+\item copying all the files into your project
+\item importing the project as a static library
+\end{DoxyItemize}
+
+\subsubsection*{Installation with Cocoa\+Pods}
+
+\href{http://cocoapods.org/}{\tt Cocoa\+Pods} is a dependency manager for Objective-\/C, which automates and simplifies the process of using 3rd-\/party libraries in your projects. See the \href{http://cocoapods.org/#get_started}{\tt Get Started} section for more details.
+
+\#\#\#\# Podfile 
+\begin{DoxyCode}
+platform :ios, '6.1'
+pod 'SDWebImage', '~>3.7'
+\end{DoxyCode}
+
+
+If you are using Swift, be sure to add {\ttfamily use\+\_\+frameworks!} and set your target to i\+OS 8+\+: 
+\begin{DoxyCode}
+platform :ios, '8.0'
+use\_frameworks!
+\end{DoxyCode}
+
+
+\paragraph*{Subspecs}
+
+There are 3 subspecs available now\+: {\ttfamily Core}, {\ttfamily Map\+Kit} and {\ttfamily WebP} (this means you can install only some of the S\+D\+Web\+Image modules. By default, you get just {\ttfamily Core}, so if you need {\ttfamily WebP}, you need to specify it).
+
+Podfile example\+: 
+\begin{DoxyCode}
+pod 'SDWebImage/WebP'
+\end{DoxyCode}
+
+
+\subsubsection*{Installation with Carthage (i\+OS 8+)}
+
+\href{https://github.com/Carthage/Carthage}{\tt Carthage} is a lightweight dependency manager for Swift and Objective-\/C. It leverages Cocoa\+Touch modules and is less invasive than Cocoa\+Pods.
+
+To install with carthage, follow the instruction on \href{https://github.com/Carthage/Carthage}{\tt Carthage}
+
+\#\#\#\# Cartfile 
+\begin{DoxyCode}
+github "rs/SDWebImage"
+\end{DoxyCode}
+
+
+\paragraph*{Usage}
+
+Swift
+
+If you installed using Cocoa\+Pods\+: 
+\begin{DoxyCode}
+import SDWebImage
+\end{DoxyCode}
+
+
+If you installed manually\+: 
+\begin{DoxyCode}
+import WebImage
+\end{DoxyCode}
+
+
+Objective-\/C
+
+
+\begin{DoxyCode}
+@import WebImage;
+\end{DoxyCode}
+
+
+\subsubsection*{Installation by cloning the repository}
+
+In order to gain access to all the files from the repository, you should clone it. 
+\begin{DoxyCode}
+git clone --recursive https://github.com/rs/SDWebImage.git
+\end{DoxyCode}
+
+
+\subsubsection*{Add the S\+D\+Web\+Image project to your project}
+
+
+\begin{DoxyItemize}
+\item Download and unzip the last version of the framework from the \href{https://github.com/rs/SDWebImage/releases}{\tt download page}
+\item Right-\/click on the project navigator and select \char`\"{}\+Add Files to \char`\"{}Your Project"\+:
+\item In the dialog, select S\+D\+Web\+Image.\+framework\+:
+\item Check the \char`\"{}\+Copy items into destination group\textquotesingle{}s folder (if needed)\char`\"{} checkbox
+\end{DoxyItemize}
+
+\subsubsection*{Add dependencies}
+
+
+\begin{DoxyItemize}
+\item In you application project app’s target settings, find the \char`\"{}\+Build Phases\char`\"{} section and open the \char`\"{}\+Link Binary With Libraries\char`\"{} block\+:
+\item Click the \char`\"{}+\char`\"{} button again and select the \char`\"{}\+Image\+I\+O.\+framework\char`\"{}, this is needed by the progressive download feature\+:
+\end{DoxyItemize}
+
+\subsubsection*{Add Linker Flag}
+
+Open the \char`\"{}\+Build Settings\char`\"{} tab, in the \char`\"{}\+Linking\char`\"{} section, locate the \char`\"{}\+Other Linker Flags\char`\"{} setting and add the \char`\"{}-\/\+Obj\+C\char`\"{} flag\+:
+
+
+
+Alternatively, if this causes compilation problems with frameworks that extend optional libraries, such as Parse, Rest\+Kit or opencv2, instead of the -\/\+ObjC flag use\+: 
+\begin{DoxyCode}
+-force\_load SDWebImage.framework/Versions/Current/SDWebImage
+\end{DoxyCode}
+
+
+If you\textquotesingle{}re using Cocoa Pods and have any frameworks that extend optional libraries, such as Parsen Rest\+Kit or opencv2, instead of the -\/\+ObjC flag use\+: 
+\begin{DoxyCode}
+-force\_load $(TARGET\_BUILD\_DIR)/libPods.a
+\end{DoxyCode}
+ and this\+: 
+\begin{DoxyCode}
+$(inherited)
+\end{DoxyCode}
+
+
+\subsubsection*{Import headers in your source files}
+
+In the source files where you need to use the library, import the header file\+:
+
+
+\begin{DoxyCode}
+#import <SDWebImage/UIImageView+WebCache.h>
+\end{DoxyCode}
+
+
+\subsubsection*{Build Project}
+
+At this point your workspace should build without error. If you are having problem, post to the Issue and the community can help you solve it.
+
+\subsection*{Future Enhancements }
+
+
+\begin{DoxyItemize}
+\item L\+RU memory cache cleanup instead of reset on memory warning
+\end{DoxyItemize}
+
+\subsection*{Licenses}
+
+All source code is licensed under the \href{https://raw.github.com/rs/SDWebImage/master/LICENSE}{\tt M\+IT License}. 

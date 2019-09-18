@@ -1,0 +1,132 @@
+\hypertarget{interface_q_q_api_news_object}{}\section{Q\+Q\+Api\+News\+Object Class Reference}
+\label{interface_q_q_api_news_object}\index{Q\+Q\+Api\+News\+Object@{Q\+Q\+Api\+News\+Object}}
+
+
+新闻\+U\+R\+L对象 用于分享目标内容为新闻的\+U\+R\+L的对象  
+
+
+
+
+{\ttfamily \#import $<$Q\+Q\+Api\+Interface\+Object.\+h$>$}
+
+
+
+Inheritance diagram for Q\+Q\+Api\+News\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{interface_q_q_api_news_object__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Q\+Q\+Api\+News\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{interface_q_q_api_news_object__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \mbox{\hyperlink{interface_q_q_api_news_object_a6020ebc347348a8e4c51e3ec47258b15}{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+Data\+:}}
+\item 
+(id) + \mbox{\hyperlink{interface_q_q_api_news_object_a99e56670b9789ab147236bada2101c94}{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+U\+R\+L\+:}}
+\item 
+(id) + \mbox{\hyperlink{interface_q_q_api_news_object_a6020ebc347348a8e4c51e3ec47258b15}{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+Data\+:}}
+\item 
+(id) + \mbox{\hyperlink{interface_q_q_api_news_object_a99e56670b9789ab147236bada2101c94}{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+U\+R\+L\+:}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+新闻\+U\+R\+L对象 用于分享目标内容为新闻的\+U\+R\+L的对象 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_q_q_api_news_object_a6020ebc347348a8e4c51e3ec47258b15}\label{interface_q_q_api_news_object_a6020ebc347348a8e4c51e3ec47258b15}} 
+\index{Q\+Q\+Api\+News\+Object@{Q\+Q\+Api\+News\+Object}!object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+Data\+:@{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+Data\+:}}
+\index{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+Data\+:@{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+Data\+:}!Q\+Q\+Api\+News\+Object@{Q\+Q\+Api\+News\+Object}}
+\subsubsection{\texorpdfstring{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+Data\+:()}{objectWithURL:title:description:previewImageData:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (id) object\+With\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{url }\item[{title:(N\+S\+String $\ast$)}]{title }\item[{description:(N\+S\+String $\ast$)}]{description }\item[{previewImageData:(N\+S\+Data $\ast$)}]{data }\end{DoxyParamCaption}}
+
+获取一个autorelease的{\ttfamily \mbox{\hyperlink{interface_q_q_api_news_object}{Q\+Q\+Api\+News\+Object}}} 
+\begin{DoxyParams}{Parameters}
+{\em url} & 视频内容的目标\+U\+RL \\
+\hline
+{\em title} & 分享内容的标题 \\
+\hline
+{\em description} & 分享内容的描述 \\
+\hline
+{\em data} & 分享内容的预览图像 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+如果url为空，调用{\ttfamily Q\+Q\+Api\+::send\+Message\+:}时将返回\+F\+A\+L\+SE 
+\end{DoxyNote}
+\mbox{\Hypertarget{interface_q_q_api_news_object_a6020ebc347348a8e4c51e3ec47258b15}\label{interface_q_q_api_news_object_a6020ebc347348a8e4c51e3ec47258b15}} 
+\index{Q\+Q\+Api\+News\+Object@{Q\+Q\+Api\+News\+Object}!object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+Data\+:@{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+Data\+:}}
+\index{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+Data\+:@{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+Data\+:}!Q\+Q\+Api\+News\+Object@{Q\+Q\+Api\+News\+Object}}
+\subsubsection{\texorpdfstring{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+Data\+:()}{objectWithURL:title:description:previewImageData:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (id) object\+With\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{url }\item[{title:(N\+S\+String $\ast$)}]{title }\item[{description:(N\+S\+String $\ast$)}]{description }\item[{previewImageData:(N\+S\+Data $\ast$)}]{data }\end{DoxyParamCaption}}
+
+获取一个autorelease的{\ttfamily \mbox{\hyperlink{interface_q_q_api_news_object}{Q\+Q\+Api\+News\+Object}}} 
+\begin{DoxyParams}{Parameters}
+{\em url} & 视频内容的目标\+U\+RL \\
+\hline
+{\em title} & 分享内容的标题 \\
+\hline
+{\em description} & 分享内容的描述 \\
+\hline
+{\em data} & 分享内容的预览图像 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+如果url为空，调用{\ttfamily Q\+Q\+Api\+::send\+Message\+:}时将返回\+F\+A\+L\+SE 
+\end{DoxyNote}
+\mbox{\Hypertarget{interface_q_q_api_news_object_a99e56670b9789ab147236bada2101c94}\label{interface_q_q_api_news_object_a99e56670b9789ab147236bada2101c94}} 
+\index{Q\+Q\+Api\+News\+Object@{Q\+Q\+Api\+News\+Object}!object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+U\+R\+L\+:@{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+U\+R\+L\+:}}
+\index{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+U\+R\+L\+:@{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+U\+R\+L\+:}!Q\+Q\+Api\+News\+Object@{Q\+Q\+Api\+News\+Object}}
+\subsubsection{\texorpdfstring{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+U\+R\+L\+:()}{objectWithURL:title:description:previewImageURL:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (id) object\+With\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{url }\item[{title:(N\+S\+String $\ast$)}]{title }\item[{description:(N\+S\+String $\ast$)}]{description }\item[{previewImageURL:(N\+S\+U\+RL $\ast$)}]{preview\+U\+RL }\end{DoxyParamCaption}}
+
+获取一个autorelease的{\ttfamily \mbox{\hyperlink{interface_q_q_api_news_object}{Q\+Q\+Api\+News\+Object}}} 
+\begin{DoxyParams}{Parameters}
+{\em url} & 视频内容的目标\+U\+RL \\
+\hline
+{\em title} & 分享内容的标题 \\
+\hline
+{\em description} & 分享内容的描述 \\
+\hline
+{\em preview\+U\+RL} & 分享内容的预览图像\+U\+RL \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+如果url为空，调用{\ttfamily Q\+Q\+Api\+::send\+Message\+:}时将返回\+F\+A\+L\+SE 
+\end{DoxyNote}
+\mbox{\Hypertarget{interface_q_q_api_news_object_a99e56670b9789ab147236bada2101c94}\label{interface_q_q_api_news_object_a99e56670b9789ab147236bada2101c94}} 
+\index{Q\+Q\+Api\+News\+Object@{Q\+Q\+Api\+News\+Object}!object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+U\+R\+L\+:@{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+U\+R\+L\+:}}
+\index{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+U\+R\+L\+:@{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+U\+R\+L\+:}!Q\+Q\+Api\+News\+Object@{Q\+Q\+Api\+News\+Object}}
+\subsubsection{\texorpdfstring{object\+With\+U\+R\+L\+:title\+:description\+:preview\+Image\+U\+R\+L\+:()}{objectWithURL:title:description:previewImageURL:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (id) object\+With\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{url }\item[{title:(N\+S\+String $\ast$)}]{title }\item[{description:(N\+S\+String $\ast$)}]{description }\item[{previewImageURL:(N\+S\+U\+RL $\ast$)}]{preview\+U\+RL }\end{DoxyParamCaption}}
+
+获取一个autorelease的{\ttfamily \mbox{\hyperlink{interface_q_q_api_news_object}{Q\+Q\+Api\+News\+Object}}} 
+\begin{DoxyParams}{Parameters}
+{\em url} & 视频内容的目标\+U\+RL \\
+\hline
+{\em title} & 分享内容的标题 \\
+\hline
+{\em description} & 分享内容的描述 \\
+\hline
+{\em preview\+U\+RL} & 分享内容的预览图像\+U\+RL \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+如果url为空，调用{\ttfamily Q\+Q\+Api\+::send\+Message\+:}时将返回\+F\+A\+L\+SE 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Public/\+U\+Meng\+U\+Share/\+Tencent\+Open\+A\+P\+I/Q\+Q\+Api\+Interface\+Object.\+h\end{DoxyCompactItemize}

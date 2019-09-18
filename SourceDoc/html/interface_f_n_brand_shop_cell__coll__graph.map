@@ -1,0 +1,4 @@
+<map id="FNBrandShopCell" name="FNBrandShopCell">
+<area shape="rect" id="node2" href="$interface_super_table_view_cell.html" title="SuperTableViewCell" alt="" coords="5,80,146,105"/>
+<area shape="rect" id="node4" href="$interface_f_n_brand_shop_model.html" title="FNBrandShopModel" alt="" coords="170,80,312,105"/>
+</map>

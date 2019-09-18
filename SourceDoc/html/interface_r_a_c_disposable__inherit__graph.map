@@ -1,0 +1,6 @@
+<map id="RACDisposable" name="RACDisposable">
+<area shape="rect" id="node3" href="$interface_r_a_c_compound_disposable.html" title="RACCompoundDisposable" alt="" coords="5,152,186,177"/>
+<area shape="rect" id="node4" href="$interface_r_a_c_k_v_o_trampoline.html" title="RACKVOTrampoline" alt="" coords="210,152,354,177"/>
+<area shape="rect" id="node5" href="$interface_r_a_c_scoped_disposable.html" title="A disposable that calls its own &#45;dispose when it is dealloc&#39;d. " alt="" coords="378,152,539,177"/>
+<area shape="rect" id="node6" href="$interface_r_a_c_serial_disposable.html" title="RACSerialDisposable" alt="" coords="562,152,712,177"/>
+</map>

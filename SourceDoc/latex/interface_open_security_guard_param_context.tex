@@ -1,0 +1,90 @@
+\hypertarget{interface_open_security_guard_param_context}{}\section{Open\+Security\+Guard\+Param\+Context Class Reference}
+\label{interface_open_security_guard_param_context}\index{Open\+Security\+Guard\+Param\+Context@{Open\+Security\+Guard\+Param\+Context}}
+
+
+{\ttfamily \#import $<$Open\+Security\+Guard\+Param\+Context.\+h$>$}
+
+
+
+Inheritance diagram for Open\+Security\+Guard\+Param\+Context\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{interface_open_security_guard_param_context__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Open\+Security\+Guard\+Param\+Context\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{interface_open_security_guard_param_context__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\mbox{\hyperlink{interface_open_security_guard_param_context}{Open\+Security\+Guard\+Param\+Context}} $\ast$) + \mbox{\hyperlink{interface_open_security_guard_param_context_ada3860c989e82a3a6dd9ad72296f3a61}{create\+Param\+Context\+With\+App\+Key\+:param\+Dict\+:request\+Type\+:}}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_open_security_guard_param_context_a8d76e9dd1c654d4f8bd20b62cb5f078e}{app\+Key}}
+\item 
+N\+S\+Integer \mbox{\hyperlink{interface_open_security_guard_param_context_a7d6edca9cf8d72f6d92bae20b6fafba7}{request\+Type}}
+\item 
+N\+S\+Mutable\+Dictionary $\ast$ \mbox{\hyperlink{interface_open_security_guard_param_context_a78d326f3a4c2e822decd50d429a1c2f4}{param\+Dict}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Open\+Securit\+Guard\+S\+D\+K的参数结构体 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_open_security_guard_param_context_ada3860c989e82a3a6dd9ad72296f3a61}\label{interface_open_security_guard_param_context_ada3860c989e82a3a6dd9ad72296f3a61}} 
+\index{Open\+Security\+Guard\+Param\+Context@{Open\+Security\+Guard\+Param\+Context}!create\+Param\+Context\+With\+App\+Key\+:param\+Dict\+:request\+Type\+:@{create\+Param\+Context\+With\+App\+Key\+:param\+Dict\+:request\+Type\+:}}
+\index{create\+Param\+Context\+With\+App\+Key\+:param\+Dict\+:request\+Type\+:@{create\+Param\+Context\+With\+App\+Key\+:param\+Dict\+:request\+Type\+:}!Open\+Security\+Guard\+Param\+Context@{Open\+Security\+Guard\+Param\+Context}}
+\subsubsection{\texorpdfstring{create\+Param\+Context\+With\+App\+Key\+:param\+Dict\+:request\+Type\+:()}{createParamContextWithAppKey:paramDict:requestType:()}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_open_security_guard_param_context}{Open\+Security\+Guard\+Param\+Context}}$\ast$) create\+Param\+Context\+With\+App\+Key\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{app\+Key }\item[{paramDict:(N\+S\+Dictionary $\ast$)}]{param\+Dict }\item[{requestType:(N\+S\+Integer)}]{request\+Type }\end{DoxyParamCaption}}
+
+根据传入的参数生成参数结构体对象
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Key} & appkey，应用当前使用的appkey \\
+\hline
+{\em param\+Dict} & 存储业务参数的dictionary对象 \\
+\hline
+{\em request\+Type} & 请求类型\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+生成的参数结构体对象, autorelease对象 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_open_security_guard_param_context_a8d76e9dd1c654d4f8bd20b62cb5f078e}\label{interface_open_security_guard_param_context_a8d76e9dd1c654d4f8bd20b62cb5f078e}} 
+\index{Open\+Security\+Guard\+Param\+Context@{Open\+Security\+Guard\+Param\+Context}!app\+Key@{app\+Key}}
+\index{app\+Key@{app\+Key}!Open\+Security\+Guard\+Param\+Context@{Open\+Security\+Guard\+Param\+Context}}
+\subsubsection{\texorpdfstring{app\+Key}{appKey}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) app\+Key\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+应用当前使用的appkey \mbox{\Hypertarget{interface_open_security_guard_param_context_a78d326f3a4c2e822decd50d429a1c2f4}\label{interface_open_security_guard_param_context_a78d326f3a4c2e822decd50d429a1c2f4}} 
+\index{Open\+Security\+Guard\+Param\+Context@{Open\+Security\+Guard\+Param\+Context}!param\+Dict@{param\+Dict}}
+\index{param\+Dict@{param\+Dict}!Open\+Security\+Guard\+Param\+Context@{Open\+Security\+Guard\+Param\+Context}}
+\subsubsection{\texorpdfstring{param\+Dict}{paramDict}}
+{\footnotesize\ttfamily -\/ (N\+S\+Mutable\+Dictionary$\ast$) param\+Dict\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+传入业务参数使用的dictionary，使用的key值见各component的头文件定义 \mbox{\Hypertarget{interface_open_security_guard_param_context_a7d6edca9cf8d72f6d92bae20b6fafba7}\label{interface_open_security_guard_param_context_a7d6edca9cf8d72f6d92bae20b6fafba7}} 
+\index{Open\+Security\+Guard\+Param\+Context@{Open\+Security\+Guard\+Param\+Context}!request\+Type@{request\+Type}}
+\index{request\+Type@{request\+Type}!Open\+Security\+Guard\+Param\+Context@{Open\+Security\+Guard\+Param\+Context}}
+\subsubsection{\texorpdfstring{request\+Type}{requestType}}
+{\footnotesize\ttfamily -\/ (N\+S\+Integer) request\+Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+调用接口的接口的类型标识，类型定义见各component的头文件定义 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Security\+Guard\+S\+D\+K.\+framework/\+Headers/\+Open/Open\+Security\+Guard\+Param\+Context.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,6 @@
+<map id="QQApiExtendObject" name="QQApiExtendObject">
+<area shape="rect" id="node4" href="$interface_q_q_api_file_object.html" title="本地文件对象(暂只支持分享到手机QQ数据线功能) 用于分享文件内容的对象，是一个指定为文件类型的QQApiExten..." alt="" coords="5,225,127,251"/>
+<area shape="rect" id="node5" href="$interface_q_q_api_image_object.html" title="图片对象 用于分享图片内容的对象，是一个指定为图片类型的QQApiExtendObject " alt="" coords="151,225,288,251"/>
+<area shape="rect" id="node2" href="$interface_q_q_api_object.html" title="所有在QQ及插件间发送的数据对象的根类。 " alt="" coords="92,79,192,104"/>
+<area shape="rect" id="node6" href="$interface_q_q_api_group_tribe_image_object.html" title="群部落图片对象 用于分享图片内容的对象，是一个指定为图片类型的 可以指定一些其他的附加数据QQApiExtendOb..." alt="" coords="117,299,321,324"/>
+</map>

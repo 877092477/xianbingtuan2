@@ -1,0 +1,6 @@
+<map id="FNHSecKillTBDCell" name="FNHSecKillTBDCell">
+<area shape="rect" id="node2" href="$interface_f_n_h_sec_kill_public_cell.html" title="FNHSecKillPublicCell" alt="" coords="103,167,252,192"/>
+<area shape="rect" id="node4" href="$interface_discount_label.html" title="DiscountLabel" alt="" coords="148,80,253,105"/>
+<area shape="rect" id="node6" href="$interface_f_n_h_sec_kill_proudct_model.html" title="FNHSecKillProudctModel" alt="" coords="276,167,448,192"/>
+<area shape="rect" id="node7" href="$interface_f_n_base_product_model.html" title="FNBaseProductModel" alt="" coords="286,80,438,105"/>
+</map>

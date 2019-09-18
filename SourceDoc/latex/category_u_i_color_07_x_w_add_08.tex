@@ -1,0 +1,69 @@
+\hypertarget{category_u_i_color_07_x_w_add_08}{}\section{U\+I\+Color(X\+W\+Add) Category Reference}
+\label{category_u_i_color_07_x_w_add_08}\index{U\+I\+Color(\+X\+W\+Add)@{U\+I\+Color(\+X\+W\+Add)}}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\+S\+Array $\ast$) + \mbox{\hyperlink{category_u_i_color_07_x_w_add_08_ae308030ec1eab9b15b16cf68b482a134}{xw\+\_\+change\+Color\+To\+R\+G\+B\+:}}
+\item 
+(U\+I\+Color $\ast$) + \mbox{\hyperlink{category_u_i_color_07_x_w_add_08_a05efd91cc13231dbe939b29116777521}{xw\+\_\+color\+With\+Hex\+String\+:}}
+\item 
+(U\+I\+Color $\ast$) + \mbox{\hyperlink{category_u_i_color_07_x_w_add_08_a2877884fce624f702596fd46d31f9fbd}{xw\+\_\+color\+With\+Interpolation\+From\+Value\+:to\+Value\+:ratio\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{category_u_i_color_07_x_w_add_08_ae308030ec1eab9b15b16cf68b482a134}\label{category_u_i_color_07_x_w_add_08_ae308030ec1eab9b15b16cf68b482a134}} 
+\index{U\+I\+Color(\+X\+W\+Add)@{U\+I\+Color(\+X\+W\+Add)}!xw\+\_\+change\+Color\+To\+R\+G\+B\+:@{xw\+\_\+change\+Color\+To\+R\+G\+B\+:}}
+\index{xw\+\_\+change\+Color\+To\+R\+G\+B\+:@{xw\+\_\+change\+Color\+To\+R\+G\+B\+:}!U\+I\+Color(\+X\+W\+Add)@{U\+I\+Color(\+X\+W\+Add)}}
+\subsubsection{\texorpdfstring{xw\+\_\+change\+Color\+To\+R\+G\+B\+:()}{xw\_changeColorToRGB:()}}
+{\footnotesize\ttfamily + (N\+S\+Array $\ast$) xw\+\_\+change\+Color\+To\+R\+G\+B\+: \begin{DoxyParamCaption}\item[{(U\+I\+Color $\ast$)}]{color }\end{DoxyParamCaption}}
+
+颜色转\+R\+GB \mbox{\Hypertarget{category_u_i_color_07_x_w_add_08_a05efd91cc13231dbe939b29116777521}\label{category_u_i_color_07_x_w_add_08_a05efd91cc13231dbe939b29116777521}} 
+\index{U\+I\+Color(\+X\+W\+Add)@{U\+I\+Color(\+X\+W\+Add)}!xw\+\_\+color\+With\+Hex\+String\+:@{xw\+\_\+color\+With\+Hex\+String\+:}}
+\index{xw\+\_\+color\+With\+Hex\+String\+:@{xw\+\_\+color\+With\+Hex\+String\+:}!U\+I\+Color(\+X\+W\+Add)@{U\+I\+Color(\+X\+W\+Add)}}
+\subsubsection{\texorpdfstring{xw\+\_\+color\+With\+Hex\+String\+:()}{xw\_colorWithHexString:()}}
+{\footnotesize\ttfamily + (U\+I\+Color $\ast$) xw\+\_\+color\+With\+Hex\+String\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{string\+To\+Convert }\end{DoxyParamCaption}}
+
+16进制颜色字符串转\+U\+I\+Color
+
+
+\begin{DoxyParams}{Parameters}
+{\em string\+To\+Convert} & 16进制颜色字符串（如：\#\+F\+F\+E326）\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+对应的\+I\+Color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{category_u_i_color_07_x_w_add_08_a2877884fce624f702596fd46d31f9fbd}\label{category_u_i_color_07_x_w_add_08_a2877884fce624f702596fd46d31f9fbd}} 
+\index{U\+I\+Color(\+X\+W\+Add)@{U\+I\+Color(\+X\+W\+Add)}!xw\+\_\+color\+With\+Interpolation\+From\+Value\+:to\+Value\+:ratio\+:@{xw\+\_\+color\+With\+Interpolation\+From\+Value\+:to\+Value\+:ratio\+:}}
+\index{xw\+\_\+color\+With\+Interpolation\+From\+Value\+:to\+Value\+:ratio\+:@{xw\+\_\+color\+With\+Interpolation\+From\+Value\+:to\+Value\+:ratio\+:}!U\+I\+Color(\+X\+W\+Add)@{U\+I\+Color(\+X\+W\+Add)}}
+\subsubsection{\texorpdfstring{xw\+\_\+color\+With\+Interpolation\+From\+Value\+:to\+Value\+:ratio\+:()}{xw\_colorWithInterpolationFromValue:toValue:ratio:()}}
+{\footnotesize\ttfamily + (U\+I\+Color $\ast$) xw\+\_\+color\+With\+Interpolation\+From\+Value\+: \begin{DoxyParamCaption}\item[{(U\+I\+Color $\ast$)}]{from }\item[{toValue:(U\+I\+Color $\ast$)}]{to }\item[{ratio:(C\+G\+Float)}]{ratio }\end{DoxyParamCaption}}
+
+插值两种颜色返回中间的颜色
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & 起始颜色 \\
+\hline
+{\em to} & 终止颜色 \\
+\hline
+{\em ratio} & 插值比例\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+插值色 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{category_u_i_color_07_x_w_add_08_a2877884fce624f702596fd46d31f9fbd_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this category was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/\+X\+W\+Catergory\+View/U\+I\+Color+\+X\+W\+Add.\+h\item 
+T\+H\+B/\+Library/\+X\+W\+Catergory\+View/U\+I\+Color+\+X\+W\+Add.\+m\end{DoxyCompactItemize}

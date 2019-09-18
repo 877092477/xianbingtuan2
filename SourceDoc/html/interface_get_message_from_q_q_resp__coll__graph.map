@@ -1,0 +1,4 @@
+<map id="GetMessageFromQQResp" name="GetMessageFromQQResp">
+<area shape="rect" id="node2" href="$interface_q_q_base_resp.html" title="QQBaseResp" alt="" coords="43,80,147,105"/>
+<area shape="rect" id="node4" href="$interface_q_q_api_object.html" title="所有在QQ及插件间发送的数据对象的根类。 " alt="" coords="171,80,271,105"/>
+</map>

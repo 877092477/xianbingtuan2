@@ -1,0 +1,168 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - AGEmojiKeyboard (0.2.1)
+  - AMap2DMap (5.6.1):
+    - AMapFoundation (~> 1.4)
+  - AMapFoundation (1.5.6)
+  - AMapLocation (2.6.1):
+    - AMapFoundation (~> 1.4)
+  - AMapSearch (6.6.0):
+    - AMapFoundation (~> 1.4)
+  - EBBannerView (1.0.9)
+  - FDFullscreenPopGesture (1.1)
+  - FHHFPSIndicator (1.0.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - IQKeyboardManager (3.3.7)
+  - JPVideoPlayer (3.1.1)
+  - KVNProgress (2.2.4)
+  - LJContactManager (1.0.6)
+  - LKDBHelper (2.5.1):
+    - LKDBHelper/standard (= 2.5.1)
+  - LKDBHelper/standard (2.5.1):
+    - FMDB
+  - lottie-ios (2.5.3)
+  - MBProgressHUD (0.9.2)
+  - MJExtension (3.0.10)
+  - MJRefresh (3.1.0)
+  - pop (1.0.9)
+  - Popover.OC (2.2)
+  - Reachability (3.1.1)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - SDAutoLayout (2.2.1)
+  - SDCycleScrollView (1.61):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
+  - SVProgressHUD (2.2.5)
+  - TZImagePickerController (3.1.7)
+  - UMCAnalytics (5.5.2):
+    - UMCCommon
+  - UMCCommon (1.5.3)
+  - UMCCommonLog (1.0.0)
+  - UMengUShare/Core (6.4.8.2):
+    - UMengUShare/Network
+  - UMengUShare/Network (6.4.8.2)
+  - UMengUShare/Social/QQ (6.4.8.2):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedQQ
+  - UMengUShare/Social/ReducedQQ (6.4.8.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/ReducedSina (6.4.8.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/ReducedWeChat (6.4.8.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/Sina (6.4.8.2):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedSina
+  - UMengUShare/UI (6.4.8.2):
+    - UMengUShare/Core
+  - VTMagic (1.1.0):
+    - VTMagic/Core (= 1.1.0)
+  - VTMagic/Core (1.1.0)
+  - WechatOpenSDK (1.8.4)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - AGEmojiKeyboard
+  - AMap2DMap
+  - AMapLocation
+  - AMapSearch
+  - EBBannerView
+  - FDFullscreenPopGesture
+  - FHHFPSIndicator
+  - IQKeyboardManager
+  - JPVideoPlayer
+  - KVNProgress
+  - LJContactManager
+  - LKDBHelper
+  - lottie-ios
+  - MBProgressHUD (~> 0.9.2)
+  - MJExtension
+  - MJRefresh (~> 3.1)
+  - pop (~> 1.0)
+  - Popover.OC
+  - Reachability (~> 3.1.1)
+  - ReactiveCocoa
+  - SDAutoLayout (~> 2.2.0)
+  - SDCycleScrollView (~> 1.61)
+  - SDWebImage (= 3.7.5)
+  - SVProgressHUD (= 2.2.5)
+  - TZImagePickerController
+  - UMCAnalytics
+  - UMCCommon
+  - UMCCommonLog
+  - UMengUShare/Social/QQ
+  - UMengUShare/Social/ReducedWeChat
+  - UMengUShare/Social/Sina
+  - UMengUShare/UI
+  - VTMagic
+  - WechatOpenSDK
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  AGEmojiKeyboard: d5a01a4b0de30e1f1c2a121503ac36a79c7217ab
+  AMap2DMap: cac76bc057de18a1641f34df6b50bf5bc6b23571
+  AMapFoundation: 20fce2a12cd152e1092afdd04379cdac21932185
+  AMapLocation: cf024b53dc03663efb4ea4bcce27d4cce58bb97a
+  AMapSearch: def5983c8ca1a6d7430970046dc814f6e337621d
+  EBBannerView: b3e2460bc97fb068af915263b696200a03680ab9
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  FHHFPSIndicator: b4d34c3a93b702ad18358a4eb49839f83f4f30fb
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  IQKeyboardManager: 249c3946acf61345c18b038eb50863fe2793e3a8
+  JPVideoPlayer: 234c2fc5c9dfd67b969a5dd8233815eb872472c6
+  KVNProgress: 541edcea5a1fef592aceac8d791a410d38cb499d
+  LJContactManager: dbc29ba9d837039c9048f48412ad493f60806a79
+  LKDBHelper: 9a276ba51f2e16263d46a9517e16cc9b03472664
+  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
+  MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  Popover.OC: bfcce8307f77593e1e1d7cf58604077f74e114bc
+  Reachability: dd9aa4fb6667b9f787690a74f53cb7634ce99893
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  SDAutoLayout: 8bf6b3bbc8b01f775d4defbb4fda2ace805461be
+  SDCycleScrollView: a002d85b30cfa9d0ac74069cd3973ca19ff4f22f
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  TZImagePickerController: 3027e1e2029c830186c6a167c88c933b8556fdc7
+  UMCAnalytics: 6654fd3c8201ff6da5c86a3ae29cd5c8436d3b7b
+  UMCCommon: 016af43c0f769feb1ae1861d65aaf2b23b89c9c7
+  UMCCommonLog: 05a2d5de21858e3d870551562cff405c1366d244
+  UMengUShare: 370d180101e13ee0227ae657ab119ba97243d2b3
+  VTMagic: c36843c40359410e36646a1d1907c27a30cc3c0d
+  WechatOpenSDK: 9b721089507c895d05f997408c30bb6e6f5f9b60
+
+PODFILE CHECKSUM: 3fa9cf21bd1909dcd7ad6ff4e91c1a3934ffd431
+
+COCOAPODS: 1.2.1

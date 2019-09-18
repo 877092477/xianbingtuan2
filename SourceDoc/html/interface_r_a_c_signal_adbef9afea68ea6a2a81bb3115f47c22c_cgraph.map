@@ -1,0 +1,14 @@
+<map id="+[RACSignal startLazilyWithScheduler:block:]" name="+[RACSignal startLazilyWithScheduler:block:]">
+<area shape="rect" id="node2" href="$interface_r_a_c_signal.html#a4ba374f148d6e2a0339c4f4202b4dc26" title="+[RACSignal createSignal:]" alt="" coords="475,97,658,123"/>
+<area shape="rect" id="node4" href="$interface_r_a_c_stream.html#aedc0b75ca3e6d0f81f006c7c3c6a1d76" title="&#45;[RACStream setNameWithFormat:]" alt="" coords="936,69,1170,95"/>
+<area shape="rect" id="node5" href="$interface_r_a_c_signal.html#a55b43f4fbef7e430a4587ce13eab18cb" title="&#45;[RACSignal multicast:]" alt="" coords="720,41,878,67"/>
+<area shape="rect" id="node6" href="$interface_r_a_c_subject.html#a80ceeef3605f5bf5c76c45ecb5532bf6" title="Returns a new subject. " alt="" coords="255,143,410,168"/>
+<area shape="rect" id="node7" href="$interface_r_a_c_multicast_connection.html#a62299415a12cbd53ba5fded7e89584ef" title="&#45;[RACMulticastConnection\l connect]" alt="" coords="243,192,421,231"/>
+<area shape="rect" id="node8" href="$interface_r_a_c_signal.html#a6b8db542f7106880577a943cb8e9da90" title="&#45;[RACSignal subscribeOn:]" alt="" coords="242,255,422,280"/>
+<area shape="rect" id="node3" href="$interface_r_a_c_dynamic_signal.html#aeffa754150754dd6296d5225b5c9c7fe" title="+[RACDynamicSignal\l createSignal:]" alt="" coords="724,91,874,129"/>
+<area shape="rect" id="node9" href="$interface_r_a_c_compound_disposable.html#a6352abe7deb93063a0285c4b719bd0d5" title="Creates and returns a new compound disposable. " alt="" coords="470,361,663,400"/>
+<area shape="rect" id="node10" href="$interface_r_a_c_scheduler.html#ab8e7e6634a86734797fa8db0919f9c16" title="&#45;[RACScheduler schedule:]" alt="" coords="475,148,658,173"/>
+<area shape="rect" id="node11" href="$interface_r_a_c_signal.html#aeab76d632d98bbc321ec5e19575377eb" title="&#45;[RACSignal subscribe:]" alt="" coords="485,197,648,223"/>
+<area shape="rect" id="node12" href="$interface_r_a_c_compound_disposable.html#adfa5cef74d293abc13c6137289e6f908" title="&#45;[RACCompoundDisposable\l addDisposable:]" alt="" coords="472,247,661,285"/>
+<area shape="rect" id="node13" href="$interface_r_a_c_disposable.html#a3158dc03efcf49e7a5174acc6e3711d5" title="&#45;[RACDisposable dispose]" alt="" coords="711,253,888,279"/>
+</map>

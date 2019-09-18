@@ -1,0 +1,75 @@
+\hypertarget{interface_w_b_data_transfer_object}{}\section{W\+B\+Data\+Transfer\+Object Class Reference}
+\label{interface_w_b_data_transfer_object}\index{W\+B\+Data\+Transfer\+Object@{W\+B\+Data\+Transfer\+Object}}
+
+
+{\ttfamily \#import $<$Weibo\+S\+D\+K.\+h$>$}
+
+
+
+Inheritance diagram for W\+B\+Data\+Transfer\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_w_b_data_transfer_object__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for W\+B\+Data\+Transfer\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{interface_w_b_data_transfer_object__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+Dictionary $\ast$ \mbox{\hyperlink{interface_w_b_data_transfer_object_ab9b7bf91e1470d29782202c04d1a86fe}{user\+Info}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_w_b_data_transfer_object_a5140d85c4f3bb9c618300a3611288893}{sdk\+Version}}
+\item 
+B\+O\+OL \mbox{\hyperlink{interface_w_b_data_transfer_object_af1046c4ff92a1f7a3c7129384fc090ed}{should\+Open\+Weibo\+App\+Install\+Page\+If\+Not\+Installed}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+微博客户端程序和第三方应用之间传输数据信息的基类 
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_w_b_data_transfer_object_a5140d85c4f3bb9c618300a3611288893}\label{interface_w_b_data_transfer_object_a5140d85c4f3bb9c618300a3611288893}} 
+\index{W\+B\+Data\+Transfer\+Object@{W\+B\+Data\+Transfer\+Object}!sdk\+Version@{sdk\+Version}}
+\index{sdk\+Version@{sdk\+Version}!W\+B\+Data\+Transfer\+Object@{W\+B\+Data\+Transfer\+Object}}
+\subsubsection{\texorpdfstring{sdk\+Version}{sdkVersion}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) sdk\+Version\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+发送该数据对象的\+S\+D\+K版本号
+
+如果数据对象是自己生成的，则sdk\+Version为当前\+S\+D\+K的版本号；如果是接收到的数据对象，则sdk\+Version为数据发送方\+S\+D\+K版本号 \mbox{\Hypertarget{interface_w_b_data_transfer_object_af1046c4ff92a1f7a3c7129384fc090ed}\label{interface_w_b_data_transfer_object_af1046c4ff92a1f7a3c7129384fc090ed}} 
+\index{W\+B\+Data\+Transfer\+Object@{W\+B\+Data\+Transfer\+Object}!should\+Open\+Weibo\+App\+Install\+Page\+If\+Not\+Installed@{should\+Open\+Weibo\+App\+Install\+Page\+If\+Not\+Installed}}
+\index{should\+Open\+Weibo\+App\+Install\+Page\+If\+Not\+Installed@{should\+Open\+Weibo\+App\+Install\+Page\+If\+Not\+Installed}!W\+B\+Data\+Transfer\+Object@{W\+B\+Data\+Transfer\+Object}}
+\subsubsection{\texorpdfstring{should\+Open\+Weibo\+App\+Install\+Page\+If\+Not\+Installed}{shouldOpenWeiboAppInstallPageIfNotInstalled}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) should\+Open\+Weibo\+App\+Install\+Page\+If\+Not\+Installed\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+当用户没有安装微博客户端程序时是否提示用户打开微博安装页面
+
+如果设置为\+Y\+E\+S，当用户未安装微博时会弹出\+Alert询问用户是否要打开微博\+App的安装页面。默认为\+Y\+ES \mbox{\Hypertarget{interface_w_b_data_transfer_object_ab9b7bf91e1470d29782202c04d1a86fe}\label{interface_w_b_data_transfer_object_ab9b7bf91e1470d29782202c04d1a86fe}} 
+\index{W\+B\+Data\+Transfer\+Object@{W\+B\+Data\+Transfer\+Object}!user\+Info@{user\+Info}}
+\index{user\+Info@{user\+Info}!W\+B\+Data\+Transfer\+Object@{W\+B\+Data\+Transfer\+Object}}
+\subsubsection{\texorpdfstring{user\+Info}{userInfo}}
+{\footnotesize\ttfamily -\/ (N\+S\+Dictionary $\ast$) user\+Info\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+自定义信息字典，用于数据传输过程中存储相关的上下文环境数据
+
+第三方应用给微博客户端程序发送 request 时，可以在 user\+Info 中存储请求相关的信息。
+
+\begin{DoxyWarning}{Warning}
+user\+Info中的数据必须是实现了 {\ttfamily \mbox{\hyperlink{class_n_s_coding-p}{N\+S\+Coding}}} 协议的对象，必须保证能序列化和反序列化 
+
+序列化后的数据不能大于10M 
+\end{DoxyWarning}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+U\+Meng\+U\+Share/Weibo\+S\+D\+K.\+h\end{DoxyCompactItemize}

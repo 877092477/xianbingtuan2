@@ -1,0 +1,106 @@
+\hypertarget{protocol_a_f_u_r_l_response_serialization_01-p}{}\section{$<$A\+F\+U\+R\+L\+Response\+Serialization $>$ Protocol Reference}
+\label{protocol_a_f_u_r_l_response_serialization_01-p}\index{$<$\+A\+F\+U\+R\+L\+Response\+Serialization $>$@{$<$\+A\+F\+U\+R\+L\+Response\+Serialization $>$}}
+
+
+{\ttfamily \#import $<$A\+F\+U\+R\+L\+Response\+Serialization.\+h$>$}
+
+
+
+Inheritance diagram for $<$A\+F\+U\+R\+L\+Response\+Serialization $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{protocol_a_f_u_r_l_response_serialization_01-p__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for $<$A\+F\+U\+R\+L\+Response\+Serialization $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{protocol_a_f_u_r_l_response_serialization_01-p__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(nullable id) -\/ \mbox{\hyperlink{protocol_a_f_u_r_l_response_serialization_01-p_a3b194fdeb44f6878e12a473e5cf8d022}{response\+Object\+For\+Response\+:data\+:error\+:}}
+\item 
+(nullable id) -\/ \mbox{\hyperlink{protocol_a_f_u_r_l_response_serialization_01-p_a3b194fdeb44f6878e12a473e5cf8d022}{response\+Object\+For\+Response\+:data\+:error\+:}}
+\item 
+(nullable id) -\/ \mbox{\hyperlink{protocol_a_f_u_r_l_response_serialization_01-p_a3b194fdeb44f6878e12a473e5cf8d022}{response\+Object\+For\+Response\+:data\+:error\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{class_a_f_u_r_l_response_serialization-p}{A\+F\+U\+R\+L\+Response\+Serialization}}} protocol is adopted by an object that decodes data into a more useful object representation, according to details in the server response. Response serializers may additionally perform validation on the incoming response and data.
+
+For example, a J\+S\+ON response serializer may check for an acceptable status code ({\ttfamily 2\+XX} range) and content type ({\ttfamily application/json}), decoding a valid J\+S\+ON response into an object. 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{protocol_a_f_u_r_l_response_serialization_01-p_a3b194fdeb44f6878e12a473e5cf8d022}\label{protocol_a_f_u_r_l_response_serialization_01-p_a3b194fdeb44f6878e12a473e5cf8d022}} 
+\index{A\+F\+U\+R\+L\+Response\+Serialization -\/p@{A\+F\+U\+R\+L\+Response\+Serialization -\/p}!response\+Object\+For\+Response\+:data\+:error\+:@{response\+Object\+For\+Response\+:data\+:error\+:}}
+\index{response\+Object\+For\+Response\+:data\+:error\+:@{response\+Object\+For\+Response\+:data\+:error\+:}!A\+F\+U\+R\+L\+Response\+Serialization -\/p@{A\+F\+U\+R\+L\+Response\+Serialization -\/p}}
+\subsubsection{\texorpdfstring{response\+Object\+For\+Response\+:data\+:error\+:()}{responseObjectForResponse:data:error:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (nullable id A\+F\+U\+R\+L\+Response\+Serialization) response\+Object\+For\+Response\+: \begin{DoxyParamCaption}\item[{(nullable N\+S\+U\+R\+L\+Response $\ast$)}]{response }\item[{data:(nullable N\+S\+Data $\ast$)}]{data }\item[{error:(N\+S\+Error $\ast$\+\_\+\+\_\+nullable \+\_\+\+\_\+autoreleasing $\ast$)}]{error }\end{DoxyParamCaption}}
+
+The response object decoded from the data associated with a specified response.
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & The response to be processed. \\
+\hline
+{\em data} & The response data to be decoded. \\
+\hline
+{\em error} & The error that occurred while attempting to decode the response data.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The object decoded from the specified response data. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_a_f_u_r_l_response_serialization_01-p_a3b194fdeb44f6878e12a473e5cf8d022}\label{protocol_a_f_u_r_l_response_serialization_01-p_a3b194fdeb44f6878e12a473e5cf8d022}} 
+\index{A\+F\+U\+R\+L\+Response\+Serialization -\/p@{A\+F\+U\+R\+L\+Response\+Serialization -\/p}!response\+Object\+For\+Response\+:data\+:error\+:@{response\+Object\+For\+Response\+:data\+:error\+:}}
+\index{response\+Object\+For\+Response\+:data\+:error\+:@{response\+Object\+For\+Response\+:data\+:error\+:}!A\+F\+U\+R\+L\+Response\+Serialization -\/p@{A\+F\+U\+R\+L\+Response\+Serialization -\/p}}
+\subsubsection{\texorpdfstring{response\+Object\+For\+Response\+:data\+:error\+:()}{responseObjectForResponse:data:error:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (nullable id A\+F\+U\+R\+L\+Response\+Serialization) response\+Object\+For\+Response\+: \begin{DoxyParamCaption}\item[{(nullable N\+S\+U\+R\+L\+Response $\ast$)}]{response }\item[{data:(nullable N\+S\+Data $\ast$)}]{data }\item[{error:(N\+S\+Error $\ast$\+\_\+\+\_\+nullable \+\_\+\+\_\+autoreleasing $\ast$)}]{error }\end{DoxyParamCaption}}
+
+The response object decoded from the data associated with a specified response.
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & The response to be processed. \\
+\hline
+{\em data} & The response data to be decoded. \\
+\hline
+{\em error} & The error that occurred while attempting to decode the response data.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The object decoded from the specified response data. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_a_f_u_r_l_response_serialization_01-p_a3b194fdeb44f6878e12a473e5cf8d022}\label{protocol_a_f_u_r_l_response_serialization_01-p_a3b194fdeb44f6878e12a473e5cf8d022}} 
+\index{A\+F\+U\+R\+L\+Response\+Serialization -\/p@{A\+F\+U\+R\+L\+Response\+Serialization -\/p}!response\+Object\+For\+Response\+:data\+:error\+:@{response\+Object\+For\+Response\+:data\+:error\+:}}
+\index{response\+Object\+For\+Response\+:data\+:error\+:@{response\+Object\+For\+Response\+:data\+:error\+:}!A\+F\+U\+R\+L\+Response\+Serialization -\/p@{A\+F\+U\+R\+L\+Response\+Serialization -\/p}}
+\subsubsection{\texorpdfstring{response\+Object\+For\+Response\+:data\+:error\+:()}{responseObjectForResponse:data:error:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (nullable id A\+F\+U\+R\+L\+Response\+Serialization) response\+Object\+For\+Response\+: \begin{DoxyParamCaption}\item[{(nullable N\+S\+U\+R\+L\+Response $\ast$)}]{response }\item[{data:(nullable N\+S\+Data $\ast$)}]{data }\item[{error:(N\+S\+Error $\ast$\+\_\+\+\_\+nullable \+\_\+\+\_\+autoreleasing $\ast$)}]{error }\end{DoxyParamCaption}}
+
+The response object decoded from the data associated with a specified response.
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & The response to be processed. \\
+\hline
+{\em data} & The response data to be decoded. \\
+\hline
+{\em error} & The error that occurred while attempting to decode the response data.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The object decoded from the specified response data. 
+\end{DoxyReturn}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+A\+F\+Networking/\+A\+F\+Networking/A\+F\+U\+R\+L\+Response\+Serialization.\+h\end{DoxyCompactItemize}

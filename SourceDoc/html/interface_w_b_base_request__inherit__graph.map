@@ -1,0 +1,9 @@
+<map id="WBBaseRequest" name="WBBaseRequest">
+<area shape="rect" id="node4" href="$interface_w_b_authorize_request.html" title="WBAuthorizeRequest" alt="" coords="556,12,705,37"/>
+<area shape="rect" id="node5" href="$interface_w_b_payment_request.html" title="WBPaymentRequest" alt="" coords="558,61,703,86"/>
+<area shape="rect" id="node6" href="$interface_w_b_provide_message_for_weibo_request.html" title="WBProvideMessageForWeibo\lRequest" alt="" coords="531,110,730,149"/>
+<area shape="rect" id="node7" href="$interface_w_b_s_d_k_app_recommend_request.html" title="WBSDKAppRecommendRequest" alt="" coords="521,173,740,198"/>
+<area shape="rect" id="node8" href="$interface_w_b_send_message_to_weibo_request.html" title="WBSendMessageToWeiboRequest" alt="" coords="516,222,745,248"/>
+<area shape="rect" id="node9" href="$interface_w_b_share_message_to_contact_request.html" title="WBShareMessageToContactRequest" alt="" coords="509,272,751,297"/>
+<area shape="rect" id="node2" href="$interface_w_b_data_transfer_object.html" title="WBDataTransferObject" alt="" coords="132,145,290,170"/>
+</map>

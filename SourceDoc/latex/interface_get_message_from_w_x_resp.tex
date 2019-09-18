@@ -1,0 +1,75 @@
+\hypertarget{interface_get_message_from_w_x_resp}{}\section{Get\+Message\+From\+W\+X\+Resp Class Reference}
+\label{interface_get_message_from_w_x_resp}\index{Get\+Message\+From\+W\+X\+Resp@{Get\+Message\+From\+W\+X\+Resp}}
+
+
+微信终端向第三方程序请求提供内容，第三方程序向微信终端返回的消息结构体。  
+
+
+
+
+{\ttfamily \#import $<$W\+X\+Api\+Object.\+h$>$}
+
+
+
+Inheritance diagram for Get\+Message\+From\+W\+X\+Resp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{interface_get_message_from_w_x_resp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Get\+Message\+From\+W\+X\+Resp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{interface_get_message_from_w_x_resp__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_get_message_from_w_x_resp_a25c60eb5909d36838b598cff5324b51b}{text}}
+\item 
+\mbox{\hyperlink{interface_w_x_media_message}{W\+X\+Media\+Message}} $\ast$ \mbox{\hyperlink{interface_get_message_from_w_x_resp_a4f4c45c814e7b99aa95da23f183e19a3}{message}}
+\item 
+B\+O\+OL \mbox{\hyperlink{interface_get_message_from_w_x_resp_a563ef8ccb764762c8bb33ea7a05e6a85}{b\+Text}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+微信终端向第三方程序请求提供内容，第三方程序向微信终端返回的消息结构体。 
+
+微信终端向第三方程序请求提供内容，第三方程序调用send\+Resp向微信终端返回一个\+Get\+Message\+From\+W\+X\+Resp消息结构体。 
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_get_message_from_w_x_resp_a563ef8ccb764762c8bb33ea7a05e6a85}\label{interface_get_message_from_w_x_resp_a563ef8ccb764762c8bb33ea7a05e6a85}} 
+\index{Get\+Message\+From\+W\+X\+Resp@{Get\+Message\+From\+W\+X\+Resp}!b\+Text@{b\+Text}}
+\index{b\+Text@{b\+Text}!Get\+Message\+From\+W\+X\+Resp@{Get\+Message\+From\+W\+X\+Resp}}
+\subsubsection{\texorpdfstring{b\+Text}{bText}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) b\+Text\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+向微信终端提供内容的消息类型，包括文本消息和多媒体消息两种，两者只能选择其一，不能同时发送文本和多媒体消息 \mbox{\Hypertarget{interface_get_message_from_w_x_resp_a4f4c45c814e7b99aa95da23f183e19a3}\label{interface_get_message_from_w_x_resp_a4f4c45c814e7b99aa95da23f183e19a3}} 
+\index{Get\+Message\+From\+W\+X\+Resp@{Get\+Message\+From\+W\+X\+Resp}!message@{message}}
+\index{message@{message}!Get\+Message\+From\+W\+X\+Resp@{Get\+Message\+From\+W\+X\+Resp}}
+\subsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_w_x_media_message}{W\+X\+Media\+Message}} $\ast$) message\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+向微信终端提供的多媒体内容。 \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interface_w_x_media_message}{W\+X\+Media\+Message}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{interface_get_message_from_w_x_resp_a25c60eb5909d36838b598cff5324b51b}\label{interface_get_message_from_w_x_resp_a25c60eb5909d36838b598cff5324b51b}} 
+\index{Get\+Message\+From\+W\+X\+Resp@{Get\+Message\+From\+W\+X\+Resp}!text@{text}}
+\index{text@{text}!Get\+Message\+From\+W\+X\+Resp@{Get\+Message\+From\+W\+X\+Resp}}
+\subsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) text\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+向微信终端提供的文本内容 \begin{DoxyNote}{Note}
+文本长度必须大于0且小于10K 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+U\+Meng\+U\+Share/W\+X\+Api\+Object.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,8 @@
+<map id="+[RACSignal switch:cases:default:]" name="+[RACSignal switch:cases:default:]">
+<area shape="rect" id="node2" href="$interface_r_a_c_stream.html#ae8e14cc70fb3979e6128d28b003bba3f" title="&#45;[RACStream map:]" alt="" coords="192,5,330,31"/>
+<area shape="rect" id="node5" href="$interface_r_a_c_signal.html#aedd4ad7b4b8c1f7b26d41b5be6c83d83" title="Returns a signal that immediately sends the given error. " alt="" coords="192,55,330,80"/>
+<area shape="rect" id="node3" href="$interface_r_a_c_stream.html#a2441b0306adc6ae2845219f8b116119a" title="&#45;[RACStream flattenMap:]" alt="" coords="378,5,552,31"/>
+<area shape="rect" id="node4" href="$interface_r_a_c_stream.html#a8638bfba1497aa1b14b098857b4c62e2" title="&#45;[RACStream bind:]" alt="" coords="648,5,785,31"/>
+<area shape="rect" id="node6" href="$interface_r_a_c_error_signal.html#a485a8d10bb972a6294010ab3f4ae0452" title="Returns a signal that immediately sends the given error. " alt="" coords="381,55,548,80"/>
+<area shape="rect" id="node7" href="$interface_r_a_c_stream.html#aedc0b75ca3e6d0f81f006c7c3c6a1d76" title="&#45;[RACStream setNameWithFormat:]" alt="" coords="600,55,834,80"/>
+</map>

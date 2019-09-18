@@ -1,0 +1,97 @@
+\hypertarget{protocol_mtop_login_protocol_01-p}{}\section{$<$Mtop\+Login\+Protocol $>$ Protocol Reference}
+\label{protocol_mtop_login_protocol_01-p}\index{$<$\+Mtop\+Login\+Protocol $>$@{$<$\+Mtop\+Login\+Protocol $>$}}
+
+
+Inheritance diagram for $<$Mtop\+Login\+Protocol $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{protocol_mtop_login_protocol_01-p__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for $<$Mtop\+Login\+Protocol $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{protocol_mtop_login_protocol_01-p__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{protocol_mtop_login_protocol_01-p_a96dd71df504db90522a1045402cd8b61}{is\+Valid\+Login}}
+\item 
+\mbox{\Hypertarget{protocol_mtop_login_protocol_01-p_a0d787d772d5e8983d9ca727934dbc500}\label{protocol_mtop_login_protocol_01-p_a0d787d772d5e8983d9ca727934dbc500}} 
+(void) -\/ {\bfseries login\+With\+Login\+Option\+:completion\+Handler\+:cancelation\+Handler\+:}
+\item 
+\mbox{\Hypertarget{protocol_mtop_login_protocol_01-p_a2729c2423a4b2852104ffe46733eddaf}\label{protocol_mtop_login_protocol_01-p_a2729c2423a4b2852104ffe46733eddaf}} 
+(void) -\/ {\bfseries login\+With\+Login\+Option\+:extra\+Info\+:completion\+Handler\+:cancelation\+Handler\+:}
+\item 
+(N\+S\+Dictionary $\ast$) -\/ \mbox{\hyperlink{protocol_mtop_login_protocol_01-p_a52b7b9f65a9bb55a7246de9bc2904d1a}{current\+Session}}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{protocol_mtop_login_protocol_01-p_afc9803feb43aa60bd2e1fb8fec043e1a}{is\+Processing\+Login}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_mtop_login_protocol_01-p_aa7126056122d52ded68c8fc843799ef3}{mark\+Invalid\+Login}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_mtop_login_protocol_01-p_ac22bf1c113294b7aba4c1f1e92445e4e}{logout}}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \mbox{\hyperlink{protocol_mtop_login_protocol_01-p_a64172bdbfef566337b9daa18c6140457}{shared\+Instantce}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{protocol_mtop_login_protocol_01-p_a52b7b9f65a9bb55a7246de9bc2904d1a}\label{protocol_mtop_login_protocol_01-p_a52b7b9f65a9bb55a7246de9bc2904d1a}} 
+\index{Mtop\+Login\+Protocol -\/p@{Mtop\+Login\+Protocol -\/p}!current\+Session@{current\+Session}}
+\index{current\+Session@{current\+Session}!Mtop\+Login\+Protocol -\/p@{Mtop\+Login\+Protocol -\/p}}
+\subsubsection{\texorpdfstring{current\+Session()}{currentSession()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Dictionary $\ast$ Mtop\+Login\+Protocol) current\+Session \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+获取当前登录会话信息 \begin{DoxyReturn}{Returns}
+会话信息 sid -\/$>$ session id (N\+S\+String$\ast$) user\+Id -\/$>$ 用户id (N\+S\+String$\ast$) ecode -\/$>$ ecode (N\+S\+String$\ast$) nick -\/$>$ 用户nick (N\+S\+String$\ast$) login\+Token -\/$>$ 登录令牌 (N\+S\+String$\ast$) sso\+Token -\/$>$ sso令牌 (N\+S\+String$\ast$) top\+Session -\/$>$ top授权 (N\+S\+String$\ast$) cookie -\/$>$ cookie (N\+S\+String$\ast$) ...... 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_mtop_login_protocol_01-p_afc9803feb43aa60bd2e1fb8fec043e1a}\label{protocol_mtop_login_protocol_01-p_afc9803feb43aa60bd2e1fb8fec043e1a}} 
+\index{Mtop\+Login\+Protocol -\/p@{Mtop\+Login\+Protocol -\/p}!is\+Processing\+Login@{is\+Processing\+Login}}
+\index{is\+Processing\+Login@{is\+Processing\+Login}!Mtop\+Login\+Protocol -\/p@{Mtop\+Login\+Protocol -\/p}}
+\subsubsection{\texorpdfstring{is\+Processing\+Login()}{isProcessingLogin()}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL Mtop\+Login\+Protocol) is\+Processing\+Login \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+返回当前\+Login\+Center是否已经在处理登录行为 \begin{DoxyReturn}{Returns}
+Y\+ES 已经有在处理中的登录行为 NO 没有正在处理的登录行为 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_mtop_login_protocol_01-p_a96dd71df504db90522a1045402cd8b61}\label{protocol_mtop_login_protocol_01-p_a96dd71df504db90522a1045402cd8b61}} 
+\index{Mtop\+Login\+Protocol -\/p@{Mtop\+Login\+Protocol -\/p}!is\+Valid\+Login@{is\+Valid\+Login}}
+\index{is\+Valid\+Login@{is\+Valid\+Login}!Mtop\+Login\+Protocol -\/p@{Mtop\+Login\+Protocol -\/p}}
+\subsubsection{\texorpdfstring{is\+Valid\+Login()}{isValidLogin()}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL Mtop\+Login\+Protocol) is\+Valid\+Login \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+判断当前用户是否有登录会话 \begin{DoxyReturn}{Returns}
+Y\+ES 本地有会话且本地判断会话未过期，但服务端可能判定会话无效 NO 本地无会话或本地判断会话已过期 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_mtop_login_protocol_01-p_ac22bf1c113294b7aba4c1f1e92445e4e}\label{protocol_mtop_login_protocol_01-p_ac22bf1c113294b7aba4c1f1e92445e4e}} 
+\index{Mtop\+Login\+Protocol -\/p@{Mtop\+Login\+Protocol -\/p}!logout@{logout}}
+\index{logout@{logout}!Mtop\+Login\+Protocol -\/p@{Mtop\+Login\+Protocol -\/p}}
+\subsubsection{\texorpdfstring{logout()}{logout()}}
+{\footnotesize\ttfamily -\/ (void Mtop\+Login\+Protocol) logout \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+登出 \mbox{\Hypertarget{protocol_mtop_login_protocol_01-p_aa7126056122d52ded68c8fc843799ef3}\label{protocol_mtop_login_protocol_01-p_aa7126056122d52ded68c8fc843799ef3}} 
+\index{Mtop\+Login\+Protocol -\/p@{Mtop\+Login\+Protocol -\/p}!mark\+Invalid\+Login@{mark\+Invalid\+Login}}
+\index{mark\+Invalid\+Login@{mark\+Invalid\+Login}!Mtop\+Login\+Protocol -\/p@{Mtop\+Login\+Protocol -\/p}}
+\subsubsection{\texorpdfstring{mark\+Invalid\+Login()}{markInvalidLogin()}}
+{\footnotesize\ttfamily -\/ (void Mtop\+Login\+Protocol) mark\+Invalid\+Login \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+标识本地session已经失效 \mbox{\Hypertarget{protocol_mtop_login_protocol_01-p_a64172bdbfef566337b9daa18c6140457}\label{protocol_mtop_login_protocol_01-p_a64172bdbfef566337b9daa18c6140457}} 
+\index{Mtop\+Login\+Protocol -\/p@{Mtop\+Login\+Protocol -\/p}!shared\+Instantce@{shared\+Instantce}}
+\index{shared\+Instantce@{shared\+Instantce}!Mtop\+Login\+Protocol -\/p@{Mtop\+Login\+Protocol -\/p}}
+\subsubsection{\texorpdfstring{shared\+Instantce()}{sharedInstantce()}}
+{\footnotesize\ttfamily + (id Mtop\+Login\+Protocol) shared\+Instantce \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [required]}}
+
+获取单例 
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Open\+Mtop\+Ext.\+framework/\+Headers/Mtop\+Login\+Protocol.\+h\end{DoxyCompactItemize}

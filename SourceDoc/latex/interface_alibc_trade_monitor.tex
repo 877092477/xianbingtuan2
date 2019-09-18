@@ -1,0 +1,107 @@
+\hypertarget{interface_alibc_trade_monitor}{}\section{Alibc\+Trade\+Monitor Class Reference}
+\label{interface_alibc_trade_monitor}\index{Alibc\+Trade\+Monitor@{Alibc\+Trade\+Monitor}}
+
+
+{\ttfamily \#import $<$Alibc\+Trade\+Monitor.\+h$>$}
+
+
+
+Inheritance diagram for Alibc\+Trade\+Monitor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{interface_alibc_trade_monitor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Alibc\+Trade\+Monitor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{interface_alibc_trade_monitor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_alibc_trade_monitor_abbc2b1649ba1bb7048bed3679e3d4edb}\label{interface_alibc_trade_monitor_abbc2b1649ba1bb7048bed3679e3d4edb}} 
+(instancetype) -\/ {\bfseries init\+With\+Name\+:}
+\item 
+\mbox{\Hypertarget{interface_alibc_trade_monitor_a49b15f812f42e7f801f9a47102505e51}\label{interface_alibc_trade_monitor_a49b15f812f42e7f801f9a47102505e51}} 
+(N\+S\+Dictionary $\ast$) -\/ {\bfseries benchmarkable\+Data\+Dictionary}
+\item 
+\mbox{\Hypertarget{interface_alibc_trade_monitor_aa87cb587e0bb6a768608aae9c722781b}\label{interface_alibc_trade_monitor_aa87cb587e0bb6a768608aae9c722781b}} 
+(N\+S\+Array$<$ id$<$ Alibc\+Trade\+Benchmarkable $>$$>$ $\ast$) -\/ {\bfseries all\+Benchmarkable\+Data}
+\item 
+\mbox{\Hypertarget{interface_alibc_trade_monitor_a24d0327ce5d0e965f90d18a80e1bb838}\label{interface_alibc_trade_monitor_a24d0327ce5d0e965f90d18a80e1bb838}} 
+(void) -\/ {\bfseries commit}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_alibc_trade_monitor_a2b923b8d35c1d9fd6fb3e6d157d95de3}\label{interface_alibc_trade_monitor_a2b923b8d35c1d9fd6fb3e6d157d95de3}} 
+(void) + {\bfseries register\+Monitor}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_alibc_trade_monitor_a1b0f81ce99f149493a2c96675c7e8e29}{module\+Name}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_alibc_trade_monitor_a0098089f5290f6b941001a5e2cd06bbd}{name}}
+\item 
+\mbox{\hyperlink{interface_alibc_trade_dimension}{Alibc\+Trade\+Dimension}} $\ast$ \mbox{\hyperlink{interface_alibc_trade_monitor_abf63c59e0f713da1ae437305babf53d4}{appkey\+Dimension}}
+\item 
+\mbox{\hyperlink{interface_alibc_trade_dimension}{Alibc\+Trade\+Dimension}} $\ast$ \mbox{\hyperlink{interface_alibc_trade_monitor_a847e588e8babab990a4ae51f0f2bbcdc}{app\+Version\+Dimension}}
+\item 
+\mbox{\hyperlink{interface_alibc_trade_dimension}{Alibc\+Trade\+Dimension}} $\ast$ \mbox{\hyperlink{interface_alibc_trade_monitor_a9e907925d76d671b54618341b695a607}{sdk\+Version\+Dimension}}
+\item 
+\mbox{\hyperlink{interface_alibc_trade_dimension}{Alibc\+Trade\+Dimension}} $\ast$ \mbox{\hyperlink{interface_alibc_trade_monitor_adaf42fd707fc67ee4b4bb42c0dcbde9e}{platform\+Dimension}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+性能监控器基本类 
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_alibc_trade_monitor_abf63c59e0f713da1ae437305babf53d4}\label{interface_alibc_trade_monitor_abf63c59e0f713da1ae437305babf53d4}} 
+\index{Alibc\+Trade\+Monitor@{Alibc\+Trade\+Monitor}!appkey\+Dimension@{appkey\+Dimension}}
+\index{appkey\+Dimension@{appkey\+Dimension}!Alibc\+Trade\+Monitor@{Alibc\+Trade\+Monitor}}
+\subsubsection{\texorpdfstring{appkey\+Dimension}{appkeyDimension}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_alibc_trade_dimension}{Alibc\+Trade\+Dimension}}$\ast$) appkey\+Dimension\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+App\+Key 维度 \mbox{\Hypertarget{interface_alibc_trade_monitor_a847e588e8babab990a4ae51f0f2bbcdc}\label{interface_alibc_trade_monitor_a847e588e8babab990a4ae51f0f2bbcdc}} 
+\index{Alibc\+Trade\+Monitor@{Alibc\+Trade\+Monitor}!app\+Version\+Dimension@{app\+Version\+Dimension}}
+\index{app\+Version\+Dimension@{app\+Version\+Dimension}!Alibc\+Trade\+Monitor@{Alibc\+Trade\+Monitor}}
+\subsubsection{\texorpdfstring{app\+Version\+Dimension}{appVersionDimension}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_alibc_trade_dimension}{Alibc\+Trade\+Dimension}}$\ast$) app\+Version\+Dimension\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+App Version 维度 \mbox{\Hypertarget{interface_alibc_trade_monitor_a1b0f81ce99f149493a2c96675c7e8e29}\label{interface_alibc_trade_monitor_a1b0f81ce99f149493a2c96675c7e8e29}} 
+\index{Alibc\+Trade\+Monitor@{Alibc\+Trade\+Monitor}!module\+Name@{module\+Name}}
+\index{module\+Name@{module\+Name}!Alibc\+Trade\+Monitor@{Alibc\+Trade\+Monitor}}
+\subsubsection{\texorpdfstring{module\+Name}{moduleName}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) module\+Name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+监控点所在模块名 \mbox{\Hypertarget{interface_alibc_trade_monitor_a0098089f5290f6b941001a5e2cd06bbd}\label{interface_alibc_trade_monitor_a0098089f5290f6b941001a5e2cd06bbd}} 
+\index{Alibc\+Trade\+Monitor@{Alibc\+Trade\+Monitor}!name@{name}}
+\index{name@{name}!Alibc\+Trade\+Monitor@{Alibc\+Trade\+Monitor}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+监控点名称 \mbox{\Hypertarget{interface_alibc_trade_monitor_adaf42fd707fc67ee4b4bb42c0dcbde9e}\label{interface_alibc_trade_monitor_adaf42fd707fc67ee4b4bb42c0dcbde9e}} 
+\index{Alibc\+Trade\+Monitor@{Alibc\+Trade\+Monitor}!platform\+Dimension@{platform\+Dimension}}
+\index{platform\+Dimension@{platform\+Dimension}!Alibc\+Trade\+Monitor@{Alibc\+Trade\+Monitor}}
+\subsubsection{\texorpdfstring{platform\+Dimension}{platformDimension}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_alibc_trade_dimension}{Alibc\+Trade\+Dimension}}$\ast$) platform\+Dimension\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+平台指标 \mbox{\Hypertarget{interface_alibc_trade_monitor_a9e907925d76d671b54618341b695a607}\label{interface_alibc_trade_monitor_a9e907925d76d671b54618341b695a607}} 
+\index{Alibc\+Trade\+Monitor@{Alibc\+Trade\+Monitor}!sdk\+Version\+Dimension@{sdk\+Version\+Dimension}}
+\index{sdk\+Version\+Dimension@{sdk\+Version\+Dimension}!Alibc\+Trade\+Monitor@{Alibc\+Trade\+Monitor}}
+\subsubsection{\texorpdfstring{sdk\+Version\+Dimension}{sdkVersionDimension}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_alibc_trade_dimension}{Alibc\+Trade\+Dimension}}$\ast$) sdk\+Version\+Dimension\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+S\+DK Version 维度 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Alibc\+Trade\+Common.\+framework/\+Headers/Alibc\+Trade\+Monitor.\+h\end{DoxyCompactItemize}

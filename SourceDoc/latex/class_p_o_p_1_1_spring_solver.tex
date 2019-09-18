@@ -1,0 +1,92 @@
+\hypertarget{class_p_o_p_1_1_spring_solver}{}\section{P\+OP\+:\+:Spring\+Solver$<$ T $>$ Class Template Reference}
+\label{class_p_o_p_1_1_spring_solver}\index{P\+O\+P\+::\+Spring\+Solver$<$ T $>$@{P\+O\+P\+::\+Spring\+Solver$<$ T $>$}}
+
+
+{\ttfamily \#include $<$P\+O\+P\+Spring\+Solver.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_p_o_p_1_1_spring_solver_a96cc1e1b11e2ad7eda996a237934ee23}\label{class_p_o_p_1_1_spring_solver_a96cc1e1b11e2ad7eda996a237934ee23}} 
+{\bfseries Spring\+Solver} (double k, double b, double m=1)
+\item 
+\mbox{\Hypertarget{class_p_o_p_1_1_spring_solver_aa7a738e12fecab509749095fa676ead5}\label{class_p_o_p_1_1_spring_solver_aa7a738e12fecab509749095fa676ead5}} 
+bool {\bfseries started} ()
+\item 
+\mbox{\Hypertarget{class_p_o_p_1_1_spring_solver_ac0232661f5dd1ba0c7245a1ae235a069}\label{class_p_o_p_1_1_spring_solver_ac0232661f5dd1ba0c7245a1ae235a069}} 
+void {\bfseries set\+Constants} (double k, double b, double m)
+\item 
+\mbox{\Hypertarget{class_p_o_p_1_1_spring_solver_a1456ab3b2007d7baf8c7e19ed11398f4}\label{class_p_o_p_1_1_spring_solver_a1456ab3b2007d7baf8c7e19ed11398f4}} 
+void {\bfseries set\+Threshold} (double t)
+\item 
+\mbox{\Hypertarget{class_p_o_p_1_1_spring_solver_af7d86a44923abf9bf92db308dc217612}\label{class_p_o_p_1_1_spring_solver_af7d86a44923abf9bf92db308dc217612}} 
+T {\bfseries acceleration} (const \mbox{\hyperlink{struct_p_o_p_1_1_s_s_state}{S\+S\+State}}$<$ T $>$ \&state, double t)
+\item 
+\mbox{\Hypertarget{class_p_o_p_1_1_spring_solver_a2e2cc9a5a0c9f0181b6e38e2957c0e34}\label{class_p_o_p_1_1_spring_solver_a2e2cc9a5a0c9f0181b6e38e2957c0e34}} 
+\mbox{\hyperlink{struct_p_o_p_1_1_s_s_derivative}{S\+S\+Derivative}}$<$ T $>$ {\bfseries evaluate} (const \mbox{\hyperlink{struct_p_o_p_1_1_s_s_state}{S\+S\+State}}$<$ T $>$ \&initial, double t)
+\item 
+\mbox{\Hypertarget{class_p_o_p_1_1_spring_solver_a11481fb1175c414f34632fec46d7a485}\label{class_p_o_p_1_1_spring_solver_a11481fb1175c414f34632fec46d7a485}} 
+\mbox{\hyperlink{struct_p_o_p_1_1_s_s_derivative}{S\+S\+Derivative}}$<$ T $>$ {\bfseries evaluate} (const \mbox{\hyperlink{struct_p_o_p_1_1_s_s_state}{S\+S\+State}}$<$ T $>$ \&initial, double t, double dt, const \mbox{\hyperlink{struct_p_o_p_1_1_s_s_derivative}{S\+S\+Derivative}}$<$ T $>$ \&d)
+\item 
+\mbox{\Hypertarget{class_p_o_p_1_1_spring_solver_a78a0959ade98d12b699617b1aa8ce127}\label{class_p_o_p_1_1_spring_solver_a78a0959ade98d12b699617b1aa8ce127}} 
+void {\bfseries integrate} (\mbox{\hyperlink{struct_p_o_p_1_1_s_s_state}{S\+S\+State}}$<$ T $>$ \&state, double t, double dt)
+\item 
+\mbox{\Hypertarget{class_p_o_p_1_1_spring_solver_a6b63d72b07f26a68160fbaf5220f86e9}\label{class_p_o_p_1_1_spring_solver_a6b63d72b07f26a68160fbaf5220f86e9}} 
+\mbox{\hyperlink{struct_p_o_p_1_1_s_s_state}{S\+S\+State}}$<$ T $>$ {\bfseries interpolate} (const \mbox{\hyperlink{struct_p_o_p_1_1_s_s_state}{S\+S\+State}}$<$ T $>$ \&previous, const \mbox{\hyperlink{struct_p_o_p_1_1_s_s_state}{S\+S\+State}}$<$ T $>$ \&current, double alpha)
+\item 
+\mbox{\Hypertarget{class_p_o_p_1_1_spring_solver_ac06df8a265f5a3a209f2a84fcc6e08ee}\label{class_p_o_p_1_1_spring_solver_ac06df8a265f5a3a209f2a84fcc6e08ee}} 
+void {\bfseries advance} (\mbox{\hyperlink{struct_p_o_p_1_1_s_s_state}{S\+S\+State}}$<$ T $>$ \&state, double t, double dt)
+\item 
+\mbox{\Hypertarget{class_p_o_p_1_1_spring_solver_a1e1bea30a3e7ce42de0521666147e12c}\label{class_p_o_p_1_1_spring_solver_a1e1bea30a3e7ce42de0521666147e12c}} 
+bool {\bfseries has\+Converged} ()
+\item 
+\mbox{\Hypertarget{class_p_o_p_1_1_spring_solver_a9b51b8b9f6c7991a2ef0eff842e482ec}\label{class_p_o_p_1_1_spring_solver_a9b51b8b9f6c7991a2ef0eff842e482ec}} 
+void {\bfseries reset} ()
+\item 
+\mbox{\Hypertarget{class_p_o_p_1_1_spring_solver_a96cc1e1b11e2ad7eda996a237934ee23}\label{class_p_o_p_1_1_spring_solver_a96cc1e1b11e2ad7eda996a237934ee23}} 
+{\bfseries Spring\+Solver} (double k, double b, double m=1)
+\item 
+\mbox{\Hypertarget{class_p_o_p_1_1_spring_solver_aa7a738e12fecab509749095fa676ead5}\label{class_p_o_p_1_1_spring_solver_aa7a738e12fecab509749095fa676ead5}} 
+bool {\bfseries started} ()
+\item 
+\mbox{\Hypertarget{class_p_o_p_1_1_spring_solver_ac0232661f5dd1ba0c7245a1ae235a069}\label{class_p_o_p_1_1_spring_solver_ac0232661f5dd1ba0c7245a1ae235a069}} 
+void {\bfseries set\+Constants} (double k, double b, double m)
+\item 
+\mbox{\Hypertarget{class_p_o_p_1_1_spring_solver_a1456ab3b2007d7baf8c7e19ed11398f4}\label{class_p_o_p_1_1_spring_solver_a1456ab3b2007d7baf8c7e19ed11398f4}} 
+void {\bfseries set\+Threshold} (double t)
+\item 
+\mbox{\Hypertarget{class_p_o_p_1_1_spring_solver_af7d86a44923abf9bf92db308dc217612}\label{class_p_o_p_1_1_spring_solver_af7d86a44923abf9bf92db308dc217612}} 
+T {\bfseries acceleration} (const \mbox{\hyperlink{struct_p_o_p_1_1_s_s_state}{S\+S\+State}}$<$ T $>$ \&state, double t)
+\item 
+\mbox{\Hypertarget{class_p_o_p_1_1_spring_solver_a2e2cc9a5a0c9f0181b6e38e2957c0e34}\label{class_p_o_p_1_1_spring_solver_a2e2cc9a5a0c9f0181b6e38e2957c0e34}} 
+\mbox{\hyperlink{struct_p_o_p_1_1_s_s_derivative}{S\+S\+Derivative}}$<$ T $>$ {\bfseries evaluate} (const \mbox{\hyperlink{struct_p_o_p_1_1_s_s_state}{S\+S\+State}}$<$ T $>$ \&initial, double t)
+\item 
+\mbox{\Hypertarget{class_p_o_p_1_1_spring_solver_a11481fb1175c414f34632fec46d7a485}\label{class_p_o_p_1_1_spring_solver_a11481fb1175c414f34632fec46d7a485}} 
+\mbox{\hyperlink{struct_p_o_p_1_1_s_s_derivative}{S\+S\+Derivative}}$<$ T $>$ {\bfseries evaluate} (const \mbox{\hyperlink{struct_p_o_p_1_1_s_s_state}{S\+S\+State}}$<$ T $>$ \&initial, double t, double dt, const \mbox{\hyperlink{struct_p_o_p_1_1_s_s_derivative}{S\+S\+Derivative}}$<$ T $>$ \&d)
+\item 
+\mbox{\Hypertarget{class_p_o_p_1_1_spring_solver_a78a0959ade98d12b699617b1aa8ce127}\label{class_p_o_p_1_1_spring_solver_a78a0959ade98d12b699617b1aa8ce127}} 
+void {\bfseries integrate} (\mbox{\hyperlink{struct_p_o_p_1_1_s_s_state}{S\+S\+State}}$<$ T $>$ \&state, double t, double dt)
+\item 
+\mbox{\Hypertarget{class_p_o_p_1_1_spring_solver_a6b63d72b07f26a68160fbaf5220f86e9}\label{class_p_o_p_1_1_spring_solver_a6b63d72b07f26a68160fbaf5220f86e9}} 
+\mbox{\hyperlink{struct_p_o_p_1_1_s_s_state}{S\+S\+State}}$<$ T $>$ {\bfseries interpolate} (const \mbox{\hyperlink{struct_p_o_p_1_1_s_s_state}{S\+S\+State}}$<$ T $>$ \&previous, const \mbox{\hyperlink{struct_p_o_p_1_1_s_s_state}{S\+S\+State}}$<$ T $>$ \&current, double alpha)
+\item 
+\mbox{\Hypertarget{class_p_o_p_1_1_spring_solver_ac06df8a265f5a3a209f2a84fcc6e08ee}\label{class_p_o_p_1_1_spring_solver_ac06df8a265f5a3a209f2a84fcc6e08ee}} 
+void {\bfseries advance} (\mbox{\hyperlink{struct_p_o_p_1_1_s_s_state}{S\+S\+State}}$<$ T $>$ \&state, double t, double dt)
+\item 
+\mbox{\Hypertarget{class_p_o_p_1_1_spring_solver_a1e1bea30a3e7ce42de0521666147e12c}\label{class_p_o_p_1_1_spring_solver_a1e1bea30a3e7ce42de0521666147e12c}} 
+bool {\bfseries has\+Converged} ()
+\item 
+\mbox{\Hypertarget{class_p_o_p_1_1_spring_solver_a9b51b8b9f6c7991a2ef0eff842e482ec}\label{class_p_o_p_1_1_spring_solver_a9b51b8b9f6c7991a2ef0eff842e482ec}} 
+void {\bfseries reset} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class P\+O\+P\+::\+Spring\+Solver$<$ T $>$}
+
+Templated spring solver class. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/pop/P\+O\+P\+Spring\+Solver.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="+[POPSpringAnimation animationWithPropertyNamed:]" name="+[POPSpringAnimation animationWithPropertyNamed:]">
+<area shape="rect" id="node2" href="$interface_p_o_p_spring_animation.html#aec360b7313cea71ed6133ff183c1423c" title="+[POPSpringAnimation\l animation]" alt="" coords="273,5,432,44"/>
+<area shape="rect" id="node3" href="$interface_p_o_p_animatable_property.html#ad11b0dd7ba703f4ba087052ce57c12b4" title="+[POPAnimatableProperty\l propertyWithName:]" alt="" coords="264,68,441,107"/>
+<area shape="rect" id="node4" href="$interface_p_o_p_animatable_property.html#aad3690254419e0353ebfa982a22d8c6e" title="+[POPAnimatableProperty\l propertyWithName:initializer:]" alt="" coords="489,68,688,107"/>
+</map>

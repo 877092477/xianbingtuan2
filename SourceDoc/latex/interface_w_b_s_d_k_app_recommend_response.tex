@@ -1,0 +1,76 @@
+\hypertarget{interface_w_b_s_d_k_app_recommend_response}{}\section{W\+B\+S\+D\+K\+App\+Recommend\+Response Class Reference}
+\label{interface_w_b_s_d_k_app_recommend_response}\index{W\+B\+S\+D\+K\+App\+Recommend\+Response@{W\+B\+S\+D\+K\+App\+Recommend\+Response}}
+
+
+{\ttfamily \#import $<$Weibo\+S\+D\+K.\+h$>$}
+
+
+
+Inheritance diagram for W\+B\+S\+D\+K\+App\+Recommend\+Response\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{interface_w_b_s_d_k_app_recommend_response__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for W\+B\+S\+D\+K\+App\+Recommend\+Response\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{interface_w_b_s_d_k_app_recommend_response__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_w_b_s_d_k_app_recommend_response_a1360bf8efd7b5af2050a1c03a12af72d}\label{interface_w_b_s_d_k_app_recommend_response_a1360bf8efd7b5af2050a1c03a12af72d}} 
+\mbox{\hyperlink{interface_w_b_authorize_response}{W\+B\+Authorize\+Response}} $\ast$ {\bfseries auth\+Response}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_w_b_s_d_k_app_recommend_response_a3d45cebd15f2d640e7808d61509d90ed}{user\+ID}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_w_b_s_d_k_app_recommend_response_ab50cf37d24bfaea16140ce13be0298a8}{access\+Token}}
+\item 
+N\+S\+Date $\ast$ \mbox{\hyperlink{interface_w_b_s_d_k_app_recommend_response_a10370925e55a854349b636c4ef3507a5}{expiration\+Date}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_w_b_s_d_k_app_recommend_response_a5d040c11597dfa4448e61255939de3c3}{refresh\+Token}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+第三方应用私信好友推荐app的响应
+
+\mbox{\hyperlink{interface_w_b_s_d_k_app_recommend_response}{W\+B\+S\+D\+K\+App\+Recommend\+Response}} 结构中仅包含常用的 user\+ID 、access\+Token 和 expiration\+Date 信息，其他的认证信息（比如部分应用可以获取的 refresh\+\_\+token 信息）会统一存放到 user\+Info 中 
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_w_b_s_d_k_app_recommend_response_ab50cf37d24bfaea16140ce13be0298a8}\label{interface_w_b_s_d_k_app_recommend_response_ab50cf37d24bfaea16140ce13be0298a8}} 
+\index{W\+B\+S\+D\+K\+App\+Recommend\+Response@{W\+B\+S\+D\+K\+App\+Recommend\+Response}!access\+Token@{access\+Token}}
+\index{access\+Token@{access\+Token}!W\+B\+S\+D\+K\+App\+Recommend\+Response@{W\+B\+S\+D\+K\+App\+Recommend\+Response}}
+\subsubsection{\texorpdfstring{access\+Token}{accessToken}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) access\+Token\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+认证口令 \mbox{\Hypertarget{interface_w_b_s_d_k_app_recommend_response_a10370925e55a854349b636c4ef3507a5}\label{interface_w_b_s_d_k_app_recommend_response_a10370925e55a854349b636c4ef3507a5}} 
+\index{W\+B\+S\+D\+K\+App\+Recommend\+Response@{W\+B\+S\+D\+K\+App\+Recommend\+Response}!expiration\+Date@{expiration\+Date}}
+\index{expiration\+Date@{expiration\+Date}!W\+B\+S\+D\+K\+App\+Recommend\+Response@{W\+B\+S\+D\+K\+App\+Recommend\+Response}}
+\subsubsection{\texorpdfstring{expiration\+Date}{expirationDate}}
+{\footnotesize\ttfamily -\/ (N\+S\+Date $\ast$) expiration\+Date\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+认证过期时间 \mbox{\Hypertarget{interface_w_b_s_d_k_app_recommend_response_a5d040c11597dfa4448e61255939de3c3}\label{interface_w_b_s_d_k_app_recommend_response_a5d040c11597dfa4448e61255939de3c3}} 
+\index{W\+B\+S\+D\+K\+App\+Recommend\+Response@{W\+B\+S\+D\+K\+App\+Recommend\+Response}!refresh\+Token@{refresh\+Token}}
+\index{refresh\+Token@{refresh\+Token}!W\+B\+S\+D\+K\+App\+Recommend\+Response@{W\+B\+S\+D\+K\+App\+Recommend\+Response}}
+\subsubsection{\texorpdfstring{refresh\+Token}{refreshToken}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) refresh\+Token\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+当认证口令过期时用于换取认证口令的更新口令 \mbox{\Hypertarget{interface_w_b_s_d_k_app_recommend_response_a3d45cebd15f2d640e7808d61509d90ed}\label{interface_w_b_s_d_k_app_recommend_response_a3d45cebd15f2d640e7808d61509d90ed}} 
+\index{W\+B\+S\+D\+K\+App\+Recommend\+Response@{W\+B\+S\+D\+K\+App\+Recommend\+Response}!user\+ID@{user\+ID}}
+\index{user\+ID@{user\+ID}!W\+B\+S\+D\+K\+App\+Recommend\+Response@{W\+B\+S\+D\+K\+App\+Recommend\+Response}}
+\subsubsection{\texorpdfstring{user\+ID}{userID}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) user\+ID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+用户\+ID 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+U\+Meng\+U\+Share/Weibo\+S\+D\+K.\+h\end{DoxyCompactItemize}

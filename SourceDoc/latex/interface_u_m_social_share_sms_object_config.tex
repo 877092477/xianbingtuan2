@@ -1,0 +1,97 @@
+\hypertarget{interface_u_m_social_share_sms_object_config}{}\section{U\+M\+Social\+Share\+Sms\+Object\+Config Class Reference}
+\label{interface_u_m_social_share_sms_object_config}\index{U\+M\+Social\+Share\+Sms\+Object\+Config@{U\+M\+Social\+Share\+Sms\+Object\+Config}}
+
+
+{\ttfamily \#import $<$U\+M\+Social\+Handler.\+h$>$}
+
+
+
+Inheritance diagram for U\+M\+Social\+Share\+Sms\+Object\+Config\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{interface_u_m_social_share_sms_object_config__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for U\+M\+Social\+Share\+Sms\+Object\+Config\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{interface_u_m_social_share_sms_object_config__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+U\+Integer \mbox{\hyperlink{interface_u_m_social_share_sms_object_config_a9e41256671a3df185fa39c1fecb2803a}{recipient\+Limit}}
+\item 
+N\+S\+U\+Integer \mbox{\hyperlink{interface_u_m_social_share_sms_object_config_ad45c9c32f8b8f5d49f5f943694d6e4ce}{sms\+Content\+Limit}}
+\item 
+N\+S\+U\+Integer \mbox{\hyperlink{interface_u_m_social_share_sms_object_config_a6b29a34f2e3623a1828fe96bb70118d1}{sms\+Image\+Data\+Limit}}
+\item 
+\mbox{\Hypertarget{interface_u_m_social_share_sms_object_config_ad2789b0adb9a7c8e4a9a0a6537e7e0e9}\label{interface_u_m_social_share_sms_object_config_ad2789b0adb9a7c8e4a9a0a6537e7e0e9}} 
+N\+S\+U\+Integer {\bfseries sms\+Image\+Url\+Limit}
+\item 
+N\+S\+U\+Integer \mbox{\hyperlink{interface_u_m_social_share_sms_object_config_a8ebf43a132b59bf4ae5c5772a433e513}{sms\+Send\+Data\+Limit}}
+\item 
+N\+S\+Array $\ast$ \mbox{\hyperlink{interface_u_m_social_share_sms_object_config_a8f083ca4e81af1d25b2a05d5c7155012}{file\+Type}}
+\item 
+N\+S\+U\+Integer \mbox{\hyperlink{interface_u_m_social_share_sms_object_config_a5c7665fef88f20817ba5a55378dffa1b}{file\+Name\+Limit}}
+\item 
+N\+S\+U\+Integer \mbox{\hyperlink{interface_u_m_social_share_sms_object_config_a426ebaaeaeb7016c2df3e98e582fec07}{file\+Url\+Limit}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+分享\+Email的类型配置 
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_u_m_social_share_sms_object_config_a5c7665fef88f20817ba5a55378dffa1b}\label{interface_u_m_social_share_sms_object_config_a5c7665fef88f20817ba5a55378dffa1b}} 
+\index{U\+M\+Social\+Share\+Sms\+Object\+Config@{U\+M\+Social\+Share\+Sms\+Object\+Config}!file\+Name\+Limit@{file\+Name\+Limit}}
+\index{file\+Name\+Limit@{file\+Name\+Limit}!U\+M\+Social\+Share\+Sms\+Object\+Config@{U\+M\+Social\+Share\+Sms\+Object\+Config}}
+\subsubsection{\texorpdfstring{file\+Name\+Limit}{fileNameLimit}}
+{\footnotesize\ttfamily -\/ (N\+S\+U\+Integer) file\+Name\+Limit\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+文件名,(例如图片 image\+Name.\+png, 文件名后要跟文件后缀名，否则没法识别，导致类似图片不显示的问题) \mbox{\Hypertarget{interface_u_m_social_share_sms_object_config_a8f083ca4e81af1d25b2a05d5c7155012}\label{interface_u_m_social_share_sms_object_config_a8f083ca4e81af1d25b2a05d5c7155012}} 
+\index{U\+M\+Social\+Share\+Sms\+Object\+Config@{U\+M\+Social\+Share\+Sms\+Object\+Config}!file\+Type@{file\+Type}}
+\index{file\+Type@{file\+Type}!U\+M\+Social\+Share\+Sms\+Object\+Config@{U\+M\+Social\+Share\+Sms\+Object\+Config}}
+\subsubsection{\texorpdfstring{file\+Type}{fileType}}
+{\footnotesize\ttfamily -\/ (N\+S\+Array $\ast$) file\+Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+文件格式 必填，必须指定数据格式，如png图片格式应传入"png" \mbox{\Hypertarget{interface_u_m_social_share_sms_object_config_a426ebaaeaeb7016c2df3e98e582fec07}\label{interface_u_m_social_share_sms_object_config_a426ebaaeaeb7016c2df3e98e582fec07}} 
+\index{U\+M\+Social\+Share\+Sms\+Object\+Config@{U\+M\+Social\+Share\+Sms\+Object\+Config}!file\+Url\+Limit@{file\+Url\+Limit}}
+\index{file\+Url\+Limit@{file\+Url\+Limit}!U\+M\+Social\+Share\+Sms\+Object\+Config@{U\+M\+Social\+Share\+Sms\+Object\+Config}}
+\subsubsection{\texorpdfstring{file\+Url\+Limit}{fileUrlLimit}}
+{\footnotesize\ttfamily -\/ (N\+S\+U\+Integer) file\+Url\+Limit\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+文件地址url \mbox{\Hypertarget{interface_u_m_social_share_sms_object_config_a9e41256671a3df185fa39c1fecb2803a}\label{interface_u_m_social_share_sms_object_config_a9e41256671a3df185fa39c1fecb2803a}} 
+\index{U\+M\+Social\+Share\+Sms\+Object\+Config@{U\+M\+Social\+Share\+Sms\+Object\+Config}!recipient\+Limit@{recipient\+Limit}}
+\index{recipient\+Limit@{recipient\+Limit}!U\+M\+Social\+Share\+Sms\+Object\+Config@{U\+M\+Social\+Share\+Sms\+Object\+Config}}
+\subsubsection{\texorpdfstring{recipient\+Limit}{recipientLimit}}
+{\footnotesize\ttfamily -\/ (N\+S\+U\+Integer) recipient\+Limit\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+接收人 \mbox{\Hypertarget{interface_u_m_social_share_sms_object_config_ad45c9c32f8b8f5d49f5f943694d6e4ce}\label{interface_u_m_social_share_sms_object_config_ad45c9c32f8b8f5d49f5f943694d6e4ce}} 
+\index{U\+M\+Social\+Share\+Sms\+Object\+Config@{U\+M\+Social\+Share\+Sms\+Object\+Config}!sms\+Content\+Limit@{sms\+Content\+Limit}}
+\index{sms\+Content\+Limit@{sms\+Content\+Limit}!U\+M\+Social\+Share\+Sms\+Object\+Config@{U\+M\+Social\+Share\+Sms\+Object\+Config}}
+\subsubsection{\texorpdfstring{sms\+Content\+Limit}{smsContentLimit}}
+{\footnotesize\ttfamily -\/ (N\+S\+U\+Integer) sms\+Content\+Limit\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+文本内容 \mbox{\Hypertarget{interface_u_m_social_share_sms_object_config_a6b29a34f2e3623a1828fe96bb70118d1}\label{interface_u_m_social_share_sms_object_config_a6b29a34f2e3623a1828fe96bb70118d1}} 
+\index{U\+M\+Social\+Share\+Sms\+Object\+Config@{U\+M\+Social\+Share\+Sms\+Object\+Config}!sms\+Image\+Data\+Limit@{sms\+Image\+Data\+Limit}}
+\index{sms\+Image\+Data\+Limit@{sms\+Image\+Data\+Limit}!U\+M\+Social\+Share\+Sms\+Object\+Config@{U\+M\+Social\+Share\+Sms\+Object\+Config}}
+\subsubsection{\texorpdfstring{sms\+Image\+Data\+Limit}{smsImageDataLimit}}
+{\footnotesize\ttfamily -\/ (N\+S\+U\+Integer) sms\+Image\+Data\+Limit\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+图片 \mbox{\Hypertarget{interface_u_m_social_share_sms_object_config_a8ebf43a132b59bf4ae5c5772a433e513}\label{interface_u_m_social_share_sms_object_config_a8ebf43a132b59bf4ae5c5772a433e513}} 
+\index{U\+M\+Social\+Share\+Sms\+Object\+Config@{U\+M\+Social\+Share\+Sms\+Object\+Config}!sms\+Send\+Data\+Limit@{sms\+Send\+Data\+Limit}}
+\index{sms\+Send\+Data\+Limit@{sms\+Send\+Data\+Limit}!U\+M\+Social\+Share\+Sms\+Object\+Config@{U\+M\+Social\+Share\+Sms\+Object\+Config}}
+\subsubsection{\texorpdfstring{sms\+Send\+Data\+Limit}{smsSendDataLimit}}
+{\footnotesize\ttfamily -\/ (N\+S\+U\+Integer) sms\+Send\+Data\+Limit\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+文件数据（\+N\+S\+Data） 必填 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Public/\+U\+Meng\+U\+Share/\+U\+M\+Social\+Core/U\+M\+Social\+Handler.\+h\end{DoxyCompactItemize}

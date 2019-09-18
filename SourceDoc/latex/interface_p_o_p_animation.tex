@@ -1,0 +1,288 @@
+\hypertarget{interface_p_o_p_animation}{}\section{P\+O\+P\+Animation Class Reference}
+\label{interface_p_o_p_animation}\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+
+
+{\ttfamily \#import $<$P\+O\+P\+Animation.\+h$>$}
+
+
+
+Inheritance diagram for P\+O\+P\+Animation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_p_o_p_animation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for P\+O\+P\+Animation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{interface_p_o_p_animation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void($^\wedge$)) -\/ \mbox{\hyperlink{interface_p_o_p_animation_aa1e092d1ed9ba72340f8aefc71b8d817}{animation\+Did\+Start\+Block}}
+\item 
+(void($^\wedge$)) -\/ \mbox{\hyperlink{interface_p_o_p_animation_ab4e0f5edf809b633029e45797eabd196}{animation\+Did\+Reach\+To\+Value\+Block}}
+\item 
+(void($^\wedge$)) -\/ \mbox{\hyperlink{interface_p_o_p_animation_ab6461bce27fd84fc22f86a4560d2273f}{completion\+Block}}
+\item 
+(void($^\wedge$)) -\/ \mbox{\hyperlink{interface_p_o_p_animation_aaf4c9e53a36f1ad00866fff7359bb3f4}{animation\+Did\+Apply\+Block}}
+\item 
+(void($^\wedge$)) -\/ \mbox{\hyperlink{interface_p_o_p_animation_aa1e092d1ed9ba72340f8aefc71b8d817}{animation\+Did\+Start\+Block}}
+\item 
+(void($^\wedge$)) -\/ \mbox{\hyperlink{interface_p_o_p_animation_ab4e0f5edf809b633029e45797eabd196}{animation\+Did\+Reach\+To\+Value\+Block}}
+\item 
+(void($^\wedge$)) -\/ \mbox{\hyperlink{interface_p_o_p_animation_ab6461bce27fd84fc22f86a4560d2273f}{completion\+Block}}
+\item 
+(void($^\wedge$)) -\/ \mbox{\hyperlink{interface_p_o_p_animation_aaf4c9e53a36f1ad00866fff7359bb3f4}{animation\+Did\+Apply\+Block}}
+\item 
+\mbox{\Hypertarget{interface_p_o_p_animation_a4a7c11161e29d98c82ffc8357a3a5c33}\label{interface_p_o_p_animation_a4a7c11161e29d98c82ffc8357a3a5c33}} 
+(instancetype) -\/ {\bfseries \+\_\+init}{\ttfamily  \mbox{[}implementation\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_p_o_p_animation_a4a7c11161e29d98c82ffc8357a3a5c33}\label{interface_p_o_p_animation_a4a7c11161e29d98c82ffc8357a3a5c33}} 
+(instancetype) -\/ {\bfseries \+\_\+init}{\ttfamily  \mbox{[}implementation\mbox{]}}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{interface_p_o_p_animation_a2156e24577e9e6b3dddf47c6b4249e7f}{\+\_\+advance\+:current\+Time\+:elapsed\+Time\+:}}{\ttfamily  \mbox{[}implementation\mbox{]}}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{interface_p_o_p_animation_a2156e24577e9e6b3dddf47c6b4249e7f}{\+\_\+advance\+:current\+Time\+:elapsed\+Time\+:}}{\ttfamily  \mbox{[}implementation\mbox{]}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_p_o_p_animation_a4558b9f70108f420d045f2605eb76507}{\+\_\+append\+Description\+:debug\+:}}{\ttfamily  \mbox{[}implementation\mbox{]}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_p_o_p_animation_a4558b9f70108f420d045f2605eb76507}{\+\_\+append\+Description\+:debug\+:}}{\ttfamily  \mbox{[}implementation\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_p_o_p_animation_a1b1b7754474177fb9559b6aef5d8a612}\label{interface_p_o_p_animation_a1b1b7754474177fb9559b6aef5d8a612}} 
+struct \mbox{\hyperlink{struct___p_o_p_animation_state}{\+\_\+\+P\+O\+P\+Animation\+State}} $\ast$ {\bfseries \+\_\+state}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_p_o_p_animation_a021a12fa53c6acee3bd2726ae194e58a}{name}}
+\item 
+C\+F\+Time\+Interval \mbox{\hyperlink{interface_p_o_p_animation_a7cac25bf5f165045c6707fc26079cd42}{begin\+Time}}
+\item 
+id \mbox{\hyperlink{interface_p_o_p_animation_ab4000b657f7d991a1c2639c6bd787b70}{delegate}}
+\item 
+\mbox{\hyperlink{interface_p_o_p_animation_tracer}{P\+O\+P\+Animation\+Tracer}} $\ast$ \mbox{\hyperlink{interface_p_o_p_animation_a99f2f80821714cc3d9eaa1c2a70c12bc}{tracer}}
+\item 
+void($^\wedge$ \mbox{\hyperlink{interface_p_o_p_animation_aa014835f374d509dbb6b0ee1985e3523}{animation\+Did\+Start\+Block}} )(\mbox{\hyperlink{interface_p_o_p_animation}{P\+O\+P\+Animation}} $\ast$anim)
+\item 
+void($^\wedge$ \mbox{\hyperlink{interface_p_o_p_animation_adc69ed91e734a83006e8be24c0f9c2ac}{animation\+Did\+Reach\+To\+Value\+Block}} )(\mbox{\hyperlink{interface_p_o_p_animation}{P\+O\+P\+Animation}} $\ast$anim)
+\item 
+void($^\wedge$ \mbox{\hyperlink{interface_p_o_p_animation_ab1f8ca86441103080dd908be44631442}{completion\+Block}} )(\mbox{\hyperlink{interface_p_o_p_animation}{P\+O\+P\+Animation}} $\ast$anim, B\+O\+OL finished)
+\item 
+void($^\wedge$ \mbox{\hyperlink{interface_p_o_p_animation_ae7793f881ec2a41ed014a443154603fc}{animation\+Did\+Apply\+Block}} )(\mbox{\hyperlink{interface_p_o_p_animation}{P\+O\+P\+Animation}} $\ast$anim)
+\item 
+B\+O\+OL \mbox{\hyperlink{interface_p_o_p_animation_a9a08ee39f86e903c893cb04ad4eb533d}{removed\+On\+Completion}}
+\item 
+B\+O\+OL \mbox{\hyperlink{interface_p_o_p_animation_a7ae9bf4e6d712c37d9e70e90079b96bd}{paused}}
+\item 
+B\+O\+OL \mbox{\hyperlink{interface_p_o_p_animation_a359e335e7c38327db8aa081416e2e90d}{autoreverses}}
+\item 
+N\+S\+Integer \mbox{\hyperlink{interface_p_o_p_animation_acd4599f0c1d8147acbb6118c8d51ba8b}{repeat\+Count}}
+\item 
+B\+O\+OL \mbox{\hyperlink{interface_p_o_p_animation_a0f886a54d7411e3b3e1ef78566c0bc30}{repeat\+Forever}}
+\item 
+\mbox{\Hypertarget{interface_p_o_p_animation_af3fdf396d4bb8953fa3a7d9bfc499526}\label{interface_p_o_p_animation_af3fdf396d4bb8953fa3a7d9bfc499526}} 
+\mbox{\hyperlink{class_p_o_p_1_1_spring_solver}{Spring\+Solver4d}} $\ast$ {\bfseries solver}{\ttfamily  \mbox{[}implementation\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_p_o_p_animation_a7dc902af93dccff785e0b7ac004c28a4}\label{interface_p_o_p_animation_a7dc902af93dccff785e0b7ac004c28a4}} 
+P\+O\+P\+Animation\+Type {\bfseries type}{\ttfamily  \mbox{[}implementation\mbox{]}}
+\item 
+id \mbox{\hyperlink{interface_p_o_p_animation_aa806865c6db615b3dc956ab83ad5108f}{current\+Value}}{\ttfamily  \mbox{[}implementation\mbox{]}}
+\item 
+N\+S\+Array $\ast$ \mbox{\hyperlink{interface_p_o_p_animation_a0934411549c858c08c34d8de25116437}{progress\+Markers}}{\ttfamily  \mbox{[}implementation\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The abstract animation base class.  Instantiate and use one of the concrete animation subclasses. 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_p_o_p_animation_a2156e24577e9e6b3dddf47c6b4249e7f}\label{interface_p_o_p_animation_a2156e24577e9e6b3dddf47c6b4249e7f}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!\+\_\+advance\+:current\+Time\+:elapsed\+Time\+:@{\+\_\+advance\+:current\+Time\+:elapsed\+Time\+:}}
+\index{\+\_\+advance\+:current\+Time\+:elapsed\+Time\+:@{\+\_\+advance\+:current\+Time\+:elapsed\+Time\+:}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{\+\_\+advance\+:current\+Time\+:elapsed\+Time\+:()}{\_advance:currentTime:elapsedTime:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) \+\_\+advance\+: \begin{DoxyParamCaption}\item[{(id)}]{object }\item[{currentTime:(C\+F\+Time\+Interval)}]{current\+Time }\item[{elapsedTime:(C\+F\+Time\+Interval)}]{elapsed\+Time }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [implementation]}}
+
+Return Y\+ES to indicate animation should continue animating. \mbox{\Hypertarget{interface_p_o_p_animation_a2156e24577e9e6b3dddf47c6b4249e7f}\label{interface_p_o_p_animation_a2156e24577e9e6b3dddf47c6b4249e7f}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!\+\_\+advance\+:current\+Time\+:elapsed\+Time\+:@{\+\_\+advance\+:current\+Time\+:elapsed\+Time\+:}}
+\index{\+\_\+advance\+:current\+Time\+:elapsed\+Time\+:@{\+\_\+advance\+:current\+Time\+:elapsed\+Time\+:}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{\+\_\+advance\+:current\+Time\+:elapsed\+Time\+:()}{\_advance:currentTime:elapsedTime:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) \+\_\+advance\+: \begin{DoxyParamCaption}\item[{(id)}]{object }\item[{currentTime:(C\+F\+Time\+Interval)}]{current\+Time }\item[{elapsedTime:(C\+F\+Time\+Interval)}]{elapsed\+Time }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [implementation]}}
+
+Return Y\+ES to indicate animation should continue animating. \mbox{\Hypertarget{interface_p_o_p_animation_a4558b9f70108f420d045f2605eb76507}\label{interface_p_o_p_animation_a4558b9f70108f420d045f2605eb76507}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!\+\_\+append\+Description\+:debug\+:@{\+\_\+append\+Description\+:debug\+:}}
+\index{\+\_\+append\+Description\+:debug\+:@{\+\_\+append\+Description\+:debug\+:}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{\+\_\+append\+Description\+:debug\+:()}{\_appendDescription:debug:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) \+\_\+append\+Description\+: \begin{DoxyParamCaption}\item[{(N\+S\+Mutable\+String $\ast$)}]{s }\item[{debug:(B\+O\+OL)}]{debug }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [implementation]}}
+
+Subclass override point to append animation description. \mbox{\Hypertarget{interface_p_o_p_animation_a4558b9f70108f420d045f2605eb76507}\label{interface_p_o_p_animation_a4558b9f70108f420d045f2605eb76507}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!\+\_\+append\+Description\+:debug\+:@{\+\_\+append\+Description\+:debug\+:}}
+\index{\+\_\+append\+Description\+:debug\+:@{\+\_\+append\+Description\+:debug\+:}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{\+\_\+append\+Description\+:debug\+:()}{\_appendDescription:debug:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) \+\_\+append\+Description\+: \begin{DoxyParamCaption}\item[{(N\+S\+Mutable\+String $\ast$)}]{s }\item[{debug:(B\+O\+OL)}]{debug }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [implementation]}}
+
+Subclass override point to append animation description. \mbox{\Hypertarget{interface_p_o_p_animation_aaf4c9e53a36f1ad00866fff7359bb3f4}\label{interface_p_o_p_animation_aaf4c9e53a36f1ad00866fff7359bb3f4}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!animation\+Did\+Apply\+Block@{animation\+Did\+Apply\+Block}}
+\index{animation\+Did\+Apply\+Block@{animation\+Did\+Apply\+Block}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{animation\+Did\+Apply\+Block()}{animationDidApplyBlock()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void($^\wedge$)) animation\+Did\+Apply\+Block \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_p_o_p_animation}{P\+O\+P\+Animation}} $\ast$)}]{anim }\end{DoxyParamCaption}}
+
+Optional block called each frame animation is applied. \mbox{\Hypertarget{interface_p_o_p_animation_aaf4c9e53a36f1ad00866fff7359bb3f4}\label{interface_p_o_p_animation_aaf4c9e53a36f1ad00866fff7359bb3f4}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!animation\+Did\+Apply\+Block@{animation\+Did\+Apply\+Block}}
+\index{animation\+Did\+Apply\+Block@{animation\+Did\+Apply\+Block}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{animation\+Did\+Apply\+Block()}{animationDidApplyBlock()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void($^\wedge$)) animation\+Did\+Apply\+Block \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_p_o_p_animation}{P\+O\+P\+Animation}} $\ast$)}]{anim }\end{DoxyParamCaption}}
+
+Optional block called each frame animation is applied. \mbox{\Hypertarget{interface_p_o_p_animation_ab4e0f5edf809b633029e45797eabd196}\label{interface_p_o_p_animation_ab4e0f5edf809b633029e45797eabd196}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!animation\+Did\+Reach\+To\+Value\+Block@{animation\+Did\+Reach\+To\+Value\+Block}}
+\index{animation\+Did\+Reach\+To\+Value\+Block@{animation\+Did\+Reach\+To\+Value\+Block}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{animation\+Did\+Reach\+To\+Value\+Block()}{animationDidReachToValueBlock()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void($^\wedge$)) animation\+Did\+Reach\+To\+Value\+Block \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_p_o_p_animation}{P\+O\+P\+Animation}} $\ast$)}]{anim }\end{DoxyParamCaption}}
+
+Optional block called when value meets or exceeds to value. \mbox{\Hypertarget{interface_p_o_p_animation_ab4e0f5edf809b633029e45797eabd196}\label{interface_p_o_p_animation_ab4e0f5edf809b633029e45797eabd196}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!animation\+Did\+Reach\+To\+Value\+Block@{animation\+Did\+Reach\+To\+Value\+Block}}
+\index{animation\+Did\+Reach\+To\+Value\+Block@{animation\+Did\+Reach\+To\+Value\+Block}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{animation\+Did\+Reach\+To\+Value\+Block()}{animationDidReachToValueBlock()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void($^\wedge$)) animation\+Did\+Reach\+To\+Value\+Block \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_p_o_p_animation}{P\+O\+P\+Animation}} $\ast$)}]{anim }\end{DoxyParamCaption}}
+
+Optional block called when value meets or exceeds to value. \mbox{\Hypertarget{interface_p_o_p_animation_aa1e092d1ed9ba72340f8aefc71b8d817}\label{interface_p_o_p_animation_aa1e092d1ed9ba72340f8aefc71b8d817}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!animation\+Did\+Start\+Block@{animation\+Did\+Start\+Block}}
+\index{animation\+Did\+Start\+Block@{animation\+Did\+Start\+Block}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{animation\+Did\+Start\+Block()}{animationDidStartBlock()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void($^\wedge$)) animation\+Did\+Start\+Block \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_p_o_p_animation}{P\+O\+P\+Animation}} $\ast$)}]{anim }\end{DoxyParamCaption}}
+
+Optional block called on animation start. \mbox{\Hypertarget{interface_p_o_p_animation_aa1e092d1ed9ba72340f8aefc71b8d817}\label{interface_p_o_p_animation_aa1e092d1ed9ba72340f8aefc71b8d817}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!animation\+Did\+Start\+Block@{animation\+Did\+Start\+Block}}
+\index{animation\+Did\+Start\+Block@{animation\+Did\+Start\+Block}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{animation\+Did\+Start\+Block()}{animationDidStartBlock()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void($^\wedge$)) animation\+Did\+Start\+Block \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_p_o_p_animation}{P\+O\+P\+Animation}} $\ast$)}]{anim }\end{DoxyParamCaption}}
+
+Optional block called on animation start. \mbox{\Hypertarget{interface_p_o_p_animation_ab6461bce27fd84fc22f86a4560d2273f}\label{interface_p_o_p_animation_ab6461bce27fd84fc22f86a4560d2273f}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!completion\+Block@{completion\+Block}}
+\index{completion\+Block@{completion\+Block}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{completion\+Block()}{completionBlock()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void($^\wedge$)) completion\+Block \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_p_o_p_animation}{P\+O\+P\+Animation}} $\ast$)}]{anim }\item[{(B\+O\+OL)}]{finished }\end{DoxyParamCaption}}
+
+Optional block called on animation completion. \mbox{\Hypertarget{interface_p_o_p_animation_ab6461bce27fd84fc22f86a4560d2273f}\label{interface_p_o_p_animation_ab6461bce27fd84fc22f86a4560d2273f}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!completion\+Block@{completion\+Block}}
+\index{completion\+Block@{completion\+Block}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{completion\+Block()}{completionBlock()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void($^\wedge$)) completion\+Block \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_p_o_p_animation}{P\+O\+P\+Animation}} $\ast$)}]{anim }\item[{(B\+O\+OL)}]{finished }\end{DoxyParamCaption}}
+
+Optional block called on animation completion. 
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_p_o_p_animation_ae7793f881ec2a41ed014a443154603fc}\label{interface_p_o_p_animation_ae7793f881ec2a41ed014a443154603fc}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!animation\+Did\+Apply\+Block@{animation\+Did\+Apply\+Block}}
+\index{animation\+Did\+Apply\+Block@{animation\+Did\+Apply\+Block}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{animation\+Did\+Apply\+Block}{animationDidApplyBlock}}
+{\footnotesize\ttfamily -\/ (void($^\wedge$ animation\+Did\+Apply\+Block) (\mbox{\hyperlink{interface_p_o_p_animation}{P\+O\+P\+Animation}} $\ast$anim))\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+Optional block called each frame animation is applied. \mbox{\Hypertarget{interface_p_o_p_animation_adc69ed91e734a83006e8be24c0f9c2ac}\label{interface_p_o_p_animation_adc69ed91e734a83006e8be24c0f9c2ac}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!animation\+Did\+Reach\+To\+Value\+Block@{animation\+Did\+Reach\+To\+Value\+Block}}
+\index{animation\+Did\+Reach\+To\+Value\+Block@{animation\+Did\+Reach\+To\+Value\+Block}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{animation\+Did\+Reach\+To\+Value\+Block}{animationDidReachToValueBlock}}
+{\footnotesize\ttfamily -\/ (void($^\wedge$ animation\+Did\+Reach\+To\+Value\+Block) (\mbox{\hyperlink{interface_p_o_p_animation}{P\+O\+P\+Animation}} $\ast$anim))\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+Optional block called when value meets or exceeds to value. \mbox{\Hypertarget{interface_p_o_p_animation_aa014835f374d509dbb6b0ee1985e3523}\label{interface_p_o_p_animation_aa014835f374d509dbb6b0ee1985e3523}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!animation\+Did\+Start\+Block@{animation\+Did\+Start\+Block}}
+\index{animation\+Did\+Start\+Block@{animation\+Did\+Start\+Block}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{animation\+Did\+Start\+Block}{animationDidStartBlock}}
+{\footnotesize\ttfamily -\/ (void($^\wedge$ animation\+Did\+Start\+Block) (\mbox{\hyperlink{interface_p_o_p_animation}{P\+O\+P\+Animation}} $\ast$anim))\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+Optional block called on animation start. \mbox{\Hypertarget{interface_p_o_p_animation_a359e335e7c38327db8aa081416e2e90d}\label{interface_p_o_p_animation_a359e335e7c38327db8aa081416e2e90d}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!autoreverses@{autoreverses}}
+\index{autoreverses@{autoreverses}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{autoreverses}{autoreverses}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) autoreverses\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+Flag indicating whether animation autoreverses.  An animation that autoreverses will have twice the duration before it is considered finished. It will animate to the to\+Value, stop, then animate back to the original from\+Value. The delegate methods are called as follows\+: \begin{DoxyVerb}1) animationDidStart: is called at the beginning, as usual, and then after each toValue is reached and the autoreverse is going to start.
+2) animationDidReachToValue: is called every time the toValue is reached. The toValue is swapped with the fromValue at the end of each animation segment. This means that with autoreverses set to YES, the animationDidReachToValue: delegate method will be called a minimum of twice.
+3) animationDidStop:finished: is called every time the toValue is reached, the finished argument will be NO if the autoreverse is not yet complete.\end{DoxyVerb}
+ \mbox{\Hypertarget{interface_p_o_p_animation_a7cac25bf5f165045c6707fc26079cd42}\label{interface_p_o_p_animation_a7cac25bf5f165045c6707fc26079cd42}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!begin\+Time@{begin\+Time}}
+\index{begin\+Time@{begin\+Time}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{begin\+Time}{beginTime}}
+{\footnotesize\ttfamily -\/ (C\+F\+Time\+Interval) begin\+Time\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+The begin\+Time of the animation in media time.  Defaults to 0 and starts immediately. \mbox{\Hypertarget{interface_p_o_p_animation_ab1f8ca86441103080dd908be44631442}\label{interface_p_o_p_animation_ab1f8ca86441103080dd908be44631442}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!completion\+Block@{completion\+Block}}
+\index{completion\+Block@{completion\+Block}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{completion\+Block}{completionBlock}}
+{\footnotesize\ttfamily -\/ (void($^\wedge$ completion\+Block) (\mbox{\hyperlink{interface_p_o_p_animation}{P\+O\+P\+Animation}} $\ast$anim, B\+O\+OL finished))\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+Optional block called on animation completion. \mbox{\Hypertarget{interface_p_o_p_animation_aa806865c6db615b3dc956ab83ad5108f}\label{interface_p_o_p_animation_aa806865c6db615b3dc956ab83ad5108f}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!current\+Value@{current\+Value}}
+\index{current\+Value@{current\+Value}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{current\+Value}{currentValue}}
+{\footnotesize\ttfamily -\/ (id) current\+Value\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}, {\ttfamily [implementation]}}
+
+The current animation value, updated while animation is progressing. \mbox{\Hypertarget{interface_p_o_p_animation_ab4000b657f7d991a1c2639c6bd787b70}\label{interface_p_o_p_animation_ab4000b657f7d991a1c2639c6bd787b70}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!delegate@{delegate}}
+\index{delegate@{delegate}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{delegate}{delegate}}
+{\footnotesize\ttfamily -\/ (id) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+The animation delegate.  See \{P\+O\+P\+Animation\+Delegate\} for details. \mbox{\Hypertarget{interface_p_o_p_animation_a021a12fa53c6acee3bd2726ae194e58a}\label{interface_p_o_p_animation_a021a12fa53c6acee3bd2726ae194e58a}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!name@{name}}
+\index{name@{name}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+The name of the animation.  Optional property to help identify the animation. \mbox{\Hypertarget{interface_p_o_p_animation_a7ae9bf4e6d712c37d9e70e90079b96bd}\label{interface_p_o_p_animation_a7ae9bf4e6d712c37d9e70e90079b96bd}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!paused@{paused}}
+\index{paused@{paused}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{paused}{paused}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) paused\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+Flag indicating whether animation is paused.  A paused animation is excluded from the list of active animations. On initial creation, defaults to Y\+ES. On animation addition, the animation is implicity unpaused. On animation completion, the animation is implicity paused including for animations with removed\+On\+Completion set to NO. \mbox{\Hypertarget{interface_p_o_p_animation_a0934411549c858c08c34d8de25116437}\label{interface_p_o_p_animation_a0934411549c858c08c34d8de25116437}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!progress\+Markers@{progress\+Markers}}
+\index{progress\+Markers@{progress\+Markers}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{progress\+Markers}{progressMarkers}}
+{\footnotesize\ttfamily -\/ (N\+S\+Array$\ast$) progress\+Markers\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}, {\ttfamily [implementation]}}
+
+An array of optional progress markers. For each marker specified, the animation delegate will be informed when progress meets or exceeds the value specified. Specifying values outside of the \mbox{[}0, 1\mbox{]} range will give undefined results. \mbox{\Hypertarget{interface_p_o_p_animation_a9a08ee39f86e903c893cb04ad4eb533d}\label{interface_p_o_p_animation_a9a08ee39f86e903c893cb04ad4eb533d}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!removed\+On\+Completion@{removed\+On\+Completion}}
+\index{removed\+On\+Completion@{removed\+On\+Completion}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{removed\+On\+Completion}{removedOnCompletion}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) removed\+On\+Completion\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+Flag indicating whether animation should be removed on completion.  Setting to NO can facilitate animation reuse. Defaults to Y\+ES. \mbox{\Hypertarget{interface_p_o_p_animation_acd4599f0c1d8147acbb6118c8d51ba8b}\label{interface_p_o_p_animation_acd4599f0c1d8147acbb6118c8d51ba8b}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!repeat\+Count@{repeat\+Count}}
+\index{repeat\+Count@{repeat\+Count}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{repeat\+Count}{repeatCount}}
+{\footnotesize\ttfamily -\/ (N\+S\+Integer) repeat\+Count\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+The number of times to repeat the animation.  A repeat\+Count of 0 or 1 means that the animation will not repeat, just like Core Animation. A repeat\+Count of 2 or greater means that the animation will run that many times before stopping. The delegate methods are called as follows\+: \begin{DoxyVerb}1) animationDidStart: is called at the beginning of each animation repeat.
+2) animationDidReachToValue: is called every time the toValue is reached.
+3) animationDidStop:finished: is called every time the toValue is reached, the finished argument will be NO if the autoreverse is not yet complete.
+\end{DoxyVerb}
+
+
+When combined with the autoreverses property, a singular animation is effectively twice as long. \mbox{\Hypertarget{interface_p_o_p_animation_a0f886a54d7411e3b3e1ef78566c0bc30}\label{interface_p_o_p_animation_a0f886a54d7411e3b3e1ef78566c0bc30}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!repeat\+Forever@{repeat\+Forever}}
+\index{repeat\+Forever@{repeat\+Forever}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{repeat\+Forever}{repeatForever}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) repeat\+Forever\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+Repeat the animation forever.  This property will make the animation repeat forever. The value of the repeat\+Count property is undefined when this property is set. The finished parameter of the delegate callback animation\+Did\+Stop\+:finished\+: will always be NO. \mbox{\Hypertarget{interface_p_o_p_animation_a99f2f80821714cc3d9eaa1c2a70c12bc}\label{interface_p_o_p_animation_a99f2f80821714cc3d9eaa1c2a70c12bc}} 
+\index{P\+O\+P\+Animation@{P\+O\+P\+Animation}!tracer@{tracer}}
+\index{tracer@{tracer}!P\+O\+P\+Animation@{P\+O\+P\+Animation}}
+\subsubsection{\texorpdfstring{tracer}{tracer}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_p_o_p_animation_tracer}{P\+O\+P\+Animation\+Tracer}} $\ast$) tracer\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+The animation tracer.  Returns the existing tracer, creating one if needed. Call start/stop on the tracer to toggle event collection. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/pop/P\+O\+P\+Animation.\+h\item 
+Pods/pop/pop/P\+O\+P\+Animation.\+mm\end{DoxyCompactItemize}

@@ -1,0 +1,14 @@
+<map id="FNFansView()" name="FNFansView()">
+<area shape="rect" id="node2" href="$interface_f_n_p_c_filter_view.html" title="FNPCFilterView" alt="" coords="1568,123,1684,148"/>
+<area shape="rect" id="node3" href="$interface_j_m_view.html" title="JMView" alt="" coords="1289,129,1357,155"/>
+<area shape="rect" id="node11" href="$interface_f_n_promotional_team_header.html" title="FNPromotionalTeamHeader" alt="" coords="1533,172,1720,197"/>
+<area shape="rect" id="node10" href="$interface_f_n_combined_button.html" title="FNCombinedButton" alt="" coords="1254,31,1392,56"/>
+<area shape="rect" id="node12" href="$interface_f_n_fans_view_model.html" title="FNFansViewModel" alt="" coords="1559,404,1693,429"/>
+<area shape="rect" id="node13" href="$interface_j_m_view_model.html" title="JMViewModel" alt="" coords="1271,404,1375,429"/>
+<area shape="rect" id="node16" href="$interface_r_a_c_disposable.html" title="RACDisposable" alt="" coords="133,512,249,537"/>
+<area shape="rect" id="node19" href="$interface_r_a_c_stream.html" title="RACStream" alt="" coords="145,593,237,619"/>
+<area shape="rect" id="node21" href="$interface_r_a_c_command.html" title="RACCommand" alt="" coords="907,716,1018,741"/>
+<area shape="rect" id="node22" href="$interface_f_n_promotional_team_model.html" title="FNPromotionalTeamModel" alt="" coords="273,791,452,816"/>
+<area shape="rect" id="node17" href="$interface_r_a_c_subject.html" title="RACSubject" alt="" coords="916,469,1010,495"/>
+<area shape="rect" id="node18" href="$interface_r_a_c_signal.html" title="RACSignal" alt="" coords="497,593,583,619"/>
+</map>

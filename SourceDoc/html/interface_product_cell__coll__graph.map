@@ -1,0 +1,5 @@
+<map id="ProductCell" name="ProductCell">
+<area shape="rect" id="node2" href="$interface_super_table_view_cell.html" title="SuperTableViewCell" alt="" coords="5,80,146,105"/>
+<area shape="rect" id="node4" href="$interface_cat_zan_button.html" title="CatZanButton" alt="" coords="170,80,274,105"/>
+<area shape="rect" id="node6" href="$interface_f_n_base_product_model.html" title="FNBaseProductModel" alt="" coords="298,80,450,105"/>
+</map>

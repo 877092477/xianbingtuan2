@@ -1,0 +1,6 @@
+<map id="FNBuyProductCell" name="FNBuyProductCell">
+<area shape="rect" id="node2" href="$interface_f_n_super_table_view_cell.html" title="FNSuperTableViewCell" alt="" coords="5,155,164,180"/>
+<area shape="rect" id="node4" href="$interface_f_n_buy_product_model.html" title="FNBuyProductModel" alt="" coords="187,155,331,180"/>
+<area shape="rect" id="node5" href="$interface_f_n_base_product_model.html" title="FNBaseProductModel" alt="" coords="183,80,335,105"/>
+<area shape="rect" id="node7" href="$interface_j_m_progress_view.html" title="JMProgressView" alt="" coords="356,155,477,180"/>
+</map>

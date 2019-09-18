@@ -1,0 +1,4 @@
+<map id="SendMessageToQQReq" name="SendMessageToQQReq">
+<area shape="rect" id="node2" href="$interface_q_q_base_req.html" title="QQBaseReq" alt="" coords="40,80,137,105"/>
+<area shape="rect" id="node4" href="$interface_q_q_api_object.html" title="所有在QQ及插件间发送的数据对象的根类。 " alt="" coords="161,80,261,105"/>
+</map>

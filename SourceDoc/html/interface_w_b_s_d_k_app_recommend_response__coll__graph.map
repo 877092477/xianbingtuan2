@@ -1,0 +1,5 @@
+<map id="WBSDKAppRecommendResponse" name="WBSDKAppRecommendResponse">
+<area shape="rect" id="node2" href="$interface_w_b_base_response.html" title="WBBaseResponse" alt="" coords="94,155,227,180"/>
+<area shape="rect" id="node5" href="$interface_w_b_authorize_response.html" title="WBAuthorizeResponse" alt="" coords="182,229,341,255"/>
+<area shape="rect" id="node3" href="$interface_w_b_data_transfer_object.html" title="WBDataTransferObject" alt="" coords="81,80,239,105"/>
+</map>

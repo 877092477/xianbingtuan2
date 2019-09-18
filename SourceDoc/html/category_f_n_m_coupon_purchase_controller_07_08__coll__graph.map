@@ -1,0 +1,7 @@
+<map id="FNMCouponPurchaseController()" name="FNMCouponPurchaseController()">
+<area shape="rect" id="node6" href="$interface_j_m_title_scroll_view.html" title="JMTitleScrollView" alt="" coords="151,221,277,247"/>
+<area shape="rect" id="node8" href="$interface_f_n_m_c_sub_category_view.html" title="FNMCSubCategoryView" alt="" coords="397,265,564,291"/>
+<area shape="rect" id="node10" href="$interface_s_d_cycle_scroll_view.html" title="SDCycleScrollView" alt="" coords="413,339,548,364"/>
+<area shape="rect" id="node13" href="$interface_f_n_m_coupon_goods_view.html" title="FNMCouponGoodsView" alt="" coords="398,388,563,413"/>
+<area shape="rect" id="node11" href="$interface_menu_model.html" title="MenuModel" alt="" coords="435,437,526,463"/>
+</map>

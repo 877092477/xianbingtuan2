@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="176" id="KGk-i7-Jjw" customClass="IncomeHeaderCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="179.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="预计收益()" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y60-Lg-DEL">
+                        <rect key="frame" x="22" y="36" width="219" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="e2r-gl-FjB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14.27" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXw-sR-Oyd">
+                        <rect key="frame" x="22" y="97" width="219" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="iNJ-G8-DIe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.9137254901960784" green="0.0" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="QXw-sR-Oyd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22" id="28C-80-EHf"/>
+                    <constraint firstItem="QXw-sR-Oyd" firstAttribute="top" secondItem="y60-Lg-DEL" secondAttribute="bottom" constant="32" id="Aix-N5-BPI"/>
+                    <constraint firstAttribute="trailing" secondItem="y60-Lg-DEL" secondAttribute="trailing" constant="79" id="Cv8-ns-i03"/>
+                    <constraint firstAttribute="trailing" secondItem="QXw-sR-Oyd" secondAttribute="trailing" constant="79" id="JbQ-yw-QYm"/>
+                    <constraint firstItem="y60-Lg-DEL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22" id="TKq-PJ-6AZ"/>
+                    <constraint firstItem="y60-Lg-DEL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="36" id="fPn-Hw-w08"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="IncomeLabel" destination="QXw-sR-Oyd" id="Wy9-rB-a2J"/>
+                <outlet property="titleLabel" destination="y60-Lg-DEL" id="tiL-Qn-R7u"/>
+            </connections>
+            <point key="canvasLocation" x="252" y="325.5"/>
+        </tableViewCell>
+    </objects>
+</document>

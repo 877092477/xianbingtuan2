@@ -1,0 +1,8 @@
+<map id="FNSuperTableViewCell" name="FNSuperTableViewCell">
+<area shape="rect" id="node3" href="$interface_f_n_buy_product_cell.html" title="FNBuyProductCell" alt="" coords="392,5,523,31"/>
+<area shape="rect" id="node4" href="$interface_f_n_img_title_cell.html" title="FNImgTitleCell" alt="" coords="403,55,512,80"/>
+<area shape="rect" id="node5" href="$interface_f_n_m_c_agent_day_cell.html" title="FNMCAgentDayCell" alt="" coords="387,104,528,129"/>
+<area shape="rect" id="node6" href="$interface_f_n_m_c_agent_month_cell.html" title="FNMCAgentMonthCell" alt="" coords="380,153,535,179"/>
+<area shape="rect" id="node7" href="$interface_f_n_m_c_a_order_detail_cell.html" title="FNMCAOrderDetailCell" alt="" coords="378,203,538,228"/>
+<area shape="rect" id="node8" href="$interface_f_n_mine_addtional_cell.html" title="FNMineAddtionalCell" alt="" coords="384,252,531,277"/>
+</map>

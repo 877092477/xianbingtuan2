@@ -1,0 +1,50 @@
+\hypertarget{interface_app_monitor_base}{}\section{App\+Monitor\+Base Class Reference}
+\label{interface_app_monitor_base}\index{App\+Monitor\+Base@{App\+Monitor\+Base}}
+
+
+Inheritance diagram for App\+Monitor\+Base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_app_monitor_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for App\+Monitor\+Base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{interface_app_monitor_base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \mbox{\hyperlink{interface_app_monitor_base_abecd4ef5619d223b35720cfb52920e67}{set\+Write\+Log\+Interval\+:}}
+\item 
+\mbox{\Hypertarget{interface_app_monitor_base_acb7ad29f3a86a0ea4bb120ec8f5de481}\label{interface_app_monitor_base_acb7ad29f3a86a0ea4bb120ec8f5de481}} 
+(N\+S\+Integer) + {\bfseries write\+Log\+Interval}
+\item 
+(void) + \mbox{\hyperlink{interface_app_monitor_base_adcba6f18de71fd598f4fa88fd7c76e2b}{flush\+All\+Log}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_app_monitor_base_adcba6f18de71fd598f4fa88fd7c76e2b}\label{interface_app_monitor_base_adcba6f18de71fd598f4fa88fd7c76e2b}} 
+\index{App\+Monitor\+Base@{App\+Monitor\+Base}!flush\+All\+Log@{flush\+All\+Log}}
+\index{flush\+All\+Log@{flush\+All\+Log}!App\+Monitor\+Base@{App\+Monitor\+Base}}
+\subsubsection{\texorpdfstring{flush\+All\+Log()}{flushAllLog()}}
+{\footnotesize\ttfamily + (void) flush\+All\+Log \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+将appmonitor的日志立刻强制写入本地(\+U\+T)，避免丢失。请不要私自调用，使用前咨询@君展 \mbox{\Hypertarget{interface_app_monitor_base_abecd4ef5619d223b35720cfb52920e67}\label{interface_app_monitor_base_abecd4ef5619d223b35720cfb52920e67}} 
+\index{App\+Monitor\+Base@{App\+Monitor\+Base}!set\+Write\+Log\+Interval\+:@{set\+Write\+Log\+Interval\+:}}
+\index{set\+Write\+Log\+Interval\+:@{set\+Write\+Log\+Interval\+:}!App\+Monitor\+Base@{App\+Monitor\+Base}}
+\subsubsection{\texorpdfstring{set\+Write\+Log\+Interval\+:()}{setWriteLogInterval:()}}
+{\footnotesize\ttfamily + (void) set\+Write\+Log\+Interval\+: \begin{DoxyParamCaption}\item[{(N\+S\+Integer)}]{write\+Log\+Interval }\end{DoxyParamCaption}}
+
+日志写入\+U\+T间隔时间(单位秒).默认300秒, -\/1代表关闭. 会监听配置中心做变化 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+U\+T\+Mini.\+framework/\+Versions/\+A/\+Headers/App\+Monitor\+Base.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+<map id="WBProvideMessageForWeiboResponse" name="WBProvideMessageForWeiboResponse">
+<area shape="rect" id="node2" href="$interface_w_b_base_response.html" title="WBBaseResponse" alt="" coords="39,167,172,192"/>
+<area shape="rect" id="node3" href="$interface_w_b_data_transfer_object.html" title="WBDataTransferObject" alt="" coords="26,80,185,105"/>
+<area shape="rect" id="node5" href="$interface_w_b_message_object.html" title="WBMessageObject" alt="" coords="196,167,332,192"/>
+<area shape="rect" id="node6" href="$interface_w_b_image_object.html" title="WBImageObject" alt="" coords="306,80,424,105"/>
+<area shape="rect" id="node7" href="$interface_w_b_base_media_object.html" title="WBBaseMediaObject" alt="" coords="448,80,597,105"/>
+</map>

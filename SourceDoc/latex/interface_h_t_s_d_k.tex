@@ -1,0 +1,136 @@
+\hypertarget{interface_h_t_s_d_k}{}\section{H\+T\+S\+DK Class Reference}
+\label{interface_h_t_s_d_k}\index{H\+T\+S\+DK@{H\+T\+S\+DK}}
+
+
+Inheritance diagram for H\+T\+S\+DK\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{interface_h_t_s_d_k__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for H\+T\+S\+DK\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{interface_h_t_s_d_k__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_h_t_s_d_k_acaca7e6849ba93603969e53924a61aa3}{activate\+S\+D\+K\+With\+Appid\+:ht\+Is\+Show\+Log\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_h_t_s_d_k_aec09138a22bc1c78742d69ba5c3f78a9}{register\+Track\+With\+User\+I\+D\+:user\+Name\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_h_t_s_d_k_a4e1a943d25205b90510fd5f31219ef52}{login\+Track\+With\+User\+I\+D\+:user\+Name\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_h_t_s_d_k_a9dc6d7fd058584073bfcf843a33c9d08}{custom\+Event\+Track\+With\+Name\+:user\+I\+D\+:event\+Type\+:event\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_h_t_s_d_k_af32ca807c891270ff725c1968651efcf}{pay\+Track\+With\+Name\+:user\+I\+D\+:cp\+Order\+Id\+:amount\+:product\+Name\+:server\+Id\+:char\+Id\+:}}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_h_t_s_d_k_a62ec37d20e82301b152dfb26d8552786}\label{interface_h_t_s_d_k_a62ec37d20e82301b152dfb26d8552786}} 
+(\mbox{\hyperlink{interface_h_t_s_d_k}{H\+T\+S\+DK}} $\ast$) + \mbox{\hyperlink{interface_h_t_s_d_k_a62ec37d20e82301b152dfb26d8552786}{default\+Platform}}
+\begin{DoxyCompactList}\small\item\em 获取\+H\+T\+S\+D\+K实例 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_h_t_s_d_k_acaca7e6849ba93603969e53924a61aa3}\label{interface_h_t_s_d_k_acaca7e6849ba93603969e53924a61aa3}} 
+\index{H\+T\+S\+DK@{H\+T\+S\+DK}!activate\+S\+D\+K\+With\+Appid\+:ht\+Is\+Show\+Log\+:@{activate\+S\+D\+K\+With\+Appid\+:ht\+Is\+Show\+Log\+:}}
+\index{activate\+S\+D\+K\+With\+Appid\+:ht\+Is\+Show\+Log\+:@{activate\+S\+D\+K\+With\+Appid\+:ht\+Is\+Show\+Log\+:}!H\+T\+S\+DK@{H\+T\+S\+DK}}
+\subsubsection{\texorpdfstring{activate\+S\+D\+K\+With\+Appid\+:ht\+Is\+Show\+Log\+:()}{activateSDKWithAppid:htIsShowLog:()}}
+{\footnotesize\ttfamily -\/ (void) activate\+S\+D\+K\+With\+Appid\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{appid }\item[{htIsShowLog:(B\+O\+OL)}]{is\+Show\+Log }\end{DoxyParamCaption}}
+
+配置启动\+S\+DK
+
+
+\begin{DoxyParams}{Parameters}
+{\em appid} & \mbox{\hyperlink{interface_h_t_s_d_k}{H\+T\+S\+DK}} 平台分配的appid \\
+\hline
+{\em is\+Show\+Log} & is\+Show\+Log Y\+ES 开启; NO 关闭. 默认关闭 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_h_t_s_d_k_a9dc6d7fd058584073bfcf843a33c9d08}\label{interface_h_t_s_d_k_a9dc6d7fd058584073bfcf843a33c9d08}} 
+\index{H\+T\+S\+DK@{H\+T\+S\+DK}!custom\+Event\+Track\+With\+Name\+:user\+I\+D\+:event\+Type\+:event\+:@{custom\+Event\+Track\+With\+Name\+:user\+I\+D\+:event\+Type\+:event\+:}}
+\index{custom\+Event\+Track\+With\+Name\+:user\+I\+D\+:event\+Type\+:event\+:@{custom\+Event\+Track\+With\+Name\+:user\+I\+D\+:event\+Type\+:event\+:}!H\+T\+S\+DK@{H\+T\+S\+DK}}
+\subsubsection{\texorpdfstring{custom\+Event\+Track\+With\+Name\+:user\+I\+D\+:event\+Type\+:event\+:()}{customEventTrackWithName:userID:eventType:event:()}}
+{\footnotesize\ttfamily -\/ (void) custom\+Event\+Track\+With\+Name\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{user\+Name }\item[{userID:(N\+S\+String $\ast$)}]{user\+ID }\item[{eventType:(N\+S\+String $\ast$)}]{event\+Type }\item[{event:(N\+S\+Dictionary $\ast$)}]{event\+Dic }\end{DoxyParamCaption}}
+
+用户自定义事件
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & 用户名 \\
+\hline
+{\em user\+ID} & 用户\+ID \\
+\hline
+{\em event\+Type} & 自定义事件 $\ast$必须字段 且 event\+Type $>$ 100 \\
+\hline
+{\em event\+Dic} & 自定义事件内容 请按照\{key\+:value, key\+:value...\} 格式上传 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_h_t_s_d_k_a4e1a943d25205b90510fd5f31219ef52}\label{interface_h_t_s_d_k_a4e1a943d25205b90510fd5f31219ef52}} 
+\index{H\+T\+S\+DK@{H\+T\+S\+DK}!login\+Track\+With\+User\+I\+D\+:user\+Name\+:@{login\+Track\+With\+User\+I\+D\+:user\+Name\+:}}
+\index{login\+Track\+With\+User\+I\+D\+:user\+Name\+:@{login\+Track\+With\+User\+I\+D\+:user\+Name\+:}!H\+T\+S\+DK@{H\+T\+S\+DK}}
+\subsubsection{\texorpdfstring{login\+Track\+With\+User\+I\+D\+:user\+Name\+:()}{loginTrackWithUserID:userName:()}}
+{\footnotesize\ttfamily -\/ (void) login\+Track\+With\+User\+I\+D\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{user\+ID }\item[{userName:(N\+S\+String $\ast$)}]{user\+Name }\end{DoxyParamCaption}}
+
+登录事件
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+ID} & 用户\+ID \\
+\hline
+{\em user\+Name} & 用户名 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_h_t_s_d_k_af32ca807c891270ff725c1968651efcf}\label{interface_h_t_s_d_k_af32ca807c891270ff725c1968651efcf}} 
+\index{H\+T\+S\+DK@{H\+T\+S\+DK}!pay\+Track\+With\+Name\+:user\+I\+D\+:cp\+Order\+Id\+:amount\+:product\+Name\+:server\+Id\+:char\+Id\+:@{pay\+Track\+With\+Name\+:user\+I\+D\+:cp\+Order\+Id\+:amount\+:product\+Name\+:server\+Id\+:char\+Id\+:}}
+\index{pay\+Track\+With\+Name\+:user\+I\+D\+:cp\+Order\+Id\+:amount\+:product\+Name\+:server\+Id\+:char\+Id\+:@{pay\+Track\+With\+Name\+:user\+I\+D\+:cp\+Order\+Id\+:amount\+:product\+Name\+:server\+Id\+:char\+Id\+:}!H\+T\+S\+DK@{H\+T\+S\+DK}}
+\subsubsection{\texorpdfstring{pay\+Track\+With\+Name\+:user\+I\+D\+:cp\+Order\+Id\+:amount\+:product\+Name\+:server\+Id\+:char\+Id\+:()}{payTrackWithName:userID:cpOrderId:amount:productName:serverId:charId:()}}
+{\footnotesize\ttfamily -\/ (void) pay\+Track\+With\+Name\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{user\+Name }\item[{userID:(N\+S\+String $\ast$)}]{user\+ID }\item[{cpOrderId:(N\+S\+String $\ast$)}]{cp\+Order\+Id }\item[{amount:(N\+S\+String $\ast$)}]{amount }\item[{productName:(N\+S\+String $\ast$)}]{product\+Name }\item[{serverId:(N\+S\+String $\ast$)}]{server\+Id }\item[{charId:(N\+S\+String $\ast$)}]{char\+Id }\end{DoxyParamCaption}}
+
+支付事件 请在支付完成后调用
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & 用户名 \\
+\hline
+{\em user\+ID} & 用户\+ID \\
+\hline
+{\em cp\+Order\+Id} & 游戏商订单\+ID \\
+\hline
+{\em amount} & 充值金额 单位元 \\
+\hline
+{\em product\+Name} & 商品名 \\
+\hline
+{\em server\+Id} & 服务器\+ID \\
+\hline
+{\em char\+Id} & 角色\+ID \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_h_t_s_d_k_aec09138a22bc1c78742d69ba5c3f78a9}\label{interface_h_t_s_d_k_aec09138a22bc1c78742d69ba5c3f78a9}} 
+\index{H\+T\+S\+DK@{H\+T\+S\+DK}!register\+Track\+With\+User\+I\+D\+:user\+Name\+:@{register\+Track\+With\+User\+I\+D\+:user\+Name\+:}}
+\index{register\+Track\+With\+User\+I\+D\+:user\+Name\+:@{register\+Track\+With\+User\+I\+D\+:user\+Name\+:}!H\+T\+S\+DK@{H\+T\+S\+DK}}
+\subsubsection{\texorpdfstring{register\+Track\+With\+User\+I\+D\+:user\+Name\+:()}{registerTrackWithUserID:userName:()}}
+{\footnotesize\ttfamily -\/ (void) register\+Track\+With\+User\+I\+D\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{user\+ID }\item[{userName:(N\+S\+String $\ast$)}]{user\+Name }\end{DoxyParamCaption}}
+
+注册事件
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+ID} & 用户\+ID \\
+\hline
+{\em user\+Name} & 用户名 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+项目资源/蘑菇心选/\+Class/统计追踪/\+H\+T\+S\+D\+K.\+framework/\+Headers/H\+T\+S\+D\+K.\+h\end{DoxyCompactItemize}

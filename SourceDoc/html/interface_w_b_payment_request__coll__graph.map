@@ -1,0 +1,5 @@
+<map id="WBPaymentRequest" name="WBPaymentRequest">
+<area shape="rect" id="node2" href="$interface_w_b_base_request.html" title="WBBaseRequest" alt="" coords="23,155,146,180"/>
+<area shape="rect" id="node3" href="$interface_w_b_data_transfer_object.html" title="WBDataTransferObject" alt="" coords="5,80,164,105"/>
+<area shape="rect" id="node5" href="$interface_w_b_order_object.html" title="WBOrderObject" alt="" coords="188,80,304,105"/>
+</map>

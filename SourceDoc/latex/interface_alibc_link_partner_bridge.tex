@@ -1,0 +1,158 @@
+\hypertarget{interface_alibc_link_partner_bridge}{}\section{Alibc\+Link\+Partner\+Bridge Class Reference}
+\label{interface_alibc_link_partner_bridge}\index{Alibc\+Link\+Partner\+Bridge@{Alibc\+Link\+Partner\+Bridge}}
+
+
+Inheritance diagram for Alibc\+Link\+Partner\+Bridge\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{interface_alibc_link_partner_bridge__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Alibc\+Link\+Partner\+Bridge\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{interface_alibc_link_partner_bridge__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \mbox{\hyperlink{interface_alibc_link_partner_bridge_a33c867af01896bb4959da52209f4a563}{init\+With\+Appkey\+:}}
+\item 
+(nullable \mbox{\hyperlink{interface_alibc_error}{Alibc\+Error}} $\ast$) + \mbox{\hyperlink{interface_alibc_link_partner_bridge_a8a444eb3726a932f151d5a92f1069282}{try\+Jump\+To\+Detail\+:params\+:fail\+Mode\+:taoke\+Params\+:}}
+\item 
+(nullable \mbox{\hyperlink{interface_alibc_error}{Alibc\+Error}} $\ast$) + \mbox{\hyperlink{interface_alibc_link_partner_bridge_a21a7ef691411f27063c2c4934643f8d4}{try\+Jump\+To\+Shop\+:params\+:fail\+Mode\+:taoke\+Params\+:}}
+\item 
+(nullable \mbox{\hyperlink{interface_alibc_error}{Alibc\+Error}} $\ast$) + \mbox{\hyperlink{interface_alibc_link_partner_bridge_ab2013729987062e63d3e060ecafff15c}{try\+Jump\+To\+U\+R\+L\+:params\+:fail\+Mode\+:taoke\+Params\+:}}
+\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_alibc_link_partner_bridge_a92b3bf312238470882be6333e2c86668}{handle\+Open\+U\+R\+L\+:source\+Application\+:options\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_alibc_link_partner_bridge_aeb29a696d8b29065d216892f3ba1bab7}{enable\+Open\+Taobao\+When\+Tmall\+Not\+Installed\+:}}
+\item 
+\mbox{\Hypertarget{interface_alibc_link_partner_bridge_a2ccf97dea62fd0290c05edb9a6287124}\label{interface_alibc_link_partner_bridge_a2ccf97dea62fd0290c05edb9a6287124}} 
+(B\+O\+OL) + {\bfseries can\+Open\+App\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_alibc_link_partner_bridge_aeb29a696d8b29065d216892f3ba1bab7}\label{interface_alibc_link_partner_bridge_aeb29a696d8b29065d216892f3ba1bab7}} 
+\index{Alibc\+Link\+Partner\+Bridge@{Alibc\+Link\+Partner\+Bridge}!enable\+Open\+Taobao\+When\+Tmall\+Not\+Installed\+:@{enable\+Open\+Taobao\+When\+Tmall\+Not\+Installed\+:}}
+\index{enable\+Open\+Taobao\+When\+Tmall\+Not\+Installed\+:@{enable\+Open\+Taobao\+When\+Tmall\+Not\+Installed\+:}!Alibc\+Link\+Partner\+Bridge@{Alibc\+Link\+Partner\+Bridge}}
+\subsubsection{\texorpdfstring{enable\+Open\+Taobao\+When\+Tmall\+Not\+Installed\+:()}{enableOpenTaobaoWhenTmallNotInstalled:()}}
+{\footnotesize\ttfamily + (void) enable\+Open\+Taobao\+When\+Tmall\+Not\+Installed\+: \begin{DoxyParamCaption}\item[{(B\+O\+OL)}]{enable }\end{DoxyParamCaption}}
+
+在天猫未安装导致天猫打开失败时, 尝试打开手淘
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & enable \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_alibc_link_partner_bridge_a92b3bf312238470882be6333e2c86668}\label{interface_alibc_link_partner_bridge_a92b3bf312238470882be6333e2c86668}} 
+\index{Alibc\+Link\+Partner\+Bridge@{Alibc\+Link\+Partner\+Bridge}!handle\+Open\+U\+R\+L\+:source\+Application\+:options\+:@{handle\+Open\+U\+R\+L\+:source\+Application\+:options\+:}}
+\index{handle\+Open\+U\+R\+L\+:source\+Application\+:options\+:@{handle\+Open\+U\+R\+L\+:source\+Application\+:options\+:}!Alibc\+Link\+Partner\+Bridge@{Alibc\+Link\+Partner\+Bridge}}
+\subsubsection{\texorpdfstring{handle\+Open\+U\+R\+L\+:source\+Application\+:options\+:()}{handleOpenURL:sourceApplication:options:()}}
+{\footnotesize\ttfamily + (B\+O\+OL) handle\+Open\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{url }\item[{sourceApplication:(nullable N\+S\+String $\ast$)}]{source\+Application }\item[{options:(nullable N\+S\+Dictionary$<$ N\+S\+String $\ast$, id $>$ $\ast$)}]{options }\end{DoxyParamCaption}}
+
+处理 U\+RL 跳转
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & url \\
+\hline
+{\em source\+Application} & source\+Application \\
+\hline
+{\em options} & options \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+handle or not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_alibc_link_partner_bridge_a33c867af01896bb4959da52209f4a563}\label{interface_alibc_link_partner_bridge_a33c867af01896bb4959da52209f4a563}} 
+\index{Alibc\+Link\+Partner\+Bridge@{Alibc\+Link\+Partner\+Bridge}!init\+With\+Appkey\+:@{init\+With\+Appkey\+:}}
+\index{init\+With\+Appkey\+:@{init\+With\+Appkey\+:}!Alibc\+Link\+Partner\+Bridge@{Alibc\+Link\+Partner\+Bridge}}
+\subsubsection{\texorpdfstring{init\+With\+Appkey\+:()}{initWithAppkey:()}}
+{\footnotesize\ttfamily + (void) init\+With\+Appkey\+: \begin{DoxyParamCaption}\item[{(nonnull N\+S\+String $\ast$)}]{appkey }\end{DoxyParamCaption}}
+
+初始化
+
+
+\begin{DoxyParams}{Parameters}
+{\em appkey} & appkey \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_alibc_link_partner_bridge_a8a444eb3726a932f151d5a92f1069282}\label{interface_alibc_link_partner_bridge_a8a444eb3726a932f151d5a92f1069282}} 
+\index{Alibc\+Link\+Partner\+Bridge@{Alibc\+Link\+Partner\+Bridge}!try\+Jump\+To\+Detail\+:params\+:fail\+Mode\+:taoke\+Params\+:@{try\+Jump\+To\+Detail\+:params\+:fail\+Mode\+:taoke\+Params\+:}}
+\index{try\+Jump\+To\+Detail\+:params\+:fail\+Mode\+:taoke\+Params\+:@{try\+Jump\+To\+Detail\+:params\+:fail\+Mode\+:taoke\+Params\+:}!Alibc\+Link\+Partner\+Bridge@{Alibc\+Link\+Partner\+Bridge}}
+\subsubsection{\texorpdfstring{try\+Jump\+To\+Detail\+:params\+:fail\+Mode\+:taoke\+Params\+:()}{tryJumpToDetail:params:failMode:taokeParams:()}}
+{\footnotesize\ttfamily + (nullable \mbox{\hyperlink{interface_alibc_error}{Alibc\+Error}} $\ast$) try\+Jump\+To\+Detail\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{item\+ID }\item[{params:(nullable N\+S\+Dictionary $\ast$)}]{params }\item[{failMode:(Alibc\+Native\+Fail\+Mode)}]{fail\+Mode }\item[{taokeParams:(nullable \mbox{\hyperlink{interface_alibc_trade_taoke_params}{Alibc\+Trade\+Taoke\+Params}} $\ast$)}]{tao\+Ke\+Params }\end{DoxyParamCaption}}
+
+尝试跳转详情页
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+ID} & Item ID \\
+\hline
+{\em params} & 参数 \\
+\hline
+{\em fail\+Mode} & 跳转失败处理策略 \\
+\hline
+{\em tao\+Ke\+Params} & 淘客参数 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+跳转错误对象 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_alibc_link_partner_bridge_a21a7ef691411f27063c2c4934643f8d4}\label{interface_alibc_link_partner_bridge_a21a7ef691411f27063c2c4934643f8d4}} 
+\index{Alibc\+Link\+Partner\+Bridge@{Alibc\+Link\+Partner\+Bridge}!try\+Jump\+To\+Shop\+:params\+:fail\+Mode\+:taoke\+Params\+:@{try\+Jump\+To\+Shop\+:params\+:fail\+Mode\+:taoke\+Params\+:}}
+\index{try\+Jump\+To\+Shop\+:params\+:fail\+Mode\+:taoke\+Params\+:@{try\+Jump\+To\+Shop\+:params\+:fail\+Mode\+:taoke\+Params\+:}!Alibc\+Link\+Partner\+Bridge@{Alibc\+Link\+Partner\+Bridge}}
+\subsubsection{\texorpdfstring{try\+Jump\+To\+Shop\+:params\+:fail\+Mode\+:taoke\+Params\+:()}{tryJumpToShop:params:failMode:taokeParams:()}}
+{\footnotesize\ttfamily + (nullable \mbox{\hyperlink{interface_alibc_error}{Alibc\+Error}} $\ast$) try\+Jump\+To\+Shop\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{shop\+ID }\item[{params:(nullable N\+S\+Dictionary $\ast$)}]{params }\item[{failMode:(Alibc\+Native\+Fail\+Mode)}]{fail\+Mode }\item[{taokeParams:(nullable \mbox{\hyperlink{interface_alibc_trade_taoke_params}{Alibc\+Trade\+Taoke\+Params}} $\ast$)}]{tao\+Ke\+Params }\end{DoxyParamCaption}}
+
+尝试跳转店铺页
+
+
+\begin{DoxyParams}{Parameters}
+{\em shop\+ID} & shop\+ID \\
+\hline
+{\em params} & 参数 \\
+\hline
+{\em fail\+Mode} & 跳转失败处理策略 \\
+\hline
+{\em tao\+Ke\+Params} & 淘客参数 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+跳转错误对象 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_alibc_link_partner_bridge_ab2013729987062e63d3e060ecafff15c}\label{interface_alibc_link_partner_bridge_ab2013729987062e63d3e060ecafff15c}} 
+\index{Alibc\+Link\+Partner\+Bridge@{Alibc\+Link\+Partner\+Bridge}!try\+Jump\+To\+U\+R\+L\+:params\+:fail\+Mode\+:taoke\+Params\+:@{try\+Jump\+To\+U\+R\+L\+:params\+:fail\+Mode\+:taoke\+Params\+:}}
+\index{try\+Jump\+To\+U\+R\+L\+:params\+:fail\+Mode\+:taoke\+Params\+:@{try\+Jump\+To\+U\+R\+L\+:params\+:fail\+Mode\+:taoke\+Params\+:}!Alibc\+Link\+Partner\+Bridge@{Alibc\+Link\+Partner\+Bridge}}
+\subsubsection{\texorpdfstring{try\+Jump\+To\+U\+R\+L\+:params\+:fail\+Mode\+:taoke\+Params\+:()}{tryJumpToURL:params:failMode:taokeParams:()}}
+{\footnotesize\ttfamily + (nullable \mbox{\hyperlink{interface_alibc_error}{Alibc\+Error}} $\ast$) try\+Jump\+To\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{url }\item[{params:(nullable N\+S\+Dictionary $\ast$)}]{params }\item[{failMode:(Alibc\+Native\+Fail\+Mode)}]{fail\+Mode }\item[{taokeParams:(nullable \mbox{\hyperlink{interface_alibc_trade_taoke_params}{Alibc\+Trade\+Taoke\+Params}} $\ast$)}]{tao\+Ke\+Params }\end{DoxyParamCaption}}
+
+尝试跳转指定网页
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & U\+RL String \\
+\hline
+{\em params} & 参数 \\
+\hline
+{\em fail\+Mode} & 跳转失败处理策略 \\
+\hline
+{\em tao\+Ke\+Params} & 淘客参数 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+跳转错误对象 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Alibc\+Trade\+Biz.\+framework/\+Headers/Alibc\+Link\+Partner\+Bridge.\+h\end{DoxyCompactItemize}

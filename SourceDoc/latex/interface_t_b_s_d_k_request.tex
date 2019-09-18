@@ -1,0 +1,289 @@
+\hypertarget{interface_t_b_s_d_k_request}{}\section{T\+B\+S\+D\+K\+Request Class Reference}
+\label{interface_t_b_s_d_k_request}\index{T\+B\+S\+D\+K\+Request@{T\+B\+S\+D\+K\+Request}}
+
+
+{\ttfamily \#import $<$T\+B\+S\+D\+K\+Request.\+h$>$}
+
+
+
+Inheritance diagram for T\+B\+S\+D\+K\+Request\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{interface_t_b_s_d_k_request__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for T\+B\+S\+D\+K\+Request\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{interface_t_b_s_d_k_request__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\mbox{\hyperlink{interface_t_b_s_d_k_request}{T\+B\+S\+D\+K\+Request}} $\ast$) -\/ \mbox{\hyperlink{interface_t_b_s_d_k_request_afe2acfd63db98b38bb39bdf8871e8e57}{init\+With\+Api\+Name\+:api\+Version\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_t_b_s_d_k_request_a94cedf08c4dbb4214146013e30dcbc6b}{add\+Http\+Header\+:for\+Key\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_t_b_s_d_k_request_a928333008017bd9bc2e3111ad66f8655}{add\+Protocol\+Parameter\+:for\+Key\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_t_b_s_d_k_request_afbdaba94fcf578f6ceb298ce593f9f23}{add\+Ext\+Parameter\+:for\+Key\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_t_b_s_d_k_request_a46188e6c3d2c18bd93b4fc899a642e09}{remove\+Ext\+Parameter\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_t_b_s_d_k_request_a6c06970c55e540ac093831c085af5ab0}{add\+Biz\+Parameter\+:for\+Key\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_t_b_s_d_k_request_affb181c3ffea7cfeba99e2b796daf49a}{remove\+Biz\+Parameter\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_t_b_s_d_k_request_acbc168a898196acc2357c3326e9138fd}{add\+Upload\+File\+With\+Data\+:file\+Name\+:for\+Key\+:}}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a5b8fc277715e8d60d59220dcaaa0b8ec}\label{interface_t_b_s_d_k_request_a5b8fc277715e8d60d59220dcaaa0b8ec}} 
+(B\+O\+OL) -\/ \mbox{\hyperlink{interface_t_b_s_d_k_request_a5b8fc277715e8d60d59220dcaaa0b8ec}{start\+Synchronous}}
+\begin{DoxyCompactList}\small\item\em 开始同步网络请求, 当网络请求完成或失败后返回 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_aea224c2dd88ef42d406a924010586df3}\label{interface_t_b_s_d_k_request_aea224c2dd88ef42d406a924010586df3}} 
+(void) -\/ \mbox{\hyperlink{interface_t_b_s_d_k_request_aea224c2dd88ef42d406a924010586df3}{start\+Asynchronous}}
+\begin{DoxyCompactList}\small\item\em 开始异步请求 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a38fc53970641eacc5c7e0a6095f64579}\label{interface_t_b_s_d_k_request_a38fc53970641eacc5c7e0a6095f64579}} 
+(void) -\/ \mbox{\hyperlink{interface_t_b_s_d_k_request_a38fc53970641eacc5c7e0a6095f64579}{cancel\+Request}}
+\begin{DoxyCompactList}\small\item\em 退出网路请求，并把delegate设置为空 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_t_b_s_d_k_request_aa8a1938d953fa9d55087184ef9154370}{reset}}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a1806d3fbba4f00a0e981d77135298e2c}\label{interface_t_b_s_d_k_request_a1806d3fbba4f00a0e981d77135298e2c}} 
+(void) + \mbox{\hyperlink{interface_t_b_s_d_k_request_a1806d3fbba4f00a0e981d77135298e2c}{cancel\+T\+B\+S\+D\+K\+All\+Request}}
+\begin{DoxyCompactList}\small\item\em 取消\+T\+B\+S\+D\+K中的所有的网络连接 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a51a2eb0168d10bd90afca8972f223e73}\label{interface_t_b_s_d_k_request_a51a2eb0168d10bd90afca8972f223e73}} 
+N\+S\+Error $\ast$ {\bfseries error}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a07a7ce454c4ada13b80f24a5d4905cc9}\label{interface_t_b_s_d_k_request_a07a7ce454c4ada13b80f24a5d4905cc9}} 
+id$<$ \mbox{\hyperlink{interface_t_b_s_d_k_request_delegate}{T\+B\+S\+D\+K\+Request\+Delegate}} $>$ \mbox{\hyperlink{interface_t_b_s_d_k_request_a07a7ce454c4ada13b80f24a5d4905cc9}{delegate}}
+\begin{DoxyCompactList}\small\item\em 代理对象 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_aee97079f3e59fcf43a7b4e6f15d25217}\label{interface_t_b_s_d_k_request_aee97079f3e59fcf43a7b4e6f15d25217}} 
+id$<$ T\+B\+S\+D\+K\+Request\+Data\+Source $>$ \mbox{\hyperlink{interface_t_b_s_d_k_request_aee97079f3e59fcf43a7b4e6f15d25217}{data\+Source}}
+\begin{DoxyCompactList}\small\item\em 代理对象 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a01b31b6dd7518560d3338d60df7172cf}\label{interface_t_b_s_d_k_request_a01b31b6dd7518560d3338d60df7172cf}} 
+id$<$ T\+B\+S\+D\+K\+Request\+Progress\+Protocol $>$ \mbox{\hyperlink{interface_t_b_s_d_k_request_a01b31b6dd7518560d3338d60df7172cf}{request\+Progress\+Delegate}}
+\begin{DoxyCompactList}\small\item\em 上传下载进度代理对象 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a40a5400b3370941bad6e32bb92330bcf}\label{interface_t_b_s_d_k_request_a40a5400b3370941bad6e32bb92330bcf}} 
+\mbox{\hyperlink{interface_t_b_s_d_k_connection}{T\+B\+S\+D\+K\+Connection}} $\ast$ {\bfseries request}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a7a85f84ff882ad7fa5f1de97279d808b}\label{interface_t_b_s_d_k_request_a7a85f84ff882ad7fa5f1de97279d808b}} 
+N\+S\+U\+RL $\ast$ {\bfseries url}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a6e5e413303cfc88168b6d836f3e8c96d}\label{interface_t_b_s_d_k_request_a6e5e413303cfc88168b6d836f3e8c96d}} 
+N\+S\+String $\ast$ {\bfseries custom\+Host}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a0738fea2464dc120b00ed3d8b1319939}\label{interface_t_b_s_d_k_request_a0738fea2464dc120b00ed3d8b1319939}} 
+N\+S\+Time\+Interval \mbox{\hyperlink{interface_t_b_s_d_k_request_a0738fea2464dc120b00ed3d8b1319939}{time\+Out\+Seconds}}
+\begin{DoxyCompactList}\small\item\em 请求过期时间，默认10s \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a0338bcbed84d866afd34a61362add516}\label{interface_t_b_s_d_k_request_a0338bcbed84d866afd34a61362add516}} 
+N\+S\+Data $\ast$ \mbox{\hyperlink{interface_t_b_s_d_k_request_a0338bcbed84d866afd34a61362add516}{response\+Data}}
+\begin{DoxyCompactList}\small\item\em N\+S\+Data 对象的请求响应数据 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a32f7dd13778a23fda0059d2354d7ae17}\label{interface_t_b_s_d_k_request_a32f7dd13778a23fda0059d2354d7ae17}} 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_t_b_s_d_k_request_a32f7dd13778a23fda0059d2354d7ae17}{response\+String}}
+\begin{DoxyCompactList}\small\item\em N\+S\+String 对象的请求响应数据 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a75c2b58448143c6b0d1f02e48b009221}\label{interface_t_b_s_d_k_request_a75c2b58448143c6b0d1f02e48b009221}} 
+int \mbox{\hyperlink{interface_t_b_s_d_k_request_a75c2b58448143c6b0d1f02e48b009221}{response\+Status\+Code}}
+\begin{DoxyCompactList}\small\item\em http response\+Status\+Code \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a8b59d244398284bcec82725da1c08a47}\label{interface_t_b_s_d_k_request_a8b59d244398284bcec82725da1c08a47}} 
+N\+S\+Dictionary $\ast$ {\bfseries response\+Headers}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a0f72eab4562befbd3b413b008acfb0b0}\label{interface_t_b_s_d_k_request_a0f72eab4562befbd3b413b008acfb0b0}} 
+N\+S\+Dictionary $\ast$ {\bfseries request\+Headers}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a53f701d77d4829f3ff576d0397ece4d5}\label{interface_t_b_s_d_k_request_a53f701d77d4829f3ff576d0397ece4d5}} 
+B\+O\+OL \mbox{\hyperlink{interface_t_b_s_d_k_request_a53f701d77d4829f3ff576d0397ece4d5}{use\+H\+T\+T\+P\+Cache}}
+\begin{DoxyCompactList}\small\item\em 默认关闭 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a9d7835809a355ab39a6f087550942a72}\label{interface_t_b_s_d_k_request_a9d7835809a355ab39a6f087550942a72}} 
+B\+O\+OL {\bfseries force\+Refresh}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a1537756fa760ea63735c570b33fa2e84}\label{interface_t_b_s_d_k_request_a1537756fa760ea63735c570b33fa2e84}} 
+N\+S\+String $\ast$ {\bfseries api\+Method}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_ab39725992e6023abc04c043f7f9f0b5b}\label{interface_t_b_s_d_k_request_ab39725992e6023abc04c043f7f9f0b5b}} 
+B\+O\+OL {\bfseries is\+Avalanche\+Cache}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a546ce7caab80af0ff691ca13610a0ba9}\label{interface_t_b_s_d_k_request_a546ce7caab80af0ff691ca13610a0ba9}} 
+int {\bfseries gzip\+Limited\+Size}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a534626fcf84c1079df763faf37db3a62}\label{interface_t_b_s_d_k_request_a534626fcf84c1079df763faf37db3a62}} 
+N\+S\+Array $\ast$ {\bfseries black\+Cache\+Key\+Param}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a2da3e2019b0a15d7a5ce6907897debbb}\label{interface_t_b_s_d_k_request_a2da3e2019b0a15d7a5ce6907897debbb}} 
+N\+S\+Mutable\+Dictionary $\ast$ {\bfseries network\+Data\+Set}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a8de49ef23684a4ea6fb28718da5eb0a6}\label{interface_t_b_s_d_k_request_a8de49ef23684a4ea6fb28718da5eb0a6}} 
+C\+F\+Absolute\+Time {\bfseries operation\+Queue\+Time}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a6b413b6b4b70189262cae0a702ee6d2c}\label{interface_t_b_s_d_k_request_a6b413b6b4b70189262cae0a702ee6d2c}} 
+C\+F\+Absolute\+Time {\bfseries network\+Finished\+Time}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_af1ff67dba8e96f103258af828dced66b}\label{interface_t_b_s_d_k_request_af1ff67dba8e96f103258af828dced66b}} 
+N\+S\+String $\ast$ {\bfseries user\+Id}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a9dc1901b5d191d405845d0422b4b66d9}\label{interface_t_b_s_d_k_request_a9dc1901b5d191d405845d0422b4b66d9}} 
+N\+S\+String $\ast$ {\bfseries api\+Name}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_af310993486d5c3404d30186366d3c323}\label{interface_t_b_s_d_k_request_af310993486d5c3404d30186366d3c323}} 
+N\+S\+String $\ast$ {\bfseries api\+Version}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_ac2ee916cab448124a5417f306425b4b3}\label{interface_t_b_s_d_k_request_ac2ee916cab448124a5417f306425b4b3}} 
+N\+S\+Mutable\+Dictionary $\ast$ {\bfseries protocol\+Parameters}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a1511f8c4686bd0cec6c2c674ae5a514c}\label{interface_t_b_s_d_k_request_a1511f8c4686bd0cec6c2c674ae5a514c}} 
+N\+S\+Mutable\+Dictionary $\ast$ {\bfseries http\+Headers}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a8849e60a405546b49bfc7f7192dec29e}\label{interface_t_b_s_d_k_request_a8849e60a405546b49bfc7f7192dec29e}} 
+N\+S\+Mutable\+Dictionary $\ast$ {\bfseries ext\+Parameters}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_afca943ffa6b92dfda492e9bc27397901}\label{interface_t_b_s_d_k_request_afca943ffa6b92dfda492e9bc27397901}} 
+N\+S\+Mutable\+Dictionary $\ast$ {\bfseries biz\+Parameters}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a325c44b15c504aa058626f3030b62885}\label{interface_t_b_s_d_k_request_a325c44b15c504aa058626f3030b62885}} 
+N\+S\+Mutable\+Array $\ast$ {\bfseries upload\+Files}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a9d8cc94a8f2d73000af4084b2f305be5}\label{interface_t_b_s_d_k_request_a9d8cc94a8f2d73000af4084b2f305be5}} 
+B\+O\+OL {\bfseries is\+Use\+Https}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a5caf26b7986e8ad3120ab9bc49cb2e4c}\label{interface_t_b_s_d_k_request_a5caf26b7986e8ad3120ab9bc49cb2e4c}} 
+B\+O\+OL {\bfseries is\+Use\+Http\+Post}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_aeabd8adefff7bfd4db311e856ad88367}\label{interface_t_b_s_d_k_request_aeabd8adefff7bfd4db311e856ad88367}} 
+N\+S\+String $\ast$ {\bfseries unit\+Prefix}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_acc19cb21876f7ab086dc8995ba78639f}\label{interface_t_b_s_d_k_request_acc19cb21876f7ab086dc8995ba78639f}} 
+id {\bfseries context}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+T\+B\+S\+D\+K的真正的网络请求类
+
+此类主要做联网控制，如超时时间、最大联网个数、取消所有网络连接等。 T\+B\+S\+D\+K的真正的网络请求类，此类通过delegate来获取网络请求 的配置参数（get或post，post的value，需要上传的数据）。 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a6c06970c55e540ac093831c085af5ab0}\label{interface_t_b_s_d_k_request_a6c06970c55e540ac093831c085af5ab0}} 
+\index{T\+B\+S\+D\+K\+Request@{T\+B\+S\+D\+K\+Request}!add\+Biz\+Parameter\+:for\+Key\+:@{add\+Biz\+Parameter\+:for\+Key\+:}}
+\index{add\+Biz\+Parameter\+:for\+Key\+:@{add\+Biz\+Parameter\+:for\+Key\+:}!T\+B\+S\+D\+K\+Request@{T\+B\+S\+D\+K\+Request}}
+\subsubsection{\texorpdfstring{add\+Biz\+Parameter\+:for\+Key\+:()}{addBizParameter:forKey:()}}
+{\footnotesize\ttfamily -\/ (void) add\+Biz\+Parameter\+: \begin{DoxyParamCaption}\item[{(id)}]{value }\item[{forKey:(N\+S\+String $\ast$)}]{key }\end{DoxyParamCaption}}
+
+添加一个业务参数(业务级别参数) 
+\begin{DoxyParams}{Parameters}
+{\em value} & 参数值 \\
+\hline
+{\em key} & 参数名 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_afbdaba94fcf578f6ceb298ce593f9f23}\label{interface_t_b_s_d_k_request_afbdaba94fcf578f6ceb298ce593f9f23}} 
+\index{T\+B\+S\+D\+K\+Request@{T\+B\+S\+D\+K\+Request}!add\+Ext\+Parameter\+:for\+Key\+:@{add\+Ext\+Parameter\+:for\+Key\+:}}
+\index{add\+Ext\+Parameter\+:for\+Key\+:@{add\+Ext\+Parameter\+:for\+Key\+:}!T\+B\+S\+D\+K\+Request@{T\+B\+S\+D\+K\+Request}}
+\subsubsection{\texorpdfstring{add\+Ext\+Parameter\+:for\+Key\+:()}{addExtParameter:forKey:()}}
+{\footnotesize\ttfamily -\/ (void) add\+Ext\+Parameter\+: \begin{DoxyParamCaption}\item[{(id)}]{value }\item[{forKey:(N\+S\+String $\ast$)}]{key }\end{DoxyParamCaption}}
+
+添加一个扩展参数和data参数平级 
+\begin{DoxyParams}{Parameters}
+{\em value} & 参数值 \\
+\hline
+{\em key} & 参数名 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a94cedf08c4dbb4214146013e30dcbc6b}\label{interface_t_b_s_d_k_request_a94cedf08c4dbb4214146013e30dcbc6b}} 
+\index{T\+B\+S\+D\+K\+Request@{T\+B\+S\+D\+K\+Request}!add\+Http\+Header\+:for\+Key\+:@{add\+Http\+Header\+:for\+Key\+:}}
+\index{add\+Http\+Header\+:for\+Key\+:@{add\+Http\+Header\+:for\+Key\+:}!T\+B\+S\+D\+K\+Request@{T\+B\+S\+D\+K\+Request}}
+\subsubsection{\texorpdfstring{add\+Http\+Header\+:for\+Key\+:()}{addHttpHeader:forKey:()}}
+{\footnotesize\ttfamily -\/ (void) add\+Http\+Header\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{value }\item[{forKey:(N\+S\+String $\ast$)}]{key }\end{DoxyParamCaption}}
+
+添加一个http请求头 
+\begin{DoxyParams}{Parameters}
+{\em value} & H\+T\+T\+P头value \\
+\hline
+{\em key} & H\+T\+T\+P头key \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a928333008017bd9bc2e3111ad66f8655}\label{interface_t_b_s_d_k_request_a928333008017bd9bc2e3111ad66f8655}} 
+\index{T\+B\+S\+D\+K\+Request@{T\+B\+S\+D\+K\+Request}!add\+Protocol\+Parameter\+:for\+Key\+:@{add\+Protocol\+Parameter\+:for\+Key\+:}}
+\index{add\+Protocol\+Parameter\+:for\+Key\+:@{add\+Protocol\+Parameter\+:for\+Key\+:}!T\+B\+S\+D\+K\+Request@{T\+B\+S\+D\+K\+Request}}
+\subsubsection{\texorpdfstring{add\+Protocol\+Parameter\+:for\+Key\+:()}{addProtocolParameter:forKey:()}}
+{\footnotesize\ttfamily -\/ (void) add\+Protocol\+Parameter\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{value }\item[{forKey:(N\+S\+String $\ast$)}]{key }\end{DoxyParamCaption}}
+
+添加一个协议参数 
+\begin{DoxyParams}{Parameters}
+{\em value} & 参数值 \\
+\hline
+{\em key} & 参数名 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_acbc168a898196acc2357c3326e9138fd}\label{interface_t_b_s_d_k_request_acbc168a898196acc2357c3326e9138fd}} 
+\index{T\+B\+S\+D\+K\+Request@{T\+B\+S\+D\+K\+Request}!add\+Upload\+File\+With\+Data\+:file\+Name\+:for\+Key\+:@{add\+Upload\+File\+With\+Data\+:file\+Name\+:for\+Key\+:}}
+\index{add\+Upload\+File\+With\+Data\+:file\+Name\+:for\+Key\+:@{add\+Upload\+File\+With\+Data\+:file\+Name\+:for\+Key\+:}!T\+B\+S\+D\+K\+Request@{T\+B\+S\+D\+K\+Request}}
+\subsubsection{\texorpdfstring{add\+Upload\+File\+With\+Data\+:file\+Name\+:for\+Key\+:()}{addUploadFileWithData:fileName:forKey:()}}
+{\footnotesize\ttfamily -\/ (void) add\+Upload\+File\+With\+Data\+: \begin{DoxyParamCaption}\item[{(N\+S\+Data $\ast$)}]{data }\item[{fileName:(N\+S\+String $\ast$)}]{file\+Name }\item[{forKey:(N\+S\+String $\ast$)}]{key }\end{DoxyParamCaption}}
+
+添加要上传的文件 
+\begin{DoxyParams}{Parameters}
+{\em data} & 文件数据 \\
+\hline
+{\em file\+Name} & 本地文件名(全路径) \\
+\hline
+{\em for\+Key} & form field 的 key \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_afe2acfd63db98b38bb39bdf8871e8e57}\label{interface_t_b_s_d_k_request_afe2acfd63db98b38bb39bdf8871e8e57}} 
+\index{T\+B\+S\+D\+K\+Request@{T\+B\+S\+D\+K\+Request}!init\+With\+Api\+Name\+:api\+Version\+:@{init\+With\+Api\+Name\+:api\+Version\+:}}
+\index{init\+With\+Api\+Name\+:api\+Version\+:@{init\+With\+Api\+Name\+:api\+Version\+:}!T\+B\+S\+D\+K\+Request@{T\+B\+S\+D\+K\+Request}}
+\subsubsection{\texorpdfstring{init\+With\+Api\+Name\+:api\+Version\+:()}{initWithApiName:apiVersion:()}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_t_b_s_d_k_request}{T\+B\+S\+D\+K\+Request}}$\ast$) init\+With\+Api\+Name\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{api\+Name }\item[{apiVersion:(N\+S\+String $\ast$)}]{api\+Version }\end{DoxyParamCaption}}
+
+创建一个\+Mtop\+Request 
+\begin{DoxyParams}{Parameters}
+{\em api\+Name} & A\+P\+I名称 \\
+\hline
+{\em api\+Version} & A\+P\+I版本 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Mtop\+Request 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_affb181c3ffea7cfeba99e2b796daf49a}\label{interface_t_b_s_d_k_request_affb181c3ffea7cfeba99e2b796daf49a}} 
+\index{T\+B\+S\+D\+K\+Request@{T\+B\+S\+D\+K\+Request}!remove\+Biz\+Parameter\+:@{remove\+Biz\+Parameter\+:}}
+\index{remove\+Biz\+Parameter\+:@{remove\+Biz\+Parameter\+:}!T\+B\+S\+D\+K\+Request@{T\+B\+S\+D\+K\+Request}}
+\subsubsection{\texorpdfstring{remove\+Biz\+Parameter\+:()}{removeBizParameter:()}}
+{\footnotesize\ttfamily -\/ (void) remove\+Biz\+Parameter\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{key }\end{DoxyParamCaption}}
+
+移除一个业务参数 
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_a46188e6c3d2c18bd93b4fc899a642e09}\label{interface_t_b_s_d_k_request_a46188e6c3d2c18bd93b4fc899a642e09}} 
+\index{T\+B\+S\+D\+K\+Request@{T\+B\+S\+D\+K\+Request}!remove\+Ext\+Parameter\+:@{remove\+Ext\+Parameter\+:}}
+\index{remove\+Ext\+Parameter\+:@{remove\+Ext\+Parameter\+:}!T\+B\+S\+D\+K\+Request@{T\+B\+S\+D\+K\+Request}}
+\subsubsection{\texorpdfstring{remove\+Ext\+Parameter\+:()}{removeExtParameter:()}}
+{\footnotesize\ttfamily -\/ (void) remove\+Ext\+Parameter\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{key }\end{DoxyParamCaption}}
+
+移除一个扩展参数 
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_t_b_s_d_k_request_aa8a1938d953fa9d55087184ef9154370}\label{interface_t_b_s_d_k_request_aa8a1938d953fa9d55087184ef9154370}} 
+\index{T\+B\+S\+D\+K\+Request@{T\+B\+S\+D\+K\+Request}!reset@{reset}}
+\index{reset@{reset}!T\+B\+S\+D\+K\+Request@{T\+B\+S\+D\+K\+Request}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily -\/ (void) reset \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+重置 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Open\+Mtop\+S\+D\+K.\+framework/\+Headers/T\+B\+S\+D\+K\+Request.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,488 @@
+ 
+
+\href{https://travis-ci.org/AFNetworking/AFNetworking}{\tt }
+
+A\+F\+Networking is a delightful networking library for i\+OS and Mac OS X. It\textquotesingle{}s built on top of the \href{http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/URLLoadingSystem/URLLoadingSystem.html}{\tt Foundation U\+RL Loading System}, extending the powerful high-\/level networking abstractions built into Cocoa. It has a modular architecture with well-\/designed, feature-\/rich A\+P\+Is that are a joy to use.
+
+Perhaps the most important feature of all, however, is the amazing community of developers who use and contribute to A\+F\+Networking every day. A\+F\+Networking powers some of the most popular and critically-\/acclaimed apps on the i\+Phone, i\+Pad, and Mac.
+
+Choose A\+F\+Networking for your next project, or migrate over your existing projects—you\textquotesingle{}ll be happy you did!
+
+\subsection*{How To Get Started}
+
+
+\begin{DoxyItemize}
+\item \href{https://github.com/AFNetworking/AFNetworking/archive/master.zip}{\tt Download A\+F\+Networking} and try out the included Mac and i\+Phone example apps
+\item Read the \href{https://github.com/AFNetworking/AFNetworking/wiki/Getting-Started-with-AFNetworking}{\tt \char`\"{}\+Getting Started\char`\"{} guide}, \href{https://github.com/AFNetworking/AFNetworking/wiki/AFNetworking-FAQ}{\tt F\+AQ}, or \href{https://github.com/AFNetworking/AFNetworking/wiki}{\tt other articles on the Wiki}
+\item Check out the \href{http://cocoadocs.org/docsets/AFNetworking/}{\tt documentation} for a comprehensive look at all of the A\+P\+Is available in A\+F\+Networking
+\item Read the \href{https://github.com/AFNetworking/AFNetworking/wiki/AFNetworking-2.0-Migration-Guide}{\tt A\+F\+Networking 2.\+0 Migration Guide} for an overview of the architectural changes from 1.\+0.
+\end{DoxyItemize}
+
+\subsection*{Communication}
+
+
+\begin{DoxyItemize}
+\item If you {\bfseries need help}, use \href{http://stackoverflow.com/questions/tagged/afnetworking}{\tt Stack Overflow}. (Tag \textquotesingle{}afnetworking\textquotesingle{})
+\item If you\textquotesingle{}d like to {\bfseries ask a general question}, use \href{http://stackoverflow.com/questions/tagged/afnetworking}{\tt Stack Overflow}.
+\item If you {\bfseries found a bug}, {\itshape and can provide steps to reliably reproduce it}, open an issue.
+\item If you {\bfseries have a feature request}, open an issue.
+\item If you {\bfseries want to contribute}, submit a pull request.
+\end{DoxyItemize}
+
+\subsubsection*{Installation with Cocoa\+Pods}
+
+\href{https://cocoapods.org/}{\tt Cocoa\+Pods} is a dependency manager for Objective-\/C, which automates and simplifies the process of using 3rd-\/party libraries like A\+F\+Networking in your projects. See the \href{https://github.com/AFNetworking/AFNetworking/wiki/Getting-Started-with-AFNetworking}{\tt \char`\"{}\+Getting Started\char`\"{} guide for more information}.
+
+\paragraph*{Podfile}
+
+
+\begin{DoxyCode}
+platform :ios, '7.0'
+pod "AFNetworking", "~> 2.0"
+\end{DoxyCode}
+
+
+\subsection*{Requirements}
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{4}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ A\+F\+Networking Version  }&\textbf{ Minimum i\+OS Target  }&\textbf{ Minimum OS X Target  }&\textbf{ Notes   }\\\cline{1-4}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ A\+F\+Networking Version  }&\textbf{ Minimum i\+OS Target  }&\textbf{ Minimum OS X Target  }&\textbf{ Notes   }\\\cline{1-4}
+\endhead
+2.\+x  &i\+OS 6  &OS X 10.\+8  &Xcode 5 is required. {\ttfamily N\+S\+U\+R\+L\+Session} subspec requires i\+OS 7 or OS X 10.\+9.   \\\cline{1-4}
+\href{https://github.com/AFNetworking/AFNetworking/tree/1.x}{\tt 1.\+x}  &i\+OS 5  &Mac OS X 10.\+7  &\\\cline{1-4}
+\href{https://github.com/AFNetworking/AFNetworking/tree/0.10.x}{\tt 0.\+10.\+x}  &i\+OS 4  &Mac OS X 10.\+6  &\\\cline{1-4}
+\end{longtabu}
+
+
+(OS X projects must support \href{https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtVersionsPlatforms.html}{\tt 64-\/bit with modern Cocoa runtime}).
+
+\begin{quote}
+Programming in Swift? Try \href{https://github.com/Alamofire/Alamofire}{\tt Alamofire} for a more conventional set of A\+P\+Is. \end{quote}
+
+
+\subsection*{Architecture}
+
+\subsubsection*{N\+S\+U\+R\+L\+Connection}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{interface_a_f_u_r_l_connection_operation}{A\+F\+U\+R\+L\+Connection\+Operation}}}
+\item {\ttfamily \mbox{\hyperlink{interface_a_f_h_t_t_p_request_operation}{A\+F\+H\+T\+T\+P\+Request\+Operation}}}
+\item {\ttfamily \mbox{\hyperlink{interface_a_f_h_t_t_p_request_operation_manager}{A\+F\+H\+T\+T\+P\+Request\+Operation\+Manager}}}
+\end{DoxyItemize}
+
+\subsubsection*{N\+S\+U\+R\+L\+Session \+\_\+(i\+OS 7 / Mac OS X 10.\+9)\+\_\+}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily A\+F\+U\+R\+L\+Session\+Manager}
+\item {\ttfamily A\+F\+H\+T\+T\+P\+Session\+Manager}
+\end{DoxyItemize}
+
+\subsubsection*{Serialization}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily $<$\mbox{\hyperlink{class_a_f_u_r_l_request_serialization-p}{A\+F\+U\+R\+L\+Request\+Serialization}}$>$}
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{interface_a_f_h_t_t_p_request_serializer}{A\+F\+H\+T\+T\+P\+Request\+Serializer}}}
+\item {\ttfamily \mbox{\hyperlink{interface_a_f_j_s_o_n_request_serializer}{A\+F\+J\+S\+O\+N\+Request\+Serializer}}}
+\item {\ttfamily \mbox{\hyperlink{interface_a_f_property_list_request_serializer}{A\+F\+Property\+List\+Request\+Serializer}}}
+\end{DoxyItemize}
+\item {\ttfamily $<$\mbox{\hyperlink{class_a_f_u_r_l_response_serialization-p}{A\+F\+U\+R\+L\+Response\+Serialization}}$>$}
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{interface_a_f_h_t_t_p_response_serializer}{A\+F\+H\+T\+T\+P\+Response\+Serializer}}}
+\item {\ttfamily \mbox{\hyperlink{interface_a_f_j_s_o_n_response_serializer}{A\+F\+J\+S\+O\+N\+Response\+Serializer}}}
+\item {\ttfamily \mbox{\hyperlink{interface_a_f_x_m_l_parser_response_serializer}{A\+F\+X\+M\+L\+Parser\+Response\+Serializer}}}
+\item {\ttfamily A\+F\+X\+M\+L\+Document\+Response\+Serializer} \+\_\+(\+Mac O\+S X)\+\_\+
+\item {\ttfamily \mbox{\hyperlink{interface_a_f_property_list_response_serializer}{A\+F\+Property\+List\+Response\+Serializer}}}
+\item {\ttfamily \mbox{\hyperlink{interface_a_f_image_response_serializer}{A\+F\+Image\+Response\+Serializer}}}
+\item {\ttfamily \mbox{\hyperlink{interface_a_f_compound_response_serializer}{A\+F\+Compound\+Response\+Serializer}}}
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsubsection*{Additional Functionality}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{interface_a_f_security_policy}{A\+F\+Security\+Policy}}}
+\item {\ttfamily \mbox{\hyperlink{interface_a_f_network_reachability_manager}{A\+F\+Network\+Reachability\+Manager}}}
+\end{DoxyItemize}
+
+\subsection*{Usage}
+
+\subsubsection*{H\+T\+TP Request Operation Manager}
+
+{\ttfamily \mbox{\hyperlink{interface_a_f_h_t_t_p_request_operation_manager}{A\+F\+H\+T\+T\+P\+Request\+Operation\+Manager}}} encapsulates the common patterns of communicating with a web application over H\+T\+TP, including request creation, response serialization, network reachability monitoring, and security, as well as request operation management.
+
+\paragraph*{{\ttfamily G\+ET} Request}
+
+
+\begin{DoxyCode}
+AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+[manager GET:@"http://example.com/resources.json" parameters:nil success:^(AFHTTPRequestOperation
+       *operation, id responseObject) \{
+    NSLog(@"JSON: %@", responseObject);
+\} failure:^(AFHTTPRequestOperation *operation, NSError *error) \{
+    NSLog(@"Error: %@", error);
+\}];
+\end{DoxyCode}
+
+
+\paragraph*{{\ttfamily P\+O\+ST} U\+R\+L-\/\+Form-\/\+Encoded Request}
+
+
+\begin{DoxyCode}
+AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+NSDictionary *parameters =@"foo": @"bar"\};
+[manager POST:@"http://example.com/resources.json" parameters:parameters success:^(AFHTTPRequestOperation
+       *operation, id responseObject) \{
+    NSLog(@"JSON: %@", responseObject);
+\} failure:^(AFHTTPRequestOperation *operation, NSError *error) \{
+    NSLog(@"Error: %@", error);
+\}];
+\end{DoxyCode}
+
+
+\paragraph*{{\ttfamily P\+O\+ST} Multi-\/\+Part Request}
+
+
+\begin{DoxyCode}
+AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+NSDictionary *parameters =@"foo": @"bar"\};
+NSURL *filePath = [NSURL fileURLWithPath:@"file://path/to/image.png"];
+[manager POST:@"http://example.com/resources.json" parameters:parameters
+       constructingBodyWithBlock:^(id<AFMultipartFormData> formData) \{
+    [formData appendPartWithFileURL:filePath name:@"image" error:nil];
+\} success:^(AFHTTPRequestOperation *operation, id responseObject) \{
+    NSLog(@"Success: %@", responseObject);
+\} failure:^(AFHTTPRequestOperation *operation, NSError *error) \{
+    NSLog(@"Error: %@", error);
+\}];
+\end{DoxyCode}
+ 
+
+
+
+\subsubsection*{A\+F\+U\+R\+L\+Session\+Manager}
+
+{\ttfamily A\+F\+U\+R\+L\+Session\+Manager} creates and manages an {\ttfamily N\+S\+U\+R\+L\+Session} object based on a specified {\ttfamily N\+S\+U\+R\+L\+Session\+Configuration} object, which conforms to {\ttfamily $<$N\+S\+U\+R\+L\+Session\+Task\+Delegate$>$}, {\ttfamily $<$N\+S\+U\+R\+L\+Session\+Data\+Delegate$>$}, {\ttfamily $<$N\+S\+U\+R\+L\+Session\+Download\+Delegate$>$}, and {\ttfamily $<$N\+S\+U\+R\+L\+Session\+Delegate$>$}.
+
+\paragraph*{Creating a Download Task}
+
+
+\begin{DoxyCode}
+NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+
+NSURL *URL = [NSURL URLWithString:@"http://example.com/download.zip"];
+NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+
+NSURLSessionDownloadTask *downloadTask = [manager downloadTaskWithRequest:request progress:nil
+       destination:^NSURL *(NSURL *targetPath, NSURLResponse *response) \{
+    NSURL *documentsDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory
+       inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
+    return [documentsDirectoryURL URLByAppendingPathComponent:[response suggestedFilename]];
+\} completionHandler:^(NSURLResponse *response, NSURL *filePath, NSError *error) \{
+    NSLog(@"File downloaded to: %@", filePath);
+\}];
+[downloadTask resume];
+\end{DoxyCode}
+
+
+\paragraph*{Creating an Upload Task}
+
+
+\begin{DoxyCode}
+NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+
+NSURL *URL = [NSURL URLWithString:@"http://example.com/upload"];
+NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+
+NSURL *filePath = [NSURL fileURLWithPath:@"file://path/to/image.png"];
+NSURLSessionUploadTask *uploadTask = [manager uploadTaskWithRequest:request fromFile:filePath progress:nil
+       completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) \{
+    if (error) \{
+        NSLog(@"Error: %@", error);
+    \} else \{
+        NSLog(@"Success: %@ %@", response, responseObject);
+    \}
+\}];
+[uploadTask resume];
+\end{DoxyCode}
+
+
+\paragraph*{Creating an Upload Task for a Multi-\/\+Part Request, with Progress}
+
+
+\begin{DoxyCode}
+NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST"
+       URLString:@"http://example.com/upload" parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData>
+       formData) \{
+        [formData appendPartWithFileURL:[NSURL fileURLWithPath:@"file://path/to/image.jpg"] name:@"file"
+       fileName:@"filename.jpg" mimeType:@"image/jpeg" error:nil];
+    \} error:nil];
+
+AFURLSessionManager *manager = [[AFURLSessionManager alloc]
+       initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+NSProgress *progress = nil;
+
+NSURLSessionUploadTask *uploadTask = [manager uploadTaskWithStreamedRequest:request progress:&progress
+       completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) \{
+    if (error) \{
+        NSLog(@"Error: %@", error);
+    \} else \{
+        NSLog(@"%@ %@", response, responseObject);
+    \}
+\}];
+
+[uploadTask resume];
+\end{DoxyCode}
+
+
+\paragraph*{Creating a Data Task}
+
+
+\begin{DoxyCode}
+NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+
+NSURL *URL = [NSURL URLWithString:@"http://example.com/upload"];
+NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+
+NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse
+       *response, id responseObject, NSError *error) \{
+    if (error) \{
+        NSLog(@"Error: %@", error);
+    \} else \{
+        NSLog(@"%@ %@", response, responseObject);
+    \}
+\}];
+[dataTask resume];
+\end{DoxyCode}
+ 
+
+
+
+\subsubsection*{Request Serialization}
+
+Request serializers create requests from U\+RL strings, encoding parameters as either a query string or H\+T\+TP body.
+
+
+\begin{DoxyCode}
+NSString *URLString = @"http://example.com";
+NSDictionary *parameters =@"foo": @"bar", @"baz": @[@1, @2, @3]\};
+\end{DoxyCode}
+
+
+\paragraph*{Query String Parameter Encoding}
+
+
+\begin{DoxyCode}
+[[AFHTTPRequestSerializer serializer] requestWithMethod:@"GET" URLString:URLString parameters:parameters
+       error:nil];
+\end{DoxyCode}
+ \begin{DoxyVerb}GET http://example.com?foo=bar&baz[]=1&baz[]=2&baz[]=3
+\end{DoxyVerb}
+
+
+\paragraph*{U\+RL Form Parameter Encoding}
+
+
+\begin{DoxyCode}
+[[AFHTTPRequestSerializer serializer] requestWithMethod:@"POST" URLString:URLString parameters:parameters];
+\end{DoxyCode}
+ \begin{DoxyVerb}POST http://example.com/
+Content-Type: application/x-www-form-urlencoded
+
+foo=bar&baz[]=1&baz[]=2&baz[]=3
+\end{DoxyVerb}
+
+
+\paragraph*{J\+S\+ON Parameter Encoding}
+
+
+\begin{DoxyCode}
+[[AFJSONRequestSerializer serializer] requestWithMethod:@"POST" URLString:URLString parameters:parameters];
+\end{DoxyCode}
+ \begin{DoxyVerb}POST http://example.com/
+Content-Type: application/json
+
+{"foo": "bar", "baz": [1,2,3]}
+\end{DoxyVerb}
+
+
+
+
+
+
+\subsubsection*{Network \mbox{\hyperlink{interface_reachability}{Reachability}} Manager}
+
+{\ttfamily \mbox{\hyperlink{interface_a_f_network_reachability_manager}{A\+F\+Network\+Reachability\+Manager}}} monitors the reachability of domains, and addresses for both W\+W\+AN and Wi\+Fi network interfaces.
+
+
+\begin{DoxyItemize}
+\item Do not use \mbox{\hyperlink{interface_reachability}{Reachability}} to determine if the original request should be sent.
+\begin{DoxyItemize}
+\item You should try to send it.
+\end{DoxyItemize}
+\item You can use \mbox{\hyperlink{interface_reachability}{Reachability}} to determine when a request should be automatically retried.
+\begin{DoxyItemize}
+\item Although it may still fail, a \mbox{\hyperlink{interface_reachability}{Reachability}} notification that the connectivity is available is a good time to retry something.
+\end{DoxyItemize}
+\item Network reachability is a useful tool for determining why a request might have failed.
+\begin{DoxyItemize}
+\item After a network request has failed, telling the user they\textquotesingle{}re offline is better than giving them a more technical but accurate error, such as \char`\"{}request timed out.\char`\"{}
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+See also \href{https://developer.apple.com/videos/play/wwdc2012-706/}{\tt W\+W\+DC 2012 session 706, \char`\"{}\+Networking Best Practices.\char`\"{}}.
+
+\paragraph*{Shared Network \mbox{\hyperlink{interface_reachability}{Reachability}}}
+
+
+\begin{DoxyCode}
+[[AFNetworkReachabilityManager sharedManager]
+       setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) \{
+    NSLog(@"Reachability: %@", AFStringFromNetworkReachabilityStatus(status));
+\}];
+
+[[AFNetworkReachabilityManager sharedManager] startMonitoring];
+\end{DoxyCode}
+
+
+\paragraph*{H\+T\+TP Manager \mbox{\hyperlink{interface_reachability}{Reachability}}}
+
+
+\begin{DoxyCode}
+NSURL *baseURL = [NSURL URLWithString:@"http://example.com/"];
+AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:baseURL];
+
+NSOperationQueue *operationQueue = manager.operationQueue;
+[manager.reachabilityManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) \{
+    switch (status) \{
+        case AFNetworkReachabilityStatusReachableViaWWAN:
+        case AFNetworkReachabilityStatusReachableViaWiFi:
+            [operationQueue setSuspended:NO];
+            break;
+        case AFNetworkReachabilityStatusNotReachable:
+        default:
+            [operationQueue setSuspended:YES];
+            break;
+    \}
+\}];
+
+[manager.reachabilityManager startMonitoring];
+\end{DoxyCode}
+ 
+
+
+
+\subsubsection*{Security Policy}
+
+{\ttfamily \mbox{\hyperlink{interface_a_f_security_policy}{A\+F\+Security\+Policy}}} evaluates server trust against pinned X.\+509 certificates and public keys over secure connections.
+
+Adding pinned S\+SL certificates to your app helps prevent man-\/in-\/the-\/middle attacks and other vulnerabilities. Applications dealing with sensitive customer data or financial information are strongly encouraged to route all communication over an H\+T\+T\+PS connection with S\+SL pinning configured and enabled.
+
+\paragraph*{Allowing Invalid S\+SL Certificates}
+
+
+\begin{DoxyCode}
+AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+manager.securityPolicy.allowInvalidCertificates = YES; // not recommended for production
+\end{DoxyCode}
+ 
+
+
+
+\subsubsection*{\mbox{\hyperlink{interface_a_f_h_t_t_p_request_operation}{A\+F\+H\+T\+T\+P\+Request\+Operation}}}
+
+{\ttfamily \mbox{\hyperlink{interface_a_f_h_t_t_p_request_operation}{A\+F\+H\+T\+T\+P\+Request\+Operation}}} is a subclass of {\ttfamily \mbox{\hyperlink{interface_a_f_u_r_l_connection_operation}{A\+F\+U\+R\+L\+Connection\+Operation}}} for requests using the H\+T\+TP or H\+T\+T\+PS protocols. It encapsulates the concept of acceptable status codes and content types, which determine the success or failure of a request.
+
+Although {\ttfamily \mbox{\hyperlink{interface_a_f_h_t_t_p_request_operation_manager}{A\+F\+H\+T\+T\+P\+Request\+Operation\+Manager}}} is usually the best way to go about making requests, {\ttfamily \mbox{\hyperlink{interface_a_f_h_t_t_p_request_operation}{A\+F\+H\+T\+T\+P\+Request\+Operation}}} can be used by itself.
+
+\paragraph*{{\ttfamily G\+ET} with {\ttfamily \mbox{\hyperlink{interface_a_f_h_t_t_p_request_operation}{A\+F\+H\+T\+T\+P\+Request\+Operation}}}}
+
+
+\begin{DoxyCode}
+NSURL *URL = [NSURL URLWithString:@"http://example.com/resources/123.json"];
+NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+AFHTTPRequestOperation *op = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+op.responseSerializer = [AFJSONResponseSerializer serializer];
+[op setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) \{
+    NSLog(@"JSON: %@", responseObject);
+\} failure:^(AFHTTPRequestOperation *operation, NSError *error) \{
+    NSLog(@"Error: %@", error);
+\}];
+[[NSOperationQueue mainQueue] addOperation:op];
+\end{DoxyCode}
+
+
+\paragraph*{Batch of Operations}
+
+
+\begin{DoxyCode}
+NSMutableArray *mutableOperations = [NSMutableArray array];
+for (NSURL *fileURL in filesToUpload) \{
+    NSURLRequest *request = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST"
+       URLString:@"http://example.com/upload" parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData>
+       formData) \{
+        [formData appendPartWithFileURL:fileURL name:@"images[]" error:nil];
+    \}];
+
+    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+
+    [mutableOperations addObject:operation];
+\}
+
+NSArray *operations = [AFURLConnectionOperation batchOfRequestOperations:@[...] progressBlock:^(NSUInteger
+       numberOfFinishedOperations, NSUInteger totalNumberOfOperations) \{
+    NSLog(@"%lu of %lu complete", numberOfFinishedOperations, totalNumberOfOperations);
+\} completionBlock:^(NSArray *operations) \{
+    NSLog(@"All operations in batch complete");
+\}];
+[[NSOperationQueue mainQueue] addOperations:operations waitUntilFinished:NO];
+\end{DoxyCode}
+
+
+\subsection*{Unit Tests}
+
+A\+F\+Networking includes a suite of unit tests within the Tests subdirectory. In order to run the unit tests, you must install the testing dependencies via \href{https://cocoapods.org/}{\tt Cocoa\+Pods}\+: \begin{DoxyVerb}$ cd Tests
+$ pod install
+\end{DoxyVerb}
+
+
+Once testing dependencies are installed, you can execute the test suite via the \textquotesingle{}i\+OS Tests\textquotesingle{} and \textquotesingle{}OS X Tests\textquotesingle{} schemes within Xcode.
+
+\subsubsection*{Running Tests from the Command Line}
+
+Tests can also be run from the command line or within a continuous integration environment. The \href{https://github.com/supermarin/xcpretty}{\tt {\ttfamily xcpretty}} utility needs to be installed before running the tests from the command line\+: \begin{DoxyVerb}$ gem install xcpretty
+\end{DoxyVerb}
+
+
+Once {\ttfamily xcpretty} is installed, you can execute the suite via {\ttfamily rake test}.
+
+\subsection*{Credits}
+
+A\+F\+Networking is owned and maintained by the \href{http://alamofire.org}{\tt Alamofire Software Foundation}.
+
+A\+F\+Networking was originally created by \href{https://github.com/sco/}{\tt Scott Raymond} and \href{https://github.com/mattt/}{\tt Mattt Thompson} in the development of \href{https://en.wikipedia.org/wiki/Gowalla}{\tt Gowalla for i\+Phone}.
+
+A\+F\+Networking\textquotesingle{}s logo was designed by \href{http://www.alandefibaugh.com/}{\tt Alan Defibaugh}.
+
+And most of all, thanks to A\+F\+Networking\textquotesingle{}s \href{https://github.com/AFNetworking/AFNetworking/graphs/contributors}{\tt growing list of contributors}.
+
+\subsubsection*{Security Disclosure}
+
+If you believe you have identified a security vulnerability with A\+F\+Networking, you should report it as soon as possible via email to \href{mailto:security@alamofire.org}{\tt security@alamofire.\+org}. Please do not post it to a public issue tracker.
+
+\subsection*{License}
+
+A\+F\+Networking is released under the M\+IT license. See L\+I\+C\+E\+N\+SE for details. 

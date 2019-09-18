@@ -1,0 +1,153 @@
+\hypertarget{protocol_i_open_static_key_encrypt_component_01-p}{}\section{$<$I\+Open\+Static\+Key\+Encrypt\+Component $>$ Protocol Reference}
+\label{protocol_i_open_static_key_encrypt_component_01-p}\index{$<$\+I\+Open\+Static\+Key\+Encrypt\+Component $>$@{$<$\+I\+Open\+Static\+Key\+Encrypt\+Component $>$}}
+
+
+Inheritance diagram for $<$I\+Open\+Static\+Key\+Encrypt\+Component $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{protocol_i_open_static_key_encrypt_component_01-p__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for $<$I\+Open\+Static\+Key\+Encrypt\+Component $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{protocol_i_open_static_key_encrypt_component_01-p__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(int) -\/ \mbox{\hyperlink{protocol_i_open_static_key_encrypt_component_01-p_affdd20bcddb0a63f5001df8d18443aa1}{save\+Secret\+:value\+:}}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{protocol_i_open_static_key_encrypt_component_01-p_aee7dd20f6207eaa1913f483a97894eed}{is\+Secret\+Exist\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{protocol_i_open_static_key_encrypt_component_01-p_adda2a40b5b5aaabbf9c574f100883453}{remove\+Secret\+:}}
+\item 
+(N\+S\+Data $\ast$) -\/ \mbox{\hyperlink{protocol_i_open_static_key_encrypt_component_01-p_a30c3048e42624cffc4c0ebddbe1efb28}{encrypt\+:key\+:data\+:}}
+\item 
+(N\+S\+Data $\ast$) -\/ \mbox{\hyperlink{protocol_i_open_static_key_encrypt_component_01-p_a93cf7d6c8fa5dc13c5536766146c2105}{decrypt\+:key\+:data\+:}}
+\item 
+(N\+S\+Data $\ast$) -\/ \mbox{\hyperlink{protocol_i_open_static_key_encrypt_component_01-p_a2421c129a9a1c54ddbe92e2d1deeb758}{encrypt\+Secret\+Data\+:key\+:data\+Key\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{protocol_i_open_static_key_encrypt_component_01-p_a93cf7d6c8fa5dc13c5536766146c2105}\label{protocol_i_open_static_key_encrypt_component_01-p_a93cf7d6c8fa5dc13c5536766146c2105}} 
+\index{I\+Open\+Static\+Key\+Encrypt\+Component -\/p@{I\+Open\+Static\+Key\+Encrypt\+Component -\/p}!decrypt\+:key\+:data\+:@{decrypt\+:key\+:data\+:}}
+\index{decrypt\+:key\+:data\+:@{decrypt\+:key\+:data\+:}!I\+Open\+Static\+Key\+Encrypt\+Component -\/p@{I\+Open\+Static\+Key\+Encrypt\+Component -\/p}}
+\subsubsection{\texorpdfstring{decrypt\+:key\+:data\+:()}{decrypt:key:data:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Data$\ast$ I\+Open\+Static\+Key\+Encrypt\+Component) decrypt\+: \begin{DoxyParamCaption}\item[{(N\+S\+Integer)}]{mode }\item[{key:(N\+S\+String $\ast$)}]{key }\item[{data:(N\+S\+Data $\ast$)}]{data }\end{DoxyParamCaption}}
+
+解密秘钥数据
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & 解密算法\\
+\hline
+{\em key} & 解密使用的key\\
+\hline
+{\em data} & 需要解密的数据\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+解密结果数组 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_i_open_static_key_encrypt_component_01-p_a30c3048e42624cffc4c0ebddbe1efb28}\label{protocol_i_open_static_key_encrypt_component_01-p_a30c3048e42624cffc4c0ebddbe1efb28}} 
+\index{I\+Open\+Static\+Key\+Encrypt\+Component -\/p@{I\+Open\+Static\+Key\+Encrypt\+Component -\/p}!encrypt\+:key\+:data\+:@{encrypt\+:key\+:data\+:}}
+\index{encrypt\+:key\+:data\+:@{encrypt\+:key\+:data\+:}!I\+Open\+Static\+Key\+Encrypt\+Component -\/p@{I\+Open\+Static\+Key\+Encrypt\+Component -\/p}}
+\subsubsection{\texorpdfstring{encrypt\+:key\+:data\+:()}{encrypt:key:data:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Data$\ast$ I\+Open\+Static\+Key\+Encrypt\+Component) encrypt\+: \begin{DoxyParamCaption}\item[{(N\+S\+Integer)}]{mode }\item[{key:(N\+S\+String $\ast$)}]{key }\item[{data:(N\+S\+Data $\ast$)}]{data }\end{DoxyParamCaption}}
+
+加密秘钥数据
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & 加密算法\\
+\hline
+{\em key} & 加密使用的key\\
+\hline
+{\em data} & 需要加密的数据\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+加密结果数组 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_i_open_static_key_encrypt_component_01-p_a2421c129a9a1c54ddbe92e2d1deeb758}\label{protocol_i_open_static_key_encrypt_component_01-p_a2421c129a9a1c54ddbe92e2d1deeb758}} 
+\index{I\+Open\+Static\+Key\+Encrypt\+Component -\/p@{I\+Open\+Static\+Key\+Encrypt\+Component -\/p}!encrypt\+Secret\+Data\+:key\+:data\+Key\+:@{encrypt\+Secret\+Data\+:key\+:data\+Key\+:}}
+\index{encrypt\+Secret\+Data\+:key\+:data\+Key\+:@{encrypt\+Secret\+Data\+:key\+:data\+Key\+:}!I\+Open\+Static\+Key\+Encrypt\+Component -\/p@{I\+Open\+Static\+Key\+Encrypt\+Component -\/p}}
+\subsubsection{\texorpdfstring{encrypt\+Secret\+Data\+:key\+:data\+Key\+:()}{encryptSecretData:key:dataKey:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Data$\ast$ I\+Open\+Static\+Key\+Encrypt\+Component) encrypt\+Secret\+Data\+: \begin{DoxyParamCaption}\item[{(N\+S\+Integer)}]{mode }\item[{key:(N\+S\+String $\ast$)}]{key }\item[{dataKey:(N\+S\+String $\ast$)}]{data\+Key }\end{DoxyParamCaption}}
+
+使用key获取对应的value，再作为key，加密data\+Key对应的value
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & 加密算法\\
+\hline
+{\em key} & 保存到\+N\+S\+Userdefault里面的key-\/value对的key值\\
+\hline
+{\em data\+Key} & 保存到\+N\+S\+Userdefault里面的key-\/value对的key值\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+加密结果byte数组 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_i_open_static_key_encrypt_component_01-p_aee7dd20f6207eaa1913f483a97894eed}\label{protocol_i_open_static_key_encrypt_component_01-p_aee7dd20f6207eaa1913f483a97894eed}} 
+\index{I\+Open\+Static\+Key\+Encrypt\+Component -\/p@{I\+Open\+Static\+Key\+Encrypt\+Component -\/p}!is\+Secret\+Exist\+:@{is\+Secret\+Exist\+:}}
+\index{is\+Secret\+Exist\+:@{is\+Secret\+Exist\+:}!I\+Open\+Static\+Key\+Encrypt\+Component -\/p@{I\+Open\+Static\+Key\+Encrypt\+Component -\/p}}
+\subsubsection{\texorpdfstring{is\+Secret\+Exist\+:()}{isSecretExist:()}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL I\+Open\+Static\+Key\+Encrypt\+Component) is\+Secret\+Exist\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{key }\end{DoxyParamCaption}}
+
+key对应的安全凭证是否存在
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & 安全凭证对应的key\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+存在状态 true，存在。false，不存在 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_i_open_static_key_encrypt_component_01-p_adda2a40b5b5aaabbf9c574f100883453}\label{protocol_i_open_static_key_encrypt_component_01-p_adda2a40b5b5aaabbf9c574f100883453}} 
+\index{I\+Open\+Static\+Key\+Encrypt\+Component -\/p@{I\+Open\+Static\+Key\+Encrypt\+Component -\/p}!remove\+Secret\+:@{remove\+Secret\+:}}
+\index{remove\+Secret\+:@{remove\+Secret\+:}!I\+Open\+Static\+Key\+Encrypt\+Component -\/p@{I\+Open\+Static\+Key\+Encrypt\+Component -\/p}}
+\subsubsection{\texorpdfstring{remove\+Secret\+:()}{removeSecret:()}}
+{\footnotesize\ttfamily -\/ (int I\+Open\+Static\+Key\+Encrypt\+Component) remove\+Secret\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{key }\end{DoxyParamCaption}}
+
+删除安全凭证项
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & 数据对应的key\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+删除结果状态码 1,没有需要被删除的项 2，删除成功 0，删除失败 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_i_open_static_key_encrypt_component_01-p_affdd20bcddb0a63f5001df8d18443aa1}\label{protocol_i_open_static_key_encrypt_component_01-p_affdd20bcddb0a63f5001df8d18443aa1}} 
+\index{I\+Open\+Static\+Key\+Encrypt\+Component -\/p@{I\+Open\+Static\+Key\+Encrypt\+Component -\/p}!save\+Secret\+:value\+:@{save\+Secret\+:value\+:}}
+\index{save\+Secret\+:value\+:@{save\+Secret\+:value\+:}!I\+Open\+Static\+Key\+Encrypt\+Component -\/p@{I\+Open\+Static\+Key\+Encrypt\+Component -\/p}}
+\subsubsection{\texorpdfstring{save\+Secret\+:value\+:()}{saveSecret:value:()}}
+{\footnotesize\ttfamily -\/ (int I\+Open\+Static\+Key\+Encrypt\+Component) save\+Secret\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{key }\item[{value:(N\+S\+Data $\ast$)}]{value }\end{DoxyParamCaption}}
+
+存储安全凭证到本地存储
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & 数据对应的\+Key\\
+\hline
+{\em value} & 要存储的安全凭证\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+保存状态 1，保存成功 2，覆盖保存 0，保存失败 
+\end{DoxyReturn}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Security\+Guard\+S\+D\+K.\+framework/\+Headers/\+Open/\+Open\+Static\+Key\+Encrypt/I\+Open\+Static\+Key\+Encrypt\+Component.\+h\end{DoxyCompactItemize}

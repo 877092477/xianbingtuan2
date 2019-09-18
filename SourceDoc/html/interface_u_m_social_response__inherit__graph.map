@@ -1,0 +1,5 @@
+<map id="UMSocialResponse" name="UMSocialResponse">
+<area shape="rect" id="node3" href="$interface_u_m_social_auth_response.html" title="UMSocialAuthResponse" alt="" coords="5,152,171,177"/>
+<area shape="rect" id="node4" href="$interface_u_m_social_share_response.html" title="UMSocialShareResponse" alt="" coords="195,152,369,177"/>
+<area shape="rect" id="node5" href="$interface_u_m_social_user_info_response.html" title="UMSocialUserInfoResponse" alt="" coords="393,152,581,177"/>
+</map>

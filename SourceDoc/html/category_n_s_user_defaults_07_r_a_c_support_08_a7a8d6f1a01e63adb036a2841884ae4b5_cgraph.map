@@ -1,0 +1,5 @@
+<map id="&#45;[NSUserDefaults(RACSupport) rac_channelTerminalForKey:]" name="&#45;[NSUserDefaults(RACSupport) rac_channelTerminalForKey:]">
+<area shape="rect" id="node2" href="$interface_r_a_c_scheduler.html#a5b62bfd8b2957365a9958b61a9cfaf83" title="Invokes +schedulerWithPriority: with RACSchedulerPriorityDefault. " alt="" coords="262,12,448,37"/>
+<area shape="rect" id="node3" href="$interface_r_a_c_scheduler.html#aa10e4f49fd6084c122ebd21e16e3de29" title="Invokes +schedulerWithPriority:name: with a default name. " alt="" coords="496,5,679,44"/>
+<area shape="rect" id="node4" href="$interface_r_a_c_scheduler.html#a34b1d3a261fb95c3a52347f7204422d7" title="+[RACScheduler scheduler\lWithPriority:name:]" alt="" coords="727,5,909,44"/>
+</map>

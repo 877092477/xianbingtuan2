@@ -1,0 +1,35 @@
+\hypertarget{category_u_i_collection_reusable_view_07_r_a_c_signal_support_08}{}\section{U\+I\+Collection\+Reusable\+View(R\+A\+C\+Signal\+Support) Category Reference}
+\label{category_u_i_collection_reusable_view_07_r_a_c_signal_support_08}\index{U\+I\+Collection\+Reusable\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Collection\+Reusable\+View(\+R\+A\+C\+Signal\+Support)}}
+
+
+Collaboration diagram for U\+I\+Collection\+Reusable\+View(R\+A\+C\+Signal\+Support)\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{category_u_i_collection_reusable_view_07_r_a_c_signal_support_08__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$ \mbox{\hyperlink{category_u_i_collection_reusable_view_07_r_a_c_signal_support_08_a59adfeb852087723b2a7d9736b27d8d5}{rac\+\_\+prepare\+For\+Reuse\+Signal}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{category_u_i_collection_reusable_view_07_r_a_c_signal_support_08_a59adfeb852087723b2a7d9736b27d8d5}\label{category_u_i_collection_reusable_view_07_r_a_c_signal_support_08_a59adfeb852087723b2a7d9736b27d8d5}} 
+\index{U\+I\+Collection\+Reusable\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Collection\+Reusable\+View(\+R\+A\+C\+Signal\+Support)}!rac\+\_\+prepare\+For\+Reuse\+Signal@{rac\+\_\+prepare\+For\+Reuse\+Signal}}
+\index{rac\+\_\+prepare\+For\+Reuse\+Signal@{rac\+\_\+prepare\+For\+Reuse\+Signal}!U\+I\+Collection\+Reusable\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Collection\+Reusable\+View(\+R\+A\+C\+Signal\+Support)}}
+\subsubsection{\texorpdfstring{rac\+\_\+prepare\+For\+Reuse\+Signal}{rac\_prepareForReuseSignal}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) rac\+\_\+prepare\+For\+Reuse\+Signal\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+A signal which will send a \mbox{\hyperlink{interface_r_a_c_unit}{R\+A\+C\+Unit}} whenever -\/prepare\+For\+Reuse is invoked upon the receiver.
+
+Examples
+
+\mbox{[}\mbox{[}\mbox{[}self.\+cancel\+Button rac\+\_\+signal\+For\+Control\+Events\+:U\+I\+Control\+Event\+Touch\+Up\+Inside\mbox{]} take\+Until\+:self.\+rac\+\_\+prepare\+For\+Reuse\+Signal\mbox{]} subscribe\+Next\+:$^\wedge$(U\+I\+Button $\ast$x) \{ // do other things \}\mbox{]}; 
+
+The documentation for this category was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+Reactive\+Cocoa/U\+I\+Collection\+Reusable\+View+\+R\+A\+C\+Signal\+Support.\+h\item 
+Pods/\+Reactive\+Cocoa/\+Reactive\+Cocoa/U\+I\+Collection\+Reusable\+View+\+R\+A\+C\+Signal\+Support.\+m\end{DoxyCompactItemize}

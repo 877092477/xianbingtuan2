@@ -1,0 +1,168 @@
+\hypertarget{protocol_r_a_c_subscriber_01-p}{}\section{$<$R\+A\+C\+Subscriber $>$ Protocol Reference}
+\label{protocol_r_a_c_subscriber_01-p}\index{$<$\+R\+A\+C\+Subscriber $>$@{$<$\+R\+A\+C\+Subscriber $>$}}
+
+
+{\ttfamily \#import $<$R\+A\+C\+Subscriber.\+h$>$}
+
+
+
+Inheritance diagram for $<$R\+A\+C\+Subscriber $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{protocol_r_a_c_subscriber_01-p__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for $<$R\+A\+C\+Subscriber $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{protocol_r_a_c_subscriber_01-p__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_r_a_c_subscriber_01-p_ac5b675c8be8a83f8e7b7d96301cd6656}{send\+Next\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_r_a_c_subscriber_01-p_a70712a2213c3b1ac2d06b3634e924974}{send\+Error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_r_a_c_subscriber_01-p_a5dafeaf878cebf8834fc7b8039550a43}{send\+Completed}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_r_a_c_subscriber_01-p_a44012a5efac0242765bfb0a98180654d}{did\+Subscribe\+With\+Disposable\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_r_a_c_subscriber_01-p_ac5b675c8be8a83f8e7b7d96301cd6656}{send\+Next\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_r_a_c_subscriber_01-p_a70712a2213c3b1ac2d06b3634e924974}{send\+Error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_r_a_c_subscriber_01-p_a5dafeaf878cebf8834fc7b8039550a43}{send\+Completed}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_r_a_c_subscriber_01-p_a44012a5efac0242765bfb0a98180654d}{did\+Subscribe\+With\+Disposable\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_r_a_c_subscriber_01-p_ac5b675c8be8a83f8e7b7d96301cd6656}{send\+Next\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_r_a_c_subscriber_01-p_a70712a2213c3b1ac2d06b3634e924974}{send\+Error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_r_a_c_subscriber_01-p_a5dafeaf878cebf8834fc7b8039550a43}{send\+Completed}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_r_a_c_subscriber_01-p_a44012a5efac0242765bfb0a98180654d}{did\+Subscribe\+With\+Disposable\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents any object which can directly receive values from a \mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}}.
+
+You generally shouldn\textquotesingle{}t need to implement this protocol. +\mbox{[}\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} create\+Signal\+:\mbox{]}, \mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}}\textquotesingle{}s subscription methods, or \mbox{\hyperlink{interface_r_a_c_subject}{R\+A\+C\+Subject}} should work for most uses.
+
+Implementors of this protocol may receive messages and values from multiple threads simultaneously, and so should be thread-\/safe. Subscribers will also be weakly referenced so implementations must allow that. 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{protocol_r_a_c_subscriber_01-p_a44012a5efac0242765bfb0a98180654d}\label{protocol_r_a_c_subscriber_01-p_a44012a5efac0242765bfb0a98180654d}} 
+\index{R\+A\+C\+Subscriber -\/p@{R\+A\+C\+Subscriber -\/p}!did\+Subscribe\+With\+Disposable\+:@{did\+Subscribe\+With\+Disposable\+:}}
+\index{did\+Subscribe\+With\+Disposable\+:@{did\+Subscribe\+With\+Disposable\+:}!R\+A\+C\+Subscriber -\/p@{R\+A\+C\+Subscriber -\/p}}
+\subsubsection{\texorpdfstring{did\+Subscribe\+With\+Disposable\+:()}{didSubscribeWithDisposable:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (void \mbox{\hyperlink{interface_r_a_c_subscriber}{R\+A\+C\+Subscriber}}) did\+Subscribe\+With\+Disposable\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_r_a_c_compound_disposable}{R\+A\+C\+Compound\+Disposable}} $\ast$)}]{disposable }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+Sends the subscriber a disposable that represents one of its subscriptions.
+
+A subscriber may receive multiple disposables if it gets subscribed to multiple signals; however, any error or completed events must terminate {\itshape all} subscriptions. \mbox{\Hypertarget{protocol_r_a_c_subscriber_01-p_a44012a5efac0242765bfb0a98180654d}\label{protocol_r_a_c_subscriber_01-p_a44012a5efac0242765bfb0a98180654d}} 
+\index{R\+A\+C\+Subscriber -\/p@{R\+A\+C\+Subscriber -\/p}!did\+Subscribe\+With\+Disposable\+:@{did\+Subscribe\+With\+Disposable\+:}}
+\index{did\+Subscribe\+With\+Disposable\+:@{did\+Subscribe\+With\+Disposable\+:}!R\+A\+C\+Subscriber -\/p@{R\+A\+C\+Subscriber -\/p}}
+\subsubsection{\texorpdfstring{did\+Subscribe\+With\+Disposable\+:()}{didSubscribeWithDisposable:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (void \mbox{\hyperlink{interface_r_a_c_subscriber}{R\+A\+C\+Subscriber}}) did\+Subscribe\+With\+Disposable\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_r_a_c_compound_disposable}{R\+A\+C\+Compound\+Disposable}} $\ast$)}]{disposable }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+Sends the subscriber a disposable that represents one of its subscriptions.
+
+A subscriber may receive multiple disposables if it gets subscribed to multiple signals; however, any error or completed events must terminate {\itshape all} subscriptions. \mbox{\Hypertarget{protocol_r_a_c_subscriber_01-p_a44012a5efac0242765bfb0a98180654d}\label{protocol_r_a_c_subscriber_01-p_a44012a5efac0242765bfb0a98180654d}} 
+\index{R\+A\+C\+Subscriber -\/p@{R\+A\+C\+Subscriber -\/p}!did\+Subscribe\+With\+Disposable\+:@{did\+Subscribe\+With\+Disposable\+:}}
+\index{did\+Subscribe\+With\+Disposable\+:@{did\+Subscribe\+With\+Disposable\+:}!R\+A\+C\+Subscriber -\/p@{R\+A\+C\+Subscriber -\/p}}
+\subsubsection{\texorpdfstring{did\+Subscribe\+With\+Disposable\+:()}{didSubscribeWithDisposable:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (void \mbox{\hyperlink{interface_r_a_c_subscriber}{R\+A\+C\+Subscriber}}) did\+Subscribe\+With\+Disposable\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_r_a_c_compound_disposable}{R\+A\+C\+Compound\+Disposable}} $\ast$)}]{disposable }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+Sends the subscriber a disposable that represents one of its subscriptions.
+
+A subscriber may receive multiple disposables if it gets subscribed to multiple signals; however, any error or completed events must terminate {\itshape all} subscriptions. \mbox{\Hypertarget{protocol_r_a_c_subscriber_01-p_a5dafeaf878cebf8834fc7b8039550a43}\label{protocol_r_a_c_subscriber_01-p_a5dafeaf878cebf8834fc7b8039550a43}} 
+\index{R\+A\+C\+Subscriber -\/p@{R\+A\+C\+Subscriber -\/p}!send\+Completed@{send\+Completed}}
+\index{send\+Completed@{send\+Completed}!R\+A\+C\+Subscriber -\/p@{R\+A\+C\+Subscriber -\/p}}
+\subsubsection{\texorpdfstring{send\+Completed()}{sendCompleted()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (void \mbox{\hyperlink{interface_r_a_c_subscriber}{R\+A\+C\+Subscriber}}) send\+Completed \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+Sends completed to subscribers.
+
+This terminates the subscription, and invalidates the subscriber (such that it cannot subscribe to anything else in the future). \mbox{\Hypertarget{protocol_r_a_c_subscriber_01-p_a5dafeaf878cebf8834fc7b8039550a43}\label{protocol_r_a_c_subscriber_01-p_a5dafeaf878cebf8834fc7b8039550a43}} 
+\index{R\+A\+C\+Subscriber -\/p@{R\+A\+C\+Subscriber -\/p}!send\+Completed@{send\+Completed}}
+\index{send\+Completed@{send\+Completed}!R\+A\+C\+Subscriber -\/p@{R\+A\+C\+Subscriber -\/p}}
+\subsubsection{\texorpdfstring{send\+Completed()}{sendCompleted()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (void \mbox{\hyperlink{interface_r_a_c_subscriber}{R\+A\+C\+Subscriber}}) send\+Completed \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+Sends completed to subscribers.
+
+This terminates the subscription, and invalidates the subscriber (such that it cannot subscribe to anything else in the future). \mbox{\Hypertarget{protocol_r_a_c_subscriber_01-p_a5dafeaf878cebf8834fc7b8039550a43}\label{protocol_r_a_c_subscriber_01-p_a5dafeaf878cebf8834fc7b8039550a43}} 
+\index{R\+A\+C\+Subscriber -\/p@{R\+A\+C\+Subscriber -\/p}!send\+Completed@{send\+Completed}}
+\index{send\+Completed@{send\+Completed}!R\+A\+C\+Subscriber -\/p@{R\+A\+C\+Subscriber -\/p}}
+\subsubsection{\texorpdfstring{send\+Completed()}{sendCompleted()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (void \mbox{\hyperlink{interface_r_a_c_subscriber}{R\+A\+C\+Subscriber}}) send\+Completed \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+Sends completed to subscribers.
+
+This terminates the subscription, and invalidates the subscriber (such that it cannot subscribe to anything else in the future). \mbox{\Hypertarget{protocol_r_a_c_subscriber_01-p_a70712a2213c3b1ac2d06b3634e924974}\label{protocol_r_a_c_subscriber_01-p_a70712a2213c3b1ac2d06b3634e924974}} 
+\index{R\+A\+C\+Subscriber -\/p@{R\+A\+C\+Subscriber -\/p}!send\+Error\+:@{send\+Error\+:}}
+\index{send\+Error\+:@{send\+Error\+:}!R\+A\+C\+Subscriber -\/p@{R\+A\+C\+Subscriber -\/p}}
+\subsubsection{\texorpdfstring{send\+Error\+:()}{sendError:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (void \mbox{\hyperlink{interface_r_a_c_subscriber}{R\+A\+C\+Subscriber}}) send\+Error\+: \begin{DoxyParamCaption}\item[{(N\+S\+Error $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+Sends the error to subscribers.
+
+error -\/ The error to send. This can be {\ttfamily nil}.
+
+This terminates the subscription, and invalidates the subscriber (such that it cannot subscribe to anything else in the future). \mbox{\Hypertarget{protocol_r_a_c_subscriber_01-p_a70712a2213c3b1ac2d06b3634e924974}\label{protocol_r_a_c_subscriber_01-p_a70712a2213c3b1ac2d06b3634e924974}} 
+\index{R\+A\+C\+Subscriber -\/p@{R\+A\+C\+Subscriber -\/p}!send\+Error\+:@{send\+Error\+:}}
+\index{send\+Error\+:@{send\+Error\+:}!R\+A\+C\+Subscriber -\/p@{R\+A\+C\+Subscriber -\/p}}
+\subsubsection{\texorpdfstring{send\+Error\+:()}{sendError:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (void \mbox{\hyperlink{interface_r_a_c_subscriber}{R\+A\+C\+Subscriber}}) send\+Error\+: \begin{DoxyParamCaption}\item[{(N\+S\+Error $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+Sends the error to subscribers.
+
+error -\/ The error to send. This can be {\ttfamily nil}.
+
+This terminates the subscription, and invalidates the subscriber (such that it cannot subscribe to anything else in the future). \mbox{\Hypertarget{protocol_r_a_c_subscriber_01-p_a70712a2213c3b1ac2d06b3634e924974}\label{protocol_r_a_c_subscriber_01-p_a70712a2213c3b1ac2d06b3634e924974}} 
+\index{R\+A\+C\+Subscriber -\/p@{R\+A\+C\+Subscriber -\/p}!send\+Error\+:@{send\+Error\+:}}
+\index{send\+Error\+:@{send\+Error\+:}!R\+A\+C\+Subscriber -\/p@{R\+A\+C\+Subscriber -\/p}}
+\subsubsection{\texorpdfstring{send\+Error\+:()}{sendError:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (void \mbox{\hyperlink{interface_r_a_c_subscriber}{R\+A\+C\+Subscriber}}) send\+Error\+: \begin{DoxyParamCaption}\item[{(N\+S\+Error $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+Sends the error to subscribers.
+
+error -\/ The error to send. This can be {\ttfamily nil}.
+
+This terminates the subscription, and invalidates the subscriber (such that it cannot subscribe to anything else in the future). \mbox{\Hypertarget{protocol_r_a_c_subscriber_01-p_ac5b675c8be8a83f8e7b7d96301cd6656}\label{protocol_r_a_c_subscriber_01-p_ac5b675c8be8a83f8e7b7d96301cd6656}} 
+\index{R\+A\+C\+Subscriber -\/p@{R\+A\+C\+Subscriber -\/p}!send\+Next\+:@{send\+Next\+:}}
+\index{send\+Next\+:@{send\+Next\+:}!R\+A\+C\+Subscriber -\/p@{R\+A\+C\+Subscriber -\/p}}
+\subsubsection{\texorpdfstring{send\+Next\+:()}{sendNext:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (void \mbox{\hyperlink{interface_r_a_c_subscriber}{R\+A\+C\+Subscriber}}) send\+Next\+: \begin{DoxyParamCaption}\item[{(id)}]{value }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+Sends the next value to subscribers.
+
+value -\/ The value to send. This can be {\ttfamily nil}. \mbox{\Hypertarget{protocol_r_a_c_subscriber_01-p_ac5b675c8be8a83f8e7b7d96301cd6656}\label{protocol_r_a_c_subscriber_01-p_ac5b675c8be8a83f8e7b7d96301cd6656}} 
+\index{R\+A\+C\+Subscriber -\/p@{R\+A\+C\+Subscriber -\/p}!send\+Next\+:@{send\+Next\+:}}
+\index{send\+Next\+:@{send\+Next\+:}!R\+A\+C\+Subscriber -\/p@{R\+A\+C\+Subscriber -\/p}}
+\subsubsection{\texorpdfstring{send\+Next\+:()}{sendNext:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (void \mbox{\hyperlink{interface_r_a_c_subscriber}{R\+A\+C\+Subscriber}}) send\+Next\+: \begin{DoxyParamCaption}\item[{(id)}]{value }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+Sends the next value to subscribers.
+
+value -\/ The value to send. This can be {\ttfamily nil}. \mbox{\Hypertarget{protocol_r_a_c_subscriber_01-p_ac5b675c8be8a83f8e7b7d96301cd6656}\label{protocol_r_a_c_subscriber_01-p_ac5b675c8be8a83f8e7b7d96301cd6656}} 
+\index{R\+A\+C\+Subscriber -\/p@{R\+A\+C\+Subscriber -\/p}!send\+Next\+:@{send\+Next\+:}}
+\index{send\+Next\+:@{send\+Next\+:}!R\+A\+C\+Subscriber -\/p@{R\+A\+C\+Subscriber -\/p}}
+\subsubsection{\texorpdfstring{send\+Next\+:()}{sendNext:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (void \mbox{\hyperlink{interface_r_a_c_subscriber}{R\+A\+C\+Subscriber}}) send\+Next\+: \begin{DoxyParamCaption}\item[{(id)}]{value }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+Sends the next value to subscribers.
+
+value -\/ The value to send. This can be {\ttfamily nil}. 
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+Reactive\+Cocoa/R\+A\+C\+Subscriber.\+h\end{DoxyCompactItemize}

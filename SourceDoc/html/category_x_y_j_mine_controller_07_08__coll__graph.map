@@ -1,0 +1,14 @@
+<map id="XYJMineController()" name="XYJMineController()">
+<area shape="rect" id="node2" href="$interface_x_y_j_mine_view.html" title="XYJMineView" alt="" coords="1429,228,1533,253"/>
+<area shape="rect" id="node3" href="$interface_j_m_view.html" title="JMView" alt="" coords="1240,228,1308,253"/>
+<area shape="rect" id="node21" href="$interface_f_n_custome_navigation_bar.html" title="FNCustomeNavigationBar" alt="" coords="1186,72,1362,97"/>
+<area shape="rect" id="node10" href="$interface_x_y_j_mine_view_model.html" title="XYJMineViewModel" alt="" coords="1411,681,1551,707"/>
+<area shape="rect" id="node11" href="$interface_j_m_view_model.html" title="JMViewModel" alt="" coords="1222,535,1326,560"/>
+<area shape="rect" id="node14" href="$interface_r_a_c_disposable.html" title="RACDisposable" alt="" coords="133,508,249,533"/>
+<area shape="rect" id="node17" href="$interface_r_a_c_stream.html" title="RACStream" alt="" coords="145,671,237,696"/>
+<area shape="rect" id="node19" href="$interface_r_a_c_command.html" title="RACCommand" alt="" coords="839,575,950,600"/>
+<area shape="rect" id="node20" href="$interface_x_y_j_mine_model.html" title="XYJMineModel" alt="" coords="273,804,384,829"/>
+<area shape="rect" id="node15" href="$interface_r_a_c_subject.html" title="RACSubject" alt="" coords="847,740,941,765"/>
+<area shape="rect" id="node16" href="$interface_r_a_c_signal.html" title="RACSignal" alt="" coords="429,672,515,697"/>
+<area shape="rect" id="node23" href="$interface_f_n_custom_search_bar.html" title="FNCustomSearchBar" alt="" coords="820,5,968,31"/>
+</map>

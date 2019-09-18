@@ -1,0 +1,174 @@
+{\ttfamily \mbox{\hyperlink{interface_s_v_progress_h_u_d}{S\+V\+Progress\+H\+UD}}} is a clean and easy-\/to-\/use H\+UD meant to display the progress of an ongoing task.
+
+
+
+\subsection*{Installation}
+
+\subsubsection*{From Cocoa\+Pods}
+
+\href{http://cocoapods.org}{\tt Cocoa\+Pods} is a dependency manager for Objective-\/C, which automates and simplifies the process of using 3rd-\/party libraries like {\ttfamily \mbox{\hyperlink{interface_s_v_progress_h_u_d}{S\+V\+Progress\+H\+UD}}} in your projects. Simply add the following line to your \href{http://guides.cocoapods.org/using/using-cocoapods.html}{\tt Podfile}\+:
+
+
+\begin{DoxyCode}
+pod 'SVProgressHUD'
+\end{DoxyCode}
+
+
+If you want to use the latest features of {\ttfamily \mbox{\hyperlink{interface_s_v_progress_h_u_d}{S\+V\+Progress\+H\+UD}}} add {\ttfamily \+:head}\+:
+
+
+\begin{DoxyCode}
+pod 'SVProgressHUD', :head
+\end{DoxyCode}
+
+
+This pulls from the {\ttfamily master} branch directly. We are usually careful about what we push there and this is the version we use ourselves in all of our projects.
+
+\subsubsection*{Carthage}
+
+\href{https://github.com/TransitApp/SVProgressHUD}{\tt }
+
+You can install \mbox{\hyperlink{interface_s_v_progress_h_u_d}{S\+V\+Progress\+H\+UD}} with Carthage
+
+\subsubsection*{Manually}
+
+
+\begin{DoxyItemize}
+\item Drag the {\ttfamily S\+V\+Progress\+H\+U\+D/\+S\+V\+Progress\+H\+UD} folder into your project.
+\item Take care that {\ttfamily S\+V\+Progress\+H\+U\+D.\+bundle} is added to {\ttfamily Targets-\/$>$Build Phases-\/$>$Copy Bundle Resources}.
+\item Add the {\bfseries Quartz\+Core} framework to your project.
+\end{DoxyItemize}
+
+\subsection*{Usage}
+
+(see sample Xcode project in {\ttfamily /\+Demo})
+
+{\ttfamily \mbox{\hyperlink{interface_s_v_progress_h_u_d}{S\+V\+Progress\+H\+UD}}} is created as a singleton (i.\+e. it doesn\textquotesingle{}t need to be explicitly allocated and instantiated; you directly call {\ttfamily \mbox{[}\mbox{\hyperlink{interface_s_v_progress_h_u_d}{S\+V\+Progress\+H\+UD}} method\mbox{]}}).
+
+{\bfseries Use {\ttfamily \mbox{\hyperlink{interface_s_v_progress_h_u_d}{S\+V\+Progress\+H\+UD}}} wisely! Only use it if you absolutely need to perform a task before taking the user forward. Bad use case examples\+: pull to refresh, infinite scrolling, sending message.}
+
+Using {\ttfamily \mbox{\hyperlink{interface_s_v_progress_h_u_d}{S\+V\+Progress\+H\+UD}}} in your app will usually look as simple as this (using Grand Central Dispatch)\+:
+
+
+\begin{DoxyCode}
+[SVProgressHUD show];
+dispatch\_async(dispatch\_get\_global\_queue(DISPATCH\_QUEUE\_PRIORITY\_DEFAULT, 0), ^\{
+    // time-consuming task
+    dispatch\_async(dispatch\_get\_main\_queue(), ^\{
+        [SVProgressHUD dismiss];
+    \});
+\});
+\end{DoxyCode}
+
+
+\subsubsection*{Showing the H\+UD}
+
+You can show the status of indeterminate tasks using one of the following\+:
+
+
+\begin{DoxyCode}
++ (void)show;
++ (void)showWithMaskType:(SVProgressHUDMaskType)maskType;
++ (void)showWithStatus:(NSString*)string;
++ (void)showWithStatus:(NSString*)string maskType:(SVProgressHUDMaskType)maskType;
+\end{DoxyCode}
+
+
+If you\textquotesingle{}d like the H\+UD to reflect the progress of a task, use one of these\+:
+
+
+\begin{DoxyCode}
++ (void)showProgress:(CGFloat)progress;
++ (void)showProgress:(CGFloat)progress status:(NSString*)status;
++ (void)showProgress:(CGFloat)progress status:(NSString*)status maskType:(SVProgressHUDMaskType)maskType;
+\end{DoxyCode}
+
+
+\subsubsection*{Dismissing the H\+UD}
+
+It can be dismissed right away using\+:
+
+
+\begin{DoxyCode}
++ (void)dismiss;
+\end{DoxyCode}
+
+
+If you\textquotesingle{}d like to stack H\+U\+Ds, you can balance out every show call using\+:
+
+
+\begin{DoxyCode}
++ (void)popActivity;
+\end{DoxyCode}
+
+
+The H\+UD will get dismissed once the {\ttfamily pop\+Activity} calls will match the number of show calls. ~\newline
+ Or show a confirmation glyph before before getting dismissed a little bit later. The display time depends on the length of the given string (between 0.\+5 and 5 seconds).
+
+
+\begin{DoxyCode}
++ (void)showInfoWithStatus:(NSString *)string;
++ (void)showInfoWithStatus:(NSString *)string maskType:(SVProgressHUDMaskType)maskType;
++ (void)showSuccessWithStatus:(NSString*)string;
++ (void)showSuccessWithStatus:(NSString*)string maskType:(SVProgressHUDMaskType)maskType;
++ (void)showErrorWithStatus:(NSString *)string;
++ (void)showErrorWithStatus:(NSString *)string maskType:(SVProgressHUDMaskType)maskType;
++ (void)showImage:(UIImage*)image status:(NSString*)string;
++ (void)showImage:(UIImage*)image status:(NSString*)status maskType:(SVProgressHUDMaskType)maskType;
+\end{DoxyCode}
+
+
+\subsection*{Customization}
+
+{\ttfamily \mbox{\hyperlink{interface_s_v_progress_h_u_d}{S\+V\+Progress\+H\+UD}}} can be customized via the following methods\+:
+
+
+\begin{DoxyCode}
++ (void)setBackgroundColor:(UIColor*)color;                 // default is [UIColor whiteColor]
++ (void)setForegroundColor:(UIColor*)color;                 // default is [UIColor blackColor]
++ (void)setRingThickness:(CGFloat)width;                    // default is 4 pt
++ (void)setFont:(UIFont*)font;                              // default is [UIFont
+       preferredFontForTextStyle:UIFontTextStyleSubheadline]
++ (void)setInfoImage:(UIImage*)image;                       // default is the bundled info image provided
+       by Freepik
++ (void)setSuccessImage:(UIImage*)image;                    // default is bundled success image from
+       Freepik
++ (void)setErrorImage:(UIImage*)image;                      // default is bundled error image from Freepik
++ (void)setDefaultMaskType:(SVProgressHUDMaskType)maskType; // default is SVProgressHUDMaskTypeNone
++ (void)setViewForExtension:(UIView*)view;                  // default is nil, only used if #define
+       SV\_APP\_EXTENSIONS is set
+\end{DoxyCode}
+
+
+\subsection*{Notifications}
+
+{\ttfamily \mbox{\hyperlink{interface_s_v_progress_h_u_d}{S\+V\+Progress\+H\+UD}}} posts four notifications via {\ttfamily N\+S\+Notification\+Center} in response to being shown/dismissed\+:
+\begin{DoxyItemize}
+\item {\ttfamily S\+V\+Progress\+H\+U\+D\+Will\+Appear\+Notification} when the show animation starts
+\item {\ttfamily S\+V\+Progress\+H\+U\+D\+Did\+Appear\+Notification} when the show animation completes
+\item {\ttfamily S\+V\+Progress\+H\+U\+D\+Will\+Disappear\+Notification} when the dismiss animation starts
+\item {\ttfamily S\+V\+Progress\+H\+U\+D\+Did\+Disappear\+Notification} when the dismiss animation completes
+\end{DoxyItemize}
+
+Each notification passes a {\ttfamily user\+Info} dictionary holding the H\+UD\textquotesingle{}s status string (if any), retrievable via {\ttfamily S\+V\+Progress\+H\+U\+D\+Status\+User\+Info\+Key}.
+
+{\ttfamily \mbox{\hyperlink{interface_s_v_progress_h_u_d}{S\+V\+Progress\+H\+UD}}} also posts {\ttfamily S\+V\+Progress\+H\+U\+D\+Did\+Receive\+Touch\+Event\+Notification} when users touch on the overall screen or {\ttfamily S\+V\+Progress\+H\+U\+D\+Did\+Touch\+Down\+Inside\+Notification} when a user touches on the H\+UD directly. For this notifications {\ttfamily user\+Info} is not passed but the object parameter contains the {\ttfamily U\+I\+Event} that related to the touch.
+
+\subsection*{App Extensions}
+
+When using {\ttfamily \mbox{\hyperlink{interface_s_v_progress_h_u_d}{S\+V\+Progress\+H\+UD}}} in an App Extension, \#define S\+V\+\_\+\+A\+P\+P\+\_\+\+E\+X\+T\+E\+N\+S\+I\+O\+NS to avoid using unavailable A\+P\+Is. Additionally call {\ttfamily set\+View\+For\+Extension\+:} from your extensions view controller with {\ttfamily self.\+view}.
+
+\subsection*{Contributing to this project}
+
+If you have feature requests or bug reports, feel free to help out by sending pull requests or by \href{https://github.com/samvermette/SVProgressHUD/issues/new}{\tt creating new issues}. Please take a moment to review the guidelines written by \href{https://github.com/necolas/}{\tt Nicolas Gallagher}\+:
+
+
+\begin{DoxyItemize}
+\item \href{https://github.com/necolas/issue-guidelines/blob/master/CONTRIBUTING.md#bugs}{\tt Bug reports}
+\item \href{https://github.com/necolas/issue-guidelines/blob/master/CONTRIBUTING.md#features}{\tt Feature requests}
+\item \href{https://github.com/necolas/issue-guidelines/blob/master/CONTRIBUTING.md#pull-requests}{\tt Pull requests}
+\end{DoxyItemize}
+
+\subsection*{Credits}
+
+{\ttfamily \mbox{\hyperlink{interface_s_v_progress_h_u_d}{S\+V\+Progress\+H\+UD}}} is brought to you by \href{http://samvermette.com}{\tt Sam Vermette} and \href{https://github.com/samvermette/SVProgressHUD/contributors}{\tt contributors to the project}. If you\textquotesingle{}re using {\ttfamily \mbox{\hyperlink{interface_s_v_progress_h_u_d}{S\+V\+Progress\+H\+UD}}} in your project, attribution would be very appreciated. The info, success and error icons are made by \href{http://www.freepik.com}{\tt Freepik} from \href{www.flaticon.com}{\tt Flaticon} and are licensed under \href{http://creativecommons.org/licenses/by/3.0/}{\tt Creative Commons BY 3.\+0}. 

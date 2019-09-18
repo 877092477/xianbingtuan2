@@ -1,0 +1,228 @@
+\hypertarget{interface_u_t_tracker}{}\section{U\+T\+Tracker Class Reference}
+\label{interface_u_t_tracker}\index{U\+T\+Tracker@{U\+T\+Tracker}}
+
+
+Inheritance diagram for U\+T\+Tracker\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=143pt]{interface_u_t_tracker__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for U\+T\+Tracker\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=143pt]{interface_u_t_tracker__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_u_t_tracker_a4caf5e134287a68295efaf01e15d7843}\label{interface_u_t_tracker_a4caf5e134287a68295efaf01e15d7843}} 
+(id) -\/ {\bfseries init\+With\+Track\+Id\+:}
+\item 
+\mbox{\Hypertarget{interface_u_t_tracker_a485fde0c2d8e056e415372757f72299b}\label{interface_u_t_tracker_a485fde0c2d8e056e415372757f72299b}} 
+(void) -\/ {\bfseries set\+Global\+Property\+:value\+:}
+\item 
+\mbox{\Hypertarget{interface_u_t_tracker_ac68f2979601212a50e15778a814ac71d}\label{interface_u_t_tracker_ac68f2979601212a50e15778a814ac71d}} 
+(void) -\/ {\bfseries remove\+Global\+Property\+:}
+\item 
+\mbox{\Hypertarget{interface_u_t_tracker_a63cc2e8ee1a61f9c0a62a730fe89c1ec}\label{interface_u_t_tracker_a63cc2e8ee1a61f9c0a62a730fe89c1ec}} 
+(N\+S\+String $\ast$) -\/ {\bfseries get\+Global\+Property\+:}
+\item 
+\mbox{\Hypertarget{interface_u_t_tracker_a57af3208a56aa74fed83e493353e5278}\label{interface_u_t_tracker_a57af3208a56aa74fed83e493353e5278}} 
+(void) -\/ {\bfseries send\+:}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_u_t_tracker_a6381578aef02a4bc703738d142479a61}{page\+Appear\+:}}
+\begin{DoxyCompactList}\small\item\em 页面进入. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_u_t_tracker_a7875d1f7b785d1f2299a048e55b2971c}{page\+Appear\+:with\+Page\+Name\+:}}
+\begin{DoxyCompactList}\small\item\em 页面进入. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_u_t_tracker_a8d068ed1e1468a5d204f8db9033e1a0e}{page\+Dis\+Appear\+:}}
+\begin{DoxyCompactList}\small\item\em 页面离开. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_u_t_tracker_a302c0384d947b7d9b21dac1f66032206}{update\+Page\+Properties\+:properties\+:}}
+\begin{DoxyCompactList}\small\item\em 更新页面业务参数. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_u_t_tracker_ac9d1cca8b1fc2579aa0ad00c312f4188}{update\+Next\+Page\+Properties\+:}}
+\begin{DoxyCompactList}\small\item\em 更新页面业务参数. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_u_t_tracker_af0b3ce3574a7cbf78cb880c567f9efa1}{update\+Page\+Name\+:page\+Name\+:}}
+\begin{DoxyCompactList}\small\item\em 更新页面名称. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_u_t_tracker_a654369a4fe09d5c85726c32979be941f}{update\+Page\+Url\+:url\+:}}
+\begin{DoxyCompactList}\small\item\em 更新页面url. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_u_t_tracker_adbe97e46febcc741a4f498f5511bc822}{update\+Page\+Status\+:status\+:}}
+\begin{DoxyCompactList}\small\item\em 更新页面状态. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_u_t_tracker_a8a87b4cf23700f4c4e8e8b6d49f67825}\label{interface_u_t_tracker_a8a87b4cf23700f4c4e8e8b6d49f67825}} 
+(void) -\/ {\bfseries skip\+Page\+:}
+\item 
+\mbox{\Hypertarget{interface_u_t_tracker_ac84169d024587ce515d2b61b1505c7ee}\label{interface_u_t_tracker_ac84169d024587ce515d2b61b1505c7ee}} 
+(void) -\/ {\bfseries ctrl\+Clicked\+:on\+Page\+:args\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_u_t_tracker_a6381578aef02a4bc703738d142479a61}\label{interface_u_t_tracker_a6381578aef02a4bc703738d142479a61}} 
+\index{U\+T\+Tracker@{U\+T\+Tracker}!page\+Appear\+:@{page\+Appear\+:}}
+\index{page\+Appear\+:@{page\+Appear\+:}!U\+T\+Tracker@{U\+T\+Tracker}}
+\subsubsection{\texorpdfstring{page\+Appear\+:()}{pageAppear:()}}
+{\footnotesize\ttfamily -\/ (void) page\+Appear\+: \begin{DoxyParamCaption}\item[{(id)}]{p\+Page\+Object }\end{DoxyParamCaption}}
+
+
+
+页面进入. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Page\+Object} & 页面对象,如viewcontroller指针\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+调用说明\+:1.必须和page\+Dis\+Appear配对使用,否则不会成功埋点 2.确定页面名称优先级\+:update\+Page\+Name $>$ N\+S\+String\+From\+Class(p\+Object.\+class)
+\end{DoxyWarning}
+最佳位置\+:若是viewcontroller页面,则需在view\+Did\+Appear函数内调用 \mbox{\Hypertarget{interface_u_t_tracker_a7875d1f7b785d1f2299a048e55b2971c}\label{interface_u_t_tracker_a7875d1f7b785d1f2299a048e55b2971c}} 
+\index{U\+T\+Tracker@{U\+T\+Tracker}!page\+Appear\+:with\+Page\+Name\+:@{page\+Appear\+:with\+Page\+Name\+:}}
+\index{page\+Appear\+:with\+Page\+Name\+:@{page\+Appear\+:with\+Page\+Name\+:}!U\+T\+Tracker@{U\+T\+Tracker}}
+\subsubsection{\texorpdfstring{page\+Appear\+:with\+Page\+Name\+:()}{pageAppear:withPageName:()}}
+{\footnotesize\ttfamily -\/ (void) \mbox{\hyperlink{interface_u_t_tracker_a6381578aef02a4bc703738d142479a61}{page\+Appear\+:}} \begin{DoxyParamCaption}\item[{(id)}]{p\+Page\+Object }\item[{withPageName:(N\+S\+String $\ast$)}]{p\+Page\+Name }\end{DoxyParamCaption}}
+
+
+
+页面进入. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Page\+Object} & 页面对象,如viewcontroller指针 \\
+\hline
+{\em p\+Page\+Name} & 页面名称,如\+Page\+\_\+\+Detail\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+调用说明\+:1.必须和page\+Dis\+Appear配对使用,否则不会成功埋点 2.确定页面名称优先级\+:update\+Page\+Name $>$ p\+Page\+Name $>$ N\+S\+String\+From\+Class(p\+Object.\+class) 若当调用page\+Appear时已知页面名称,强烈建议使用该接口 最佳位置\+:若是viewcontroller页面,则需在view\+Did\+Appear函数内调用 
+\end{DoxyWarning}
+\mbox{\Hypertarget{interface_u_t_tracker_a8d068ed1e1468a5d204f8db9033e1a0e}\label{interface_u_t_tracker_a8d068ed1e1468a5d204f8db9033e1a0e}} 
+\index{U\+T\+Tracker@{U\+T\+Tracker}!page\+Dis\+Appear\+:@{page\+Dis\+Appear\+:}}
+\index{page\+Dis\+Appear\+:@{page\+Dis\+Appear\+:}!U\+T\+Tracker@{U\+T\+Tracker}}
+\subsubsection{\texorpdfstring{page\+Dis\+Appear\+:()}{pageDisAppear:()}}
+{\footnotesize\ttfamily -\/ (void) page\+Dis\+Appear\+: \begin{DoxyParamCaption}\item[{(id)}]{p\+Page\+Object }\end{DoxyParamCaption}}
+
+
+
+页面离开. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Page\+Object} & 页面对象,如viewcontroller指针\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+调用说明\+:必须和page\+Appear配对使用,否则不会成功埋点 \begin{DoxyVerb}                     最佳位置:若是viewcontroller页面,则需在viewDidDisAppear函数内调用\end{DoxyVerb}
+ 
+\end{DoxyWarning}
+\mbox{\Hypertarget{interface_u_t_tracker_ac9d1cca8b1fc2579aa0ad00c312f4188}\label{interface_u_t_tracker_ac9d1cca8b1fc2579aa0ad00c312f4188}} 
+\index{U\+T\+Tracker@{U\+T\+Tracker}!update\+Next\+Page\+Properties\+:@{update\+Next\+Page\+Properties\+:}}
+\index{update\+Next\+Page\+Properties\+:@{update\+Next\+Page\+Properties\+:}!U\+T\+Tracker@{U\+T\+Tracker}}
+\subsubsection{\texorpdfstring{update\+Next\+Page\+Properties\+:()}{updateNextPageProperties:()}}
+{\footnotesize\ttfamily -\/ (void) update\+Next\+Page\+Properties\+: \begin{DoxyParamCaption}\item[{(N\+S\+Dictionary $\ast$)}]{p\+Properties }\end{DoxyParamCaption}}
+
+
+
+更新页面业务参数. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Properties} & 传给下一个页面业务参数,kv对\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+调用说明\+:必须在下一个页面page\+Appear之前调用,否则会携带错误 \begin{DoxyVerb}                     最佳位置:必须在下一个页面pageAppear之前调用\end{DoxyVerb}
+ 
+\end{DoxyWarning}
+\mbox{\Hypertarget{interface_u_t_tracker_af0b3ce3574a7cbf78cb880c567f9efa1}\label{interface_u_t_tracker_af0b3ce3574a7cbf78cb880c567f9efa1}} 
+\index{U\+T\+Tracker@{U\+T\+Tracker}!update\+Page\+Name\+:page\+Name\+:@{update\+Page\+Name\+:page\+Name\+:}}
+\index{update\+Page\+Name\+:page\+Name\+:@{update\+Page\+Name\+:page\+Name\+:}!U\+T\+Tracker@{U\+T\+Tracker}}
+\subsubsection{\texorpdfstring{update\+Page\+Name\+:page\+Name\+:()}{updatePageName:pageName:()}}
+{\footnotesize\ttfamily -\/ (void) update\+Page\+Name\+: \begin{DoxyParamCaption}\item[{(id)}]{p\+Page\+Object }\item[{pageName:(N\+S\+String $\ast$)}]{p\+Page\+Name }\end{DoxyParamCaption}}
+
+
+
+更新页面名称. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Page\+Object} & 页面对象,如viewcontroller指针 \\
+\hline
+{\em p\+Page\+Name} & 更新后的页面名称\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+调用说明\+:只有当调用page\+Appear时还未知页面名称,后续可使用该接口更新 \begin{DoxyVerb}                     最佳位置:在pageDisAppear之前调用\end{DoxyVerb}
+ 
+\end{DoxyWarning}
+\mbox{\Hypertarget{interface_u_t_tracker_a302c0384d947b7d9b21dac1f66032206}\label{interface_u_t_tracker_a302c0384d947b7d9b21dac1f66032206}} 
+\index{U\+T\+Tracker@{U\+T\+Tracker}!update\+Page\+Properties\+:properties\+:@{update\+Page\+Properties\+:properties\+:}}
+\index{update\+Page\+Properties\+:properties\+:@{update\+Page\+Properties\+:properties\+:}!U\+T\+Tracker@{U\+T\+Tracker}}
+\subsubsection{\texorpdfstring{update\+Page\+Properties\+:properties\+:()}{updatePageProperties:properties:()}}
+{\footnotesize\ttfamily -\/ (void) update\+Page\+Properties\+: \begin{DoxyParamCaption}\item[{(id)}]{p\+Page\+Object }\item[{properties:(N\+S\+Dictionary $\ast$)}]{p\+Properties }\end{DoxyParamCaption}}
+
+
+
+更新页面业务参数. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Page\+Object} & 页面对象,如viewcontroller指针 \\
+\hline
+{\em p\+Properties} & 业务参数,kv对\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+调用说明\+:必须在page\+Dis\+Appear之前调用 \begin{DoxyVerb}                     最佳位置:在pageDisAppear之前调用即可\end{DoxyVerb}
+ 
+\end{DoxyWarning}
+\mbox{\Hypertarget{interface_u_t_tracker_adbe97e46febcc741a4f498f5511bc822}\label{interface_u_t_tracker_adbe97e46febcc741a4f498f5511bc822}} 
+\index{U\+T\+Tracker@{U\+T\+Tracker}!update\+Page\+Status\+:status\+:@{update\+Page\+Status\+:status\+:}}
+\index{update\+Page\+Status\+:status\+:@{update\+Page\+Status\+:status\+:}!U\+T\+Tracker@{U\+T\+Tracker}}
+\subsubsection{\texorpdfstring{update\+Page\+Status\+:status\+:()}{updatePageStatus:status:()}}
+{\footnotesize\ttfamily -\/ (void) update\+Page\+Status\+: \begin{DoxyParamCaption}\item[{(id)}]{p\+Page\+Object }\item[{status:(U\+T\+Page\+Status)}]{a\+Status }\end{DoxyParamCaption}}
+
+
+
+更新页面状态. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Page\+Object} & 页面对象,如viewcontroller指针 \\
+\hline
+{\em a\+Status} & 页面状态 enum类型\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+调用说明\+:告知页面处于某些特殊的业务场景,如回退等 \begin{DoxyVerb}                     最佳位置:必须在pageAppear之前调用\end{DoxyVerb}
+ 
+\end{DoxyWarning}
+\mbox{\Hypertarget{interface_u_t_tracker_a654369a4fe09d5c85726c32979be941f}\label{interface_u_t_tracker_a654369a4fe09d5c85726c32979be941f}} 
+\index{U\+T\+Tracker@{U\+T\+Tracker}!update\+Page\+Url\+:url\+:@{update\+Page\+Url\+:url\+:}}
+\index{update\+Page\+Url\+:url\+:@{update\+Page\+Url\+:url\+:}!U\+T\+Tracker@{U\+T\+Tracker}}
+\subsubsection{\texorpdfstring{update\+Page\+Url\+:url\+:()}{updatePageUrl:url:()}}
+{\footnotesize\ttfamily -\/ (void) update\+Page\+Url\+: \begin{DoxyParamCaption}\item[{(id)}]{p\+Page\+Object }\item[{url:(N\+S\+U\+RL $\ast$)}]{p\+Url }\end{DoxyParamCaption}}
+
+
+
+更新页面url. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Page\+Object} & 页面对象,如viewcontroller指针 \\
+\hline
+{\em p\+Url} & 页面对应的url\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+调用说明\+:如手淘统一导航将每次页面跳转的url塞给对应的viewcontroller \begin{DoxyVerb}                     最佳位置:在pageDisAppear之前调用\end{DoxyVerb}
+ 
+\end{DoxyWarning}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+U\+T\+Mini.\+framework/\+Versions/\+A/\+Headers/U\+T\+Tracker.\+h\end{DoxyCompactItemize}

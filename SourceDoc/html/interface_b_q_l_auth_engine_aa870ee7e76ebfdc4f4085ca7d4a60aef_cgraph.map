@@ -1,0 +1,5 @@
+<map id="&#45;[BQLAuthEngine authShareToWeChatWithLink:Description:ThumbImage:Url:Scene:Success:Failure:]" name="&#45;[BQLAuthEngine authShareToWeChatWithLink:Description:ThumbImage:Url:Scene:Success:Failure:]">
+<area shape="rect" id="node2" href="$interface_w_x_media_message.html#ac3dbcbb2f989c4775df5747f9ce18bdf" title="设置消息缩略图的方法 " alt="" coords="273,5,478,44"/>
+<area shape="rect" id="node3" href="$interface_w_x_webpage_object.html#a50b9c0ac9ab53b0ebf0038846d6f0baa" title="返回一个WXWebpageObject对象 " alt="" coords="279,68,472,93"/>
+<area shape="rect" id="node4" href="$interface_w_x_api.html#a1a30bc4f39815920b6e45901375bee8e" title="发送请求到微信，等待微信返回onResp " alt="" coords="306,117,444,143"/>
+</map>

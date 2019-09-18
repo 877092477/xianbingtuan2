@@ -1,0 +1,5 @@
+<map id="&#45;[BQLAuthEngine authShareToQQWithImage:Success:Failure:]" name="&#45;[BQLAuthEngine authShareToQQWithImage:Success:Failure:]">
+<area shape="rect" id="node2" href="$interface_q_q_api_extend_object.html#a83cb8a1c9439cfe40dd07e86218f2049" title="+[QQApiExtendObject\l objectWithData:previewImage\lData:title:description:]" alt="" coords="279,5,481,57"/>
+<area shape="rect" id="node3" href="$interface_send_message_to_q_q_req.html#ac68151badf97161084f0c139046065c6" title="+[SendMessageToQQReq\l reqWithContent:]" alt="" coords="292,81,469,120"/>
+<area shape="rect" id="node4" href="$interface_q_q_api_interface.html#aa7563c172cd93277d97cf21ec6755614" title="+[QQApiInterface sendReq:]" alt="" coords="286,144,475,169"/>
+</map>

@@ -1,0 +1,131 @@
+\hypertarget{category_r_a_c_signal_07_testing_08}{}\section{R\+A\+C\+Signal(Testing) Category Reference}
+\label{category_r_a_c_signal_07_testing_08}\index{R\+A\+C\+Signal(\+Testing)@{R\+A\+C\+Signal(\+Testing)}}
+
+
+{\ttfamily \#import $<$R\+A\+C\+Signal.\+h$>$}
+
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \mbox{\hyperlink{category_r_a_c_signal_07_testing_08_a477114852c0e761a023a35e35ccc1784}{asynchronous\+First\+Or\+Default\+:success\+:error\+:}}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{category_r_a_c_signal_07_testing_08_a29ac4be53792963e1c7e5c59e545e6cd}{asynchronously\+Wait\+Until\+Completed\+:}}
+\item 
+(id) -\/ \mbox{\hyperlink{category_r_a_c_signal_07_testing_08_a477114852c0e761a023a35e35ccc1784}{asynchronous\+First\+Or\+Default\+:success\+:error\+:}}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{category_r_a_c_signal_07_testing_08_a29ac4be53792963e1c7e5c59e545e6cd}{asynchronously\+Wait\+Until\+Completed\+:}}
+\item 
+(id) -\/ \mbox{\hyperlink{category_r_a_c_signal_07_testing_08_a477114852c0e761a023a35e35ccc1784}{asynchronous\+First\+Or\+Default\+:success\+:error\+:}}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{category_r_a_c_signal_07_testing_08_a29ac4be53792963e1c7e5c59e545e6cd}{asynchronously\+Wait\+Until\+Completed\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Additional methods to assist with unit testing.
+
+{\bfseries These methods should never ship in production code.} 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{category_r_a_c_signal_07_testing_08_a477114852c0e761a023a35e35ccc1784}\label{category_r_a_c_signal_07_testing_08_a477114852c0e761a023a35e35ccc1784}} 
+\index{R\+A\+C\+Signal(\+Testing)@{R\+A\+C\+Signal(\+Testing)}!asynchronous\+First\+Or\+Default\+:success\+:error\+:@{asynchronous\+First\+Or\+Default\+:success\+:error\+:}}
+\index{asynchronous\+First\+Or\+Default\+:success\+:error\+:@{asynchronous\+First\+Or\+Default\+:success\+:error\+:}!R\+A\+C\+Signal(\+Testing)@{R\+A\+C\+Signal(\+Testing)}}
+\subsubsection{\texorpdfstring{asynchronous\+First\+Or\+Default\+:success\+:error\+:()}{asynchronousFirstOrDefault:success:error:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (id) asynchronous\+First\+Or\+Default\+: \begin{DoxyParamCaption}\item[{(id)}]{default\+Value }\item[{success:(B\+O\+OL $\ast$)}]{success }\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error }\end{DoxyParamCaption}}
+
+Spins the main run loop for a short while, waiting for the receiver to send a {\ttfamily next}.
+
+{\bfseries Because this method executes the run loop recursively, it should only be used on the main thread, and only from a unit test.}
+
+default\+Value -\/ Returned if the receiver completes or errors before sending a {\ttfamily next}, or if the method times out. This argument may be nil. success -\/ If not N\+U\+LL, set to whether the receiver completed successfully. error -\/ If not N\+U\+LL, set to any error that occurred.
+
+Returns the first value received, or {\ttfamily default\+Value} if no value is received before the signal finishes or the method times out. 
+
+Extends class \mbox{\hyperlink{interface_r_a_c_signal_a477114852c0e761a023a35e35ccc1784}{R\+A\+C\+Signal}}.
+
+\mbox{\Hypertarget{category_r_a_c_signal_07_testing_08_a477114852c0e761a023a35e35ccc1784}\label{category_r_a_c_signal_07_testing_08_a477114852c0e761a023a35e35ccc1784}} 
+\index{R\+A\+C\+Signal(\+Testing)@{R\+A\+C\+Signal(\+Testing)}!asynchronous\+First\+Or\+Default\+:success\+:error\+:@{asynchronous\+First\+Or\+Default\+:success\+:error\+:}}
+\index{asynchronous\+First\+Or\+Default\+:success\+:error\+:@{asynchronous\+First\+Or\+Default\+:success\+:error\+:}!R\+A\+C\+Signal(\+Testing)@{R\+A\+C\+Signal(\+Testing)}}
+\subsubsection{\texorpdfstring{asynchronous\+First\+Or\+Default\+:success\+:error\+:()}{asynchronousFirstOrDefault:success:error:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (id) asynchronous\+First\+Or\+Default\+: \begin{DoxyParamCaption}\item[{(id)}]{default\+Value }\item[{success:(B\+O\+OL $\ast$)}]{success }\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error }\end{DoxyParamCaption}}
+
+Spins the main run loop for a short while, waiting for the receiver to send a {\ttfamily next}.
+
+{\bfseries Because this method executes the run loop recursively, it should only be used on the main thread, and only from a unit test.}
+
+default\+Value -\/ Returned if the receiver completes or errors before sending a {\ttfamily next}, or if the method times out. This argument may be nil. success -\/ If not N\+U\+LL, set to whether the receiver completed successfully. error -\/ If not N\+U\+LL, set to any error that occurred.
+
+Returns the first value received, or {\ttfamily default\+Value} if no value is received before the signal finishes or the method times out. 
+
+Extends class \mbox{\hyperlink{interface_r_a_c_signal_a477114852c0e761a023a35e35ccc1784}{R\+A\+C\+Signal}}.
+
+\mbox{\Hypertarget{category_r_a_c_signal_07_testing_08_a477114852c0e761a023a35e35ccc1784}\label{category_r_a_c_signal_07_testing_08_a477114852c0e761a023a35e35ccc1784}} 
+\index{R\+A\+C\+Signal(\+Testing)@{R\+A\+C\+Signal(\+Testing)}!asynchronous\+First\+Or\+Default\+:success\+:error\+:@{asynchronous\+First\+Or\+Default\+:success\+:error\+:}}
+\index{asynchronous\+First\+Or\+Default\+:success\+:error\+:@{asynchronous\+First\+Or\+Default\+:success\+:error\+:}!R\+A\+C\+Signal(\+Testing)@{R\+A\+C\+Signal(\+Testing)}}
+\subsubsection{\texorpdfstring{asynchronous\+First\+Or\+Default\+:success\+:error\+:()}{asynchronousFirstOrDefault:success:error:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (id) asynchronous\+First\+Or\+Default\+: \begin{DoxyParamCaption}\item[{(id)}]{default\+Value }\item[{success:(B\+O\+OL $\ast$)}]{success }\item[{error:(N\+S\+Error $\ast$$\ast$)}]{error }\end{DoxyParamCaption}}
+
+Spins the main run loop for a short while, waiting for the receiver to send a {\ttfamily next}.
+
+{\bfseries Because this method executes the run loop recursively, it should only be used on the main thread, and only from a unit test.}
+
+default\+Value -\/ Returned if the receiver completes or errors before sending a {\ttfamily next}, or if the method times out. This argument may be nil. success -\/ If not N\+U\+LL, set to whether the receiver completed successfully. error -\/ If not N\+U\+LL, set to any error that occurred.
+
+Returns the first value received, or {\ttfamily default\+Value} if no value is received before the signal finishes or the method times out. 
+
+Extends class \mbox{\hyperlink{interface_r_a_c_signal_a477114852c0e761a023a35e35ccc1784}{R\+A\+C\+Signal}}.
+
+\mbox{\Hypertarget{category_r_a_c_signal_07_testing_08_a29ac4be53792963e1c7e5c59e545e6cd}\label{category_r_a_c_signal_07_testing_08_a29ac4be53792963e1c7e5c59e545e6cd}} 
+\index{R\+A\+C\+Signal(\+Testing)@{R\+A\+C\+Signal(\+Testing)}!asynchronously\+Wait\+Until\+Completed\+:@{asynchronously\+Wait\+Until\+Completed\+:}}
+\index{asynchronously\+Wait\+Until\+Completed\+:@{asynchronously\+Wait\+Until\+Completed\+:}!R\+A\+C\+Signal(\+Testing)@{R\+A\+C\+Signal(\+Testing)}}
+\subsubsection{\texorpdfstring{asynchronously\+Wait\+Until\+Completed\+:()}{asynchronouslyWaitUntilCompleted:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) asynchronously\+Wait\+Until\+Completed\+: \begin{DoxyParamCaption}\item[{(N\+S\+Error $\ast$$\ast$)}]{error }\end{DoxyParamCaption}}
+
+Spins the main run loop for a short while, waiting for the receiver to complete.
+
+{\bfseries Because this method executes the run loop recursively, it should only be used on the main thread, and only from a unit test.}
+
+error -\/ If not N\+U\+LL, set to any error that occurs.
+
+Returns whether the signal completed successfully before timing out. If NO, {\ttfamily error} will be set to any error that occurred. 
+
+Extends class \mbox{\hyperlink{interface_r_a_c_signal_a29ac4be53792963e1c7e5c59e545e6cd}{R\+A\+C\+Signal}}.
+
+\mbox{\Hypertarget{category_r_a_c_signal_07_testing_08_a29ac4be53792963e1c7e5c59e545e6cd}\label{category_r_a_c_signal_07_testing_08_a29ac4be53792963e1c7e5c59e545e6cd}} 
+\index{R\+A\+C\+Signal(\+Testing)@{R\+A\+C\+Signal(\+Testing)}!asynchronously\+Wait\+Until\+Completed\+:@{asynchronously\+Wait\+Until\+Completed\+:}}
+\index{asynchronously\+Wait\+Until\+Completed\+:@{asynchronously\+Wait\+Until\+Completed\+:}!R\+A\+C\+Signal(\+Testing)@{R\+A\+C\+Signal(\+Testing)}}
+\subsubsection{\texorpdfstring{asynchronously\+Wait\+Until\+Completed\+:()}{asynchronouslyWaitUntilCompleted:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) asynchronously\+Wait\+Until\+Completed\+: \begin{DoxyParamCaption}\item[{(N\+S\+Error $\ast$$\ast$)}]{error }\end{DoxyParamCaption}}
+
+Spins the main run loop for a short while, waiting for the receiver to complete.
+
+{\bfseries Because this method executes the run loop recursively, it should only be used on the main thread, and only from a unit test.}
+
+error -\/ If not N\+U\+LL, set to any error that occurs.
+
+Returns whether the signal completed successfully before timing out. If NO, {\ttfamily error} will be set to any error that occurred. 
+
+Extends class \mbox{\hyperlink{interface_r_a_c_signal_a29ac4be53792963e1c7e5c59e545e6cd}{R\+A\+C\+Signal}}.
+
+\mbox{\Hypertarget{category_r_a_c_signal_07_testing_08_a29ac4be53792963e1c7e5c59e545e6cd}\label{category_r_a_c_signal_07_testing_08_a29ac4be53792963e1c7e5c59e545e6cd}} 
+\index{R\+A\+C\+Signal(\+Testing)@{R\+A\+C\+Signal(\+Testing)}!asynchronously\+Wait\+Until\+Completed\+:@{asynchronously\+Wait\+Until\+Completed\+:}}
+\index{asynchronously\+Wait\+Until\+Completed\+:@{asynchronously\+Wait\+Until\+Completed\+:}!R\+A\+C\+Signal(\+Testing)@{R\+A\+C\+Signal(\+Testing)}}
+\subsubsection{\texorpdfstring{asynchronously\+Wait\+Until\+Completed\+:()}{asynchronouslyWaitUntilCompleted:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) asynchronously\+Wait\+Until\+Completed\+: \begin{DoxyParamCaption}\item[{(N\+S\+Error $\ast$$\ast$)}]{error }\end{DoxyParamCaption}}
+
+Spins the main run loop for a short while, waiting for the receiver to complete.
+
+{\bfseries Because this method executes the run loop recursively, it should only be used on the main thread, and only from a unit test.}
+
+error -\/ If not N\+U\+LL, set to any error that occurs.
+
+Returns whether the signal completed successfully before timing out. If NO, {\ttfamily error} will be set to any error that occurred. 
+
+Extends class \mbox{\hyperlink{interface_r_a_c_signal_a29ac4be53792963e1c7e5c59e545e6cd}{R\+A\+C\+Signal}}.
+
+
+
+The documentation for this category was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+Reactive\+Cocoa/R\+A\+C\+Signal.\+h\item 
+Pods/\+Reactive\+Cocoa/\+Reactive\+Cocoa/R\+A\+C\+Signal.\+m\end{DoxyCompactItemize}

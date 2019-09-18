@@ -1,0 +1,244 @@
+\hypertarget{struct___p_o_p_animation_state}{}\section{\+\_\+\+P\+O\+P\+Animation\+State Struct Reference}
+\label{struct___p_o_p_animation_state}\index{\+\_\+\+P\+O\+P\+Animation\+State@{\+\_\+\+P\+O\+P\+Animation\+State}}
+
+
+Inheritance diagram for \+\_\+\+P\+O\+P\+Animation\+State\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct___p_o_p_animation_state__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for \+\_\+\+P\+O\+P\+Animation\+State\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{struct___p_o_p_animation_state__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a70cac0cdc5a3c24e9dd8bc6e60f5845a}\label{struct___p_o_p_animation_state_a70cac0cdc5a3c24e9dd8bc6e60f5845a}} 
+{\bfseries \+\_\+\+P\+O\+P\+Animation\+State} (id \+\_\+\+\_\+unsafe\+\_\+unretained anim)
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a27c516881f0a454488a8d02dfcb6ef67}\label{struct___p_o_p_animation_state_a27c516881f0a454488a8d02dfcb6ef67}} 
+bool {\bfseries is\+Custom} ()
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a3f134844d40e03c3216347f9974cd4bd}\label{struct___p_o_p_animation_state_a3f134844d40e03c3216347f9974cd4bd}} 
+bool {\bfseries is\+Started} ()
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_ad9e4142f0d09a56ec083f77cb0cb04fe}\label{struct___p_o_p_animation_state_ad9e4142f0d09a56ec083f77cb0cb04fe}} 
+id {\bfseries get\+Delegate} ()
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_adee293cc081cbbfb6e0ee437a874eeca}\label{struct___p_o_p_animation_state_adee293cc081cbbfb6e0ee437a874eeca}} 
+void {\bfseries set\+Delegate} (id d)
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a32a5c375f98b459ebecb3c8e0feac5b3}\label{struct___p_o_p_animation_state_a32a5c375f98b459ebecb3c8e0feac5b3}} 
+bool {\bfseries get\+Paused} ()
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a905f2589ff378d83c489b579b1010e58}\label{struct___p_o_p_animation_state_a905f2589ff378d83c489b579b1010e58}} 
+void {\bfseries set\+Paused} (bool f)
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a3b660d839684e968b10696314a3bf9f0}\label{struct___p_o_p_animation_state_a3b660d839684e968b10696314a3bf9f0}} 
+C\+G\+Float {\bfseries get\+Progress} ()
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a47dba1cab772bd9278e0b7b60d38763f}\label{struct___p_o_p_animation_state_a47dba1cab772bd9278e0b7b60d38763f}} 
+bool {\bfseries start\+If\+Needed} (id obj, C\+F\+Time\+Interval time, C\+F\+Time\+Interval offset)
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_aa757250389df94b8bdf0549d4586a8ba}\label{struct___p_o_p_animation_state_aa757250389df94b8bdf0549d4586a8ba}} 
+void {\bfseries stop} (bool removing, bool done)
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a0de061282ce85f8ea81380ee55bbbbb7}\label{struct___p_o_p_animation_state_a0de061282ce85f8ea81380ee55bbbbb7}} 
+virtual void {\bfseries handle\+Did\+Start} ()
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_aff39701a5607d7cbaa045837ee10b050}\label{struct___p_o_p_animation_state_aff39701a5607d7cbaa045837ee10b050}} 
+void {\bfseries handle\+Did\+Stop} (B\+O\+OL done)
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_ac4f667741a5a437de04918389b3b6a5b}\label{struct___p_o_p_animation_state_ac4f667741a5a437de04918389b3b6a5b}} 
+virtual bool {\bfseries is\+Done} ()
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_ad31f99b08242fd61384a98b36e6c5c99}\label{struct___p_o_p_animation_state_ad31f99b08242fd61384a98b36e6c5c99}} 
+bool {\bfseries advance\+Time} (C\+F\+Time\+Interval time, id obj)
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_aa326848321f16cb0de62809e167d1ccc}\label{struct___p_o_p_animation_state_aa326848321f16cb0de62809e167d1ccc}} 
+virtual void {\bfseries will\+Run} (bool started, id obj)
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a8a908ccc43dc91b93a4370d6c79810a9}\label{struct___p_o_p_animation_state_a8a908ccc43dc91b93a4370d6c79810a9}} 
+virtual bool {\bfseries advance} (C\+F\+Time\+Interval time, C\+F\+Time\+Interval dt, id obj)
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_af0028cdf0e286fb98017e4730846fb14}\label{struct___p_o_p_animation_state_af0028cdf0e286fb98017e4730846fb14}} 
+virtual void {\bfseries compute\+Progress} ()
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a2fdf3bf5e42664f42304b791ab8819fe}\label{struct___p_o_p_animation_state_a2fdf3bf5e42664f42304b791ab8819fe}} 
+virtual void {\bfseries delegate\+Progress} ()
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_aca20c7adc6409f58b7d4fbc128b0283d}\label{struct___p_o_p_animation_state_aca20c7adc6409f58b7d4fbc128b0283d}} 
+virtual void {\bfseries delegate\+Apply} ()
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a7b4acd646f8e97c1e07c906c04e36d94}\label{struct___p_o_p_animation_state_a7b4acd646f8e97c1e07c906c04e36d94}} 
+virtual void {\bfseries reset} (bool all)
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a70cac0cdc5a3c24e9dd8bc6e60f5845a}\label{struct___p_o_p_animation_state_a70cac0cdc5a3c24e9dd8bc6e60f5845a}} 
+{\bfseries \+\_\+\+P\+O\+P\+Animation\+State} (id \+\_\+\+\_\+unsafe\+\_\+unretained anim)
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a27c516881f0a454488a8d02dfcb6ef67}\label{struct___p_o_p_animation_state_a27c516881f0a454488a8d02dfcb6ef67}} 
+bool {\bfseries is\+Custom} ()
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a3f134844d40e03c3216347f9974cd4bd}\label{struct___p_o_p_animation_state_a3f134844d40e03c3216347f9974cd4bd}} 
+bool {\bfseries is\+Started} ()
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_ad9e4142f0d09a56ec083f77cb0cb04fe}\label{struct___p_o_p_animation_state_ad9e4142f0d09a56ec083f77cb0cb04fe}} 
+id {\bfseries get\+Delegate} ()
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_adee293cc081cbbfb6e0ee437a874eeca}\label{struct___p_o_p_animation_state_adee293cc081cbbfb6e0ee437a874eeca}} 
+void {\bfseries set\+Delegate} (id d)
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a32a5c375f98b459ebecb3c8e0feac5b3}\label{struct___p_o_p_animation_state_a32a5c375f98b459ebecb3c8e0feac5b3}} 
+bool {\bfseries get\+Paused} ()
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a905f2589ff378d83c489b579b1010e58}\label{struct___p_o_p_animation_state_a905f2589ff378d83c489b579b1010e58}} 
+void {\bfseries set\+Paused} (bool f)
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a3b660d839684e968b10696314a3bf9f0}\label{struct___p_o_p_animation_state_a3b660d839684e968b10696314a3bf9f0}} 
+C\+G\+Float {\bfseries get\+Progress} ()
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a47dba1cab772bd9278e0b7b60d38763f}\label{struct___p_o_p_animation_state_a47dba1cab772bd9278e0b7b60d38763f}} 
+bool {\bfseries start\+If\+Needed} (id obj, C\+F\+Time\+Interval time, C\+F\+Time\+Interval offset)
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_aa757250389df94b8bdf0549d4586a8ba}\label{struct___p_o_p_animation_state_aa757250389df94b8bdf0549d4586a8ba}} 
+void {\bfseries stop} (bool removing, bool done)
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a0de061282ce85f8ea81380ee55bbbbb7}\label{struct___p_o_p_animation_state_a0de061282ce85f8ea81380ee55bbbbb7}} 
+virtual void {\bfseries handle\+Did\+Start} ()
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_aff39701a5607d7cbaa045837ee10b050}\label{struct___p_o_p_animation_state_aff39701a5607d7cbaa045837ee10b050}} 
+void {\bfseries handle\+Did\+Stop} (B\+O\+OL done)
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_ac4f667741a5a437de04918389b3b6a5b}\label{struct___p_o_p_animation_state_ac4f667741a5a437de04918389b3b6a5b}} 
+virtual bool {\bfseries is\+Done} ()
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_ad31f99b08242fd61384a98b36e6c5c99}\label{struct___p_o_p_animation_state_ad31f99b08242fd61384a98b36e6c5c99}} 
+bool {\bfseries advance\+Time} (C\+F\+Time\+Interval time, id obj)
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_aa326848321f16cb0de62809e167d1ccc}\label{struct___p_o_p_animation_state_aa326848321f16cb0de62809e167d1ccc}} 
+virtual void {\bfseries will\+Run} (bool started, id obj)
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a8a908ccc43dc91b93a4370d6c79810a9}\label{struct___p_o_p_animation_state_a8a908ccc43dc91b93a4370d6c79810a9}} 
+virtual bool {\bfseries advance} (C\+F\+Time\+Interval time, C\+F\+Time\+Interval dt, id obj)
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_af0028cdf0e286fb98017e4730846fb14}\label{struct___p_o_p_animation_state_af0028cdf0e286fb98017e4730846fb14}} 
+virtual void {\bfseries compute\+Progress} ()
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a2fdf3bf5e42664f42304b791ab8819fe}\label{struct___p_o_p_animation_state_a2fdf3bf5e42664f42304b791ab8819fe}} 
+virtual void {\bfseries delegate\+Progress} ()
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_aca20c7adc6409f58b7d4fbc128b0283d}\label{struct___p_o_p_animation_state_aca20c7adc6409f58b7d4fbc128b0283d}} 
+virtual void {\bfseries delegate\+Apply} ()
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a7b4acd646f8e97c1e07c906c04e36d94}\label{struct___p_o_p_animation_state_a7b4acd646f8e97c1e07c906c04e36d94}} 
+virtual void {\bfseries reset} (bool all)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a9a2e464bbcf95538b014ce28c23e7ca1}\label{struct___p_o_p_animation_state_a9a2e464bbcf95538b014ce28c23e7ca1}} 
+id \+\_\+\+\_\+unsafe\+\_\+unretained {\bfseries self}
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_ad48a76b9a08ac862e8e6eace2ae96ccb}\label{struct___p_o_p_animation_state_ad48a76b9a08ac862e8e6eace2ae96ccb}} 
+P\+O\+P\+Animation\+Type {\bfseries type}
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a6fc01820cb777094a90ddc86c62b621e}\label{struct___p_o_p_animation_state_a6fc01820cb777094a90ddc86c62b621e}} 
+N\+S\+String $\ast$ {\bfseries name}
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a2387b9aaef2b377be91f85bc2c609b3f}\label{struct___p_o_p_animation_state_a2387b9aaef2b377be91f85bc2c609b3f}} 
+N\+S\+U\+Integer {\bfseries ID}
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a59c122c578e7fd29cbca9c4586d6cfdb}\label{struct___p_o_p_animation_state_a59c122c578e7fd29cbca9c4586d6cfdb}} 
+C\+F\+Time\+Interval {\bfseries begin\+Time}
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a0891e00e8bae7490c65c34be4e64c4e1}\label{struct___p_o_p_animation_state_a0891e00e8bae7490c65c34be4e64c4e1}} 
+C\+F\+Time\+Interval {\bfseries start\+Time}
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_ae8578b0e100ee376ed61e8356a7e6139}\label{struct___p_o_p_animation_state_ae8578b0e100ee376ed61e8356a7e6139}} 
+C\+F\+Time\+Interval {\bfseries last\+Time}
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a002915d19eaec23ed332f4c138f0a932}\label{struct___p_o_p_animation_state_a002915d19eaec23ed332f4c138f0a932}} 
+id \+\_\+\+\_\+weak {\bfseries delegate}
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a9bd1a619764d1e415eb9feb06d072fab}\label{struct___p_o_p_animation_state_a9bd1a619764d1e415eb9feb06d072fab}} 
+P\+O\+P\+Animation\+Did\+Start\+Block {\bfseries animation\+Did\+Start\+Block}
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_ad1f6abf1be9a29e9791a33b9b23205c8}\label{struct___p_o_p_animation_state_ad1f6abf1be9a29e9791a33b9b23205c8}} 
+P\+O\+P\+Animation\+Did\+Reach\+To\+Value\+Block {\bfseries animation\+Did\+Reach\+To\+Value\+Block}
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_adace6900fcf9fe06da36c7c23b87ea6f}\label{struct___p_o_p_animation_state_adace6900fcf9fe06da36c7c23b87ea6f}} 
+P\+O\+P\+Animation\+Completion\+Block {\bfseries completion\+Block}
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a65681635c8f33480c8575197e215b60b}\label{struct___p_o_p_animation_state_a65681635c8f33480c8575197e215b60b}} 
+P\+O\+P\+Animation\+Did\+Apply\+Block {\bfseries animation\+Did\+Apply\+Block}
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a68119fd69f9907c3f1a5556c935f7285}\label{struct___p_o_p_animation_state_a68119fd69f9907c3f1a5556c935f7285}} 
+N\+S\+Mutable\+Dictionary $\ast$ {\bfseries dict}
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_ac4de4988df99cf33a73d7aa2952ac3ca}\label{struct___p_o_p_animation_state_ac4de4988df99cf33a73d7aa2952ac3ca}} 
+\mbox{\hyperlink{interface_p_o_p_animation_tracer}{P\+O\+P\+Animation\+Tracer}} $\ast$ {\bfseries tracer}
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_aefcceb9472739817512b7b54f7aa1957}\label{struct___p_o_p_animation_state_aefcceb9472739817512b7b54f7aa1957}} 
+C\+G\+Float {\bfseries progress}
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_af580fd01300b5cd9c7b45527307a62ca}\label{struct___p_o_p_animation_state_af580fd01300b5cd9c7b45527307a62ca}} 
+N\+S\+Integer {\bfseries repeat\+Count}
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a23f12e78cfe742ea46523fe3e762b314}\label{struct___p_o_p_animation_state_a23f12e78cfe742ea46523fe3e762b314}} 
+bool {\bfseries active}\+:1
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_ab247e7d508465cf7cfa61e02bb990240}\label{struct___p_o_p_animation_state_ab247e7d508465cf7cfa61e02bb990240}} 
+bool {\bfseries paused}\+:1
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_adece6d334d519fead5a8d0b0fa5712cb}\label{struct___p_o_p_animation_state_adece6d334d519fead5a8d0b0fa5712cb}} 
+bool {\bfseries removed\+On\+Completion}\+:1
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a524c124d17ead92c560bd3cbba2a07d5}\label{struct___p_o_p_animation_state_a524c124d17ead92c560bd3cbba2a07d5}} 
+bool {\bfseries delegate\+Did\+Start}\+:1
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_af642aaecb0c16e6ac91fe47f647e3adb}\label{struct___p_o_p_animation_state_af642aaecb0c16e6ac91fe47f647e3adb}} 
+bool {\bfseries delegate\+Did\+Stop}\+:1
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a661cdb705a55c94ef8c23a659e835a4b}\label{struct___p_o_p_animation_state_a661cdb705a55c94ef8c23a659e835a4b}} 
+bool {\bfseries delegate\+Did\+Progress}\+:1
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a545adde366841e22b391c7129e7f14db}\label{struct___p_o_p_animation_state_a545adde366841e22b391c7129e7f14db}} 
+bool {\bfseries delegate\+Did\+Apply}\+:1
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_af0623a8438f79ed73626cadd8804d3e4}\label{struct___p_o_p_animation_state_af0623a8438f79ed73626cadd8804d3e4}} 
+bool {\bfseries delegate\+Did\+Reach\+To\+Value}\+:1
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a8db3421d2e4c70a09315a3ff5e61d2bd}\label{struct___p_o_p_animation_state_a8db3421d2e4c70a09315a3ff5e61d2bd}} 
+bool {\bfseries additive}\+:1
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a392c6109cea9f6aaeeea908f90424f9d}\label{struct___p_o_p_animation_state_a392c6109cea9f6aaeeea908f90424f9d}} 
+bool {\bfseries did\+Reach\+To\+Value}\+:1
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a1ad2d30015537064e8bac4e6febbe4be}\label{struct___p_o_p_animation_state_a1ad2d30015537064e8bac4e6febbe4be}} 
+bool {\bfseries tracing}\+:1
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_aa1034545475c52443352387dc6403362}\label{struct___p_o_p_animation_state_aa1034545475c52443352387dc6403362}} 
+bool {\bfseries user\+Specified\+Dynamics}\+:1
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_ad3bda88c86a50b0495e4822979b418e7}\label{struct___p_o_p_animation_state_ad3bda88c86a50b0495e4822979b418e7}} 
+bool {\bfseries autoreverses}\+:1
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_a8c2bffa8c4117b0105b636167d71ea53}\label{struct___p_o_p_animation_state_a8c2bffa8c4117b0105b636167d71ea53}} 
+bool {\bfseries repeat\+Forever}\+:1
+\item 
+\mbox{\Hypertarget{struct___p_o_p_animation_state_ad129b9baba97efbbc96ae410d7b8f683}\label{struct___p_o_p_animation_state_ad129b9baba97efbbc96ae410d7b8f683}} 
+bool {\bfseries custom\+Finished}\+:1
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/pop/P\+O\+P\+Animation\+Internal.\+h\end{DoxyCompactItemize}

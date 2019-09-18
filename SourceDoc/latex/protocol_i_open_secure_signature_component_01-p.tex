@@ -1,0 +1,61 @@
+\hypertarget{protocol_i_open_secure_signature_component_01-p}{}\section{$<$I\+Open\+Secure\+Signature\+Component $>$ Protocol Reference}
+\label{protocol_i_open_secure_signature_component_01-p}\index{$<$\+I\+Open\+Secure\+Signature\+Component $>$@{$<$\+I\+Open\+Secure\+Signature\+Component $>$}}
+
+
+{\ttfamily \#import $<$I\+Open\+Secure\+Signature\+Component.\+h$>$}
+
+
+
+Inheritance diagram for $<$I\+Open\+Secure\+Signature\+Component $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{protocol_i_open_secure_signature_component_01-p__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for $<$I\+Open\+Secure\+Signature\+Component $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{protocol_i_open_secure_signature_component_01-p__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\+S\+String $\ast$) -\/ \mbox{\hyperlink{protocol_i_open_secure_signature_component_01-p_aa8f53a8007cee37fd0a3ff43b8225c4f}{sign\+Request\+:auth\+Code\+:}}
+\item 
+\mbox{\Hypertarget{protocol_i_open_secure_signature_component_01-p_a10ba24a4e7378061b79bd0f7ee6e74f1}\label{protocol_i_open_secure_signature_component_01-p_a10ba24a4e7378061b79bd0f7ee6e74f1}} 
+(N\+S\+String $\ast$) -\/ {\bfseries get\+Safe\+Cookie\+:secret\+Key\+:auth\+Code\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+签名接口 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{protocol_i_open_secure_signature_component_01-p_aa8f53a8007cee37fd0a3ff43b8225c4f}\label{protocol_i_open_secure_signature_component_01-p_aa8f53a8007cee37fd0a3ff43b8225c4f}} 
+\index{I\+Open\+Secure\+Signature\+Component -\/p@{I\+Open\+Secure\+Signature\+Component -\/p}!sign\+Request\+:auth\+Code\+:@{sign\+Request\+:auth\+Code\+:}}
+\index{sign\+Request\+:auth\+Code\+:@{sign\+Request\+:auth\+Code\+:}!I\+Open\+Secure\+Signature\+Component -\/p@{I\+Open\+Secure\+Signature\+Component -\/p}}
+\subsubsection{\texorpdfstring{sign\+Request\+:auth\+Code\+:()}{signRequest:authCode:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$ I\+Open\+Secure\+Signature\+Component) sign\+Request\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_open_security_guard_param_context}{Open\+Security\+Guard\+Param\+Context}} $\ast$)}]{param\+Context }\item[{authCode:(N\+S\+String $\ast$)}]{auth\+Code }\end{DoxyParamCaption}}
+
+发起签名请求
+
+
+\begin{DoxyParams}{Parameters}
+{\em param\+Context} & 包含签名所需要参数的结构体对象\\
+\hline
+{\em auth\+Code} & S\+D\+K的授权码，不传或为空串，使用默认加密文件\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+签名值，失败时返回nil 
+\end{DoxyReturn}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Security\+Guard\+S\+D\+K.\+framework/\+Headers/\+Open/\+Open\+Secure\+Signature/I\+Open\+Secure\+Signature\+Component.\+h\end{DoxyCompactItemize}

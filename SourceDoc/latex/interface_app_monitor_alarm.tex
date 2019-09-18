@@ -1,0 +1,111 @@
+\hypertarget{interface_app_monitor_alarm}{}\section{App\+Monitor\+Alarm Class Reference}
+\label{interface_app_monitor_alarm}\index{App\+Monitor\+Alarm@{App\+Monitor\+Alarm}}
+
+
+Inheritance diagram for App\+Monitor\+Alarm\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{interface_app_monitor_alarm__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for App\+Monitor\+Alarm\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{interface_app_monitor_alarm__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \mbox{\hyperlink{interface_app_monitor_alarm_a40638ef87e4dc3ddb4257f27a814c7d7}{commit\+Success\+With\+Page\+:monitor\+Point\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_app_monitor_alarm_a680e95cfe69df635a2bbd432169de606}{commit\+Fail\+With\+Page\+:monitor\+Point\+:error\+Code\+:error\+Msg\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_app_monitor_alarm_a923c987b5a2b62df4067735e375271eb}{commit\+Success\+With\+Page\+:monitor\+Point\+:arg\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_app_monitor_alarm_a3ab1334e5d2ed3803425cca2d5b0ae8a}{commit\+Fail\+With\+Page\+:monitor\+Point\+:error\+Code\+:error\+Msg\+:arg\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_app_monitor_alarm_a680e95cfe69df635a2bbd432169de606}\label{interface_app_monitor_alarm_a680e95cfe69df635a2bbd432169de606}} 
+\index{App\+Monitor\+Alarm@{App\+Monitor\+Alarm}!commit\+Fail\+With\+Page\+:monitor\+Point\+:error\+Code\+:error\+Msg\+:@{commit\+Fail\+With\+Page\+:monitor\+Point\+:error\+Code\+:error\+Msg\+:}}
+\index{commit\+Fail\+With\+Page\+:monitor\+Point\+:error\+Code\+:error\+Msg\+:@{commit\+Fail\+With\+Page\+:monitor\+Point\+:error\+Code\+:error\+Msg\+:}!App\+Monitor\+Alarm@{App\+Monitor\+Alarm}}
+\subsubsection{\texorpdfstring{commit\+Fail\+With\+Page\+:monitor\+Point\+:error\+Code\+:error\+Msg\+:()}{commitFailWithPage:monitorPoint:errorCode:errorMsg:()}}
+{\footnotesize\ttfamily + (void) commit\+Fail\+With\+Page\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{page }\item[{monitorPoint:(N\+S\+String $\ast$)}]{monitor\+Point }\item[{errorCode:(N\+S\+String $\ast$)}]{error\+Code }\item[{errorMsg:(N\+S\+String $\ast$)}]{error\+Msg }\end{DoxyParamCaption}}
+
+记录业务操作失败接口
+
+
+\begin{DoxyParams}{Parameters}
+{\em page} & 页面名称,安卓i\+O\+S要相同. 命名规范\+:若之前埋点有页面名,则用原来的; 否则用\char`\"{}业务名\+\_\+页面名\char`\"{}(无页面则\char`\"{}业务名\char`\"{}); 采用首字母大写驼峰方式. 如\+Shop\+\_\+\+Detail, Shop\+\_\+\+List \\
+\hline
+{\em monitor\+Point} & 监控点名称,安卓i\+O\+S要相同,从@雷曼 获取 \\
+\hline
+{\em error\+Code} & 错误码，若为\+M\+T\+O\+P请求则传\+M\+T\+O\+P的错误码,否则请业务方对错误进行分类编码,方便统计错误类型占比 \\
+\hline
+{\em error\+Msg} & 错误信息，若位\+M\+T\+O\+P请求则传\+M\+T\+O\+P的错误信息, 否则请业务方自己描述错误, 方便自己查找原因 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_app_monitor_alarm_a3ab1334e5d2ed3803425cca2d5b0ae8a}\label{interface_app_monitor_alarm_a3ab1334e5d2ed3803425cca2d5b0ae8a}} 
+\index{App\+Monitor\+Alarm@{App\+Monitor\+Alarm}!commit\+Fail\+With\+Page\+:monitor\+Point\+:error\+Code\+:error\+Msg\+:arg\+:@{commit\+Fail\+With\+Page\+:monitor\+Point\+:error\+Code\+:error\+Msg\+:arg\+:}}
+\index{commit\+Fail\+With\+Page\+:monitor\+Point\+:error\+Code\+:error\+Msg\+:arg\+:@{commit\+Fail\+With\+Page\+:monitor\+Point\+:error\+Code\+:error\+Msg\+:arg\+:}!App\+Monitor\+Alarm@{App\+Monitor\+Alarm}}
+\subsubsection{\texorpdfstring{commit\+Fail\+With\+Page\+:monitor\+Point\+:error\+Code\+:error\+Msg\+:arg\+:()}{commitFailWithPage:monitorPoint:errorCode:errorMsg:arg:()}}
+{\footnotesize\ttfamily + (void) commit\+Fail\+With\+Page\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{page }\item[{monitorPoint:(N\+S\+String $\ast$)}]{monitor\+Point }\item[{errorCode:(N\+S\+String $\ast$)}]{error\+Code }\item[{errorMsg:(N\+S\+String $\ast$)}]{error\+Msg }\item[{arg:(N\+S\+String $\ast$)}]{arg }\end{DoxyParamCaption}}
+
+记录业务操作失败接口
+
+
+\begin{DoxyParams}{Parameters}
+{\em page} & 页面名称,安卓i\+O\+S要相同. 命名规范\+:若之前埋点有页面名,则用原来的; 否则用\char`\"{}业务名\+\_\+页面名\char`\"{}(无页面则\char`\"{}业务名\char`\"{}); 采用首字母大写驼峰方式. 如\+Shop\+\_\+\+Detail, Shop\+\_\+\+List \\
+\hline
+{\em monitor\+Point} & 监控点名称,安卓i\+O\+S要相同,从@雷曼 获取 \\
+\hline
+{\em error\+Code} & 错误码，若为\+M\+T\+O\+P请求则传\+M\+T\+O\+P的错误码,否则请业务方对错误进行分类编码,方便统计错误类型占比 \\
+\hline
+{\em error\+Msg} & 错误信息，若位\+M\+T\+O\+P请求则传\+M\+T\+O\+P的错误信息, 否则请业务方自己描述错误, 方便自己查找原因 \begin{DoxyItemize}
+\item 附加参数，用于做横向扩展 \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_app_monitor_alarm_a40638ef87e4dc3ddb4257f27a814c7d7}\label{interface_app_monitor_alarm_a40638ef87e4dc3ddb4257f27a814c7d7}} 
+\index{App\+Monitor\+Alarm@{App\+Monitor\+Alarm}!commit\+Success\+With\+Page\+:monitor\+Point\+:@{commit\+Success\+With\+Page\+:monitor\+Point\+:}}
+\index{commit\+Success\+With\+Page\+:monitor\+Point\+:@{commit\+Success\+With\+Page\+:monitor\+Point\+:}!App\+Monitor\+Alarm@{App\+Monitor\+Alarm}}
+\subsubsection{\texorpdfstring{commit\+Success\+With\+Page\+:monitor\+Point\+:()}{commitSuccessWithPage:monitorPoint:()}}
+{\footnotesize\ttfamily + (void) commit\+Success\+With\+Page\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{page }\item[{monitorPoint:(N\+S\+String $\ast$)}]{monitor\+Point }\end{DoxyParamCaption}}
+
+记录业务操作成功接口
+
+
+\begin{DoxyParams}{Parameters}
+{\em page} & 页面名称,安卓i\+O\+S要相同. 命名规范\+:若之前埋点有页面名,则用原来的; 否则用\char`\"{}业务名\+\_\+页面名\char`\"{}(无页面则\char`\"{}业务名\char`\"{}); 采用首字母大写驼峰方式. 如\+Shop\+\_\+\+Detail, Shop\+\_\+\+List \\
+\hline
+{\em monitor\+Point} & 监控点名称,安卓i\+O\+S要相同,从@雷曼 获取 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_app_monitor_alarm_a923c987b5a2b62df4067735e375271eb}\label{interface_app_monitor_alarm_a923c987b5a2b62df4067735e375271eb}} 
+\index{App\+Monitor\+Alarm@{App\+Monitor\+Alarm}!commit\+Success\+With\+Page\+:monitor\+Point\+:arg\+:@{commit\+Success\+With\+Page\+:monitor\+Point\+:arg\+:}}
+\index{commit\+Success\+With\+Page\+:monitor\+Point\+:arg\+:@{commit\+Success\+With\+Page\+:monitor\+Point\+:arg\+:}!App\+Monitor\+Alarm@{App\+Monitor\+Alarm}}
+\subsubsection{\texorpdfstring{commit\+Success\+With\+Page\+:monitor\+Point\+:arg\+:()}{commitSuccessWithPage:monitorPoint:arg:()}}
+{\footnotesize\ttfamily + (void) commit\+Success\+With\+Page\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{page }\item[{monitorPoint:(N\+S\+String $\ast$)}]{monitor\+Point }\item[{arg:(N\+S\+String $\ast$)}]{arg }\end{DoxyParamCaption}}
+
+记录业务操作成功接口
+
+
+\begin{DoxyParams}{Parameters}
+{\em page} & 页面名称,安卓i\+O\+S要相同. 命名规范\+:若之前埋点有页面名,则用原来的; 否则用\char`\"{}业务名\+\_\+页面名\char`\"{}(无页面则\char`\"{}业务名\char`\"{}); 采用首字母大写驼峰方式. 如\+Shop\+\_\+\+Detail, Shop\+\_\+\+List \\
+\hline
+{\em monitor\+Point} & 监控点名称,安卓i\+O\+S要相同,从@雷曼 获取 \begin{DoxyItemize}
+\item 附加参数，用于做横向扩展 \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+U\+T\+Mini.\+framework/\+Versions/\+A/\+Headers/App\+Monitor\+Alarm.\+h\end{DoxyCompactItemize}

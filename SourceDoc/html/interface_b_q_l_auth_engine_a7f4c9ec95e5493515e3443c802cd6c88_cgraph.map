@@ -1,0 +1,5 @@
+<map id="&#45;[BQLAuthEngine authShareToWeChatWithMusic:Description:ThumbImage:Url:MusicDataUrl:Scene:Success:Failure:]" name="&#45;[BQLAuthEngine authShareToWeChatWithMusic:Description:ThumbImage:Url:MusicDataUrl:Scene:Success:Failure:]">
+<area shape="rect" id="node2" href="$interface_w_x_media_message.html#ac3dbcbb2f989c4775df5747f9ce18bdf" title="设置消息缩略图的方法 " alt="" coords="269,5,473,44"/>
+<area shape="rect" id="node3" href="$interface_w_x_music_object.html#a49035b71c92e1366fd87a938ac991f47" title="返回一个WXMusicObject对象 " alt="" coords="285,68,456,93"/>
+<area shape="rect" id="node4" href="$interface_w_x_api.html#a1a30bc4f39815920b6e45901375bee8e" title="发送请求到微信，等待微信返回onResp " alt="" coords="302,117,440,143"/>
+</map>

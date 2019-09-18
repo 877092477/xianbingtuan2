@@ -1,0 +1,12 @@
+<map id="FNShareController()" name="FNShareController()">
+<area shape="rect" id="node2" href="$interface_f_n_share_mutiply_view.html" title="FNShareMutiplyView" alt="" coords="1400,229,1545,255"/>
+<area shape="rect" id="node3" href="$interface_j_m_view.html" title="JMView" alt="" coords="1246,153,1314,179"/>
+<area shape="rect" id="node10" href="$interface_f_n_share_mutiply_view_model.html" title="FNShareMutiplyViewModel" alt="" coords="1381,345,1563,371"/>
+<area shape="rect" id="node11" href="$interface_j_m_view_model.html" title="JMViewModel" alt="" coords="1228,455,1332,480"/>
+<area shape="rect" id="node14" href="$interface_r_a_c_disposable.html" title="RACDisposable" alt="" coords="133,591,249,616"/>
+<area shape="rect" id="node17" href="$interface_r_a_c_stream.html" title="RACStream" alt="" coords="145,509,237,535"/>
+<area shape="rect" id="node19" href="$interface_r_a_c_command.html" title="RACCommand" alt="" coords="881,377,992,403"/>
+<area shape="rect" id="node20" href="$interface_f_n_share_mutiply_model.html" title="FNShareMutiplyModel" alt="" coords="273,303,426,328"/>
+<area shape="rect" id="node15" href="$interface_r_a_c_subject.html" title="RACSubject" alt="" coords="890,576,984,601"/>
+<area shape="rect" id="node16" href="$interface_r_a_c_signal.html" title="RACSignal" alt="" coords="471,509,557,535"/>
+</map>

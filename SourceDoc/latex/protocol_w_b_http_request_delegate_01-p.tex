@@ -1,0 +1,263 @@
+\hypertarget{protocol_w_b_http_request_delegate_01-p}{}\section{$<$W\+B\+Http\+Request\+Delegate $>$ Protocol Reference}
+\label{protocol_w_b_http_request_delegate_01-p}\index{$<$\+W\+B\+Http\+Request\+Delegate $>$@{$<$\+W\+B\+Http\+Request\+Delegate $>$}}
+
+
+{\ttfamily \#import $<$W\+B\+Http\+Request.\+h$>$}
+
+
+
+Inheritance diagram for $<$W\+B\+Http\+Request\+Delegate $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{protocol_w_b_http_request_delegate_01-p__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for $<$W\+B\+Http\+Request\+Delegate $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{protocol_w_b_http_request_delegate_01-p__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_b_http_request_delegate_01-p_af9e98d40b55162297757fc2e27d0513e}{request\+:did\+Receive\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_b_http_request_delegate_01-p_a1d6301f145c81842890d428579020c30}{request\+:did\+Fail\+With\+Error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_b_http_request_delegate_01-p_af87fe20c34dd9d1ae9a131eea9cec654}{request\+:did\+Finish\+Loading\+With\+Result\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_b_http_request_delegate_01-p_adb2c6d41767770c8c9b965a02b4789c2}{request\+:did\+Finish\+Loading\+With\+Data\+Result\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_b_http_request_delegate_01-p_a6ffae01d073b8ac55c7bdf8e62ca9576}{request\+:did\+Recive\+Redirect\+Response\+With\+U\+R\+I\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_b_http_request_delegate_01-p_af9e98d40b55162297757fc2e27d0513e}{request\+:did\+Receive\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_b_http_request_delegate_01-p_a1d6301f145c81842890d428579020c30}{request\+:did\+Fail\+With\+Error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_b_http_request_delegate_01-p_af87fe20c34dd9d1ae9a131eea9cec654}{request\+:did\+Finish\+Loading\+With\+Result\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_b_http_request_delegate_01-p_adb2c6d41767770c8c9b965a02b4789c2}{request\+:did\+Finish\+Loading\+With\+Data\+Result\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_b_http_request_delegate_01-p_a6ffae01d073b8ac55c7bdf8e62ca9576}{request\+:did\+Recive\+Redirect\+Response\+With\+U\+R\+I\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_b_http_request_delegate_01-p_af9e98d40b55162297757fc2e27d0513e}{request\+:did\+Receive\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_b_http_request_delegate_01-p_a1d6301f145c81842890d428579020c30}{request\+:did\+Fail\+With\+Error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_b_http_request_delegate_01-p_af87fe20c34dd9d1ae9a131eea9cec654}{request\+:did\+Finish\+Loading\+With\+Result\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_b_http_request_delegate_01-p_adb2c6d41767770c8c9b965a02b4789c2}{request\+:did\+Finish\+Loading\+With\+Data\+Result\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_b_http_request_delegate_01-p_a6ffae01d073b8ac55c7bdf8e62ca9576}{request\+:did\+Recive\+Redirect\+Response\+With\+U\+R\+I\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+接收并处理来自微博sdk对于网络请求接口的调用响应 以及open\+A\+PI 如invite\+Friend、log\+Out\+With\+Token的请求 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{protocol_w_b_http_request_delegate_01-p_a1d6301f145c81842890d428579020c30}\label{protocol_w_b_http_request_delegate_01-p_a1d6301f145c81842890d428579020c30}} 
+\index{W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}!request\+:did\+Fail\+With\+Error\+:@{request\+:did\+Fail\+With\+Error\+:}}
+\index{request\+:did\+Fail\+With\+Error\+:@{request\+:did\+Fail\+With\+Error\+:}!W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{request\+:did\+Fail\+With\+Error\+:()}{request:didFailWithError:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (void W\+B\+Http\+Request\+Delegate) request\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_b_http_request}{W\+B\+Http\+Request}} $\ast$)}]{request }\item[{didFailWithError:(N\+S\+Error $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+收到一个来自微博\+Http请求失败的响应
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & 错误信息 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_w_b_http_request_delegate_01-p_a1d6301f145c81842890d428579020c30}\label{protocol_w_b_http_request_delegate_01-p_a1d6301f145c81842890d428579020c30}} 
+\index{W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}!request\+:did\+Fail\+With\+Error\+:@{request\+:did\+Fail\+With\+Error\+:}}
+\index{request\+:did\+Fail\+With\+Error\+:@{request\+:did\+Fail\+With\+Error\+:}!W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{request\+:did\+Fail\+With\+Error\+:()}{request:didFailWithError:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (void W\+B\+Http\+Request\+Delegate) request\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_b_http_request}{W\+B\+Http\+Request}} $\ast$)}]{request }\item[{didFailWithError:(N\+S\+Error $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+收到一个来自微博\+Http请求失败的响应
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & 错误信息 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_w_b_http_request_delegate_01-p_a1d6301f145c81842890d428579020c30}\label{protocol_w_b_http_request_delegate_01-p_a1d6301f145c81842890d428579020c30}} 
+\index{W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}!request\+:did\+Fail\+With\+Error\+:@{request\+:did\+Fail\+With\+Error\+:}}
+\index{request\+:did\+Fail\+With\+Error\+:@{request\+:did\+Fail\+With\+Error\+:}!W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{request\+:did\+Fail\+With\+Error\+:()}{request:didFailWithError:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (void W\+B\+Http\+Request\+Delegate) request\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_b_http_request}{W\+B\+Http\+Request}} $\ast$)}]{request }\item[{didFailWithError:(N\+S\+Error $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+收到一个来自微博\+Http请求失败的响应
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & 错误信息 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_w_b_http_request_delegate_01-p_adb2c6d41767770c8c9b965a02b4789c2}\label{protocol_w_b_http_request_delegate_01-p_adb2c6d41767770c8c9b965a02b4789c2}} 
+\index{W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}!request\+:did\+Finish\+Loading\+With\+Data\+Result\+:@{request\+:did\+Finish\+Loading\+With\+Data\+Result\+:}}
+\index{request\+:did\+Finish\+Loading\+With\+Data\+Result\+:@{request\+:did\+Finish\+Loading\+With\+Data\+Result\+:}!W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{request\+:did\+Finish\+Loading\+With\+Data\+Result\+:()}{request:didFinishLoadingWithDataResult:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (void W\+B\+Http\+Request\+Delegate) request\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_b_http_request}{W\+B\+Http\+Request}} $\ast$)}]{request }\item[{didFinishLoadingWithDataResult:(N\+S\+Data $\ast$)}]{data }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+收到一个来自微博\+Http请求的网络返回
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & 请求返回结果 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_w_b_http_request_delegate_01-p_adb2c6d41767770c8c9b965a02b4789c2}\label{protocol_w_b_http_request_delegate_01-p_adb2c6d41767770c8c9b965a02b4789c2}} 
+\index{W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}!request\+:did\+Finish\+Loading\+With\+Data\+Result\+:@{request\+:did\+Finish\+Loading\+With\+Data\+Result\+:}}
+\index{request\+:did\+Finish\+Loading\+With\+Data\+Result\+:@{request\+:did\+Finish\+Loading\+With\+Data\+Result\+:}!W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{request\+:did\+Finish\+Loading\+With\+Data\+Result\+:()}{request:didFinishLoadingWithDataResult:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (void W\+B\+Http\+Request\+Delegate) request\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_b_http_request}{W\+B\+Http\+Request}} $\ast$)}]{request }\item[{didFinishLoadingWithDataResult:(N\+S\+Data $\ast$)}]{data }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+收到一个来自微博\+Http请求的网络返回
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & 请求返回结果 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_w_b_http_request_delegate_01-p_adb2c6d41767770c8c9b965a02b4789c2}\label{protocol_w_b_http_request_delegate_01-p_adb2c6d41767770c8c9b965a02b4789c2}} 
+\index{W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}!request\+:did\+Finish\+Loading\+With\+Data\+Result\+:@{request\+:did\+Finish\+Loading\+With\+Data\+Result\+:}}
+\index{request\+:did\+Finish\+Loading\+With\+Data\+Result\+:@{request\+:did\+Finish\+Loading\+With\+Data\+Result\+:}!W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{request\+:did\+Finish\+Loading\+With\+Data\+Result\+:()}{request:didFinishLoadingWithDataResult:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (void W\+B\+Http\+Request\+Delegate) request\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_b_http_request}{W\+B\+Http\+Request}} $\ast$)}]{request }\item[{didFinishLoadingWithDataResult:(N\+S\+Data $\ast$)}]{data }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+收到一个来自微博\+Http请求的网络返回
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & 请求返回结果 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_w_b_http_request_delegate_01-p_af87fe20c34dd9d1ae9a131eea9cec654}\label{protocol_w_b_http_request_delegate_01-p_af87fe20c34dd9d1ae9a131eea9cec654}} 
+\index{W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}!request\+:did\+Finish\+Loading\+With\+Result\+:@{request\+:did\+Finish\+Loading\+With\+Result\+:}}
+\index{request\+:did\+Finish\+Loading\+With\+Result\+:@{request\+:did\+Finish\+Loading\+With\+Result\+:}!W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{request\+:did\+Finish\+Loading\+With\+Result\+:()}{request:didFinishLoadingWithResult:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (void W\+B\+Http\+Request\+Delegate) request\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_b_http_request}{W\+B\+Http\+Request}} $\ast$)}]{request }\item[{didFinishLoadingWithResult:(N\+S\+String $\ast$)}]{result }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+收到一个来自微博\+Http请求的网络返回
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & 请求返回结果 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_w_b_http_request_delegate_01-p_af87fe20c34dd9d1ae9a131eea9cec654}\label{protocol_w_b_http_request_delegate_01-p_af87fe20c34dd9d1ae9a131eea9cec654}} 
+\index{W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}!request\+:did\+Finish\+Loading\+With\+Result\+:@{request\+:did\+Finish\+Loading\+With\+Result\+:}}
+\index{request\+:did\+Finish\+Loading\+With\+Result\+:@{request\+:did\+Finish\+Loading\+With\+Result\+:}!W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{request\+:did\+Finish\+Loading\+With\+Result\+:()}{request:didFinishLoadingWithResult:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (void W\+B\+Http\+Request\+Delegate) request\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_b_http_request}{W\+B\+Http\+Request}} $\ast$)}]{request }\item[{didFinishLoadingWithResult:(N\+S\+String $\ast$)}]{result }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+收到一个来自微博\+Http请求的网络返回
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & 请求返回结果 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_w_b_http_request_delegate_01-p_af87fe20c34dd9d1ae9a131eea9cec654}\label{protocol_w_b_http_request_delegate_01-p_af87fe20c34dd9d1ae9a131eea9cec654}} 
+\index{W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}!request\+:did\+Finish\+Loading\+With\+Result\+:@{request\+:did\+Finish\+Loading\+With\+Result\+:}}
+\index{request\+:did\+Finish\+Loading\+With\+Result\+:@{request\+:did\+Finish\+Loading\+With\+Result\+:}!W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{request\+:did\+Finish\+Loading\+With\+Result\+:()}{request:didFinishLoadingWithResult:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (void W\+B\+Http\+Request\+Delegate) request\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_b_http_request}{W\+B\+Http\+Request}} $\ast$)}]{request }\item[{didFinishLoadingWithResult:(N\+S\+String $\ast$)}]{result }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+收到一个来自微博\+Http请求的网络返回
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & 请求返回结果 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_w_b_http_request_delegate_01-p_af9e98d40b55162297757fc2e27d0513e}\label{protocol_w_b_http_request_delegate_01-p_af9e98d40b55162297757fc2e27d0513e}} 
+\index{W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}!request\+:did\+Receive\+Response\+:@{request\+:did\+Receive\+Response\+:}}
+\index{request\+:did\+Receive\+Response\+:@{request\+:did\+Receive\+Response\+:}!W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{request\+:did\+Receive\+Response\+:()}{request:didReceiveResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (void W\+B\+Http\+Request\+Delegate) request\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_b_http_request}{W\+B\+Http\+Request}} $\ast$)}]{request }\item[{didReceiveResponse:(N\+S\+U\+R\+L\+Response $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+收到一个来自微博\+Http请求的响应
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & 具体的响应对象 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_w_b_http_request_delegate_01-p_af9e98d40b55162297757fc2e27d0513e}\label{protocol_w_b_http_request_delegate_01-p_af9e98d40b55162297757fc2e27d0513e}} 
+\index{W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}!request\+:did\+Receive\+Response\+:@{request\+:did\+Receive\+Response\+:}}
+\index{request\+:did\+Receive\+Response\+:@{request\+:did\+Receive\+Response\+:}!W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{request\+:did\+Receive\+Response\+:()}{request:didReceiveResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (void W\+B\+Http\+Request\+Delegate) request\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_b_http_request}{W\+B\+Http\+Request}} $\ast$)}]{request }\item[{didReceiveResponse:(N\+S\+U\+R\+L\+Response $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+收到一个来自微博\+Http请求的响应
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & 具体的响应对象 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_w_b_http_request_delegate_01-p_af9e98d40b55162297757fc2e27d0513e}\label{protocol_w_b_http_request_delegate_01-p_af9e98d40b55162297757fc2e27d0513e}} 
+\index{W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}!request\+:did\+Receive\+Response\+:@{request\+:did\+Receive\+Response\+:}}
+\index{request\+:did\+Receive\+Response\+:@{request\+:did\+Receive\+Response\+:}!W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{request\+:did\+Receive\+Response\+:()}{request:didReceiveResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (void W\+B\+Http\+Request\+Delegate) request\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_b_http_request}{W\+B\+Http\+Request}} $\ast$)}]{request }\item[{didReceiveResponse:(N\+S\+U\+R\+L\+Response $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+收到一个来自微博\+Http请求的响应
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & 具体的响应对象 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_w_b_http_request_delegate_01-p_a6ffae01d073b8ac55c7bdf8e62ca9576}\label{protocol_w_b_http_request_delegate_01-p_a6ffae01d073b8ac55c7bdf8e62ca9576}} 
+\index{W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}!request\+:did\+Recive\+Redirect\+Response\+With\+U\+R\+I\+:@{request\+:did\+Recive\+Redirect\+Response\+With\+U\+R\+I\+:}}
+\index{request\+:did\+Recive\+Redirect\+Response\+With\+U\+R\+I\+:@{request\+:did\+Recive\+Redirect\+Response\+With\+U\+R\+I\+:}!W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{request\+:did\+Recive\+Redirect\+Response\+With\+U\+R\+I\+:()}{request:didReciveRedirectResponseWithURI:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (void W\+B\+Http\+Request\+Delegate) request\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_b_http_request}{W\+B\+Http\+Request}} $\ast$)}]{request }\item[{didReciveRedirectResponseWithURI:(N\+S\+U\+RL $\ast$)}]{redirect\+Url }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+收到快速\+S\+S\+O授权的重定向
+
+
+\begin{DoxyParams}{Parameters}
+{\em U\+RI} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_w_b_http_request_delegate_01-p_a6ffae01d073b8ac55c7bdf8e62ca9576}\label{protocol_w_b_http_request_delegate_01-p_a6ffae01d073b8ac55c7bdf8e62ca9576}} 
+\index{W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}!request\+:did\+Recive\+Redirect\+Response\+With\+U\+R\+I\+:@{request\+:did\+Recive\+Redirect\+Response\+With\+U\+R\+I\+:}}
+\index{request\+:did\+Recive\+Redirect\+Response\+With\+U\+R\+I\+:@{request\+:did\+Recive\+Redirect\+Response\+With\+U\+R\+I\+:}!W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{request\+:did\+Recive\+Redirect\+Response\+With\+U\+R\+I\+:()}{request:didReciveRedirectResponseWithURI:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (void W\+B\+Http\+Request\+Delegate) request\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_b_http_request}{W\+B\+Http\+Request}} $\ast$)}]{request }\item[{didReciveRedirectResponseWithURI:(N\+S\+U\+RL $\ast$)}]{redirect\+Url }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+收到快速\+S\+S\+O授权的重定向
+
+
+\begin{DoxyParams}{Parameters}
+{\em U\+RI} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_w_b_http_request_delegate_01-p_a6ffae01d073b8ac55c7bdf8e62ca9576}\label{protocol_w_b_http_request_delegate_01-p_a6ffae01d073b8ac55c7bdf8e62ca9576}} 
+\index{W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}!request\+:did\+Recive\+Redirect\+Response\+With\+U\+R\+I\+:@{request\+:did\+Recive\+Redirect\+Response\+With\+U\+R\+I\+:}}
+\index{request\+:did\+Recive\+Redirect\+Response\+With\+U\+R\+I\+:@{request\+:did\+Recive\+Redirect\+Response\+With\+U\+R\+I\+:}!W\+B\+Http\+Request\+Delegate -\/p@{W\+B\+Http\+Request\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{request\+:did\+Recive\+Redirect\+Response\+With\+U\+R\+I\+:()}{request:didReciveRedirectResponseWithURI:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (void W\+B\+Http\+Request\+Delegate) request\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_b_http_request}{W\+B\+Http\+Request}} $\ast$)}]{request }\item[{didReciveRedirectResponseWithURI:(N\+S\+U\+RL $\ast$)}]{redirect\+Url }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+收到快速\+S\+S\+O授权的重定向
+
+
+\begin{DoxyParams}{Parameters}
+{\em U\+RI} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+U\+Meng\+U\+Share/W\+B\+Http\+Request.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="&#45;[RACTuple tupleByAddingObject:]" name="&#45;[RACTuple tupleByAddingObject:]">
+<area shape="rect" id="node2" href="$interface_r_a_c_tuple.html#a3a1907a961d70cac573b0a4daea43834" title="Creates a new tuple out of the array. Does not convert nulls to nils. " alt="" coords="234,5,432,44"/>
+<area shape="rect" id="node3" href="$interface_r_a_c_tuple.html#afe0710811403bf06fd2eda9062433109" title="+[RACTuple tupleWithObjects\lFromArray:convertNullsToNils:]" alt="" coords="480,5,685,44"/>
+</map>

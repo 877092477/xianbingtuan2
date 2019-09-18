@@ -1,0 +1,182 @@
+\hypertarget{protocol_i_open_dynamic_data_encrypt_component_01-p}{}\section{$<$I\+Open\+Dynamic\+Data\+Encrypt\+Component $>$ Protocol Reference}
+\label{protocol_i_open_dynamic_data_encrypt_component_01-p}\index{$<$\+I\+Open\+Dynamic\+Data\+Encrypt\+Component $>$@{$<$\+I\+Open\+Dynamic\+Data\+Encrypt\+Component $>$}}
+
+
+{\ttfamily \#import $<$I\+Open\+Dynamic\+Data\+Encrypt\+Component.\+h$>$}
+
+
+
+Inheritance diagram for $<$I\+Open\+Dynamic\+Data\+Encrypt\+Component $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{protocol_i_open_dynamic_data_encrypt_component_01-p__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for $<$I\+Open\+Dynamic\+Data\+Encrypt\+Component $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{protocol_i_open_dynamic_data_encrypt_component_01-p__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\+S\+String $\ast$) -\/ \mbox{\hyperlink{protocol_i_open_dynamic_data_encrypt_component_01-p_a673a3c7262b0df36b23f1f87de4b88f7}{dynamic\+Encrypt\+:}}
+\item 
+(N\+S\+String $\ast$) -\/ \mbox{\hyperlink{protocol_i_open_dynamic_data_encrypt_component_01-p_aa740ebfde04ace023172eef6c4ab61a9}{dynamic\+Decrypt\+:}}
+\item 
+(N\+S\+Data $\ast$) -\/ \mbox{\hyperlink{protocol_i_open_dynamic_data_encrypt_component_01-p_a23f5f84ed74270a4c5c58ee93f5d8a5c}{dynamic\+Encrypt\+Byte\+Array\+:}}
+\item 
+(N\+S\+Data $\ast$) -\/ \mbox{\hyperlink{protocol_i_open_dynamic_data_encrypt_component_01-p_af7a8dc67724c51fbf71df38e0fb74f93}{dynamic\+Decrypt\+Byte\+Array\+:}}
+\item 
+(N\+S\+String $\ast$) -\/ \mbox{\hyperlink{protocol_i_open_dynamic_data_encrypt_component_01-p_aec61b5430eb3d1aa60d5e1ec986f4340}{dynamic\+Encrypt\+D\+Dp\+:}}
+\item 
+(N\+S\+String $\ast$) -\/ \mbox{\hyperlink{protocol_i_open_dynamic_data_encrypt_component_01-p_a9efd30d160d5b6a2a8006686dd44a88a}{dynamic\+Decrypt\+D\+Dp\+:}}
+\item 
+(N\+S\+Data $\ast$) -\/ \mbox{\hyperlink{protocol_i_open_dynamic_data_encrypt_component_01-p_a93a13fcc8e85a2d2a19616837b869575}{dynamic\+Encrypt\+Byte\+Array\+D\+Dp\+:}}
+\item 
+(N\+S\+Data $\ast$) -\/ \mbox{\hyperlink{protocol_i_open_dynamic_data_encrypt_component_01-p_ab0dc4e509c95acb3268290cbec0a4bd3}{dynamic\+Decrypt\+Byte\+Array\+D\+Dp\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+动态加解密接口 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{protocol_i_open_dynamic_data_encrypt_component_01-p_aa740ebfde04ace023172eef6c4ab61a9}\label{protocol_i_open_dynamic_data_encrypt_component_01-p_aa740ebfde04ace023172eef6c4ab61a9}} 
+\index{I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p@{I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p}!dynamic\+Decrypt\+:@{dynamic\+Decrypt\+:}}
+\index{dynamic\+Decrypt\+:@{dynamic\+Decrypt\+:}!I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p@{I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p}}
+\subsubsection{\texorpdfstring{dynamic\+Decrypt\+:()}{dynamicDecrypt:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$ I\+Open\+Dynamic\+Data\+Encrypt\+Component) dynamic\+Decrypt\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{cipher\+Text }\end{DoxyParamCaption}}
+
+动态解密字符串值
+
+
+\begin{DoxyParams}{Parameters}
+{\em cipher\+Text} & string需要解密的字符串值\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+返回解密结果，解密失败返回nil 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_i_open_dynamic_data_encrypt_component_01-p_af7a8dc67724c51fbf71df38e0fb74f93}\label{protocol_i_open_dynamic_data_encrypt_component_01-p_af7a8dc67724c51fbf71df38e0fb74f93}} 
+\index{I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p@{I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p}!dynamic\+Decrypt\+Byte\+Array\+:@{dynamic\+Decrypt\+Byte\+Array\+:}}
+\index{dynamic\+Decrypt\+Byte\+Array\+:@{dynamic\+Decrypt\+Byte\+Array\+:}!I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p@{I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p}}
+\subsubsection{\texorpdfstring{dynamic\+Decrypt\+Byte\+Array\+:()}{dynamicDecryptByteArray:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Data$\ast$ I\+Open\+Dynamic\+Data\+Encrypt\+Component) dynamic\+Decrypt\+Byte\+Array\+: \begin{DoxyParamCaption}\item[{(N\+S\+Data $\ast$)}]{cipher\+Byte\+Array }\end{DoxyParamCaption}}
+
+动态解密byte数组
+
+
+\begin{DoxyParams}{Parameters}
+{\em plain\+Byte\+Array} & 需要解密的byte数组\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+返回解密结果，解密失败返回nil 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_i_open_dynamic_data_encrypt_component_01-p_ab0dc4e509c95acb3268290cbec0a4bd3}\label{protocol_i_open_dynamic_data_encrypt_component_01-p_ab0dc4e509c95acb3268290cbec0a4bd3}} 
+\index{I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p@{I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p}!dynamic\+Decrypt\+Byte\+Array\+D\+Dp\+:@{dynamic\+Decrypt\+Byte\+Array\+D\+Dp\+:}}
+\index{dynamic\+Decrypt\+Byte\+Array\+D\+Dp\+:@{dynamic\+Decrypt\+Byte\+Array\+D\+Dp\+:}!I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p@{I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p}}
+\subsubsection{\texorpdfstring{dynamic\+Decrypt\+Byte\+Array\+D\+Dp\+:()}{dynamicDecryptByteArrayDDp:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Data$\ast$ I\+Open\+Dynamic\+Data\+Encrypt\+Component) dynamic\+Decrypt\+Byte\+Array\+D\+Dp\+: \begin{DoxyParamCaption}\item[{(N\+S\+Data $\ast$)}]{cipher\+Byte\+Array }\end{DoxyParamCaption}}
+
+动态解密byte数组（加解密过程依赖设备硬件）
+
+
+\begin{DoxyParams}{Parameters}
+{\em plain\+Byte\+Array} & 需要解密的byte数组\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+返回解密结果，解密失败返回nil 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_i_open_dynamic_data_encrypt_component_01-p_a9efd30d160d5b6a2a8006686dd44a88a}\label{protocol_i_open_dynamic_data_encrypt_component_01-p_a9efd30d160d5b6a2a8006686dd44a88a}} 
+\index{I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p@{I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p}!dynamic\+Decrypt\+D\+Dp\+:@{dynamic\+Decrypt\+D\+Dp\+:}}
+\index{dynamic\+Decrypt\+D\+Dp\+:@{dynamic\+Decrypt\+D\+Dp\+:}!I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p@{I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p}}
+\subsubsection{\texorpdfstring{dynamic\+Decrypt\+D\+Dp\+:()}{dynamicDecryptDDp:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$ I\+Open\+Dynamic\+Data\+Encrypt\+Component) dynamic\+Decrypt\+D\+Dp\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{cipher\+Text }\end{DoxyParamCaption}}
+
+动态解密字符串值（加解密过程依赖设备硬件）
+
+
+\begin{DoxyParams}{Parameters}
+{\em cipher\+Text} & string需要解密的字符串值\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+返回解密结果，解密失败返回nil 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_i_open_dynamic_data_encrypt_component_01-p_a673a3c7262b0df36b23f1f87de4b88f7}\label{protocol_i_open_dynamic_data_encrypt_component_01-p_a673a3c7262b0df36b23f1f87de4b88f7}} 
+\index{I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p@{I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p}!dynamic\+Encrypt\+:@{dynamic\+Encrypt\+:}}
+\index{dynamic\+Encrypt\+:@{dynamic\+Encrypt\+:}!I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p@{I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p}}
+\subsubsection{\texorpdfstring{dynamic\+Encrypt\+:()}{dynamicEncrypt:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$ I\+Open\+Dynamic\+Data\+Encrypt\+Component) dynamic\+Encrypt\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{plain\+Text }\end{DoxyParamCaption}}
+
+动态加密字符串值
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & string值对应的key\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+返回加密结果，加密失败返回nil 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_i_open_dynamic_data_encrypt_component_01-p_a23f5f84ed74270a4c5c58ee93f5d8a5c}\label{protocol_i_open_dynamic_data_encrypt_component_01-p_a23f5f84ed74270a4c5c58ee93f5d8a5c}} 
+\index{I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p@{I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p}!dynamic\+Encrypt\+Byte\+Array\+:@{dynamic\+Encrypt\+Byte\+Array\+:}}
+\index{dynamic\+Encrypt\+Byte\+Array\+:@{dynamic\+Encrypt\+Byte\+Array\+:}!I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p@{I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p}}
+\subsubsection{\texorpdfstring{dynamic\+Encrypt\+Byte\+Array\+:()}{dynamicEncryptByteArray:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Data$\ast$ I\+Open\+Dynamic\+Data\+Encrypt\+Component) dynamic\+Encrypt\+Byte\+Array\+: \begin{DoxyParamCaption}\item[{(N\+S\+Data $\ast$)}]{plain\+Byte\+Array }\end{DoxyParamCaption}}
+
+动态加密byte数组
+
+
+\begin{DoxyParams}{Parameters}
+{\em plain\+Byte\+Array} & 待加密的byte数组\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+返回加密结果，加密失败返回nil 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_i_open_dynamic_data_encrypt_component_01-p_a93a13fcc8e85a2d2a19616837b869575}\label{protocol_i_open_dynamic_data_encrypt_component_01-p_a93a13fcc8e85a2d2a19616837b869575}} 
+\index{I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p@{I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p}!dynamic\+Encrypt\+Byte\+Array\+D\+Dp\+:@{dynamic\+Encrypt\+Byte\+Array\+D\+Dp\+:}}
+\index{dynamic\+Encrypt\+Byte\+Array\+D\+Dp\+:@{dynamic\+Encrypt\+Byte\+Array\+D\+Dp\+:}!I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p@{I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p}}
+\subsubsection{\texorpdfstring{dynamic\+Encrypt\+Byte\+Array\+D\+Dp\+:()}{dynamicEncryptByteArrayDDp:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Data$\ast$ I\+Open\+Dynamic\+Data\+Encrypt\+Component) dynamic\+Encrypt\+Byte\+Array\+D\+Dp\+: \begin{DoxyParamCaption}\item[{(N\+S\+Data $\ast$)}]{plain\+Byte\+Array }\end{DoxyParamCaption}}
+
+动态加密byte数组（加解密过程依赖设备硬件）
+
+
+\begin{DoxyParams}{Parameters}
+{\em plain\+Byte\+Array} & 待加密的byte数组\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+返回加密结果，加密失败返回nil 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_i_open_dynamic_data_encrypt_component_01-p_aec61b5430eb3d1aa60d5e1ec986f4340}\label{protocol_i_open_dynamic_data_encrypt_component_01-p_aec61b5430eb3d1aa60d5e1ec986f4340}} 
+\index{I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p@{I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p}!dynamic\+Encrypt\+D\+Dp\+:@{dynamic\+Encrypt\+D\+Dp\+:}}
+\index{dynamic\+Encrypt\+D\+Dp\+:@{dynamic\+Encrypt\+D\+Dp\+:}!I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p@{I\+Open\+Dynamic\+Data\+Encrypt\+Component -\/p}}
+\subsubsection{\texorpdfstring{dynamic\+Encrypt\+D\+Dp\+:()}{dynamicEncryptDDp:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$ I\+Open\+Dynamic\+Data\+Encrypt\+Component) dynamic\+Encrypt\+D\+Dp\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{plain\+Text }\end{DoxyParamCaption}}
+
+动态加密字符串值（加解密过程依赖设备硬件）
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & string值对应的key\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+返回加密结果，加密失败返回nil 
+\end{DoxyReturn}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Security\+Guard\+S\+D\+K.\+framework/\+Headers/\+Open/\+Open\+Dynamic\+Data\+Encrypt/I\+Open\+Dynamic\+Data\+Encrypt\+Component.\+h\end{DoxyCompactItemize}

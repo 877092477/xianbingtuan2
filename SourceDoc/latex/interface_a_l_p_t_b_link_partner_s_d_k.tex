@@ -1,0 +1,256 @@
+\hypertarget{interface_a_l_p_t_b_link_partner_s_d_k}{}\section{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK Class Reference}
+\label{interface_a_l_p_t_b_link_partner_s_d_k}\index{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}}
+
+
+Inheritance diagram for A\+L\+P\+T\+B\+Link\+Partner\+S\+DK\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{interface_a_l_p_t_b_link_partner_s_d_k__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for A\+L\+P\+T\+B\+Link\+Partner\+S\+DK\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{interface_a_l_p_t_b_link_partner_s_d_k__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \mbox{\hyperlink{interface_a_l_p_t_b_link_partner_s_d_k_ae0e3f4df25ea40bba08bc3588c39888d}{init\+With\+Appkey\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_a_l_p_t_b_link_partner_s_d_k_aeea8fe76bb2c767aa72a54dc0141e78f}{set\+Debug\+On\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_a_l_p_t_b_link_partner_s_d_k_af3dcd26617de9790bb4e6f76217db26d}{set\+Env\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_a_l_p_t_b_link_partner_s_d_k_a4461a7b64cbff06164da5991cda19c3f}{set\+Open\+Type\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_a_l_p_t_b_link_partner_s_d_k_a2a2c36c7f060673309257f123bb31327}{set\+Support\+Deep\+Link\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_a_l_p_t_b_link_partner_s_d_k_a4ab65c468f9f7dc95ff4189034b56992}{set\+T\+T\+I\+D\+:}}
+\item 
+(nullable \mbox{\hyperlink{interface_a_l_p_error}{A\+L\+P\+Error}} $\ast$) + \mbox{\hyperlink{interface_a_l_p_t_b_link_partner_s_d_k_ad5c0623b62fb3f52dc6f73a0523036a2}{jump\+Shop\+:failed\+Strategy\+:}}
+\item 
+(nullable \mbox{\hyperlink{interface_a_l_p_error}{A\+L\+P\+Error}} $\ast$) + \mbox{\hyperlink{interface_a_l_p_t_b_link_partner_s_d_k_a91df05ce1cb2da4651b3d38f7bf3b6ec}{jump\+Detail\+:failed\+Strategy\+:}}
+\item 
+(nullable \mbox{\hyperlink{interface_a_l_p_error}{A\+L\+P\+Error}} $\ast$) + \mbox{\hyperlink{interface_a_l_p_t_b_link_partner_s_d_k_aa104ffde1663fbf4c88d6fddd705ddf6}{jump\+U\+R\+I\+:failed\+Strategy\+:}}
+\item 
+(nullable \mbox{\hyperlink{interface_a_l_p_error}{A\+L\+P\+Error}} $\ast$) + \mbox{\hyperlink{interface_a_l_p_t_b_link_partner_s_d_k_a64ed79c245f34bf158de3ca83630a138}{jump\+U\+R\+I\+:failed\+Strategy\+:jump\+Back\+Callback\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_a_l_p_t_b_link_partner_s_d_k_af26754e9b04c6111da401e2923127686}{set\+Support\+Jump\+Failed\+Open\+Taobao\+:}}
+\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_a_l_p_t_b_link_partner_s_d_k_a59567d237a2c01c60e8bcd0a26c7c9a9}{handle\+Open\+U\+R\+L\+:source\+Application\+:}}
+\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_a_l_p_t_b_link_partner_s_d_k_a986d89d683a8286fc6ca072a930052f4}{can\+Open\+App\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_a_l_p_t_b_link_partner_s_d_k_a986d89d683a8286fc6ca072a930052f4}\label{interface_a_l_p_t_b_link_partner_s_d_k_a986d89d683a8286fc6ca072a930052f4}} 
+\index{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}!can\+Open\+App\+:@{can\+Open\+App\+:}}
+\index{can\+Open\+App\+:@{can\+Open\+App\+:}!A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}}
+\subsubsection{\texorpdfstring{can\+Open\+App\+:()}{canOpenApp:()}}
+{\footnotesize\ttfamily + (B\+O\+OL) can\+Open\+App\+: \begin{DoxyParamCaption}\item[{(nonnull N\+S\+String $\ast$)}]{linkkey }\end{DoxyParamCaption}}
+
+检查是否能打开指定app，传入是link\+Key，比如："taobao"，指手淘
+
+
+\begin{DoxyParams}{Parameters}
+{\em linkkey} & linkkey\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+是否能打开\+A\+PP 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_a_l_p_t_b_link_partner_s_d_k_a59567d237a2c01c60e8bcd0a26c7c9a9}\label{interface_a_l_p_t_b_link_partner_s_d_k_a59567d237a2c01c60e8bcd0a26c7c9a9}} 
+\index{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}!handle\+Open\+U\+R\+L\+:source\+Application\+:@{handle\+Open\+U\+R\+L\+:source\+Application\+:}}
+\index{handle\+Open\+U\+R\+L\+:source\+Application\+:@{handle\+Open\+U\+R\+L\+:source\+Application\+:}!A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}}
+\subsubsection{\texorpdfstring{handle\+Open\+U\+R\+L\+:source\+Application\+:()}{handleOpenURL:sourceApplication:()}}
+{\footnotesize\ttfamily + (B\+O\+OL) handle\+Open\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(nonnull N\+S\+U\+RL $\ast$)}]{url }\item[{sourceApplication:(nullable N\+S\+String $\ast$)}]{source\+Application }\end{DoxyParamCaption}}
+
+处理link\+Partner返回结果，需要在\+App\+Delegate的\mbox{[}application\+:(\+U\+I\+Application)app handle\+Open\+U\+R\+L\+:(\+N\+S\+U\+R\+L$\ast$)url\mbox{]}中添加
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & 跳入打开\+A\+P\+P的\+U\+RL \\
+\hline
+{\em source\+Application} & 来源\+A\+PP source\+Application\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+是否处理该url 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_a_l_p_t_b_link_partner_s_d_k_ae0e3f4df25ea40bba08bc3588c39888d}\label{interface_a_l_p_t_b_link_partner_s_d_k_ae0e3f4df25ea40bba08bc3588c39888d}} 
+\index{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}!init\+With\+Appkey\+:@{init\+With\+Appkey\+:}}
+\index{init\+With\+Appkey\+:@{init\+With\+Appkey\+:}!A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}}
+\subsubsection{\texorpdfstring{init\+With\+Appkey\+:()}{initWithAppkey:()}}
+{\footnotesize\ttfamily + (void) init\+With\+Appkey\+: \begin{DoxyParamCaption}\item[{(nonnull N\+S\+String $\ast$)}]{app\+Key }\end{DoxyParamCaption}}
+
+初始化\+S\+D\+K，必须初始化\+S\+D\+K不然后续跳转操作将报错
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Key} & 必传参数 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_a_l_p_t_b_link_partner_s_d_k_a91df05ce1cb2da4651b3d38f7bf3b6ec}\label{interface_a_l_p_t_b_link_partner_s_d_k_a91df05ce1cb2da4651b3d38f7bf3b6ec}} 
+\index{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}!jump\+Detail\+:failed\+Strategy\+:@{jump\+Detail\+:failed\+Strategy\+:}}
+\index{jump\+Detail\+:failed\+Strategy\+:@{jump\+Detail\+:failed\+Strategy\+:}!A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}}
+\subsubsection{\texorpdfstring{jump\+Detail\+:failed\+Strategy\+:()}{jumpDetail:failedStrategy:()}}
+{\footnotesize\ttfamily + (nullable \mbox{\hyperlink{interface_a_l_p_error}{A\+L\+P\+Error}} $\ast$) jump\+Detail\+: \begin{DoxyParamCaption}\item[{(nonnull \mbox{\hyperlink{interface_a_l_p_t_b_detail_param}{A\+L\+P\+T\+B\+Detail\+Param}} $\ast$)}]{param }\item[{failedStrategy:(nullable \mbox{\hyperlink{interface_a_l_p_jump_failed_strategy}{A\+L\+P\+Jump\+Failed\+Strategy}} $\ast$)}]{strategy }\end{DoxyParamCaption}}
+
+跳转到商品详情页
+
+
+\begin{DoxyParams}{Parameters}
+{\em param} & 商品详情的配置参数 \\
+\hline
+{\em strategy} & 跳转失败时处理策略，不传，返回错误信息\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+错误信息 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_a_l_p_t_b_link_partner_s_d_k_ad5c0623b62fb3f52dc6f73a0523036a2}\label{interface_a_l_p_t_b_link_partner_s_d_k_ad5c0623b62fb3f52dc6f73a0523036a2}} 
+\index{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}!jump\+Shop\+:failed\+Strategy\+:@{jump\+Shop\+:failed\+Strategy\+:}}
+\index{jump\+Shop\+:failed\+Strategy\+:@{jump\+Shop\+:failed\+Strategy\+:}!A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}}
+\subsubsection{\texorpdfstring{jump\+Shop\+:failed\+Strategy\+:()}{jumpShop:failedStrategy:()}}
+{\footnotesize\ttfamily + (nullable \mbox{\hyperlink{interface_a_l_p_error}{A\+L\+P\+Error}} $\ast$) jump\+Shop\+: \begin{DoxyParamCaption}\item[{(nonnull \mbox{\hyperlink{interface_a_l_p_t_b_shop_param}{A\+L\+P\+T\+B\+Shop\+Param}} $\ast$)}]{param }\item[{failedStrategy:(nullable \mbox{\hyperlink{interface_a_l_p_jump_failed_strategy}{A\+L\+P\+Jump\+Failed\+Strategy}} $\ast$)}]{strategy }\end{DoxyParamCaption}}
+
+跳转到店铺页
+
+
+\begin{DoxyParams}{Parameters}
+{\em param} & 店铺的配置参数 \\
+\hline
+{\em strategy} & 跳转失败时处理策略，不传，返回错误信息\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+错误信息 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_a_l_p_t_b_link_partner_s_d_k_aa104ffde1663fbf4c88d6fddd705ddf6}\label{interface_a_l_p_t_b_link_partner_s_d_k_aa104ffde1663fbf4c88d6fddd705ddf6}} 
+\index{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}!jump\+U\+R\+I\+:failed\+Strategy\+:@{jump\+U\+R\+I\+:failed\+Strategy\+:}}
+\index{jump\+U\+R\+I\+:failed\+Strategy\+:@{jump\+U\+R\+I\+:failed\+Strategy\+:}!A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}}
+\subsubsection{\texorpdfstring{jump\+U\+R\+I\+:failed\+Strategy\+:()}{jumpURI:failedStrategy:()}}
+{\footnotesize\ttfamily + (nullable \mbox{\hyperlink{interface_a_l_p_error}{A\+L\+P\+Error}} $\ast$) jump\+U\+R\+I\+: \begin{DoxyParamCaption}\item[{(nonnull \mbox{\hyperlink{interface_a_l_p_t_b_u_r_i_param}{A\+L\+P\+T\+B\+U\+R\+I\+Param}} $\ast$)}]{param }\item[{failedStrategy:(nullable \mbox{\hyperlink{interface_a_l_p_jump_failed_strategy}{A\+L\+P\+Jump\+Failed\+Strategy}} $\ast$)}]{strategy }\end{DoxyParamCaption}}
+
+根据\+U\+R\+I跳转到手淘，以web\+View的形式打开； 跳转到接入\+Alibc\+Flow\+Customs S\+D\+K的\+A\+P\+P，相当于通用跳转（类似open\+U\+R\+L：）
+
+
+\begin{DoxyParams}{Parameters}
+{\em param} & U\+R\+I的配置参数 \\
+\hline
+{\em strategy} & 跳转失败时处理策略，不传，返回错误信息\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+错误信息 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_a_l_p_t_b_link_partner_s_d_k_a64ed79c245f34bf158de3ca83630a138}\label{interface_a_l_p_t_b_link_partner_s_d_k_a64ed79c245f34bf158de3ca83630a138}} 
+\index{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}!jump\+U\+R\+I\+:failed\+Strategy\+:jump\+Back\+Callback\+:@{jump\+U\+R\+I\+:failed\+Strategy\+:jump\+Back\+Callback\+:}}
+\index{jump\+U\+R\+I\+:failed\+Strategy\+:jump\+Back\+Callback\+:@{jump\+U\+R\+I\+:failed\+Strategy\+:jump\+Back\+Callback\+:}!A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}}
+\subsubsection{\texorpdfstring{jump\+U\+R\+I\+:failed\+Strategy\+:jump\+Back\+Callback\+:()}{jumpURI:failedStrategy:jumpBackCallback:()}}
+{\footnotesize\ttfamily + (nullable \mbox{\hyperlink{interface_a_l_p_error}{A\+L\+P\+Error}} $\ast$) jump\+U\+R\+I\+: \begin{DoxyParamCaption}\item[{(nonnull \mbox{\hyperlink{interface_a_l_p_t_b_u_r_i_param}{A\+L\+P\+T\+B\+U\+R\+I\+Param}} $\ast$)}]{param }\item[{failedStrategy:(nullable \mbox{\hyperlink{interface_a_l_p_jump_failed_strategy}{A\+L\+P\+Jump\+Failed\+Strategy}} $\ast$)}]{strategy }\item[{jumpBackCallback:(nullable A\+L\+P\+Jump\+Back\+Block)}]{callback }\end{DoxyParamCaption}}
+
+通用跳转，param参数中的route\+Rule必传，匹配接入\+Alibc\+Flow\+Customs S\+DK 中注册的插件执行，回跳时触发回调
+
+
+\begin{DoxyParams}{Parameters}
+{\em param} & U\+R\+I的配置参数 \\
+\hline
+{\em strategy} & 跳转失败时处理策略，不传，返回错误信息 \\
+\hline
+{\em callback} & 触发插件执行，回跳时的回调。 跳转去目标\+A\+P\+P，切换回来，认为用户取消操作触发回调，返回错误信息\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+错误信息 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_a_l_p_t_b_link_partner_s_d_k_aeea8fe76bb2c767aa72a54dc0141e78f}\label{interface_a_l_p_t_b_link_partner_s_d_k_aeea8fe76bb2c767aa72a54dc0141e78f}} 
+\index{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}!set\+Debug\+On\+:@{set\+Debug\+On\+:}}
+\index{set\+Debug\+On\+:@{set\+Debug\+On\+:}!A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}}
+\subsubsection{\texorpdfstring{set\+Debug\+On\+:()}{setDebugOn:()}}
+{\footnotesize\ttfamily + (void) set\+Debug\+On\+: \begin{DoxyParamCaption}\item[{(B\+O\+OL)}]{on }\end{DoxyParamCaption}}
+
+设置debug模式打开，会有log输出
+
+
+\begin{DoxyParams}{Parameters}
+{\em on} & 是否打开 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_a_l_p_t_b_link_partner_s_d_k_af3dcd26617de9790bb4e6f76217db26d}\label{interface_a_l_p_t_b_link_partner_s_d_k_af3dcd26617de9790bb4e6f76217db26d}} 
+\index{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}!set\+Env\+:@{set\+Env\+:}}
+\index{set\+Env\+:@{set\+Env\+:}!A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}}
+\subsubsection{\texorpdfstring{set\+Env\+:()}{setEnv:()}}
+{\footnotesize\ttfamily + (void) set\+Env\+: \begin{DoxyParamCaption}\item[{(A\+L\+P\+Config\+Env)}]{env }\end{DoxyParamCaption}}
+
+设置开发环境，默认线上环境
+
+
+\begin{DoxyParams}{Parameters}
+{\em env} & 开发环境 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_a_l_p_t_b_link_partner_s_d_k_a4461a7b64cbff06164da5991cda19c3f}\label{interface_a_l_p_t_b_link_partner_s_d_k_a4461a7b64cbff06164da5991cda19c3f}} 
+\index{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}!set\+Open\+Type\+:@{set\+Open\+Type\+:}}
+\index{set\+Open\+Type\+:@{set\+Open\+Type\+:}!A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}}
+\subsubsection{\texorpdfstring{set\+Open\+Type\+:()}{setOpenType:()}}
+{\footnotesize\ttfamily + (void) set\+Open\+Type\+: \begin{DoxyParamCaption}\item[{(A\+L\+P\+Open\+Type)}]{type }\end{DoxyParamCaption}}
+
+设置打开页面的类型
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & 类型 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_a_l_p_t_b_link_partner_s_d_k_a2a2c36c7f060673309257f123bb31327}\label{interface_a_l_p_t_b_link_partner_s_d_k_a2a2c36c7f060673309257f123bb31327}} 
+\index{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}!set\+Support\+Deep\+Link\+:@{set\+Support\+Deep\+Link\+:}}
+\index{set\+Support\+Deep\+Link\+:@{set\+Support\+Deep\+Link\+:}!A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}}
+\subsubsection{\texorpdfstring{set\+Support\+Deep\+Link\+:()}{setSupportDeepLink:()}}
+{\footnotesize\ttfamily + (void) set\+Support\+Deep\+Link\+: \begin{DoxyParamCaption}\item[{(B\+O\+OL)}]{is\+Support }\end{DoxyParamCaption}}
+
+是否支持deep\+Link，即打开xxx A\+P\+P某个页面时，\+A\+P\+P没有安装 跳转\+App\+Store下载\+A\+P\+P，打开\+A\+P\+P时，自动进入那个页面 只在设置跳转失败去\+App\+Store情况才支持，默认是支持\+Deep\+Link
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Support} & 是否支持 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_a_l_p_t_b_link_partner_s_d_k_af26754e9b04c6111da401e2923127686}\label{interface_a_l_p_t_b_link_partner_s_d_k_af26754e9b04c6111da401e2923127686}} 
+\index{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}!set\+Support\+Jump\+Failed\+Open\+Taobao\+:@{set\+Support\+Jump\+Failed\+Open\+Taobao\+:}}
+\index{set\+Support\+Jump\+Failed\+Open\+Taobao\+:@{set\+Support\+Jump\+Failed\+Open\+Taobao\+:}!A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}}
+\subsubsection{\texorpdfstring{set\+Support\+Jump\+Failed\+Open\+Taobao\+:()}{setSupportJumpFailedOpenTaobao:()}}
+{\footnotesize\ttfamily + (void) set\+Support\+Jump\+Failed\+Open\+Taobao\+: \begin{DoxyParamCaption}\item[{(B\+O\+OL)}]{is\+Support }\end{DoxyParamCaption}}
+
+跳转失败，是否支持默认打开手淘
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Support} & 是否支持 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_a_l_p_t_b_link_partner_s_d_k_a4ab65c468f9f7dc95ff4189034b56992}\label{interface_a_l_p_t_b_link_partner_s_d_k_a4ab65c468f9f7dc95ff4189034b56992}} 
+\index{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}!set\+T\+T\+I\+D\+:@{set\+T\+T\+I\+D\+:}}
+\index{set\+T\+T\+I\+D\+:@{set\+T\+T\+I\+D\+:}!A\+L\+P\+T\+B\+Link\+Partner\+S\+DK@{A\+L\+P\+T\+B\+Link\+Partner\+S\+DK}}
+\subsubsection{\texorpdfstring{set\+T\+T\+I\+D\+:()}{setTTID:()}}
+{\footnotesize\ttfamily + (void) set\+T\+T\+I\+D\+: \begin{DoxyParamCaption}\item[{(nonnull N\+S\+String $\ast$)}]{ttid }\end{DoxyParamCaption}}
+
+设置业务追踪id，仅供二方使用，其他接入无需关心
+
+
+\begin{DoxyParams}{Parameters}
+{\em ttid} & ttid \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Alibc\+Link\+Partner\+S\+D\+K.\+framework/\+Headers/A\+L\+P\+T\+B\+Link\+Partner\+S\+D\+K.\+h\end{DoxyCompactItemize}

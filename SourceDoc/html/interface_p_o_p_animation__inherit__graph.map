@@ -1,0 +1,7 @@
+<map id="POPAnimation" name="POPAnimation">
+<area shape="rect" id="node3" href="$interface_p_o_p_custom_animation.html" title="POPCustomAnimation" alt="" coords="5,152,160,177"/>
+<area shape="rect" id="node4" href="$interface_p_o_p_property_animation.html" title="POPPropertyAnimation" alt="" coords="184,152,344,177"/>
+<area shape="rect" id="node5" href="$interface_p_o_p_basic_animation.html" title="POPBasicAnimation" alt="" coords="25,225,167,251"/>
+<area shape="rect" id="node6" href="$interface_p_o_p_decay_animation.html" title="POPDecayAnimation" alt="" coords="191,225,337,251"/>
+<area shape="rect" id="node7" href="$interface_p_o_p_spring_animation.html" title="POPSpringAnimation" alt="" coords="361,225,508,251"/>
+</map>

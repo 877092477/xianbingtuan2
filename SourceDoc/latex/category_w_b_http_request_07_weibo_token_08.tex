@@ -1,0 +1,82 @@
+\hypertarget{category_w_b_http_request_07_weibo_token_08}{}\section{W\+B\+Http\+Request(Weibo\+Token) Category Reference}
+\label{category_w_b_http_request_07_weibo_token_08}\index{W\+B\+Http\+Request(\+Weibo\+Token)@{W\+B\+Http\+Request(\+Weibo\+Token)}}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\mbox{\hyperlink{interface_w_b_http_request}{W\+B\+Http\+Request}} $\ast$) + \mbox{\hyperlink{category_w_b_http_request_07_weibo_token_08_a64ee3aba6d2b2251083753cef8ad4002}{request\+For\+Renew\+Access\+Token\+With\+Refresh\+Token\+:queue\+:with\+Completion\+Handler\+:}}
+\item 
+(\mbox{\hyperlink{interface_w_b_http_request}{W\+B\+Http\+Request}} $\ast$) + \mbox{\hyperlink{category_w_b_http_request_07_weibo_token_08_a64ee3aba6d2b2251083753cef8ad4002}{request\+For\+Renew\+Access\+Token\+With\+Refresh\+Token\+:queue\+:with\+Completion\+Handler\+:}}
+\item 
+(\mbox{\hyperlink{interface_w_b_http_request}{W\+B\+Http\+Request}} $\ast$) + \mbox{\hyperlink{category_w_b_http_request_07_weibo_token_08_a64ee3aba6d2b2251083753cef8ad4002}{request\+For\+Renew\+Access\+Token\+With\+Refresh\+Token\+:queue\+:with\+Completion\+Handler\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{category_w_b_http_request_07_weibo_token_08_a64ee3aba6d2b2251083753cef8ad4002}\label{category_w_b_http_request_07_weibo_token_08_a64ee3aba6d2b2251083753cef8ad4002}} 
+\index{W\+B\+Http\+Request(\+Weibo\+Token)@{W\+B\+Http\+Request(\+Weibo\+Token)}!request\+For\+Renew\+Access\+Token\+With\+Refresh\+Token\+:queue\+:with\+Completion\+Handler\+:@{request\+For\+Renew\+Access\+Token\+With\+Refresh\+Token\+:queue\+:with\+Completion\+Handler\+:}}
+\index{request\+For\+Renew\+Access\+Token\+With\+Refresh\+Token\+:queue\+:with\+Completion\+Handler\+:@{request\+For\+Renew\+Access\+Token\+With\+Refresh\+Token\+:queue\+:with\+Completion\+Handler\+:}!W\+B\+Http\+Request(\+Weibo\+Token)@{W\+B\+Http\+Request(\+Weibo\+Token)}}
+\subsubsection{\texorpdfstring{request\+For\+Renew\+Access\+Token\+With\+Refresh\+Token\+:queue\+:with\+Completion\+Handler\+:()}{requestForRenewAccessTokenWithRefreshToken:queue:withCompletionHandler:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_w_b_http_request}{W\+B\+Http\+Request}} $\ast$) request\+For\+Renew\+Access\+Token\+With\+Refresh\+Token\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{refresh\+Token }\item[{queue:(N\+S\+Operation\+Queue $\ast$)}]{queue }\item[{withCompletionHandler:(W\+B\+Request\+Handler)}]{handler }\end{DoxyParamCaption}}
+
+使用\+Refresh\+Token去换取新的身份凭证\+Access\+Token.
+
+在\+S\+S\+O授权登录后，服务器会下发有效期为7天的refresh\+Token以及有效期为1天的\+Access\+Token。 当有效期为1天的\+Access\+Token过期时，可以调用该接口带着refresh\+Token信息区换取新的\+Access\+Token。 
+\begin{DoxyParams}{Parameters}
+{\em refresh\+Token} & refresh\+Token\\
+\hline
+{\em queue} & 指定发送请求的\+N\+S\+Operation\+Queue，如果这个参数为nil，则请求会发送在\+Main\+Queue( \mbox{[}\+N\+S\+Operation\+Queue main\+Queue\mbox{]} )中。\\
+\hline
+{\em handler} & 完成请求后会回调handler，处理完成请求后的逻辑。 \\
+\hline
+\end{DoxyParams}
+
+
+Extends class \mbox{\hyperlink{interface_w_b_http_request_a64ee3aba6d2b2251083753cef8ad4002}{W\+B\+Http\+Request}}.
+
+\mbox{\Hypertarget{category_w_b_http_request_07_weibo_token_08_a64ee3aba6d2b2251083753cef8ad4002}\label{category_w_b_http_request_07_weibo_token_08_a64ee3aba6d2b2251083753cef8ad4002}} 
+\index{W\+B\+Http\+Request(\+Weibo\+Token)@{W\+B\+Http\+Request(\+Weibo\+Token)}!request\+For\+Renew\+Access\+Token\+With\+Refresh\+Token\+:queue\+:with\+Completion\+Handler\+:@{request\+For\+Renew\+Access\+Token\+With\+Refresh\+Token\+:queue\+:with\+Completion\+Handler\+:}}
+\index{request\+For\+Renew\+Access\+Token\+With\+Refresh\+Token\+:queue\+:with\+Completion\+Handler\+:@{request\+For\+Renew\+Access\+Token\+With\+Refresh\+Token\+:queue\+:with\+Completion\+Handler\+:}!W\+B\+Http\+Request(\+Weibo\+Token)@{W\+B\+Http\+Request(\+Weibo\+Token)}}
+\subsubsection{\texorpdfstring{request\+For\+Renew\+Access\+Token\+With\+Refresh\+Token\+:queue\+:with\+Completion\+Handler\+:()}{requestForRenewAccessTokenWithRefreshToken:queue:withCompletionHandler:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_w_b_http_request}{W\+B\+Http\+Request}} $\ast$) request\+For\+Renew\+Access\+Token\+With\+Refresh\+Token\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{refresh\+Token }\item[{queue:(N\+S\+Operation\+Queue $\ast$)}]{queue }\item[{withCompletionHandler:(W\+B\+Request\+Handler)}]{handler }\end{DoxyParamCaption}}
+
+使用\+Refresh\+Token去换取新的身份凭证\+Access\+Token.
+
+在\+S\+S\+O授权登录后，服务器会下发有效期为7天的refresh\+Token以及有效期为1天的\+Access\+Token。 当有效期为1天的\+Access\+Token过期时，可以调用该接口带着refresh\+Token信息区换取新的\+Access\+Token。 
+\begin{DoxyParams}{Parameters}
+{\em refresh\+Token} & refresh\+Token\\
+\hline
+{\em queue} & 指定发送请求的\+N\+S\+Operation\+Queue，如果这个参数为nil，则请求会发送在\+Main\+Queue( \mbox{[}\+N\+S\+Operation\+Queue main\+Queue\mbox{]} )中。\\
+\hline
+{\em handler} & 完成请求后会回调handler，处理完成请求后的逻辑。 \\
+\hline
+\end{DoxyParams}
+
+
+Extends class \mbox{\hyperlink{interface_w_b_http_request_a64ee3aba6d2b2251083753cef8ad4002}{W\+B\+Http\+Request}}.
+
+\mbox{\Hypertarget{category_w_b_http_request_07_weibo_token_08_a64ee3aba6d2b2251083753cef8ad4002}\label{category_w_b_http_request_07_weibo_token_08_a64ee3aba6d2b2251083753cef8ad4002}} 
+\index{W\+B\+Http\+Request(\+Weibo\+Token)@{W\+B\+Http\+Request(\+Weibo\+Token)}!request\+For\+Renew\+Access\+Token\+With\+Refresh\+Token\+:queue\+:with\+Completion\+Handler\+:@{request\+For\+Renew\+Access\+Token\+With\+Refresh\+Token\+:queue\+:with\+Completion\+Handler\+:}}
+\index{request\+For\+Renew\+Access\+Token\+With\+Refresh\+Token\+:queue\+:with\+Completion\+Handler\+:@{request\+For\+Renew\+Access\+Token\+With\+Refresh\+Token\+:queue\+:with\+Completion\+Handler\+:}!W\+B\+Http\+Request(\+Weibo\+Token)@{W\+B\+Http\+Request(\+Weibo\+Token)}}
+\subsubsection{\texorpdfstring{request\+For\+Renew\+Access\+Token\+With\+Refresh\+Token\+:queue\+:with\+Completion\+Handler\+:()}{requestForRenewAccessTokenWithRefreshToken:queue:withCompletionHandler:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_w_b_http_request}{W\+B\+Http\+Request}} $\ast$) request\+For\+Renew\+Access\+Token\+With\+Refresh\+Token\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{refresh\+Token }\item[{queue:(N\+S\+Operation\+Queue $\ast$)}]{queue }\item[{withCompletionHandler:(W\+B\+Request\+Handler)}]{handler }\end{DoxyParamCaption}}
+
+使用\+Refresh\+Token去换取新的身份凭证\+Access\+Token.
+
+在\+S\+S\+O授权登录后，服务器会下发有效期为7天的refresh\+Token以及有效期为1天的\+Access\+Token。 当有效期为1天的\+Access\+Token过期时，可以调用该接口带着refresh\+Token信息区换取新的\+Access\+Token。 
+\begin{DoxyParams}{Parameters}
+{\em refresh\+Token} & refresh\+Token\\
+\hline
+{\em queue} & 指定发送请求的\+N\+S\+Operation\+Queue，如果这个参数为nil，则请求会发送在\+Main\+Queue( \mbox{[}\+N\+S\+Operation\+Queue main\+Queue\mbox{]} )中。\\
+\hline
+{\em handler} & 完成请求后会回调handler，处理完成请求后的逻辑。 \\
+\hline
+\end{DoxyParams}
+
+
+Extends class \mbox{\hyperlink{interface_w_b_http_request_a64ee3aba6d2b2251083753cef8ad4002}{W\+B\+Http\+Request}}.
+
+
+
+The documentation for this category was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+U\+Meng\+U\+Share/W\+B\+Http\+Request+\+Weibo\+Token.\+h\end{DoxyCompactItemize}

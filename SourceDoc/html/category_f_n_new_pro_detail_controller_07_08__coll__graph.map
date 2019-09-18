@@ -1,0 +1,11 @@
+<map id="FNNewProDetailController()" name="FNNewProDetailController()">
+<area shape="rect" id="node5" href="$interface_j_m_title_scroll_view.html" title="JMTitleScrollView" alt="" coords="746,167,872,192"/>
+<area shape="rect" id="node7" href="$interface_f_n_detail_bottom_view.html" title="FNDetailBottomView" alt="" coords="737,279,881,304"/>
+<area shape="rect" id="node8" href="$interface_j_m_view.html" title="JMView" alt="" coords="478,369,546,395"/>
+<area shape="rect" id="node23" href="$interface_f_n_new_product_detail_header.html" title="FNNewProductDetailHeader" alt="" coords="714,328,904,353"/>
+<area shape="rect" id="node19" href="$interface_f_n_custome_navigation_bar.html" title="FNCustomeNavigationBar" alt="" coords="721,540,897,565"/>
+<area shape="rect" id="node15" href="$interface_f_n_new_product_detail_model.html" title="FNNewProductDetailModel" alt="" coords="421,219,603,244"/>
+<area shape="rect" id="node16" href="$interface_f_n_base_product_model.html" title="FNBaseProductModel" alt="" coords="159,169,311,195"/>
+<area shape="rect" id="node18" href="$interface_j_m___n_p_d__dp_arr.html" title="JM_NPD_dpArr" alt="" coords="178,219,292,244"/>
+<area shape="rect" id="node21" href="$interface_f_n_custom_search_bar.html" title="FNCustomSearchBar" alt="" coords="438,615,586,640"/>
+</map>

@@ -1,0 +1,560 @@
+Reactive\+Cocoa (R\+AC) is an Objective-\/C framework inspired by \mbox{[}Functional Reactive Programming\mbox{]}\mbox{[}\mbox{]}. It provides A\+P\+Is for {\bfseries composing and transforming streams of values}.
+
+If you\textquotesingle{}re already familiar with functional reactive programming or know the basic premise of Reactive\+Cocoa, check out the \mbox{[}Documentation\mbox{]}\mbox{[}\mbox{]} folder for a framework overview and more in-\/depth information about how it all works in practice.
+
+\subsection*{New to Reactive\+Cocoa?}
+
+Reactive\+Cocoa is documented like crazy, and there\textquotesingle{}s a wealth of introductory material available to explain what R\+AC is and how you can use it.
+
+If you want to learn more, we recommend these resources, roughly in order\+:
+
+
+\begin{DoxyEnumerate}
+\item \href{#introduction}{\tt Introduction}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item \href{#when-to-use-reactivecocoa}{\tt When to use Reactive\+Cocoa}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Framework Overview
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Basic Operators
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item \mbox{[}Header documentation\mbox{]}(Reactive\+Cocoa)
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Previously answered \href{https://github.com/ReactiveCocoa/ReactiveCocoa/wiki}{\tt Stack Overflow} questions and \href{https://github.com/ReactiveCocoa/ReactiveCocoa/issues?labels=question&state=closed}{\tt Git\+Hub issues}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item The rest of the \mbox{[}Documentation\mbox{]}\mbox{[}\mbox{]} folder
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item \href{https://leanpub.com/iosfrp/}{\tt Functional Reactive Programming on i\+OS} (e\+Book)
+\end{DoxyEnumerate}
+
+If you have any further questions, please feel free to \href{https://github.com/ReactiveCocoa/ReactiveCocoa/issues/new}{\tt file an issue}.
+
+\subsection*{Introduction}
+
+Reactive\+Cocoa is inspired by \href{http://blog.maybeapps.com/post/42894317939/input-and-output}{\tt functional reactive programming}. Rather than using mutable variables which are replaced and modified in-\/place, R\+AC provides signals (represented by {\ttfamily \mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}}}) that capture present and future values.
+
+By chaining, combining, and reacting to signals, software can be written declaratively, without the need for code that continually observes and updates values.
+
+For example, a text field can be bound to the latest time, even as it changes, instead of using additional code that watches the clock and updates the text field every second. It works much like K\+VO, but with blocks instead of overriding {\ttfamily -\/observe\+Value\+For\+Key\+Path\+:of\+Object\+:change\+:context\+:}.
+
+Signals can also represent asynchronous operations, much like \mbox{[}futures and promises\mbox{]}\mbox{[}\mbox{]}. This greatly simplifies asynchronous software, including networking code.
+
+One of the major advantages of R\+AC is that it provides a single, unified approach to dealing with asynchronous behaviors, including delegate methods, callback blocks, target-\/action mechanisms, notifications, and K\+VO.
+
+Here\textquotesingle{}s a simple example\+:
+
+
+\begin{DoxyCode}
+// When self.username changes, logs the new name to the console.
+//
+// RACObserve(self, username) creates a new RACSignal that sends the current
+// value of self.username, then the new value whenever it changes.
+// -subscribeNext: will execute the block whenever the signal sends a value.
+[RACObserve(self, username) subscribeNext:^(NSString *newName) \{
+    NSLog(@"%@", newName);
+\}];
+\end{DoxyCode}
+
+
+But unlike K\+VO notifications, signals can be chained together and operated on\+:
+
+
+\begin{DoxyCode}
+// Only logs names that starts with "j".
+//
+// -filter returns a new RACSignal that only sends a new value when its block
+// returns YES.
+[[RACObserve(self, username)
+    filter:^(NSString *newName) \{
+        return [newName hasPrefix:@"j"];
+    \}]
+    subscribeNext:^(NSString *newName) \{
+        NSLog(@"%@", newName);
+    \}];
+\end{DoxyCode}
+
+
+Signals can also be used to derive state. Instead of observing properties and setting other properties in response to the new values, R\+AC makes it possible to express properties in terms of signals and operations\+:
+
+
+\begin{DoxyCode}
+// Creates a one-way binding so that self.createEnabled will be
+// true whenever self.password and self.passwordConfirmation
+// are equal.
+//
+// RAC() is a macro that makes the binding look nicer.
+// 
+// +combineLatest:reduce: takes an array of signals, executes the block with the
+// latest value from each signal whenever any of them changes, and returns a new
+// RACSignal that sends the return value of that block as values.
+RAC(self, createEnabled) = [RACSignal 
+    combineLatest:@[ RACObserve(self, password), RACObserve(self, passwordConfirmation) ] 
+    reduce:^(NSString *password, NSString *passwordConfirm) \{
+        return @([passwordConfirm isEqualToString:password]);
+    \}];
+\end{DoxyCode}
+
+
+Signals can be built on any stream of values over time, not just K\+VO. For example, they can also represent button presses\+:
+
+
+\begin{DoxyCode}
+// Logs a message whenever the button is pressed.
+//
+// RACCommand creates signals to represent UI actions. Each signal can
+// represent a button press, for example, and have additional work associated
+// with it.
+//
+// -rac\_command is an addition to NSButton. The button will send itself on that
+// command whenever it's pressed.
+self.button.rac\_command = [[RACCommand alloc] initWithSignalBlock:^(id \_) \{
+    NSLog(@"button was pressed!");
+    return [RACSignal empty];
+\}];
+\end{DoxyCode}
+
+
+Or asynchronous network operations\+:
+
+
+\begin{DoxyCode}
+// Hooks up a "Log in" button to log in over the network.
+//
+// This block will be run whenever the login command is executed, starting
+// the login process.
+self.loginCommand = [[RACCommand alloc] initWithSignalBlock:^(id sender) \{
+    // The hypothetical -logIn method returns a signal that sends a value when
+    // the network request finishes.
+    return [client logIn];
+\}];
+
+// -executionSignals returns a signal that includes the signals returned from
+// the above block, one for each time the command is executed.
+[self.loginCommand.executionSignals subscribeNext:^(RACSignal *loginSignal) \{
+    // Log a message whenever we log in successfully.
+    [loginSignal subscribeCompleted:^\{
+        NSLog(@"Logged in successfully!");
+    \}];
+\}];
+
+// Executes the login command when the button is pressed.
+self.loginButton.rac\_command = self.loginCommand;
+\end{DoxyCode}
+
+
+Signals can also represent timers, other UI events, or anything else that changes over time.
+
+Using signals for asynchronous operations makes it possible to build up more complex behavior by chaining and transforming those signals. Work can easily be triggered after a group of operations completes\+:
+
+
+\begin{DoxyCode}
+// Performs 2 network operations and logs a message to the console when they are
+// both completed.
+//
+// +merge: takes an array of signals and returns a new RACSignal that passes
+// through the values of all of the signals and completes when all of the
+// signals complete.
+//
+// -subscribeCompleted: will execute the block when the signal completes.
+[[RACSignal 
+    merge:@[ [client fetchUserRepos], [client fetchOrgRepos] ]] 
+    subscribeCompleted:^\{
+        NSLog(@"They're both done!");
+    \}];
+\end{DoxyCode}
+
+
+Signals can be chained to sequentially execute asynchronous operations, instead of nesting callbacks with blocks. This is similar to how \href{http://en.wikipedia.org/wiki/Futures_and_promises}{\tt futures and promises} are usually used\+:
+
+
+\begin{DoxyCode}
+// Logs in the user, then loads any cached messages, then fetches the remaining
+// messages from the server. After that's all done, logs a message to the
+// console.
+//
+// The hypothetical -logInUser methods returns a signal that completes after
+// logging in.
+//
+// -flattenMap: will execute its block whenever the signal sends a value, and
+// returns a new RACSignal that merges all of the signals returned from the block
+// into a single signal.
+[[[[client 
+    logInUser] 
+    flattenMap:^(User *user) \{
+        // Return a signal that loads cached messages for the user.
+        return [client loadCachedMessagesForUser:user];
+    \}]
+    flattenMap:^(NSArray *messages) \{
+        // Return a signal that fetches any remaining messages.
+        return [client fetchMessagesAfterMessage:messages.lastObject];
+    \}]
+    subscribeNext:^(NSArray *newMessages) \{
+        NSLog(@"New messages: %@", newMessages);
+    \} completed:^\{
+        NSLog(@"Fetched all messages.");
+    \}];
+\end{DoxyCode}
+
+
+R\+AC even makes it easy to bind to the result of an asynchronous operation\+:
+
+
+\begin{DoxyCode}
+// Creates a one-way binding so that self.imageView.image will be set as the user's
+// avatar as soon as it's downloaded.
+//
+// The hypothetical -fetchUserWithUsername: method returns a signal which sends
+// the user.
+//
+// -deliverOn: creates new signals that will do their work on other queues. In
+// this example, it's used to move work to a background queue and then back to the main thread.
+//
+// -map: calls its block with each user that's fetched and returns a new
+// RACSignal that sends values returned from the block.
+RAC(self.imageView, image) = [[[[client 
+    fetchUserWithUsername:@"joshaber"]
+    deliverOn:[RACScheduler scheduler]]
+    map:^(User *user) \{
+        // Download the avatar (this is done on a background queue).
+        return [[NSImage alloc] initWithContentsOfURL:user.avatarURL];
+    \}]
+    // Now the assignment will be done on the main thread.
+    deliverOn:RACScheduler.mainThreadScheduler];
+\end{DoxyCode}
+
+
+That demonstrates some of what R\+AC can do, but it doesn\textquotesingle{}t demonstrate why R\+AC is so powerful. It\textquotesingle{}s hard to appreciate R\+AC from R\+E\+A\+D\+M\+E-\/sized examples, but it makes it possible to write code with less state, less boilerplate, better code locality, and better expression of intent.
+
+For more sample code, check out \href{https://github.com/AshFurrow/C-41}{\tt C-\/41} or \href{https://github.com/jspahrsummers/GroceryList}{\tt Grocery\+List}, which are real i\+OS apps written using Reactive\+Cocoa. Additional information about R\+AC can be found in the \mbox{[}Documentation\mbox{]}\mbox{[}\mbox{]} folder.
+
+\subsection*{When to use Reactive\+Cocoa}
+
+Upon first glance, Reactive\+Cocoa is very abstract, and it can be difficult to understand how to apply it to concrete problems.
+
+Here are some of the use cases that R\+AC excels at.
+
+\subsubsection*{Handling asynchronous or event-\/driven data sources}
+
+Much of Cocoa programming is focused on reacting to user events or changes in application state. Code that deals with such events can quickly become very complex and spaghetti-\/like, with lots of callbacks and state variables to handle ordering issues.
+
+Patterns that seem superficially different, like UI callbacks, network responses, and K\+VO notifications, actually have a lot in common. \href{ReactiveCocoa/RACSignal.h}{\tt R\+A\+C\+Signal} unifies all these different A\+P\+Is so that they can be composed together and manipulated in the same way.
+
+For example, the following code\+:
+
+
+\begin{DoxyCode}
+static void *ObservationContext = &ObservationContext;
+
+- (void)viewDidLoad \{
+    [super viewDidLoad];
+
+    [LoginManager.sharedManager addObserver:self forKeyPath:@"loggingIn"
+       options:NSKeyValueObservingOptionInitial context:&ObservationContext];
+    [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(loggedOut:)
+       name:UserDidLogOutNotification object:LoginManager.sharedManager];
+
+    [self.usernameTextField addTarget:self action:@selector(updateLogInButton)
+       forControlEvents:UIControlEventEditingChanged];
+    [self.passwordTextField addTarget:self action:@selector(updateLogInButton)
+       forControlEvents:UIControlEventEditingChanged];
+    [self.logInButton addTarget:self action:@selector(logInPressed:)
+       forControlEvents:UIControlEventTouchUpInside];
+\}
+
+- (void)dealloc \{
+    [LoginManager.sharedManager removeObserver:self forKeyPath:@"loggingIn" context:ObservationContext];
+    [NSNotificationCenter.defaultCenter removeObserver:self];
+\}
+
+- (void)updateLogInButton \{
+    BOOL textFieldsNonEmpty = self.usernameTextField.text.length > 0 && self.passwordTextField.text.length
+       > 0;
+    BOOL readyToLogIn = !LoginManager.sharedManager.isLoggingIn && !self.loggedIn;
+    self.logInButton.enabled = textFieldsNonEmpty && readyToLogIn;
+\}
+
+- (IBAction)logInPressed:(UIButton *)sender \{
+    [[LoginManager sharedManager]
+        logInWithUsername:self.usernameTextField.text
+        password:self.passwordTextField.text
+        success:^\{
+            self.loggedIn = YES;
+        \} failure:^(NSError *error) \{
+            [self presentError:error];
+        \}];
+\}
+
+- (void)loggedOut:(NSNotification *)notification \{
+    self.loggedIn = NO;
+\}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change
+       context:(void *)context \{
+    if (context == ObservationContext) \{
+        [self updateLogInButton];
+    \} else \{
+        [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
+    \}
+\}
+\end{DoxyCode}
+
+
+… could be expressed in R\+AC like so\+:
+
+
+\begin{DoxyCode}
+- (void)viewDidLoad \{
+    [super viewDidLoad];
+
+    @weakify(self);
+
+    RAC(self.logInButton, enabled) = [RACSignal
+        combineLatest:@[
+            self.usernameTextField.rac\_textSignal,
+            self.passwordTextField.rac\_textSignal,
+            RACObserve(LoginManager.sharedManager, loggingIn),
+            RACObserve(self, loggedIn)
+        ] reduce:^(NSString *username, NSString *password, NSNumber *loggingIn, NSNumber *loggedIn) \{
+            return @(username.length > 0 && password.length > 0 && !loggingIn.boolValue &&
+       !loggedIn.boolValue);
+        \}];
+
+    [[self.logInButton rac\_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(UIButton
+       *sender) \{
+        @strongify(self);
+
+        RACSignal *loginSignal = [LoginManager.sharedManager
+            logInWithUsername:self.usernameTextField.text
+            password:self.passwordTextField.text];
+
+            [loginSignal subscribeError:^(NSError *error) \{
+                @strongify(self);
+                [self presentError:error];
+            \} completed:^\{
+                @strongify(self);
+                self.loggedIn = YES;
+            \}];
+    \}];
+
+    RAC(self, loggedIn) = [[NSNotificationCenter.defaultCenter
+        rac\_addObserverForName:UserDidLogOutNotification object:nil]
+        mapReplace:@NO];
+\}
+\end{DoxyCode}
+
+
+\subsubsection*{Chaining dependent operations}
+
+Dependencies are most often found in network requests, where a previous request to the server needs to complete before the next one can be constructed, and so on\+:
+
+
+\begin{DoxyCode}
+[client logInWithSuccess:^\{
+    [client loadCachedMessagesWithSuccess:^(NSArray *messages) \{
+        [client fetchMessagesAfterMessage:messages.lastObject success:^(NSArray *nextMessages) \{
+            NSLog(@"Fetched all messages.");
+        \} failure:^(NSError *error) \{
+            [self presentError:error];
+        \}];
+    \} failure:^(NSError *error) \{
+        [self presentError:error];
+    \}];
+\} failure:^(NSError *error) \{
+    [self presentError:error];
+\}];
+\end{DoxyCode}
+
+
+Reactive\+Cocoa makes this pattern particularly easy\+:
+
+
+\begin{DoxyCode}
+[[[[client logIn]
+    then:^\{
+        return [client loadCachedMessages];
+    \}]
+    flattenMap:^(NSArray *messages) \{
+        return [client fetchMessagesAfterMessage:messages.lastObject];
+    \}]
+    subscribeError:^(NSError *error) \{
+        [self presentError:error];
+    \} completed:^\{
+        NSLog(@"Fetched all messages.");
+    \}];
+\end{DoxyCode}
+
+
+\subsubsection*{Parallelizing independent work}
+
+Working with independent data sets in parallel and then combining them into a final result is non-\/trivial in Cocoa, and often involves a lot of synchronization\+:
+
+
+\begin{DoxyCode}
+\_\_block NSArray *databaseObjects;
+\_\_block NSArray *fileContents;
+
+NSOperationQueue *backgroundQueue = [[NSOperationQueue alloc] init];
+NSBlockOperation *databaseOperation = [NSBlockOperation blockOperationWithBlock:^\{
+    databaseObjects = [databaseClient fetchObjectsMatchingPredicate:predicate];
+\}];
+
+NSBlockOperation *filesOperation = [NSBlockOperation blockOperationWithBlock:^\{
+    NSMutableArray *filesInProgress = [NSMutableArray array];
+    for (NSString *path in files) \{
+        [filesInProgress addObject:[NSData dataWithContentsOfFile:path]];
+    \}
+
+    fileContents = [filesInProgress copy];
+\}];
+
+NSBlockOperation *finishOperation = [NSBlockOperation blockOperationWithBlock:^\{
+    [self finishProcessingDatabaseObjects:databaseObjects fileContents:fileContents];
+    NSLog(@"Done processing");
+\}];
+
+[finishOperation addDependency:databaseOperation];
+[finishOperation addDependency:filesOperation];
+[backgroundQueue addOperation:databaseOperation];
+[backgroundQueue addOperation:filesOperation];
+[backgroundQueue addOperation:finishOperation];
+\end{DoxyCode}
+
+
+The above code can be cleaned up and optimized by simply composing signals\+:
+
+
+\begin{DoxyCode}
+RACSignal *databaseSignal = [[databaseClient
+    fetchObjectsMatchingPredicate:predicate]
+    subscribeOn:[RACScheduler scheduler]];
+
+RACSignal *fileSignal = [RACSignal startEagerlyWithScheduler:[RACScheduler scheduler]
+       block:^(id<RACSubscriber> subscriber) \{
+    NSMutableArray *filesInProgress = [NSMutableArray array];
+    for (NSString *path in files) \{
+        [filesInProgress addObject:[NSData dataWithContentsOfFile:path]];
+    \}
+
+    [subscriber sendNext:[filesInProgress copy]];
+    [subscriber sendCompleted];
+\}];
+
+[[RACSignal
+    combineLatest:@[ databaseSignal, fileSignal ]
+    reduce:^ id (NSArray *databaseObjects, NSArray *fileContents) \{
+        [self finishProcessingDatabaseObjects:databaseObjects fileContents:fileContents];
+        return nil;
+    \}]
+    subscribeCompleted:^\{
+        NSLog(@"Done processing");
+    \}];
+\end{DoxyCode}
+
+
+\subsubsection*{Simplifying collection transformations}
+
+Higher-\/order functions like {\ttfamily map}, {\ttfamily filter}, {\ttfamily fold}/{\ttfamily reduce} are sorely missing from Foundation, leading to loop-\/focused code like this\+:
+
+
+\begin{DoxyCode}
+NSMutableArray *results = [NSMutableArray array];
+for (NSString *str in strings) \{
+    if (str.length < 2) \{
+        continue;
+    \}
+
+    NSString *newString = [str stringByAppendingString:@"foobar"];
+    [results addObject:newString];
+\}
+\end{DoxyCode}
+
+
+\href{ReactiveCocoa/RACSequence.h}{\tt R\+A\+C\+Sequence} allows any Cocoa collection to be manipulated in a uniform and declarative way\+:
+
+
+\begin{DoxyCode}
+RACSequence *results = [[strings.rac\_sequence
+    filter:^ BOOL (NSString *str) \{
+        return str.length >= 2;
+    \}]
+    map:^(NSString *str) \{
+        return [str stringByAppendingString:@"foobar"];
+    \}];
+\end{DoxyCode}
+
+
+\subsection*{System Requirements}
+
+Reactive\+Cocoa supports OS X 10.\+8+ and i\+OS 8.\+0+.
+
+\subsection*{Importing Reactive\+Cocoa}
+
+To add R\+AC to your application\+:
+
+
+\begin{DoxyEnumerate}
+\item Add the Reactive\+Cocoa repository as a submodule of your application\textquotesingle{}s repository.
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Run {\ttfamily script/bootstrap} from within the Reactive\+Cocoa folder.
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Drag and drop {\ttfamily Reactive\+Cocoa.\+xcodeproj} into your application\textquotesingle{}s Xcode project or workspace.
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item On the \char`\"{}\+Build Phases\char`\"{} tab of your application target, add R\+AC to the \char`\"{}\+Link
+    Binary With Libraries\char`\"{} phase.
+\begin{DoxyItemize}
+\item {\bfseries On i\+OS}, add {\ttfamily lib\+Reactive\+Cocoa-\/i\+O\+S.\+a}.
+\item {\bfseries On OS X}, add {\ttfamily Reactive\+Cocoa.\+framework}. R\+AC must also be added to any \char`\"{}\+Copy Frameworks\char`\"{} build phase. If you don\textquotesingle{}t already have one, simply add a \char`\"{}\+Copy Files\char`\"{} build phase and target the \char`\"{}\+Frameworks\char`\"{} destination.
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Add {\ttfamily \char`\"{}\$(\+B\+U\+I\+L\+D\+\_\+\+R\+O\+O\+T)/../\+Intermediate\+Build\+Files\+Path/\+Uninstalled\+Products/include\char`\"{} } to the \char`\"{}\+Header Search Paths\char`\"{} build setting (this is only necessary for archive builds, but it has no negative effect otherwise).
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item {\bfseries For i\+OS targets}, add {\ttfamily -\/\+ObjC} to the \char`\"{}\+Other Linker Flags\char`\"{} build setting.
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item {\bfseries If you added R\+AC to a project (not a workspace)}, you will also need to add the appropriate R\+AC target to the \char`\"{}\+Target Dependencies\char`\"{} of your application.
+\end{DoxyEnumerate}
+
+If you would prefer to use \href{http://cocoapods.org}{\tt Cocoa\+Pods}, there are some \href{https://github.com/CocoaPods/Specs/tree/master/Specs/ReactiveCocoa}{\tt Reactive\+Cocoa podspecs} that have been generously contributed by third parties.
+
+To see a project already set up with R\+AC, check out \href{https://github.com/AshFurrow/C-41}{\tt C-\/41} or \href{https://github.com/jspahrsummers/GroceryList}{\tt Grocery\+List}, which are real i\+OS apps written using Reactive\+Cocoa.
+
+\subsection*{Standalone Development}
+
+If you’re working on R\+AC in isolation instead of integrating it into another project, you’ll want to open {\ttfamily Reactive\+Cocoa.\+xcworkspace} and not the {\ttfamily .xcodeproj}.
+
+\subsection*{More Info}
+
+Reactive\+Cocoa is based on .N\+ET\textquotesingle{}s \href{http://msdn.microsoft.com/en-us/data/gg577609}{\tt Reactive Extensions} (Rx). Most of the principles of Rx apply to R\+AC as well. There are some really good Rx resources out there\+:
+
+
+\begin{DoxyItemize}
+\item \href{http://msdn.microsoft.com/en-us/library/hh242985.aspx}{\tt Reactive Extensions M\+S\+DN entry}
+\item \href{http://leecampbell.blogspot.com/2010/08/reactive-extensions-for-net.html}{\tt Reactive Extensions for .N\+ET Introduction}
+\item \href{http://channel9.msdn.com/tags/Rx/}{\tt Rx -\/ Channel 9 videos}
+\item \href{http://rxwiki.wikidot.com/}{\tt Reactive Extensions wiki}
+\item \href{http://rxwiki.wikidot.com/101samples}{\tt 101 Rx Samples}
+\item \href{http://www.amazon.com/Programming-Reactive-Extensions-Jesse-Liberty/dp/1430237473}{\tt Programming Reactive Extensions and L\+I\+NQ}
+\end{DoxyItemize}
+
+R\+AC and Rx are both frameworks inspired by functional reactive programming. Here are some resources related to F\+RP\+:
+
+
+\begin{DoxyItemize}
+\item \href{http://elm-lang.org/learn/What-is-FRP.elm}{\tt What is F\+RP? -\/ Elm Language}
+\item \href{http://stackoverflow.com/questions/1028250/what-is-functional-reactive-programming/1030631#1030631}{\tt What is Functional Reactive Programming -\/ Stack Overflow}
+\item \href{http://stackoverflow.com/questions/5875929/specification-for-a-functional-reactive-programming-language#5878525}{\tt Specification for a Functional Reactive Language -\/ Stack Overflow}
+\item \href{http://elm-lang.org/learn/Escape-from-Callback-Hell.elm}{\tt Escape from Callback Hell}
+\item \href{https://www.coursera.org/course/reactive}{\tt Principles of Reactive Programming on Coursera} 
+\end{DoxyItemize}

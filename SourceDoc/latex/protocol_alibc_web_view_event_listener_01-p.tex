@@ -1,0 +1,82 @@
+\hypertarget{protocol_alibc_web_view_event_listener_01-p}{}\section{$<$Alibc\+Web\+View\+Event\+Listener $>$ Protocol Reference}
+\label{protocol_alibc_web_view_event_listener_01-p}\index{$<$\+Alibc\+Web\+View\+Event\+Listener $>$@{$<$\+Alibc\+Web\+View\+Event\+Listener $>$}}
+
+
+{\ttfamily \#import $<$Alibc\+Web\+View\+Event\+Listener.\+h$>$}
+
+
+
+Inheritance diagram for $<$Alibc\+Web\+View\+Event\+Listener $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{protocol_alibc_web_view_event_listener_01-p__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for $<$Alibc\+Web\+View\+Event\+Listener $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{protocol_alibc_web_view_event_listener_01-p__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_alibc_web_view_event_listener_01-p_afe332be74cc369869586eaf8d4cfddea}{web\+View\+:should\+Start\+Load\+With\+Request\+:navigation\+Type\+:return\+Value\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_alibc_web_view_event_listener_01-p_a2fc3db84e89fcfe3ad9cb2e414ac94d2}{web\+View\+Did\+Start\+Load\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_alibc_web_view_event_listener_01-p_a00b82713105e064dbcdfa9e5cf96bfdd}{web\+View\+Did\+Finish\+Load\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_alibc_web_view_event_listener_01-p_a02db5fc3e65223bcacba99b468e37d07}{web\+View\+:did\+Fail\+Load\+With\+Error\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_alibc_web_view_event_listener-p}{Alibc\+Web\+View\+Event\+Listener}} 协议, 添加到 \mbox{\hyperlink{interface_alibc_web_view_event_listener_center}{Alibc\+Web\+View\+Event\+Listener\+Center}} 的实例需要服从这个协议 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{protocol_alibc_web_view_event_listener_01-p_a02db5fc3e65223bcacba99b468e37d07}\label{protocol_alibc_web_view_event_listener_01-p_a02db5fc3e65223bcacba99b468e37d07}} 
+\index{Alibc\+Web\+View\+Event\+Listener -\/p@{Alibc\+Web\+View\+Event\+Listener -\/p}!web\+View\+:did\+Fail\+Load\+With\+Error\+:@{web\+View\+:did\+Fail\+Load\+With\+Error\+:}}
+\index{web\+View\+:did\+Fail\+Load\+With\+Error\+:@{web\+View\+:did\+Fail\+Load\+With\+Error\+:}!Alibc\+Web\+View\+Event\+Listener -\/p@{Alibc\+Web\+View\+Event\+Listener -\/p}}
+\subsubsection{\texorpdfstring{web\+View\+:did\+Fail\+Load\+With\+Error\+:()}{webView:didFailLoadWithError:()}}
+{\footnotesize\ttfamily -\/ (void Alibc\+Web\+View\+Event\+Listener) web\+View\+: \begin{DoxyParamCaption}\item[{(U\+I\+Web\+View $\ast$)}]{web\+View }\item[{didFailLoadWithError:(N\+S\+Error $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Web\+View 加载失败
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & error instance \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_alibc_web_view_event_listener_01-p_afe332be74cc369869586eaf8d4cfddea}\label{protocol_alibc_web_view_event_listener_01-p_afe332be74cc369869586eaf8d4cfddea}} 
+\index{Alibc\+Web\+View\+Event\+Listener -\/p@{Alibc\+Web\+View\+Event\+Listener -\/p}!web\+View\+:should\+Start\+Load\+With\+Request\+:navigation\+Type\+:return\+Value\+:@{web\+View\+:should\+Start\+Load\+With\+Request\+:navigation\+Type\+:return\+Value\+:}}
+\index{web\+View\+:should\+Start\+Load\+With\+Request\+:navigation\+Type\+:return\+Value\+:@{web\+View\+:should\+Start\+Load\+With\+Request\+:navigation\+Type\+:return\+Value\+:}!Alibc\+Web\+View\+Event\+Listener -\/p@{Alibc\+Web\+View\+Event\+Listener -\/p}}
+\subsubsection{\texorpdfstring{web\+View\+:should\+Start\+Load\+With\+Request\+:navigation\+Type\+:return\+Value\+:()}{webView:shouldStartLoadWithRequest:navigationType:returnValue:()}}
+{\footnotesize\ttfamily -\/ (void Alibc\+Web\+View\+Event\+Listener) web\+View\+: \begin{DoxyParamCaption}\item[{(U\+I\+Web\+View $\ast$)}]{web\+View }\item[{shouldStartLoadWithRequest:(N\+S\+U\+R\+L\+Request $\ast$)}]{request }\item[{navigationType:(U\+I\+Web\+View\+Navigation\+Type)}]{navigation\+Type }\item[{returnValue:(B\+O\+OL)}]{return\+Value }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+前面的参数同 -\/ (void)web\+View\+:(\+U\+I\+Web\+View $\ast$)web\+View should\+Start\+Load\+With\+Request\+:(\+N\+S\+U\+R\+L\+Request $\ast$)request navigation\+Type\+:(\+U\+I\+Web\+View\+Navigation\+Type)navigation\+Type 
+\begin{DoxyParams}{Parameters}
+{\em return\+Value} & Delegate 响应时的返回值 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_alibc_web_view_event_listener_01-p_a00b82713105e064dbcdfa9e5cf96bfdd}\label{protocol_alibc_web_view_event_listener_01-p_a00b82713105e064dbcdfa9e5cf96bfdd}} 
+\index{Alibc\+Web\+View\+Event\+Listener -\/p@{Alibc\+Web\+View\+Event\+Listener -\/p}!web\+View\+Did\+Finish\+Load\+:@{web\+View\+Did\+Finish\+Load\+:}}
+\index{web\+View\+Did\+Finish\+Load\+:@{web\+View\+Did\+Finish\+Load\+:}!Alibc\+Web\+View\+Event\+Listener -\/p@{Alibc\+Web\+View\+Event\+Listener -\/p}}
+\subsubsection{\texorpdfstring{web\+View\+Did\+Finish\+Load\+:()}{webViewDidFinishLoad:()}}
+{\footnotesize\ttfamily -\/ (void Alibc\+Web\+View\+Event\+Listener) web\+View\+Did\+Finish\+Load\+: \begin{DoxyParamCaption}\item[{(U\+I\+Web\+View $\ast$)}]{web\+View }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Web\+View 结束加载 \mbox{\Hypertarget{protocol_alibc_web_view_event_listener_01-p_a2fc3db84e89fcfe3ad9cb2e414ac94d2}\label{protocol_alibc_web_view_event_listener_01-p_a2fc3db84e89fcfe3ad9cb2e414ac94d2}} 
+\index{Alibc\+Web\+View\+Event\+Listener -\/p@{Alibc\+Web\+View\+Event\+Listener -\/p}!web\+View\+Did\+Start\+Load\+:@{web\+View\+Did\+Start\+Load\+:}}
+\index{web\+View\+Did\+Start\+Load\+:@{web\+View\+Did\+Start\+Load\+:}!Alibc\+Web\+View\+Event\+Listener -\/p@{Alibc\+Web\+View\+Event\+Listener -\/p}}
+\subsubsection{\texorpdfstring{web\+View\+Did\+Start\+Load\+:()}{webViewDidStartLoad:()}}
+{\footnotesize\ttfamily -\/ (void Alibc\+Web\+View\+Event\+Listener) web\+View\+Did\+Start\+Load\+: \begin{DoxyParamCaption}\item[{(U\+I\+Web\+View $\ast$)}]{web\+View }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Web\+View 开始加载 
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Alibc\+Trade\+Common.\+framework/\+Headers/Alibc\+Web\+View\+Event\+Listener.\+h\end{DoxyCompactItemize}

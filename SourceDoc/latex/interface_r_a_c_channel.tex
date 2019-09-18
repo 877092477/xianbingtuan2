@@ -1,0 +1,68 @@
+\hypertarget{interface_r_a_c_channel}{}\section{R\+A\+C\+Channel Class Reference}
+\label{interface_r_a_c_channel}\index{R\+A\+C\+Channel@{R\+A\+C\+Channel}}
+
+
+{\ttfamily \#import $<$R\+A\+C\+Channel.\+h$>$}
+
+
+
+Inheritance diagram for R\+A\+C\+Channel\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{interface_r_a_c_channel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for R\+A\+C\+Channel\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{interface_r_a_c_channel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_r_a_c_channel_terminal}{R\+A\+C\+Channel\+Terminal}} $\ast$ \mbox{\hyperlink{interface_r_a_c_channel_a945eadc4078674ea25b68fd27a671448}{leading\+Terminal}}
+\item 
+\mbox{\hyperlink{interface_r_a_c_channel_terminal}{R\+A\+C\+Channel\+Terminal}} $\ast$ \mbox{\hyperlink{interface_r_a_c_channel_a8326f37513bcdf56076c1a131d07d523}{following\+Terminal}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A two-\/way channel.
+
+Conceptually, \mbox{\hyperlink{interface_r_a_c_channel}{R\+A\+C\+Channel}} can be thought of as a bidirectional connection, composed of two controllable signals that work in parallel.
+
+For example, when connecting between a view and a model\+: \begin{DoxyVerb}   Model                      View
+\end{DoxyVerb}
+ {\ttfamily leading\+Terminal} -\/-\/-\/---$>$ {\ttfamily following\+Terminal} {\ttfamily leading\+Terminal} $<$-\/-\/-\/--- {\ttfamily following\+Terminal}
+
+The initial value of the model and all future changes to it are {\itshape sent on} the {\ttfamily leading\+Terminal}, and {\itshape received by} subscribers of the {\ttfamily following\+Terminal}.
+
+Likewise, whenever the user changes the value of the view, that value is sent on the {\ttfamily following\+Terminal}, and received in the model from the {\ttfamily leading\+Terminal}. However, the initial value of the view is not received from the {\ttfamily leading\+Terminal} (only future changes). 
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_r_a_c_channel_a8326f37513bcdf56076c1a131d07d523}\label{interface_r_a_c_channel_a8326f37513bcdf56076c1a131d07d523}} 
+\index{R\+A\+C\+Channel@{R\+A\+C\+Channel}!following\+Terminal@{following\+Terminal}}
+\index{following\+Terminal@{following\+Terminal}!R\+A\+C\+Channel@{R\+A\+C\+Channel}}
+\subsubsection{\texorpdfstring{following\+Terminal}{followingTerminal}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_channel_terminal}{R\+A\+C\+Channel\+Terminal}} $\ast$) following\+Terminal\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+The terminal which \char`\"{}follows\char`\"{} the lead of the other terminal, only sending {\itshape future} values to the subscribers of the {\ttfamily leading\+Terminal}.
+
+The latest value sent to the {\ttfamily leading\+Terminal} (if any) will be sent immediately to new subscribers of this terminal, and then all future values as well. \mbox{\Hypertarget{interface_r_a_c_channel_a945eadc4078674ea25b68fd27a671448}\label{interface_r_a_c_channel_a945eadc4078674ea25b68fd27a671448}} 
+\index{R\+A\+C\+Channel@{R\+A\+C\+Channel}!leading\+Terminal@{leading\+Terminal}}
+\index{leading\+Terminal@{leading\+Terminal}!R\+A\+C\+Channel@{R\+A\+C\+Channel}}
+\subsubsection{\texorpdfstring{leading\+Terminal}{leadingTerminal}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_channel_terminal}{R\+A\+C\+Channel\+Terminal}} $\ast$) leading\+Terminal\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+The terminal which \char`\"{}leads\char`\"{} the channel, by sending its latest value immediately to new subscribers of the {\ttfamily following\+Terminal}.
+
+New subscribers to this terminal will not receive a starting value, but will receive all future values that are sent to the {\ttfamily following\+Terminal}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+Reactive\+Cocoa/R\+A\+C\+Channel.\+h\end{DoxyCompactItemize}

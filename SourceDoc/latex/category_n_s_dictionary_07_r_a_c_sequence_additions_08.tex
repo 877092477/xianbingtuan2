@@ -1,0 +1,53 @@
+\hypertarget{category_n_s_dictionary_07_r_a_c_sequence_additions_08}{}\section{N\+S\+Dictionary(R\+A\+C\+Sequence\+Additions) Category Reference}
+\label{category_n_s_dictionary_07_r_a_c_sequence_additions_08}\index{N\+S\+Dictionary(\+R\+A\+C\+Sequence\+Additions)@{N\+S\+Dictionary(\+R\+A\+C\+Sequence\+Additions)}}
+
+
+Collaboration diagram for N\+S\+Dictionary(R\+A\+C\+Sequence\+Additions)\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{category_n_s_dictionary_07_r_a_c_sequence_additions_08__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_r_a_c_sequence}{R\+A\+C\+Sequence}} $\ast$ \mbox{\hyperlink{category_n_s_dictionary_07_r_a_c_sequence_additions_08_af918ec309498be9b1ff9881230614c69}{rac\+\_\+sequence}}
+\item 
+\mbox{\hyperlink{interface_r_a_c_sequence}{R\+A\+C\+Sequence}} $\ast$ \mbox{\hyperlink{category_n_s_dictionary_07_r_a_c_sequence_additions_08_a990cd3cf1e8698c8f42f3d5c39f12fa3}{rac\+\_\+key\+Sequence}}
+\item 
+\mbox{\hyperlink{interface_r_a_c_sequence}{R\+A\+C\+Sequence}} $\ast$ \mbox{\hyperlink{category_n_s_dictionary_07_r_a_c_sequence_additions_08_ae87e0a78cf9cab6be27e18b0c3016439}{rac\+\_\+value\+Sequence}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{category_n_s_dictionary_07_r_a_c_sequence_additions_08_a990cd3cf1e8698c8f42f3d5c39f12fa3}\label{category_n_s_dictionary_07_r_a_c_sequence_additions_08_a990cd3cf1e8698c8f42f3d5c39f12fa3}} 
+\index{N\+S\+Dictionary(\+R\+A\+C\+Sequence\+Additions)@{N\+S\+Dictionary(\+R\+A\+C\+Sequence\+Additions)}!rac\+\_\+key\+Sequence@{rac\+\_\+key\+Sequence}}
+\index{rac\+\_\+key\+Sequence@{rac\+\_\+key\+Sequence}!N\+S\+Dictionary(\+R\+A\+C\+Sequence\+Additions)@{N\+S\+Dictionary(\+R\+A\+C\+Sequence\+Additions)}}
+\subsubsection{\texorpdfstring{rac\+\_\+key\+Sequence}{rac\_keySequence}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_sequence}{R\+A\+C\+Sequence}} $\ast$) rac\+\_\+key\+Sequence\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+Creates and returns a sequence corresponding to the keys in the receiver.
+
+Mutating the receiver will not affect the sequence after it\textquotesingle{}s been created. \mbox{\Hypertarget{category_n_s_dictionary_07_r_a_c_sequence_additions_08_af918ec309498be9b1ff9881230614c69}\label{category_n_s_dictionary_07_r_a_c_sequence_additions_08_af918ec309498be9b1ff9881230614c69}} 
+\index{N\+S\+Dictionary(\+R\+A\+C\+Sequence\+Additions)@{N\+S\+Dictionary(\+R\+A\+C\+Sequence\+Additions)}!rac\+\_\+sequence@{rac\+\_\+sequence}}
+\index{rac\+\_\+sequence@{rac\+\_\+sequence}!N\+S\+Dictionary(\+R\+A\+C\+Sequence\+Additions)@{N\+S\+Dictionary(\+R\+A\+C\+Sequence\+Additions)}}
+\subsubsection{\texorpdfstring{rac\+\_\+sequence}{rac\_sequence}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_sequence}{R\+A\+C\+Sequence}} $\ast$) rac\+\_\+sequence\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+Creates and returns a sequence of \mbox{\hyperlink{interface_r_a_c_tuple}{R\+A\+C\+Tuple}} key/value pairs. The key will be the first element in the tuple, and the value will be the second.
+
+Mutating the receiver will not affect the sequence after it\textquotesingle{}s been created. \mbox{\Hypertarget{category_n_s_dictionary_07_r_a_c_sequence_additions_08_ae87e0a78cf9cab6be27e18b0c3016439}\label{category_n_s_dictionary_07_r_a_c_sequence_additions_08_ae87e0a78cf9cab6be27e18b0c3016439}} 
+\index{N\+S\+Dictionary(\+R\+A\+C\+Sequence\+Additions)@{N\+S\+Dictionary(\+R\+A\+C\+Sequence\+Additions)}!rac\+\_\+value\+Sequence@{rac\+\_\+value\+Sequence}}
+\index{rac\+\_\+value\+Sequence@{rac\+\_\+value\+Sequence}!N\+S\+Dictionary(\+R\+A\+C\+Sequence\+Additions)@{N\+S\+Dictionary(\+R\+A\+C\+Sequence\+Additions)}}
+\subsubsection{\texorpdfstring{rac\+\_\+value\+Sequence}{rac\_valueSequence}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_sequence}{R\+A\+C\+Sequence}} $\ast$) rac\+\_\+value\+Sequence\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+Creates and returns a sequence corresponding to the values in the receiver.
+
+Mutating the receiver will not affect the sequence after it\textquotesingle{}s been created. 
+
+The documentation for this category was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+Reactive\+Cocoa/N\+S\+Dictionary+\+R\+A\+C\+Sequence\+Additions.\+h\item 
+Pods/\+Reactive\+Cocoa/\+Reactive\+Cocoa/N\+S\+Dictionary+\+R\+A\+C\+Sequence\+Additions.\+m\end{DoxyCompactItemize}

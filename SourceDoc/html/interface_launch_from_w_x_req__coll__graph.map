@@ -1,0 +1,4 @@
+<map id="LaunchFromWXReq" name="LaunchFromWXReq">
+<area shape="rect" id="node2" href="$interface_base_req.html" title="该类为微信终端SDK所有请求类的基类 " alt="" coords="38,80,114,105"/>
+<area shape="rect" id="node4" href="$interface_w_x_media_message.html" title="多媒体消息结构体 " alt="" coords="139,80,272,105"/>
+</map>

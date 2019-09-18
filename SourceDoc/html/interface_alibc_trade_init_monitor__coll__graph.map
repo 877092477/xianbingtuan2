@@ -1,0 +1,6 @@
+<map id="AlibcTradeInitMonitor" name="AlibcTradeInitMonitor">
+<area shape="rect" id="node2" href="$interface_alibc_trade_monitor.html" title="AlibcTradeMonitor" alt="" coords="28,207,157,232"/>
+<area shape="rect" id="node4" href="$interface_alibc_trade_dimension.html" title="AlibcTradeDimension" alt="" coords="23,80,171,105"/>
+<area shape="rect" id="node7" href="$interface_alibc_trade_measure.html" title="AlibcTradeMeasure" alt="" coords="195,80,332,105"/>
+<area shape="rect" id="node6" href="$interface_alibc_trade_time_measure.html" title="AlibcTradeTimeMeasure" alt="" coords="181,207,346,232"/>
+</map>

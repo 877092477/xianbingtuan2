@@ -1,0 +1,4 @@
+<map id="&#45;[UIImageView(WebCache) sd_setImageWithURL:placeholderImage:options:progress:completed:]" name="&#45;[UIImageView(WebCache) sd_setImageWithURL:placeholderImage:options:progress:completed:]">
+<area shape="rect" id="node2" href="$interface_s_d_web_image_manager.html#ab094c361edd5ff886cbf484892e688be" title="&#45;[SDWebImageManager\l downloadImageWithURL\l:options:progress:completed:]" alt="" coords="287,29,483,81"/>
+<area shape="rect" id="node3" href="$interface_s_d_web_image_manager.html#a6f02c3f166329cdc53553621a7f8c04a" title="&#45;[SDWebImageManager\l cacheKeyForURL:]" alt="" coords="531,36,696,75"/>
+</map>

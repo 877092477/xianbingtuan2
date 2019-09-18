@@ -1,0 +1,5 @@
+<map id="MyLikeCell" name="MyLikeCell">
+<area shape="rect" id="node2" href="$interface_super_table_view_cell.html" title="SuperTableViewCell" alt="" coords="5,155,146,180"/>
+<area shape="rect" id="node4" href="$interface_my_like_list_model.html" title="MyLikeListModel" alt="" coords="171,155,292,180"/>
+<area shape="rect" id="node5" href="$interface_f_n_base_product_model.html" title="FNBaseProductModel" alt="" coords="157,80,309,105"/>
+</map>

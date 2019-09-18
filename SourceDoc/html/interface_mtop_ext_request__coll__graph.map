@@ -1,0 +1,4 @@
+<map id="MtopExtRequest" name="MtopExtRequest">
+<area shape="rect" id="node3" href="$interface_mtop_ext_response.html" title="MtopExtResponse" alt="" coords="141,180,272,205"/>
+<area shape="rect" id="node4" href="$interface_mtop_error.html" title="MtopError" alt="" coords="300,80,380,105"/>
+</map>

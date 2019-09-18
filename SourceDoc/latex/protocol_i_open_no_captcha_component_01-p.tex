@@ -1,0 +1,111 @@
+\hypertarget{protocol_i_open_no_captcha_component_01-p}{}\section{$<$I\+Open\+No\+Captcha\+Component $>$ Protocol Reference}
+\label{protocol_i_open_no_captcha_component_01-p}\index{$<$\+I\+Open\+No\+Captcha\+Component $>$@{$<$\+I\+Open\+No\+Captcha\+Component $>$}}
+
+
+Inheritance diagram for $<$I\+Open\+No\+Captcha\+Component $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{protocol_i_open_no_captcha_component_01-p__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for $<$I\+Open\+No\+Captcha\+Component $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{protocol_i_open_no_captcha_component_01-p__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_i_open_no_captcha_component_01-p_abcad8925455b62d3c8d9da2c8a85af6f}{init\+No\+Captcha\+:page\+Name\+:width\+:height\+:retry\+:status\+:auth\+Code\+:}}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{protocol_i_open_no_captcha_component_01-p_a2f67e21ab8dbcad39dff803646c6e132}{put\+No\+Captcha\+Trace\+Record\+:point\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_i_open_no_captcha_component_01-p_a4d1b2110adc089faa210675f7df3fdd1}{no\+Captcha\+Verification\+:status\+:}}
+\item 
+(N\+S\+String $\ast$) -\/ \mbox{\hyperlink{protocol_i_open_no_captcha_component_01-p_a3225bcf0d2483322b53dedf62c4c6eee}{no\+Captcha\+Forward\+Auth\+:auth\+Info\+:timeout\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{protocol_i_open_no_captcha_component_01-p_abcad8925455b62d3c8d9da2c8a85af6f}\label{protocol_i_open_no_captcha_component_01-p_abcad8925455b62d3c8d9da2c8a85af6f}} 
+\index{I\+Open\+No\+Captcha\+Component -\/p@{I\+Open\+No\+Captcha\+Component -\/p}!init\+No\+Captcha\+:page\+Name\+:width\+:height\+:retry\+:status\+:auth\+Code\+:@{init\+No\+Captcha\+:page\+Name\+:width\+:height\+:retry\+:status\+:auth\+Code\+:}}
+\index{init\+No\+Captcha\+:page\+Name\+:width\+:height\+:retry\+:status\+:auth\+Code\+:@{init\+No\+Captcha\+:page\+Name\+:width\+:height\+:retry\+:status\+:auth\+Code\+:}!I\+Open\+No\+Captcha\+Component -\/p@{I\+Open\+No\+Captcha\+Component -\/p}}
+\subsubsection{\texorpdfstring{init\+No\+Captcha\+:page\+Name\+:width\+:height\+:retry\+:status\+:auth\+Code\+:()}{initNoCaptcha:pageName:width:height:retry:status:authCode:()}}
+{\footnotesize\ttfamily -\/ (void I\+Open\+No\+Captcha\+Component) init\+No\+Captcha\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{app\+Key }\item[{pageName:(N\+S\+String $\ast$)}]{page\+Name }\item[{width:(int)}]{screen\+Width }\item[{height:(int)}]{screen\+Height }\item[{retry:(int)}]{retry\+Times }\item[{status:(void($^\wedge$)(N\+S\+Integer status, C\+G\+Point pt1, C\+G\+Point pt2, N\+S\+String $\ast$token, N\+S\+String $\ast$sig, N\+S\+String $\ast$session\+ID))}]{status\+Cb }\item[{authCode:(N\+S\+String $\ast$)}]{auth\+Code }\end{DoxyParamCaption}}
+
+初始化无痕验证模块
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Key} & 接入应用使用的appkey \\
+\hline
+{\em page\+Name} & 页面名称 \\
+\hline
+{\em screen\+Width} & 表示屏幕的宽度像素值 \\
+\hline
+{\em screen\+Height} & 表示屏幕的高度像素值 \\
+\hline
+{\em retry\+Times} & 校验重试次数 \\
+\hline
+{\em status\+CB} & 回调函数 \\
+\hline
+{\em auth\+Code} & 二方用户请传nil，三方用户请传\+Auth\+Code \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_i_open_no_captcha_component_01-p_a3225bcf0d2483322b53dedf62c4c6eee}\label{protocol_i_open_no_captcha_component_01-p_a3225bcf0d2483322b53dedf62c4c6eee}} 
+\index{I\+Open\+No\+Captcha\+Component -\/p@{I\+Open\+No\+Captcha\+Component -\/p}!no\+Captcha\+Forward\+Auth\+:auth\+Info\+:timeout\+:@{no\+Captcha\+Forward\+Auth\+:auth\+Info\+:timeout\+:}}
+\index{no\+Captcha\+Forward\+Auth\+:auth\+Info\+:timeout\+:@{no\+Captcha\+Forward\+Auth\+:auth\+Info\+:timeout\+:}!I\+Open\+No\+Captcha\+Component -\/p@{I\+Open\+No\+Captcha\+Component -\/p}}
+\subsubsection{\texorpdfstring{no\+Captcha\+Forward\+Auth\+:auth\+Info\+:timeout\+:()}{noCaptchaForwardAuth:authInfo:timeout:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$ I\+Open\+No\+Captcha\+Component) no\+Captcha\+Forward\+Auth\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{method\+Name }\item[{authInfo:(N\+S\+Dictionary $\ast$)}]{auth\+Info }\item[{timeout:(N\+S\+Integer)}]{timeout }\end{DoxyParamCaption}}
+
+前向化请求，验证接口
+
+
+\begin{DoxyParams}{Parameters}
+{\em method\+Name} & 需要调用的\+Top A\+P\+I名；\\
+\hline
+{\em auth\+Info} & 其他需要的信息，以key-\/v形式存于auth\+Info中；\\
+\hline
+{\em timeout} & 接口调用超时时间，单位秒，最大不超过22，最小不小于1。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_i_open_no_captcha_component_01-p_a4d1b2110adc089faa210675f7df3fdd1}\label{protocol_i_open_no_captcha_component_01-p_a4d1b2110adc089faa210675f7df3fdd1}} 
+\index{I\+Open\+No\+Captcha\+Component -\/p@{I\+Open\+No\+Captcha\+Component -\/p}!no\+Captcha\+Verification\+:status\+:@{no\+Captcha\+Verification\+:status\+:}}
+\index{no\+Captcha\+Verification\+:status\+:@{no\+Captcha\+Verification\+:status\+:}!I\+Open\+No\+Captcha\+Component -\/p@{I\+Open\+No\+Captcha\+Component -\/p}}
+\subsubsection{\texorpdfstring{no\+Captcha\+Verification\+:status\+:()}{noCaptchaVerification:status:()}}
+{\footnotesize\ttfamily -\/ (void I\+Open\+No\+Captcha\+Component) no\+Captcha\+Verification\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{app\+Key }\item[{status:(void($^\wedge$)(N\+S\+Integer status, C\+G\+Point pt1, C\+G\+Point pt2, N\+S\+String $\ast$token, N\+S\+String $\ast$sig, N\+S\+String $\ast$session\+ID))}]{status\+Cb }\end{DoxyParamCaption}}
+
+请求进行无线验证
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Key} & 接入应用使用的appkey \\
+\hline
+{\em status\+CB} & 回调函数 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_i_open_no_captcha_component_01-p_a2f67e21ab8dbcad39dff803646c6e132}\label{protocol_i_open_no_captcha_component_01-p_a2f67e21ab8dbcad39dff803646c6e132}} 
+\index{I\+Open\+No\+Captcha\+Component -\/p@{I\+Open\+No\+Captcha\+Component -\/p}!put\+No\+Captcha\+Trace\+Record\+:point\+:@{put\+No\+Captcha\+Trace\+Record\+:point\+:}}
+\index{put\+No\+Captcha\+Trace\+Record\+:point\+:@{put\+No\+Captcha\+Trace\+Record\+:point\+:}!I\+Open\+No\+Captcha\+Component -\/p@{I\+Open\+No\+Captcha\+Component -\/p}}
+\subsubsection{\texorpdfstring{put\+No\+Captcha\+Trace\+Record\+:point\+:()}{putNoCaptchaTraceRecord:point:()}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL I\+Open\+No\+Captcha\+Component) put\+No\+Captcha\+Trace\+Record\+: \begin{DoxyParamCaption}\item[{(N\+S\+Integer)}]{touch\+Event }\item[{point:(C\+G\+Point)}]{pt }\end{DoxyParamCaption}}
+
+写入用户触屏打点数据
+
+
+\begin{DoxyParams}{Parameters}
+{\em touch\+Event} & touch的类型 \\
+\hline
+{\em pt} & 打点的坐标 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Security\+Guard\+S\+D\+K.\+framework/\+Headers/\+Open/\+Open\+No\+Captcha/I\+Open\+No\+Captcha\+Component.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,6 @@
+<map id="&#45;[BQLAuthEngine authShareToQQWithLink:ShareToZone:Success:Failure:]" name="&#45;[BQLAuthEngine authShareToQQWithLink:ShareToZone:Success:Failure:]">
+<area shape="rect" id="node2" href="$interface_q_q_api_news_object.html#a99e56670b9789ab147236bada2101c94" title="+[QQApiNewsObject object\lWithURL:title:description\l:previewImageURL:]" alt="" coords="247,5,431,57"/>
+<area shape="rect" id="node3" href="$interface_send_message_to_q_q_req.html#ac68151badf97161084f0c139046065c6" title="+[SendMessageToQQReq\l reqWithContent:]" alt="" coords="250,81,428,120"/>
+<area shape="rect" id="node4" href="$interface_q_q_api_interface.html#a81c51681c6188b60829f9200fe3d2368" title="+[QQApiInterface SendReq\lToQZone:]" alt="" coords="247,144,431,183"/>
+<area shape="rect" id="node5" href="$interface_q_q_api_interface.html#aa7563c172cd93277d97cf21ec6755614" title="+[QQApiInterface sendReq:]" alt="" coords="244,207,434,232"/>
+</map>

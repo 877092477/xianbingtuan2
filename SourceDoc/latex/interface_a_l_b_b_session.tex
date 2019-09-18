@@ -1,0 +1,76 @@
+\hypertarget{interface_a_l_b_b_session}{}\section{A\+L\+B\+B\+Session Class Reference}
+\label{interface_a_l_b_b_session}\index{A\+L\+B\+B\+Session@{A\+L\+B\+B\+Session}}
+
+
+Inheritance diagram for A\+L\+B\+B\+Session\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{interface_a_l_b_b_session__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for A\+L\+B\+B\+Session\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{interface_a_l_b_b_session__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{interface_a_l_b_b_session_a501bd49a703cf9d0f41f9533ae661af3}{is\+Login}}
+\item 
+(\mbox{\hyperlink{interface_a_l_b_b_user}{A\+L\+B\+B\+User}} $\ast$) -\/ \mbox{\hyperlink{interface_a_l_b_b_session_a199837d5253b40e16e5d522cd779e2dd}{get\+User}}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\mbox{\hyperlink{interface_a_l_b_b_session}{A\+L\+B\+B\+Session}} $\ast$) + \mbox{\hyperlink{interface_a_l_b_b_session_a766474152f755bb796925950fe2f11ce}{shared\+Instance}}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_a_l_b_b_session_af7e16ca00207b5b430e0f1709a0768a4}\label{interface_a_l_b_b_session_af7e16ca00207b5b430e0f1709a0768a4}} 
+B\+O\+OL {\bfseries is\+Canceled\+By\+User}
+\item 
+\mbox{\Hypertarget{interface_a_l_b_b_session_aa0c5d7f83df3c3a1fa63276f7fec3ca2}\label{interface_a_l_b_b_session_aa0c5d7f83df3c3a1fa63276f7fec3ca2}} 
+N\+S\+String $\ast$ {\bfseries bind\+Code}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_a_l_b_b_session_a199837d5253b40e16e5d522cd779e2dd}\label{interface_a_l_b_b_session_a199837d5253b40e16e5d522cd779e2dd}} 
+\index{A\+L\+B\+B\+Session@{A\+L\+B\+B\+Session}!get\+User@{get\+User}}
+\index{get\+User@{get\+User}!A\+L\+B\+B\+Session@{A\+L\+B\+B\+Session}}
+\subsubsection{\texorpdfstring{get\+User()}{getUser()}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_a_l_b_b_user}{A\+L\+B\+B\+User}} $\ast$) get\+User \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\begin{DoxyReturn}{Returns}
+返回\+User对象 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_a_l_b_b_session_a501bd49a703cf9d0f41f9533ae661af3}\label{interface_a_l_b_b_session_a501bd49a703cf9d0f41f9533ae661af3}} 
+\index{A\+L\+B\+B\+Session@{A\+L\+B\+B\+Session}!is\+Login@{is\+Login}}
+\index{is\+Login@{is\+Login}!A\+L\+B\+B\+Session@{A\+L\+B\+B\+Session}}
+\subsubsection{\texorpdfstring{is\+Login()}{isLogin()}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) is\+Login \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+如果未登录或者登录态已经过期,返回\+NO \begin{DoxyReturn}{Returns}
+当前会话是否登录有效 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_a_l_b_b_session_a766474152f755bb796925950fe2f11ce}\label{interface_a_l_b_b_session_a766474152f755bb796925950fe2f11ce}} 
+\index{A\+L\+B\+B\+Session@{A\+L\+B\+B\+Session}!shared\+Instance@{shared\+Instance}}
+\index{shared\+Instance@{shared\+Instance}!A\+L\+B\+B\+Session@{A\+L\+B\+B\+Session}}
+\subsubsection{\texorpdfstring{shared\+Instance()}{sharedInstance()}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_a_l_b_b_session}{A\+L\+B\+B\+Session}} $\ast$) shared\+Instance \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\begin{DoxyReturn}{Returns}
+返回单例 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Alibaba\+Auth\+S\+D\+K.\+framework/\+Headers/A\+L\+B\+B\+Session.\+h\end{DoxyCompactItemize}

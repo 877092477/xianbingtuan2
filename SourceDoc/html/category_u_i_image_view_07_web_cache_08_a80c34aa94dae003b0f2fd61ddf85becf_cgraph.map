@@ -1,0 +1,7 @@
+<map id="&#45;[UIImageView(WebCache) sd_setImageWithPreviousCachedImageWithURL:placeholderImage:options:progress:completed:]" name="&#45;[UIImageView(WebCache) sd_setImageWithPreviousCachedImageWithURL:placeholderImage:options:progress:completed:]">
+<area shape="rect" id="node2" href="$interface_s_d_web_image_manager.html#a03e60850e7f6da2aa38b7db870c93626" title="+[SDWebImageManager\l sharedManager]" alt="" coords="299,5,468,44"/>
+<area shape="rect" id="node3" href="$interface_s_d_web_image_manager.html#a6f02c3f166329cdc53553621a7f8c04a" title="&#45;[SDWebImageManager\l cacheKeyForURL:]" alt="" coords="301,68,466,107"/>
+<area shape="rect" id="node4" href="$interface_s_d_image_cache.html#a3a622a32640d15bf01e873275ea1e95e" title="+[SDImageCache sharedImage\lCache]" alt="" coords="279,131,488,169"/>
+<area shape="rect" id="node5" href="$interface_s_d_image_cache.html#ad3502d702952c60cd046ba4e7cba0197" title="&#45;[SDImageCache imageFrom\lDiskCacheForKey:]" alt="" coords="286,193,481,232"/>
+<area shape="rect" id="node6" href="$interface_s_d_image_cache.html#abe13b43b333bbb5bbe56142b8d573bd2" title="&#45;[SDImageCache imageFrom\lMemoryCacheForKey:]" alt="" coords="536,193,730,232"/>
+</map>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FNFindAutoView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="277"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="淘宝／天猫订单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6d-ru-4JB">
+                    <rect key="frame" x="15" y="15" width="345" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PPS-8I-VTc">
+                    <rect key="frame" x="15" y="56" width="345" height="1"/>
+                    <color key="backgroundColor" red="0.78018945455551147" green="0.7843058705329895" blue="0.78834682703018188" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="dP9-6q-8Uu"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击“自动找回订单”按钮后，会进入淘宝订单页面，等待页面下方出现“找回订单完成，请返回确认”文字后自动找回订单完成，亲可以在“我的”中查看订单" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ouo-VC-onR">
+                    <rect key="frame" x="15" y="72" width="345" height="50.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.46257460117340088" green="0.46663981676101685" blue="0.47073501348495483" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用天猫红包／购物券支付无返还。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DM9-wF-MNU">
+                    <rect key="frame" x="15" y="142.5" width="345" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.95512920618057251" green="0.24414938688278198" blue="0.47382783889770508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="注：如果自动找回订单无法显示，请尝试手动找回" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Km-QH-Mba">
+                    <rect key="frame" x="15" y="239.5" width="345" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.95512920618057251" green="0.24414938688278198" blue="0.47382783889770508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pp-ZW-F4l">
+                    <rect key="frame" x="15" y="179" width="345" height="40"/>
+                    <color key="backgroundColor" red="0.95512920618057251" green="0.24414938688278198" blue="0.47382783889770508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Guy-Kr-PLy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="自动找回订单">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="P6d-ru-4JB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="0Ng-DI-wvT"/>
+                <constraint firstItem="8Km-QH-Mba" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="57f-AP-Slc"/>
+                <constraint firstItem="DM9-wF-MNU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="7Yc-cb-E7Y"/>
+                <constraint firstAttribute="trailing" secondItem="PPS-8I-VTc" secondAttribute="trailing" constant="15" id="7uO-mR-SBP"/>
+                <constraint firstItem="0pp-ZW-F4l" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="ALV-mk-HoN"/>
+                <constraint firstItem="0pp-ZW-F4l" firstAttribute="top" secondItem="DM9-wF-MNU" secondAttribute="bottom" constant="20" id="B0u-cd-Iy2"/>
+                <constraint firstItem="PPS-8I-VTc" firstAttribute="top" secondItem="P6d-ru-4JB" secondAttribute="bottom" constant="20" id="GNo-OP-VbL"/>
+                <constraint firstItem="Ouo-VC-onR" firstAttribute="top" secondItem="PPS-8I-VTc" secondAttribute="bottom" constant="15" id="Oe8-Ve-Rzo"/>
+                <constraint firstAttribute="trailing" secondItem="8Km-QH-Mba" secondAttribute="trailing" constant="15" id="OsN-W3-2ag"/>
+                <constraint firstItem="PPS-8I-VTc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="VXu-pQ-0x0"/>
+                <constraint firstAttribute="trailing" secondItem="P6d-ru-4JB" secondAttribute="trailing" constant="15" id="Zhp-gE-v8U"/>
+                <constraint firstAttribute="trailing" secondItem="Ouo-VC-onR" secondAttribute="trailing" constant="15" id="aBP-zA-31h"/>
+                <constraint firstItem="8Km-QH-Mba" firstAttribute="top" secondItem="0pp-ZW-F4l" secondAttribute="bottom" constant="20" id="aNC-BY-muU"/>
+                <constraint firstItem="Ouo-VC-onR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="eKe-1A-ewT"/>
+                <constraint firstAttribute="trailing" secondItem="0pp-ZW-F4l" secondAttribute="trailing" constant="15" id="fWX-jz-Gmv"/>
+                <constraint firstItem="P6d-ru-4JB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="mKF-2Q-Yc7"/>
+                <constraint firstItem="DM9-wF-MNU" firstAttribute="top" secondItem="Ouo-VC-onR" secondAttribute="bottom" constant="20" id="qVB-nQ-8TB"/>
+                <constraint firstAttribute="trailing" secondItem="DM9-wF-MNU" secondAttribute="trailing" constant="15" id="t39-hj-JXn"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="autoBtn" destination="0pp-ZW-F4l" id="p4l-7K-3RU"/>
+                <outlet property="btmLabel" destination="8Km-QH-Mba" id="Dlb-HR-gYu"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="-203.5"/>
+        </view>
+    </objects>
+</document>

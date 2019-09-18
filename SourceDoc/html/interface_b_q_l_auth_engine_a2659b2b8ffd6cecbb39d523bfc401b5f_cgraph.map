@@ -1,0 +1,5 @@
+<map id="&#45;[BQLAuthEngine authShareToQQWithText:Success:Failure:]" name="&#45;[BQLAuthEngine authShareToQQWithText:Success:Failure:]">
+<area shape="rect" id="node2" href="$interface_q_q_api_text_object.html#ae081b2e9d23efabaf90234f1f1532c09" title="工厂方法，获取一个QQApiTextObject对象. " alt="" coords="274,5,449,44"/>
+<area shape="rect" id="node3" href="$interface_send_message_to_q_q_req.html#ac68151badf97161084f0c139046065c6" title="+[SendMessageToQQReq\l reqWithContent:]" alt="" coords="273,68,450,107"/>
+<area shape="rect" id="node4" href="$interface_q_q_api_interface.html#aa7563c172cd93277d97cf21ec6755614" title="+[QQApiInterface sendReq:]" alt="" coords="267,131,456,156"/>
+</map>

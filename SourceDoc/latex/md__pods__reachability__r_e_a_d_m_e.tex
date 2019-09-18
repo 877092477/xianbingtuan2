@@ -1,0 +1,25 @@
+This is a drop-\/in replacement for Apples \mbox{\hyperlink{interface_reachability}{Reachability}} class. It is A\+RC compatible, uses the new G\+CD methods to notify of network interface changes.
+
+In addition to the standard N\+S\+Notification it supports the use of Blocks for when the network becomes reachable and unreachable.
+
+Finally you can specify wether or not a W\+W\+AN connection is considered \char`\"{}reachable\char`\"{}.
+
+\subsection*{A Simple example}
+
+\begin{DoxyVerb}// allocate a reachability object
+Reachability* reach = [Reachability reachabilityWithHostname:@"www.google.com"];
+
+// set the blocks 
+reach.reachableBlock = ^(Reachability*reach)
+{
+    NSLog(@"REACHABLE!");
+};
+
+reach.unreachableBlock = ^(Reachability*reach)
+{
+    NSLog(@"UNREACHABLE!");
+};
+
+// start the notifier which will cause the reachability object to retain itself!
+[reach startNotifier];\end{DoxyVerb}
+ 

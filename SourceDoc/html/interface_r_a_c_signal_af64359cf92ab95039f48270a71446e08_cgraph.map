@@ -1,0 +1,17 @@
+<map id="&#45;[RACSignal any]" name="&#45;[RACSignal any]">
+<area shape="rect" id="node2" href="$interface_r_a_c_signal.html#a4bfb6af6556526457fbf0e5d3c878536" title="&#45;[RACSignal any:]" alt="" coords="177,281,304,307"/>
+<area shape="rect" id="node6" href="$interface_r_a_c_stream.html#aedc0b75ca3e6d0f81f006c7c3c6a1d76" title="&#45;[RACStream setNameWithFormat:]" alt="" coords="1024,124,1258,149"/>
+<area shape="rect" id="node3" href="$interface_r_a_c_signal.html#a2b970ec1845b139478ba31f00fe34b71" title="&#45;[RACSignal materialize]" alt="" coords="352,155,519,180"/>
+<area shape="rect" id="node11" href="$interface_r_a_c_stream.html#a8638bfba1497aa1b14b098857b4c62e2" title="&#45;[RACStream bind:]" alt="" coords="367,232,504,257"/>
+<area shape="rect" id="node12" href="$interface_r_a_c_signal.html#a41b2f3cea45bb3a14911299cb572b7d9" title="Returns a signal that immediately sends the given value and then completes. " alt="" coords="364,281,508,307"/>
+<area shape="rect" id="node15" href="$interface_r_a_c_signal.html#a7905f73a3de844e28a19d9d63cd37214" title="Returns a signal that immediately completes. " alt="" coords="365,331,506,356"/>
+<area shape="rect" id="node4" href="$interface_r_a_c_signal.html#a4ba374f148d6e2a0339c4f4202b4dc26" title="+[RACSignal createSignal:]" alt="" coords="574,15,758,40"/>
+<area shape="rect" id="node7" href="$interface_r_a_c_signal.html#a50b7b51715316c5da372cc0cf96039f6" title="Convenience method to subscribe to the next, completed, and error events. " alt="" coords="575,120,758,159"/>
+<area shape="rect" id="node9" href="$interface_r_a_c_event.html#aac79397e437b0a76901d41d38cc46791" title="Returns a new event of type RACEventTypeNext, containing the given value. " alt="" coords="567,183,765,208"/>
+<area shape="rect" id="node10" href="$interface_r_a_c_event.html#aaebc908a1477a8d79d85a81101beaee7" title="Returns a new event of type RACEventTypeError, containing the given error. " alt="" coords="569,232,764,257"/>
+<area shape="rect" id="node5" href="$interface_r_a_c_dynamic_signal.html#aeffa754150754dd6296d5225b5c9c7fe" title="+[RACDynamicSignal\l createSignal:]" alt="" coords="820,5,970,44"/>
+<area shape="rect" id="node8" href="$interface_r_a_c_signal.html#aeab76d632d98bbc321ec5e19575377eb" title="&#45;[RACSignal subscribe:]" alt="" coords="813,127,976,152"/>
+<area shape="rect" id="node13" href="$interface_r_a_c_return_signal.html#acaf96978eeb78adb2409b717f26ce665" title="Returns a signal that immediately sends the given value and then completes. " alt="" coords="574,281,758,307"/>
+<area shape="rect" id="node14" href="$interface_r_a_c_unit.html#a69ef370b51c8d2af28761fcf5109a74a" title="A singleton instance. " alt="" coords="817,281,973,307"/>
+<area shape="rect" id="node16" href="$interface_r_a_c_empty_signal.html#a44bac13fa94e1789f84fc8fb9e7d40b9" title="Returns a signal that immediately completes. " alt="" coords="576,331,756,356"/>
+</map>

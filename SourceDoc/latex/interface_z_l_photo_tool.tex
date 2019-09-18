@@ -1,0 +1,76 @@
+\hypertarget{interface_z_l_photo_tool}{}\section{Z\+L\+Photo\+Tool Class Reference}
+\label{interface_z_l_photo_tool}\index{Z\+L\+Photo\+Tool@{Z\+L\+Photo\+Tool}}
+
+
+Inheritance diagram for Z\+L\+Photo\+Tool\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{interface_z_l_photo_tool__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Z\+L\+Photo\+Tool\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{interface_z_l_photo_tool__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_z_l_photo_tool_aee5e935a66163bf56898ab6e3eaddad9}\label{interface_z_l_photo_tool_aee5e935a66163bf56898ab6e3eaddad9}} 
+(void) -\/ \mbox{\hyperlink{interface_z_l_photo_tool_aee5e935a66163bf56898ab6e3eaddad9}{save\+Image\+To\+Ablum\+:completion\+:}}
+\begin{DoxyCompactList}\small\item\em 保存图片到系统相册 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_z_l_photo_tool_a6a82de4dda30c95b0285f5e457dfeb02}\label{interface_z_l_photo_tool_a6a82de4dda30c95b0285f5e457dfeb02}} 
+(N\+S\+Array$<$ \mbox{\hyperlink{interface_z_l_photo_ablum_list}{Z\+L\+Photo\+Ablum\+List}} $\ast$ $>$ $\ast$) -\/ \mbox{\hyperlink{interface_z_l_photo_tool_a6a82de4dda30c95b0285f5e457dfeb02}{get\+Photo\+Ablum\+List}}
+\begin{DoxyCompactList}\small\item\em 获取用户所有相册列表 \end{DoxyCompactList}\item 
+(N\+S\+Array$<$ P\+H\+Asset $\ast$ $>$ $\ast$) -\/ \mbox{\hyperlink{interface_z_l_photo_tool_abe37f30dee26fab43e9912e249b244ec}{get\+All\+Asset\+In\+Photo\+Ablum\+With\+Ascending\+:}}
+\begin{DoxyCompactList}\small\item\em 获取相册内所有图片资源 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_z_l_photo_tool_aec7783af92f890e99cb5fe191dc964ea}\label{interface_z_l_photo_tool_aec7783af92f890e99cb5fe191dc964ea}} 
+(N\+S\+Array$<$ P\+H\+Asset $\ast$ $>$ $\ast$) -\/ \mbox{\hyperlink{interface_z_l_photo_tool_aec7783af92f890e99cb5fe191dc964ea}{get\+Assets\+In\+Asset\+Collection\+:ascending\+:}}
+\begin{DoxyCompactList}\small\item\em 获取指定相册内的所有图片 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_z_l_photo_tool_a72863b34a3ad920c3313f13bc0d6f0cf}\label{interface_z_l_photo_tool_a72863b34a3ad920c3313f13bc0d6f0cf}} 
+(void) -\/ \mbox{\hyperlink{interface_z_l_photo_tool_a72863b34a3ad920c3313f13bc0d6f0cf}{request\+Image\+For\+Asset\+:size\+:resize\+Mode\+:completion\+:}}
+\begin{DoxyCompactList}\small\item\em 获取每个\+Asset对应的图片 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_z_l_photo_tool_acaafe0b274e7629075858643d6ddfaa6}\label{interface_z_l_photo_tool_acaafe0b274e7629075858643d6ddfaa6}} 
+(void) -\/ \mbox{\hyperlink{interface_z_l_photo_tool_acaafe0b274e7629075858643d6ddfaa6}{request\+Image\+For\+Asset\+:scale\+:resize\+Mode\+:completion\+:}}
+\begin{DoxyCompactList}\small\item\em 点击确定时，获取每个\+Asset对应的图片（image\+Data） \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_z_l_photo_tool_ac96c5633bdf6ee17a167b24872c4690c}\label{interface_z_l_photo_tool_ac96c5633bdf6ee17a167b24872c4690c}} 
+(void) -\/ \mbox{\hyperlink{interface_z_l_photo_tool_ac96c5633bdf6ee17a167b24872c4690c}{get\+Photos\+Bytes\+With\+Array\+:completion\+:}}
+\begin{DoxyCompactList}\small\item\em 获取数组内图片的字节大小 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_z_l_photo_tool_adbfd158b134e8aa2ad36954a742378ff}\label{interface_z_l_photo_tool_adbfd158b134e8aa2ad36954a742378ff}} 
+(B\+O\+OL) -\/ \mbox{\hyperlink{interface_z_l_photo_tool_adbfd158b134e8aa2ad36954a742378ff}{judge\+Assetis\+In\+Local\+Ablum\+:}}
+\begin{DoxyCompactList}\small\item\em 判断图片是否存储在本地/或者已经从i\+Cloud上下载到本地 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_z_l_photo_tool_a69ab55d4528ea02a62600764b54534ad}\label{interface_z_l_photo_tool_a69ab55d4528ea02a62600764b54534ad}} 
+(instancetype) + {\bfseries share\+Photo\+Tool}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_z_l_photo_tool_abe37f30dee26fab43e9912e249b244ec}\label{interface_z_l_photo_tool_abe37f30dee26fab43e9912e249b244ec}} 
+\index{Z\+L\+Photo\+Tool@{Z\+L\+Photo\+Tool}!get\+All\+Asset\+In\+Photo\+Ablum\+With\+Ascending\+:@{get\+All\+Asset\+In\+Photo\+Ablum\+With\+Ascending\+:}}
+\index{get\+All\+Asset\+In\+Photo\+Ablum\+With\+Ascending\+:@{get\+All\+Asset\+In\+Photo\+Ablum\+With\+Ascending\+:}!Z\+L\+Photo\+Tool@{Z\+L\+Photo\+Tool}}
+\subsubsection{\texorpdfstring{get\+All\+Asset\+In\+Photo\+Ablum\+With\+Ascending\+:()}{getAllAssetInPhotoAblumWithAscending:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Array$<$ P\+H\+Asset $\ast$ $>$ $\ast$) get\+All\+Asset\+In\+Photo\+Ablum\+With\+Ascending\+: \begin{DoxyParamCaption}\item[{(B\+O\+OL)}]{ascending }\end{DoxyParamCaption}}
+
+
+
+获取相册内所有图片资源 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ascending} & 是否按创建时间正序排列 Y\+ES,创建时间正（升）序排列; NO,创建时间倒（降）序排列 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/\+Photo\+Browser/Z\+L\+Photo\+Tool.\+h\item 
+T\+H\+B/\+Library/\+Photo\+Browser/Z\+L\+Photo\+Tool.\+m\end{DoxyCompactItemize}

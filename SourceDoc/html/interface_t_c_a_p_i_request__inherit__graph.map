@@ -1,0 +1,11 @@
+<map id="TCAPIRequest" name="TCAPIRequest">
+<area shape="rect" id="node3" href="$interface_t_c_add_album_dic.html" title="创建空间相册的参数字典定义 " alt="" coords="377,5,497,31"/>
+<area shape="rect" id="node4" href="$interface_t_c_add_one_blog_dic.html" title="发表日志的参数字典定义 " alt="" coords="370,55,504,80"/>
+<area shape="rect" id="node5" href="$interface_t_c_add_share_dic.html" title="同步分享到QQ空间,腾讯微博的参数字典定义 " alt="" coords="378,104,495,129"/>
+<area shape="rect" id="node6" href="$interface_t_c_add_topic_dic.html" title="发表说说的参数字典定义 " alt="" coords="380,153,493,179"/>
+<area shape="rect" id="node7" href="$interface_t_c_check_page_fans_dic.html" title="验证是否认证空间粉丝tttyttyyyu的参数字典定义 " alt="" coords="358,203,515,228"/>
+<area shape="rect" id="node8" href="$interface_t_c_list_photo_dic.html" title="获取用户QQ空间相册中的照片列表 " alt="" coords="380,252,494,277"/>
+<area shape="rect" id="node9" href="$interface_t_c_send_story_dic.html" title="QQ空间定向分享的参数字典定义 " alt="" coords="376,301,497,327"/>
+<area shape="rect" id="node10" href="$interface_t_c_set_user_headpic.html" title="设置用户头像 " alt="" coords="369,351,505,376"/>
+<area shape="rect" id="node11" href="$interface_t_c_upload_pic_dic.html" title="上传一张照片到QQ空间相册的参数字典定义 " alt="" coords="377,400,496,425"/>
+</map>

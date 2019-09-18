@@ -1,0 +1,181 @@
+\hypertarget{interface_alibc_trade_page_factory}{}\section{Alibc\+Trade\+Page\+Factory Class Reference}
+\label{interface_alibc_trade_page_factory}\index{Alibc\+Trade\+Page\+Factory@{Alibc\+Trade\+Page\+Factory}}
+
+
+{\ttfamily \#import $<$Alibc\+Trade\+Page\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Alibc\+Trade\+Page\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{interface_alibc_trade_page_factory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Alibc\+Trade\+Page\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{interface_alibc_trade_page_factory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id$<$ Alibc\+Trade\+Page $>$) + \mbox{\hyperlink{interface_alibc_trade_page_factory_a066f98de1eb14f7c767fd3a3d32ed8ac}{page\+:}}
+\item 
+(id$<$ Alibc\+Trade\+Page $>$) + \mbox{\hyperlink{interface_alibc_trade_page_factory_a0e8052358a1f6579f60a4fe60bd00508}{item\+Detail\+Page\+:}}
+\item 
+(id$<$ Alibc\+Trade\+Page $>$) + \mbox{\hyperlink{interface_alibc_trade_page_factory_a371f2a1d4e51fefcc05c11b2133a825c}{item\+Mini\+Detail\+Page\+:}}
+\item 
+(id$<$ Alibc\+Trade\+Page $>$) + \mbox{\hyperlink{interface_alibc_trade_page_factory_a05916ca9c20018ab175e806daa6b8927}{my\+Carts\+Page}}
+\item 
+(id$<$ Alibc\+Trade\+Page $>$) + \mbox{\hyperlink{interface_alibc_trade_page_factory_a77f3b85bc47e39b82b5c20459c0d4492}{my\+Orders\+Page\+:is\+All\+Order\+:}}
+\item 
+(id$<$ Alibc\+Trade\+Page $>$) + \mbox{\hyperlink{interface_alibc_trade_page_factory_a9cf90afb144f2ce51f7ed2dca4166897}{shop\+Page\+:}}
+\item 
+(id$<$ Alibc\+Trade\+Page $>$) + \mbox{\hyperlink{interface_alibc_trade_page_factory_a3c4e1490da49217dae8067c2641dc052}{add\+Cart\+Page\+:}}
+\item 
+(id$<$ Alibc\+Trade\+Page $>$) + \mbox{\hyperlink{interface_alibc_trade_page_factory_a75b1d5426dc6e4eb9a6d2560312fe773}{request\+Page\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+页面工厂类,用于构造各类要显示的page 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_alibc_trade_page_factory_a3c4e1490da49217dae8067c2641dc052}\label{interface_alibc_trade_page_factory_a3c4e1490da49217dae8067c2641dc052}} 
+\index{Alibc\+Trade\+Page\+Factory@{Alibc\+Trade\+Page\+Factory}!add\+Cart\+Page\+:@{add\+Cart\+Page\+:}}
+\index{add\+Cart\+Page\+:@{add\+Cart\+Page\+:}!Alibc\+Trade\+Page\+Factory@{Alibc\+Trade\+Page\+Factory}}
+\subsubsection{\texorpdfstring{add\+Cart\+Page\+:()}{addCartPage:()}}
+{\footnotesize\ttfamily + (id $<$Alibc\+Trade\+Page$>$) add\+Cart\+Page\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{item\+Id }\end{DoxyParamCaption}}
+
+创建添加到购物车页面
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Id} & 商品真实\+I\+D或者混淆(open)ID\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+店铺页面 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_alibc_trade_page_factory_a0e8052358a1f6579f60a4fe60bd00508}\label{interface_alibc_trade_page_factory_a0e8052358a1f6579f60a4fe60bd00508}} 
+\index{Alibc\+Trade\+Page\+Factory@{Alibc\+Trade\+Page\+Factory}!item\+Detail\+Page\+:@{item\+Detail\+Page\+:}}
+\index{item\+Detail\+Page\+:@{item\+Detail\+Page\+:}!Alibc\+Trade\+Page\+Factory@{Alibc\+Trade\+Page\+Factory}}
+\subsubsection{\texorpdfstring{item\+Detail\+Page\+:()}{itemDetailPage:()}}
+{\footnotesize\ttfamily + (id $<$Alibc\+Trade\+Page$>$) item\+Detail\+Page\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{item\+Id }\end{DoxyParamCaption}}
+
+创建商品真实\+I\+D或者混淆(open)I\+D对应的详情页面
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Id} & 商品真实\+I\+D或者混淆(open)ID\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+详情页面 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_alibc_trade_page_factory_a371f2a1d4e51fefcc05c11b2133a825c}\label{interface_alibc_trade_page_factory_a371f2a1d4e51fefcc05c11b2133a825c}} 
+\index{Alibc\+Trade\+Page\+Factory@{Alibc\+Trade\+Page\+Factory}!item\+Mini\+Detail\+Page\+:@{item\+Mini\+Detail\+Page\+:}}
+\index{item\+Mini\+Detail\+Page\+:@{item\+Mini\+Detail\+Page\+:}!Alibc\+Trade\+Page\+Factory@{Alibc\+Trade\+Page\+Factory}}
+\subsubsection{\texorpdfstring{item\+Mini\+Detail\+Page\+:()}{itemMiniDetailPage:()}}
+{\footnotesize\ttfamily + (id $<$Alibc\+Trade\+Page$>$) item\+Mini\+Detail\+Page\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{item\+Id }\end{DoxyParamCaption}}
+
+创建商品真实\+I\+D或者混淆(open)I\+D对应的迷你详情页面
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Id} & 商品真实\+I\+D或者混淆(open)ID\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+详情页面 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_alibc_trade_page_factory_a05916ca9c20018ab175e806daa6b8927}\label{interface_alibc_trade_page_factory_a05916ca9c20018ab175e806daa6b8927}} 
+\index{Alibc\+Trade\+Page\+Factory@{Alibc\+Trade\+Page\+Factory}!my\+Carts\+Page@{my\+Carts\+Page}}
+\index{my\+Carts\+Page@{my\+Carts\+Page}!Alibc\+Trade\+Page\+Factory@{Alibc\+Trade\+Page\+Factory}}
+\subsubsection{\texorpdfstring{my\+Carts\+Page()}{myCartsPage()}}
+{\footnotesize\ttfamily + (id $<$Alibc\+Trade\+Page$>$) my\+Carts\+Page \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+创建我的购物车页面
+
+\begin{DoxyReturn}{Returns}
+我的购物车页面 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_alibc_trade_page_factory_a77f3b85bc47e39b82b5c20459c0d4492}\label{interface_alibc_trade_page_factory_a77f3b85bc47e39b82b5c20459c0d4492}} 
+\index{Alibc\+Trade\+Page\+Factory@{Alibc\+Trade\+Page\+Factory}!my\+Orders\+Page\+:is\+All\+Order\+:@{my\+Orders\+Page\+:is\+All\+Order\+:}}
+\index{my\+Orders\+Page\+:is\+All\+Order\+:@{my\+Orders\+Page\+:is\+All\+Order\+:}!Alibc\+Trade\+Page\+Factory@{Alibc\+Trade\+Page\+Factory}}
+\subsubsection{\texorpdfstring{my\+Orders\+Page\+:is\+All\+Order\+:()}{myOrdersPage:isAllOrder:()}}
+{\footnotesize\ttfamily + (id $<$Alibc\+Trade\+Page$>$) my\+Orders\+Page\+: \begin{DoxyParamCaption}\item[{(N\+S\+Integer)}]{status }\item[{isAllOrder:(B\+O\+OL)}]{is\+All\+Order }\end{DoxyParamCaption}}
+
+创建我的订单列表页面
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & 所要展示订单的订单状态 0\+: 为全部订单 1\+: 为待付款订单 2\+: 为待发货订单 3\+: 为待收货订单 4\+: 为待评价订单 \\
+\hline
+{\em is\+All\+Order} & 是否显示全部订单\\
+\hline
+\end{DoxyParams}
+Y\+ES\+: 显示全部订单 NO \+: 显示\+I\+S\+V自己创建的订单
+
+\begin{DoxyReturn}{Returns}
+我的订单列表页面 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_alibc_trade_page_factory_a066f98de1eb14f7c767fd3a3d32ed8ac}\label{interface_alibc_trade_page_factory_a066f98de1eb14f7c767fd3a3d32ed8ac}} 
+\index{Alibc\+Trade\+Page\+Factory@{Alibc\+Trade\+Page\+Factory}!page\+:@{page\+:}}
+\index{page\+:@{page\+:}!Alibc\+Trade\+Page\+Factory@{Alibc\+Trade\+Page\+Factory}}
+\subsubsection{\texorpdfstring{page\+:()}{page:()}}
+{\footnotesize\ttfamily + (id $<$Alibc\+Trade\+Page$>$) page\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{url }\end{DoxyParamCaption}}
+
+创建\+U\+R\+L指定页面
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & 地址\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+U\+R\+L指定页面 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_alibc_trade_page_factory_a75b1d5426dc6e4eb9a6d2560312fe773}\label{interface_alibc_trade_page_factory_a75b1d5426dc6e4eb9a6d2560312fe773}} 
+\index{Alibc\+Trade\+Page\+Factory@{Alibc\+Trade\+Page\+Factory}!request\+Page\+:@{request\+Page\+:}}
+\index{request\+Page\+:@{request\+Page\+:}!Alibc\+Trade\+Page\+Factory@{Alibc\+Trade\+Page\+Factory}}
+\subsubsection{\texorpdfstring{request\+Page\+:()}{requestPage:()}}
+{\footnotesize\ttfamily + (id $<$Alibc\+Trade\+Page$>$) request\+Page\+: \begin{DoxyParamCaption}\item[{(N\+S\+Mutable\+U\+R\+L\+Request $\ast$)}]{request }\end{DoxyParamCaption}}
+
+通过request加载指定页面,可以在里面自己附加header等
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & 请求\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+U\+R\+L指定页面 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_alibc_trade_page_factory_a9cf90afb144f2ce51f7ed2dca4166897}\label{interface_alibc_trade_page_factory_a9cf90afb144f2ce51f7ed2dca4166897}} 
+\index{Alibc\+Trade\+Page\+Factory@{Alibc\+Trade\+Page\+Factory}!shop\+Page\+:@{shop\+Page\+:}}
+\index{shop\+Page\+:@{shop\+Page\+:}!Alibc\+Trade\+Page\+Factory@{Alibc\+Trade\+Page\+Factory}}
+\subsubsection{\texorpdfstring{shop\+Page\+:()}{shopPage:()}}
+{\footnotesize\ttfamily + (id $<$Alibc\+Trade\+Page$>$) shop\+Page\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{shop\+Id }\end{DoxyParamCaption}}
+
+创建店铺页面
+
+
+\begin{DoxyParams}{Parameters}
+{\em shop\+Id} & 店铺\+ID\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+店铺页面 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Alibc\+Trade\+S\+D\+K.\+framework/\+Headers/Alibc\+Trade\+Page\+Factory.\+h\end{DoxyCompactItemize}

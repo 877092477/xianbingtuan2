@@ -1,0 +1,7 @@
+<map id="RMMultipleViewsController" name="RMMultipleViewsController">
+<area shape="rect" id="node8" href="$interface_brand_base_view_controller.html" title="BrandBaseViewController" alt="" coords="54,299,227,324"/>
+<area shape="rect" id="node9" href="$interface_order_base_view_controller.html" title="OrderBaseViewController" alt="" coords="252,299,424,324"/>
+<area shape="rect" id="node10" href="$interface_rebates_view_controller.html" title="RebatesViewController" alt="" coords="449,299,606,324"/>
+<area shape="rect" id="node2" href="$interface_super_view_controller.html" title="SuperViewController" alt="" coords="266,152,410,177"/>
+<area shape="rect" id="node3" href="$interface_j_m_view_controller.html" title="JMViewController" alt="" coords="92,79,218,104"/>
+</map>

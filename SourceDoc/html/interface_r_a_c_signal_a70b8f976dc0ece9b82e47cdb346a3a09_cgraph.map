@@ -1,0 +1,9 @@
+<map id="&#45;[RACSignal collect]" name="&#45;[RACSignal collect]">
+<area shape="rect" id="node2" href="$interface_r_a_c_signal.html#a51c08c7a357f83c96c468a6aa13d4d87" title="&#45;[RACSignal aggregateWith\lStartFactory:reduce:]" alt="" coords="193,143,378,181"/>
+<area shape="rect" id="node6" href="$interface_r_a_c_stream.html#aedc0b75ca3e6d0f81f006c7c3c6a1d76" title="&#45;[RACStream setNameWithFormat:]" alt="" coords="1090,120,1324,145"/>
+<area shape="rect" id="node3" href="$interface_r_a_c_signal.html#a3f29638c9c7f60928b7a6cbf2fe25d6f" title="+[RACSignal defer:]" alt="" coords="449,69,589,95"/>
+<area shape="rect" id="node7" href="$interface_r_a_c_signal.html#a4b872b6c2322aa37f98282043e768582" title="&#45;[RACSignal aggregateWith\lStart:reduce:]" alt="" coords="426,171,611,209"/>
+<area shape="rect" id="node4" href="$interface_r_a_c_signal.html#a4ba374f148d6e2a0339c4f4202b4dc26" title="+[RACSignal createSignal:]" alt="" coords="660,15,844,40"/>
+<area shape="rect" id="node5" href="$interface_r_a_c_dynamic_signal.html#aeffa754150754dd6296d5225b5c9c7fe" title="+[RACDynamicSignal\l createSignal:]" alt="" coords="893,5,1042,44"/>
+<area shape="rect" id="node8" href="$interface_r_a_c_signal.html#a83c6fc367091505aa6721f1c6a58d65d" title="&#45;[RACSignal aggregateWith\lStart:reduceWithIndex:]" alt="" coords="659,221,845,260"/>
+</map>

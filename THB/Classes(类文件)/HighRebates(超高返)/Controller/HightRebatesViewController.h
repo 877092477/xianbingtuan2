@@ -1,0 +1,50 @@
+//
+//  HightRebatesViewController.h
+//  THB
+//
+//  Created by zhongxueyu on 16/3/19.
+//  Copyright © 2016年 方诺科技. All rights reserved.
+//
+/**
+ 
+ * ============================================================================
+ 
+ * 版权所有 2013-2016 方诺科技，并保留所有权利。
+ 
+ * 网站地址: http://www.fnuo123.com；
+ 
+ * ----------------------------------------------------------------------------
+ 
+ * 这不是一个自由软件！您只能在不用于商业目的的前提下对程序代码进行修改和
+ 
+ * 使用；不允许对程序代码以任何形式任何目的的再发布。
+ 
+ * ============================================================================
+ 
+ */
+
+#import <UIKit/UIKit.h>
+#import "YZDisplayViewController.h"
+#import "FNMCouponPurchaseController.h"
+@interface HightRebatesViewController : YZDisplayViewController
+
+/** 是否来自首页 */
+@property (nonatomic,assign) int fromHome;
+
+@property (nonatomic,assign) int fromNoti;
+
+
+/** 分类名类型：1是9块9  3是超高返 9.20元封顶 10.领券购*/
+@property (nonatomic,assign) int type;
+
+/** 要跳转到哪里 */
+@property (nonatomic,assign) int toIndex;
+
+/** 是否从筛选界面过来 */
+@property (nonatomic,assign) int fromSift;
+
+@property (nonatomic, copy)NSString *realType;
+
+@property (nonatomic, copy)NSString* SkipUIIdentifier;
+
+@end

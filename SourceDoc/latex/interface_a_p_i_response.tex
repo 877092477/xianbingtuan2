@@ -1,0 +1,128 @@
+\hypertarget{interface_a_p_i_response}{}\section{A\+P\+I\+Response Class Reference}
+\label{interface_a_p_i_response}\index{A\+P\+I\+Response@{A\+P\+I\+Response}}
+
+
+封装服务器返回的结果  
+
+
+
+
+{\ttfamily \#import $<$sdkdef.\+h$>$}
+
+
+
+Inheritance diagram for A\+P\+I\+Response\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{interface_a_p_i_response__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for A\+P\+I\+Response\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{interface_a_p_i_response__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_a_p_i_response_a54f4b35f0f6a6c17f16db53b092ccd10}\label{interface_a_p_i_response_a54f4b35f0f6a6c17f16db53b092ccd10}} 
+int {\bfseries \+\_\+detail\+Ret\+Code}
+\item 
+\mbox{\Hypertarget{interface_a_p_i_response_a6b27f295077c706eb402a33191be4052}\label{interface_a_p_i_response_a6b27f295077c706eb402a33191be4052}} 
+int {\bfseries \+\_\+ret\+Code}
+\item 
+\mbox{\Hypertarget{interface_a_p_i_response_a49508c7f86db0038498a3d9fb3300578}\label{interface_a_p_i_response_a49508c7f86db0038498a3d9fb3300578}} 
+int {\bfseries \+\_\+seq}
+\item 
+\mbox{\Hypertarget{interface_a_p_i_response_a107c43181646f5568fd6d9445660edc8}\label{interface_a_p_i_response_a107c43181646f5568fd6d9445660edc8}} 
+N\+S\+String $\ast$ {\bfseries \+\_\+error\+Msg}
+\item 
+\mbox{\Hypertarget{interface_a_p_i_response_a2ba64a7929be305bd31dd05b6ca8abaa}\label{interface_a_p_i_response_a2ba64a7929be305bd31dd05b6ca8abaa}} 
+N\+S\+Dictionary $\ast$ {\bfseries \+\_\+json\+Response}
+\item 
+\mbox{\Hypertarget{interface_a_p_i_response_aab508f85be54c8bec5ca376d81ba45f5}\label{interface_a_p_i_response_aab508f85be54c8bec5ca376d81ba45f5}} 
+N\+S\+String $\ast$ {\bfseries \+\_\+message}
+\item 
+\mbox{\Hypertarget{interface_a_p_i_response_a18fe599206b33775cd113913c5fbcf20}\label{interface_a_p_i_response_a18fe599206b33775cd113913c5fbcf20}} 
+id {\bfseries \+\_\+user\+Data}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interface_a_p_i_response_a3d61cd58f1b9fa5709fec34997fac91a}{detail\+Ret\+Code}}
+\item 
+int \mbox{\hyperlink{interface_a_p_i_response_a988581b4a4f55a4c1672d874fdbc3ba7}{ret\+Code}}
+\item 
+int \mbox{\hyperlink{interface_a_p_i_response_af7e1d9dd5056ce83c728353e75d5695d}{seq}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_a_p_i_response_a48a5d12a6c19dfe75637a9e17b092e55}{error\+Msg}}
+\item 
+N\+S\+Dictionary $\ast$ \mbox{\hyperlink{interface_a_p_i_response_a283b0d4f2825ce011fdeab372c2751ad}{json\+Response}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_a_p_i_response_ad1c33f32f800e5d05f91a1cbc26af31a}{message}}
+\item 
+id \mbox{\hyperlink{interface_a_p_i_response_a74c4ca779214d1d867b2dbfcfc6085f0}{user\+Data}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+封装服务器返回的结果 
+
+A\+P\+I\+Response用于封装所有请求的返回结果，包括错误码、错误信息、原始返回数据以及返回数据的json格式字典 
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_a_p_i_response_a3d61cd58f1b9fa5709fec34997fac91a}\label{interface_a_p_i_response_a3d61cd58f1b9fa5709fec34997fac91a}} 
+\index{A\+P\+I\+Response@{A\+P\+I\+Response}!detail\+Ret\+Code@{detail\+Ret\+Code}}
+\index{detail\+Ret\+Code@{detail\+Ret\+Code}!A\+P\+I\+Response@{A\+P\+I\+Response}}
+\subsubsection{\texorpdfstring{detail\+Ret\+Code}{detailRetCode}}
+{\footnotesize\ttfamily -\/ (int) detail\+Ret\+Code\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+新增的详细错误码~\newline
+detail\+Ret\+Code主要用于区分不同的错误情况，参见Open\+S\+D\+K\+Error \mbox{\Hypertarget{interface_a_p_i_response_a48a5d12a6c19dfe75637a9e17b092e55}\label{interface_a_p_i_response_a48a5d12a6c19dfe75637a9e17b092e55}} 
+\index{A\+P\+I\+Response@{A\+P\+I\+Response}!error\+Msg@{error\+Msg}}
+\index{error\+Msg@{error\+Msg}!A\+P\+I\+Response@{A\+P\+I\+Response}}
+\subsubsection{\texorpdfstring{error\+Msg}{errorMsg}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) error\+Msg\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+错误提示语 \mbox{\Hypertarget{interface_a_p_i_response_a283b0d4f2825ce011fdeab372c2751ad}\label{interface_a_p_i_response_a283b0d4f2825ce011fdeab372c2751ad}} 
+\index{A\+P\+I\+Response@{A\+P\+I\+Response}!json\+Response@{json\+Response}}
+\index{json\+Response@{json\+Response}!A\+P\+I\+Response@{A\+P\+I\+Response}}
+\subsubsection{\texorpdfstring{json\+Response}{jsonResponse}}
+{\footnotesize\ttfamily -\/ (N\+S\+Dictionary $\ast$) json\+Response\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+服务器返回数据的json格式字典~\newline
+字典内具体参数的命名和含义请参考api\+\_\+spec \mbox{\Hypertarget{interface_a_p_i_response_ad1c33f32f800e5d05f91a1cbc26af31a}\label{interface_a_p_i_response_ad1c33f32f800e5d05f91a1cbc26af31a}} 
+\index{A\+P\+I\+Response@{A\+P\+I\+Response}!message@{message}}
+\index{message@{message}!A\+P\+I\+Response@{A\+P\+I\+Response}}
+\subsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) message\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+服务器返回的原始数据字符串 \mbox{\Hypertarget{interface_a_p_i_response_a988581b4a4f55a4c1672d874fdbc3ba7}\label{interface_a_p_i_response_a988581b4a4f55a4c1672d874fdbc3ba7}} 
+\index{A\+P\+I\+Response@{A\+P\+I\+Response}!ret\+Code@{ret\+Code}}
+\index{ret\+Code@{ret\+Code}!A\+P\+I\+Response@{A\+P\+I\+Response}}
+\subsubsection{\texorpdfstring{ret\+Code}{retCode}}
+{\footnotesize\ttfamily -\/ (int) ret\+Code\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+网络请求是否成功送达服务器，以及服务器返回的数据格式是否正确~\newline
+ret\+Code具体取值可参考R\+E\+P\+O\+N\+S\+E\+\_\+\+R\+E\+S\+U\+LT \mbox{\Hypertarget{interface_a_p_i_response_af7e1d9dd5056ce83c728353e75d5695d}\label{interface_a_p_i_response_af7e1d9dd5056ce83c728353e75d5695d}} 
+\index{A\+P\+I\+Response@{A\+P\+I\+Response}!seq@{seq}}
+\index{seq@{seq}!A\+P\+I\+Response@{A\+P\+I\+Response}}
+\subsubsection{\texorpdfstring{seq}{seq}}
+{\footnotesize\ttfamily -\/ (int) seq\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+网络请求对应的递增序列号，方便内部管理 \mbox{\Hypertarget{interface_a_p_i_response_a74c4ca779214d1d867b2dbfcfc6085f0}\label{interface_a_p_i_response_a74c4ca779214d1d867b2dbfcfc6085f0}} 
+\index{A\+P\+I\+Response@{A\+P\+I\+Response}!user\+Data@{user\+Data}}
+\index{user\+Data@{user\+Data}!A\+P\+I\+Response@{A\+P\+I\+Response}}
+\subsubsection{\texorpdfstring{user\+Data}{userData}}
+{\footnotesize\ttfamily -\/ (id) user\+Data\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+用户保留数据 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Public/\+U\+Meng\+U\+Share/\+Tencent\+Open\+A\+P\+I/sdkdef.\+h\end{DoxyCompactItemize}

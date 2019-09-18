@@ -1,0 +1,106 @@
+\hypertarget{interface_alibc_config}{}\section{Alibc\+Config Class Reference}
+\label{interface_alibc_config}\index{Alibc\+Config@{Alibc\+Config}}
+
+
+{\ttfamily \#import $<$Alibc\+Config.\+h$>$}
+
+
+
+Inheritance diagram for Alibc\+Config\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{interface_alibc_config__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Alibc\+Config\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{interface_alibc_config__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_alibc_config_af5522575592d86272ad54740e0135464}{set\+Value\+:for\+Key\+:for\+Module\+:}}
+\item 
+(id) -\/ \mbox{\hyperlink{interface_alibc_config_abb945e729f62240ba5f9fe97b7430808}{value\+For\+Key\+:for\+Module\+:}}
+\item 
+\mbox{\Hypertarget{interface_alibc_config_a41c2c9b3556fbe9d4ed3394cfc95d6f6}\label{interface_alibc_config_a41c2c9b3556fbe9d4ed3394cfc95d6f6}} 
+(void) -\/ {\bfseries set\+Dictionary\+:for\+Module\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_alibc_config_a16182428d86003b3cbc5e33312a53adf}{shared\+Config}}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Alibc\+Environment \mbox{\hyperlink{interface_alibc_config_a6305a137406382c000ce05a885c455a3}{environment}}
+\item 
+Alibc\+Log\+Level \mbox{\hyperlink{interface_alibc_config_a9e05474300a7a3b8103946ca2a40937c}{log\+Level}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_alibc_config_a1fb8c04c3b4b902371a38994e3ca47ad}{utd\+Id}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_alibc_config_ab88b65de1b1b16fead01e5c2a5a0589e}{app\+Key}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+配置 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_alibc_config_af5522575592d86272ad54740e0135464}\label{interface_alibc_config_af5522575592d86272ad54740e0135464}} 
+\index{Alibc\+Config@{Alibc\+Config}!set\+Value\+:for\+Key\+:for\+Module\+:@{set\+Value\+:for\+Key\+:for\+Module\+:}}
+\index{set\+Value\+:for\+Key\+:for\+Module\+:@{set\+Value\+:for\+Key\+:for\+Module\+:}!Alibc\+Config@{Alibc\+Config}}
+\subsubsection{\texorpdfstring{set\+Value\+:for\+Key\+:for\+Module\+:()}{setValue:forKey:forModule:()}}
+{\footnotesize\ttfamily -\/ (void) set\+Value\+: \begin{DoxyParamCaption}\item[{(nullable id)}]{value }\item[{forKey:(N\+S\+String $\ast$)}]{key }\item[{forModule:(N\+S\+String $\ast$)}]{module }\end{DoxyParamCaption}}
+
+写入插件上下文 \mbox{\Hypertarget{interface_alibc_config_a16182428d86003b3cbc5e33312a53adf}\label{interface_alibc_config_a16182428d86003b3cbc5e33312a53adf}} 
+\index{Alibc\+Config@{Alibc\+Config}!shared\+Config@{shared\+Config}}
+\index{shared\+Config@{shared\+Config}!Alibc\+Config@{Alibc\+Config}}
+\subsubsection{\texorpdfstring{shared\+Config()}{sharedConfig()}}
+{\footnotesize\ttfamily + (instancetype) shared\+Config \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+共享实例 \mbox{\Hypertarget{interface_alibc_config_abb945e729f62240ba5f9fe97b7430808}\label{interface_alibc_config_abb945e729f62240ba5f9fe97b7430808}} 
+\index{Alibc\+Config@{Alibc\+Config}!value\+For\+Key\+:for\+Module\+:@{value\+For\+Key\+:for\+Module\+:}}
+\index{value\+For\+Key\+:for\+Module\+:@{value\+For\+Key\+:for\+Module\+:}!Alibc\+Config@{Alibc\+Config}}
+\subsubsection{\texorpdfstring{value\+For\+Key\+:for\+Module\+:()}{valueForKey:forModule:()}}
+{\footnotesize\ttfamily -\/ (id) value\+For\+Key\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{key }\item[{forModule:(N\+S\+String $\ast$)}]{module }\end{DoxyParamCaption}}
+
+读取插件上下文 
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_alibc_config_ab88b65de1b1b16fead01e5c2a5a0589e}\label{interface_alibc_config_ab88b65de1b1b16fead01e5c2a5a0589e}} 
+\index{Alibc\+Config@{Alibc\+Config}!app\+Key@{app\+Key}}
+\index{app\+Key@{app\+Key}!Alibc\+Config@{Alibc\+Config}}
+\subsubsection{\texorpdfstring{app\+Key}{appKey}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) app\+Key\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [strong]}}
+
+app\+Key \mbox{\Hypertarget{interface_alibc_config_a6305a137406382c000ce05a885c455a3}\label{interface_alibc_config_a6305a137406382c000ce05a885c455a3}} 
+\index{Alibc\+Config@{Alibc\+Config}!environment@{environment}}
+\index{environment@{environment}!Alibc\+Config@{Alibc\+Config}}
+\subsubsection{\texorpdfstring{environment}{environment}}
+{\footnotesize\ttfamily -\/ (Alibc\+Environment) environment\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}
+
+系统环境 \mbox{\Hypertarget{interface_alibc_config_a9e05474300a7a3b8103946ca2a40937c}\label{interface_alibc_config_a9e05474300a7a3b8103946ca2a40937c}} 
+\index{Alibc\+Config@{Alibc\+Config}!log\+Level@{log\+Level}}
+\index{log\+Level@{log\+Level}!Alibc\+Config@{Alibc\+Config}}
+\subsubsection{\texorpdfstring{log\+Level}{logLevel}}
+{\footnotesize\ttfamily -\/ (Alibc\+Log\+Level) log\+Level\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}
+
+日志级别 \mbox{\Hypertarget{interface_alibc_config_a1fb8c04c3b4b902371a38994e3ca47ad}\label{interface_alibc_config_a1fb8c04c3b4b902371a38994e3ca47ad}} 
+\index{Alibc\+Config@{Alibc\+Config}!utd\+Id@{utd\+Id}}
+\index{utd\+Id@{utd\+Id}!Alibc\+Config@{Alibc\+Config}}
+\subsubsection{\texorpdfstring{utd\+Id}{utdId}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) utd\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [strong]}}
+
+U\+T\+D\+ID 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Alibc\+Trade\+Common.\+framework/\+Headers/Alibc\+Config.\+h\end{DoxyCompactItemize}

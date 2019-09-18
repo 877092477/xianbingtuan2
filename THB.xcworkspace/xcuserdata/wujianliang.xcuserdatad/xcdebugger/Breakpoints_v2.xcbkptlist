@@ -1,0 +1,1191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Home(&#x9996;&#x9875;)/Controller/HomeViewController.m"
+            timestampString = "589962015.810219"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "214"
+            endingLineNumber = "214"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Main(&#x4e3b;&#x8981;)/controller/base/FNControllerManager.m"
+            timestampString = "590382857.3260339"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "737"
+            endingLineNumber = "737"
+            landmarkName = "+controllerWithModel:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Main(&#x4e3b;&#x8981;)/controller/base/XYTabBarViewController.m"
+            timestampString = "590291617.540045"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "284"
+            endingLineNumber = "284"
+            landmarkName = "-main_initVC"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/AppDelegate.m"
+            timestampString = "590393850.855176"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "688"
+            endingLineNumber = "688"
+            landmarkName = "-goodsPaste:withtype:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/AppDelegate.m"
+            timestampString = "590393850.856014"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "241"
+            endingLineNumber = "241"
+            landmarkName = "-observingWebbackAction:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/AppDelegate.m"
+            timestampString = "590393850.85649"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
+            landmarkName = "-application:didFinishLaunchingWithOptions:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Home(&#x9996;&#x9875;)/Controller/&#x65b0;&#x7248;&#x9996;&#x9875;/controller/FNsortHomeListNeController.m"
+            timestampString = "590406132.832304"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "245"
+            endingLineNumber = "245"
+            landmarkName = "-collectionView:cellForItemAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Home(&#x9996;&#x9875;)/Controller/&#x65b0;&#x7248;&#x9996;&#x9875;/controller/FNsortHomeListNeController.m"
+            timestampString = "590406132.8349659"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "691"
+            endingLineNumber = "691"
+            landmarkName = "-apiRequstMarqueeData"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Home(&#x9996;&#x9875;)/Controller/&#x65b0;&#x7248;&#x9996;&#x9875;/controller/FNsortHomeListNeController.m"
+            timestampString = "590406132.837446"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "707"
+            endingLineNumber = "707"
+            landmarkName = "-apiRequestMiaoShaGoods"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Home(&#x9996;&#x9875;)/Controller/&#x65b0;&#x7248;&#x9996;&#x9875;/controller/FNsortHomeListNeController.m"
+            timestampString = "590406132.8393821"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "573"
+            endingLineNumber = "573"
+            landmarkName = "-InitHeaderApiNew"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__46-[FNsortHomeListNeController InitHeaderApiNew]_block_invoke"
+                  moduleName = "&#x9985;&#x997c;&#x56e2;&#x7cbe;&#x9009;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wujianliang/Desktop/%E9%A6%85%E9%A5%BC%E5%9B%A2%202/THB/Classes(%E7%B1%BB%E6%96%87%E4%BB%B6)/Home(%E9%A6%96%E9%A1%B5)/Controller/%E6%96%B0%E7%89%88%E9%A6%96%E9%A1%B5/controller/FNsortHomeListNeController.m"
+                  timestampString = "590407274.03389"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "575"
+                  endingLineNumber = "575"
+                  offsetFromSymbolStart = "5376">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__46-[FNsortHomeListNeController InitHeaderApiNew]_block_invoke"
+                  moduleName = "&#x9985;&#x997c;&#x56e2;&#x7cbe;&#x9009;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wujianliang/Desktop/%E9%A6%85%E9%A5%BC%E5%9B%A2%202/THB/Classes(%E7%B1%BB%E6%96%87%E4%BB%B6)/Home(%E9%A6%96%E9%A1%B5)/Controller/%E6%96%B0%E7%89%88%E9%A6%96%E9%A1%B5/controller/FNsortHomeListNeController.m"
+                  timestampString = "590407274.03736"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "575"
+                  endingLineNumber = "575"
+                  offsetFromSymbolStart = "5396">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Super/SuperViewController.m"
+            timestampString = "590405634.915071"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2241"
+            endingLineNumber = "2241"
+            landmarkName = "-refreshSetting:block:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Home(&#x9996;&#x9875;)/Controller/&#x65b0;&#x7248;&#x9996;&#x9875;/controller/FNSortHomeDeController.m"
+            timestampString = "589962015.843044"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "635"
+            endingLineNumber = "635"
+            landmarkName = "-onItemChange:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Home(&#x9996;&#x9875;)/Controller/&#x65b0;&#x7248;&#x9996;&#x9875;/controller/FNsortHomeListNeController.m"
+            timestampString = "590406132.840952"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "439"
+            endingLineNumber = "439"
+            landmarkName = "@implementation FNsortHomeListNeController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Home(&#x9996;&#x9875;)/Controller/&#x65b0;&#x7248;&#x9996;&#x9875;/controller/FNsortHomeListNeController.m"
+            timestampString = "590406132.843493"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "586"
+            endingLineNumber = "586"
+            landmarkName = "-InitHeaderApiNew"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__46-[FNsortHomeListNeController InitHeaderApiNew]_block_invoke"
+                  moduleName = "&#x9985;&#x997c;&#x56e2;&#x7cbe;&#x9009;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wujianliang/Desktop/%E9%A6%85%E9%A5%BC%E5%9B%A2%202/THB/Classes(%E7%B1%BB%E6%96%87%E4%BB%B6)/Home(%E9%A6%96%E9%A1%B5)/Controller/%E6%96%B0%E7%89%88%E9%A6%96%E9%A1%B5/controller/FNsortHomeListNeController.m"
+                  timestampString = "590407274.066342"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "588"
+                  endingLineNumber = "588"
+                  offsetFromSymbolStart = "5940">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__46-[FNsortHomeListNeController InitHeaderApiNew]_block_invoke"
+                  moduleName = "&#x9985;&#x997c;&#x56e2;&#x7cbe;&#x9009;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wujianliang/Desktop/%E9%A6%85%E9%A5%BC%E5%9B%A2%202/THB/Classes(%E7%B1%BB%E6%96%87%E4%BB%B6)/Home(%E9%A6%96%E9%A1%B5)/Controller/%E6%96%B0%E7%89%88%E9%A6%96%E9%A1%B5/controller/FNsortHomeListNeController.m"
+                  timestampString = "590407274.0700901"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "588"
+                  endingLineNumber = "588"
+                  offsetFromSymbolStart = "5960">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Home(&#x9996;&#x9875;)/Controller/&#x65b0;&#x7248;&#x9996;&#x9875;/controller/FNsortHomeListNeController.m"
+            timestampString = "590406132.845106"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "241"
+            endingLineNumber = "241"
+            landmarkName = "-collectionView:cellForItemAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Home(&#x9996;&#x9875;)/Controller/&#x65b0;&#x7248;&#x9996;&#x9875;/controller/FNsortHomeListNeController.m"
+            timestampString = "590406132.846198"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "240"
+            endingLineNumber = "240"
+            landmarkName = "-collectionView:cellForItemAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Main(&#x4e3b;&#x8981;)/controller/base/FNControllerManager.m"
+            timestampString = "590382857.330158"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "691"
+            endingLineNumber = "691"
+            landmarkName = "+controllerWithModel:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Mine(&#x6211;&#x7684;)/Others/&#x65b0;&#x7248;&#x7edf;&#x8ba1;&#x62a5;&#x8868;/controller/FNstatisticsDeController.m"
+            timestampString = "589971375.63401"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Mine(&#x6211;&#x7684;)/Others/&#x65b0;&#x7248;&#x7edf;&#x8ba1;&#x62a5;&#x8868;/controller/FNstatisticsDeController.m"
+            timestampString = "589971375.634497"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "553"
+            endingLineNumber = "553"
+            landmarkName = "-apiRequestScreening"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[FNstatisticsDeController apiRequestScreening]"
+                  moduleName = "&#x9985;&#x997c;&#x56e2;&#x7cbe;&#x9009;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wujianliang/Desktop/%E9%A6%85%E9%A5%BC%E5%9B%A2%202/THB/Classes(%E7%B1%BB%E6%96%87%E4%BB%B6)/Mine(%E6%88%91%E7%9A%84)/Others/%E6%96%B0%E7%89%88%E7%BB%9F%E8%AE%A1%E6%8A%A5%E8%A1%A8/controller/FNstatisticsDeController.m"
+                  timestampString = "590407274.152433"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "553"
+                  endingLineNumber = "553"
+                  offsetFromSymbolStart = "636">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__47-[FNstatisticsDeController apiRequestScreening]_block_invoke"
+                  moduleName = "&#x9985;&#x997c;&#x56e2;&#x7cbe;&#x9009;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wujianliang/Desktop/%E9%A6%85%E9%A5%BC%E5%9B%A2%202/THB/Classes(%E7%B1%BB%E6%96%87%E4%BB%B6)/Mine(%E6%88%91%E7%9A%84)/Others/%E6%96%B0%E7%89%88%E7%BB%9F%E8%AE%A1%E6%8A%A5%E8%A1%A8/controller/FNstatisticsDeController.m"
+                  timestampString = "590407274.1565551"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "554"
+                  endingLineNumber = "554"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Mine(&#x6211;&#x7684;)/Others/&#x65b0;&#x7248;&#x8d26;&#x5355;/others/&#x7b5b;&#x9009;view/view/FNchildItemSeCell.m"
+            timestampString = "589968690.798301"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "-setModel:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Mine(&#x6211;&#x7684;)/Others/&#x65b0;&#x7248;&#x7edf;&#x8ba1;&#x62a5;&#x8868;/controller/FNstatisticsDeController.m"
+            timestampString = "589971375.634886"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "659"
+            endingLineNumber = "659"
+            landmarkName = "-inConditionConfirmClick:withStart:withOver:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Mine(&#x6211;&#x7684;)/Others/&#x65b0;&#x7248;&#x7edf;&#x8ba1;&#x62a5;&#x8868;/controller/FNstatisticsDeController.m"
+            timestampString = "589971375.6351351"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "554"
+            endingLineNumber = "554"
+            landmarkName = "-apiRequestScreening"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Mine(&#x6211;&#x7684;)/Others/&#x65b0;&#x7248;&#x7edf;&#x8ba1;&#x62a5;&#x8868;/controller/FNstatisticsDeController.m"
+            timestampString = "589971375.635424"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "571"
+            endingLineNumber = "571"
+            landmarkName = "-apiRequestScreening"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Mine(&#x6211;&#x7684;)/Others/&#x65b0;&#x7248;&#x7edf;&#x8ba1;&#x62a5;&#x8868;/controller/FNstatisticsDeController.m"
+            timestampString = "589971375.6357419"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "578"
+            endingLineNumber = "578"
+            landmarkName = "-apiRequestScreening"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Mine(&#x6211;&#x7684;)/Others/&#x65b0;&#x7248;&#x8d26;&#x5355;/others/&#x7b5b;&#x9009;view/view/FNReckChildDeView.m"
+            timestampString = "589971375.636032"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "265"
+            endingLineNumber = "265"
+            landmarkName = "-collectionView:numberOfItemsInSection:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Main(&#x4e3b;&#x8981;)/controller/base/FNControllerManager.m"
+            timestampString = "590382857.332788"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "264"
+            endingLineNumber = "264"
+            landmarkName = "+controllerWithModel:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Home(&#x9996;&#x9875;)/Others/&#x514d;&#x5355;&#x798f;&#x5229;/controller/FNOddWelfareNeController.m"
+            timestampString = "590403169.017627"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "-viewWillDisappear:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Main(&#x4e3b;&#x8981;)/controller/base/FNControllerManager.m"
+            timestampString = "590382857.334224"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "843"
+            endingLineNumber = "843"
+            landmarkName = "+controllerWithModel:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Home(&#x9996;&#x9875;)/Others/&#x514d;&#x5355;&#x798f;&#x5229;/controller/FNNewWelfareNeController.m"
+            timestampString = "590403169.018695"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Main(&#x4e3b;&#x8981;)/controller/base/FNControllerManager.m"
+            timestampString = "590382857.3348939"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1417"
+            endingLineNumber = "1417"
+            landmarkName = "+goTBDetailWithUrl:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/web&#xff08;&#x516c;&#x5171;&#xff09;/FNTBWebViewController.m"
+            timestampString = "589971068.400224"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "-openTB"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Home(&#x9996;&#x9875;)/Others/&#x5546;&#x54c1;&#x4e13;&#x573a;/controller/FNCommodityFieldDeController.m"
+            timestampString = "589971636.9637001"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "-viewWillAppear:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/PromotionalList/other/Normal/controller/FNPNormalProController.m"
+            timestampString = "589971779.548376"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Home(&#x9996;&#x9875;)/Controller/&#x65b0;&#x7248;&#x9996;&#x9875;/controller/FNsortHomeListNeController.m"
+            timestampString = "590406132.848326"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "449"
+            endingLineNumber = "449"
+            landmarkName = "-cateGoodsComposingAction:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Home(&#x9996;&#x9875;)/Controller/&#x65b0;&#x7248;&#x9996;&#x9875;/controller/FNsortHomeListNeController.m"
+            timestampString = "590406132.850914"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "442"
+            endingLineNumber = "442"
+            landmarkName = "-cateGoodsSortAction:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Main(&#x4e3b;&#x8981;)/controller/base/FNControllerManager.m"
+            timestampString = "590382857.3360749"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "426"
+            endingLineNumber = "426"
+            landmarkName = "+controllerWithModel:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Super/SuperViewController.m"
+            timestampString = "590405634.9170851"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "354"
+            endingLineNumber = "354"
+            landmarkName = "-goToProductDetailsWithModel:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Super/SuperViewController.m"
+            timestampString = "590405634.9175071"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2146"
+            endingLineNumber = "2146"
+            landmarkName = "-loadOtherVCWithModel:andInfo:outBlock:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Super/SuperViewController.m"
+            timestampString = "590405634.9178801"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2143"
+            endingLineNumber = "2143"
+            landmarkName = "-loadOtherVCWithModel:andInfo:outBlock:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/DouQuan/controllers/FNDouQuanController.m"
+            timestampString = "590293363.345662"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "422"
+            endingLineNumber = "422"
+            landmarkName = "-handleDoubleTap:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/DouQuan/controllers/FNDouQuanController.m"
+            timestampString = "590293363.347097"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "328"
+            endingLineNumber = "328"
+            landmarkName = "-requestMain"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/DouQuan/controllers/FNDouQuanController.m"
+            timestampString = "590293363.3483011"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "345"
+            endingLineNumber = "345"
+            landmarkName = "-saveVideo:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/AppDelegate.m"
+            timestampString = "590393850.858703"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "255"
+            endingLineNumber = "255"
+            landmarkName = "-initLaunchMethod"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/AppDelegate.m"
+            timestampString = "590393850.859352"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "539"
+            endingLineNumber = "539"
+            landmarkName = "-getBaseSettingMethod:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/CircleofFriends(&#x670b;&#x53cb;&#x5708;)/controller/COFListController.m"
+            timestampString = "590307718.5104491"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "729"
+            endingLineNumber = "729"
+            landmarkName = "-apiRequestSort"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/CircleofFriends(&#x670b;&#x53cb;&#x5708;)/controller/COFListController.m"
+            timestampString = "590307718.5169719"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "793"
+            endingLineNumber = "793"
+            landmarkName = "-apiRequestShopType"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Mine(&#x6211;&#x7684;)/controller/FNMineController.m"
+            timestampString = "590318919.574133"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "503"
+            endingLineNumber = "503"
+            landmarkName = "-requestDatas:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__33-[FNMineController requestDatas:]_block_invoke"
+                  moduleName = "&#x9985;&#x997c;&#x56e2;&#x7cbe;&#x9009;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wujianliang/Desktop/%E9%A6%85%E9%A5%BC%E5%9B%A2%202/THB/Classes(%E7%B1%BB%E6%96%87%E4%BB%B6)/Mine(%E6%88%91%E7%9A%84)/controller/FNMineController.m"
+                  timestampString = "590309255.657033"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "503"
+                  endingLineNumber = "503"
+                  offsetFromSymbolStart = "1124">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__33-[FNMineController requestDatas:]_block_invoke_2"
+                  moduleName = "&#x9985;&#x997c;&#x56e2;&#x7cbe;&#x9009;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wujianliang/Desktop/%E9%A6%85%E9%A5%BC%E5%9B%A2%202/THB/Classes(%E7%B1%BB%E6%96%87%E4%BB%B6)/Mine(%E6%88%91%E7%9A%84)/controller/FNMineController.m"
+                  timestampString = "590309255.662086"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "503"
+                  endingLineNumber = "503"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Mine(&#x6211;&#x7684;)/controller/FNMineController.m"
+            timestampString = "590318919.575989"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "829"
+            endingLineNumber = "829"
+            landmarkName = "-didWithdrawClick:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Mine(&#x6211;&#x7684;)/controller/FNMineController.m"
+            timestampString = "590318919.5766391"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "633"
+            endingLineNumber = "633"
+            landmarkName = "-showBindAlert:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Mine(&#x6211;&#x7684;)/controller/FNMineController.m"
+            timestampString = "590319110.5370671"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "792"
+            endingLineNumber = "792"
+            landmarkName = "-scrollViewDidScroll:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/ShoppingRebate(&#x8d2d;&#x7269;&#x8fd4;&#x5229;)/controller/JMTutorialController.m"
+            timestampString = "590319741.8887939"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/&#x5546;&#x54c1;&#x5217;&#x8868;/Others/Detail/controller/FNNewProDetailController.m"
+            timestampString = "590407269.870517"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "701"
+            endingLineNumber = "701"
+            landmarkName = "-clickedTitleView:atIndex:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Public/View/ScrollView/JMTitleScrollView.m"
+            timestampString = "590377079.682995"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "-observeTitleButtonClicked:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/&#x5546;&#x54c1;&#x5217;&#x8868;/Others/Detail/controller/FNNewProDetailController.m"
+            timestampString = "590407269.874936"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "533"
+            endingLineNumber = "533"
+            landmarkName = "-collectionView:cellForItemAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/&#x5546;&#x54c1;&#x5217;&#x8868;/Others/Detail/controller/FNNewProDetailController.m"
+            timestampString = "590407269.8754849"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "538"
+            endingLineNumber = "538"
+            landmarkName = "-collectionView:cellForItemAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/&#x5546;&#x54c1;&#x5217;&#x8868;/Others/Detail/controller/FNNewProDetailController.m"
+            timestampString = "590407269.8765219"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "546"
+            endingLineNumber = "546"
+            landmarkName = "-collectionView:cellForItemAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/&#x5546;&#x54c1;&#x5217;&#x8868;/Others/Detail/controller/FNNewProDetailController.m"
+            timestampString = "590407269.876947"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "225"
+            endingLineNumber = "225"
+            landmarkName = "-header"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/&#x5546;&#x54c1;&#x5217;&#x8868;/Others/Detail/controller/FNNewProDetailController.m"
+            timestampString = "590407269.878088"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "374"
+            endingLineNumber = "374"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/&#x5546;&#x54c1;&#x5217;&#x8868;/Others/Detail/view/FNNewProductDetailHeader.m"
+            timestampString = "590381442.710314"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "880"
+            endingLineNumber = "880"
+            landmarkName = "-setModel:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/&#x5546;&#x54c1;&#x5217;&#x8868;/Others/Detail/view/FNNewProductDetailHeader.m"
+            timestampString = "590381442.710906"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "797"
+            endingLineNumber = "797"
+            landmarkName = "-setModel:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Home(&#x9996;&#x9875;)/Others/&#x514d;&#x5355;&#x798f;&#x5229;/controller/FNOddWelfareNeController.m"
+            timestampString = "590403169.02019"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
+            landmarkName = "-collectionView:cellForItemAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Home(&#x9996;&#x9875;)/Controller/&#x65b0;&#x7248;&#x9996;&#x9875;/controller/FNsortHomeListNeController.m"
+            timestampString = "590406132.863346"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "400"
+            endingLineNumber = "400"
+            landmarkName = "-collectionView:didSelectItemAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Super/SuperViewController.m"
+            timestampString = "590405634.923152"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "862"
+            endingLineNumber = "862"
+            landmarkName = "-goProductVCWithModel:withData:isLive:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/FNFreeProductDetail(&#x514d;&#x5355;&#x8be6;&#x60c5;)/controller/FNFreeProductDetailController.m"
+            timestampString = "590407269.879433"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "-cycleScrollView:didSelectItemAtIndex:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/&#x5546;&#x54c1;&#x5217;&#x8868;/Others/Detail/controller/FNNewProDetailController.m"
+            timestampString = "590407269.879858"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
+            landmarkName = "-header"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "THB/Classes(&#x7c7b;&#x6587;&#x4ef6;)/Home(&#x9996;&#x9875;)/Others/&#x514d;&#x5355;&#x798f;&#x5229;/controller/FNOddWelfareNeController.m"
+            timestampString = "590407367.080297"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
+            landmarkName = "-collectionView:cellForItemAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

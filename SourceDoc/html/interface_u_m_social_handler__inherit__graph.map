@@ -1,0 +1,5 @@
+<map id="UMSocialHandler" name="UMSocialHandler">
+<area shape="rect" id="node4" href="$interface_u_m_social_q_q_handler.html" title="UMSocialQQHandler" alt="" coords="5,152,151,177"/>
+<area shape="rect" id="node5" href="$interface_u_m_social_sina_handler.html" title="UMSocialSinaHandler" alt="" coords="176,152,327,177"/>
+<area shape="rect" id="node6" href="$interface_u_m_social_wechat_handler.html" title="UMSocialWechatHandler" alt="" coords="352,152,522,177"/>
+</map>

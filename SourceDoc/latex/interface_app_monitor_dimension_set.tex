@@ -1,0 +1,127 @@
+\hypertarget{interface_app_monitor_dimension_set}{}\section{App\+Monitor\+Dimension\+Set Class Reference}
+\label{interface_app_monitor_dimension_set}\index{App\+Monitor\+Dimension\+Set@{App\+Monitor\+Dimension\+Set}}
+
+
+Inheritance diagram for App\+Monitor\+Dimension\+Set\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{interface_app_monitor_dimension_set__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for App\+Monitor\+Dimension\+Set\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{interface_app_monitor_dimension_set__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_app_monitor_dimension_set_ac39a36ee4feec59e5bb98e7070f20bf6}\label{interface_app_monitor_dimension_set_ac39a36ee4feec59e5bb98e7070f20bf6}} 
+(B\+O\+OL) -\/ {\bfseries valid\+:}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_app_monitor_dimension_set_a7bac53c2d5a60d6994f86a6fb9203a83}{add\+Dimension\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_app_monitor_dimension_set_a870cca90ab09746a0ae54cdbe10e0327}{add\+Dimension\+With\+Name\+:}}
+\item 
+(\mbox{\hyperlink{interface_app_monitor_dimension}{App\+Monitor\+Dimension}} $\ast$) -\/ \mbox{\hyperlink{interface_app_monitor_dimension_set_a8a5e89b28f399eea797953e6e2420330}{dimension\+For\+Name\+:}}
+\item 
+\mbox{\Hypertarget{interface_app_monitor_dimension_set_ad09b5c9fc7b2423d82ff51fa139206c3}\label{interface_app_monitor_dimension_set_ad09b5c9fc7b2423d82ff51fa139206c3}} 
+(N\+S\+Mutable\+Ordered\+Set $\ast$) -\/ {\bfseries dimensions}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_app_monitor_dimension_set_abdb8fb0d024ceb92c0a386317702a04e}{set\+Constant\+Value\+:}}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_app_monitor_dimension_set_a7857e701c8f458842a22fe4450a4e8ee}{set\+With\+Array\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_app_monitor_dimension_set_a7bac53c2d5a60d6994f86a6fb9203a83}\label{interface_app_monitor_dimension_set_a7bac53c2d5a60d6994f86a6fb9203a83}} 
+\index{App\+Monitor\+Dimension\+Set@{App\+Monitor\+Dimension\+Set}!add\+Dimension\+:@{add\+Dimension\+:}}
+\index{add\+Dimension\+:@{add\+Dimension\+:}!App\+Monitor\+Dimension\+Set@{App\+Monitor\+Dimension\+Set}}
+\subsubsection{\texorpdfstring{add\+Dimension\+:()}{addDimension:()}}
+{\footnotesize\ttfamily -\/ (void) add\+Dimension\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_app_monitor_dimension}{App\+Monitor\+Dimension}} $\ast$)}]{dimension }\end{DoxyParamCaption}}
+
+增加维度
+
+
+\begin{DoxyParams}{Parameters}
+{\em dimension} & 维度对象 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_app_monitor_dimension_set_a870cca90ab09746a0ae54cdbe10e0327}\label{interface_app_monitor_dimension_set_a870cca90ab09746a0ae54cdbe10e0327}} 
+\index{App\+Monitor\+Dimension\+Set@{App\+Monitor\+Dimension\+Set}!add\+Dimension\+With\+Name\+:@{add\+Dimension\+With\+Name\+:}}
+\index{add\+Dimension\+With\+Name\+:@{add\+Dimension\+With\+Name\+:}!App\+Monitor\+Dimension\+Set@{App\+Monitor\+Dimension\+Set}}
+\subsubsection{\texorpdfstring{add\+Dimension\+With\+Name\+:()}{addDimensionWithName:()}}
+{\footnotesize\ttfamily -\/ (void) add\+Dimension\+With\+Name\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{name }\end{DoxyParamCaption}}
+
+增加维度对象
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & 维度名称 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_app_monitor_dimension_set_a8a5e89b28f399eea797953e6e2420330}\label{interface_app_monitor_dimension_set_a8a5e89b28f399eea797953e6e2420330}} 
+\index{App\+Monitor\+Dimension\+Set@{App\+Monitor\+Dimension\+Set}!dimension\+For\+Name\+:@{dimension\+For\+Name\+:}}
+\index{dimension\+For\+Name\+:@{dimension\+For\+Name\+:}!App\+Monitor\+Dimension\+Set@{App\+Monitor\+Dimension\+Set}}
+\subsubsection{\texorpdfstring{dimension\+For\+Name\+:()}{dimensionForName:()}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_app_monitor_dimension}{App\+Monitor\+Dimension}} $\ast$) dimension\+For\+Name\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{name }\end{DoxyParamCaption}}
+
+获取维度对象
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & 维度名称 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_app_monitor_dimension_set_abdb8fb0d024ceb92c0a386317702a04e}\label{interface_app_monitor_dimension_set_abdb8fb0d024ceb92c0a386317702a04e}} 
+\index{App\+Monitor\+Dimension\+Set@{App\+Monitor\+Dimension\+Set}!set\+Constant\+Value\+:@{set\+Constant\+Value\+:}}
+\index{set\+Constant\+Value\+:@{set\+Constant\+Value\+:}!App\+Monitor\+Dimension\+Set@{App\+Monitor\+Dimension\+Set}}
+\subsubsection{\texorpdfstring{set\+Constant\+Value\+:()}{setConstantValue:()}}
+{\footnotesize\ttfamily -\/ (void) set\+Constant\+Value\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_app_monitor_dimension_value_set}{App\+Monitor\+Dimension\+Value\+Set}} $\ast$)}]{dimension\+Values }\end{DoxyParamCaption}}
+
+设置定值维度
+
+
+\begin{DoxyParams}{Parameters}
+{\em dimension\+Values} & key为维度名称，value为内容 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_app_monitor_dimension_set_a7857e701c8f458842a22fe4450a4e8ee}\label{interface_app_monitor_dimension_set_a7857e701c8f458842a22fe4450a4e8ee}} 
+\index{App\+Monitor\+Dimension\+Set@{App\+Monitor\+Dimension\+Set}!set\+With\+Array\+:@{set\+With\+Array\+:}}
+\index{set\+With\+Array\+:@{set\+With\+Array\+:}!App\+Monitor\+Dimension\+Set@{App\+Monitor\+Dimension\+Set}}
+\subsubsection{\texorpdfstring{set\+With\+Array\+:()}{setWithArray:()}}
+{\footnotesize\ttfamily + (instancetype) set\+With\+Array\+: \begin{DoxyParamCaption}\item[{(N\+S\+Array $\ast$)}]{array }\end{DoxyParamCaption}}
+
+根据列表初始化指标集合对象
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & N\+S\+String类型的数组 string为\+Name; \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+U\+T\+Mini.\+framework/\+Versions/\+A/\+Headers/App\+Monitor\+Dimension\+Set.\+h\end{DoxyCompactItemize}

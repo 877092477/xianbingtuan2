@@ -1,0 +1,192 @@
+\hypertarget{interface_alipay_s_d_k}{}\section{Alipay\+S\+DK Class Reference}
+\label{interface_alipay_s_d_k}\index{Alipay\+S\+DK@{Alipay\+S\+DK}}
+
+
+Inheritance diagram for Alipay\+S\+DK\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{interface_alipay_s_d_k__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Alipay\+S\+DK\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{interface_alipay_s_d_k__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_alipay_s_d_k_ab454a56d82c72b10d857b44213699386}{pay\+Order\+:from\+Scheme\+:callback\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_alipay_s_d_k_a00d830efbcfdc889493db7e4e5b280b2}{process\+Order\+With\+Payment\+Result\+:standby\+Callback\+:}}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{interface_alipay_s_d_k_a23441b8570f40e561a4b21c5adad14bf}{is\+Logined}}
+\item 
+(N\+S\+String $\ast$) -\/ \mbox{\hyperlink{interface_alipay_s_d_k_abe09d5468b13580065fd0b06df92c8b4}{current\+Version}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_alipay_s_d_k_a3397bb35d1eda5051f5081d5841f2d32}{set\+Url\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_alipay_s_d_k_a59acbee9c3cc7237cba73419de321870}{auth\+With\+Info\+:callback\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_alipay_s_d_k_a5ec0d508c6d3a16509a3336646cbe07a}{process\+Auth\+Result\+:standby\+Callback\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_alipay_s_d_k_a8eb24fd6ba56b0d0fb88e12452f9fa23}{auth\+\_\+\+V2\+With\+Info\+:from\+Scheme\+:callback\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_alipay_s_d_k_af20f1cdb587951f83f61fdab84dd5bde}{process\+Auth\+\_\+\+V2\+Result\+:standby\+Callback\+:}}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\mbox{\hyperlink{interface_alipay_s_d_k}{Alipay\+S\+DK}} $\ast$) + \mbox{\hyperlink{interface_alipay_s_d_k_aee9e226315592b79d221e0cfd8959971}{default\+Service}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_alipay_s_d_k_a8eb24fd6ba56b0d0fb88e12452f9fa23}\label{interface_alipay_s_d_k_a8eb24fd6ba56b0d0fb88e12452f9fa23}} 
+\index{Alipay\+S\+DK@{Alipay\+S\+DK}!auth\+\_\+\+V2\+With\+Info\+:from\+Scheme\+:callback\+:@{auth\+\_\+\+V2\+With\+Info\+:from\+Scheme\+:callback\+:}}
+\index{auth\+\_\+\+V2\+With\+Info\+:from\+Scheme\+:callback\+:@{auth\+\_\+\+V2\+With\+Info\+:from\+Scheme\+:callback\+:}!Alipay\+S\+DK@{Alipay\+S\+DK}}
+\subsubsection{\texorpdfstring{auth\+\_\+\+V2\+With\+Info\+:from\+Scheme\+:callback\+:()}{auth\_V2WithInfo:fromScheme:callback:()}}
+{\footnotesize\ttfamily -\/ (void) auth\+\_\+\+V2\+With\+Info\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{info\+Str }\item[{fromScheme:(N\+S\+String $\ast$)}]{scheme\+Str }\item[{callback:(Completion\+Block)}]{completion\+Block }\end{DoxyParamCaption}}
+
+快登授权2.0
+
+
+\begin{DoxyParams}{Parameters}
+{\em info\+Str} & 授权请求信息字符串 \\
+\hline
+{\em scheme\+Str} & 调用授权的app注册在info.\+plist中的scheme \\
+\hline
+{\em completion\+Block} & 授权结果回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_alipay_s_d_k_a59acbee9c3cc7237cba73419de321870}\label{interface_alipay_s_d_k_a59acbee9c3cc7237cba73419de321870}} 
+\index{Alipay\+S\+DK@{Alipay\+S\+DK}!auth\+With\+Info\+:callback\+:@{auth\+With\+Info\+:callback\+:}}
+\index{auth\+With\+Info\+:callback\+:@{auth\+With\+Info\+:callback\+:}!Alipay\+S\+DK@{Alipay\+S\+DK}}
+\subsubsection{\texorpdfstring{auth\+With\+Info\+:callback\+:()}{authWithInfo:callback:()}}
+{\footnotesize\ttfamily -\/ (void) auth\+With\+Info\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_pay_auth_info}{A\+Pay\+Auth\+Info}} $\ast$)}]{auth\+Info }\item[{callback:(Completion\+Block)}]{completion\+Block }\end{DoxyParamCaption}}
+
+快登授权 
+\begin{DoxyParams}{Parameters}
+{\em auth\+Info} & 需授权信息 \\
+\hline
+{\em completion\+Block} & 授权结果回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_alipay_s_d_k_abe09d5468b13580065fd0b06df92c8b4}\label{interface_alipay_s_d_k_abe09d5468b13580065fd0b06df92c8b4}} 
+\index{Alipay\+S\+DK@{Alipay\+S\+DK}!current\+Version@{current\+Version}}
+\index{current\+Version@{current\+Version}!Alipay\+S\+DK@{Alipay\+S\+DK}}
+\subsubsection{\texorpdfstring{current\+Version()}{currentVersion()}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) current\+Version \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+当前版本号
+
+\begin{DoxyReturn}{Returns}
+当前版本字符串 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_alipay_s_d_k_aee9e226315592b79d221e0cfd8959971}\label{interface_alipay_s_d_k_aee9e226315592b79d221e0cfd8959971}} 
+\index{Alipay\+S\+DK@{Alipay\+S\+DK}!default\+Service@{default\+Service}}
+\index{default\+Service@{default\+Service}!Alipay\+S\+DK@{Alipay\+S\+DK}}
+\subsubsection{\texorpdfstring{default\+Service()}{defaultService()}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_alipay_s_d_k}{Alipay\+S\+DK}} $\ast$) default\+Service \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+创建支付单例服务
+
+\begin{DoxyReturn}{Returns}
+返回单例对象 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_alipay_s_d_k_a23441b8570f40e561a4b21c5adad14bf}\label{interface_alipay_s_d_k_a23441b8570f40e561a4b21c5adad14bf}} 
+\index{Alipay\+S\+DK@{Alipay\+S\+DK}!is\+Logined@{is\+Logined}}
+\index{is\+Logined@{is\+Logined}!Alipay\+S\+DK@{Alipay\+S\+DK}}
+\subsubsection{\texorpdfstring{is\+Logined()}{isLogined()}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) is\+Logined \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+是否已经使用过
+
+\begin{DoxyReturn}{Returns}
+Y\+E\+S为已经使用过，\+N\+O反之 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_alipay_s_d_k_ab454a56d82c72b10d857b44213699386}\label{interface_alipay_s_d_k_ab454a56d82c72b10d857b44213699386}} 
+\index{Alipay\+S\+DK@{Alipay\+S\+DK}!pay\+Order\+:from\+Scheme\+:callback\+:@{pay\+Order\+:from\+Scheme\+:callback\+:}}
+\index{pay\+Order\+:from\+Scheme\+:callback\+:@{pay\+Order\+:from\+Scheme\+:callback\+:}!Alipay\+S\+DK@{Alipay\+S\+DK}}
+\subsubsection{\texorpdfstring{pay\+Order\+:from\+Scheme\+:callback\+:()}{payOrder:fromScheme:callback:()}}
+{\footnotesize\ttfamily -\/ (void) pay\+Order\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{order\+Str }\item[{fromScheme:(N\+S\+String $\ast$)}]{scheme\+Str }\item[{callback:(Completion\+Block)}]{completion\+Block }\end{DoxyParamCaption}}
+
+支付接口
+
+
+\begin{DoxyParams}{Parameters}
+{\em order\+Str} & 订单信息 \\
+\hline
+{\em scheme\+Str} & 调用支付的app注册在info.\+plist中的scheme \\
+\hline
+{\em compltion\+Block} & 支付结果回调\+Block \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_alipay_s_d_k_af20f1cdb587951f83f61fdab84dd5bde}\label{interface_alipay_s_d_k_af20f1cdb587951f83f61fdab84dd5bde}} 
+\index{Alipay\+S\+DK@{Alipay\+S\+DK}!process\+Auth\+\_\+\+V2\+Result\+:standby\+Callback\+:@{process\+Auth\+\_\+\+V2\+Result\+:standby\+Callback\+:}}
+\index{process\+Auth\+\_\+\+V2\+Result\+:standby\+Callback\+:@{process\+Auth\+\_\+\+V2\+Result\+:standby\+Callback\+:}!Alipay\+S\+DK@{Alipay\+S\+DK}}
+\subsubsection{\texorpdfstring{process\+Auth\+\_\+\+V2\+Result\+:standby\+Callback\+:()}{processAuth\_V2Result:standbyCallback:()}}
+{\footnotesize\ttfamily -\/ (void) process\+Auth\+\_\+\+V2\+Result\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{result\+Url }\item[{standbyCallback:(Completion\+Block)}]{completion\+Block }\end{DoxyParamCaption}}
+
+处理授权信息\+Url
+
+
+\begin{DoxyParams}{Parameters}
+{\em result\+Url} & 钱包返回的授权结果url \\
+\hline
+{\em completion\+Block} & 跳授权结果回调，保证跳转钱包授权过程中，即使调用方app被系统kill时，能通过这个回调取到支付结果。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_alipay_s_d_k_a5ec0d508c6d3a16509a3336646cbe07a}\label{interface_alipay_s_d_k_a5ec0d508c6d3a16509a3336646cbe07a}} 
+\index{Alipay\+S\+DK@{Alipay\+S\+DK}!process\+Auth\+Result\+:standby\+Callback\+:@{process\+Auth\+Result\+:standby\+Callback\+:}}
+\index{process\+Auth\+Result\+:standby\+Callback\+:@{process\+Auth\+Result\+:standby\+Callback\+:}!Alipay\+S\+DK@{Alipay\+S\+DK}}
+\subsubsection{\texorpdfstring{process\+Auth\+Result\+:standby\+Callback\+:()}{processAuthResult:standbyCallback:()}}
+{\footnotesize\ttfamily -\/ (void) process\+Auth\+Result\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{result\+Url }\item[{standbyCallback:(Completion\+Block)}]{completion\+Block }\end{DoxyParamCaption}}
+
+处理授权信息\+Url
+
+
+\begin{DoxyParams}{Parameters}
+{\em result\+Url} & 钱包返回的授权结果url \\
+\hline
+{\em completion\+Block} & 跳授权结果回调，保证跳转钱包授权过程中，即使调用方app被系统kill时，能通过这个回调取到支付结果。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_alipay_s_d_k_a00d830efbcfdc889493db7e4e5b280b2}\label{interface_alipay_s_d_k_a00d830efbcfdc889493db7e4e5b280b2}} 
+\index{Alipay\+S\+DK@{Alipay\+S\+DK}!process\+Order\+With\+Payment\+Result\+:standby\+Callback\+:@{process\+Order\+With\+Payment\+Result\+:standby\+Callback\+:}}
+\index{process\+Order\+With\+Payment\+Result\+:standby\+Callback\+:@{process\+Order\+With\+Payment\+Result\+:standby\+Callback\+:}!Alipay\+S\+DK@{Alipay\+S\+DK}}
+\subsubsection{\texorpdfstring{process\+Order\+With\+Payment\+Result\+:standby\+Callback\+:()}{processOrderWithPaymentResult:standbyCallback:()}}
+{\footnotesize\ttfamily -\/ (void) process\+Order\+With\+Payment\+Result\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{result\+Url }\item[{standbyCallback:(Completion\+Block)}]{completion\+Block }\end{DoxyParamCaption}}
+
+处理钱包或者独立快捷app支付跳回商户app携带的支付结果\+Url
+
+
+\begin{DoxyParams}{Parameters}
+{\em result\+Url} & 支付结果url，传入后由\+S\+D\+K解析，统一在上面的pay方法的callback中回调 \\
+\hline
+{\em completion\+Block} & 跳钱包支付结果回调，保证跳转钱包支付过程中，即使调用方app被系统kill时，能通过这个回调取到支付结果。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_alipay_s_d_k_a3397bb35d1eda5051f5081d5841f2d32}\label{interface_alipay_s_d_k_a3397bb35d1eda5051f5081d5841f2d32}} 
+\index{Alipay\+S\+DK@{Alipay\+S\+DK}!set\+Url\+:@{set\+Url\+:}}
+\index{set\+Url\+:@{set\+Url\+:}!Alipay\+S\+DK@{Alipay\+S\+DK}}
+\subsubsection{\texorpdfstring{set\+Url\+:()}{setUrl:()}}
+{\footnotesize\ttfamily -\/ (void) set\+Url\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{url }\end{DoxyParamCaption}}
+
+測試所用，realse包无效
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & 测试环境 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Alipay\+S\+D\+K.\+framework/\+Headers/Alipay\+S\+D\+K.\+h\end{DoxyCompactItemize}

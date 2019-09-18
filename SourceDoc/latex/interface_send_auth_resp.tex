@@ -1,0 +1,68 @@
+\hypertarget{interface_send_auth_resp}{}\section{Send\+Auth\+Resp Class Reference}
+\label{interface_send_auth_resp}\index{Send\+Auth\+Resp@{Send\+Auth\+Resp}}
+
+
+微信处理完第三方程序的认证和权限申请后向第三方程序回送的处理结果。  
+
+
+
+
+{\ttfamily \#import $<$W\+X\+Api\+Object.\+h$>$}
+
+
+
+Inheritance diagram for Send\+Auth\+Resp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{interface_send_auth_resp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Send\+Auth\+Resp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{interface_send_auth_resp__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_send_auth_resp_a3a2f2756e86baaceda03c29e5e9c2504}\label{interface_send_auth_resp_a3a2f2756e86baaceda03c29e5e9c2504}} 
+N\+S\+String $\ast$ {\bfseries code}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_send_auth_resp_ae7d5799fb5503514df1f303b2cf4de19}{state}}
+\item 
+\mbox{\Hypertarget{interface_send_auth_resp_a573cd8c24e6b0a7fcecd532231ac5557}\label{interface_send_auth_resp_a573cd8c24e6b0a7fcecd532231ac5557}} 
+N\+S\+String $\ast$ {\bfseries lang}
+\item 
+\mbox{\Hypertarget{interface_send_auth_resp_a7efe5fe2f224bfcf0a941cfd96e72781}\label{interface_send_auth_resp_a7efe5fe2f224bfcf0a941cfd96e72781}} 
+N\+S\+String $\ast$ {\bfseries country}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+微信处理完第三方程序的认证和权限申请后向第三方程序回送的处理结果。 
+
+第三方程序要向微信申请认证，并请求某些权限，需要调用\+W\+X\+Api的send\+Req成员函数，向微信终端发送一个\+Send\+Auth\+Req消息结构。 微信终端处理完后会向第三方程序发送一个\+Send\+Auth\+Resp。 \begin{DoxySeeAlso}{See also}
+on\+Resp 
+\end{DoxySeeAlso}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_send_auth_resp_ae7d5799fb5503514df1f303b2cf4de19}\label{interface_send_auth_resp_ae7d5799fb5503514df1f303b2cf4de19}} 
+\index{Send\+Auth\+Resp@{Send\+Auth\+Resp}!state@{state}}
+\index{state@{state}!Send\+Auth\+Resp@{Send\+Auth\+Resp}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) state\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+第三方程序发送时用来标识其请求的唯一性的标志，由第三方程序调用send\+Req时传入，由微信终端回传 \begin{DoxyNote}{Note}
+state字符串长度不能超过1K 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+U\+Meng\+U\+Share/W\+X\+Api\+Object.\+h\end{DoxyCompactItemize}

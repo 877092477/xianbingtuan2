@@ -1,0 +1,7 @@
+<map id="TencentBaseMessageObj" name="TencentBaseMessageObj">
+<area shape="rect" id="node4" href="$interface_tencent_audio_message_obj_v1.html" title="音频的消息体 " alt="" coords="384,5,577,31"/>
+<area shape="rect" id="node5" href="$interface_tencent_image_and_video_message_obj_v1.html" title="视频图片消息体 " alt="" coords="372,55,589,93"/>
+<area shape="rect" id="node6" href="$interface_tencent_image_message_obj_v1.html" title="图片的消息体 " alt="" coords="383,117,579,143"/>
+<area shape="rect" id="node7" href="$interface_tencent_text_message_obj_v1.html" title="文本的消息体 " alt="" coords="389,167,573,192"/>
+<area shape="rect" id="node8" href="$interface_tencent_video_message_v1.html" title="视频的消息体 " alt="" coords="395,216,567,241"/>
+</map>

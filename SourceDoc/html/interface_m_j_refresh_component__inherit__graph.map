@@ -1,0 +1,15 @@
+<map id="MJRefreshComponent" name="MJRefreshComponent">
+<area shape="rect" id="node3" href="$interface_m_j_refresh_footer.html" title="MJRefreshFooter" alt="" coords="322,104,446,129"/>
+<area shape="rect" id="node12" href="$interface_m_j_refresh_header.html" title="MJRefreshHeader" alt="" coords="319,153,449,179"/>
+<area shape="rect" id="node4" href="$interface_m_j_refresh_auto_footer.html" title="MJRefreshAutoFooter" alt="" coords="501,55,653,80"/>
+<area shape="rect" id="node8" href="$interface_m_j_refresh_back_footer.html" title="MJRefreshBackFooter" alt="" coords="500,104,654,129"/>
+<area shape="rect" id="node5" href="$interface_m_j_refresh_auto_state_footer.html" title="MJRefreshAutoStateFooter" alt="" coords="707,55,890,80"/>
+<area shape="rect" id="node6" href="$interface_m_j_refresh_auto_gif_footer.html" title="MJRefreshAutoGifFooter" alt="" coords="953,5,1122,31"/>
+<area shape="rect" id="node7" href="$interface_m_j_refresh_auto_normal_footer.html" title="MJRefreshAutoNormalFooter" alt="" coords="940,55,1135,80"/>
+<area shape="rect" id="node9" href="$interface_m_j_refresh_back_state_footer.html" title="MJRefreshBackStateFooter" alt="" coords="706,104,891,129"/>
+<area shape="rect" id="node10" href="$interface_m_j_refresh_back_gif_footer.html" title="MJRefreshBackGifFooter" alt="" coords="952,104,1123,129"/>
+<area shape="rect" id="node11" href="$interface_m_j_refresh_back_normal_footer.html" title="MJRefreshBackNormalFooter" alt="" coords="939,153,1136,179"/>
+<area shape="rect" id="node13" href="$interface_m_j_refresh_state_header.html" title="MJRefreshStateHeader" alt="" coords="497,153,658,179"/>
+<area shape="rect" id="node14" href="$interface_m_j_refresh_gif_header.html" title="MJRefreshGifHeader" alt="" coords="725,153,871,179"/>
+<area shape="rect" id="node15" href="$interface_m_j_refresh_normal_header.html" title="MJRefreshNormalHeader" alt="" coords="712,203,884,228"/>
+</map>

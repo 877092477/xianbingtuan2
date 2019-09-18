@@ -1,0 +1,115 @@
+\hypertarget{interface_alibc_security_guard_bridge}{}\section{Alibc\+Security\+Guard\+Bridge Class Reference}
+\label{interface_alibc_security_guard_bridge}\index{Alibc\+Security\+Guard\+Bridge@{Alibc\+Security\+Guard\+Bridge}}
+
+
+Inheritance diagram for Alibc\+Security\+Guard\+Bridge\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{interface_alibc_security_guard_bridge__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Alibc\+Security\+Guard\+Bridge\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{interface_alibc_security_guard_bridge__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \mbox{\hyperlink{interface_alibc_security_guard_bridge_ad280fc6693fe8e4d6996f56c3ad7a758}{async\+Init\+:}}
+\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_alibc_security_guard_bridge_af7449b81d190d919f1be363502f6da1d}{is\+Security\+Guard\+Avaleable}}
+\item 
+(N\+S\+String $\ast$) + \mbox{\hyperlink{interface_alibc_security_guard_bridge_a797503616295719786f25a327510e076}{auth\+Code}}
+\item 
+(N\+S\+String $\ast$) + \mbox{\hyperlink{interface_alibc_security_guard_bridge_a33246f4937b6364e7a652c8397c7feca}{get\+App\+Key}}
+\item 
+(N\+S\+Number $\ast$) + \mbox{\hyperlink{interface_alibc_security_guard_bridge_aff8de89b19c232a0d2e800c2577b84c4}{analyze\+Item\+Id\+:}}
+\item 
+\mbox{\Hypertarget{interface_alibc_security_guard_bridge_aef0f148fd4e103e2b6846677e12b8abf}\label{interface_alibc_security_guard_bridge_aef0f148fd4e103e2b6846677e12b8abf}} 
+(N\+S\+String $\ast$) + {\bfseries get\+String\+:}
+\item 
+\mbox{\Hypertarget{interface_alibc_security_guard_bridge_a407766864a8834caafc892b82620bc32}\label{interface_alibc_security_guard_bridge_a407766864a8834caafc892b82620bc32}} 
+(int) + {\bfseries put\+String\+:for\+Key\+:}
+\item 
+\mbox{\Hypertarget{interface_alibc_security_guard_bridge_a411cb3ad6dcc3ddad6c402969c6a9ed0}\label{interface_alibc_security_guard_bridge_a411cb3ad6dcc3ddad6c402969c6a9ed0}} 
+(N\+S\+Data $\ast$) + {\bfseries get\+Data\+:}
+\item 
+\mbox{\Hypertarget{interface_alibc_security_guard_bridge_a48124ea2f7e2763e5863338c35f2327d}\label{interface_alibc_security_guard_bridge_a48124ea2f7e2763e5863338c35f2327d}} 
+(int) + {\bfseries put\+Data\+:for\+Key\+:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_alibc_security_guard_bridge_aff8de89b19c232a0d2e800c2577b84c4}\label{interface_alibc_security_guard_bridge_aff8de89b19c232a0d2e800c2577b84c4}} 
+\index{Alibc\+Security\+Guard\+Bridge@{Alibc\+Security\+Guard\+Bridge}!analyze\+Item\+Id\+:@{analyze\+Item\+Id\+:}}
+\index{analyze\+Item\+Id\+:@{analyze\+Item\+Id\+:}!Alibc\+Security\+Guard\+Bridge@{Alibc\+Security\+Guard\+Bridge}}
+\subsubsection{\texorpdfstring{analyze\+Item\+Id\+:()}{analyzeItemId:()}}
+{\footnotesize\ttfamily + (N\+S\+Number $\ast$) analyze\+Item\+Id\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{item\+Id }\end{DoxyParamCaption}}
+
+解析混淆\+ID
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Id} & 混淆\+ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+明文\+ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_alibc_security_guard_bridge_ad280fc6693fe8e4d6996f56c3ad7a758}\label{interface_alibc_security_guard_bridge_ad280fc6693fe8e4d6996f56c3ad7a758}} 
+\index{Alibc\+Security\+Guard\+Bridge@{Alibc\+Security\+Guard\+Bridge}!async\+Init\+:@{async\+Init\+:}}
+\index{async\+Init\+:@{async\+Init\+:}!Alibc\+Security\+Guard\+Bridge@{Alibc\+Security\+Guard\+Bridge}}
+\subsubsection{\texorpdfstring{async\+Init\+:()}{asyncInit:()}}
+{\footnotesize\ttfamily + (void) async\+Init\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(N\+S\+Error $\ast$))}]{handler }\end{DoxyParamCaption}}
+
+安全模块初始化
+
+
+\begin{DoxyParams}{Parameters}
+{\em handler} & callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_alibc_security_guard_bridge_a797503616295719786f25a327510e076}\label{interface_alibc_security_guard_bridge_a797503616295719786f25a327510e076}} 
+\index{Alibc\+Security\+Guard\+Bridge@{Alibc\+Security\+Guard\+Bridge}!auth\+Code@{auth\+Code}}
+\index{auth\+Code@{auth\+Code}!Alibc\+Security\+Guard\+Bridge@{Alibc\+Security\+Guard\+Bridge}}
+\subsubsection{\texorpdfstring{auth\+Code()}{authCode()}}
+{\footnotesize\ttfamily + (N\+S\+String $\ast$) auth\+Code \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+auth\+Code
+
+\begin{DoxyReturn}{Returns}
+auth code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_alibc_security_guard_bridge_a33246f4937b6364e7a652c8397c7feca}\label{interface_alibc_security_guard_bridge_a33246f4937b6364e7a652c8397c7feca}} 
+\index{Alibc\+Security\+Guard\+Bridge@{Alibc\+Security\+Guard\+Bridge}!get\+App\+Key@{get\+App\+Key}}
+\index{get\+App\+Key@{get\+App\+Key}!Alibc\+Security\+Guard\+Bridge@{Alibc\+Security\+Guard\+Bridge}}
+\subsubsection{\texorpdfstring{get\+App\+Key()}{getAppKey()}}
+{\footnotesize\ttfamily + (N\+S\+String $\ast$) get\+App\+Key \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+获取\+App\+Key
+
+\begin{DoxyReturn}{Returns}
+App\+Key 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_alibc_security_guard_bridge_af7449b81d190d919f1be363502f6da1d}\label{interface_alibc_security_guard_bridge_af7449b81d190d919f1be363502f6da1d}} 
+\index{Alibc\+Security\+Guard\+Bridge@{Alibc\+Security\+Guard\+Bridge}!is\+Security\+Guard\+Avaleable@{is\+Security\+Guard\+Avaleable}}
+\index{is\+Security\+Guard\+Avaleable@{is\+Security\+Guard\+Avaleable}!Alibc\+Security\+Guard\+Bridge@{Alibc\+Security\+Guard\+Bridge}}
+\subsubsection{\texorpdfstring{is\+Security\+Guard\+Avaleable()}{isSecurityGuardAvaleable()}}
+{\footnotesize\ttfamily + (B\+O\+OL) is\+Security\+Guard\+Avaleable \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+安全是否可用
+
+\begin{DoxyReturn}{Returns}
+安全是否可用 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Alibc\+Trade\+Common.\+framework/\+Headers/Alibc\+Security\+Guard\+Bridge.\+h\end{DoxyCompactItemize}

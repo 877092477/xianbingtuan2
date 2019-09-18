@@ -1,0 +1,73 @@
+\hypertarget{interface_w_b_authorize_response}{}\section{W\+B\+Authorize\+Response Class Reference}
+\label{interface_w_b_authorize_response}\index{W\+B\+Authorize\+Response@{W\+B\+Authorize\+Response}}
+
+
+{\ttfamily \#import $<$Weibo\+S\+D\+K.\+h$>$}
+
+
+
+Inheritance diagram for W\+B\+Authorize\+Response\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{interface_w_b_authorize_response__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for W\+B\+Authorize\+Response\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{interface_w_b_authorize_response__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_w_b_authorize_response_a235135bd60fde88c74ecfb877b9af0c9}{user\+ID}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_w_b_authorize_response_addc245c6016aca3aa07c7eed0097c299}{access\+Token}}
+\item 
+N\+S\+Date $\ast$ \mbox{\hyperlink{interface_w_b_authorize_response_a2906002ea2766e460de94aa391932f66}{expiration\+Date}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_w_b_authorize_response_ac7d3e89a6e16224b6b07dcec02252947}{refresh\+Token}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+微博客户端处理完第三方应用的认证申请后向第三方应用回送的处理结果
+
+\mbox{\hyperlink{interface_w_b_authorize_response}{W\+B\+Authorize\+Response}} 结构中仅包含常用的 user\+ID 、access\+Token 和 expiration\+Date 信息，其他的认证信息（比如部分应用可以获取的 refresh\+\_\+token 信息）会统一存放到 user\+Info 中 
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_w_b_authorize_response_addc245c6016aca3aa07c7eed0097c299}\label{interface_w_b_authorize_response_addc245c6016aca3aa07c7eed0097c299}} 
+\index{W\+B\+Authorize\+Response@{W\+B\+Authorize\+Response}!access\+Token@{access\+Token}}
+\index{access\+Token@{access\+Token}!W\+B\+Authorize\+Response@{W\+B\+Authorize\+Response}}
+\subsubsection{\texorpdfstring{access\+Token}{accessToken}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) access\+Token\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+认证口令 \mbox{\Hypertarget{interface_w_b_authorize_response_a2906002ea2766e460de94aa391932f66}\label{interface_w_b_authorize_response_a2906002ea2766e460de94aa391932f66}} 
+\index{W\+B\+Authorize\+Response@{W\+B\+Authorize\+Response}!expiration\+Date@{expiration\+Date}}
+\index{expiration\+Date@{expiration\+Date}!W\+B\+Authorize\+Response@{W\+B\+Authorize\+Response}}
+\subsubsection{\texorpdfstring{expiration\+Date}{expirationDate}}
+{\footnotesize\ttfamily -\/ (N\+S\+Date $\ast$) expiration\+Date\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+认证过期时间 \mbox{\Hypertarget{interface_w_b_authorize_response_ac7d3e89a6e16224b6b07dcec02252947}\label{interface_w_b_authorize_response_ac7d3e89a6e16224b6b07dcec02252947}} 
+\index{W\+B\+Authorize\+Response@{W\+B\+Authorize\+Response}!refresh\+Token@{refresh\+Token}}
+\index{refresh\+Token@{refresh\+Token}!W\+B\+Authorize\+Response@{W\+B\+Authorize\+Response}}
+\subsubsection{\texorpdfstring{refresh\+Token}{refreshToken}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) refresh\+Token\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+当认证口令过期时用于换取认证口令的更新口令 \mbox{\Hypertarget{interface_w_b_authorize_response_a235135bd60fde88c74ecfb877b9af0c9}\label{interface_w_b_authorize_response_a235135bd60fde88c74ecfb877b9af0c9}} 
+\index{W\+B\+Authorize\+Response@{W\+B\+Authorize\+Response}!user\+ID@{user\+ID}}
+\index{user\+ID@{user\+ID}!W\+B\+Authorize\+Response@{W\+B\+Authorize\+Response}}
+\subsubsection{\texorpdfstring{user\+ID}{userID}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) user\+ID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+用户\+ID 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+U\+Meng\+U\+Share/Weibo\+S\+D\+K.\+h\end{DoxyCompactItemize}

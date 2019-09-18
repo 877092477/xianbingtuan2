@@ -1,0 +1,5 @@
+<map id="&#45;[SDImageCache removeImageForKey:fromDisk:]" name="&#45;[SDImageCache removeImageForKey:fromDisk:]">
+<area shape="rect" id="node2" href="$interface_s_d_image_cache.html#abf0e1a46fc6db455e464efda62fcc55d" title="&#45;[SDImageCache removeImage\lForKey:fromDisk:withCompletion:]" alt="" coords="262,5,485,44"/>
+<area shape="rect" id="node3" href="$interface_s_d_image_cache.html#a591ff2cb8bcd813969b33c610c569bdc" title="&#45;[SDImageCache defaultCache\lPathForKey:]" alt="" coords="533,5,739,44"/>
+<area shape="rect" id="node4" href="$interface_s_d_image_cache.html#a8dffa7933d6dcd6668331d03d29e2ad0" title="&#45;[SDImageCache cachePath\lForKey:inPath:]" alt="" coords="787,5,977,44"/>
+</map>

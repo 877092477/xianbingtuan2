@@ -1,0 +1,190 @@
+\hypertarget{interface_f_n_a_p_i_products_tool}{}\section{F\+N\+A\+P\+I\+Products\+Tool Class Reference}
+\label{interface_f_n_a_p_i_products_tool}\index{F\+N\+A\+P\+I\+Products\+Tool@{F\+N\+A\+P\+I\+Products\+Tool}}
+
+
+{\ttfamily \#import $<$F\+N\+A\+P\+I\+Products\+Tool.\+h$>$}
+
+
+
+Inheritance diagram for F\+N\+A\+P\+I\+Products\+Tool\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{interface_f_n_a_p_i_products_tool__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for F\+N\+A\+P\+I\+Products\+Tool\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{interface_f_n_a_p_i_products_tool__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \mbox{\hyperlink{interface_f_n_a_p_i_products_tool_ab7547cc9fe36980b15a746061d7b1417}{api\+Products\+Request\+Prodetail\+With\+Goods\+Id\+:success\+:failure\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_f_n_a_p_i_products_tool_ab3dc486c76f34e2a98e07265eb0be799}{api\+Products\+Request\+Coupon\+List\+With\+Params\+:success\+:failure\+:}}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_f_n_a_p_i_products_tool_a11725fb92941e148c4784e7a4cadbddb}{gid}}
+\item 
+N\+S\+Number $\ast$ \mbox{\hyperlink{interface_f_n_a_p_i_products_tool_a84ab2adae6554b9ffd21665f940dd648}{type}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_f_n_a_p_i_products_tool_a70e69f683b73621eed12c5537aff3549}{cid}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_f_n_a_p_i_products_tool_a0fefc7e542162d7e027fbf20697b8583}{keyword}}
+\item 
+N\+S\+Number $\ast$ \mbox{\hyperlink{interface_f_n_a_p_i_products_tool_ad2673af9059ba40c41e60d021dee094d}{sort}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_f_n_a_p_i_products_tool_add290482b441320e698cb9c82564b0e6}{start\+\_\+price}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_f_n_a_p_i_products_tool_a0ef89d87b96a1eb12d24b2da5fa9ab16}{end\+\_\+price}}
+\item 
+N\+S\+Number $\ast$ \mbox{\hyperlink{interface_f_n_a_p_i_products_tool_a06349fb72d3ccdd893f36a036ea66a88}{is\+\_\+tmall}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+============================================================================
+
+版权所有 ©2013-\/2016 方诺科技，并保留所有权利。
+
+网站地址\+: \href{http://www.fnuo123.com}{\tt http\+://www.\+fnuo123.\+com}； 
+
+
+
+这不是一个自由软件！您只能在不用于商业目的的前提下对程序代码进行修改和
+
+使用；不允许对程序代码以任何形式任何目的的再发布。 
+
+
+
+商品api请求
+
+============================================================================
+
+版权所有 ©2013-\/2016 方诺科技，并保留所有权利。
+
+网站地址\+: \href{http://www.fnuo123.com}{\tt http\+://www.\+fnuo123.\+com}； 
+
+
+
+这不是一个自由软件！您只能在不用于商业目的的前提下对程序代码进行修改和
+
+使用；不允许对程序代码以任何形式任何目的的再发布。 
+
+ 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_f_n_a_p_i_products_tool_ab3dc486c76f34e2a98e07265eb0be799}\label{interface_f_n_a_p_i_products_tool_ab3dc486c76f34e2a98e07265eb0be799}} 
+\index{F\+N\+A\+P\+I\+Products\+Tool@{F\+N\+A\+P\+I\+Products\+Tool}!api\+Products\+Request\+Coupon\+List\+With\+Params\+:success\+:failure\+:@{api\+Products\+Request\+Coupon\+List\+With\+Params\+:success\+:failure\+:}}
+\index{api\+Products\+Request\+Coupon\+List\+With\+Params\+:success\+:failure\+:@{api\+Products\+Request\+Coupon\+List\+With\+Params\+:success\+:failure\+:}!F\+N\+A\+P\+I\+Products\+Tool@{F\+N\+A\+P\+I\+Products\+Tool}}
+\subsubsection{\texorpdfstring{api\+Products\+Request\+Coupon\+List\+With\+Params\+:success\+:failure\+:()}{apiProductsRequestCouponListWithParams:success:failure:()}}
+{\footnotesize\ttfamily + (void) api\+Products\+Request\+Coupon\+List\+With\+Params\+: \begin{DoxyParamCaption}\item[{(N\+S\+Mutable\+Dictionary $\ast$)}]{params }\item[{success:(Success\+Request)}]{success }\item[{failure:(Failure\+Request)}]{failure }\end{DoxyParamCaption}}
+
+优惠券商品列表请求
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & 请求参数（类型：1 热门排行。2 新品推荐。3 精选专题。4 爱米铺独家。5 领券购。6 九块九，cid(分类id)\\
+\hline
+{\em success} & 成功回调 \\
+\hline
+{\em failure} & 失败回调 \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_f_n_a_p_i_products_tool_ab3dc486c76f34e2a98e07265eb0be799_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{interface_f_n_a_p_i_products_tool_ab7547cc9fe36980b15a746061d7b1417}\label{interface_f_n_a_p_i_products_tool_ab7547cc9fe36980b15a746061d7b1417}} 
+\index{F\+N\+A\+P\+I\+Products\+Tool@{F\+N\+A\+P\+I\+Products\+Tool}!api\+Products\+Request\+Prodetail\+With\+Goods\+Id\+:success\+:failure\+:@{api\+Products\+Request\+Prodetail\+With\+Goods\+Id\+:success\+:failure\+:}}
+\index{api\+Products\+Request\+Prodetail\+With\+Goods\+Id\+:success\+:failure\+:@{api\+Products\+Request\+Prodetail\+With\+Goods\+Id\+:success\+:failure\+:}!F\+N\+A\+P\+I\+Products\+Tool@{F\+N\+A\+P\+I\+Products\+Tool}}
+\subsubsection{\texorpdfstring{api\+Products\+Request\+Prodetail\+With\+Goods\+Id\+:success\+:failure\+:()}{apiProductsRequestProdetailWithGoodsId:success:failure:()}}
+{\footnotesize\ttfamily + (void) api\+Products\+Request\+Prodetail\+With\+Goods\+Id\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{good\+Id }\item[{success:(Success\+Request)}]{success }\item[{failure:(Failure\+Request)}]{failure }\end{DoxyParamCaption}}
+
+商品详情请求
+
+
+\begin{DoxyParams}{Parameters}
+{\em good\+Id} & 请求参数 \\
+\hline
+{\em success} & 成功回调 \\
+\hline
+{\em failure} & 失败回调 \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_f_n_a_p_i_products_tool_ab7547cc9fe36980b15a746061d7b1417_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_f_n_a_p_i_products_tool_a70e69f683b73621eed12c5537aff3549}\label{interface_f_n_a_p_i_products_tool_a70e69f683b73621eed12c5537aff3549}} 
+\index{F\+N\+A\+P\+I\+Products\+Tool@{F\+N\+A\+P\+I\+Products\+Tool}!cid@{cid}}
+\index{cid@{cid}!F\+N\+A\+P\+I\+Products\+Tool@{F\+N\+A\+P\+I\+Products\+Tool}}
+\subsubsection{\texorpdfstring{cid}{cid}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) cid\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+分类id \mbox{\Hypertarget{interface_f_n_a_p_i_products_tool_a0ef89d87b96a1eb12d24b2da5fa9ab16}\label{interface_f_n_a_p_i_products_tool_a0ef89d87b96a1eb12d24b2da5fa9ab16}} 
+\index{F\+N\+A\+P\+I\+Products\+Tool@{F\+N\+A\+P\+I\+Products\+Tool}!end\+\_\+price@{end\+\_\+price}}
+\index{end\+\_\+price@{end\+\_\+price}!F\+N\+A\+P\+I\+Products\+Tool@{F\+N\+A\+P\+I\+Products\+Tool}}
+\subsubsection{\texorpdfstring{end\+\_\+price}{end\_price}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) end\+\_\+price\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+end\+\_\+price \mbox{\Hypertarget{interface_f_n_a_p_i_products_tool_a11725fb92941e148c4784e7a4cadbddb}\label{interface_f_n_a_p_i_products_tool_a11725fb92941e148c4784e7a4cadbddb}} 
+\index{F\+N\+A\+P\+I\+Products\+Tool@{F\+N\+A\+P\+I\+Products\+Tool}!gid@{gid}}
+\index{gid@{gid}!F\+N\+A\+P\+I\+Products\+Tool@{F\+N\+A\+P\+I\+Products\+Tool}}
+\subsubsection{\texorpdfstring{gid}{gid}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) gid\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+goods id \mbox{\Hypertarget{interface_f_n_a_p_i_products_tool_a06349fb72d3ccdd893f36a036ea66a88}\label{interface_f_n_a_p_i_products_tool_a06349fb72d3ccdd893f36a036ea66a88}} 
+\index{F\+N\+A\+P\+I\+Products\+Tool@{F\+N\+A\+P\+I\+Products\+Tool}!is\+\_\+tmall@{is\+\_\+tmall}}
+\index{is\+\_\+tmall@{is\+\_\+tmall}!F\+N\+A\+P\+I\+Products\+Tool@{F\+N\+A\+P\+I\+Products\+Tool}}
+\subsubsection{\texorpdfstring{is\+\_\+tmall}{is\_tmall}}
+{\footnotesize\ttfamily -\/ (N\+S\+Number$\ast$) is\+\_\+tmall\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+is\+\_\+tmall \mbox{\Hypertarget{interface_f_n_a_p_i_products_tool_a0fefc7e542162d7e027fbf20697b8583}\label{interface_f_n_a_p_i_products_tool_a0fefc7e542162d7e027fbf20697b8583}} 
+\index{F\+N\+A\+P\+I\+Products\+Tool@{F\+N\+A\+P\+I\+Products\+Tool}!keyword@{keyword}}
+\index{keyword@{keyword}!F\+N\+A\+P\+I\+Products\+Tool@{F\+N\+A\+P\+I\+Products\+Tool}}
+\subsubsection{\texorpdfstring{keyword}{keyword}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) keyword\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+搜索关键字 \mbox{\Hypertarget{interface_f_n_a_p_i_products_tool_ad2673af9059ba40c41e60d021dee094d}\label{interface_f_n_a_p_i_products_tool_ad2673af9059ba40c41e60d021dee094d}} 
+\index{F\+N\+A\+P\+I\+Products\+Tool@{F\+N\+A\+P\+I\+Products\+Tool}!sort@{sort}}
+\index{sort@{sort}!F\+N\+A\+P\+I\+Products\+Tool@{F\+N\+A\+P\+I\+Products\+Tool}}
+\subsubsection{\texorpdfstring{sort}{sort}}
+{\footnotesize\ttfamily -\/ (N\+S\+Number$\ast$) sort\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+sort \mbox{\Hypertarget{interface_f_n_a_p_i_products_tool_add290482b441320e698cb9c82564b0e6}\label{interface_f_n_a_p_i_products_tool_add290482b441320e698cb9c82564b0e6}} 
+\index{F\+N\+A\+P\+I\+Products\+Tool@{F\+N\+A\+P\+I\+Products\+Tool}!start\+\_\+price@{start\+\_\+price}}
+\index{start\+\_\+price@{start\+\_\+price}!F\+N\+A\+P\+I\+Products\+Tool@{F\+N\+A\+P\+I\+Products\+Tool}}
+\subsubsection{\texorpdfstring{start\+\_\+price}{start\_price}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) start\+\_\+price\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+start\+\_\+price \mbox{\Hypertarget{interface_f_n_a_p_i_products_tool_a84ab2adae6554b9ffd21665f940dd648}\label{interface_f_n_a_p_i_products_tool_a84ab2adae6554b9ffd21665f940dd648}} 
+\index{F\+N\+A\+P\+I\+Products\+Tool@{F\+N\+A\+P\+I\+Products\+Tool}!type@{type}}
+\index{type@{type}!F\+N\+A\+P\+I\+Products\+Tool@{F\+N\+A\+P\+I\+Products\+Tool}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily -\/ (N\+S\+Number$\ast$) type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+优惠券类型 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Classes(类文件)/web（公共）/\+Tool/\+Network/F\+N\+A\+P\+I\+Products\+Tool.\+h\item 
+T\+H\+B/\+Classes(类文件)/web（公共）/\+Tool/\+Network/F\+N\+A\+P\+I\+Products\+Tool.\+m\end{DoxyCompactItemize}

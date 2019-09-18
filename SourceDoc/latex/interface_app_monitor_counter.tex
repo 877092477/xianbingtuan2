@@ -1,0 +1,71 @@
+\hypertarget{interface_app_monitor_counter}{}\section{App\+Monitor\+Counter Class Reference}
+\label{interface_app_monitor_counter}\index{App\+Monitor\+Counter@{App\+Monitor\+Counter}}
+
+
+Inheritance diagram for App\+Monitor\+Counter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{interface_app_monitor_counter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for App\+Monitor\+Counter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{interface_app_monitor_counter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \mbox{\hyperlink{interface_app_monitor_counter_ae6cf19917834e8e0dbb37083b587f295}{commit\+With\+Page\+:monitor\+Point\+:value\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_app_monitor_counter_a319edfa4e4f5cae4c9b2c1fa60a36243}{commit\+With\+Page\+:monitor\+Point\+:value\+:arg\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_app_monitor_counter_ae6cf19917834e8e0dbb37083b587f295}\label{interface_app_monitor_counter_ae6cf19917834e8e0dbb37083b587f295}} 
+\index{App\+Monitor\+Counter@{App\+Monitor\+Counter}!commit\+With\+Page\+:monitor\+Point\+:value\+:@{commit\+With\+Page\+:monitor\+Point\+:value\+:}}
+\index{commit\+With\+Page\+:monitor\+Point\+:value\+:@{commit\+With\+Page\+:monitor\+Point\+:value\+:}!App\+Monitor\+Counter@{App\+Monitor\+Counter}}
+\subsubsection{\texorpdfstring{commit\+With\+Page\+:monitor\+Point\+:value\+:()}{commitWithPage:monitorPoint:value:()}}
+{\footnotesize\ttfamily + (void) commit\+With\+Page\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{page }\item[{monitorPoint:(N\+S\+String $\ast$)}]{monitor\+Point }\item[{value:(double)}]{value }\end{DoxyParamCaption}}
+
+实时计数接口.\+（每次commit会累加一次count，value也会累加）可用于服务端计算总次数或求平均值。 此接口数据量不应太大，
+
+
+\begin{DoxyParams}{Parameters}
+{\em page} & 操作发生所在的页面 \\
+\hline
+{\em monitor\+Point} & 监控点名称 \\
+\hline
+{\em value} & 数值 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_app_monitor_counter_a319edfa4e4f5cae4c9b2c1fa60a36243}\label{interface_app_monitor_counter_a319edfa4e4f5cae4c9b2c1fa60a36243}} 
+\index{App\+Monitor\+Counter@{App\+Monitor\+Counter}!commit\+With\+Page\+:monitor\+Point\+:value\+:arg\+:@{commit\+With\+Page\+:monitor\+Point\+:value\+:arg\+:}}
+\index{commit\+With\+Page\+:monitor\+Point\+:value\+:arg\+:@{commit\+With\+Page\+:monitor\+Point\+:value\+:arg\+:}!App\+Monitor\+Counter@{App\+Monitor\+Counter}}
+\subsubsection{\texorpdfstring{commit\+With\+Page\+:monitor\+Point\+:value\+:arg\+:()}{commitWithPage:monitorPoint:value:arg:()}}
+{\footnotesize\ttfamily + (void) commit\+With\+Page\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{page }\item[{monitorPoint:(N\+S\+String $\ast$)}]{monitor\+Point }\item[{value:(double)}]{value }\item[{arg:(N\+S\+String $\ast$)}]{arg }\end{DoxyParamCaption}}
+
+实时计数接口.\+（每次commit会累加一次count，value也会累加）可用于服务端计算总次数或求平均值。 此接口数据量不应太大，
+
+
+\begin{DoxyParams}{Parameters}
+{\em page} & 操作发生所在的页面 \\
+\hline
+{\em monitor\+Point} & 监控点名称 \\
+\hline
+{\em value} & 数值 \\
+\hline
+{\em arg} & 附加参数 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+U\+T\+Mini.\+framework/\+Versions/\+A/\+Headers/App\+Monitor\+Counter.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+<map id="AFHTTPResponseSerializer" name="AFHTTPResponseSerializer">
+<area shape="rect" id="node4" href="$interface_a_f_compound_response_serializer.html" title="AFCompoundResponseSerializer" alt="" coords="506,8,726,34"/>
+<area shape="rect" id="node5" href="$interface_a_f_image_response_serializer.html" title="AFImageResponseSerializer" alt="" coords="520,58,711,83"/>
+<area shape="rect" id="node6" href="$interface_a_f_j_s_o_n_response_serializer.html" title="AFJSONResponseSerializer" alt="" coords="521,107,711,132"/>
+<area shape="rect" id="node7" href="$interface_a_f_property_list_response_serializer.html" title="AFPropertyListResponseSerializer" alt="" coords="503,156,729,182"/>
+<area shape="rect" id="node8" href="$interface_a_f_x_m_l_parser_response_serializer.html" title="AFXMLParserResponseSerializer" alt="" coords="506,206,726,231"/>
+</map>

@@ -1,0 +1,203 @@
+\hypertarget{category_n_s_array_07_auto_layout_08}{}\section{N\+S\+Array(Auto\+Layout) Category Reference}
+\label{category_n_s_array_07_auto_layout_08}\index{N\+S\+Array(\+Auto\+Layout)@{N\+S\+Array(\+Auto\+Layout)}}
+
+
+{\ttfamily \#import $<$U\+I\+View+\+Auto\+Layout.\+h$>$}
+
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\+S\+Array $\ast$) -\/ \mbox{\hyperlink{category_n_s_array_07_auto_layout_08_a3ee97fb9058e640aa3f7df1e6595a118}{auto\+Align\+Views\+To\+Edge\+:}}
+\item 
+(N\+S\+Array $\ast$) -\/ \mbox{\hyperlink{category_n_s_array_07_auto_layout_08_a56546bae073c0f492176b7cf1d023f2c}{auto\+Align\+Views\+To\+Axis\+:}}
+\item 
+(N\+S\+Array $\ast$) -\/ \mbox{\hyperlink{category_n_s_array_07_auto_layout_08_a0b92dda230f54b1c2d432203dac1d240}{auto\+Match\+Views\+Dimension\+:}}
+\item 
+(N\+S\+Array $\ast$) -\/ \mbox{\hyperlink{category_n_s_array_07_auto_layout_08_a49d4d37abcfd84afc7d1bebe065f2d0d}{auto\+Set\+Views\+Dimension\+:to\+Size\+:}}
+\item 
+(N\+S\+Array $\ast$) -\/ \mbox{\hyperlink{category_n_s_array_07_auto_layout_08_abdc2144c8f2b1023626e0fbc84c97cc7}{auto\+Distribute\+Views\+Along\+Axis\+:with\+Fixed\+Spacing\+:alignment\+:}}
+\item 
+(N\+S\+Array $\ast$) -\/ \mbox{\hyperlink{category_n_s_array_07_auto_layout_08_a4ead43393a6700e0d78736fc04827fc7}{auto\+Distribute\+Views\+Along\+Axis\+:with\+Fixed\+Spacing\+:inset\+Spacing\+:alignment\+:}}
+\item 
+(N\+S\+Array $\ast$) -\/ \mbox{\hyperlink{category_n_s_array_07_auto_layout_08_a62dc58a8a134a4860af9c024720ecbb3}{auto\+Distribute\+Views\+Along\+Axis\+:with\+Fixed\+Size\+:alignment\+:}}
+\item 
+(N\+S\+Array $\ast$) -\/ \mbox{\hyperlink{category_n_s_array_07_auto_layout_08_a0d1a8ee4b675ef4b9724f57cf0d5ce97}{auto\+Distribute\+Views\+Along\+Axis\+:with\+Fixed\+Size\+:inset\+Spacing\+:alignment\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A category on N\+S\+Array that provides a simple yet powerful interface for applying constraints to groups of views. 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{category_n_s_array_07_auto_layout_08_a56546bae073c0f492176b7cf1d023f2c}\label{category_n_s_array_07_auto_layout_08_a56546bae073c0f492176b7cf1d023f2c}} 
+\index{N\+S\+Array(\+Auto\+Layout)@{N\+S\+Array(\+Auto\+Layout)}!auto\+Align\+Views\+To\+Axis\+:@{auto\+Align\+Views\+To\+Axis\+:}}
+\index{auto\+Align\+Views\+To\+Axis\+:@{auto\+Align\+Views\+To\+Axis\+:}!N\+S\+Array(\+Auto\+Layout)@{N\+S\+Array(\+Auto\+Layout)}}
+\subsubsection{\texorpdfstring{auto\+Align\+Views\+To\+Axis\+:()}{autoAlignViewsToAxis:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Array $\ast$) auto\+Align\+Views\+To\+Axis\+: \begin{DoxyParamCaption}\item[{(A\+L\+Axis)}]{axis }\end{DoxyParamCaption}}
+
+Aligns views in this array to one another along a given axis.
+
+Aligns views in this array to one another along a given axis. Note\+: This array must contain at least 2 views, and all views must share a common superview.
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & The axis to which to subviews will be aligned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of constraints added. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{category_n_s_array_07_auto_layout_08_a3ee97fb9058e640aa3f7df1e6595a118}\label{category_n_s_array_07_auto_layout_08_a3ee97fb9058e640aa3f7df1e6595a118}} 
+\index{N\+S\+Array(\+Auto\+Layout)@{N\+S\+Array(\+Auto\+Layout)}!auto\+Align\+Views\+To\+Edge\+:@{auto\+Align\+Views\+To\+Edge\+:}}
+\index{auto\+Align\+Views\+To\+Edge\+:@{auto\+Align\+Views\+To\+Edge\+:}!N\+S\+Array(\+Auto\+Layout)@{N\+S\+Array(\+Auto\+Layout)}}
+\subsubsection{\texorpdfstring{auto\+Align\+Views\+To\+Edge\+:()}{autoAlignViewsToEdge:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Array $\ast$) auto\+Align\+Views\+To\+Edge\+: \begin{DoxyParamCaption}\item[{(A\+L\+Edge)}]{edge }\end{DoxyParamCaption}}
+
+Aligns views in this array to one another along a given edge.
+
+Aligns views in this array to one another along a given edge. Note\+: This array must contain at least 2 views, and all views must share a common superview.
+
+
+\begin{DoxyParams}{Parameters}
+{\em edge} & The edge to which the subviews will be aligned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of constraints added. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{category_n_s_array_07_auto_layout_08_a62dc58a8a134a4860af9c024720ecbb3}\label{category_n_s_array_07_auto_layout_08_a62dc58a8a134a4860af9c024720ecbb3}} 
+\index{N\+S\+Array(\+Auto\+Layout)@{N\+S\+Array(\+Auto\+Layout)}!auto\+Distribute\+Views\+Along\+Axis\+:with\+Fixed\+Size\+:alignment\+:@{auto\+Distribute\+Views\+Along\+Axis\+:with\+Fixed\+Size\+:alignment\+:}}
+\index{auto\+Distribute\+Views\+Along\+Axis\+:with\+Fixed\+Size\+:alignment\+:@{auto\+Distribute\+Views\+Along\+Axis\+:with\+Fixed\+Size\+:alignment\+:}!N\+S\+Array(\+Auto\+Layout)@{N\+S\+Array(\+Auto\+Layout)}}
+\subsubsection{\texorpdfstring{auto\+Distribute\+Views\+Along\+Axis\+:with\+Fixed\+Size\+:alignment\+:()}{autoDistributeViewsAlongAxis:withFixedSize:alignment:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Array $\ast$) auto\+Distribute\+Views\+Along\+Axis\+: \begin{DoxyParamCaption}\item[{(A\+L\+Axis)}]{axis }\item[{withFixedSize:(C\+G\+Float)}]{size }\item[{alignment:(N\+S\+Layout\+Format\+Options)}]{alignment }\end{DoxyParamCaption}}
+
+Distributes the views in this array equally along the selected axis in their superview. Views will be the same size (fixed) in the dimension along the axis and will have spacing (variable) between them.
+
+Distributes the views in this array equally along the selected axis in their superview. Views will be the same size (fixed) in the dimension along the axis and will have spacing (variable) between them, including from the first and last views to their superview.
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & The axis along which to distribute the subviews. \\
+\hline
+{\em size} & The fixed size of each subview in the dimension along the given axis. \\
+\hline
+{\em alignment} & The way in which the subviews will be aligned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of constraints added. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{category_n_s_array_07_auto_layout_08_a0d1a8ee4b675ef4b9724f57cf0d5ce97}\label{category_n_s_array_07_auto_layout_08_a0d1a8ee4b675ef4b9724f57cf0d5ce97}} 
+\index{N\+S\+Array(\+Auto\+Layout)@{N\+S\+Array(\+Auto\+Layout)}!auto\+Distribute\+Views\+Along\+Axis\+:with\+Fixed\+Size\+:inset\+Spacing\+:alignment\+:@{auto\+Distribute\+Views\+Along\+Axis\+:with\+Fixed\+Size\+:inset\+Spacing\+:alignment\+:}}
+\index{auto\+Distribute\+Views\+Along\+Axis\+:with\+Fixed\+Size\+:inset\+Spacing\+:alignment\+:@{auto\+Distribute\+Views\+Along\+Axis\+:with\+Fixed\+Size\+:inset\+Spacing\+:alignment\+:}!N\+S\+Array(\+Auto\+Layout)@{N\+S\+Array(\+Auto\+Layout)}}
+\subsubsection{\texorpdfstring{auto\+Distribute\+Views\+Along\+Axis\+:with\+Fixed\+Size\+:inset\+Spacing\+:alignment\+:()}{autoDistributeViewsAlongAxis:withFixedSize:insetSpacing:alignment:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Array $\ast$) auto\+Distribute\+Views\+Along\+Axis\+: \begin{DoxyParamCaption}\item[{(A\+L\+Axis)}]{axis }\item[{withFixedSize:(C\+G\+Float)}]{size }\item[{insetSpacing:(B\+O\+OL)}]{should\+Space\+Insets }\item[{alignment:(N\+S\+Layout\+Format\+Options)}]{alignment }\end{DoxyParamCaption}}
+
+Distributes the views in this array equally along the selected axis in their superview. Views will be the same size (fixed) in the dimension along the axis and will have spacing (variable) between them, with optional insets from the first and last views to their superview.
+
+Distributes the views in this array equally along the selected axis in their superview. Views will be the same size (fixed) in the dimension along the axis and will have spacing (variable) between them. The first and last views can optionally be inset from their superview by the same amount of spacing as between views.
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & The axis along which to distribute the subviews. \\
+\hline
+{\em size} & The fixed size of each subview in the dimension along the given axis. \\
+\hline
+{\em should\+Space\+Insets} & Whether the first and last views should be equally inset from their superview. \\
+\hline
+{\em alignment} & The way in which the subviews will be aligned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of constraints added. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{category_n_s_array_07_auto_layout_08_abdc2144c8f2b1023626e0fbc84c97cc7}\label{category_n_s_array_07_auto_layout_08_abdc2144c8f2b1023626e0fbc84c97cc7}} 
+\index{N\+S\+Array(\+Auto\+Layout)@{N\+S\+Array(\+Auto\+Layout)}!auto\+Distribute\+Views\+Along\+Axis\+:with\+Fixed\+Spacing\+:alignment\+:@{auto\+Distribute\+Views\+Along\+Axis\+:with\+Fixed\+Spacing\+:alignment\+:}}
+\index{auto\+Distribute\+Views\+Along\+Axis\+:with\+Fixed\+Spacing\+:alignment\+:@{auto\+Distribute\+Views\+Along\+Axis\+:with\+Fixed\+Spacing\+:alignment\+:}!N\+S\+Array(\+Auto\+Layout)@{N\+S\+Array(\+Auto\+Layout)}}
+\subsubsection{\texorpdfstring{auto\+Distribute\+Views\+Along\+Axis\+:with\+Fixed\+Spacing\+:alignment\+:()}{autoDistributeViewsAlongAxis:withFixedSpacing:alignment:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Array $\ast$) auto\+Distribute\+Views\+Along\+Axis\+: \begin{DoxyParamCaption}\item[{(A\+L\+Axis)}]{axis }\item[{withFixedSpacing:(C\+G\+Float)}]{spacing }\item[{alignment:(N\+S\+Layout\+Format\+Options)}]{alignment }\end{DoxyParamCaption}}
+
+Distributes the views in this array equally along the selected axis in their superview. Views will be the same size (variable) in the dimension along the axis and will have spacing (fixed) between them.
+
+Distributes the views in this array equally along the selected axis in their superview. Views will be the same size (variable) in the dimension along the axis and will have spacing (fixed) between them, including from the first and last views to their superview.
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & The axis along which to distribute the subviews. \\
+\hline
+{\em spacing} & The fixed amount of spacing between each subview, before the first subview and after the last subview. \\
+\hline
+{\em alignment} & The way in which the subviews will be aligned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of constraints added. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{category_n_s_array_07_auto_layout_08_a4ead43393a6700e0d78736fc04827fc7}\label{category_n_s_array_07_auto_layout_08_a4ead43393a6700e0d78736fc04827fc7}} 
+\index{N\+S\+Array(\+Auto\+Layout)@{N\+S\+Array(\+Auto\+Layout)}!auto\+Distribute\+Views\+Along\+Axis\+:with\+Fixed\+Spacing\+:inset\+Spacing\+:alignment\+:@{auto\+Distribute\+Views\+Along\+Axis\+:with\+Fixed\+Spacing\+:inset\+Spacing\+:alignment\+:}}
+\index{auto\+Distribute\+Views\+Along\+Axis\+:with\+Fixed\+Spacing\+:inset\+Spacing\+:alignment\+:@{auto\+Distribute\+Views\+Along\+Axis\+:with\+Fixed\+Spacing\+:inset\+Spacing\+:alignment\+:}!N\+S\+Array(\+Auto\+Layout)@{N\+S\+Array(\+Auto\+Layout)}}
+\subsubsection{\texorpdfstring{auto\+Distribute\+Views\+Along\+Axis\+:with\+Fixed\+Spacing\+:inset\+Spacing\+:alignment\+:()}{autoDistributeViewsAlongAxis:withFixedSpacing:insetSpacing:alignment:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Array $\ast$) auto\+Distribute\+Views\+Along\+Axis\+: \begin{DoxyParamCaption}\item[{(A\+L\+Axis)}]{axis }\item[{withFixedSpacing:(C\+G\+Float)}]{spacing }\item[{insetSpacing:(B\+O\+OL)}]{should\+Space\+Insets }\item[{alignment:(N\+S\+Layout\+Format\+Options)}]{alignment }\end{DoxyParamCaption}}
+
+Distributes the views in this array equally along the selected axis in their superview. Views will be the same size (variable) in the dimension along the axis and will have spacing (fixed) between them, with optional insets from the first and last views to their superview.
+
+Distributes the views in this array equally along the selected axis in their superview. Views will be the same size (variable) in the dimension along the axis and will have spacing (fixed) between them. The first and last views can optionally be inset from their superview by the same amount of spacing as between views.
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & The axis along which to distribute the subviews. \\
+\hline
+{\em spacing} & The fixed amount of spacing between each subview. \\
+\hline
+{\em should\+Space\+Insets} & Whether the first and last views should be equally inset from their superview. \\
+\hline
+{\em alignment} & The way in which the subviews will be aligned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of constraints added. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{category_n_s_array_07_auto_layout_08_a0b92dda230f54b1c2d432203dac1d240}\label{category_n_s_array_07_auto_layout_08_a0b92dda230f54b1c2d432203dac1d240}} 
+\index{N\+S\+Array(\+Auto\+Layout)@{N\+S\+Array(\+Auto\+Layout)}!auto\+Match\+Views\+Dimension\+:@{auto\+Match\+Views\+Dimension\+:}}
+\index{auto\+Match\+Views\+Dimension\+:@{auto\+Match\+Views\+Dimension\+:}!N\+S\+Array(\+Auto\+Layout)@{N\+S\+Array(\+Auto\+Layout)}}
+\subsubsection{\texorpdfstring{auto\+Match\+Views\+Dimension\+:()}{autoMatchViewsDimension:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Array $\ast$) auto\+Match\+Views\+Dimension\+: \begin{DoxyParamCaption}\item[{(A\+L\+Dimension)}]{dimension }\end{DoxyParamCaption}}
+
+Matches a given dimension of all the views in this array.
+
+Matches a given dimension of all the views in this array. Note\+: This array must contain at least 2 views, and all views must share a common superview.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dimension} & The dimension to match for all of the subviews. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of constraints added. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{category_n_s_array_07_auto_layout_08_a49d4d37abcfd84afc7d1bebe065f2d0d}\label{category_n_s_array_07_auto_layout_08_a49d4d37abcfd84afc7d1bebe065f2d0d}} 
+\index{N\+S\+Array(\+Auto\+Layout)@{N\+S\+Array(\+Auto\+Layout)}!auto\+Set\+Views\+Dimension\+:to\+Size\+:@{auto\+Set\+Views\+Dimension\+:to\+Size\+:}}
+\index{auto\+Set\+Views\+Dimension\+:to\+Size\+:@{auto\+Set\+Views\+Dimension\+:to\+Size\+:}!N\+S\+Array(\+Auto\+Layout)@{N\+S\+Array(\+Auto\+Layout)}}
+\subsubsection{\texorpdfstring{auto\+Set\+Views\+Dimension\+:to\+Size\+:()}{autoSetViewsDimension:toSize:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Array $\ast$) auto\+Set\+Views\+Dimension\+: \begin{DoxyParamCaption}\item[{(A\+L\+Dimension)}]{dimension }\item[{toSize:(C\+G\+Float)}]{size }\end{DoxyParamCaption}}
+
+Sets the given dimension of all the views in this array to a given size.
+
+Sets the given dimension of all the views in this array to a given size. Note\+: This array must contain at least 1 view.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dimension} & The dimension of each of the subviews to set. \\
+\hline
+{\em size} & The size to set the given dimension of each subview to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of constraints added. 
+\end{DoxyReturn}
+
+
+The documentation for this category was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Categories(类目)/\+U\+I\+View/U\+I\+View+\+Auto\+Layout.\+h\item 
+T\+H\+B/\+Categories(类目)/\+U\+I\+View/U\+I\+View+\+Auto\+Layout.\+m\end{DoxyCompactItemize}

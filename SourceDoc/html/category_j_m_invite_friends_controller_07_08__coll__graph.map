@@ -1,0 +1,7 @@
+<map id="JMInviteFriendsController()" name="JMInviteFriendsController()">
+<area shape="rect" id="node2" href="$interface_j_m_invited_ranking_view.html" title="JMInvitedRankingView" alt="" coords="379,45,535,70"/>
+<area shape="rect" id="node6" href="$interface_j_m_invite_friend_award_view.html" title="JMInviteFriendAwardView" alt="" coords="370,94,545,119"/>
+<area shape="rect" id="node7" href="$interface_j_m_invite_record_view.html" title="JMInviteRecordView" alt="" coords="386,143,529,169"/>
+<area shape="rect" id="node8" href="$interface_j_m_invited_success_tips_view.html" title="JMInvitedSuccessTipsView" alt="" coords="366,221,548,246"/>
+<area shape="rect" id="node4" href="$interface_j_m_invite_friend_model.html" title="JMInviteFriendModel" alt="" coords="133,26,278,51"/>
+</map>

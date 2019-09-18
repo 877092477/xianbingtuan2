@@ -1,0 +1,214 @@
+\hypertarget{interface_app_monitor_stat}{}\section{App\+Monitor\+Stat Class Reference}
+\label{interface_app_monitor_stat}\index{App\+Monitor\+Stat@{App\+Monitor\+Stat}}
+
+
+Inheritance diagram for App\+Monitor\+Stat\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{interface_app_monitor_stat__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for App\+Monitor\+Stat\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{interface_app_monitor_stat__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \mbox{\hyperlink{interface_app_monitor_stat_a5e5ba297ca1224ae6a584dc1ade19fed}{register\+With\+Module\+:monitor\+Point\+:measure\+Set\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_app_monitor_stat_a65e08448b55942dc6c176aae47cd21b3}{register\+With\+Module\+:monitor\+Point\+:measure\+Set\+:dimension\+Set\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_app_monitor_stat_a98113174838b140dc6ced0e89dd62b50}{register\+With\+Module\+:monitor\+Point\+:measure\+Set\+:is\+Commit\+Detail\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_app_monitor_stat_aa423e474af943903df6c1f50f0d75bb8}{register\+With\+Module\+:monitor\+Point\+:measure\+Set\+:dimension\+Set\+:is\+Commit\+Detail\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_app_monitor_stat_ab0f49bd48da1dfc4764a13b2f7272955}{commit\+With\+Module\+:monitor\+Point\+:dimension\+Value\+Set\+:measure\+Value\+Set\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_app_monitor_stat_ad693c34524d4c06ac2f5b069c7405be4}{commit\+With\+Module\+:monitor\+Point\+:dimension\+Value\+Set\+:value\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_app_monitor_stat_a746f48f3281128d7c7a5f69760df04cc}{commit\+With\+Module\+:monitor\+Point\+:value\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_app_monitor_stat_a78b877a3582ac16af52f7662d481aa80}{begin\+With\+Module\+:monitor\+Point\+:measure\+Name\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_app_monitor_stat_a04ad81ce6e45c4f30e559a1eb5b1af92}{end\+With\+Module\+:monitor\+Point\+:measure\+Name\+:}}
+\item 
+(\mbox{\hyperlink{interface_app_monitor_stat_transaction}{App\+Monitor\+Stat\+Transaction}} $\ast$) + \mbox{\hyperlink{interface_app_monitor_stat_ae10430c2e4ba64d17bff4ecb8e606f01}{create\+Transaction\+With\+Module\+:monitor\+Point\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_app_monitor_stat_a78b877a3582ac16af52f7662d481aa80}\label{interface_app_monitor_stat_a78b877a3582ac16af52f7662d481aa80}} 
+\index{App\+Monitor\+Stat@{App\+Monitor\+Stat}!begin\+With\+Module\+:monitor\+Point\+:measure\+Name\+:@{begin\+With\+Module\+:monitor\+Point\+:measure\+Name\+:}}
+\index{begin\+With\+Module\+:monitor\+Point\+:measure\+Name\+:@{begin\+With\+Module\+:monitor\+Point\+:measure\+Name\+:}!App\+Monitor\+Stat@{App\+Monitor\+Stat}}
+\subsubsection{\texorpdfstring{begin\+With\+Module\+:monitor\+Point\+:measure\+Name\+:()}{beginWithModule:monitorPoint:measureName:()}}
+{\footnotesize\ttfamily + (void) begin\+With\+Module\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{module }\item[{monitorPoint:(N\+S\+String $\ast$)}]{monitor\+Point }\item[{measureName:(N\+S\+String $\ast$)}]{measure\+Name }\end{DoxyParamCaption}}
+
+开始事件,适合不存在并发的跨多线程事件（比如常见的\+U\+I加载渲染）~\newline
+ 如果事件跨多线程多并发执行,请使用begin\+Transaction-\/end\+Transaction方法对，此场景较少见 
+\begin{DoxyParams}{Parameters}
+{\em module} & 监控模块 \\
+\hline
+{\em monitor\+Point} & 监控点名称 module+monitor\+Point必须唯一 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_app_monitor_stat_ab0f49bd48da1dfc4764a13b2f7272955}\label{interface_app_monitor_stat_ab0f49bd48da1dfc4764a13b2f7272955}} 
+\index{App\+Monitor\+Stat@{App\+Monitor\+Stat}!commit\+With\+Module\+:monitor\+Point\+:dimension\+Value\+Set\+:measure\+Value\+Set\+:@{commit\+With\+Module\+:monitor\+Point\+:dimension\+Value\+Set\+:measure\+Value\+Set\+:}}
+\index{commit\+With\+Module\+:monitor\+Point\+:dimension\+Value\+Set\+:measure\+Value\+Set\+:@{commit\+With\+Module\+:monitor\+Point\+:dimension\+Value\+Set\+:measure\+Value\+Set\+:}!App\+Monitor\+Stat@{App\+Monitor\+Stat}}
+\subsubsection{\texorpdfstring{commit\+With\+Module\+:monitor\+Point\+:dimension\+Value\+Set\+:measure\+Value\+Set\+:()}{commitWithModule:monitorPoint:dimensionValueSet:measureValueSet:()}}
+{\footnotesize\ttfamily + (void) commit\+With\+Module\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{module }\item[{monitorPoint:(N\+S\+String $\ast$)}]{monitor\+Point }\item[{dimensionValueSet:(\mbox{\hyperlink{interface_app_monitor_dimension_value_set}{App\+Monitor\+Dimension\+Value\+Set}} $\ast$)}]{dimension\+Values }\item[{measureValueSet:(\mbox{\hyperlink{interface_app_monitor_measure_value_set}{App\+Monitor\+Measure\+Value\+Set}} $\ast$)}]{measure\+Values }\end{DoxyParamCaption}}
+
+提交多维度，多指标 
+\begin{DoxyParams}{Parameters}
+{\em module} & 监控模块 \\
+\hline
+{\em monitor\+Point} & 监控点名称 Page+monitor\+Point必须唯一 \\
+\hline
+{\em dimension\+Values} & 维度值集合 \\
+\hline
+{\em measure\+Values} & 指标值集合 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_app_monitor_stat_ad693c34524d4c06ac2f5b069c7405be4}\label{interface_app_monitor_stat_ad693c34524d4c06ac2f5b069c7405be4}} 
+\index{App\+Monitor\+Stat@{App\+Monitor\+Stat}!commit\+With\+Module\+:monitor\+Point\+:dimension\+Value\+Set\+:value\+:@{commit\+With\+Module\+:monitor\+Point\+:dimension\+Value\+Set\+:value\+:}}
+\index{commit\+With\+Module\+:monitor\+Point\+:dimension\+Value\+Set\+:value\+:@{commit\+With\+Module\+:monitor\+Point\+:dimension\+Value\+Set\+:value\+:}!App\+Monitor\+Stat@{App\+Monitor\+Stat}}
+\subsubsection{\texorpdfstring{commit\+With\+Module\+:monitor\+Point\+:dimension\+Value\+Set\+:value\+:()}{commitWithModule:monitorPoint:dimensionValueSet:value:()}}
+{\footnotesize\ttfamily + (void) commit\+With\+Module\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{module }\item[{monitorPoint:(N\+S\+String $\ast$)}]{monitor\+Point }\item[{dimensionValueSet:(\mbox{\hyperlink{interface_app_monitor_dimension_value_set}{App\+Monitor\+Dimension\+Value\+Set}} $\ast$)}]{dimension\+Values }\item[{value:(double)}]{value }\end{DoxyParamCaption}}
+
+提交多维度单指标 
+\begin{DoxyParams}{Parameters}
+{\em module} & 监控模块 \\
+\hline
+{\em monitor\+Point} & 监控点名称 Page+monitor\+Point必须唯一 \\
+\hline
+{\em dimension\+Values} & 维度值集合 \\
+\hline
+{\em value} & 指标值 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_app_monitor_stat_a746f48f3281128d7c7a5f69760df04cc}\label{interface_app_monitor_stat_a746f48f3281128d7c7a5f69760df04cc}} 
+\index{App\+Monitor\+Stat@{App\+Monitor\+Stat}!commit\+With\+Module\+:monitor\+Point\+:value\+:@{commit\+With\+Module\+:monitor\+Point\+:value\+:}}
+\index{commit\+With\+Module\+:monitor\+Point\+:value\+:@{commit\+With\+Module\+:monitor\+Point\+:value\+:}!App\+Monitor\+Stat@{App\+Monitor\+Stat}}
+\subsubsection{\texorpdfstring{commit\+With\+Module\+:monitor\+Point\+:value\+:()}{commitWithModule:monitorPoint:value:()}}
+{\footnotesize\ttfamily + (void) commit\+With\+Module\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{module }\item[{monitorPoint:(N\+S\+String $\ast$)}]{monitor\+Point }\item[{value:(double)}]{value }\end{DoxyParamCaption}}
+
+提交单指标 
+\begin{DoxyParams}{Parameters}
+{\em module} & 监控模块 \\
+\hline
+{\em monitor\+Point} & 监控点名称 Page+monitor\+Point必须唯一 \\
+\hline
+{\em value} & 指标值 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_app_monitor_stat_ae10430c2e4ba64d17bff4ecb8e606f01}\label{interface_app_monitor_stat_ae10430c2e4ba64d17bff4ecb8e606f01}} 
+\index{App\+Monitor\+Stat@{App\+Monitor\+Stat}!create\+Transaction\+With\+Module\+:monitor\+Point\+:@{create\+Transaction\+With\+Module\+:monitor\+Point\+:}}
+\index{create\+Transaction\+With\+Module\+:monitor\+Point\+:@{create\+Transaction\+With\+Module\+:monitor\+Point\+:}!App\+Monitor\+Stat@{App\+Monitor\+Stat}}
+\subsubsection{\texorpdfstring{create\+Transaction\+With\+Module\+:monitor\+Point\+:()}{createTransactionWithModule:monitorPoint:()}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_app_monitor_stat_transaction}{App\+Monitor\+Stat\+Transaction}} $\ast$) create\+Transaction\+With\+Module\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{module }\item[{monitorPoint:(N\+S\+String $\ast$)}]{monitor\+Point }\end{DoxyParamCaption}}
+
+埋点事务,可以通过调用事务的begin-\/end方法对来统计耗时指标的值
+
+
+\begin{DoxyParams}{Parameters}
+{\em module} & 模块 \\
+\hline
+{\em monitor\+Point} & 监控点 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+返回埋点事务实例 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_app_monitor_stat_a04ad81ce6e45c4f30e559a1eb5b1af92}\label{interface_app_monitor_stat_a04ad81ce6e45c4f30e559a1eb5b1af92}} 
+\index{App\+Monitor\+Stat@{App\+Monitor\+Stat}!end\+With\+Module\+:monitor\+Point\+:measure\+Name\+:@{end\+With\+Module\+:monitor\+Point\+:measure\+Name\+:}}
+\index{end\+With\+Module\+:monitor\+Point\+:measure\+Name\+:@{end\+With\+Module\+:monitor\+Point\+:measure\+Name\+:}!App\+Monitor\+Stat@{App\+Monitor\+Stat}}
+\subsubsection{\texorpdfstring{end\+With\+Module\+:monitor\+Point\+:measure\+Name\+:()}{endWithModule:monitorPoint:measureName:()}}
+{\footnotesize\ttfamily + (void) end\+With\+Module\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{module }\item[{monitorPoint:(N\+S\+String $\ast$)}]{monitor\+Point }\item[{measureName:(N\+S\+String $\ast$)}]{measure\+Name }\end{DoxyParamCaption}}
+
+结束事件，适合不存在并发的跨多线程事件（比如常见的\+U\+I加载渲染）~\newline
+ 如果事件跨多线程多并发执行,请使用begin\+Transaction-\/end\+Transaction方法对，此场景较少见 
+\begin{DoxyParams}{Parameters}
+{\em module} & 监控模块 \\
+\hline
+{\em monitor\+Point} & 监控点名称 module+monitor\+Point必须唯一 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_app_monitor_stat_a5e5ba297ca1224ae6a584dc1ade19fed}\label{interface_app_monitor_stat_a5e5ba297ca1224ae6a584dc1ade19fed}} 
+\index{App\+Monitor\+Stat@{App\+Monitor\+Stat}!register\+With\+Module\+:monitor\+Point\+:measure\+Set\+:@{register\+With\+Module\+:monitor\+Point\+:measure\+Set\+:}}
+\index{register\+With\+Module\+:monitor\+Point\+:measure\+Set\+:@{register\+With\+Module\+:monitor\+Point\+:measure\+Set\+:}!App\+Monitor\+Stat@{App\+Monitor\+Stat}}
+\subsubsection{\texorpdfstring{register\+With\+Module\+:monitor\+Point\+:measure\+Set\+:()}{registerWithModule:monitorPoint:measureSet:()}}
+{\footnotesize\ttfamily + (void) register\+With\+Module\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{module }\item[{monitorPoint:(N\+S\+String $\ast$)}]{monitor\+Point }\item[{measureSet:(\mbox{\hyperlink{interface_app_monitor_measure_set}{App\+Monitor\+Measure\+Set}} $\ast$)}]{measures }\end{DoxyParamCaption}}
+
+注册性能埋点 
+\begin{DoxyParams}{Parameters}
+{\em module} & 模块 \\
+\hline
+{\em monitor\+Point} & 监控点 \\
+\hline
+{\em measures} & 多指标 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_app_monitor_stat_a65e08448b55942dc6c176aae47cd21b3}\label{interface_app_monitor_stat_a65e08448b55942dc6c176aae47cd21b3}} 
+\index{App\+Monitor\+Stat@{App\+Monitor\+Stat}!register\+With\+Module\+:monitor\+Point\+:measure\+Set\+:dimension\+Set\+:@{register\+With\+Module\+:monitor\+Point\+:measure\+Set\+:dimension\+Set\+:}}
+\index{register\+With\+Module\+:monitor\+Point\+:measure\+Set\+:dimension\+Set\+:@{register\+With\+Module\+:monitor\+Point\+:measure\+Set\+:dimension\+Set\+:}!App\+Monitor\+Stat@{App\+Monitor\+Stat}}
+\subsubsection{\texorpdfstring{register\+With\+Module\+:monitor\+Point\+:measure\+Set\+:dimension\+Set\+:()}{registerWithModule:monitorPoint:measureSet:dimensionSet:()}}
+{\footnotesize\ttfamily + (void) register\+With\+Module\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{module }\item[{monitorPoint:(N\+S\+String $\ast$)}]{monitor\+Point }\item[{measureSet:(\mbox{\hyperlink{interface_app_monitor_measure_set}{App\+Monitor\+Measure\+Set}} $\ast$)}]{measures }\item[{dimensionSet:(\mbox{\hyperlink{interface_app_monitor_dimension_set}{App\+Monitor\+Dimension\+Set}} $\ast$)}]{dimensions }\end{DoxyParamCaption}}
+
+注册性能埋点 
+\begin{DoxyParams}{Parameters}
+{\em module} & 模块 \\
+\hline
+{\em monitor\+Point} & 监控点 \\
+\hline
+{\em measures} & 多指标 \\
+\hline
+{\em dimemsions} & 多维度 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_app_monitor_stat_aa423e474af943903df6c1f50f0d75bb8}\label{interface_app_monitor_stat_aa423e474af943903df6c1f50f0d75bb8}} 
+\index{App\+Monitor\+Stat@{App\+Monitor\+Stat}!register\+With\+Module\+:monitor\+Point\+:measure\+Set\+:dimension\+Set\+:is\+Commit\+Detail\+:@{register\+With\+Module\+:monitor\+Point\+:measure\+Set\+:dimension\+Set\+:is\+Commit\+Detail\+:}}
+\index{register\+With\+Module\+:monitor\+Point\+:measure\+Set\+:dimension\+Set\+:is\+Commit\+Detail\+:@{register\+With\+Module\+:monitor\+Point\+:measure\+Set\+:dimension\+Set\+:is\+Commit\+Detail\+:}!App\+Monitor\+Stat@{App\+Monitor\+Stat}}
+\subsubsection{\texorpdfstring{register\+With\+Module\+:monitor\+Point\+:measure\+Set\+:dimension\+Set\+:is\+Commit\+Detail\+:()}{registerWithModule:monitorPoint:measureSet:dimensionSet:isCommitDetail:()}}
+{\footnotesize\ttfamily + (void) register\+With\+Module\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{module }\item[{monitorPoint:(N\+S\+String $\ast$)}]{monitor\+Point }\item[{measureSet:(\mbox{\hyperlink{interface_app_monitor_measure_set}{App\+Monitor\+Measure\+Set}} $\ast$)}]{measures }\item[{dimensionSet:(\mbox{\hyperlink{interface_app_monitor_dimension_set}{App\+Monitor\+Dimension\+Set}} $\ast$)}]{dimensions }\item[{isCommitDetail:(B\+O\+OL)}]{detail }\end{DoxyParamCaption}}
+
+注册性能埋点 
+\begin{DoxyParams}{Parameters}
+{\em module} & 模块 \\
+\hline
+{\em monitor\+Point} & 监控点 \\
+\hline
+{\em measures} & 多指标 \\
+\hline
+{\em dimemsions} & 多维度 \\
+\hline
+{\em is\+Commit\+Detail} & 标记是否提交明细。需要提交明细时设置为\+Y\+E\+S，否则为\+NO \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_app_monitor_stat_a98113174838b140dc6ced0e89dd62b50}\label{interface_app_monitor_stat_a98113174838b140dc6ced0e89dd62b50}} 
+\index{App\+Monitor\+Stat@{App\+Monitor\+Stat}!register\+With\+Module\+:monitor\+Point\+:measure\+Set\+:is\+Commit\+Detail\+:@{register\+With\+Module\+:monitor\+Point\+:measure\+Set\+:is\+Commit\+Detail\+:}}
+\index{register\+With\+Module\+:monitor\+Point\+:measure\+Set\+:is\+Commit\+Detail\+:@{register\+With\+Module\+:monitor\+Point\+:measure\+Set\+:is\+Commit\+Detail\+:}!App\+Monitor\+Stat@{App\+Monitor\+Stat}}
+\subsubsection{\texorpdfstring{register\+With\+Module\+:monitor\+Point\+:measure\+Set\+:is\+Commit\+Detail\+:()}{registerWithModule:monitorPoint:measureSet:isCommitDetail:()}}
+{\footnotesize\ttfamily + (void) register\+With\+Module\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{module }\item[{monitorPoint:(N\+S\+String $\ast$)}]{monitor\+Point }\item[{measureSet:(\mbox{\hyperlink{interface_app_monitor_measure_set}{App\+Monitor\+Measure\+Set}} $\ast$)}]{measures }\item[{isCommitDetail:(B\+O\+OL)}]{detail }\end{DoxyParamCaption}}
+
+注册性能埋点 
+\begin{DoxyParams}{Parameters}
+{\em module} & 模块 \\
+\hline
+{\em monitor\+Point} & 监控点 \\
+\hline
+{\em measures} & 多指标 \\
+\hline
+{\em is\+Commit\+Detail} & 标记是否提交明细。需要提交明细时设置为\+Y\+E\+S，否则为\+NO \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+U\+T\+Mini.\+framework/\+Versions/\+A/\+Headers/App\+Monitor\+Stat.\+h\end{DoxyCompactItemize}

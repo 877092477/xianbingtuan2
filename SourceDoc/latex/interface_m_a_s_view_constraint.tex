@@ -1,0 +1,100 @@
+\hypertarget{interface_m_a_s_view_constraint}{}\section{M\+A\+S\+View\+Constraint Class Reference}
+\label{interface_m_a_s_view_constraint}\index{M\+A\+S\+View\+Constraint@{M\+A\+S\+View\+Constraint}}
+
+
+{\ttfamily \#import $<$M\+A\+S\+View\+Constraint.\+h$>$}
+
+
+
+Inheritance diagram for M\+A\+S\+View\+Constraint\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{interface_m_a_s_view_constraint__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for M\+A\+S\+View\+Constraint\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_m_a_s_view_constraint__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \mbox{\hyperlink{interface_m_a_s_view_constraint_ad5d75b0555e99b6ea8ad2d9ca682e108}{init\+With\+First\+View\+Attribute\+:}}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\+S\+Array $\ast$) + \mbox{\hyperlink{interface_m_a_s_view_constraint_a947764dff6608eefae24c46f6c21ed4e}{installed\+Constraints\+For\+View\+:}}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_m_a_s_view_attribute}{M\+A\+S\+View\+Attribute}} $\ast$ \mbox{\hyperlink{interface_m_a_s_view_constraint_a3185acee333665120fdc4700329aabc2}{first\+View\+Attribute}}
+\item 
+\mbox{\hyperlink{interface_m_a_s_view_attribute}{M\+A\+S\+View\+Attribute}} $\ast$ \mbox{\hyperlink{interface_m_a_s_view_constraint_ad7c676556759c8787c84d5b51b4d6692}{second\+View\+Attribute}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A single constraint. Contains the attributes neccessary for creating a N\+S\+Layout\+Constraint and adding it to the appropriate view 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_m_a_s_view_constraint_ad5d75b0555e99b6ea8ad2d9ca682e108}\label{interface_m_a_s_view_constraint_ad5d75b0555e99b6ea8ad2d9ca682e108}} 
+\index{M\+A\+S\+View\+Constraint@{M\+A\+S\+View\+Constraint}!init\+With\+First\+View\+Attribute\+:@{init\+With\+First\+View\+Attribute\+:}}
+\index{init\+With\+First\+View\+Attribute\+:@{init\+With\+First\+View\+Attribute\+:}!M\+A\+S\+View\+Constraint@{M\+A\+S\+View\+Constraint}}
+\subsubsection{\texorpdfstring{init\+With\+First\+View\+Attribute\+:()}{initWithFirstViewAttribute:()}}
+{\footnotesize\ttfamily -\/ (id) init\+With\+First\+View\+Attribute\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_m_a_s_view_attribute}{M\+A\+S\+View\+Attribute}} $\ast$)}]{first\+View\+Attribute }\end{DoxyParamCaption}}
+
+initialises the \mbox{\hyperlink{interface_m_a_s_view_constraint}{M\+A\+S\+View\+Constraint}} with the first part of the equation
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\+View\+Attribute} & view.\+mas\+\_\+left, view.\+mas\+\_\+width etc.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new view constraint 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_m_a_s_view_constraint_a947764dff6608eefae24c46f6c21ed4e}\label{interface_m_a_s_view_constraint_a947764dff6608eefae24c46f6c21ed4e}} 
+\index{M\+A\+S\+View\+Constraint@{M\+A\+S\+View\+Constraint}!installed\+Constraints\+For\+View\+:@{installed\+Constraints\+For\+View\+:}}
+\index{installed\+Constraints\+For\+View\+:@{installed\+Constraints\+For\+View\+:}!M\+A\+S\+View\+Constraint@{M\+A\+S\+View\+Constraint}}
+\subsubsection{\texorpdfstring{installed\+Constraints\+For\+View\+:()}{installedConstraintsForView:()}}
+{\footnotesize\ttfamily + (N\+S\+Array $\ast$) installed\+Constraints\+For\+View\+: \begin{DoxyParamCaption}\item[{(M\+A\+S\+\_\+\+V\+I\+EW $\ast$)}]{view }\end{DoxyParamCaption}}
+
+Returns all M\+A\+S\+View\+Constraints installed with this view as a first item.
+
+
+\begin{DoxyParams}{Parameters}
+{\em view} & A view to retrieve constraints for.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of M\+A\+S\+View\+Constraints. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_m_a_s_view_constraint_a3185acee333665120fdc4700329aabc2}\label{interface_m_a_s_view_constraint_a3185acee333665120fdc4700329aabc2}} 
+\index{M\+A\+S\+View\+Constraint@{M\+A\+S\+View\+Constraint}!first\+View\+Attribute@{first\+View\+Attribute}}
+\index{first\+View\+Attribute@{first\+View\+Attribute}!M\+A\+S\+View\+Constraint@{M\+A\+S\+View\+Constraint}}
+\subsubsection{\texorpdfstring{first\+View\+Attribute}{firstViewAttribute}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_m_a_s_view_attribute}{M\+A\+S\+View\+Attribute}}$\ast$) first\+View\+Attribute\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+First item/view and first attribute of the N\+S\+Layout\+Constraint \mbox{\Hypertarget{interface_m_a_s_view_constraint_ad7c676556759c8787c84d5b51b4d6692}\label{interface_m_a_s_view_constraint_ad7c676556759c8787c84d5b51b4d6692}} 
+\index{M\+A\+S\+View\+Constraint@{M\+A\+S\+View\+Constraint}!second\+View\+Attribute@{second\+View\+Attribute}}
+\index{second\+View\+Attribute@{second\+View\+Attribute}!M\+A\+S\+View\+Constraint@{M\+A\+S\+View\+Constraint}}
+\subsubsection{\texorpdfstring{second\+View\+Attribute}{secondViewAttribute}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_m_a_s_view_attribute}{M\+A\+S\+View\+Attribute}}$\ast$) second\+View\+Attribute\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+Second item/view and second attribute of the N\+S\+Layout\+Constraint 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/\+Masonry/M\+A\+S\+View\+Constraint.\+h\item 
+T\+H\+B/\+Library/\+Masonry/M\+A\+S\+View\+Constraint.\+m\end{DoxyCompactItemize}

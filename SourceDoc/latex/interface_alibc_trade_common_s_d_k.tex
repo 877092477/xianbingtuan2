@@ -1,0 +1,93 @@
+\hypertarget{interface_alibc_trade_common_s_d_k}{}\section{Alibc\+Trade\+Common\+S\+DK Class Reference}
+\label{interface_alibc_trade_common_s_d_k}\index{Alibc\+Trade\+Common\+S\+DK@{Alibc\+Trade\+Common\+S\+DK}}
+
+
+Inheritance diagram for Alibc\+Trade\+Common\+S\+DK\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{interface_alibc_trade_common_s_d_k__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Alibc\+Trade\+Common\+S\+DK\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{interface_alibc_trade_common_s_d_k__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \mbox{\hyperlink{interface_alibc_trade_common_s_d_k_a6a1af045551eec7da7a2da92886ad05f}{async\+Init\+With\+Success\+:failure\+:}}
+\item 
+\mbox{\Hypertarget{interface_alibc_trade_common_s_d_k_ad261c6a52caad477278b230c6fd5fe71}\label{interface_alibc_trade_common_s_d_k_ad261c6a52caad477278b230c6fd5fe71}} 
+(void) + {\bfseries alibc\+\_\+set\+Init\+Monitor\+:}
+\item 
+\mbox{\Hypertarget{interface_alibc_trade_common_s_d_k_a53ab025047db524937701ea60c1f39a3}\label{interface_alibc_trade_common_s_d_k_a53ab025047db524937701ea60c1f39a3}} 
+(\mbox{\hyperlink{interface_alibc_trade_init_monitor}{Alibc\+Trade\+Init\+Monitor}} $\ast$) + {\bfseries alibc\+\_\+init\+Monitor}
+\item 
+\mbox{\Hypertarget{interface_alibc_trade_common_s_d_k_a9dd9bc766af9caccf81ad5edc27e6112}\label{interface_alibc_trade_common_s_d_k_a9dd9bc766af9caccf81ad5edc27e6112}} 
+(dispatch\+\_\+group\+\_\+t) + {\bfseries alibc\+\_\+init\+Monitor\+Group}
+\item 
+(void) + \mbox{\hyperlink{interface_alibc_trade_common_s_d_k_a780956aef5009a4b6fcbe3fc9f63f598}{set\+Env\+:}}
+\item 
+(Alibc\+Environment) + \mbox{\hyperlink{interface_alibc_trade_common_s_d_k_a52fffd9cecf92db99a9c187677a531da}{get\+Env}}
+\item 
+(void) + \mbox{\hyperlink{interface_alibc_trade_common_s_d_k_a078b422151a1f58252df135495ca6672}{set\+Debug\+Log\+Open\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_alibc_trade_common_s_d_k_a6a1af045551eec7da7a2da92886ad05f}\label{interface_alibc_trade_common_s_d_k_a6a1af045551eec7da7a2da92886ad05f}} 
+\index{Alibc\+Trade\+Common\+S\+DK@{Alibc\+Trade\+Common\+S\+DK}!async\+Init\+With\+Success\+:failure\+:@{async\+Init\+With\+Success\+:failure\+:}}
+\index{async\+Init\+With\+Success\+:failure\+:@{async\+Init\+With\+Success\+:failure\+:}!Alibc\+Trade\+Common\+S\+DK@{Alibc\+Trade\+Common\+S\+DK}}
+\subsubsection{\texorpdfstring{async\+Init\+With\+Success\+:failure\+:()}{asyncInitWithSuccess:failure:()}}
+{\footnotesize\ttfamily + (void) async\+Init\+With\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)())}]{on\+Success }\item[{failure:(void($^\wedge$)(N\+S\+Error $\ast$error))}]{on\+Failure }\end{DoxyParamCaption}}
+
+初始化函数,初始化成功后方可正常使用\+S\+D\+K中的功能
+
+
+\begin{DoxyParams}{Parameters}
+{\em on\+Success} & 初始化成功的回调 \\
+\hline
+{\em on\+Failure} & 初始化失败的回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_alibc_trade_common_s_d_k_a52fffd9cecf92db99a9c187677a531da}\label{interface_alibc_trade_common_s_d_k_a52fffd9cecf92db99a9c187677a531da}} 
+\index{Alibc\+Trade\+Common\+S\+DK@{Alibc\+Trade\+Common\+S\+DK}!get\+Env@{get\+Env}}
+\index{get\+Env@{get\+Env}!Alibc\+Trade\+Common\+S\+DK@{Alibc\+Trade\+Common\+S\+DK}}
+\subsubsection{\texorpdfstring{get\+Env()}{getEnv()}}
+{\footnotesize\ttfamily + (Alibc\+Environment) get\+Env \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+获取当前环境对象 
+
+Provided by category \mbox{\hyperlink{category_alibc_trade_common_s_d_k_07_settings_08_a52fffd9cecf92db99a9c187677a531da}{Alibc\+Trade\+Common\+S\+D\+K(\+Settings)}}.
+
+\mbox{\Hypertarget{interface_alibc_trade_common_s_d_k_a078b422151a1f58252df135495ca6672}\label{interface_alibc_trade_common_s_d_k_a078b422151a1f58252df135495ca6672}} 
+\index{Alibc\+Trade\+Common\+S\+DK@{Alibc\+Trade\+Common\+S\+DK}!set\+Debug\+Log\+Open\+:@{set\+Debug\+Log\+Open\+:}}
+\index{set\+Debug\+Log\+Open\+:@{set\+Debug\+Log\+Open\+:}!Alibc\+Trade\+Common\+S\+DK@{Alibc\+Trade\+Common\+S\+DK}}
+\subsubsection{\texorpdfstring{set\+Debug\+Log\+Open\+:()}{setDebugLogOpen:()}}
+{\footnotesize\ttfamily + (void) set\+Debug\+Log\+Open\+: \begin{DoxyParamCaption}\item[{(B\+O\+OL)}]{is\+Debug\+Log\+Open }\end{DoxyParamCaption}}
+
+开启 Debug 模式日志 
+
+Provided by category \mbox{\hyperlink{category_alibc_trade_common_s_d_k_07_settings_08_a078b422151a1f58252df135495ca6672}{Alibc\+Trade\+Common\+S\+D\+K(\+Settings)}}.
+
+\mbox{\Hypertarget{interface_alibc_trade_common_s_d_k_a780956aef5009a4b6fcbe3fc9f63f598}\label{interface_alibc_trade_common_s_d_k_a780956aef5009a4b6fcbe3fc9f63f598}} 
+\index{Alibc\+Trade\+Common\+S\+DK@{Alibc\+Trade\+Common\+S\+DK}!set\+Env\+:@{set\+Env\+:}}
+\index{set\+Env\+:@{set\+Env\+:}!Alibc\+Trade\+Common\+S\+DK@{Alibc\+Trade\+Common\+S\+DK}}
+\subsubsection{\texorpdfstring{set\+Env\+:()}{setEnv:()}}
+{\footnotesize\ttfamily + (void) set\+Env\+: \begin{DoxyParamCaption}\item[{(Alibc\+Environment)}]{env }\end{DoxyParamCaption}}
+
+设置环境 
+
+Provided by category \mbox{\hyperlink{category_alibc_trade_common_s_d_k_07_settings_08_a780956aef5009a4b6fcbe3fc9f63f598}{Alibc\+Trade\+Common\+S\+D\+K(\+Settings)}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Alibc\+Trade\+Common.\+framework/\+Headers/Alibc\+Trade\+Common\+S\+D\+K.\+h\end{DoxyCompactItemize}

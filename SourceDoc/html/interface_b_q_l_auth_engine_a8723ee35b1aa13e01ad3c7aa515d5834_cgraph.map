@@ -1,0 +1,5 @@
+<map id="+[BQLAuthEngine initialAuthEngine]" name="+[BQLAuthEngine initialAuthEngine]">
+<area shape="rect" id="node2" href="$interface_w_x_api.html#a84341d7a4aea16c2fd6e74708a569564" title="WXApi的成员函数，向微信终端程序注册第三方应用。 " alt="" coords="278,5,431,31"/>
+<area shape="rect" id="node3" href="$interface_weibo_s_d_k.html#a34fc58188a69b4585b4f49cda4f3cc17" title="+[WeiboSDK enableDebugMode:]" alt="" coords="243,55,465,80"/>
+<area shape="rect" id="node4" href="$interface_weibo_s_d_k.html#ae11cd35ddd3b8ab9f0dea249e830aa72" title="+[WeiboSDK registerApp:]" alt="" coords="266,104,443,129"/>
+</map>

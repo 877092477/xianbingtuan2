@@ -1,0 +1,119 @@
+\hypertarget{interface_u_m_share_sms_object}{}\section{U\+M\+Share\+Sms\+Object Class Reference}
+\label{interface_u_m_share_sms_object}\index{U\+M\+Share\+Sms\+Object@{U\+M\+Share\+Sms\+Object}}
+
+
+分享消息中的短信分享对象  
+
+
+
+
+{\ttfamily \#import $<$U\+M\+Social\+Message\+Object.\+h$>$}
+
+
+
+Inheritance diagram for U\+M\+Share\+Sms\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{interface_u_m_share_sms_object__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for U\+M\+Share\+Sms\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{interface_u_m_share_sms_object__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+Array $\ast$ \mbox{\hyperlink{interface_u_m_share_sms_object_a5bdd11e9a2f53f3529f4ab93896e2abb}{recipients}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_u_m_share_sms_object_a79e7fbcf1a1411036f9457361c1308d0}{subject}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_u_m_share_sms_object_ab8f2c4c6bd366cd8d875da8daa95b5db}{sms\+Content}}
+\item 
+id \mbox{\hyperlink{interface_u_m_share_sms_object_af4bf871319630311ce1d0b2599f78f00}{sms\+Image}}
+\item 
+\mbox{\Hypertarget{interface_u_m_share_sms_object_ad6f447a917f86380f1dd3a0e23032a2f}\label{interface_u_m_share_sms_object_ad6f447a917f86380f1dd3a0e23032a2f}} 
+N\+S\+String $\ast$ {\bfseries image\+Type}
+\item 
+\mbox{\Hypertarget{interface_u_m_share_sms_object_a0579bba6cf2ee1fa108d2d9639309c64}\label{interface_u_m_share_sms_object_a0579bba6cf2ee1fa108d2d9639309c64}} 
+N\+S\+String $\ast$ {\bfseries image\+Name}
+\item 
+N\+S\+Data $\ast$ \mbox{\hyperlink{interface_u_m_share_sms_object_addc9ab4af148e82fb5a5e02e83d3c4c5}{sms\+Send\+Data}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_u_m_share_sms_object_aeb91061dd25df4ed3bf71c9aa4c020f3}{file\+Type}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_u_m_share_sms_object_a3957b5354620293217fc1c215d57c2c5}{file\+Name}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_u_m_share_sms_object_ade55cf9f0840c8bafc67f06f4e1502c3}{file\+Url}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+分享消息中的短信分享对象 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interface_u_m_social_message_object}{U\+M\+Social\+Message\+Object}}  U\+M\+Share\+Sms\+Object只能发送的附件是图片！！！！ 如果发送其他的文件的话，虽然能在短信界面显示发送的文件，但是会发送不成功 
+\end{DoxySeeAlso}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_u_m_share_sms_object_a3957b5354620293217fc1c215d57c2c5}\label{interface_u_m_share_sms_object_a3957b5354620293217fc1c215d57c2c5}} 
+\index{U\+M\+Share\+Sms\+Object@{U\+M\+Share\+Sms\+Object}!file\+Name@{file\+Name}}
+\index{file\+Name@{file\+Name}!U\+M\+Share\+Sms\+Object@{U\+M\+Share\+Sms\+Object}}
+\subsubsection{\texorpdfstring{file\+Name}{fileName}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) file\+Name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+文件名,(例如图片 file\+Name.\+txt, 文件名后要跟文件后缀名，否则没法识别，导致类似图片不显示的问题) \mbox{\Hypertarget{interface_u_m_share_sms_object_aeb91061dd25df4ed3bf71c9aa4c020f3}\label{interface_u_m_share_sms_object_aeb91061dd25df4ed3bf71c9aa4c020f3}} 
+\index{U\+M\+Share\+Sms\+Object@{U\+M\+Share\+Sms\+Object}!file\+Type@{file\+Type}}
+\index{file\+Type@{file\+Type}!U\+M\+Share\+Sms\+Object@{U\+M\+Share\+Sms\+Object}}
+\subsubsection{\texorpdfstring{file\+Type}{fileType}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) file\+Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+文件格式 必填，必须指定数据格式，如png图片格式应传入"txt" \mbox{\Hypertarget{interface_u_m_share_sms_object_ade55cf9f0840c8bafc67f06f4e1502c3}\label{interface_u_m_share_sms_object_ade55cf9f0840c8bafc67f06f4e1502c3}} 
+\index{U\+M\+Share\+Sms\+Object@{U\+M\+Share\+Sms\+Object}!file\+Url@{file\+Url}}
+\index{file\+Url@{file\+Url}!U\+M\+Share\+Sms\+Object@{U\+M\+Share\+Sms\+Object}}
+\subsubsection{\texorpdfstring{file\+Url}{fileUrl}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) file\+Url\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+文件地址url(\href{http://}{\tt http\+://} or \href{file://}{\tt file\+://} ...../file\+Name.txt) \mbox{\Hypertarget{interface_u_m_share_sms_object_a5bdd11e9a2f53f3529f4ab93896e2abb}\label{interface_u_m_share_sms_object_a5bdd11e9a2f53f3529f4ab93896e2abb}} 
+\index{U\+M\+Share\+Sms\+Object@{U\+M\+Share\+Sms\+Object}!recipients@{recipients}}
+\index{recipients@{recipients}!U\+M\+Share\+Sms\+Object@{U\+M\+Share\+Sms\+Object}}
+\subsubsection{\texorpdfstring{recipients}{recipients}}
+{\footnotesize\ttfamily -\/ (N\+S\+Array $\ast$) recipients\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+接收人 \mbox{\Hypertarget{interface_u_m_share_sms_object_ab8f2c4c6bd366cd8d875da8daa95b5db}\label{interface_u_m_share_sms_object_ab8f2c4c6bd366cd8d875da8daa95b5db}} 
+\index{U\+M\+Share\+Sms\+Object@{U\+M\+Share\+Sms\+Object}!sms\+Content@{sms\+Content}}
+\index{sms\+Content@{sms\+Content}!U\+M\+Share\+Sms\+Object@{U\+M\+Share\+Sms\+Object}}
+\subsubsection{\texorpdfstring{sms\+Content}{smsContent}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) sms\+Content\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+文本内容 \mbox{\Hypertarget{interface_u_m_share_sms_object_af4bf871319630311ce1d0b2599f78f00}\label{interface_u_m_share_sms_object_af4bf871319630311ce1d0b2599f78f00}} 
+\index{U\+M\+Share\+Sms\+Object@{U\+M\+Share\+Sms\+Object}!sms\+Image@{sms\+Image}}
+\index{sms\+Image@{sms\+Image}!U\+M\+Share\+Sms\+Object@{U\+M\+Share\+Sms\+Object}}
+\subsubsection{\texorpdfstring{sms\+Image}{smsImage}}
+{\footnotesize\ttfamily -\/ (id) sms\+Image\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+图片 \mbox{\Hypertarget{interface_u_m_share_sms_object_addc9ab4af148e82fb5a5e02e83d3c4c5}\label{interface_u_m_share_sms_object_addc9ab4af148e82fb5a5e02e83d3c4c5}} 
+\index{U\+M\+Share\+Sms\+Object@{U\+M\+Share\+Sms\+Object}!sms\+Send\+Data@{sms\+Send\+Data}}
+\index{sms\+Send\+Data@{sms\+Send\+Data}!U\+M\+Share\+Sms\+Object@{U\+M\+Share\+Sms\+Object}}
+\subsubsection{\texorpdfstring{sms\+Send\+Data}{smsSendData}}
+{\footnotesize\ttfamily -\/ (N\+S\+Data $\ast$) sms\+Send\+Data\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+文件数据（\+N\+S\+Data） 必填 \mbox{\Hypertarget{interface_u_m_share_sms_object_a79e7fbcf1a1411036f9457361c1308d0}\label{interface_u_m_share_sms_object_a79e7fbcf1a1411036f9457361c1308d0}} 
+\index{U\+M\+Share\+Sms\+Object@{U\+M\+Share\+Sms\+Object}!subject@{subject}}
+\index{subject@{subject}!U\+M\+Share\+Sms\+Object@{U\+M\+Share\+Sms\+Object}}
+\subsubsection{\texorpdfstring{subject}{subject}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) subject\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+主题 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Public/\+U\+Meng\+U\+Share/\+U\+M\+Social\+Core/U\+M\+Social\+Message\+Object.\+h\end{DoxyCompactItemize}

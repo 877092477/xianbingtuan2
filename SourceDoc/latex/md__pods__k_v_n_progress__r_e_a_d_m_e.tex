@@ -1,0 +1,371 @@
+
+
+\href{https://coveralls.io/r/spacedrabbit/KVNProgress?branch=test-jam-test-coverage}{\tt } \href{https://travis-ci.org/spacedrabbit/KVNProgress}{\tt } \href{https://twitter.com/kevinh6113}{\tt } https\+://github.com/kevin-\/hirsch/\+K\+V\+N\+Progress/blob/master/\+R\+E\+A\+D\+M\+E.\+md \char`\"{}!\mbox{[}\+License\+: M\+I\+T\mbox{]}(http\+://img.\+shields.\+io/badge/license-\/\+M\+I\+T-\/70a1fb.\+svg?style=flat)\char`\"{} \href{https://github.com/kevin-hirsch/KVNProgress}{\tt } \href{http://cocoadocs.org/docsets/KVNProgress/}{\tt }
+
+\mbox{\hyperlink{interface_k_v_n_progress}{K\+V\+N\+Progress}} is a fully customizable progress H\+UD that can be full screen or not. 
+
+
+
+\subsection*{Table of contents}
+
+
+\begin{DoxyItemize}
+\item \href{#preview}{\tt Preview}
+\item \href{#advantages}{\tt Advantages}
+\item \href{#demo}{\tt Demo}
+\item \href{#installation}{\tt Installation}
+\begin{DoxyItemize}
+\item \href{#cocoapods}{\tt Cocoapods}
+\item \href{#source-files}{\tt Source files}
+\end{DoxyItemize}
+\item \href{#usage}{\tt Usage}
+\begin{DoxyItemize}
+\item \href{#basics}{\tt Basics}
+\item \href{#progress}{\tt Progress}
+\begin{DoxyItemize}
+\item \href{#indeterminate-progress}{\tt Indeterminate progress}
+\item \href{#determinate-progress}{\tt Determinate progress}
+\item \href{#stop-button}{\tt Stop button}
+\end{DoxyItemize}
+\item \href{#dismiss}{\tt Dismiss}
+\item \href{#successerror}{\tt Success/\+Error}
+\end{DoxyItemize}
+\item \href{#customization}{\tt Customization}
+\begin{DoxyItemize}
+\item \href{#KVNProgressConfiguration}{\tt K\+V\+N\+Progress\+Configuration}
+\item \href{#display-times}{\tt Display times}
+\end{DoxyItemize}
+\item \href{#known-bugs}{\tt Known bugs}
+\item \href{#remains-to-do}{\tt Remains to do}
+\item \href{#license}{\tt License}
+\item \href{#credits}{\tt Credits}
+\end{DoxyItemize}
+
+
+
+
+
+\subsection*{Preview}
+
+Base interface\+:~\newline
+ \href{Images/screenshot_002.jpg}{\tt } \href{Images/screenshot_003.jpg}{\tt } \href{Images/screenshot_004.jpg}{\tt } \href{Images/screenshot_005.jpg}{\tt } ~\newline
+ Full screen interface\+:~\newline
+ \href{Images/screenshot_007.jpg}{\tt } \href{Images/screenshot_008.jpg}{\tt } \href{Images/screenshot_009.jpg}{\tt } \href{Images/screenshot_010.jpg}{\tt } ~\newline
+ Example of customized interface\+:~\newline
+ \href{Images/screenshot_013.jpg}{\tt } \href{Images/screenshot_006.jpg}{\tt } \href{Images/screenshot_011.jpg}{\tt } \href{Images/screenshot_012.jpg}{\tt }
+
+\subsection*{Advantages}
+
+
+\begin{DoxyItemize}
+\item \mbox{[}x\mbox{]} Can be full screen
+\item \mbox{[}x\mbox{]} Uses {\ttfamily U\+I\+Motion\+Effect}
+\item \mbox{[}x\mbox{]} Supports all orientations
+\item \mbox{[}x\mbox{]} Supports i\+Pad
+\item \mbox{[}x\mbox{]} Animates text update
+\item \mbox{[}x\mbox{]} Animates success checkmark
+\item \mbox{[}x\mbox{]} Is well documented
+\item \mbox{[}x\mbox{]} Is fully customizable
+\begin{DoxyItemize}
+\item Colors
+\item Fonts
+\item Circle size and thickness
+\item Blur or solid color background
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsection*{Demo}
+
+Here is a video of the demo app that you can find in this project. If you want to try it yourself, just download/checkout this repository and launch the project in Xcode.
+
+\href{https://www.youtube.com/watch?v=aerOmPYG_NI}{\tt }
+
+\subsection*{Installation}
+
+\subsubsection*{Cocoapods}
+
+\href{http://www.cocoapods.org}{\tt Cocoa\+Pods} recommended to use \mbox{\hyperlink{interface_k_v_n_progress}{K\+V\+N\+Progress}}.
+
+
+\begin{DoxyEnumerate}
+\item Add `pod \textquotesingle{}\mbox{\hyperlink{interface_k_v_n_progress}{K\+V\+N\+Progress}}'{\ttfamily to your $\ast$\+Podfile$\ast$.}
+\item {\ttfamily Install the pod(s) by running}pod install{\ttfamily .}
+\item {\ttfamily Include \mbox{\hyperlink{interface_k_v_n_progress}{K\+V\+N\+Progress}} wherever you need it with}\#import $<$K\+V\+N\+Progress/\+K\+V\+N\+Progress.\+h$>$\`{}.
+\end{DoxyEnumerate}
+
+\subsubsection*{Source files}
+
+
+\begin{DoxyEnumerate}
+\item Download the \href{http://github.com/kevin-hirsch/KVNProgress/archive/master.zip}{\tt latest code version} or add the repository as a git submodule to your git-\/tracked project.
+\item Drag and drop the {\bfseries Classes}, {\bfseries Categories} and also the {\bfseries Resources} directory from the archive in your project navigator. Make sure to select {\itshape Copy items} when asked if you extracted the code archive outside of your project.
+\item Include \mbox{\hyperlink{interface_k_v_n_progress}{K\+V\+N\+Progress}} wherever you need it with {\ttfamily \#import $<$K\+V\+N\+Progress/\+K\+V\+N\+Progress.\+h$>$}.
+\end{DoxyEnumerate}
+
+\subsection*{Usage}
+
+Check out the provided demo app for many examples how you can use the components.
+
+\subsubsection*{Basics}
+
+\mbox{\hyperlink{interface_k_v_n_progress}{K\+V\+N\+Progress}} H\+UD will block the user from interacting with the interface behind it. You can customize colors, font and size of the H\+UD.
+
+Add the following import to the top of the file or to your Prefix header\+:
+
+
+\begin{DoxyCode}
+#import <KVNProgress/KVNProgress.h>
+\end{DoxyCode}
+
+
+\subsubsection*{Progress}
+
+\paragraph*{Indeterminate progress}
+
+To show an indeterminate progress\+:
+
+
+\begin{DoxyCode}
+[KVNProgress show];
+
+// Adds a status below the circle
+[KVNProgress showWithStatus:@"Loading"];
+
+// Adds the HUD to a certain view instead of main window
+[KVNProgress showWithStatus:@"Loading"
+                     onView:view];
+\end{DoxyCode}
+
+
+To change the status on the fly (animated)\+:
+
+
+\begin{DoxyCode}
+[KVNProgress updateStatus:@"New status"];
+\end{DoxyCode}
+
+
+\paragraph*{Determinate progress}
+
+To show a determinate progress and change its value along time\+:
+
+
+\begin{DoxyCode}
+// Progress has to be between 0 and 1
+[KVNProgress showProgress:0.5f];
+
+// Adds a status below the progress
+[KVNProgress showProgress:0.5f
+                   status:@"Loading"];
+
+// Adds the HUD to a certain view instead of main window
+[KVNProgress showProgress:0.5f
+                   status:@"Loading"
+                   onView:view];
+
+// Updates the progress
+[KVNProgress updateProgress:0.75f
+                   animated:YES];
+\end{DoxyCode}
+
+
+\paragraph*{Stop button}
+
+You can add a stop button to a progress H\+UD. For this you will need to use the {\ttfamily \mbox{\hyperlink{interface_k_v_n_progress_configuration}{K\+V\+N\+Progress\+Configuration}}}(see \href{#KVNProgressConfiguration}{\tt below}). You simply have to put\+:
+
+
+\begin{DoxyCode}
+KVNProgressConfiguration *configuration = [KVNProgressConfiguration defaultConfiguration];
+configuration.showStop = YES;
+configuration.tapBlock = ^(KVNProgress *progressView) \{
+    // Do what you want
+    [KVNProgress dismiss];
+\};
+
+[KVNProgress setConfiguration:configuration];
+\end{DoxyCode}
+
+
+{\ttfamily tap\+Block} will be executed when H\+UD is tapped. If no {\ttfamily tap\+Block} is specified, {\ttfamily show\+Stop} will {\bfseries not} be activated!
+
+You can customize stop button size. Defaults to 30\% of the circle size.
+
+
+\begin{DoxyCode}
+configuration.stopRelativeHeight = 0.3f;
+configuration.stopColor = [UIColor whiteColor];
+\end{DoxyCode}
+
+
+\subsubsection*{Dismiss}
+
+To dismiss after your task is done\+:
+
+
+\begin{DoxyCode}
+// Dismiss
+[KVNProgress dismiss];
+\end{DoxyCode}
+
+
+{\bfseries When necessary, you can use\+:}
+
+
+\begin{DoxyCode}
+// Dismiss
+[KVNProgress dismissWithCompletion:^\{
+   // Things you want to do after the HUD is gone.
+\}];
+\end{DoxyCode}
+
+
+{\bfseries Why?}
+
+Because \mbox{\hyperlink{interface_k_v_n_progress}{K\+V\+N\+Progress}} remains visible for a certain time even if you call {\ttfamily dismiss}. This is done to ensure the user has enough time to see the H\+UD if the {\ttfamily dismiss} is called too quick after a {\ttfamily show}. The completion block in {\ttfamily dismiss\+With\+Completion} is called (on the main thread) after the H\+UD is completely dismissed. This minimum amount of display time is defined in the \mbox{\hyperlink{interface_k_v_n_progress_configuration}{K\+V\+N\+Progress\+Configuration}} object (explained \href{#display-times}{\tt below}). Default value is {\ttfamily 0.\+3} seconds.
+
+\subsubsection*{Success/\+Error}
+
+To show a success H\+UD with a checkmark\+:
+
+
+\begin{DoxyCode}
+[KVNProgress showSuccess];
+
+// Or
+[KVNProgress showSuccessWithStatus:@"Success"];
+
+// Adds the HUD to a certain view instead of main window
+[KVNProgress showSuccessWithStatus:@"Success"
+                            onView:view];
+\end{DoxyCode}
+
+
+To show an error H\+UD with a cross\+:
+
+
+\begin{DoxyCode}
+[KVNProgress showError];
+
+// Or
+[KVNProgress showErrorWithStatus:@"Error"];
+
+// Adds the HUD to a certain view instead of main window
+[KVNProgress showErrorWithStatus:@"Error"
+                          onView:view];
+\end{DoxyCode}
+
+
+Dismiss is automatic for successes and errors. If you want to do something after the dismissal, you can use the above methods with the final parameter {\ttfamily completion}\+: {\ttfamily show\+Success\+With\+Completion\+:}, {\ttfamily show\+Success\+With\+Status\+:completion\+:}, {\ttfamily show\+Success\+With\+Status\+:on\+View\+:completion\+:}, {\ttfamily show\+Error\+With\+Completion\+:}, {\ttfamily show\+Error\+With\+Status\+:completion\+:}, {\ttfamily show\+Error\+With\+Status\+:on\+View\+:completion\+:}.
+
+\subsection*{Customization}
+
+The appearance of \mbox{\hyperlink{interface_k_v_n_progress}{K\+V\+N\+Progress}} is very customizable. If something is missing or could be added, don\textquotesingle{}t hesitate to ask for it!
+
+\subsubsection*{\label{_KVNProgressConfiguration}%
+\mbox{\hyperlink{interface_k_v_n_progress_configuration}{K\+V\+N\+Progress\+Configuration}}}
+
+You can setup your H\+UD UI in your UI setups for your app using the {\ttfamily \mbox{\hyperlink{interface_k_v_n_progress_configuration}{K\+V\+N\+Progress\+Configuration}}}. Here is an example on how to simply set the default configuration for you H\+UD\+:
+
+
+\begin{DoxyCode}
+[KVNProgress setConfiguration:[KVNProgressConfiguration defaultConfiguration]];
+\end{DoxyCode}
+
+
+Note that if you just want the default configuration, the above code is not needed. If you do not set a configuration, the default one is taken ;)
+
+Here is an example of a complete custom configuration\+:
+
+
+\begin{DoxyCode}
+ KVNProgressConfiguration *configuration = [[KVNProgressConfiguration alloc] init];
+
+  configuration.statusColor = [UIColor whiteColor];
+  configuration.statusFont = [UIFont fontWithName:@"HelveticaNeue-Thin" size:15.0f];
+  configuration.circleStrokeForegroundColor = [UIColor whiteColor];
+  configuration.circleStrokeBackgroundColor = [UIColor colorWithWhite:1.0f alpha:0.3f];
+  configuration.circleFillBackgroundColor = [UIColor colorWithWhite:1.0f alpha:0.1f];
+  configuration.backgroundFillColor = [UIColor colorWithRed:0.173f green:0.263f blue:0.856f alpha:0.9f];
+  configuration.backgroundTintColor = [UIColor colorWithRed:0.173f green:0.263f blue:0.856f alpha:1.0f];
+  configuration.successColor = [UIColor whiteColor];
+  configuration.errorColor = [UIColor whiteColor];
+  configuration.stopColor = [UIColor whiteColor];
+  configuration.circleSize = 110.0f;
+  configuration.lineWidth = 1.0f;
+  configuration.fullScreen = NO;
+  configuration.showStop = YES;
+  configuration.stopRelativeHeight = 0.4f;
+
+configuration.tapBlock = ^(KVNProgress *progressView) \{
+  // Do something you want to do when the user tap on the HUD
+  // Does nothing by default
+\};
+
+// You can allow user interaction for behind views but you will losse the tapBlock functionnality just
+       above
+// Does not work with fullscreen mode
+// Default is NO
+configuration.allowUserInteraction = NO;
+
+  [KVNProgress setConfiguration:configuration];
+\end{DoxyCode}
+
+
+If you do not specify certain properties for a configuration, they will automatically be the default\textquotesingle{}s one.
+
+\subsubsection*{Display times}
+
+To avoid the user to see a blinking H\+UD or even don\textquotesingle{}t see it at all if you are dismissing it too quickly, the H\+UD will stay display for a minimum (short) period of time.
+
+There are 3 properties you can change that do that in {\ttfamily \mbox{\hyperlink{interface_k_v_n_progress_configuration}{K\+V\+N\+Progress\+Configuration}}} to do that\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily minimum\+Display\+Time} that has a default value of {\ttfamily 0.\+3} seconds. It handles all H\+UD\textquotesingle{}s except for success and error ones.
+\item {\ttfamily minimum\+Success\+Display\+Time} that has a default value of {\ttfamily 2.\+0} seconds. It handles all success H\+UD\textquotesingle{}s.
+\item {\ttfamily minimum\+Error\+Display\+Time} that has a default value of {\ttfamily 1.\+3} seconds. It handles all error H\+UD\textquotesingle{}s.
+\end{DoxyItemize}
+
+\subsection*{Known bugs}
+
+
+\begin{DoxyItemize}
+\item Showing an H\+UD on {\ttfamily alert\+View\+:clicked\+Button\+At\+Index\+:} will give an undefined behavior that can sometimes make the H\+UD not appear (\href{https://github.com/kevin-hirsch/KVNProgress/issues/29}{\tt \#29} -\/ \href{https://github.com/kevin-hirsch/KVNProgress/issues/29#issuecomment-77602300}{\tt resolution comment}). Instead, call the H\+UD on {\ttfamily alert\+View\+:did\+Dismiss\+With\+Button\+Index\+:} to be sure the {\ttfamily U\+I\+Alert\+View} is completely dismissed before showing an H\+UD.
+\end{DoxyItemize}
+
+\subsection*{Remains to do}
+
+
+\begin{DoxyItemize}
+\item \mbox{[} \mbox{]} Use real-\/time blur
+\end{DoxyItemize}
+
+\subsection*{Requirements}
+
+
+\begin{DoxyItemize}
+\item Xcode 6
+\item i\+OS 7
+\item A\+RC
+\item Frameworks\+:
+\begin{DoxyItemize}
+\item Quartz\+Core
+\item G\+L\+Kit
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsection*{License}
+
+This project is under M\+IT license. For more information, see {\ttfamily L\+I\+C\+E\+N\+SE} file.
+
+\subsection*{Credits}
+
+\mbox{\hyperlink{interface_k_v_n_progress}{K\+V\+N\+Progress}} was inspired by \href{https://github.com/mrackwitz/MRProgress}{\tt M\+R\+Progress} UI.
+
+\mbox{\hyperlink{interface_k_v_n_progress}{K\+V\+N\+Progress}} was done to integrate in a project I work on\+: \href{https://assis.to}{\tt Assisto}. It will be updated when necessary and fixes will be done as soon as discovered to keep it up to date.
+
+I work at \href{http://pinchproject.com}{\tt Pinch}.
+
+You can find me on Twitter \href{https://twitter.com/kevinh6113}{\tt }.
+
+Enjoy! \+:) 

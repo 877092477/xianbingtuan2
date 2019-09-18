@@ -1,0 +1,5 @@
+<map id="&#45;[SDImageCache storeImage:forKey:]" name="&#45;[SDImageCache storeImage:forKey:]">
+<area shape="rect" id="node2" href="$interface_s_d_image_cache.html#a1724c0d0a91b64a097ec63a9934073bd" title="&#45;[SDImageCache storeImage\l:recalculateFromImage:imageData\l:forKey:toDisk:]" alt="" coords="247,5,473,57"/>
+<area shape="rect" id="node3" href="$interface_s_d_image_cache.html#a591ff2cb8bcd813969b33c610c569bdc" title="&#45;[SDImageCache defaultCache\lPathForKey:]" alt="" coords="521,12,727,51"/>
+<area shape="rect" id="node4" href="$interface_s_d_image_cache.html#a8dffa7933d6dcd6668331d03d29e2ad0" title="&#45;[SDImageCache cachePath\lForKey:inPath:]" alt="" coords="775,12,965,51"/>
+</map>

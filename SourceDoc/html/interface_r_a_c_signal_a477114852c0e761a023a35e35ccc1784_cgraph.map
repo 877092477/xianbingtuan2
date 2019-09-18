@@ -1,0 +1,8 @@
+<map id="&#45;[RACSignal asynchronousFirstOrDefault:success:error:]" name="&#45;[RACSignal asynchronousFirstOrDefault:success:error:]">
+<area shape="rect" id="node2" href="$interface_r_a_c_stream.html#af0264b38dc4acd9334d2e42b1ce21b05" title="&#45;[RACStream take:]" alt="" coords="259,55,396,80"/>
+<area shape="rect" id="node5" href="$interface_r_a_c_scheduler.html#a5b62bfd8b2957365a9958b61a9cfaf83" title="Invokes +schedulerWithPriority: with RACSchedulerPriorityDefault. " alt="" coords="235,107,421,132"/>
+<area shape="rect" id="node3" href="$interface_r_a_c_stream.html#a69ef18fc6577b859633f39ac181f5152" title="Returns an empty stream. " alt="" coords="486,5,634,31"/>
+<area shape="rect" id="node4" href="$interface_r_a_c_stream.html#a8638bfba1497aa1b14b098857b4c62e2" title="&#45;[RACStream bind:]" alt="" coords="492,55,629,80"/>
+<area shape="rect" id="node6" href="$interface_r_a_c_scheduler.html#aa10e4f49fd6084c122ebd21e16e3de29" title="Invokes +schedulerWithPriority:name: with a default name. " alt="" coords="469,104,652,143"/>
+<area shape="rect" id="node7" href="$interface_r_a_c_scheduler.html#a34b1d3a261fb95c3a52347f7204422d7" title="+[RACScheduler scheduler\lWithPriority:name:]" alt="" coords="700,104,882,143"/>
+</map>

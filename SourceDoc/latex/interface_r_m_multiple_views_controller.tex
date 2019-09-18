@@ -1,0 +1,126 @@
+\hypertarget{interface_r_m_multiple_views_controller}{}\section{R\+M\+Multiple\+Views\+Controller Class Reference}
+\label{interface_r_m_multiple_views_controller}\index{R\+M\+Multiple\+Views\+Controller@{R\+M\+Multiple\+Views\+Controller}}
+
+
+{\ttfamily \#import $<$R\+M\+Multiple\+Views\+Controller.\+h$>$}
+
+
+
+Inheritance diagram for R\+M\+Multiple\+Views\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_r_m_multiple_views_controller__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for R\+M\+Multiple\+Views\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_r_m_multiple_views_controller__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_r_m_multiple_views_controller_a57a5d47945554e5375117d96c72a5ca8}{init\+With\+View\+Controllers\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_r_m_multiple_views_controller_a29d7315c4bd1c8bf1c7cc249bc5a4ae6}{show\+View\+Controller\+:animated\+:}}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+Array $\ast$ \mbox{\hyperlink{interface_r_m_multiple_views_controller_af2450dcbf3350a9b4657731ded6f1caf}{view\+Controller}}
+\item 
+R\+M\+Multiple\+Views\+Controller\+Animation \mbox{\hyperlink{interface_r_m_multiple_views_controller_ab96e09cddb43777788b9edebbfb06839}{animation\+Style}}
+\item 
+B\+O\+OL \mbox{\hyperlink{interface_r_m_multiple_views_controller_ade7d30161846030d33fc0fa5ab09b5c9}{use\+Navigation\+Bar\+Button\+Items\+Of\+Current\+View\+Controller}}
+\item 
+B\+O\+OL \mbox{\hyperlink{interface_r_m_multiple_views_controller_a11a162f4a0efb651a0c1566c44738eb9}{use\+Toolbar\+Items\+Of\+Current\+View\+Controller}}
+\item 
+R\+M\+Multiple\+Views\+Controller\+Navigation\+Strategy \mbox{\hyperlink{interface_r_m_multiple_views_controller_a2c5bd2500e378457eefd5530187e39a8}{navigation\+Strategy}}
+\item 
+\mbox{\Hypertarget{interface_r_m_multiple_views_controller_afaf90f607288a1ae335e64ee8f673c91}\label{interface_r_m_multiple_views_controller_afaf90f607288a1ae335e64ee8f673c91}} 
+N\+S\+Mutable\+Array $\ast$ {\bfseries mutable\+View\+Controller}
+\item 
+\mbox{\Hypertarget{interface_r_m_multiple_views_controller_a8d9d8181a7abea9f83effee6194531fc}\label{interface_r_m_multiple_views_controller_a8d9d8181a7abea9f83effee6194531fc}} 
+U\+I\+View\+Controller $\ast$ {\bfseries current\+View\+Controller}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+{\ttfamily \mbox{\hyperlink{interface_r_m_multiple_views_controller}{R\+M\+Multiple\+Views\+Controller}}} is an i\+OS control for showing multiple view controller in one view controller and selecting one with a segmented control. Every {\ttfamily \mbox{\hyperlink{interface_r_m_multiple_views_controller}{R\+M\+Multiple\+Views\+Controller}}} should be pushed into a {\ttfamily U\+I\+Navigation\+Controller}. 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_r_m_multiple_views_controller_a57a5d47945554e5375117d96c72a5ca8}\label{interface_r_m_multiple_views_controller_a57a5d47945554e5375117d96c72a5ca8}} 
+\index{R\+M\+Multiple\+Views\+Controller@{R\+M\+Multiple\+Views\+Controller}!init\+With\+View\+Controllers\+:@{init\+With\+View\+Controllers\+:}}
+\index{init\+With\+View\+Controllers\+:@{init\+With\+View\+Controllers\+:}!R\+M\+Multiple\+Views\+Controller@{R\+M\+Multiple\+Views\+Controller}}
+\subsubsection{\texorpdfstring{init\+With\+View\+Controllers\+:()}{initWithViewControllers:()}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+View\+Controllers\+: \begin{DoxyParamCaption}\item[{(N\+S\+Array $\ast$)}]{some\+View\+Controllers }\end{DoxyParamCaption}}
+
+Used to initialize a new {\ttfamily \mbox{\hyperlink{interface_r_m_multiple_views_controller}{R\+M\+Multiple\+Views\+Controller}}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em some\+View\+Controllers} & An array of child view controllers.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new {\ttfamily \mbox{\hyperlink{interface_r_m_multiple_views_controller}{R\+M\+Multiple\+Views\+Controller}}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_r_m_multiple_views_controller_a29d7315c4bd1c8bf1c7cc249bc5a4ae6}\label{interface_r_m_multiple_views_controller_a29d7315c4bd1c8bf1c7cc249bc5a4ae6}} 
+\index{R\+M\+Multiple\+Views\+Controller@{R\+M\+Multiple\+Views\+Controller}!show\+View\+Controller\+:animated\+:@{show\+View\+Controller\+:animated\+:}}
+\index{show\+View\+Controller\+:animated\+:@{show\+View\+Controller\+:animated\+:}!R\+M\+Multiple\+Views\+Controller@{R\+M\+Multiple\+Views\+Controller}}
+\subsubsection{\texorpdfstring{show\+View\+Controller\+:animated\+:()}{showViewController:animated:()}}
+{\footnotesize\ttfamily -\/ (void) show\+View\+Controller\+: \begin{DoxyParamCaption}\item[{(U\+I\+View\+Controller $\ast$)}]{a\+View\+Controller }\item[{animated:(B\+O\+OL)}]{animated }\end{DoxyParamCaption}}
+
+Call this method if you want to display a certain child view controller.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\+View\+Controller} & The view controller you want to show. This view controller must be an element of the view\+Controller array. \\
+\hline
+{\em animated} & Used to enable or disable animations for this change. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_r_m_multiple_views_controller_ab96e09cddb43777788b9edebbfb06839}\label{interface_r_m_multiple_views_controller_ab96e09cddb43777788b9edebbfb06839}} 
+\index{R\+M\+Multiple\+Views\+Controller@{R\+M\+Multiple\+Views\+Controller}!animation\+Style@{animation\+Style}}
+\index{animation\+Style@{animation\+Style}!R\+M\+Multiple\+Views\+Controller@{R\+M\+Multiple\+Views\+Controller}}
+\subsubsection{\texorpdfstring{animation\+Style}{animationStyle}}
+{\footnotesize\ttfamily -\/ (R\+M\+Multiple\+Views\+Controller\+Animation) animation\+Style\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+Used to change the animation type when switching from one view controller to another. \mbox{\Hypertarget{interface_r_m_multiple_views_controller_a2c5bd2500e378457eefd5530187e39a8}\label{interface_r_m_multiple_views_controller_a2c5bd2500e378457eefd5530187e39a8}} 
+\index{R\+M\+Multiple\+Views\+Controller@{R\+M\+Multiple\+Views\+Controller}!navigation\+Strategy@{navigation\+Strategy}}
+\index{navigation\+Strategy@{navigation\+Strategy}!R\+M\+Multiple\+Views\+Controller@{R\+M\+Multiple\+Views\+Controller}}
+\subsubsection{\texorpdfstring{navigation\+Strategy}{navigationStrategy}}
+{\footnotesize\ttfamily -\/ (R\+M\+Multiple\+Views\+Controller\+Navigation\+Strategy) navigation\+Strategy\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+Used to control whether A\+A\+Multi\+View\+Controller will auto-\/create, auto-\/display, and use a segmented control for navigation. \mbox{\Hypertarget{interface_r_m_multiple_views_controller_ade7d30161846030d33fc0fa5ab09b5c9}\label{interface_r_m_multiple_views_controller_ade7d30161846030d33fc0fa5ab09b5c9}} 
+\index{R\+M\+Multiple\+Views\+Controller@{R\+M\+Multiple\+Views\+Controller}!use\+Navigation\+Bar\+Button\+Items\+Of\+Current\+View\+Controller@{use\+Navigation\+Bar\+Button\+Items\+Of\+Current\+View\+Controller}}
+\index{use\+Navigation\+Bar\+Button\+Items\+Of\+Current\+View\+Controller@{use\+Navigation\+Bar\+Button\+Items\+Of\+Current\+View\+Controller}!R\+M\+Multiple\+Views\+Controller@{R\+M\+Multiple\+Views\+Controller}}
+\subsubsection{\texorpdfstring{use\+Navigation\+Bar\+Button\+Items\+Of\+Current\+View\+Controller}{useNavigationBarButtonItemsOfCurrentViewController}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) use\+Navigation\+Bar\+Button\+Items\+Of\+Current\+View\+Controller\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+Used to control whether or not the {\ttfamily \mbox{\hyperlink{interface_r_m_multiple_views_controller}{R\+M\+Multiple\+Views\+Controller}}} will also show the left and right navigation bar button item of the currently shown child view controller. \mbox{\Hypertarget{interface_r_m_multiple_views_controller_a11a162f4a0efb651a0c1566c44738eb9}\label{interface_r_m_multiple_views_controller_a11a162f4a0efb651a0c1566c44738eb9}} 
+\index{R\+M\+Multiple\+Views\+Controller@{R\+M\+Multiple\+Views\+Controller}!use\+Toolbar\+Items\+Of\+Current\+View\+Controller@{use\+Toolbar\+Items\+Of\+Current\+View\+Controller}}
+\index{use\+Toolbar\+Items\+Of\+Current\+View\+Controller@{use\+Toolbar\+Items\+Of\+Current\+View\+Controller}!R\+M\+Multiple\+Views\+Controller@{R\+M\+Multiple\+Views\+Controller}}
+\subsubsection{\texorpdfstring{use\+Toolbar\+Items\+Of\+Current\+View\+Controller}{useToolbarItemsOfCurrentViewController}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) use\+Toolbar\+Items\+Of\+Current\+View\+Controller\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+Used to control whether or not the {\ttfamily \mbox{\hyperlink{interface_r_m_multiple_views_controller}{R\+M\+Multiple\+Views\+Controller}}} will also show the toolbar items of the currently shown child view controller. \mbox{\Hypertarget{interface_r_m_multiple_views_controller_af2450dcbf3350a9b4657731ded6f1caf}\label{interface_r_m_multiple_views_controller_af2450dcbf3350a9b4657731ded6f1caf}} 
+\index{R\+M\+Multiple\+Views\+Controller@{R\+M\+Multiple\+Views\+Controller}!view\+Controller@{view\+Controller}}
+\index{view\+Controller@{view\+Controller}!R\+M\+Multiple\+Views\+Controller@{R\+M\+Multiple\+Views\+Controller}}
+\subsubsection{\texorpdfstring{view\+Controller}{viewController}}
+{\footnotesize\ttfamily -\/ (N\+S\+Mutable\+Array $\ast$) view\+Controller\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+Provides access to the child view controllers. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Classes(类文件)/\+Shopping\+Rebate(购物返利)/controller/R\+M\+Multiple\+Views\+Controller.\+h\item 
+T\+H\+B/\+Classes(类文件)/\+Shopping\+Rebate(购物返利)/controller/R\+M\+Multiple\+Views\+Controller.\+m\end{DoxyCompactItemize}

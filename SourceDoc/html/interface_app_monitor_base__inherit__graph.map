@@ -1,0 +1,5 @@
+<map id="AppMonitorBase" name="AppMonitorBase">
+<area shape="rect" id="node3" href="$interface_app_monitor_alarm.html" title="AppMonitorAlarm" alt="" coords="5,152,130,177"/>
+<area shape="rect" id="node4" href="$interface_app_monitor_counter.html" title="AppMonitorCounter" alt="" coords="154,152,291,177"/>
+<area shape="rect" id="node5" href="$interface_app_monitor_stat.html" title="AppMonitorStat" alt="" coords="315,152,428,177"/>
+</map>

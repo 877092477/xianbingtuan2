@@ -1,0 +1,6 @@
+<map id="_POPAnimationState" name="_POPAnimationState">
+<area shape="rect" id="node2" href="$struct___p_o_p_property_animation_state.html" title="_POPPropertyAnimationState" alt="" coords="203,79,401,104"/>
+<area shape="rect" id="node3" href="$struct___p_o_p_basic_animation_state.html" title="_POPBasicAnimationState" alt="" coords="5,152,185,177"/>
+<area shape="rect" id="node4" href="$struct___p_o_p_decay_animation_state.html" title="_POPDecayAnimationState" alt="" coords="209,152,395,177"/>
+<area shape="rect" id="node5" href="$struct___p_o_p_spring_animation_state.html" title="_POPSpringAnimationState" alt="" coords="418,152,604,177"/>
+</map>

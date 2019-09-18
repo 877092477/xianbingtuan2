@@ -1,0 +1,100 @@
+\hypertarget{protocol_alibc_trade_service_01-p}{}\section{$<$Alibc\+Trade\+Service $>$ Protocol Reference}
+\label{protocol_alibc_trade_service_01-p}\index{$<$\+Alibc\+Trade\+Service $>$@{$<$\+Alibc\+Trade\+Service $>$}}
+
+
+{\ttfamily \#import $<$Alibc\+Trade\+Service.\+h$>$}
+
+
+
+Inheritance diagram for $<$Alibc\+Trade\+Service $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{protocol_alibc_trade_service_01-p__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for $<$Alibc\+Trade\+Service $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{protocol_alibc_trade_service_01-p__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\+S\+Integer) -\/ \mbox{\hyperlink{protocol_alibc_trade_service_01-p_ad502ae9120c077614429b937784c2a7f}{show\+:page\+:show\+Params\+:tao\+Ke\+Params\+:track\+Param\+:trade\+Process\+Success\+Callback\+:trade\+Process\+Failed\+Callback\+:}}
+\item 
+(N\+S\+Integer) -\/ \mbox{\hyperlink{protocol_alibc_trade_service_01-p_a0c2dea66b5435d1e9075da7c3e6b252a}{show\+:web\+View\+:page\+:show\+Params\+:tao\+Ke\+Params\+:track\+Param\+:trade\+Process\+Success\+Callback\+:trade\+Process\+Failed\+Callback\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+交易服务 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{protocol_alibc_trade_service_01-p_ad502ae9120c077614429b937784c2a7f}\label{protocol_alibc_trade_service_01-p_ad502ae9120c077614429b937784c2a7f}} 
+\index{Alibc\+Trade\+Service -\/p@{Alibc\+Trade\+Service -\/p}!show\+:page\+:show\+Params\+:tao\+Ke\+Params\+:track\+Param\+:trade\+Process\+Success\+Callback\+:trade\+Process\+Failed\+Callback\+:@{show\+:page\+:show\+Params\+:tao\+Ke\+Params\+:track\+Param\+:trade\+Process\+Success\+Callback\+:trade\+Process\+Failed\+Callback\+:}}
+\index{show\+:page\+:show\+Params\+:tao\+Ke\+Params\+:track\+Param\+:trade\+Process\+Success\+Callback\+:trade\+Process\+Failed\+Callback\+:@{show\+:page\+:show\+Params\+:tao\+Ke\+Params\+:track\+Param\+:trade\+Process\+Success\+Callback\+:trade\+Process\+Failed\+Callback\+:}!Alibc\+Trade\+Service -\/p@{Alibc\+Trade\+Service -\/p}}
+\subsubsection{\texorpdfstring{show\+:page\+:show\+Params\+:tao\+Ke\+Params\+:track\+Param\+:trade\+Process\+Success\+Callback\+:trade\+Process\+Failed\+Callback\+:()}{show:page:showParams:taoKeParams:trackParam:tradeProcessSuccessCallback:tradeProcessFailedCallback:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Integer Alibc\+Trade\+Service) show\+: \begin{DoxyParamCaption}\item[{(U\+I\+View\+Controller $\ast$\+\_\+\+\_\+nonnull)}]{parent\+Controller }\item[{page:(id$<$ Alibc\+Trade\+Page $>$ \+\_\+\+\_\+nonnull)}]{page }\item[{showParams:(nullable \mbox{\hyperlink{interface_alibc_trade_show_params}{Alibc\+Trade\+Show\+Params}} $\ast$)}]{show\+Params }\item[{taoKeParams:(nullable \mbox{\hyperlink{interface_alibc_trade_taoke_params}{Alibc\+Trade\+Taoke\+Params}} $\ast$)}]{tao\+Ke\+Params }\item[{trackParam:(nullable N\+S\+Dictionary $\ast$)}]{track\+Param }\item[{tradeProcessSuccessCallback:(nullable void($^\wedge$)(\mbox{\hyperlink{interface_alibc_trade_result}{Alibc\+Trade\+Result}} $\ast$\+\_\+\+\_\+nullable result))}]{on\+Success }\item[{tradeProcessFailedCallback:(nullable void($^\wedge$)(N\+S\+Error $\ast$\+\_\+\+\_\+nullable error))}]{on\+Failure }\end{DoxyParamCaption}}
+
+使用百川\+S\+D\+K的webview打开page，可以实现淘宝账号免登以及电商交易支付流程
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent\+Controller} & 当前view controller. 若is\+Need\+Push为\+Y\+ES, 需传入当前\+U\+I\+Navigation\+Controller. \\
+\hline
+{\em page} & 想要打开的page \\
+\hline
+{\em show\+Params} & 打开方式的一些自定义参数 \\
+\hline
+{\em tao\+Ke\+Params} & 淘客参数 \\
+\hline
+{\em track\+Param} & 链路跟踪参数 \\
+\hline
+{\em trade\+Process\+Success\+Callback} & 交易流程中成功回调(加购成功(使用+\mbox{[}\mbox{\hyperlink{interface_alibc_trade_page_factory}{Alibc\+Trade\+Page\+Factory}} add\+Cart\+Page\+:\mbox{]}时)/发生支付) \\
+\hline
+{\em trade\+Process\+Failed\+Callback} & 交易流程中退出或者调用发生错误的回调\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0标识跳转到手淘打开了,1标识用h5打开,-\/1标识出错 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_alibc_trade_service_01-p_a0c2dea66b5435d1e9075da7c3e6b252a}\label{protocol_alibc_trade_service_01-p_a0c2dea66b5435d1e9075da7c3e6b252a}} 
+\index{Alibc\+Trade\+Service -\/p@{Alibc\+Trade\+Service -\/p}!show\+:web\+View\+:page\+:show\+Params\+:tao\+Ke\+Params\+:track\+Param\+:trade\+Process\+Success\+Callback\+:trade\+Process\+Failed\+Callback\+:@{show\+:web\+View\+:page\+:show\+Params\+:tao\+Ke\+Params\+:track\+Param\+:trade\+Process\+Success\+Callback\+:trade\+Process\+Failed\+Callback\+:}}
+\index{show\+:web\+View\+:page\+:show\+Params\+:tao\+Ke\+Params\+:track\+Param\+:trade\+Process\+Success\+Callback\+:trade\+Process\+Failed\+Callback\+:@{show\+:web\+View\+:page\+:show\+Params\+:tao\+Ke\+Params\+:track\+Param\+:trade\+Process\+Success\+Callback\+:trade\+Process\+Failed\+Callback\+:}!Alibc\+Trade\+Service -\/p@{Alibc\+Trade\+Service -\/p}}
+\subsubsection{\texorpdfstring{show\+:web\+View\+:page\+:show\+Params\+:tao\+Ke\+Params\+:track\+Param\+:trade\+Process\+Success\+Callback\+:trade\+Process\+Failed\+Callback\+:()}{show:webView:page:showParams:taoKeParams:trackParam:tradeProcessSuccessCallback:tradeProcessFailedCallback:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Integer Alibc\+Trade\+Service) show\+: \begin{DoxyParamCaption}\item[{(U\+I\+View\+Controller $\ast$\+\_\+\+\_\+nonnull)}]{parent\+Controller }\item[{webView:(nullable U\+I\+Web\+View $\ast$)}]{web\+View }\item[{page:(id$<$ Alibc\+Trade\+Page $>$ \+\_\+\+\_\+nonnull)}]{page }\item[{showParams:(nullable \mbox{\hyperlink{interface_alibc_trade_show_params}{Alibc\+Trade\+Show\+Params}} $\ast$)}]{show\+Params }\item[{taoKeParams:(nullable \mbox{\hyperlink{interface_alibc_trade_taoke_params}{Alibc\+Trade\+Taoke\+Params}} $\ast$)}]{tao\+Ke\+Params }\item[{trackParam:(nullable N\+S\+Dictionary $\ast$)}]{track\+Param }\item[{tradeProcessSuccessCallback:(nullable void($^\wedge$)(\mbox{\hyperlink{interface_alibc_trade_result}{Alibc\+Trade\+Result}} $\ast$\+\_\+\+\_\+nullable result))}]{on\+Success }\item[{tradeProcessFailedCallback:(nullable void($^\wedge$)(N\+S\+Error $\ast$\+\_\+\+\_\+nullable error))}]{on\+Failure }\end{DoxyParamCaption}}
+
+使用isv自己的webview打开page，可以实现淘宝账号免登以及电商交易支付流程
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent\+Controller} & web\+View所在的view controller. \\
+\hline
+{\em web\+View} & isv自己的webview,请先设置好自己的delegate先调用本接口,否则拦截登陆等逻辑会失效 \\
+\hline
+{\em page} & 想要打开的page \\
+\hline
+{\em show\+Params} & 打开方式的一些自定义参数 \\
+\hline
+{\em tao\+Ke\+Params} & 淘客参数 \\
+\hline
+{\em track\+Param} & 链路跟踪参数 \\
+\hline
+{\em trade\+Process\+Success\+Callback} & 交易流程中成功回调(加购成功(使用+\mbox{[}\mbox{\hyperlink{interface_alibc_trade_page_factory}{Alibc\+Trade\+Page\+Factory}} add\+Cart\+Page\+:\mbox{]}时)/发生支付) \\
+\hline
+{\em trade\+Process\+Failed\+Callback} & 交易流程中退出或者调用发生错误的回调\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0\+: 标识跳转到手淘打开了 1\+: 标识用h5打开 -\/1\+: 标识出错 
+\end{DoxyReturn}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Alibc\+Trade\+S\+D\+K.\+framework/\+Headers/Alibc\+Trade\+Service.\+h\end{DoxyCompactItemize}

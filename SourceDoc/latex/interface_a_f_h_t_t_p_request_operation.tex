@@ -1,0 +1,144 @@
+\hypertarget{interface_a_f_h_t_t_p_request_operation}{}\section{A\+F\+H\+T\+T\+P\+Request\+Operation Class Reference}
+\label{interface_a_f_h_t_t_p_request_operation}\index{A\+F\+H\+T\+T\+P\+Request\+Operation@{A\+F\+H\+T\+T\+P\+Request\+Operation}}
+
+
+{\ttfamily \#import $<$A\+F\+H\+T\+T\+P\+Request\+Operation.\+h$>$}
+
+
+
+Inheritance diagram for A\+F\+H\+T\+T\+P\+Request\+Operation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_a_f_h_t_t_p_request_operation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for A\+F\+H\+T\+T\+P\+Request\+Operation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_a_f_h_t_t_p_request_operation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{Indent}\textbf{ Setting Completion Block Success / Failure Callbacks}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_a_f_h_t_t_p_request_operation_a3b816391726dade9cfc9cbc11cc352d6}{set\+Completion\+Block\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_a_f_h_t_t_p_request_operation_a3b816391726dade9cfc9cbc11cc352d6}{set\+Completion\+Block\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_a_f_h_t_t_p_request_operation_a3b816391726dade9cfc9cbc11cc352d6}{set\+Completion\+Block\+With\+Success\+:failure\+:}}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Properties}
+\begin{Indent}\textbf{ Getting H\+T\+TP U\+RL Connection Information}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+N\+S\+H\+T\+T\+P\+U\+R\+L\+Response $\ast$ \mbox{\hyperlink{interface_a_f_h_t_t_p_request_operation_abfa028f296bc36526a873bd49df9dafa}{response}}
+\item 
+\mbox{\hyperlink{interface_a_f_h_t_t_p_response_serializer}{A\+F\+H\+T\+T\+P\+Response\+Serializer}}$<$ A\+F\+U\+R\+L\+Response\+Serialization $>$ $\ast$ \mbox{\hyperlink{interface_a_f_h_t_t_p_request_operation_a5b07813a0ff6ba379c5f98a9fb87b5a7}{response\+Serializer}}
+\item 
+id \mbox{\hyperlink{interface_a_f_h_t_t_p_request_operation_a7418f7784dcaf21623ce588fb27734c3}{response\+Object}}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+{\ttfamily \mbox{\hyperlink{interface_a_f_h_t_t_p_request_operation}{A\+F\+H\+T\+T\+P\+Request\+Operation}}} is a subclass of {\ttfamily \mbox{\hyperlink{interface_a_f_u_r_l_connection_operation}{A\+F\+U\+R\+L\+Connection\+Operation}}} for requests using the H\+T\+TP or H\+T\+T\+PS protocols. It encapsulates the concept of acceptable status codes and content types, which determine the success or failure of a request. 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_a_f_h_t_t_p_request_operation_a3b816391726dade9cfc9cbc11cc352d6}\label{interface_a_f_h_t_t_p_request_operation_a3b816391726dade9cfc9cbc11cc352d6}} 
+\index{A\+F\+H\+T\+T\+P\+Request\+Operation@{A\+F\+H\+T\+T\+P\+Request\+Operation}!set\+Completion\+Block\+With\+Success\+:failure\+:@{set\+Completion\+Block\+With\+Success\+:failure\+:}}
+\index{set\+Completion\+Block\+With\+Success\+:failure\+:@{set\+Completion\+Block\+With\+Success\+:failure\+:}!A\+F\+H\+T\+T\+P\+Request\+Operation@{A\+F\+H\+T\+T\+P\+Request\+Operation}}
+\subsubsection{\texorpdfstring{set\+Completion\+Block\+With\+Success\+:failure\+:()}{setCompletionBlockWithSuccess:failure:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (void) set\+Completion\+Block\+With\+Success\+: \begin{DoxyParamCaption}\item[{(nullable void($^\wedge$)(\mbox{\hyperlink{interface_a_f_h_t_t_p_request_operation}{A\+F\+H\+T\+T\+P\+Request\+Operation}} $\ast$operation, id \mbox{\hyperlink{interface_a_f_h_t_t_p_request_operation_a7418f7784dcaf21623ce588fb27734c3}{response\+Object}}))}]{success }\item[{failure:(nullable void($^\wedge$)(\mbox{\hyperlink{interface_a_f_h_t_t_p_request_operation}{A\+F\+H\+T\+T\+P\+Request\+Operation}} $\ast$operation, N\+S\+Error $\ast$\mbox{\hyperlink{interface_a_f_u_r_l_connection_operation_a51f90be47e7f7577b979aae1aa597070}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+Sets the {\ttfamily completion\+Block} property with a block that executes either the specified success or failure block, depending on the state of the request on completion. If {\ttfamily error} returns a value, which can be caused by an unacceptable status code or content type, then {\ttfamily failure} is executed. Otherwise, {\ttfamily success} is executed.
+
+This method should be overridden in subclasses in order to specify the response object passed into the success block.
+
+
+\begin{DoxyParams}{Parameters}
+{\em success} & The block to be executed on the completion of a successful request. This block has no return value and takes two arguments\+: the receiver operation and the object constructed from the response data of the request. \\
+\hline
+{\em failure} & The block to be executed on the completion of an unsuccessful request. This block has no return value and takes two arguments\+: the receiver operation and the error that occurred during the request. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_a_f_h_t_t_p_request_operation_a3b816391726dade9cfc9cbc11cc352d6}\label{interface_a_f_h_t_t_p_request_operation_a3b816391726dade9cfc9cbc11cc352d6}} 
+\index{A\+F\+H\+T\+T\+P\+Request\+Operation@{A\+F\+H\+T\+T\+P\+Request\+Operation}!set\+Completion\+Block\+With\+Success\+:failure\+:@{set\+Completion\+Block\+With\+Success\+:failure\+:}}
+\index{set\+Completion\+Block\+With\+Success\+:failure\+:@{set\+Completion\+Block\+With\+Success\+:failure\+:}!A\+F\+H\+T\+T\+P\+Request\+Operation@{A\+F\+H\+T\+T\+P\+Request\+Operation}}
+\subsubsection{\texorpdfstring{set\+Completion\+Block\+With\+Success\+:failure\+:()}{setCompletionBlockWithSuccess:failure:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (void) set\+Completion\+Block\+With\+Success\+: \begin{DoxyParamCaption}\item[{(nullable void($^\wedge$)(\mbox{\hyperlink{interface_a_f_h_t_t_p_request_operation}{A\+F\+H\+T\+T\+P\+Request\+Operation}} $\ast$operation, id \mbox{\hyperlink{interface_a_f_h_t_t_p_request_operation_a7418f7784dcaf21623ce588fb27734c3}{response\+Object}}))}]{success }\item[{failure:(nullable void($^\wedge$)(\mbox{\hyperlink{interface_a_f_h_t_t_p_request_operation}{A\+F\+H\+T\+T\+P\+Request\+Operation}} $\ast$operation, N\+S\+Error $\ast$\mbox{\hyperlink{interface_a_f_u_r_l_connection_operation_a51f90be47e7f7577b979aae1aa597070}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+Sets the {\ttfamily completion\+Block} property with a block that executes either the specified success or failure block, depending on the state of the request on completion. If {\ttfamily error} returns a value, which can be caused by an unacceptable status code or content type, then {\ttfamily failure} is executed. Otherwise, {\ttfamily success} is executed.
+
+This method should be overridden in subclasses in order to specify the response object passed into the success block.
+
+
+\begin{DoxyParams}{Parameters}
+{\em success} & The block to be executed on the completion of a successful request. This block has no return value and takes two arguments\+: the receiver operation and the object constructed from the response data of the request. \\
+\hline
+{\em failure} & The block to be executed on the completion of an unsuccessful request. This block has no return value and takes two arguments\+: the receiver operation and the error that occurred during the request. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_a_f_h_t_t_p_request_operation_a3b816391726dade9cfc9cbc11cc352d6}\label{interface_a_f_h_t_t_p_request_operation_a3b816391726dade9cfc9cbc11cc352d6}} 
+\index{A\+F\+H\+T\+T\+P\+Request\+Operation@{A\+F\+H\+T\+T\+P\+Request\+Operation}!set\+Completion\+Block\+With\+Success\+:failure\+:@{set\+Completion\+Block\+With\+Success\+:failure\+:}}
+\index{set\+Completion\+Block\+With\+Success\+:failure\+:@{set\+Completion\+Block\+With\+Success\+:failure\+:}!A\+F\+H\+T\+T\+P\+Request\+Operation@{A\+F\+H\+T\+T\+P\+Request\+Operation}}
+\subsubsection{\texorpdfstring{set\+Completion\+Block\+With\+Success\+:failure\+:()}{setCompletionBlockWithSuccess:failure:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (void) set\+Completion\+Block\+With\+Success\+: \begin{DoxyParamCaption}\item[{(nullable void($^\wedge$)(\mbox{\hyperlink{interface_a_f_h_t_t_p_request_operation}{A\+F\+H\+T\+T\+P\+Request\+Operation}} $\ast$operation, id \mbox{\hyperlink{interface_a_f_h_t_t_p_request_operation_a7418f7784dcaf21623ce588fb27734c3}{response\+Object}}))}]{success }\item[{failure:(nullable void($^\wedge$)(\mbox{\hyperlink{interface_a_f_h_t_t_p_request_operation}{A\+F\+H\+T\+T\+P\+Request\+Operation}} $\ast$operation, N\+S\+Error $\ast$\mbox{\hyperlink{interface_a_f_u_r_l_connection_operation_a51f90be47e7f7577b979aae1aa597070}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+Sets the {\ttfamily completion\+Block} property with a block that executes either the specified success or failure block, depending on the state of the request on completion. If {\ttfamily error} returns a value, which can be caused by an unacceptable status code or content type, then {\ttfamily failure} is executed. Otherwise, {\ttfamily success} is executed.
+
+This method should be overridden in subclasses in order to specify the response object passed into the success block.
+
+
+\begin{DoxyParams}{Parameters}
+{\em success} & The block to be executed on the completion of a successful request. This block has no return value and takes two arguments\+: the receiver operation and the object constructed from the response data of the request. \\
+\hline
+{\em failure} & The block to be executed on the completion of an unsuccessful request. This block has no return value and takes two arguments\+: the receiver operation and the error that occurred during the request. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_a_f_h_t_t_p_request_operation_abfa028f296bc36526a873bd49df9dafa}\label{interface_a_f_h_t_t_p_request_operation_abfa028f296bc36526a873bd49df9dafa}} 
+\index{A\+F\+H\+T\+T\+P\+Request\+Operation@{A\+F\+H\+T\+T\+P\+Request\+Operation}!response@{response}}
+\index{response@{response}!A\+F\+H\+T\+T\+P\+Request\+Operation@{A\+F\+H\+T\+T\+P\+Request\+Operation}}
+\subsubsection{\texorpdfstring{response}{response}}
+{\footnotesize\ttfamily -\/ (N\+S\+H\+T\+T\+P\+U\+R\+L\+Response $\ast$) response\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+The last H\+T\+TP response received by the operation\textquotesingle{}s connection. \mbox{\Hypertarget{interface_a_f_h_t_t_p_request_operation_a7418f7784dcaf21623ce588fb27734c3}\label{interface_a_f_h_t_t_p_request_operation_a7418f7784dcaf21623ce588fb27734c3}} 
+\index{A\+F\+H\+T\+T\+P\+Request\+Operation@{A\+F\+H\+T\+T\+P\+Request\+Operation}!response\+Object@{response\+Object}}
+\index{response\+Object@{response\+Object}!A\+F\+H\+T\+T\+P\+Request\+Operation@{A\+F\+H\+T\+T\+P\+Request\+Operation}}
+\subsubsection{\texorpdfstring{response\+Object}{responseObject}}
+{\footnotesize\ttfamily -\/ (id) response\+Object\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+An object constructed by the {\ttfamily response\+Serializer} from the response and response data. Returns {\ttfamily nil} unless the operation {\ttfamily is\+Finished}, has a {\ttfamily response}, and has {\ttfamily response\+Data} with non-\/zero content length. If an error occurs during serialization, {\ttfamily nil} will be returned, and the {\ttfamily error} property will be populated with the serialization error. \mbox{\Hypertarget{interface_a_f_h_t_t_p_request_operation_a5b07813a0ff6ba379c5f98a9fb87b5a7}\label{interface_a_f_h_t_t_p_request_operation_a5b07813a0ff6ba379c5f98a9fb87b5a7}} 
+\index{A\+F\+H\+T\+T\+P\+Request\+Operation@{A\+F\+H\+T\+T\+P\+Request\+Operation}!response\+Serializer@{response\+Serializer}}
+\index{response\+Serializer@{response\+Serializer}!A\+F\+H\+T\+T\+P\+Request\+Operation@{A\+F\+H\+T\+T\+P\+Request\+Operation}}
+\subsubsection{\texorpdfstring{response\+Serializer}{responseSerializer}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_a_f_h_t_t_p_response_serializer}{A\+F\+H\+T\+T\+P\+Response\+Serializer}}$<$ A\+F\+U\+R\+L\+Response\+Serialization $>$ $\ast$) response\+Serializer\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+Responses sent from the server in data tasks created with {\ttfamily data\+Task\+With\+Request\+:success\+:failure\+:} and run using the {\ttfamily G\+ET} / {\ttfamily P\+O\+ST} / et al. convenience methods are automatically validated and serialized by the response serializer. By default, this property is set to an A\+F\+H\+T\+T\+P\+Response serializer, which uses the raw data as its response object. The serializer validates the status code to be in the {\ttfamily 2\+XX} range, denoting success. If the response serializer generates an error in {\ttfamily -\/response\+Object\+For\+Response\+:data\+:error\+:}, the {\ttfamily failure} callback of the session task or request operation will be executed; otherwise, the {\ttfamily success} callback will be executed.
+
+\begin{DoxyWarning}{Warning}
+{\ttfamily response\+Serializer} must not be {\ttfamily nil}. Setting a response serializer will clear out any cached value 
+\end{DoxyWarning}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+A\+F\+Networking/\+A\+F\+Networking/A\+F\+H\+T\+T\+P\+Request\+Operation.\+h\item 
+Pods/\+A\+F\+Networking/\+A\+F\+Networking/A\+F\+H\+T\+T\+P\+Request\+Operation.\+m\end{DoxyCompactItemize}

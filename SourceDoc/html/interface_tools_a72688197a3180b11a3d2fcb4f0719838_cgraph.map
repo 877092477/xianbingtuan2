@@ -1,0 +1,4 @@
+<map id="+[Tools isConnection]" name="+[Tools isConnection]">
+<area shape="rect" id="node2" href="$interface_a_f_network_reachability_manager.html#abc98fb713ecc5de942904768512ea1d0" title="+[AFNetworkReachabilityManager\l sharedManager]" alt="" coords="202,5,426,44"/>
+<area shape="rect" id="node3" href="$interface_a_f_network_reachability_manager.html#abcf59bed68830fd7440310b3772022f4" title="+[AFNetworkReachabilityManager\l managerForAddress:]" alt="" coords="474,5,698,44"/>
+</map>

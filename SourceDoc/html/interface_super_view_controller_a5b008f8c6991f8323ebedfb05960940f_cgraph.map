@@ -1,0 +1,7 @@
+<map id="&#45;[SuperViewController goTBDetailWithID:animated:]" name="&#45;[SuperViewController goTBDetailWithID:animated:]">
+<area shape="rect" id="node2" href="$interface_alibc_trade_page_factory.html#a0e8052358a1f6579f60a4fe60bd00508" title="+[AlibcTradePageFactory\l itemDetailPage:]" alt="" coords="250,5,422,44"/>
+<area shape="rect" id="node3" href="$interface_alibc_trade_s_d_k.html#a5415efdf2705a2859d0835358d1d0d20" title="+[AlibcTradeSDK sharedInstance]" alt="" coords="470,101,692,127"/>
+<area shape="rect" id="node4" href="$interface_super_view_controller.html#ab7ab42f58cf10f67de0318b9836fff1a" title="&#45;[SuperViewController\l getOrderNumMethod:]" alt="" coords="257,120,415,159"/>
+<area shape="rect" id="node5" href="$interface_super_view_controller.html#a63c776a89d192c745618d2e9a5eca8dd" title="&#45;[SuperViewController\l initWebViewMethod]" alt="" coords="260,183,412,221"/>
+<area shape="rect" id="node6" href="$interface_alibc_trade_page_factory.html#a066f98de1eb14f7c767fd3a3d32ed8ac" title="+[AlibcTradePageFactory\l page:]" alt="" coords="495,183,667,221"/>
+</map>

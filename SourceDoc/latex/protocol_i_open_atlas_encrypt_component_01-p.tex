@@ -1,0 +1,58 @@
+\hypertarget{protocol_i_open_atlas_encrypt_component_01-p}{}\section{$<$I\+Open\+Atlas\+Encrypt\+Component $>$ Protocol Reference}
+\label{protocol_i_open_atlas_encrypt_component_01-p}\index{$<$\+I\+Open\+Atlas\+Encrypt\+Component $>$@{$<$\+I\+Open\+Atlas\+Encrypt\+Component $>$}}
+
+
+{\ttfamily \#import $<$I\+Open\+Atlas\+Encrypt\+Component.\+h$>$}
+
+
+
+Inheritance diagram for $<$I\+Open\+Atlas\+Encrypt\+Component $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{protocol_i_open_atlas_encrypt_component_01-p__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for $<$I\+Open\+Atlas\+Encrypt\+Component $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{protocol_i_open_atlas_encrypt_component_01-p__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\+S\+String $\ast$) -\/ \mbox{\hyperlink{protocol_i_open_atlas_encrypt_component_01-p_a04c89f6ec9e95172f1bd3ee2ab100a72}{atlas\+Safe\+Encrypt\+:auth\+Code\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+增强加解密算法 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{protocol_i_open_atlas_encrypt_component_01-p_a04c89f6ec9e95172f1bd3ee2ab100a72}\label{protocol_i_open_atlas_encrypt_component_01-p_a04c89f6ec9e95172f1bd3ee2ab100a72}} 
+\index{I\+Open\+Atlas\+Encrypt\+Component -\/p@{I\+Open\+Atlas\+Encrypt\+Component -\/p}!atlas\+Safe\+Encrypt\+:auth\+Code\+:@{atlas\+Safe\+Encrypt\+:auth\+Code\+:}}
+\index{atlas\+Safe\+Encrypt\+:auth\+Code\+:@{atlas\+Safe\+Encrypt\+:auth\+Code\+:}!I\+Open\+Atlas\+Encrypt\+Component -\/p@{I\+Open\+Atlas\+Encrypt\+Component -\/p}}
+\subsubsection{\texorpdfstring{atlas\+Safe\+Encrypt\+:auth\+Code\+:()}{atlasSafeEncrypt:authCode:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$ I\+Open\+Atlas\+Encrypt\+Component) atlas\+Safe\+Encrypt\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{need\+Process\+Value }\item[{authCode:(N\+S\+String $\ast$)}]{auth\+Code }\end{DoxyParamCaption}}
+
+传入需要处理的数据，生成加密结果返回
+
+
+\begin{DoxyParams}{Parameters}
+{\em need\+Process\+Value} & 需要加密的数据\\
+\hline
+{\em auth\+Code} & S\+D\+K授权码\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+返回加密的字符串，失败时返回nil 
+\end{DoxyReturn}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Security\+Guard\+S\+D\+K.\+framework/\+Headers/\+Open/\+Open\+Atlas\+Encrypt/I\+Open\+Atlas\+Encrypt\+Component.\+h\end{DoxyCompactItemize}

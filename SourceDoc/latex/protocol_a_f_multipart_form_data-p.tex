@@ -1,0 +1,470 @@
+\hypertarget{protocol_a_f_multipart_form_data-p}{}\section{$<$A\+F\+Multipart\+Form\+Data$>$ Protocol Reference}
+\label{protocol_a_f_multipart_form_data-p}\index{$<$\+A\+F\+Multipart\+Form\+Data$>$@{$<$\+A\+F\+Multipart\+Form\+Data$>$}}
+
+
+{\ttfamily \#import $<$A\+F\+U\+R\+L\+Request\+Serialization.\+h$>$}
+
+
+
+Inheritance diagram for $<$A\+F\+Multipart\+Form\+Data$>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{protocol_a_f_multipart_form_data-p__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{protocol_a_f_multipart_form_data-p_ad6dd9d19605afe113ab0f5198224d127}{append\+Part\+With\+File\+U\+R\+L\+:name\+:error\+:}}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{protocol_a_f_multipart_form_data-p_a514cde0ae1c0da63a9e5801dabd830b9}{append\+Part\+With\+File\+U\+R\+L\+:name\+:file\+Name\+:mime\+Type\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_a_f_multipart_form_data-p_aa8e577ad5f3171bf618c12e1ee45b8ab}{append\+Part\+With\+Input\+Stream\+:name\+:file\+Name\+:length\+:mime\+Type\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_a_f_multipart_form_data-p_a47b204592fb8a4ad0750ee4c24baa43f}{append\+Part\+With\+File\+Data\+:name\+:file\+Name\+:mime\+Type\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_a_f_multipart_form_data-p_a6bfed0a6d12546d88ecb9ce90c6affb5}{append\+Part\+With\+Form\+Data\+:name\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_a_f_multipart_form_data-p_a536920b65bcc076f33cb823ebb76ecc0}{append\+Part\+With\+Headers\+:body\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_a_f_multipart_form_data-p_a6c60c3d0ab6d679fe548106efc147708}{throttle\+Bandwidth\+With\+Packet\+Size\+:delay\+:}}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{protocol_a_f_multipart_form_data-p_ad6dd9d19605afe113ab0f5198224d127}{append\+Part\+With\+File\+U\+R\+L\+:name\+:error\+:}}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{protocol_a_f_multipart_form_data-p_a514cde0ae1c0da63a9e5801dabd830b9}{append\+Part\+With\+File\+U\+R\+L\+:name\+:file\+Name\+:mime\+Type\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_a_f_multipart_form_data-p_aa8e577ad5f3171bf618c12e1ee45b8ab}{append\+Part\+With\+Input\+Stream\+:name\+:file\+Name\+:length\+:mime\+Type\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_a_f_multipart_form_data-p_a47b204592fb8a4ad0750ee4c24baa43f}{append\+Part\+With\+File\+Data\+:name\+:file\+Name\+:mime\+Type\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_a_f_multipart_form_data-p_a6bfed0a6d12546d88ecb9ce90c6affb5}{append\+Part\+With\+Form\+Data\+:name\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_a_f_multipart_form_data-p_a536920b65bcc076f33cb823ebb76ecc0}{append\+Part\+With\+Headers\+:body\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_a_f_multipart_form_data-p_a6c60c3d0ab6d679fe548106efc147708}{throttle\+Bandwidth\+With\+Packet\+Size\+:delay\+:}}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{protocol_a_f_multipart_form_data-p_ad6dd9d19605afe113ab0f5198224d127}{append\+Part\+With\+File\+U\+R\+L\+:name\+:error\+:}}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{protocol_a_f_multipart_form_data-p_a514cde0ae1c0da63a9e5801dabd830b9}{append\+Part\+With\+File\+U\+R\+L\+:name\+:file\+Name\+:mime\+Type\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_a_f_multipart_form_data-p_aa8e577ad5f3171bf618c12e1ee45b8ab}{append\+Part\+With\+Input\+Stream\+:name\+:file\+Name\+:length\+:mime\+Type\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_a_f_multipart_form_data-p_a47b204592fb8a4ad0750ee4c24baa43f}{append\+Part\+With\+File\+Data\+:name\+:file\+Name\+:mime\+Type\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_a_f_multipart_form_data-p_a6bfed0a6d12546d88ecb9ce90c6affb5}{append\+Part\+With\+Form\+Data\+:name\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_a_f_multipart_form_data-p_a536920b65bcc076f33cb823ebb76ecc0}{append\+Part\+With\+Headers\+:body\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_a_f_multipart_form_data-p_a6c60c3d0ab6d679fe548106efc147708}{throttle\+Bandwidth\+With\+Packet\+Size\+:delay\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{protocol_a_f_multipart_form_data-p}{A\+F\+Multipart\+Form\+Data}}} protocol defines the methods supported by the parameter in the block argument of {\ttfamily \mbox{\hyperlink{interface_a_f_h_t_t_p_request_serializer}{A\+F\+H\+T\+T\+P\+Request\+Serializer}} -\/multipart\+Form\+Request\+With\+Method\+:U\+R\+L\+String\+:parameters\+:constructing\+Body\+With\+Block\+:}. 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{protocol_a_f_multipart_form_data-p_a47b204592fb8a4ad0750ee4c24baa43f}\label{protocol_a_f_multipart_form_data-p_a47b204592fb8a4ad0750ee4c24baa43f}} 
+\index{A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}!append\+Part\+With\+File\+Data\+:name\+:file\+Name\+:mime\+Type\+:@{append\+Part\+With\+File\+Data\+:name\+:file\+Name\+:mime\+Type\+:}}
+\index{append\+Part\+With\+File\+Data\+:name\+:file\+Name\+:mime\+Type\+:@{append\+Part\+With\+File\+Data\+:name\+:file\+Name\+:mime\+Type\+:}!A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}}
+\subsubsection{\texorpdfstring{append\+Part\+With\+File\+Data\+:name\+:file\+Name\+:mime\+Type\+:()}{appendPartWithFileData:name:fileName:mimeType:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (void) append\+Part\+With\+File\+Data\+: \begin{DoxyParamCaption}\item[{(N\+S\+Data $\ast$)}]{data }\item[{name:(N\+S\+String $\ast$)}]{name }\item[{fileName:(N\+S\+String $\ast$)}]{file\+Name }\item[{mimeType:(N\+S\+String $\ast$)}]{mime\+Type }\end{DoxyParamCaption}}
+
+Appends the H\+T\+TP header {\ttfamily Content-\/\+Disposition\+: file; filename=\#\{filename\}; name=\#\{name\}"} and {\ttfamily Content-\/\+Type\+: \#\{mime\+Type\}}, followed by the encoded file data and the multipart form boundary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The data to be encoded and appended to the form data. \\
+\hline
+{\em name} & The name to be associated with the specified data. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em file\+Name} & The filename to be associated with the specified data. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em mime\+Type} & The M\+I\+ME type of the specified data. (For example, the M\+I\+ME type for a J\+P\+EG image is image/jpeg.) For a list of valid M\+I\+ME types, see \href{http://www.iana.org/assignments/media-types/}{\tt http\+://www.\+iana.\+org/assignments/media-\/types/}. This parameter must not be {\ttfamily nil}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_a_f_multipart_form_data-p_a47b204592fb8a4ad0750ee4c24baa43f}\label{protocol_a_f_multipart_form_data-p_a47b204592fb8a4ad0750ee4c24baa43f}} 
+\index{A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}!append\+Part\+With\+File\+Data\+:name\+:file\+Name\+:mime\+Type\+:@{append\+Part\+With\+File\+Data\+:name\+:file\+Name\+:mime\+Type\+:}}
+\index{append\+Part\+With\+File\+Data\+:name\+:file\+Name\+:mime\+Type\+:@{append\+Part\+With\+File\+Data\+:name\+:file\+Name\+:mime\+Type\+:}!A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}}
+\subsubsection{\texorpdfstring{append\+Part\+With\+File\+Data\+:name\+:file\+Name\+:mime\+Type\+:()}{appendPartWithFileData:name:fileName:mimeType:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (void) append\+Part\+With\+File\+Data\+: \begin{DoxyParamCaption}\item[{(N\+S\+Data $\ast$)}]{data }\item[{name:(N\+S\+String $\ast$)}]{name }\item[{fileName:(N\+S\+String $\ast$)}]{file\+Name }\item[{mimeType:(N\+S\+String $\ast$)}]{mime\+Type }\end{DoxyParamCaption}}
+
+Appends the H\+T\+TP header {\ttfamily Content-\/\+Disposition\+: file; filename=\#\{filename\}; name=\#\{name\}"} and {\ttfamily Content-\/\+Type\+: \#\{mime\+Type\}}, followed by the encoded file data and the multipart form boundary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The data to be encoded and appended to the form data. \\
+\hline
+{\em name} & The name to be associated with the specified data. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em file\+Name} & The filename to be associated with the specified data. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em mime\+Type} & The M\+I\+ME type of the specified data. (For example, the M\+I\+ME type for a J\+P\+EG image is image/jpeg.) For a list of valid M\+I\+ME types, see \href{http://www.iana.org/assignments/media-types/}{\tt http\+://www.\+iana.\+org/assignments/media-\/types/}. This parameter must not be {\ttfamily nil}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_a_f_multipart_form_data-p_a47b204592fb8a4ad0750ee4c24baa43f}\label{protocol_a_f_multipart_form_data-p_a47b204592fb8a4ad0750ee4c24baa43f}} 
+\index{A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}!append\+Part\+With\+File\+Data\+:name\+:file\+Name\+:mime\+Type\+:@{append\+Part\+With\+File\+Data\+:name\+:file\+Name\+:mime\+Type\+:}}
+\index{append\+Part\+With\+File\+Data\+:name\+:file\+Name\+:mime\+Type\+:@{append\+Part\+With\+File\+Data\+:name\+:file\+Name\+:mime\+Type\+:}!A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}}
+\subsubsection{\texorpdfstring{append\+Part\+With\+File\+Data\+:name\+:file\+Name\+:mime\+Type\+:()}{appendPartWithFileData:name:fileName:mimeType:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (void) append\+Part\+With\+File\+Data\+: \begin{DoxyParamCaption}\item[{(N\+S\+Data $\ast$)}]{data }\item[{name:(N\+S\+String $\ast$)}]{name }\item[{fileName:(N\+S\+String $\ast$)}]{file\+Name }\item[{mimeType:(N\+S\+String $\ast$)}]{mime\+Type }\end{DoxyParamCaption}}
+
+Appends the H\+T\+TP header {\ttfamily Content-\/\+Disposition\+: file; filename=\#\{filename\}; name=\#\{name\}"} and {\ttfamily Content-\/\+Type\+: \#\{mime\+Type\}}, followed by the encoded file data and the multipart form boundary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The data to be encoded and appended to the form data. \\
+\hline
+{\em name} & The name to be associated with the specified data. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em file\+Name} & The filename to be associated with the specified data. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em mime\+Type} & The M\+I\+ME type of the specified data. (For example, the M\+I\+ME type for a J\+P\+EG image is image/jpeg.) For a list of valid M\+I\+ME types, see \href{http://www.iana.org/assignments/media-types/}{\tt http\+://www.\+iana.\+org/assignments/media-\/types/}. This parameter must not be {\ttfamily nil}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_a_f_multipart_form_data-p_ad6dd9d19605afe113ab0f5198224d127}\label{protocol_a_f_multipart_form_data-p_ad6dd9d19605afe113ab0f5198224d127}} 
+\index{A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}!append\+Part\+With\+File\+U\+R\+L\+:name\+:error\+:@{append\+Part\+With\+File\+U\+R\+L\+:name\+:error\+:}}
+\index{append\+Part\+With\+File\+U\+R\+L\+:name\+:error\+:@{append\+Part\+With\+File\+U\+R\+L\+:name\+:error\+:}!A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}}
+\subsubsection{\texorpdfstring{append\+Part\+With\+File\+U\+R\+L\+:name\+:error\+:()}{appendPartWithFileURL:name:error:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) append\+Part\+With\+File\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{file\+U\+RL }\item[{name:(N\+S\+String $\ast$)}]{name }\item[{error:(N\+S\+Error $\ast$\+\_\+\+\_\+nullable \+\_\+\+\_\+autoreleasing $\ast$)}]{error }\end{DoxyParamCaption}}
+
+Appends the H\+T\+TP header {\ttfamily Content-\/\+Disposition\+: file; filename=\#\{generated filename\}; name=\#\{name\}"} and {\ttfamily Content-\/\+Type\+: \#\{generated mime\+Type\}}, followed by the encoded file data and the multipart form boundary.
+
+The filename and M\+I\+ME type for this data in the form will be automatically generated, using the last path component of the {\ttfamily file\+U\+RL} and system associated M\+I\+ME type for the {\ttfamily file\+U\+RL} extension, respectively.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+U\+RL} & The U\+RL corresponding to the file whose content will be appended to the form. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em name} & The name to be associated with the specified data. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em error} & If an error occurs, upon return contains an {\ttfamily N\+S\+Error} object that describes the problem.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily Y\+ES} if the file data was successfully appended, otherwise {\ttfamily NO}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_a_f_multipart_form_data-p_ad6dd9d19605afe113ab0f5198224d127}\label{protocol_a_f_multipart_form_data-p_ad6dd9d19605afe113ab0f5198224d127}} 
+\index{A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}!append\+Part\+With\+File\+U\+R\+L\+:name\+:error\+:@{append\+Part\+With\+File\+U\+R\+L\+:name\+:error\+:}}
+\index{append\+Part\+With\+File\+U\+R\+L\+:name\+:error\+:@{append\+Part\+With\+File\+U\+R\+L\+:name\+:error\+:}!A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}}
+\subsubsection{\texorpdfstring{append\+Part\+With\+File\+U\+R\+L\+:name\+:error\+:()}{appendPartWithFileURL:name:error:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) append\+Part\+With\+File\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{file\+U\+RL }\item[{name:(N\+S\+String $\ast$)}]{name }\item[{error:(N\+S\+Error $\ast$\+\_\+\+\_\+nullable \+\_\+\+\_\+autoreleasing $\ast$)}]{error }\end{DoxyParamCaption}}
+
+Appends the H\+T\+TP header {\ttfamily Content-\/\+Disposition\+: file; filename=\#\{generated filename\}; name=\#\{name\}"} and {\ttfamily Content-\/\+Type\+: \#\{generated mime\+Type\}}, followed by the encoded file data and the multipart form boundary.
+
+The filename and M\+I\+ME type for this data in the form will be automatically generated, using the last path component of the {\ttfamily file\+U\+RL} and system associated M\+I\+ME type for the {\ttfamily file\+U\+RL} extension, respectively.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+U\+RL} & The U\+RL corresponding to the file whose content will be appended to the form. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em name} & The name to be associated with the specified data. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em error} & If an error occurs, upon return contains an {\ttfamily N\+S\+Error} object that describes the problem.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily Y\+ES} if the file data was successfully appended, otherwise {\ttfamily NO}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_a_f_multipart_form_data-p_ad6dd9d19605afe113ab0f5198224d127}\label{protocol_a_f_multipart_form_data-p_ad6dd9d19605afe113ab0f5198224d127}} 
+\index{A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}!append\+Part\+With\+File\+U\+R\+L\+:name\+:error\+:@{append\+Part\+With\+File\+U\+R\+L\+:name\+:error\+:}}
+\index{append\+Part\+With\+File\+U\+R\+L\+:name\+:error\+:@{append\+Part\+With\+File\+U\+R\+L\+:name\+:error\+:}!A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}}
+\subsubsection{\texorpdfstring{append\+Part\+With\+File\+U\+R\+L\+:name\+:error\+:()}{appendPartWithFileURL:name:error:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) append\+Part\+With\+File\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{file\+U\+RL }\item[{name:(N\+S\+String $\ast$)}]{name }\item[{error:(N\+S\+Error $\ast$\+\_\+\+\_\+nullable \+\_\+\+\_\+autoreleasing $\ast$)}]{error }\end{DoxyParamCaption}}
+
+Appends the H\+T\+TP header {\ttfamily Content-\/\+Disposition\+: file; filename=\#\{generated filename\}; name=\#\{name\}"} and {\ttfamily Content-\/\+Type\+: \#\{generated mime\+Type\}}, followed by the encoded file data and the multipart form boundary.
+
+The filename and M\+I\+ME type for this data in the form will be automatically generated, using the last path component of the {\ttfamily file\+U\+RL} and system associated M\+I\+ME type for the {\ttfamily file\+U\+RL} extension, respectively.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+U\+RL} & The U\+RL corresponding to the file whose content will be appended to the form. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em name} & The name to be associated with the specified data. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em error} & If an error occurs, upon return contains an {\ttfamily N\+S\+Error} object that describes the problem.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily Y\+ES} if the file data was successfully appended, otherwise {\ttfamily NO}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_a_f_multipart_form_data-p_a514cde0ae1c0da63a9e5801dabd830b9}\label{protocol_a_f_multipart_form_data-p_a514cde0ae1c0da63a9e5801dabd830b9}} 
+\index{A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}!append\+Part\+With\+File\+U\+R\+L\+:name\+:file\+Name\+:mime\+Type\+:error\+:@{append\+Part\+With\+File\+U\+R\+L\+:name\+:file\+Name\+:mime\+Type\+:error\+:}}
+\index{append\+Part\+With\+File\+U\+R\+L\+:name\+:file\+Name\+:mime\+Type\+:error\+:@{append\+Part\+With\+File\+U\+R\+L\+:name\+:file\+Name\+:mime\+Type\+:error\+:}!A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}}
+\subsubsection{\texorpdfstring{append\+Part\+With\+File\+U\+R\+L\+:name\+:file\+Name\+:mime\+Type\+:error\+:()}{appendPartWithFileURL:name:fileName:mimeType:error:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) append\+Part\+With\+File\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{file\+U\+RL }\item[{name:(N\+S\+String $\ast$)}]{name }\item[{fileName:(N\+S\+String $\ast$)}]{file\+Name }\item[{mimeType:(N\+S\+String $\ast$)}]{mime\+Type }\item[{error:(N\+S\+Error $\ast$\+\_\+\+\_\+nullable \+\_\+\+\_\+autoreleasing $\ast$)}]{error }\end{DoxyParamCaption}}
+
+Appends the H\+T\+TP header {\ttfamily Content-\/\+Disposition\+: file; filename=\#\{filename\}; name=\#\{name\}"} and {\ttfamily Content-\/\+Type\+: \#\{mime\+Type\}}, followed by the encoded file data and the multipart form boundary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+U\+RL} & The U\+RL corresponding to the file whose content will be appended to the form. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em name} & The name to be associated with the specified data. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em file\+Name} & The file name to be used in the {\ttfamily Content-\/\+Disposition} header. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em mime\+Type} & The declared M\+I\+ME type of the file data. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em error} & If an error occurs, upon return contains an {\ttfamily N\+S\+Error} object that describes the problem.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily Y\+ES} if the file data was successfully appended otherwise {\ttfamily NO}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_a_f_multipart_form_data-p_a514cde0ae1c0da63a9e5801dabd830b9}\label{protocol_a_f_multipart_form_data-p_a514cde0ae1c0da63a9e5801dabd830b9}} 
+\index{A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}!append\+Part\+With\+File\+U\+R\+L\+:name\+:file\+Name\+:mime\+Type\+:error\+:@{append\+Part\+With\+File\+U\+R\+L\+:name\+:file\+Name\+:mime\+Type\+:error\+:}}
+\index{append\+Part\+With\+File\+U\+R\+L\+:name\+:file\+Name\+:mime\+Type\+:error\+:@{append\+Part\+With\+File\+U\+R\+L\+:name\+:file\+Name\+:mime\+Type\+:error\+:}!A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}}
+\subsubsection{\texorpdfstring{append\+Part\+With\+File\+U\+R\+L\+:name\+:file\+Name\+:mime\+Type\+:error\+:()}{appendPartWithFileURL:name:fileName:mimeType:error:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) append\+Part\+With\+File\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{file\+U\+RL }\item[{name:(N\+S\+String $\ast$)}]{name }\item[{fileName:(N\+S\+String $\ast$)}]{file\+Name }\item[{mimeType:(N\+S\+String $\ast$)}]{mime\+Type }\item[{error:(N\+S\+Error $\ast$\+\_\+\+\_\+nullable \+\_\+\+\_\+autoreleasing $\ast$)}]{error }\end{DoxyParamCaption}}
+
+Appends the H\+T\+TP header {\ttfamily Content-\/\+Disposition\+: file; filename=\#\{filename\}; name=\#\{name\}"} and {\ttfamily Content-\/\+Type\+: \#\{mime\+Type\}}, followed by the encoded file data and the multipart form boundary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+U\+RL} & The U\+RL corresponding to the file whose content will be appended to the form. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em name} & The name to be associated with the specified data. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em file\+Name} & The file name to be used in the {\ttfamily Content-\/\+Disposition} header. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em mime\+Type} & The declared M\+I\+ME type of the file data. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em error} & If an error occurs, upon return contains an {\ttfamily N\+S\+Error} object that describes the problem.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily Y\+ES} if the file data was successfully appended otherwise {\ttfamily NO}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_a_f_multipart_form_data-p_a514cde0ae1c0da63a9e5801dabd830b9}\label{protocol_a_f_multipart_form_data-p_a514cde0ae1c0da63a9e5801dabd830b9}} 
+\index{A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}!append\+Part\+With\+File\+U\+R\+L\+:name\+:file\+Name\+:mime\+Type\+:error\+:@{append\+Part\+With\+File\+U\+R\+L\+:name\+:file\+Name\+:mime\+Type\+:error\+:}}
+\index{append\+Part\+With\+File\+U\+R\+L\+:name\+:file\+Name\+:mime\+Type\+:error\+:@{append\+Part\+With\+File\+U\+R\+L\+:name\+:file\+Name\+:mime\+Type\+:error\+:}!A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}}
+\subsubsection{\texorpdfstring{append\+Part\+With\+File\+U\+R\+L\+:name\+:file\+Name\+:mime\+Type\+:error\+:()}{appendPartWithFileURL:name:fileName:mimeType:error:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) append\+Part\+With\+File\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{file\+U\+RL }\item[{name:(N\+S\+String $\ast$)}]{name }\item[{fileName:(N\+S\+String $\ast$)}]{file\+Name }\item[{mimeType:(N\+S\+String $\ast$)}]{mime\+Type }\item[{error:(N\+S\+Error $\ast$\+\_\+\+\_\+nullable \+\_\+\+\_\+autoreleasing $\ast$)}]{error }\end{DoxyParamCaption}}
+
+Appends the H\+T\+TP header {\ttfamily Content-\/\+Disposition\+: file; filename=\#\{filename\}; name=\#\{name\}"} and {\ttfamily Content-\/\+Type\+: \#\{mime\+Type\}}, followed by the encoded file data and the multipart form boundary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+U\+RL} & The U\+RL corresponding to the file whose content will be appended to the form. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em name} & The name to be associated with the specified data. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em file\+Name} & The file name to be used in the {\ttfamily Content-\/\+Disposition} header. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em mime\+Type} & The declared M\+I\+ME type of the file data. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em error} & If an error occurs, upon return contains an {\ttfamily N\+S\+Error} object that describes the problem.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily Y\+ES} if the file data was successfully appended otherwise {\ttfamily NO}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_a_f_multipart_form_data-p_a6bfed0a6d12546d88ecb9ce90c6affb5}\label{protocol_a_f_multipart_form_data-p_a6bfed0a6d12546d88ecb9ce90c6affb5}} 
+\index{A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}!append\+Part\+With\+Form\+Data\+:name\+:@{append\+Part\+With\+Form\+Data\+:name\+:}}
+\index{append\+Part\+With\+Form\+Data\+:name\+:@{append\+Part\+With\+Form\+Data\+:name\+:}!A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}}
+\subsubsection{\texorpdfstring{append\+Part\+With\+Form\+Data\+:name\+:()}{appendPartWithFormData:name:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (void) append\+Part\+With\+Form\+Data\+: \begin{DoxyParamCaption}\item[{(N\+S\+Data $\ast$)}]{data }\item[{name:(N\+S\+String $\ast$)}]{name }\end{DoxyParamCaption}}
+
+Appends the H\+T\+TP headers {\ttfamily Content-\/\+Disposition\+: form-\/data; name=\#\{name\}"}, followed by the encoded data and the multipart form boundary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The data to be encoded and appended to the form data. \\
+\hline
+{\em name} & The name to be associated with the specified data. This parameter must not be {\ttfamily nil}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_a_f_multipart_form_data-p_a6bfed0a6d12546d88ecb9ce90c6affb5}\label{protocol_a_f_multipart_form_data-p_a6bfed0a6d12546d88ecb9ce90c6affb5}} 
+\index{A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}!append\+Part\+With\+Form\+Data\+:name\+:@{append\+Part\+With\+Form\+Data\+:name\+:}}
+\index{append\+Part\+With\+Form\+Data\+:name\+:@{append\+Part\+With\+Form\+Data\+:name\+:}!A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}}
+\subsubsection{\texorpdfstring{append\+Part\+With\+Form\+Data\+:name\+:()}{appendPartWithFormData:name:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (void) append\+Part\+With\+Form\+Data\+: \begin{DoxyParamCaption}\item[{(N\+S\+Data $\ast$)}]{data }\item[{name:(N\+S\+String $\ast$)}]{name }\end{DoxyParamCaption}}
+
+Appends the H\+T\+TP headers {\ttfamily Content-\/\+Disposition\+: form-\/data; name=\#\{name\}"}, followed by the encoded data and the multipart form boundary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The data to be encoded and appended to the form data. \\
+\hline
+{\em name} & The name to be associated with the specified data. This parameter must not be {\ttfamily nil}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_a_f_multipart_form_data-p_a6bfed0a6d12546d88ecb9ce90c6affb5}\label{protocol_a_f_multipart_form_data-p_a6bfed0a6d12546d88ecb9ce90c6affb5}} 
+\index{A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}!append\+Part\+With\+Form\+Data\+:name\+:@{append\+Part\+With\+Form\+Data\+:name\+:}}
+\index{append\+Part\+With\+Form\+Data\+:name\+:@{append\+Part\+With\+Form\+Data\+:name\+:}!A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}}
+\subsubsection{\texorpdfstring{append\+Part\+With\+Form\+Data\+:name\+:()}{appendPartWithFormData:name:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (void) append\+Part\+With\+Form\+Data\+: \begin{DoxyParamCaption}\item[{(N\+S\+Data $\ast$)}]{data }\item[{name:(N\+S\+String $\ast$)}]{name }\end{DoxyParamCaption}}
+
+Appends the H\+T\+TP headers {\ttfamily Content-\/\+Disposition\+: form-\/data; name=\#\{name\}"}, followed by the encoded data and the multipart form boundary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The data to be encoded and appended to the form data. \\
+\hline
+{\em name} & The name to be associated with the specified data. This parameter must not be {\ttfamily nil}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_a_f_multipart_form_data-p_a536920b65bcc076f33cb823ebb76ecc0}\label{protocol_a_f_multipart_form_data-p_a536920b65bcc076f33cb823ebb76ecc0}} 
+\index{A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}!append\+Part\+With\+Headers\+:body\+:@{append\+Part\+With\+Headers\+:body\+:}}
+\index{append\+Part\+With\+Headers\+:body\+:@{append\+Part\+With\+Headers\+:body\+:}!A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}}
+\subsubsection{\texorpdfstring{append\+Part\+With\+Headers\+:body\+:()}{appendPartWithHeaders:body:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (void) append\+Part\+With\+Headers\+: \begin{DoxyParamCaption}\item[{(nullable N\+S\+Dictionary $\ast$)}]{headers }\item[{body:(N\+S\+Data $\ast$)}]{body }\end{DoxyParamCaption}}
+
+Appends H\+T\+TP headers, followed by the encoded data and the multipart form boundary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em headers} & The H\+T\+TP headers to be appended to the form data. \\
+\hline
+{\em body} & The data to be encoded and appended to the form data. This parameter must not be {\ttfamily nil}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_a_f_multipart_form_data-p_a536920b65bcc076f33cb823ebb76ecc0}\label{protocol_a_f_multipart_form_data-p_a536920b65bcc076f33cb823ebb76ecc0}} 
+\index{A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}!append\+Part\+With\+Headers\+:body\+:@{append\+Part\+With\+Headers\+:body\+:}}
+\index{append\+Part\+With\+Headers\+:body\+:@{append\+Part\+With\+Headers\+:body\+:}!A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}}
+\subsubsection{\texorpdfstring{append\+Part\+With\+Headers\+:body\+:()}{appendPartWithHeaders:body:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (void) append\+Part\+With\+Headers\+: \begin{DoxyParamCaption}\item[{(nullable N\+S\+Dictionary $\ast$)}]{headers }\item[{body:(N\+S\+Data $\ast$)}]{body }\end{DoxyParamCaption}}
+
+Appends H\+T\+TP headers, followed by the encoded data and the multipart form boundary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em headers} & The H\+T\+TP headers to be appended to the form data. \\
+\hline
+{\em body} & The data to be encoded and appended to the form data. This parameter must not be {\ttfamily nil}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_a_f_multipart_form_data-p_a536920b65bcc076f33cb823ebb76ecc0}\label{protocol_a_f_multipart_form_data-p_a536920b65bcc076f33cb823ebb76ecc0}} 
+\index{A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}!append\+Part\+With\+Headers\+:body\+:@{append\+Part\+With\+Headers\+:body\+:}}
+\index{append\+Part\+With\+Headers\+:body\+:@{append\+Part\+With\+Headers\+:body\+:}!A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}}
+\subsubsection{\texorpdfstring{append\+Part\+With\+Headers\+:body\+:()}{appendPartWithHeaders:body:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (void) append\+Part\+With\+Headers\+: \begin{DoxyParamCaption}\item[{(nullable N\+S\+Dictionary $\ast$)}]{headers }\item[{body:(N\+S\+Data $\ast$)}]{body }\end{DoxyParamCaption}}
+
+Appends H\+T\+TP headers, followed by the encoded data and the multipart form boundary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em headers} & The H\+T\+TP headers to be appended to the form data. \\
+\hline
+{\em body} & The data to be encoded and appended to the form data. This parameter must not be {\ttfamily nil}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_a_f_multipart_form_data-p_aa8e577ad5f3171bf618c12e1ee45b8ab}\label{protocol_a_f_multipart_form_data-p_aa8e577ad5f3171bf618c12e1ee45b8ab}} 
+\index{A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}!append\+Part\+With\+Input\+Stream\+:name\+:file\+Name\+:length\+:mime\+Type\+:@{append\+Part\+With\+Input\+Stream\+:name\+:file\+Name\+:length\+:mime\+Type\+:}}
+\index{append\+Part\+With\+Input\+Stream\+:name\+:file\+Name\+:length\+:mime\+Type\+:@{append\+Part\+With\+Input\+Stream\+:name\+:file\+Name\+:length\+:mime\+Type\+:}!A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}}
+\subsubsection{\texorpdfstring{append\+Part\+With\+Input\+Stream\+:name\+:file\+Name\+:length\+:mime\+Type\+:()}{appendPartWithInputStream:name:fileName:length:mimeType:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (void) append\+Part\+With\+Input\+Stream\+: \begin{DoxyParamCaption}\item[{(nullable N\+S\+Input\+Stream $\ast$)}]{input\+Stream }\item[{name:(N\+S\+String $\ast$)}]{name }\item[{fileName:(N\+S\+String $\ast$)}]{file\+Name }\item[{length:(int64\+\_\+t)}]{length }\item[{mimeType:(N\+S\+String $\ast$)}]{mime\+Type }\end{DoxyParamCaption}}
+
+Appends the H\+T\+TP header {\ttfamily Content-\/\+Disposition\+: file; filename=\#\{filename\}; name=\#\{name\}"} and {\ttfamily Content-\/\+Type\+: \#\{mime\+Type\}}, followed by the data from the input stream and the multipart form boundary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Stream} & The input stream to be appended to the form data \\
+\hline
+{\em name} & The name to be associated with the specified input stream. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em file\+Name} & The filename to be associated with the specified input stream. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em length} & The length of the specified input stream in bytes. \\
+\hline
+{\em mime\+Type} & The M\+I\+ME type of the specified data. (For example, the M\+I\+ME type for a J\+P\+EG image is image/jpeg.) For a list of valid M\+I\+ME types, see \href{http://www.iana.org/assignments/media-types/}{\tt http\+://www.\+iana.\+org/assignments/media-\/types/}. This parameter must not be {\ttfamily nil}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_a_f_multipart_form_data-p_aa8e577ad5f3171bf618c12e1ee45b8ab}\label{protocol_a_f_multipart_form_data-p_aa8e577ad5f3171bf618c12e1ee45b8ab}} 
+\index{A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}!append\+Part\+With\+Input\+Stream\+:name\+:file\+Name\+:length\+:mime\+Type\+:@{append\+Part\+With\+Input\+Stream\+:name\+:file\+Name\+:length\+:mime\+Type\+:}}
+\index{append\+Part\+With\+Input\+Stream\+:name\+:file\+Name\+:length\+:mime\+Type\+:@{append\+Part\+With\+Input\+Stream\+:name\+:file\+Name\+:length\+:mime\+Type\+:}!A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}}
+\subsubsection{\texorpdfstring{append\+Part\+With\+Input\+Stream\+:name\+:file\+Name\+:length\+:mime\+Type\+:()}{appendPartWithInputStream:name:fileName:length:mimeType:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (void) append\+Part\+With\+Input\+Stream\+: \begin{DoxyParamCaption}\item[{(nullable N\+S\+Input\+Stream $\ast$)}]{input\+Stream }\item[{name:(N\+S\+String $\ast$)}]{name }\item[{fileName:(N\+S\+String $\ast$)}]{file\+Name }\item[{length:(int64\+\_\+t)}]{length }\item[{mimeType:(N\+S\+String $\ast$)}]{mime\+Type }\end{DoxyParamCaption}}
+
+Appends the H\+T\+TP header {\ttfamily Content-\/\+Disposition\+: file; filename=\#\{filename\}; name=\#\{name\}"} and {\ttfamily Content-\/\+Type\+: \#\{mime\+Type\}}, followed by the data from the input stream and the multipart form boundary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Stream} & The input stream to be appended to the form data \\
+\hline
+{\em name} & The name to be associated with the specified input stream. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em file\+Name} & The filename to be associated with the specified input stream. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em length} & The length of the specified input stream in bytes. \\
+\hline
+{\em mime\+Type} & The M\+I\+ME type of the specified data. (For example, the M\+I\+ME type for a J\+P\+EG image is image/jpeg.) For a list of valid M\+I\+ME types, see \href{http://www.iana.org/assignments/media-types/}{\tt http\+://www.\+iana.\+org/assignments/media-\/types/}. This parameter must not be {\ttfamily nil}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_a_f_multipart_form_data-p_aa8e577ad5f3171bf618c12e1ee45b8ab}\label{protocol_a_f_multipart_form_data-p_aa8e577ad5f3171bf618c12e1ee45b8ab}} 
+\index{A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}!append\+Part\+With\+Input\+Stream\+:name\+:file\+Name\+:length\+:mime\+Type\+:@{append\+Part\+With\+Input\+Stream\+:name\+:file\+Name\+:length\+:mime\+Type\+:}}
+\index{append\+Part\+With\+Input\+Stream\+:name\+:file\+Name\+:length\+:mime\+Type\+:@{append\+Part\+With\+Input\+Stream\+:name\+:file\+Name\+:length\+:mime\+Type\+:}!A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}}
+\subsubsection{\texorpdfstring{append\+Part\+With\+Input\+Stream\+:name\+:file\+Name\+:length\+:mime\+Type\+:()}{appendPartWithInputStream:name:fileName:length:mimeType:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (void) append\+Part\+With\+Input\+Stream\+: \begin{DoxyParamCaption}\item[{(nullable N\+S\+Input\+Stream $\ast$)}]{input\+Stream }\item[{name:(N\+S\+String $\ast$)}]{name }\item[{fileName:(N\+S\+String $\ast$)}]{file\+Name }\item[{length:(int64\+\_\+t)}]{length }\item[{mimeType:(N\+S\+String $\ast$)}]{mime\+Type }\end{DoxyParamCaption}}
+
+Appends the H\+T\+TP header {\ttfamily Content-\/\+Disposition\+: file; filename=\#\{filename\}; name=\#\{name\}"} and {\ttfamily Content-\/\+Type\+: \#\{mime\+Type\}}, followed by the data from the input stream and the multipart form boundary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Stream} & The input stream to be appended to the form data \\
+\hline
+{\em name} & The name to be associated with the specified input stream. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em file\+Name} & The filename to be associated with the specified input stream. This parameter must not be {\ttfamily nil}. \\
+\hline
+{\em length} & The length of the specified input stream in bytes. \\
+\hline
+{\em mime\+Type} & The M\+I\+ME type of the specified data. (For example, the M\+I\+ME type for a J\+P\+EG image is image/jpeg.) For a list of valid M\+I\+ME types, see \href{http://www.iana.org/assignments/media-types/}{\tt http\+://www.\+iana.\+org/assignments/media-\/types/}. This parameter must not be {\ttfamily nil}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_a_f_multipart_form_data-p_a6c60c3d0ab6d679fe548106efc147708}\label{protocol_a_f_multipart_form_data-p_a6c60c3d0ab6d679fe548106efc147708}} 
+\index{A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}!throttle\+Bandwidth\+With\+Packet\+Size\+:delay\+:@{throttle\+Bandwidth\+With\+Packet\+Size\+:delay\+:}}
+\index{throttle\+Bandwidth\+With\+Packet\+Size\+:delay\+:@{throttle\+Bandwidth\+With\+Packet\+Size\+:delay\+:}!A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}}
+\subsubsection{\texorpdfstring{throttle\+Bandwidth\+With\+Packet\+Size\+:delay\+:()}{throttleBandwidthWithPacketSize:delay:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (void) throttle\+Bandwidth\+With\+Packet\+Size\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+Integer)}]{number\+Of\+Bytes }\item[{delay:(N\+S\+Time\+Interval)}]{delay }\end{DoxyParamCaption}}
+
+Throttles request bandwidth by limiting the packet size and adding a delay for each chunk read from the upload stream.
+
+When uploading over a 3G or E\+D\+GE connection, requests may fail with \char`\"{}request body stream exhausted\char`\"{}. Setting a maximum packet size and delay according to the recommended values ({\ttfamily k\+A\+F\+Upload\+Stream3\+G\+Suggested\+Packet\+Size} and {\ttfamily k\+A\+F\+Upload\+Stream3\+G\+Suggested\+Delay}) lowers the risk of the input stream exceeding its allocated bandwidth. Unfortunately, there is no definite way to distinguish between a 3G, E\+D\+GE, or L\+TE connection over {\ttfamily N\+S\+U\+R\+L\+Connection}. As such, it is not recommended that you throttle bandwidth based solely on network reachability. Instead, you should consider checking for the \char`\"{}request body stream exhausted\char`\"{} in a failure block, and then retrying the request with throttled bandwidth.
+
+
+\begin{DoxyParams}{Parameters}
+{\em number\+Of\+Bytes} & Maximum packet size, in number of bytes. The default packet size for an input stream is 16kb. \\
+\hline
+{\em delay} & Duration of delay each time a packet is read. By default, no delay is set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_a_f_multipart_form_data-p_a6c60c3d0ab6d679fe548106efc147708}\label{protocol_a_f_multipart_form_data-p_a6c60c3d0ab6d679fe548106efc147708}} 
+\index{A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}!throttle\+Bandwidth\+With\+Packet\+Size\+:delay\+:@{throttle\+Bandwidth\+With\+Packet\+Size\+:delay\+:}}
+\index{throttle\+Bandwidth\+With\+Packet\+Size\+:delay\+:@{throttle\+Bandwidth\+With\+Packet\+Size\+:delay\+:}!A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}}
+\subsubsection{\texorpdfstring{throttle\+Bandwidth\+With\+Packet\+Size\+:delay\+:()}{throttleBandwidthWithPacketSize:delay:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (void) throttle\+Bandwidth\+With\+Packet\+Size\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+Integer)}]{number\+Of\+Bytes }\item[{delay:(N\+S\+Time\+Interval)}]{delay }\end{DoxyParamCaption}}
+
+Throttles request bandwidth by limiting the packet size and adding a delay for each chunk read from the upload stream.
+
+When uploading over a 3G or E\+D\+GE connection, requests may fail with \char`\"{}request body stream exhausted\char`\"{}. Setting a maximum packet size and delay according to the recommended values ({\ttfamily k\+A\+F\+Upload\+Stream3\+G\+Suggested\+Packet\+Size} and {\ttfamily k\+A\+F\+Upload\+Stream3\+G\+Suggested\+Delay}) lowers the risk of the input stream exceeding its allocated bandwidth. Unfortunately, there is no definite way to distinguish between a 3G, E\+D\+GE, or L\+TE connection over {\ttfamily N\+S\+U\+R\+L\+Connection}. As such, it is not recommended that you throttle bandwidth based solely on network reachability. Instead, you should consider checking for the \char`\"{}request body stream exhausted\char`\"{} in a failure block, and then retrying the request with throttled bandwidth.
+
+
+\begin{DoxyParams}{Parameters}
+{\em number\+Of\+Bytes} & Maximum packet size, in number of bytes. The default packet size for an input stream is 16kb. \\
+\hline
+{\em delay} & Duration of delay each time a packet is read. By default, no delay is set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_a_f_multipart_form_data-p_a6c60c3d0ab6d679fe548106efc147708}\label{protocol_a_f_multipart_form_data-p_a6c60c3d0ab6d679fe548106efc147708}} 
+\index{A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}!throttle\+Bandwidth\+With\+Packet\+Size\+:delay\+:@{throttle\+Bandwidth\+With\+Packet\+Size\+:delay\+:}}
+\index{throttle\+Bandwidth\+With\+Packet\+Size\+:delay\+:@{throttle\+Bandwidth\+With\+Packet\+Size\+:delay\+:}!A\+F\+Multipart\+Form\+Data-\/p@{A\+F\+Multipart\+Form\+Data-\/p}}
+\subsubsection{\texorpdfstring{throttle\+Bandwidth\+With\+Packet\+Size\+:delay\+:()}{throttleBandwidthWithPacketSize:delay:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (void) throttle\+Bandwidth\+With\+Packet\+Size\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+Integer)}]{number\+Of\+Bytes }\item[{delay:(N\+S\+Time\+Interval)}]{delay }\end{DoxyParamCaption}}
+
+Throttles request bandwidth by limiting the packet size and adding a delay for each chunk read from the upload stream.
+
+When uploading over a 3G or E\+D\+GE connection, requests may fail with \char`\"{}request body stream exhausted\char`\"{}. Setting a maximum packet size and delay according to the recommended values ({\ttfamily k\+A\+F\+Upload\+Stream3\+G\+Suggested\+Packet\+Size} and {\ttfamily k\+A\+F\+Upload\+Stream3\+G\+Suggested\+Delay}) lowers the risk of the input stream exceeding its allocated bandwidth. Unfortunately, there is no definite way to distinguish between a 3G, E\+D\+GE, or L\+TE connection over {\ttfamily N\+S\+U\+R\+L\+Connection}. As such, it is not recommended that you throttle bandwidth based solely on network reachability. Instead, you should consider checking for the \char`\"{}request body stream exhausted\char`\"{} in a failure block, and then retrying the request with throttled bandwidth.
+
+
+\begin{DoxyParams}{Parameters}
+{\em number\+Of\+Bytes} & Maximum packet size, in number of bytes. The default packet size for an input stream is 16kb. \\
+\hline
+{\em delay} & Duration of delay each time a packet is read. By default, no delay is set. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+A\+F\+Networking/\+A\+F\+Networking/A\+F\+U\+R\+L\+Request\+Serialization.\+h\end{DoxyCompactItemize}

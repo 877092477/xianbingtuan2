@@ -1,0 +1,12 @@
+<map id="FNMineController()" name="FNMineController()">
+<area shape="rect" id="node11" href="$interface_j_m_view.html" title="JMView" alt="" coords="568,164,635,189"/>
+<area shape="rect" id="node4" href="$interface_f_n_mine_page_model.html" title="FNMinePageModel" alt="" coords="778,380,913,405"/>
+<area shape="rect" id="node6" href="$interface_j_m___m_p_m__yq.html" title="JM_MPM_yq" alt="" coords="380,411,479,436"/>
+<area shape="rect" id="node8" href="$interface_menu_model.html" title="MenuModel" alt="" coords="199,465,290,491"/>
+<area shape="rect" id="node9" href="$interface_j_m___m_p_m__wallet.html" title="JM_MPM_wallet" alt="" coords="370,511,489,536"/>
+<area shape="rect" id="node16" href="$interface_profile_model.html" title="ProfileModel" alt="" coords="554,248,649,273"/>
+<area shape="rect" id="node7" href="$interface_j_m___m_p_m__hhr.html" title="JM_MPM_hhr" alt="" coords="549,441,654,467"/>
+<area shape="rect" id="node10" href="$interface_f_n_mine_header.html" title="FNMineHeader" alt="" coords="790,197,901,223"/>
+<area shape="rect" id="node17" href="$interface_f_n_custome_navigation_bar.html" title="FNCustomeNavigationBar" alt="" coords="513,567,690,592"/>
+<area shape="rect" id="node19" href="$interface_f_n_custom_search_bar.html" title="FNCustomSearchBar" alt="" coords="170,567,319,592"/>
+</map>

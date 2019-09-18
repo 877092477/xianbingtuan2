@@ -1,0 +1,120 @@
+ \subsection*{M\+J\+Refresh}
+
+
+\begin{DoxyItemize}
+\item An easy way to use pull-\/to-\/refresh
+\end{DoxyItemize}
+
+\subsection*{Contents}
+
+
+\begin{DoxyItemize}
+\item Getting Started
+\begin{DoxyItemize}
+\item \href{#Support what kinds of controls to refresh}{\tt Features【\+Support what kinds of controls to refresh】}
+\item \href{#How to use MJRefresh}{\tt Installation【\+How to use M\+J\+Refresh】}
+\item \href{#>More than hundreds of Apps are using MJRefresh}{\tt Who\textquotesingle{}s using【\+More than hundreds of Apps are using M\+J\+Refresh】}
+\item \href{#The Class Structure Chart of MJRefresh}{\tt Classes【\+The Class Structure Chart of M\+J\+Refresh】}
+\end{DoxyItemize}
+\item Comment A\+PI
+\begin{DoxyItemize}
+\item \href{#MJRefreshComponent.h}{\tt M\+J\+Refresh\+Component.\+h}
+\item \href{#MJRefreshHeader.h}{\tt M\+J\+Refresh\+Header.\+h}
+\item \href{#MJRefreshFooter.h}{\tt M\+J\+Refresh\+Footer.\+h}
+\item \href{#MJRefreshAutoFooter.h}{\tt M\+J\+Refresh\+Auto\+Footer.\+h}
+\end{DoxyItemize}
+\item Examples
+\begin{DoxyItemize}
+\item \href{#Reference}{\tt Reference}
+\item \href{#The drop-down refresh 01-Default}{\tt The drop-\/down refresh 01-\/\+Default}
+\item \href{#The drop-down refresh 02-Animation image}{\tt The drop-\/down refresh 02-\/\+Animation image}
+\item \href{#The drop-down refresh 03-Hide the time}{\tt The drop-\/down refresh 03-\/\+Hide the time}
+\item \href{#The drop-down refresh 04-Hide status and time}{\tt The drop-\/down refresh 04-\/\+Hide status and time}
+\item \href{#The drop-down refresh 05-DIY title}{\tt The drop-\/down refresh 05-\/\+D\+IY title}
+\item \href{#The drop-down refresh 06-DIY the control of refresh}{\tt The drop-\/down refresh 06-\/\+D\+IY the control of refresh}
+\item \href{#The pull to refresh 01-Default}{\tt The pull to refresh 01-\/\+Default}
+\item \href{#The pull to refresh 02-Animation image}{\tt The pull to refresh 02-\/\+Animation image}
+\item \href{#The pull to refresh 03-Hide the title of refresh status}{\tt The pull to refresh 03-\/\+Hide the title of refresh status}
+\item \href{#The pull to refresh 04-All loaded}{\tt The pull to refresh 04-\/\+All loaded}
+\item \href{#The pull to refresh 05-DIY title}{\tt The pull to refresh 05-\/\+D\+IY title}
+\item \href{#The pull to refresh 06-Hidden After loaded}{\tt The pull to refresh 06-\/\+Hidden After loaded}
+\item \href{#上The pull to refresh 07-Automatic back of the pull01}{\tt The pull to refresh 07-\/\+Automatic back of the pull01}
+\item \href{#The pull to refresh 08-Automatic back of the pull02}{\tt The pull to refresh 08-\/\+Automatic back of the pull02}
+\item \href{#The pull to refresh 09-DIY the control of refresh(Automatic refresh)}{\tt The pull to refresh 09-\/\+D\+IY the control of refresh(\+Automatic refresh)}
+\item \href{#The pull to refresh 10-DIY the control of refresh(Automatic back)}{\tt The pull to refresh 10-\/\+D\+IY the control of refresh(\+Automatic back)}
+\item \href{#UICollectionView01-The pull and drop-down refresh}{\tt U\+I\+Collection\+View01-\/\+The pull and drop-\/down refresh}
+\item \href{#UIWebView01-The drop-down refresh}{\tt U\+I\+Web\+View01-\/\+The drop-\/down refresh}
+\end{DoxyItemize}
+\item \href{#Hope}{\tt Hope}
+\end{DoxyItemize}
+
+\subsection*{Support what kinds of controls to refresh}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily U\+I\+Scroll\+View}、{\ttfamily U\+I\+Table\+View}、{\ttfamily U\+I\+Collection\+View}、{\ttfamily U\+I\+Web\+View}
+\end{DoxyItemize}
+
+\subsection*{How to use M\+J\+Refresh}
+
+
+\begin{DoxyItemize}
+\item Installation with Cocoa\+Pods：`pod \textquotesingle{}M\+J\+Refresh'\`{}
+\item Manual import：
+\begin{DoxyItemize}
+\item Drag All files in the {\ttfamily M\+J\+Refresh} folder to project
+\item Import the main file：$<$tt$>$\+::import \char`\"{}\+M\+J\+Refresh.\+h\char`\"{}
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}
+Base                        Custom
+MJRefresh.bundle            MJRefresh.h
+MJRefreshConst.h            MJRefreshConst.m
+UIScrollView+MJExtension.h  UIScrollView+MJExtension.m
+UIScrollView+MJRefresh.h    UIScrollView+MJRefresh.m
+UIView+MJExtension.h        UIView+MJExtension.m
+\end{DoxyCode}
+
+
+\subsection*{More than hundreds of Apps are using M\+J\+Refresh}
+
+
+\begin{DoxyItemize}
+\item More information of App can focus on：\href{http://www.cnblogs.com/mjios/p/4409853.html}{\tt M了个\+J-\/博客园}
+\end{DoxyItemize}
+
+\subsection*{The Class Structure Chart of M\+J\+Refres}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily The class of red text} in the chart：\+You can use them directly
+\begin{DoxyItemize}
+\item The drop-\/down refresh control types
+\begin{DoxyItemize}
+\item Normal：{\ttfamily \mbox{\hyperlink{interface_m_j_refresh_normal_header}{M\+J\+Refresh\+Normal\+Header}}}
+\item Gif：{\ttfamily \mbox{\hyperlink{interface_m_j_refresh_gif_header}{M\+J\+Refresh\+Gif\+Header}}}
+\end{DoxyItemize}
+\item The pull to refresh control types
+\begin{DoxyItemize}
+\item Auto refresh
+\begin{DoxyItemize}
+\item Normal：{\ttfamily \mbox{\hyperlink{interface_m_j_refresh_auto_normal_footer}{M\+J\+Refresh\+Auto\+Normal\+Footer}}}
+\item Gif：{\ttfamily \mbox{\hyperlink{interface_m_j_refresh_auto_gif_footer}{M\+J\+Refresh\+Auto\+Gif\+Footer}}}
+\end{DoxyItemize}
+\item Auto Back
+\begin{DoxyItemize}
+\item Normal：{\ttfamily \mbox{\hyperlink{interface_m_j_refresh_back_normal_footer}{M\+J\+Refresh\+Back\+Normal\+Footer}}}
+\item Gif：{\ttfamily \mbox{\hyperlink{interface_m_j_refresh_back_gif_footer}{M\+J\+Refresh\+Back\+Gif\+Footer}}}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item {\ttfamily The class of non-\/red text} in the chart：\+For inheritance，to use D\+IY the control of refresh
+\item About how to D\+IY the control of refresh，\+You can refer the Class in below Chart~\newline
+ 
+\end{DoxyItemize}
+
+\subsection*{M\+J\+Refresh\+Component.\+h}
+
+\`{}\`{}\`{}objc /$\ast$$\ast$ The Base Class of refresh control $\ast$/ 

@@ -1,0 +1,8 @@
+<map id="&#45;[RACSignal setKeyPath:onObject:nilValue:]" name="&#45;[RACSignal setKeyPath:onObject:nilValue:]">
+<area shape="rect" id="node2" href="$interface_r_a_c_compound_disposable.html#a6352abe7deb93063a0285c4b719bd0d5" title="Creates and returns a new compound disposable. " alt="" coords="220,5,412,44"/>
+<area shape="rect" id="node3" href="$interface_r_a_c_signal.html#a50b7b51715316c5da372cc0cf96039f6" title="Convenience method to subscribe to the next, completed, and error events. " alt="" coords="225,68,407,107"/>
+<area shape="rect" id="node5" href="$interface_r_a_c_disposable.html#a3158dc03efcf49e7a5174acc6e3711d5" title="&#45;[RACDisposable dispose]" alt="" coords="460,160,637,185"/>
+<area shape="rect" id="node6" href="$interface_r_a_c_compound_disposable.html#adfa5cef74d293abc13c6137289e6f908" title="&#45;[RACCompoundDisposable\l addDisposable:]" alt="" coords="222,183,410,221"/>
+<area shape="rect" id="node7" href="$interface_r_a_c_compound_disposable.html#a8aabb5a290a10d14c6ca9c966701d1b3" title="&#45;[RACCompoundDisposable\l removeDisposable:]" alt="" coords="222,245,410,284"/>
+<area shape="rect" id="node4" href="$interface_r_a_c_signal.html#aeab76d632d98bbc321ec5e19575377eb" title="&#45;[RACSignal subscribe:]" alt="" coords="467,75,630,100"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="FNPartnerGoodsController()" name="FNPartnerGoodsController()">
+<area shape="rect" id="node2" href="$interface_f_n_partner_goods_view_model.html" title="FNPartnerGoodsViewModel" alt="" coords="1239,260,1426,285"/>
+<area shape="rect" id="node3" href="$interface_j_m_view_model.html" title="JMViewModel" alt="" coords="1081,125,1185,150"/>
+<area shape="rect" id="node6" href="$interface_r_a_c_disposable.html" title="RACDisposable" alt="" coords="133,92,249,117"/>
+<area shape="rect" id="node9" href="$interface_r_a_c_stream.html" title="RACStream" alt="" coords="145,173,237,198"/>
+<area shape="rect" id="node11" href="$interface_r_a_c_command.html" title="RACCommand" alt="" coords="729,260,840,285"/>
+<area shape="rect" id="node7" href="$interface_r_a_c_subject.html" title="RACSubject" alt="" coords="738,160,832,185"/>
+<area shape="rect" id="node8" href="$interface_r_a_c_signal.html" title="RACSignal" alt="" coords="319,173,406,198"/>
+<area shape="rect" id="node12" href="$interface_f_n_partner_goods_view.html" title="FNPartnerGoodsView" alt="" coords="1257,333,1408,358"/>
+<area shape="rect" id="node13" href="$interface_j_m_view.html" title="JMView" alt="" coords="1099,408,1167,433"/>
+</map>

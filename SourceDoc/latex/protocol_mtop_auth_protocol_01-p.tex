@@ -1,0 +1,89 @@
+\hypertarget{protocol_mtop_auth_protocol_01-p}{}\section{$<$Mtop\+Auth\+Protocol $>$ Protocol Reference}
+\label{protocol_mtop_auth_protocol_01-p}\index{$<$\+Mtop\+Auth\+Protocol $>$@{$<$\+Mtop\+Auth\+Protocol $>$}}
+
+
+Inheritance diagram for $<$Mtop\+Auth\+Protocol $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{protocol_mtop_auth_protocol_01-p__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for $<$Mtop\+Auth\+Protocol $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{protocol_mtop_auth_protocol_01-p__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{protocol_mtop_auth_protocol_01-p_a4f8603bfb09ac35ab57b1c0648e4a7b4}{is\+Valid\+Auth}}
+\item 
+\mbox{\Hypertarget{protocol_mtop_auth_protocol_01-p_a0c29db5c90067ac6e8e1d758b1765892}\label{protocol_mtop_auth_protocol_01-p_a0c29db5c90067ac6e8e1d758b1765892}} 
+(void) -\/ {\bfseries auth\+With\+Auth\+Option\+:completion\+Handler\+:cancelation\+Handler\+:}
+\item 
+\mbox{\Hypertarget{protocol_mtop_auth_protocol_01-p_a0a16649f119e8ea1ecc97537a79f3190}\label{protocol_mtop_auth_protocol_01-p_a0a16649f119e8ea1ecc97537a79f3190}} 
+(void) -\/ {\bfseries auth\+With\+Auth\+Option\+:extra\+Info\+:completion\+Handler\+:cancelation\+Handler\+:}
+\item 
+(N\+S\+Dictionary $\ast$) -\/ \mbox{\hyperlink{protocol_mtop_auth_protocol_01-p_a1f6078a2b62ba1553a36943648592cfa}{current\+Session}}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{protocol_mtop_auth_protocol_01-p_a9bb8d09ce1a17e670edd7d28f57c8b31}{is\+Processing\+Auth}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_mtop_auth_protocol_01-p_ad6d38714fb89dd30fdfaef1c0b7dfae8}{mark\+Invalid\+Auth}}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \mbox{\hyperlink{protocol_mtop_auth_protocol_01-p_a1e5ad2e5b6d6a7cc283efc86ef7eed81}{shared\+Instantce}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{protocol_mtop_auth_protocol_01-p_a1f6078a2b62ba1553a36943648592cfa}\label{protocol_mtop_auth_protocol_01-p_a1f6078a2b62ba1553a36943648592cfa}} 
+\index{Mtop\+Auth\+Protocol -\/p@{Mtop\+Auth\+Protocol -\/p}!current\+Session@{current\+Session}}
+\index{current\+Session@{current\+Session}!Mtop\+Auth\+Protocol -\/p@{Mtop\+Auth\+Protocol -\/p}}
+\subsubsection{\texorpdfstring{current\+Session()}{currentSession()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Dictionary $\ast$ Mtop\+Auth\+Protocol) current\+Session \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+获取当前授权会话信息 \begin{DoxyReturn}{Returns}
+会话信息 sid -\/$>$ session id (N\+S\+String$\ast$) user\+Id -\/$>$ 用户id (N\+S\+String$\ast$) ecode -\/$>$ ecode (N\+S\+String$\ast$) nick -\/$>$ 用户nick (N\+S\+String$\ast$) auth\+Token -\/$>$ 授权令牌 (N\+S\+String$\ast$) sso\+Token -\/$>$ sso令牌 (N\+S\+String$\ast$) top\+Session -\/$>$ top授权 (N\+S\+String$\ast$) cookie -\/$>$ cookie (N\+S\+String$\ast$) ...... 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_mtop_auth_protocol_01-p_a9bb8d09ce1a17e670edd7d28f57c8b31}\label{protocol_mtop_auth_protocol_01-p_a9bb8d09ce1a17e670edd7d28f57c8b31}} 
+\index{Mtop\+Auth\+Protocol -\/p@{Mtop\+Auth\+Protocol -\/p}!is\+Processing\+Auth@{is\+Processing\+Auth}}
+\index{is\+Processing\+Auth@{is\+Processing\+Auth}!Mtop\+Auth\+Protocol -\/p@{Mtop\+Auth\+Protocol -\/p}}
+\subsubsection{\texorpdfstring{is\+Processing\+Auth()}{isProcessingAuth()}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL Mtop\+Auth\+Protocol) is\+Processing\+Auth \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+返回当前auth\+Center是否已经在处理授权行为 \begin{DoxyReturn}{Returns}
+Y\+ES 已经有在处理中的授权行为 NO 没有正在处理的授权行为 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_mtop_auth_protocol_01-p_a4f8603bfb09ac35ab57b1c0648e4a7b4}\label{protocol_mtop_auth_protocol_01-p_a4f8603bfb09ac35ab57b1c0648e4a7b4}} 
+\index{Mtop\+Auth\+Protocol -\/p@{Mtop\+Auth\+Protocol -\/p}!is\+Valid\+Auth@{is\+Valid\+Auth}}
+\index{is\+Valid\+Auth@{is\+Valid\+Auth}!Mtop\+Auth\+Protocol -\/p@{Mtop\+Auth\+Protocol -\/p}}
+\subsubsection{\texorpdfstring{is\+Valid\+Auth()}{isValidAuth()}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL Mtop\+Auth\+Protocol) is\+Valid\+Auth \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+判断当前用户是否有授权会话 \begin{DoxyReturn}{Returns}
+Y\+ES 本地有会话且本地判断会话未过期，但服务端可能判定会话无效 NO 本地无会话或本地判断会话已过期 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_mtop_auth_protocol_01-p_ad6d38714fb89dd30fdfaef1c0b7dfae8}\label{protocol_mtop_auth_protocol_01-p_ad6d38714fb89dd30fdfaef1c0b7dfae8}} 
+\index{Mtop\+Auth\+Protocol -\/p@{Mtop\+Auth\+Protocol -\/p}!mark\+Invalid\+Auth@{mark\+Invalid\+Auth}}
+\index{mark\+Invalid\+Auth@{mark\+Invalid\+Auth}!Mtop\+Auth\+Protocol -\/p@{Mtop\+Auth\+Protocol -\/p}}
+\subsubsection{\texorpdfstring{mark\+Invalid\+Auth()}{markInvalidAuth()}}
+{\footnotesize\ttfamily -\/ (void Mtop\+Auth\+Protocol) mark\+Invalid\+Auth \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+标识本地auth已经失效 \mbox{\Hypertarget{protocol_mtop_auth_protocol_01-p_a1e5ad2e5b6d6a7cc283efc86ef7eed81}\label{protocol_mtop_auth_protocol_01-p_a1e5ad2e5b6d6a7cc283efc86ef7eed81}} 
+\index{Mtop\+Auth\+Protocol -\/p@{Mtop\+Auth\+Protocol -\/p}!shared\+Instantce@{shared\+Instantce}}
+\index{shared\+Instantce@{shared\+Instantce}!Mtop\+Auth\+Protocol -\/p@{Mtop\+Auth\+Protocol -\/p}}
+\subsubsection{\texorpdfstring{shared\+Instantce()}{sharedInstantce()}}
+{\footnotesize\ttfamily + (id Mtop\+Auth\+Protocol) shared\+Instantce \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [required]}}
+
+获取单例 
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Open\+Mtop\+Ext.\+framework/\+Headers/Mtop\+Auth\+Protocol.\+h\end{DoxyCompactItemize}

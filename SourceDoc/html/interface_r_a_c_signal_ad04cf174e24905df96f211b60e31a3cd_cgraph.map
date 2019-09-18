@@ -1,0 +1,7 @@
+<map id="&#45;[RACSignal groupBy:transform:]" name="&#45;[RACSignal groupBy:transform:]">
+<area shape="rect" id="node2" href="$interface_r_a_c_signal.html#a4ba374f148d6e2a0339c4f4202b4dc26" title="+[RACSignal createSignal:]" alt="" coords="201,16,385,41"/>
+<area shape="rect" id="node4" href="$interface_r_a_c_stream.html#aedc0b75ca3e6d0f81f006c7c3c6a1d76" title="&#45;[RACStream setNameWithFormat:]" alt="" coords="644,41,877,67"/>
+<area shape="rect" id="node5" href="$interface_r_a_c_signal.html#a50b7b51715316c5da372cc0cf96039f6" title="Convenience method to subscribe to the next, completed, and error events. " alt="" coords="202,120,384,159"/>
+<area shape="rect" id="node3" href="$interface_r_a_c_dynamic_signal.html#aeffa754150754dd6296d5225b5c9c7fe" title="+[RACDynamicSignal\l createSignal:]" alt="" coords="439,5,589,44"/>
+<area shape="rect" id="node6" href="$interface_r_a_c_signal.html#aeab76d632d98bbc321ec5e19575377eb" title="&#45;[RACSignal subscribe:]" alt="" coords="433,127,596,152"/>
+</map>

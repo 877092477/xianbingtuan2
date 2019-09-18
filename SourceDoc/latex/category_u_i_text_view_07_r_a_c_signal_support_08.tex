@@ -1,0 +1,80 @@
+\hypertarget{category_u_i_text_view_07_r_a_c_signal_support_08}{}\section{U\+I\+Text\+View(R\+A\+C\+Signal\+Support) Category Reference}
+\label{category_u_i_text_view_07_r_a_c_signal_support_08}\index{U\+I\+Text\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Text\+View(\+R\+A\+C\+Signal\+Support)}}
+
+
+Collaboration diagram for U\+I\+Text\+View(R\+A\+C\+Signal\+Support)\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{category_u_i_text_view_07_r_a_c_signal_support_08__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) -\/ \mbox{\hyperlink{category_u_i_text_view_07_r_a_c_signal_support_08_aad510c683b60bb5788035a21f860690d}{rac\+\_\+text\+Signal}}
+\item 
+(\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) -\/ \mbox{\hyperlink{category_u_i_text_view_07_r_a_c_signal_support_08_aad510c683b60bb5788035a21f860690d}{rac\+\_\+text\+Signal}}
+\item 
+(\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) -\/ \mbox{\hyperlink{category_u_i_text_view_07_r_a_c_signal_support_08_aad510c683b60bb5788035a21f860690d}{rac\+\_\+text\+Signal}}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_r_a_c_delegate_proxy}{R\+A\+C\+Delegate\+Proxy}} $\ast$ \mbox{\hyperlink{category_u_i_text_view_07_r_a_c_signal_support_08_a7bb09ed468da0a4a9e4691b2301fddd7}{rac\+\_\+delegate\+Proxy}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{category_u_i_text_view_07_r_a_c_signal_support_08_aad510c683b60bb5788035a21f860690d}\label{category_u_i_text_view_07_r_a_c_signal_support_08_aad510c683b60bb5788035a21f860690d}} 
+\index{U\+I\+Text\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Text\+View(\+R\+A\+C\+Signal\+Support)}!rac\+\_\+text\+Signal@{rac\+\_\+text\+Signal}}
+\index{rac\+\_\+text\+Signal@{rac\+\_\+text\+Signal}!U\+I\+Text\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Text\+View(\+R\+A\+C\+Signal\+Support)}}
+\subsubsection{\texorpdfstring{rac\+\_\+text\+Signal()}{rac\_textSignal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) rac\+\_\+text\+Signal \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Creates a signal for the text of the receiver.
+
+When this method is invoked, the {\ttfamily rac\+\_\+delegate\+Proxy} will become the receiver\textquotesingle{}s delegate. Any previous delegate will become the -\/\mbox{[}\mbox{\hyperlink{interface_r_a_c_delegate_proxy}{R\+A\+C\+Delegate\+Proxy}} rac\+\_\+proxied\+Delegate\mbox{]}, so that it receives any messages that the proxy doesn\textquotesingle{}t know how to handle. Setting the receiver\textquotesingle{}s {\ttfamily delegate} afterward is considered undefined behavior.
+
+Returns a signal which will send the current text upon subscription, then again whenever the receiver\textquotesingle{}s text is changed. The signal will complete when the receiver is deallocated. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{category_u_i_text_view_07_r_a_c_signal_support_08_aad510c683b60bb5788035a21f860690d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{category_u_i_text_view_07_r_a_c_signal_support_08_aad510c683b60bb5788035a21f860690d}\label{category_u_i_text_view_07_r_a_c_signal_support_08_aad510c683b60bb5788035a21f860690d}} 
+\index{U\+I\+Text\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Text\+View(\+R\+A\+C\+Signal\+Support)}!rac\+\_\+text\+Signal@{rac\+\_\+text\+Signal}}
+\index{rac\+\_\+text\+Signal@{rac\+\_\+text\+Signal}!U\+I\+Text\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Text\+View(\+R\+A\+C\+Signal\+Support)}}
+\subsubsection{\texorpdfstring{rac\+\_\+text\+Signal()}{rac\_textSignal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) rac\+\_\+text\+Signal \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Creates a signal for the text of the receiver.
+
+When this method is invoked, the {\ttfamily rac\+\_\+delegate\+Proxy} will become the receiver\textquotesingle{}s delegate. Any previous delegate will become the -\/\mbox{[}\mbox{\hyperlink{interface_r_a_c_delegate_proxy}{R\+A\+C\+Delegate\+Proxy}} rac\+\_\+proxied\+Delegate\mbox{]}, so that it receives any messages that the proxy doesn\textquotesingle{}t know how to handle. Setting the receiver\textquotesingle{}s {\ttfamily delegate} afterward is considered undefined behavior.
+
+Returns a signal which will send the current text upon subscription, then again whenever the receiver\textquotesingle{}s text is changed. The signal will complete when the receiver is deallocated. \mbox{\Hypertarget{category_u_i_text_view_07_r_a_c_signal_support_08_aad510c683b60bb5788035a21f860690d}\label{category_u_i_text_view_07_r_a_c_signal_support_08_aad510c683b60bb5788035a21f860690d}} 
+\index{U\+I\+Text\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Text\+View(\+R\+A\+C\+Signal\+Support)}!rac\+\_\+text\+Signal@{rac\+\_\+text\+Signal}}
+\index{rac\+\_\+text\+Signal@{rac\+\_\+text\+Signal}!U\+I\+Text\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Text\+View(\+R\+A\+C\+Signal\+Support)}}
+\subsubsection{\texorpdfstring{rac\+\_\+text\+Signal()}{rac\_textSignal()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) rac\+\_\+text\+Signal \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Creates a signal for the text of the receiver.
+
+When this method is invoked, the {\ttfamily rac\+\_\+delegate\+Proxy} will become the receiver\textquotesingle{}s delegate. Any previous delegate will become the -\/\mbox{[}\mbox{\hyperlink{interface_r_a_c_delegate_proxy}{R\+A\+C\+Delegate\+Proxy}} rac\+\_\+proxied\+Delegate\mbox{]}, so that it receives any messages that the proxy doesn\textquotesingle{}t know how to handle. Setting the receiver\textquotesingle{}s {\ttfamily delegate} afterward is considered undefined behavior.
+
+Returns a signal which will send the current text upon subscription, then again whenever the receiver\textquotesingle{}s text is changed. The signal will complete when the receiver is deallocated. 
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{category_u_i_text_view_07_r_a_c_signal_support_08_a7bb09ed468da0a4a9e4691b2301fddd7}\label{category_u_i_text_view_07_r_a_c_signal_support_08_a7bb09ed468da0a4a9e4691b2301fddd7}} 
+\index{U\+I\+Text\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Text\+View(\+R\+A\+C\+Signal\+Support)}!rac\+\_\+delegate\+Proxy@{rac\+\_\+delegate\+Proxy}}
+\index{rac\+\_\+delegate\+Proxy@{rac\+\_\+delegate\+Proxy}!U\+I\+Text\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Text\+View(\+R\+A\+C\+Signal\+Support)}}
+\subsubsection{\texorpdfstring{rac\+\_\+delegate\+Proxy}{rac\_delegateProxy}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_delegate_proxy}{R\+A\+C\+Delegate\+Proxy}} $\ast$) rac\+\_\+delegate\+Proxy\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+A delegate proxy which will be set as the receiver\textquotesingle{}s delegate when any of the methods in this category are used. 
+
+The documentation for this category was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+Reactive\+Cocoa/U\+I\+Text\+View+\+R\+A\+C\+Signal\+Support.\+h\item 
+Pods/\+Reactive\+Cocoa/\+Reactive\+Cocoa/U\+I\+Text\+View+\+R\+A\+C\+Signal\+Support.\+m\end{DoxyCompactItemize}

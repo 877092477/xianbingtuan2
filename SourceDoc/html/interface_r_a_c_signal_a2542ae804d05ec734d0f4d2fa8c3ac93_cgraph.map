@@ -1,0 +1,12 @@
+<map id="&#45;[RACSignal throttle:]" name="&#45;[RACSignal throttle:]">
+<area shape="rect" id="node2" href="$interface_r_a_c_signal.html#a0310fbee83b4ca1b1daca25daf24f41b" title="&#45;[RACSignal throttle\l:valuesPassingTest:]" alt="" coords="200,123,343,161"/>
+<area shape="rect" id="node5" href="$interface_r_a_c_stream.html#aedc0b75ca3e6d0f81f006c7c3c6a1d76" title="&#45;[RACStream setNameWithFormat:]" alt="" coords="861,101,1095,127"/>
+<area shape="rect" id="node3" href="$interface_r_a_c_signal.html#a4ba374f148d6e2a0339c4f4202b4dc26" title="+[RACSignal createSignal:]" alt="" coords="395,215,578,240"/>
+<area shape="rect" id="node6" href="$interface_r_a_c_compound_disposable.html#a6352abe7deb93063a0285c4b719bd0d5" title="Creates and returns a new compound disposable. " alt="" coords="391,152,583,191"/>
+<area shape="rect" id="node7" href="$interface_r_a_c_scheduler.html#a5b62bfd8b2957365a9958b61a9cfaf83" title="Invokes +schedulerWithPriority: with RACSchedulerPriorityDefault. " alt="" coords="394,264,580,289"/>
+<area shape="rect" id="node10" href="$interface_r_a_c_signal.html#a50b7b51715316c5da372cc0cf96039f6" title="Convenience method to subscribe to the next, completed, and error events. " alt="" coords="395,37,578,76"/>
+<area shape="rect" id="node4" href="$interface_r_a_c_dynamic_signal.html#aeffa754150754dd6296d5225b5c9c7fe" title="+[RACDynamicSignal\l createSignal:]" alt="" coords="647,173,797,212"/>
+<area shape="rect" id="node8" href="$interface_r_a_c_scheduler.html#aa10e4f49fd6084c122ebd21e16e3de29" title="Invokes +schedulerWithPriority:name: with a default name. " alt="" coords="631,257,813,296"/>
+<area shape="rect" id="node9" href="$interface_r_a_c_scheduler.html#a34b1d3a261fb95c3a52347f7204422d7" title="+[RACScheduler scheduler\lWithPriority:name:]" alt="" coords="887,257,1070,296"/>
+<area shape="rect" id="node11" href="$interface_r_a_c_signal.html#aeab76d632d98bbc321ec5e19575377eb" title="&#45;[RACSignal subscribe:]" alt="" coords="641,44,804,69"/>
+</map>

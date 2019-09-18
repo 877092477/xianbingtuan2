@@ -1,0 +1,35 @@
+\hypertarget{category_m_k_annotation_view_07_r_a_c_signal_support_08}{}\section{M\+K\+Annotation\+View(R\+A\+C\+Signal\+Support) Category Reference}
+\label{category_m_k_annotation_view_07_r_a_c_signal_support_08}\index{M\+K\+Annotation\+View(\+R\+A\+C\+Signal\+Support)@{M\+K\+Annotation\+View(\+R\+A\+C\+Signal\+Support)}}
+
+
+Collaboration diagram for M\+K\+Annotation\+View(R\+A\+C\+Signal\+Support)\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{category_m_k_annotation_view_07_r_a_c_signal_support_08__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$ \mbox{\hyperlink{category_m_k_annotation_view_07_r_a_c_signal_support_08_ad400cdf226939a353dc457be75b7f563}{rac\+\_\+prepare\+For\+Reuse\+Signal}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{category_m_k_annotation_view_07_r_a_c_signal_support_08_ad400cdf226939a353dc457be75b7f563}\label{category_m_k_annotation_view_07_r_a_c_signal_support_08_ad400cdf226939a353dc457be75b7f563}} 
+\index{M\+K\+Annotation\+View(\+R\+A\+C\+Signal\+Support)@{M\+K\+Annotation\+View(\+R\+A\+C\+Signal\+Support)}!rac\+\_\+prepare\+For\+Reuse\+Signal@{rac\+\_\+prepare\+For\+Reuse\+Signal}}
+\index{rac\+\_\+prepare\+For\+Reuse\+Signal@{rac\+\_\+prepare\+For\+Reuse\+Signal}!M\+K\+Annotation\+View(\+R\+A\+C\+Signal\+Support)@{M\+K\+Annotation\+View(\+R\+A\+C\+Signal\+Support)}}
+\subsubsection{\texorpdfstring{rac\+\_\+prepare\+For\+Reuse\+Signal}{rac\_prepareForReuseSignal}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) rac\+\_\+prepare\+For\+Reuse\+Signal\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+A signal which will send a \mbox{\hyperlink{interface_r_a_c_unit}{R\+A\+C\+Unit}} whenever -\/prepare\+For\+Reuse is invoked upon the receiver.
+
+Examples
+
+\mbox{[}\mbox{[}\mbox{[}self.\+cancel\+Button rac\+\_\+signal\+For\+Control\+Events\+:U\+I\+Control\+Event\+Touch\+Up\+Inside\mbox{]} take\+Until\+:self.\+rac\+\_\+prepare\+For\+Reuse\+Signal\mbox{]} subscribe\+Next\+:$^\wedge$(U\+I\+Button $\ast$x) \{ // do other things \}\mbox{]}; 
+
+The documentation for this category was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+Reactive\+Cocoa/M\+K\+Annotation\+View+\+R\+A\+C\+Signal\+Support.\+h\item 
+Pods/\+Reactive\+Cocoa/\+Reactive\+Cocoa/M\+K\+Annotation\+View+\+R\+A\+C\+Signal\+Support.\+m\end{DoxyCompactItemize}

@@ -1,0 +1,11 @@
+<map id="UMShareObject" name="UMShareObject">
+<area shape="rect" id="node3" href="$interface_u_m_share_email_object.html" title="分享消息中的邮件分享对象 " alt="" coords="308,5,457,31"/>
+<area shape="rect" id="node4" href="$interface_u_m_share_emotion_object.html" title="UMShareEmotionObject" alt="" coords="300,55,465,80"/>
+<area shape="rect" id="node5" href="$interface_u_m_share_extend_object.html" title="多媒体消息中包含的App扩展数据对象 " alt="" coords="304,104,461,129"/>
+<area shape="rect" id="node6" href="$interface_u_m_share_file_object.html" title="多媒体消息中包含的文件数据对象 " alt="" coords="314,153,451,179"/>
+<area shape="rect" id="node7" href="$interface_u_m_share_image_object.html" title="UMShareImageObject" alt="" coords="306,203,459,228"/>
+<area shape="rect" id="node8" href="$interface_u_m_share_music_object.html" title="UMShareMusicObject" alt="" coords="307,252,458,277"/>
+<area shape="rect" id="node9" href="$interface_u_m_share_sms_object.html" title="分享消息中的短信分享对象 " alt="" coords="311,301,454,327"/>
+<area shape="rect" id="node10" href="$interface_u_m_share_video_object.html" title="UMShareVideoObject" alt="" coords="307,351,457,376"/>
+<area shape="rect" id="node11" href="$interface_u_m_share_webpage_object.html" title="UMShareWebpageObject" alt="" coords="296,400,469,425"/>
+</map>

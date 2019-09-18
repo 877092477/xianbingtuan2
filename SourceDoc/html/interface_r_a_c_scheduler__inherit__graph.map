@@ -1,0 +1,7 @@
+<map id="RACScheduler" name="RACScheduler">
+<area shape="rect" id="node3" href="$interface_r_a_c_immediate_scheduler.html" title="RACImmediateScheduler" alt="" coords="5,152,177,177"/>
+<area shape="rect" id="node4" href="$interface_r_a_c_queue_scheduler.html" title="RACQueueScheduler" alt="" coords="200,152,350,177"/>
+<area shape="rect" id="node6" href="$interface_r_a_c_subscription_scheduler.html" title="RACSubscriptionScheduler" alt="" coords="374,152,557,177"/>
+<area shape="rect" id="node7" href="$interface_r_a_c_test_scheduler.html" title="RACTestScheduler" alt="" coords="582,152,716,177"/>
+<area shape="rect" id="node5" href="$interface_r_a_c_target_queue_scheduler.html" title="RACTargetQueueScheduler" alt="" coords="182,225,369,251"/>
+</map>

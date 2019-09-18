@@ -1,0 +1,143 @@
+\hypertarget{interface_r_a_c_multicast_connection}{}\section{R\+A\+C\+Multicast\+Connection Class Reference}
+\label{interface_r_a_c_multicast_connection}\index{R\+A\+C\+Multicast\+Connection@{R\+A\+C\+Multicast\+Connection}}
+
+
+{\ttfamily \#import $<$R\+A\+C\+Multicast\+Connection.\+h$>$}
+
+
+
+Inheritance diagram for R\+A\+C\+Multicast\+Connection\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{interface_r_a_c_multicast_connection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for R\+A\+C\+Multicast\+Connection\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{interface_r_a_c_multicast_connection__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\mbox{\hyperlink{interface_r_a_c_disposable}{R\+A\+C\+Disposable}} $\ast$) -\/ \mbox{\hyperlink{interface_r_a_c_multicast_connection_a62299415a12cbd53ba5fded7e89584ef}{connect}}
+\item 
+(\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) -\/ \mbox{\hyperlink{interface_r_a_c_multicast_connection_a9a2c385b945f926a9e89a5170bd41dc0}{autoconnect}}
+\item 
+(\mbox{\hyperlink{interface_r_a_c_disposable}{R\+A\+C\+Disposable}} $\ast$) -\/ \mbox{\hyperlink{interface_r_a_c_multicast_connection_a62299415a12cbd53ba5fded7e89584ef}{connect}}
+\item 
+(\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) -\/ \mbox{\hyperlink{interface_r_a_c_multicast_connection_a9a2c385b945f926a9e89a5170bd41dc0}{autoconnect}}
+\item 
+(\mbox{\hyperlink{interface_r_a_c_disposable}{R\+A\+C\+Disposable}} $\ast$) -\/ \mbox{\hyperlink{interface_r_a_c_multicast_connection_a62299415a12cbd53ba5fded7e89584ef}{connect}}
+\item 
+(\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) -\/ \mbox{\hyperlink{interface_r_a_c_multicast_connection_a9a2c385b945f926a9e89a5170bd41dc0}{autoconnect}}
+\item 
+\mbox{\Hypertarget{interface_r_a_c_multicast_connection_aa107d5d404a36f130afea68cf2a3bf2e}\label{interface_r_a_c_multicast_connection_aa107d5d404a36f130afea68cf2a3bf2e}} 
+(id) -\/ {\bfseries init\+With\+Source\+Signal\+:subject\+:}{\ttfamily  \mbox{[}implementation\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_r_a_c_multicast_connection_aa107d5d404a36f130afea68cf2a3bf2e}\label{interface_r_a_c_multicast_connection_aa107d5d404a36f130afea68cf2a3bf2e}} 
+(id) -\/ {\bfseries init\+With\+Source\+Signal\+:subject\+:}{\ttfamily  \mbox{[}implementation\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_r_a_c_multicast_connection_adbdc84840be9221db67c049463aff632}\label{interface_r_a_c_multicast_connection_adbdc84840be9221db67c049463aff632}} 
+\mbox{\hyperlink{interface_r_a_c_subject}{R\+A\+C\+Subject}} $\ast$ {\bfseries \+\_\+signal}
+\item 
+\mbox{\Hypertarget{interface_r_a_c_multicast_connection_ae48a878246d9424c4ef009aa75d04be1}\label{interface_r_a_c_multicast_connection_ae48a878246d9424c4ef009aa75d04be1}} 
+int32\+\_\+t volatile {\bfseries \+\_\+has\+Connected}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_r_a_c_multicast_connection_a5e9211efab197ed35e1b79431d053c7e}\label{interface_r_a_c_multicast_connection_a5e9211efab197ed35e1b79431d053c7e}} 
+\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$ \mbox{\hyperlink{interface_r_a_c_multicast_connection_a5e9211efab197ed35e1b79431d053c7e}{signal}}
+\begin{DoxyCompactList}\small\item\em The multicasted signal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_r_a_c_multicast_connection_a57a939af480a61e49746ae8c0f2cdf5d}\label{interface_r_a_c_multicast_connection_a57a939af480a61e49746ae8c0f2cdf5d}} 
+\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$ {\bfseries source\+Signal}{\ttfamily  \mbox{[}implementation\mbox{]}}
+\item 
+\mbox{\Hypertarget{interface_r_a_c_multicast_connection_a9b72b61ecfcd5348faf7b9b45db22be3}\label{interface_r_a_c_multicast_connection_a9b72b61ecfcd5348faf7b9b45db22be3}} 
+\mbox{\hyperlink{interface_r_a_c_serial_disposable}{R\+A\+C\+Serial\+Disposable}} $\ast$ {\bfseries serial\+Disposable}{\ttfamily  \mbox{[}implementation\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A multicast connection encapsulates the idea of sharing one subscription to a signal to many subscribers. This is most often needed if the subscription to the underlying signal involves side-\/effects or shouldn\textquotesingle{}t be called more than once.
+
+The multicasted signal is only subscribed to when -\/\mbox{[}\mbox{\hyperlink{interface_r_a_c_multicast_connection}{R\+A\+C\+Multicast\+Connection}} connect\mbox{]} is called. Until that happens, no values will be sent on {\ttfamily signal}. See -\/\mbox{[}\mbox{\hyperlink{interface_r_a_c_multicast_connection}{R\+A\+C\+Multicast\+Connection}} autoconnect\mbox{]} for how -\/\mbox{[}\mbox{\hyperlink{interface_r_a_c_multicast_connection}{R\+A\+C\+Multicast\+Connection}} connect\mbox{]} can be called automatically.
+
+Note that you shouldn\textquotesingle{}t create \mbox{\hyperlink{interface_r_a_c_multicast_connection}{R\+A\+C\+Multicast\+Connection}} manually. Instead use -\/\mbox{[}\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} publish\mbox{]} or -\/\mbox{[}\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} multicast\+:\mbox{]}. 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_r_a_c_multicast_connection_a9a2c385b945f926a9e89a5170bd41dc0}\label{interface_r_a_c_multicast_connection_a9a2c385b945f926a9e89a5170bd41dc0}} 
+\index{R\+A\+C\+Multicast\+Connection@{R\+A\+C\+Multicast\+Connection}!autoconnect@{autoconnect}}
+\index{autoconnect@{autoconnect}!R\+A\+C\+Multicast\+Connection@{R\+A\+C\+Multicast\+Connection}}
+\subsubsection{\texorpdfstring{autoconnect()}{autoconnect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) autoconnect \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Connects to the underlying signal when the returned signal is first subscribed to, and disposes of the subscription to the multicasted signal when the returned signal has no subscribers.
+
+If new subscribers show up after being disposed, they\textquotesingle{}ll subscribe and then be immediately disposed of. The returned signal will never re-\/connect to the multicasted signal.
+
+Returns the autoconnecting signal. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_r_a_c_multicast_connection_a9a2c385b945f926a9e89a5170bd41dc0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{interface_r_a_c_multicast_connection_a9a2c385b945f926a9e89a5170bd41dc0}\label{interface_r_a_c_multicast_connection_a9a2c385b945f926a9e89a5170bd41dc0}} 
+\index{R\+A\+C\+Multicast\+Connection@{R\+A\+C\+Multicast\+Connection}!autoconnect@{autoconnect}}
+\index{autoconnect@{autoconnect}!R\+A\+C\+Multicast\+Connection@{R\+A\+C\+Multicast\+Connection}}
+\subsubsection{\texorpdfstring{autoconnect()}{autoconnect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) autoconnect \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Connects to the underlying signal when the returned signal is first subscribed to, and disposes of the subscription to the multicasted signal when the returned signal has no subscribers.
+
+If new subscribers show up after being disposed, they\textquotesingle{}ll subscribe and then be immediately disposed of. The returned signal will never re-\/connect to the multicasted signal.
+
+Returns the autoconnecting signal. \mbox{\Hypertarget{interface_r_a_c_multicast_connection_a9a2c385b945f926a9e89a5170bd41dc0}\label{interface_r_a_c_multicast_connection_a9a2c385b945f926a9e89a5170bd41dc0}} 
+\index{R\+A\+C\+Multicast\+Connection@{R\+A\+C\+Multicast\+Connection}!autoconnect@{autoconnect}}
+\index{autoconnect@{autoconnect}!R\+A\+C\+Multicast\+Connection@{R\+A\+C\+Multicast\+Connection}}
+\subsubsection{\texorpdfstring{autoconnect()}{autoconnect()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) autoconnect \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Connects to the underlying signal when the returned signal is first subscribed to, and disposes of the subscription to the multicasted signal when the returned signal has no subscribers.
+
+If new subscribers show up after being disposed, they\textquotesingle{}ll subscribe and then be immediately disposed of. The returned signal will never re-\/connect to the multicasted signal.
+
+Returns the autoconnecting signal. \mbox{\Hypertarget{interface_r_a_c_multicast_connection_a62299415a12cbd53ba5fded7e89584ef}\label{interface_r_a_c_multicast_connection_a62299415a12cbd53ba5fded7e89584ef}} 
+\index{R\+A\+C\+Multicast\+Connection@{R\+A\+C\+Multicast\+Connection}!connect@{connect}}
+\index{connect@{connect}!R\+A\+C\+Multicast\+Connection@{R\+A\+C\+Multicast\+Connection}}
+\subsubsection{\texorpdfstring{connect()}{connect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_disposable}{R\+A\+C\+Disposable}} $\ast$) connect \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Connect to the underlying signal by subscribing to it. Calling this multiple times does nothing but return the existing connection\textquotesingle{}s disposable.
+
+Returns the disposable for the subscription to the multicasted signal. \mbox{\Hypertarget{interface_r_a_c_multicast_connection_a62299415a12cbd53ba5fded7e89584ef}\label{interface_r_a_c_multicast_connection_a62299415a12cbd53ba5fded7e89584ef}} 
+\index{R\+A\+C\+Multicast\+Connection@{R\+A\+C\+Multicast\+Connection}!connect@{connect}}
+\index{connect@{connect}!R\+A\+C\+Multicast\+Connection@{R\+A\+C\+Multicast\+Connection}}
+\subsubsection{\texorpdfstring{connect()}{connect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_disposable}{R\+A\+C\+Disposable}} $\ast$) connect \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Connect to the underlying signal by subscribing to it. Calling this multiple times does nothing but return the existing connection\textquotesingle{}s disposable.
+
+Returns the disposable for the subscription to the multicasted signal. \mbox{\Hypertarget{interface_r_a_c_multicast_connection_a62299415a12cbd53ba5fded7e89584ef}\label{interface_r_a_c_multicast_connection_a62299415a12cbd53ba5fded7e89584ef}} 
+\index{R\+A\+C\+Multicast\+Connection@{R\+A\+C\+Multicast\+Connection}!connect@{connect}}
+\index{connect@{connect}!R\+A\+C\+Multicast\+Connection@{R\+A\+C\+Multicast\+Connection}}
+\subsubsection{\texorpdfstring{connect()}{connect()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_disposable}{R\+A\+C\+Disposable}} $\ast$) connect \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Connect to the underlying signal by subscribing to it. Calling this multiple times does nothing but return the existing connection\textquotesingle{}s disposable.
+
+Returns the disposable for the subscription to the multicasted signal. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+Reactive\+Cocoa/R\+A\+C\+Multicast\+Connection.\+h\item 
+Pods/\+Reactive\+Cocoa/\+Reactive\+Cocoa/R\+A\+C\+Multicast\+Connection.\+m\end{DoxyCompactItemize}

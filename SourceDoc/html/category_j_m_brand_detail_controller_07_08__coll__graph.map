@@ -1,0 +1,6 @@
+<map id="JMBrandDetailController()" name="JMBrandDetailController()">
+<area shape="rect" id="node4" href="$interface_j_m_brand_detail_header_view.html" title="JMBrandDetailHeaderView" alt="" coords="665,104,847,129"/>
+<area shape="rect" id="node6" href="$interface_j_m_brand_detail_model.html" title="JMBrandDetailModel" alt="" coords="432,140,577,165"/>
+<area shape="rect" id="node8" href="$interface_j_m_brand_detail_time_model.html" title="JMBrandDetailTimeModel" alt="" coords="133,140,307,165"/>
+<area shape="rect" id="node9" href="$interface_j_m_brand_detail_info_model.html" title="JMBrandDetailInfoModel" alt="" coords="137,189,304,215"/>
+</map>

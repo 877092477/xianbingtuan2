@@ -1,0 +1,49 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DEE18CE8E1854F163C8755D82FFAC61DFF048A2D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "ca1b7843-81ef-8048-8d38-11d984e5fca1++963" : {
+
+    },
+    "44F16F877E5D6B11238BA2DB04DDC7BBBE39500F" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2FFAC2452601190542E0B78B1C5A46B9862F5317" : 9223372036854775807,
+    "DEE18CE8E1854F163C8755D82FFAC61DFF048A2D" : 9223372036854775807,
+    "ca1b7843-81ef-8048-8d38-11d984e5fca1++963" : 0,
+    "44F16F877E5D6B11238BA2DB04DDC7BBBE39500F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8705738E-01FB-4BCD-8AED-2DAA9CA53FA0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2FFAC2452601190542E0B78B1C5A46B9862F5317" : "code\/",
+    "DEE18CE8E1854F163C8755D82FFAC61DFF048A2D" : "%E6%96%B0%E7%89%88%E5%97%A8%E5%A6%82%E6%84%8F\/",
+    "ca1b7843-81ef-8048-8d38-11d984e5fca1++963" : "",
+    "44F16F877E5D6B11238BA2DB04DDC7BBBE39500F" : "THB%202\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "THB",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "THB.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.0.100:3000\/Fnuo_Technology\/BeautyTrade.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2FFAC2452601190542E0B78B1C5A46B9862F5317"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.0.100:8080\/svn\/app",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "44F16F877E5D6B11238BA2DB04DDC7BBBE39500F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.0.100:3000\/Fnuo_App_iOS\/NewHairuyi_iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DEE18CE8E1854F163C8755D82FFAC61DFF048A2D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.0.100:8080\/svn\/app",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ca1b7843-81ef-8048-8d38-11d984e5fca1++963"
+    }
+  ]
+}

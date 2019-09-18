@@ -1,0 +1,196 @@
+\hypertarget{interface_math}{}\section{Math Class Reference}
+\label{interface_math}\index{Math@{Math}}
+
+
+Inheritance diagram for Math\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{interface_math__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Math\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{interface_math__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(C\+G\+Float) -\/ \mbox{\hyperlink{interface_math_a1f506725e2e40cde48a7438935ea22e8}{x\+Value\+When\+Y\+Equal\+:}}
+\item 
+(C\+G\+Float) -\/ \mbox{\hyperlink{interface_math_a30abd3a6eca23c2db7910c7efc91b4b3}{y\+Value\+When\+X\+Equal\+:}}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(C\+G\+Float) + \mbox{\hyperlink{interface_math_a678c4164443172c43a9d0a605e32b3c6}{degree\+From\+Radian\+:}}
+\item 
+(C\+G\+Float) + \mbox{\hyperlink{interface_math_adf1aa152458ba4692009473c03eb70b0}{radian\+From\+Degree\+:}}
+\item 
+(C\+G\+Float) + \mbox{\hyperlink{interface_math_a04cef0783d331a3cbe848d7e56b5b38e}{radian\+Value\+From\+Tan\+Side\+A\+:side\+B\+:}}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_math_a94d76076860ab2c7810202761246f557}{math\+Once\+Linear\+Equation\+With\+Point\+A\+:\+Point\+B\+:}}
+\item 
+(C\+G\+Size) + \mbox{\hyperlink{interface_math_ab968ff10f3cf143ebbd8f6c5cf9c196a}{reset\+From\+Size\+:with\+Fixed\+Width\+:}}
+\item 
+(C\+G\+Size) + \mbox{\hyperlink{interface_math_a12894523c500bdb28f33b5b20a8f3666}{reset\+From\+Size\+:with\+Fixed\+Height\+:}}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_math_a9ed455c2a6f5596c795579d7e1fd205e}\label{interface_math_a9ed455c2a6f5596c795579d7e1fd205e}} 
+C\+G\+Float {\bfseries k}
+\item 
+\mbox{\Hypertarget{interface_math_aef416ce65ff5e9ee6d2fc319720781fa}\label{interface_math_aef416ce65ff5e9ee6d2fc319720781fa}} 
+C\+G\+Float {\bfseries b}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_math_a678c4164443172c43a9d0a605e32b3c6}\label{interface_math_a678c4164443172c43a9d0a605e32b3c6}} 
+\index{Math@{Math}!degree\+From\+Radian\+:@{degree\+From\+Radian\+:}}
+\index{degree\+From\+Radian\+:@{degree\+From\+Radian\+:}!Math@{Math}}
+\subsubsection{\texorpdfstring{degree\+From\+Radian\+:()}{degreeFromRadian:()}}
+{\footnotesize\ttfamily + (C\+G\+Float) degree\+From\+Radian\+: \begin{DoxyParamCaption}\item[{(C\+G\+Float)}]{radian }\end{DoxyParamCaption}}
+
+Convert radian to degree.
+
+
+\begin{DoxyParams}{Parameters}
+{\em radian} & Radian.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Degree. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_math_a94d76076860ab2c7810202761246f557}\label{interface_math_a94d76076860ab2c7810202761246f557}} 
+\index{Math@{Math}!math\+Once\+Linear\+Equation\+With\+Point\+A\+:\+Point\+B\+:@{math\+Once\+Linear\+Equation\+With\+Point\+A\+:\+Point\+B\+:}}
+\index{math\+Once\+Linear\+Equation\+With\+Point\+A\+:\+Point\+B\+:@{math\+Once\+Linear\+Equation\+With\+Point\+A\+:\+Point\+B\+:}!Math@{Math}}
+\subsubsection{\texorpdfstring{math\+Once\+Linear\+Equation\+With\+Point\+A\+:\+Point\+B\+:()}{mathOnceLinearEquationWithPointA:PointB:()}}
+{\footnotesize\ttfamily + (instancetype) math\+Once\+Linear\+Equation\+With\+Point\+A\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{struct_m_a_t_h_point}{M\+A\+T\+H\+Point}})}]{pointA }\item[{PointB:(\mbox{\hyperlink{struct_m_a_t_h_point}{M\+A\+T\+H\+Point}})}]{pointB }\end{DoxyParamCaption}}
+
+Calculate constant \& slope by two math point for once linear equation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pointA} & Point A. \\
+\hline
+{\em pointB} & Point B.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_math}{Math}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_math_adf1aa152458ba4692009473c03eb70b0}\label{interface_math_adf1aa152458ba4692009473c03eb70b0}} 
+\index{Math@{Math}!radian\+From\+Degree\+:@{radian\+From\+Degree\+:}}
+\index{radian\+From\+Degree\+:@{radian\+From\+Degree\+:}!Math@{Math}}
+\subsubsection{\texorpdfstring{radian\+From\+Degree\+:()}{radianFromDegree:()}}
+{\footnotesize\ttfamily + (C\+G\+Float) radian\+From\+Degree\+: \begin{DoxyParamCaption}\item[{(C\+G\+Float)}]{degree }\end{DoxyParamCaption}}
+
+Convert degree to radian.
+
+
+\begin{DoxyParams}{Parameters}
+{\em degree} & Degree.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+radian. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_math_a04cef0783d331a3cbe848d7e56b5b38e}\label{interface_math_a04cef0783d331a3cbe848d7e56b5b38e}} 
+\index{Math@{Math}!radian\+Value\+From\+Tan\+Side\+A\+:side\+B\+:@{radian\+Value\+From\+Tan\+Side\+A\+:side\+B\+:}}
+\index{radian\+Value\+From\+Tan\+Side\+A\+:side\+B\+:@{radian\+Value\+From\+Tan\+Side\+A\+:side\+B\+:}!Math@{Math}}
+\subsubsection{\texorpdfstring{radian\+Value\+From\+Tan\+Side\+A\+:side\+B\+:()}{radianValueFromTanSideA:sideB:()}}
+{\footnotesize\ttfamily + (C\+G\+Float) radian\+Value\+From\+Tan\+Side\+A\+: \begin{DoxyParamCaption}\item[{(C\+G\+Float)}]{sideA }\item[{sideB:(C\+G\+Float)}]{sideB }\end{DoxyParamCaption}}
+
+Radian value from math \textquotesingle{}tan\textquotesingle{} function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sideA} & Side A \\
+\hline
+{\em sideB} & Side B\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Radian value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_math_a12894523c500bdb28f33b5b20a8f3666}\label{interface_math_a12894523c500bdb28f33b5b20a8f3666}} 
+\index{Math@{Math}!reset\+From\+Size\+:with\+Fixed\+Height\+:@{reset\+From\+Size\+:with\+Fixed\+Height\+:}}
+\index{reset\+From\+Size\+:with\+Fixed\+Height\+:@{reset\+From\+Size\+:with\+Fixed\+Height\+:}!Math@{Math}}
+\subsubsection{\texorpdfstring{reset\+From\+Size\+:with\+Fixed\+Height\+:()}{resetFromSize:withFixedHeight:()}}
+{\footnotesize\ttfamily + (C\+G\+Size) reset\+From\+Size\+: \begin{DoxyParamCaption}\item[{(C\+G\+Size)}]{size }\item[{withFixedHeight:(C\+G\+Float)}]{height }\end{DoxyParamCaption}}
+
+Get the new size with the fixed height.
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & Old size. \\
+\hline
+{\em height} & The fixed width.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New size. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_math_ab968ff10f3cf143ebbd8f6c5cf9c196a}\label{interface_math_ab968ff10f3cf143ebbd8f6c5cf9c196a}} 
+\index{Math@{Math}!reset\+From\+Size\+:with\+Fixed\+Width\+:@{reset\+From\+Size\+:with\+Fixed\+Width\+:}}
+\index{reset\+From\+Size\+:with\+Fixed\+Width\+:@{reset\+From\+Size\+:with\+Fixed\+Width\+:}!Math@{Math}}
+\subsubsection{\texorpdfstring{reset\+From\+Size\+:with\+Fixed\+Width\+:()}{resetFromSize:withFixedWidth:()}}
+{\footnotesize\ttfamily + (C\+G\+Size) reset\+From\+Size\+: \begin{DoxyParamCaption}\item[{(C\+G\+Size)}]{size }\item[{withFixedWidth:(C\+G\+Float)}]{width }\end{DoxyParamCaption}}
+
+Get the new size with the fixed width.
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & Old size. \\
+\hline
+{\em width} & The fixed width.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New size. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_math_a1f506725e2e40cde48a7438935ea22e8}\label{interface_math_a1f506725e2e40cde48a7438935ea22e8}} 
+\index{Math@{Math}!x\+Value\+When\+Y\+Equal\+:@{x\+Value\+When\+Y\+Equal\+:}}
+\index{x\+Value\+When\+Y\+Equal\+:@{x\+Value\+When\+Y\+Equal\+:}!Math@{Math}}
+\subsubsection{\texorpdfstring{x\+Value\+When\+Y\+Equal\+:()}{xValueWhenYEqual:()}}
+{\footnotesize\ttfamily -\/ (C\+G\+Float) x\+Value\+When\+Y\+Equal\+: \begin{DoxyParamCaption}\item[{(C\+G\+Float)}]{y\+Value }\end{DoxyParamCaption}}
+
+Get X value when Y equal some number.
+
+
+\begin{DoxyParams}{Parameters}
+{\em y\+Value} & Some number.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+X number. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_math_a30abd3a6eca23c2db7910c7efc91b4b3}\label{interface_math_a30abd3a6eca23c2db7910c7efc91b4b3}} 
+\index{Math@{Math}!y\+Value\+When\+X\+Equal\+:@{y\+Value\+When\+X\+Equal\+:}}
+\index{y\+Value\+When\+X\+Equal\+:@{y\+Value\+When\+X\+Equal\+:}!Math@{Math}}
+\subsubsection{\texorpdfstring{y\+Value\+When\+X\+Equal\+:()}{yValueWhenXEqual:()}}
+{\footnotesize\ttfamily -\/ (C\+G\+Float) y\+Value\+When\+X\+Equal\+: \begin{DoxyParamCaption}\item[{(C\+G\+Float)}]{x\+Value }\end{DoxyParamCaption}}
+
+Get Y value when X equal some number.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Value} & Some number.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Y number. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/\+Base\+Control/Math.\+h\item 
+T\+H\+B/\+Library/\+Base\+Control/Math.\+m\end{DoxyCompactItemize}

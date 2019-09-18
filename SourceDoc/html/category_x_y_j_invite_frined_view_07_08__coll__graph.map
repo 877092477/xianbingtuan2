@@ -1,0 +1,11 @@
+<map id="XYJInviteFrinedView()" name="XYJInviteFrinedView()">
+<area shape="rect" id="node4" href="$interface_x_y_j_invited_view_footer.html" title="XYJInvitedViewFooter" alt="" coords="1257,352,1410,377"/>
+<area shape="rect" id="node5" href="$interface_j_m_view.html" title="JMView" alt="" coords="1094,153,1162,179"/>
+<area shape="rect" id="node12" href="$interface_x_y_j_invite_frined_view_model.html" title="XYJInviteFrinedViewModel" alt="" coords="1243,452,1424,477"/>
+<area shape="rect" id="node13" href="$interface_j_m_view_model.html" title="JMViewModel" alt="" coords="1076,535,1180,560"/>
+<area shape="rect" id="node16" href="$interface_r_a_c_disposable.html" title="RACDisposable" alt="" coords="133,613,249,639"/>
+<area shape="rect" id="node19" href="$interface_r_a_c_stream.html" title="RACStream" alt="" coords="145,417,237,443"/>
+<area shape="rect" id="node21" href="$interface_r_a_c_command.html" title="RACCommand" alt="" coords="729,301,840,327"/>
+<area shape="rect" id="node17" href="$interface_r_a_c_subject.html" title="RACSubject" alt="" coords="738,475,832,500"/>
+<area shape="rect" id="node18" href="$interface_r_a_c_signal.html" title="RACSignal" alt="" coords="319,417,406,443"/>
+</map>

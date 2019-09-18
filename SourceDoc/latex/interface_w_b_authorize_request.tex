@@ -1,0 +1,87 @@
+\hypertarget{interface_w_b_authorize_request}{}\section{W\+B\+Authorize\+Request Class Reference}
+\label{interface_w_b_authorize_request}\index{W\+B\+Authorize\+Request@{W\+B\+Authorize\+Request}}
+
+
+{\ttfamily \#import $<$Weibo\+S\+D\+K.\+h$>$}
+
+
+
+Inheritance diagram for W\+B\+Authorize\+Request\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{interface_w_b_authorize_request__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for W\+B\+Authorize\+Request\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{interface_w_b_authorize_request__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_w_b_authorize_request_af78c65c3705d69633b5f4f666b321ff8}{redirect\+U\+RI}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_w_b_authorize_request_a2bfe28e6d4731a1e64d12d94bde02d79}{scope}}
+\item 
+B\+O\+OL \mbox{\hyperlink{interface_w_b_authorize_request_a3af1f52acf762efc303adbabb55cee4d}{should\+Show\+Web\+View\+For\+Auth\+If\+Cannot\+S\+SO}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+第三方应用向微博客户端请求认证的消息结构
+
+第三方应用向微博客户端申请认证时，需要调用 \mbox{[}\mbox{\hyperlink{interface_weibo_s_d_k}{Weibo\+S\+DK}} send\+Request\+:\mbox{]} 函数， 向微博客户端发送一个 \mbox{\hyperlink{interface_w_b_authorize_request}{W\+B\+Authorize\+Request}} 的消息结构。 微博客户端处理完后会向第三方应用发送一个结构为 \mbox{\hyperlink{interface_w_b_authorize_response}{W\+B\+Authorize\+Response}} 的处理结果。 
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_w_b_authorize_request_af78c65c3705d69633b5f4f666b321ff8}\label{interface_w_b_authorize_request_af78c65c3705d69633b5f4f666b321ff8}} 
+\index{W\+B\+Authorize\+Request@{W\+B\+Authorize\+Request}!redirect\+U\+RI@{redirect\+U\+RI}}
+\index{redirect\+U\+RI@{redirect\+U\+RI}!W\+B\+Authorize\+Request@{W\+B\+Authorize\+Request}}
+\subsubsection{\texorpdfstring{redirect\+U\+RI}{redirectURI}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) redirect\+U\+RI\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+微博开放平台第三方应用授权回调页地址，默认为{\ttfamily \href{http://}{\tt http\+://}}
+
+参考 \href{http://open.weibo.com/wiki/%E6%8E%88%E6%9D%83%E6%9C%BA%E5%88%B6%E8%AF%B4%E6%98%8E#.E5.AE.A2.E6.88.B7.E7.AB.AF.E9.BB.98.E8.AE.A4.E5.9B.9E.E8.B0.83.E9.A1.B5}{\tt http\+://open.\+weibo.\+com/wiki/\%\+E6\%8\+E\%88\%\+E6\%9\+D\%83\%\+E6\%9\+C\%\+B\+A\%\+E5\%88\%\+B6\%\+E8\%\+A\+F\%\+B4\%\+E6\%98\%8\+E\#.\+E5.\+A\+E.\+A2.\+E6.\+88.\+B7.\+E7.\+A\+B.\+A\+F.\+E9.\+B\+B.\+98.\+E8.\+A\+E.\+A4.\+E5.\+9\+B.\+9\+E.\+E8.\+B0.\+83.\+E9.\+A1.\+B5}
+
+\begin{DoxyWarning}{Warning}
+必须保证和在微博开放平台应用管理界面配置的“授权回调页”地址一致，如未进行配置则默认为{\ttfamily \href{http://}{\tt http\+://}} 
+
+不能为空，长度小于1K 
+\end{DoxyWarning}
+\mbox{\Hypertarget{interface_w_b_authorize_request_a2bfe28e6d4731a1e64d12d94bde02d79}\label{interface_w_b_authorize_request_a2bfe28e6d4731a1e64d12d94bde02d79}} 
+\index{W\+B\+Authorize\+Request@{W\+B\+Authorize\+Request}!scope@{scope}}
+\index{scope@{scope}!W\+B\+Authorize\+Request@{W\+B\+Authorize\+Request}}
+\subsubsection{\texorpdfstring{scope}{scope}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) scope\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+微博开放平台第三方应用scope，多个scrope用逗号分隔
+
+参考 \href{http://open.weibo.com/wiki/%E6%8E%88%E6%9D%83%E6%9C%BA%E5%88%B6%E8%AF%B4%E6%98%8E#scope}{\tt http\+://open.\+weibo.\+com/wiki/\%\+E6\%8\+E\%88\%\+E6\%9\+D\%83\%\+E6\%9\+C\%\+B\+A\%\+E5\%88\%\+B6\%\+E8\%\+A\+F\%\+B4\%\+E6\%98\%8\+E\#scope}
+
+\begin{DoxyWarning}{Warning}
+长度小于1K 
+\end{DoxyWarning}
+\mbox{\Hypertarget{interface_w_b_authorize_request_a3af1f52acf762efc303adbabb55cee4d}\label{interface_w_b_authorize_request_a3af1f52acf762efc303adbabb55cee4d}} 
+\index{W\+B\+Authorize\+Request@{W\+B\+Authorize\+Request}!should\+Show\+Web\+View\+For\+Auth\+If\+Cannot\+S\+SO@{should\+Show\+Web\+View\+For\+Auth\+If\+Cannot\+S\+SO}}
+\index{should\+Show\+Web\+View\+For\+Auth\+If\+Cannot\+S\+SO@{should\+Show\+Web\+View\+For\+Auth\+If\+Cannot\+S\+SO}!W\+B\+Authorize\+Request@{W\+B\+Authorize\+Request}}
+\subsubsection{\texorpdfstring{should\+Show\+Web\+View\+For\+Auth\+If\+Cannot\+S\+SO}{shouldShowWebViewForAuthIfCannotSSO}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) should\+Show\+Web\+View\+For\+Auth\+If\+Cannot\+S\+SO\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+当用户没有安装微博客户端或微博客户端过低无法支持\+S\+S\+O的时候是否弹出\+S\+D\+K自带的\+Webview进行授权
+
+如果设置为\+Y\+E\+S，当用户没有安装微博客户端或微博客户端过低无法支持\+S\+S\+O的时候会自动弹出\+S\+D\+K自带的\+Webview进行授权。
+
+如果设置为\+N\+O，会根据 should\+Open\+Weibo\+App\+Install\+Page\+If\+Not\+Installed 属性判断是否弹出安装/更新微博的对话框
+
+默认为\+Y\+ES 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+U\+Meng\+U\+Share/Weibo\+S\+D\+K.\+h\end{DoxyCompactItemize}

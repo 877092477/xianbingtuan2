@@ -1,0 +1,92 @@
+\hypertarget{interface_p_o_p_property_animation}{}\section{P\+O\+P\+Property\+Animation Class Reference}
+\label{interface_p_o_p_property_animation}\index{P\+O\+P\+Property\+Animation@{P\+O\+P\+Property\+Animation}}
+
+
+{\ttfamily \#import $<$P\+O\+P\+Property\+Animation.\+h$>$}
+
+
+
+Inheritance diagram for P\+O\+P\+Property\+Animation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_p_o_p_property_animation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for P\+O\+P\+Property\+Animation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_p_o_p_property_animation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_p_o_p_animatable_property}{P\+O\+P\+Animatable\+Property}} $\ast$ \mbox{\hyperlink{interface_p_o_p_property_animation_a84277734179328f03be50a362f493082}{property}}
+\item 
+id \mbox{\hyperlink{interface_p_o_p_property_animation_aeb388bcf2599e1325982f3a76b153b9d}{from\+Value}}
+\item 
+id \mbox{\hyperlink{interface_p_o_p_property_animation_aeaebfaa7cade680e9bc7eca0bef0756a}{to\+Value}}
+\item 
+C\+G\+Float \mbox{\hyperlink{interface_p_o_p_property_animation_a14751fc182bfacadf13daa2d93c46ee5}{rounding\+Factor}}
+\item 
+N\+S\+U\+Integer \mbox{\hyperlink{interface_p_o_p_property_animation_a24deb27bdfe50717e78dd4b45a14c34f}{clamp\+Mode}}
+\item 
+B\+O\+OL \mbox{\hyperlink{interface_p_o_p_property_animation_a86276c6efc833e551bf7f889e3a9ec0a}{additive}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The semi-\/concrete property animation subclass.
+
+Copyright (c) 2014-\/present, Facebook, Inc. All rights reserved.
+
+This source code is licensed under the B\+S\+D-\/style license found in the L\+I\+C\+E\+N\+SE file in the root directory of this source tree. An additional grant of patent rights can be found in the P\+A\+T\+E\+N\+TS file in the same directory. 
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_p_o_p_property_animation_a86276c6efc833e551bf7f889e3a9ec0a}\label{interface_p_o_p_property_animation_a86276c6efc833e551bf7f889e3a9ec0a}} 
+\index{P\+O\+P\+Property\+Animation@{P\+O\+P\+Property\+Animation}!additive@{additive}}
+\index{additive@{additive}!P\+O\+P\+Property\+Animation@{P\+O\+P\+Property\+Animation}}
+\subsubsection{\texorpdfstring{additive}{additive}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) additive\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+The flag indicating whether values should be \char`\"{}added\char`\"{} each frame, rather than set.  Addition may be type dependent. Defaults to NO. \mbox{\Hypertarget{interface_p_o_p_property_animation_a24deb27bdfe50717e78dd4b45a14c34f}\label{interface_p_o_p_property_animation_a24deb27bdfe50717e78dd4b45a14c34f}} 
+\index{P\+O\+P\+Property\+Animation@{P\+O\+P\+Property\+Animation}!clamp\+Mode@{clamp\+Mode}}
+\index{clamp\+Mode@{clamp\+Mode}!P\+O\+P\+Property\+Animation@{P\+O\+P\+Property\+Animation}}
+\subsubsection{\texorpdfstring{clamp\+Mode}{clampMode}}
+{\footnotesize\ttfamily -\/ (N\+S\+U\+Integer) clamp\+Mode\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+The clamp mode applied to the current animated value.  See \{P\+O\+P\+Animation\+Clamp\+Flags\} for possible values. Defaults to k\+P\+O\+P\+Animation\+Clamp\+None. \mbox{\Hypertarget{interface_p_o_p_property_animation_aeb388bcf2599e1325982f3a76b153b9d}\label{interface_p_o_p_property_animation_aeb388bcf2599e1325982f3a76b153b9d}} 
+\index{P\+O\+P\+Property\+Animation@{P\+O\+P\+Property\+Animation}!from\+Value@{from\+Value}}
+\index{from\+Value@{from\+Value}!P\+O\+P\+Property\+Animation@{P\+O\+P\+Property\+Animation}}
+\subsubsection{\texorpdfstring{from\+Value}{fromValue}}
+{\footnotesize\ttfamily -\/ (id) from\+Value\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+The value to animate from.  The value type should match the property. If unspecified, the value is initialized to the object\textquotesingle{}s current value on animation start. \mbox{\Hypertarget{interface_p_o_p_property_animation_a84277734179328f03be50a362f493082}\label{interface_p_o_p_property_animation_a84277734179328f03be50a362f493082}} 
+\index{P\+O\+P\+Property\+Animation@{P\+O\+P\+Property\+Animation}!property@{property}}
+\index{property@{property}!P\+O\+P\+Property\+Animation@{P\+O\+P\+Property\+Animation}}
+\subsubsection{\texorpdfstring{property}{property}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_p_o_p_animatable_property}{P\+O\+P\+Animatable\+Property}} $\ast$) property\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+The property to animate. \mbox{\Hypertarget{interface_p_o_p_property_animation_a14751fc182bfacadf13daa2d93c46ee5}\label{interface_p_o_p_property_animation_a14751fc182bfacadf13daa2d93c46ee5}} 
+\index{P\+O\+P\+Property\+Animation@{P\+O\+P\+Property\+Animation}!rounding\+Factor@{rounding\+Factor}}
+\index{rounding\+Factor@{rounding\+Factor}!P\+O\+P\+Property\+Animation@{P\+O\+P\+Property\+Animation}}
+\subsubsection{\texorpdfstring{rounding\+Factor}{roundingFactor}}
+{\footnotesize\ttfamily -\/ (C\+G\+Float) rounding\+Factor\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+The rounding factor applied to the current animated value.  Specify 1.\+0 to animate between integral values. Defaults to 0 meaning no rounding. \mbox{\Hypertarget{interface_p_o_p_property_animation_aeaebfaa7cade680e9bc7eca0bef0756a}\label{interface_p_o_p_property_animation_aeaebfaa7cade680e9bc7eca0bef0756a}} 
+\index{P\+O\+P\+Property\+Animation@{P\+O\+P\+Property\+Animation}!to\+Value@{to\+Value}}
+\index{to\+Value@{to\+Value}!P\+O\+P\+Property\+Animation@{P\+O\+P\+Property\+Animation}}
+\subsubsection{\texorpdfstring{to\+Value}{toValue}}
+{\footnotesize\ttfamily -\/ (id) to\+Value\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+The value to animate to.  The value type should match the property. If unspecified, the value is initialized to the object\textquotesingle{}s current value on animation start. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/pop/P\+O\+P\+Property\+Animation.\+h\item 
+Pods/pop/pop/P\+O\+P\+Property\+Animation.\+mm\end{DoxyCompactItemize}

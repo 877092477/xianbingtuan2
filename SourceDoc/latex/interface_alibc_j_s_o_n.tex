@@ -1,0 +1,71 @@
+\hypertarget{interface_alibc_j_s_o_n}{}\section{Alibc\+J\+S\+ON Class Reference}
+\label{interface_alibc_j_s_o_n}\index{Alibc\+J\+S\+ON@{Alibc\+J\+S\+ON}}
+
+
+Inheritance diagram for Alibc\+J\+S\+ON\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=144pt]{interface_alibc_j_s_o_n__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Alibc\+J\+S\+ON\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=144pt]{interface_alibc_j_s_o_n__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_alibc_j_s_o_n_a639e2854e719ef15b61ac23d68ef67d9}\label{interface_alibc_j_s_o_n_a639e2854e719ef15b61ac23d68ef67d9}} 
+(id) + {\bfseries json\+Data\+To\+Object\+:class\+:}
+\item 
+\mbox{\Hypertarget{interface_alibc_j_s_o_n_a082acfe7183c19390b3148fd7f09de5d}\label{interface_alibc_j_s_o_n_a082acfe7183c19390b3148fd7f09de5d}} 
+(N\+S\+Dictionary $\ast$) + {\bfseries json\+Data\+To\+Dictionary\+:}
+\item 
+\mbox{\Hypertarget{interface_alibc_j_s_o_n_aa7a2c520a6abad73bfa57d6f33fab100}\label{interface_alibc_j_s_o_n_aa7a2c520a6abad73bfa57d6f33fab100}} 
+(N\+S\+Array $\ast$) + {\bfseries json\+Data\+To\+Array\+:}
+\item 
+\mbox{\Hypertarget{interface_alibc_j_s_o_n_a6b7e6e1df8405222f4efb1a5082e9b39}\label{interface_alibc_j_s_o_n_a6b7e6e1df8405222f4efb1a5082e9b39}} 
+(N\+S\+Data $\ast$) + {\bfseries object\+To\+Json\+Data\+:}
+\item 
+\mbox{\Hypertarget{interface_alibc_j_s_o_n_ae13558f551b343435b635f9c2c22ef88}\label{interface_alibc_j_s_o_n_ae13558f551b343435b635f9c2c22ef88}} 
+(id) + {\bfseries json\+String\+To\+Object\+:class\+:}
+\item 
+\mbox{\Hypertarget{interface_alibc_j_s_o_n_a9d5c89c32214fcf18bdf63314376cf11}\label{interface_alibc_j_s_o_n_a9d5c89c32214fcf18bdf63314376cf11}} 
+(N\+S\+Dictionary $\ast$) + {\bfseries json\+String\+To\+Dictionary\+:}
+\item 
+\mbox{\Hypertarget{interface_alibc_j_s_o_n_a55963ed23b76f05accf934f376a18207}\label{interface_alibc_j_s_o_n_a55963ed23b76f05accf934f376a18207}} 
+(N\+S\+Array $\ast$) + {\bfseries json\+String\+To\+Array\+:}
+\item 
+\mbox{\Hypertarget{interface_alibc_j_s_o_n_afa6596d34b6e271da657164745706c0d}\label{interface_alibc_j_s_o_n_afa6596d34b6e271da657164745706c0d}} 
+(N\+S\+String $\ast$) + {\bfseries object\+To\+Json\+String\+:}
+\item 
+\mbox{\Hypertarget{interface_alibc_j_s_o_n_ab5a99e35876e2fca0b50ebfb42fe3427}\label{interface_alibc_j_s_o_n_ab5a99e35876e2fca0b50ebfb42fe3427}} 
+(id) + {\bfseries dictionary\+To\+Class\+:class\+:}
+\item 
+\mbox{\Hypertarget{interface_alibc_j_s_o_n_af97a165657203793b22a0191595804b1}\label{interface_alibc_j_s_o_n_af97a165657203793b22a0191595804b1}} 
+(id) + {\bfseries as\+Jsonable\+Object\+:}
+\item 
+(N\+S\+String $\ast$) + \mbox{\hyperlink{interface_alibc_j_s_o_n_a8d8597e7758b604b034919211f251a52}{fix\+J\+S\+O\+N2\+J\+S\+Bug\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_alibc_j_s_o_n_a8d8597e7758b604b034919211f251a52}\label{interface_alibc_j_s_o_n_a8d8597e7758b604b034919211f251a52}} 
+\index{Alibc\+J\+S\+ON@{Alibc\+J\+S\+ON}!fix\+J\+S\+O\+N2\+J\+S\+Bug\+:@{fix\+J\+S\+O\+N2\+J\+S\+Bug\+:}}
+\index{fix\+J\+S\+O\+N2\+J\+S\+Bug\+:@{fix\+J\+S\+O\+N2\+J\+S\+Bug\+:}!Alibc\+J\+S\+ON@{Alibc\+J\+S\+ON}}
+\subsubsection{\texorpdfstring{fix\+J\+S\+O\+N2\+J\+S\+Bug\+:()}{fixJSON2JSBug:()}}
+{\footnotesize\ttfamily + (N\+S\+String $\ast$) fix\+J\+S\+O\+N2\+J\+S\+Bug\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{json }\end{DoxyParamCaption}}
+
+修复直接将 J\+S\+ON 字符串作为 js 使用时， 和  导致 JS 报错的问题。
+
+一份额外的列表，尚未决定是否全部替换 \mbox{[}-\/-\/-\/-\/-\/-\/-\/\mbox{]} 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Alibc\+Trade\+Common.\+framework/\+Headers/Alibc\+J\+S\+O\+N.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,100 @@
+\hypertarget{interface_r_a_c_dynamic_signal}{}\section{R\+A\+C\+Dynamic\+Signal Class Reference}
+\label{interface_r_a_c_dynamic_signal}\index{R\+A\+C\+Dynamic\+Signal@{R\+A\+C\+Dynamic\+Signal}}
+
+
+Inheritance diagram for R\+A\+C\+Dynamic\+Signal\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{interface_r_a_c_dynamic_signal__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for R\+A\+C\+Dynamic\+Signal\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{interface_r_a_c_dynamic_signal__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) + \mbox{\hyperlink{interface_r_a_c_dynamic_signal_aeffa754150754dd6296d5225b5c9c7fe}{create\+Signal\+:}}
+\item 
+(\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) + \mbox{\hyperlink{interface_r_a_c_dynamic_signal_aeffa754150754dd6296d5225b5c9c7fe}{create\+Signal\+:}}
+\item 
+(\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) + \mbox{\hyperlink{interface_r_a_c_dynamic_signal_aeffa754150754dd6296d5225b5c9c7fe}{create\+Signal\+:}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_r_a_c_dynamic_signal_aeffa754150754dd6296d5225b5c9c7fe}\label{interface_r_a_c_dynamic_signal_aeffa754150754dd6296d5225b5c9c7fe}} 
+\index{R\+A\+C\+Dynamic\+Signal@{R\+A\+C\+Dynamic\+Signal}!create\+Signal\+:@{create\+Signal\+:}}
+\index{create\+Signal\+:@{create\+Signal\+:}!R\+A\+C\+Dynamic\+Signal@{R\+A\+C\+Dynamic\+Signal}}
+\subsubsection{\texorpdfstring{create\+Signal\+:()}{createSignal:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) create\+Signal\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_r_a_c_disposable}{R\+A\+C\+Disposable}} $\ast$($^\wedge$)(id$<$\mbox{\hyperlink{interface_r_a_c_subscriber}{R\+A\+C\+Subscriber}}$>$ subscriber))}]{did\+Subscribe }\end{DoxyParamCaption}}
+
+Creates a new signal. This is the preferred way to create a new signal operation or behavior.
+
+Events can be sent to new subscribers immediately in the {\ttfamily did\+Subscribe} block, but the subscriber will not be able to dispose of the signal until a \mbox{\hyperlink{interface_r_a_c_disposable}{R\+A\+C\+Disposable}} is returned from {\ttfamily did\+Subscribe}. In the case of infinite signals, this won\textquotesingle{}t {\itshape ever} happen if events are sent immediately.
+
+To ensure that the signal is disposable, events can be scheduled on the +\mbox{[}\mbox{\hyperlink{interface_r_a_c_scheduler}{R\+A\+C\+Scheduler}} current\+Scheduler\mbox{]} (so that they\textquotesingle{}re deferred, not sent immediately), or they can be sent in the background. The \mbox{\hyperlink{interface_r_a_c_disposable}{R\+A\+C\+Disposable}} returned by the {\ttfamily did\+Subscribe} block should cancel any such scheduling or asynchronous work.
+
+did\+Subscribe -\/ Called when the signal is subscribed to. The new subscriber is passed in. You can then manually control the $<$\+R\+A\+C\+Subscriber$>$ by sending it -\/send\+Next\+:, -\/send\+Error\+:, and -\/send\+Completed, as defined by the operation you\textquotesingle{}re implementing. This block should return a \mbox{\hyperlink{interface_r_a_c_disposable}{R\+A\+C\+Disposable}} which cancels any ongoing work triggered by the subscription, and cleans up any resources or disposables created as part of it. When the disposable is disposed of, the signal must not send any more events to the {\ttfamily subscriber}. If no cleanup is necessary, return nil.
+
+{\bfseries Note\+:} The {\ttfamily did\+Subscribe} block is called every time a new subscriber subscribes. Any side effects within the block will thus execute once for each subscription, not necessarily on one thread, and possibly even simultaneously! 
+
+Reimplemented from \mbox{\hyperlink{interface_r_a_c_signal_a4ba374f148d6e2a0339c4f4202b4dc26}{R\+A\+C\+Signal}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_r_a_c_dynamic_signal_aeffa754150754dd6296d5225b5c9c7fe_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{interface_r_a_c_dynamic_signal_aeffa754150754dd6296d5225b5c9c7fe}\label{interface_r_a_c_dynamic_signal_aeffa754150754dd6296d5225b5c9c7fe}} 
+\index{R\+A\+C\+Dynamic\+Signal@{R\+A\+C\+Dynamic\+Signal}!create\+Signal\+:@{create\+Signal\+:}}
+\index{create\+Signal\+:@{create\+Signal\+:}!R\+A\+C\+Dynamic\+Signal@{R\+A\+C\+Dynamic\+Signal}}
+\subsubsection{\texorpdfstring{create\+Signal\+:()}{createSignal:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) create\+Signal\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_r_a_c_disposable}{R\+A\+C\+Disposable}} $\ast$($^\wedge$)(id$<$\mbox{\hyperlink{interface_r_a_c_subscriber}{R\+A\+C\+Subscriber}}$>$ subscriber))}]{did\+Subscribe }\end{DoxyParamCaption}}
+
+Creates a new signal. This is the preferred way to create a new signal operation or behavior.
+
+Events can be sent to new subscribers immediately in the {\ttfamily did\+Subscribe} block, but the subscriber will not be able to dispose of the signal until a \mbox{\hyperlink{interface_r_a_c_disposable}{R\+A\+C\+Disposable}} is returned from {\ttfamily did\+Subscribe}. In the case of infinite signals, this won\textquotesingle{}t {\itshape ever} happen if events are sent immediately.
+
+To ensure that the signal is disposable, events can be scheduled on the +\mbox{[}\mbox{\hyperlink{interface_r_a_c_scheduler}{R\+A\+C\+Scheduler}} current\+Scheduler\mbox{]} (so that they\textquotesingle{}re deferred, not sent immediately), or they can be sent in the background. The \mbox{\hyperlink{interface_r_a_c_disposable}{R\+A\+C\+Disposable}} returned by the {\ttfamily did\+Subscribe} block should cancel any such scheduling or asynchronous work.
+
+did\+Subscribe -\/ Called when the signal is subscribed to. The new subscriber is passed in. You can then manually control the $<$\+R\+A\+C\+Subscriber$>$ by sending it -\/send\+Next\+:, -\/send\+Error\+:, and -\/send\+Completed, as defined by the operation you\textquotesingle{}re implementing. This block should return a \mbox{\hyperlink{interface_r_a_c_disposable}{R\+A\+C\+Disposable}} which cancels any ongoing work triggered by the subscription, and cleans up any resources or disposables created as part of it. When the disposable is disposed of, the signal must not send any more events to the {\ttfamily subscriber}. If no cleanup is necessary, return nil.
+
+{\bfseries Note\+:} The {\ttfamily did\+Subscribe} block is called every time a new subscriber subscribes. Any side effects within the block will thus execute once for each subscription, not necessarily on one thread, and possibly even simultaneously! 
+
+Reimplemented from \mbox{\hyperlink{interface_r_a_c_signal_a4ba374f148d6e2a0339c4f4202b4dc26}{R\+A\+C\+Signal}}.
+
+\mbox{\Hypertarget{interface_r_a_c_dynamic_signal_aeffa754150754dd6296d5225b5c9c7fe}\label{interface_r_a_c_dynamic_signal_aeffa754150754dd6296d5225b5c9c7fe}} 
+\index{R\+A\+C\+Dynamic\+Signal@{R\+A\+C\+Dynamic\+Signal}!create\+Signal\+:@{create\+Signal\+:}}
+\index{create\+Signal\+:@{create\+Signal\+:}!R\+A\+C\+Dynamic\+Signal@{R\+A\+C\+Dynamic\+Signal}}
+\subsubsection{\texorpdfstring{create\+Signal\+:()}{createSignal:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) create\+Signal\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_r_a_c_disposable}{R\+A\+C\+Disposable}} $\ast$($^\wedge$)(id$<$\mbox{\hyperlink{interface_r_a_c_subscriber}{R\+A\+C\+Subscriber}}$>$ subscriber))}]{did\+Subscribe }\end{DoxyParamCaption}}
+
+Creates a new signal. This is the preferred way to create a new signal operation or behavior.
+
+Events can be sent to new subscribers immediately in the {\ttfamily did\+Subscribe} block, but the subscriber will not be able to dispose of the signal until a \mbox{\hyperlink{interface_r_a_c_disposable}{R\+A\+C\+Disposable}} is returned from {\ttfamily did\+Subscribe}. In the case of infinite signals, this won\textquotesingle{}t {\itshape ever} happen if events are sent immediately.
+
+To ensure that the signal is disposable, events can be scheduled on the +\mbox{[}\mbox{\hyperlink{interface_r_a_c_scheduler}{R\+A\+C\+Scheduler}} current\+Scheduler\mbox{]} (so that they\textquotesingle{}re deferred, not sent immediately), or they can be sent in the background. The \mbox{\hyperlink{interface_r_a_c_disposable}{R\+A\+C\+Disposable}} returned by the {\ttfamily did\+Subscribe} block should cancel any such scheduling or asynchronous work.
+
+did\+Subscribe -\/ Called when the signal is subscribed to. The new subscriber is passed in. You can then manually control the $<$\+R\+A\+C\+Subscriber$>$ by sending it -\/send\+Next\+:, -\/send\+Error\+:, and -\/send\+Completed, as defined by the operation you\textquotesingle{}re implementing. This block should return a \mbox{\hyperlink{interface_r_a_c_disposable}{R\+A\+C\+Disposable}} which cancels any ongoing work triggered by the subscription, and cleans up any resources or disposables created as part of it. When the disposable is disposed of, the signal must not send any more events to the {\ttfamily subscriber}. If no cleanup is necessary, return nil.
+
+{\bfseries Note\+:} The {\ttfamily did\+Subscribe} block is called every time a new subscriber subscribes. Any side effects within the block will thus execute once for each subscription, not necessarily on one thread, and possibly even simultaneously! 
+
+Reimplemented from \mbox{\hyperlink{interface_r_a_c_signal_a4ba374f148d6e2a0339c4f4202b4dc26}{R\+A\+C\+Signal}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+Reactive\+Cocoa/R\+A\+C\+Dynamic\+Signal.\+h\item 
+Pods/\+Reactive\+Cocoa/\+Reactive\+Cocoa/R\+A\+C\+Dynamic\+Signal.\+m\end{DoxyCompactItemize}

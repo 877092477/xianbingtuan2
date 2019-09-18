@@ -1,0 +1,11 @@
+<map id="FNShareMutiplyView()" name="FNShareMutiplyView()">
+<area shape="rect" id="node4" href="$interface_f_n_share_mutiply_view_model.html" title="FNShareMutiplyViewModel" alt="" coords="1420,445,1602,471"/>
+<area shape="rect" id="node5" href="$interface_j_m_view_model.html" title="JMViewModel" alt="" coords="1219,141,1323,167"/>
+<area shape="rect" id="node8" href="$interface_r_a_c_disposable.html" title="RACDisposable" alt="" coords="133,113,249,139"/>
+<area shape="rect" id="node11" href="$interface_r_a_c_stream.html" title="RACStream" alt="" coords="145,279,237,304"/>
+<area shape="rect" id="node13" href="$interface_r_a_c_command.html" title="RACCommand" alt="" coords="864,181,975,207"/>
+<area shape="rect" id="node14" href="$interface_f_n_share_mutiply_model.html" title="FNShareMutiplyModel" alt="" coords="273,411,426,436"/>
+<area shape="rect" id="node9" href="$interface_r_a_c_subject.html" title="RACSubject" alt="" coords="872,385,966,411"/>
+<area shape="rect" id="node10" href="$interface_r_a_c_signal.html" title="RACSignal" alt="" coords="471,279,557,304"/>
+<area shape="rect" id="node15" href="$interface_f_n_custome_text_view.html" title="FNCustomeTextView" alt="" coords="1438,536,1584,561"/>
+</map>

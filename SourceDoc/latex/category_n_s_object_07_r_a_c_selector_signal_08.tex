@@ -1,0 +1,125 @@
+\hypertarget{category_n_s_object_07_r_a_c_selector_signal_08}{}\section{N\+S\+Object(R\+A\+C\+Selector\+Signal) Category Reference}
+\label{category_n_s_object_07_r_a_c_selector_signal_08}\index{N\+S\+Object(\+R\+A\+C\+Selector\+Signal)@{N\+S\+Object(\+R\+A\+C\+Selector\+Signal)}}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) -\/ \mbox{\hyperlink{category_n_s_object_07_r_a_c_selector_signal_08_ab045e731d5071c2dc76a950c9be2e5fa}{rac\+\_\+signal\+For\+Selector\+:}}
+\item 
+(\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) -\/ \mbox{\hyperlink{category_n_s_object_07_r_a_c_selector_signal_08_ac1bb0fd410309fd037ae60f81fc8d55b}{rac\+\_\+signal\+For\+Selector\+:from\+Protocol\+:}}
+\item 
+(\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) -\/ \mbox{\hyperlink{category_n_s_object_07_r_a_c_selector_signal_08_ab045e731d5071c2dc76a950c9be2e5fa}{rac\+\_\+signal\+For\+Selector\+:}}
+\item 
+(\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) -\/ \mbox{\hyperlink{category_n_s_object_07_r_a_c_selector_signal_08_ac1bb0fd410309fd037ae60f81fc8d55b}{rac\+\_\+signal\+For\+Selector\+:from\+Protocol\+:}}
+\item 
+(\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) -\/ \mbox{\hyperlink{category_n_s_object_07_r_a_c_selector_signal_08_ab045e731d5071c2dc76a950c9be2e5fa}{rac\+\_\+signal\+For\+Selector\+:}}
+\item 
+(\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) -\/ \mbox{\hyperlink{category_n_s_object_07_r_a_c_selector_signal_08_ac1bb0fd410309fd037ae60f81fc8d55b}{rac\+\_\+signal\+For\+Selector\+:from\+Protocol\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{category_n_s_object_07_r_a_c_selector_signal_08_ab045e731d5071c2dc76a950c9be2e5fa}\label{category_n_s_object_07_r_a_c_selector_signal_08_ab045e731d5071c2dc76a950c9be2e5fa}} 
+\index{N\+S\+Object(\+R\+A\+C\+Selector\+Signal)@{N\+S\+Object(\+R\+A\+C\+Selector\+Signal)}!rac\+\_\+signal\+For\+Selector\+:@{rac\+\_\+signal\+For\+Selector\+:}}
+\index{rac\+\_\+signal\+For\+Selector\+:@{rac\+\_\+signal\+For\+Selector\+:}!N\+S\+Object(\+R\+A\+C\+Selector\+Signal)@{N\+S\+Object(\+R\+A\+C\+Selector\+Signal)}}
+\subsubsection{\texorpdfstring{rac\+\_\+signal\+For\+Selector\+:()}{rac\_signalForSelector:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) rac\+\_\+signal\+For\+Selector\+: \begin{DoxyParamCaption}\item[{(S\+EL)}]{selector }\end{DoxyParamCaption}}
+
+Creates a signal associated with the receiver, which will send a tuple of the method\textquotesingle{}s arguments each time the given selector is invoked.
+
+If the selector is already implemented on the receiver, the existing implementation will be invoked {\itshape before} the signal fires.
+
+If the selector is not yet implemented on the receiver, the injected implementation will have a {\ttfamily void} return type and accept only object arguments. Invoking the added implementation with non-\/object values, or expecting a return value, will result in undefined behavior.
+
+This is useful for changing an event or delegate callback into a signal. For example, on an N\+S\+View\+: \begin{DoxyVerb}[[view rac_signalForSelector:@selector(mouseDown:)] subscribeNext:^(RACTuple *args) {
+    NSEvent *event = args.first;
+    NSLog(@"mouse button pressed: %@", event);
+}];
+\end{DoxyVerb}
+
+
+selector -\/ The selector for whose invocations are to be observed. If it doesn\textquotesingle{}t exist, it will be implemented to accept object arguments and return void. This cannot have C arrays or unions as arguments or C arrays, unions, structs, complex or vector types as return type.
+
+Returns a signal which will send a tuple of arguments upon each invocation of the selector, then completes when the receiver is deallocated. {\ttfamily next} events will be sent synchronously from the thread that invoked the method. If a runtime call fails, the signal will send an error in the R\+A\+C\+Selector\+Signal\+Error\+Domain. \mbox{\Hypertarget{category_n_s_object_07_r_a_c_selector_signal_08_ab045e731d5071c2dc76a950c9be2e5fa}\label{category_n_s_object_07_r_a_c_selector_signal_08_ab045e731d5071c2dc76a950c9be2e5fa}} 
+\index{N\+S\+Object(\+R\+A\+C\+Selector\+Signal)@{N\+S\+Object(\+R\+A\+C\+Selector\+Signal)}!rac\+\_\+signal\+For\+Selector\+:@{rac\+\_\+signal\+For\+Selector\+:}}
+\index{rac\+\_\+signal\+For\+Selector\+:@{rac\+\_\+signal\+For\+Selector\+:}!N\+S\+Object(\+R\+A\+C\+Selector\+Signal)@{N\+S\+Object(\+R\+A\+C\+Selector\+Signal)}}
+\subsubsection{\texorpdfstring{rac\+\_\+signal\+For\+Selector\+:()}{rac\_signalForSelector:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) rac\+\_\+signal\+For\+Selector\+: \begin{DoxyParamCaption}\item[{(S\+EL)}]{selector }\end{DoxyParamCaption}}
+
+Creates a signal associated with the receiver, which will send a tuple of the method\textquotesingle{}s arguments each time the given selector is invoked.
+
+If the selector is already implemented on the receiver, the existing implementation will be invoked {\itshape before} the signal fires.
+
+If the selector is not yet implemented on the receiver, the injected implementation will have a {\ttfamily void} return type and accept only object arguments. Invoking the added implementation with non-\/object values, or expecting a return value, will result in undefined behavior.
+
+This is useful for changing an event or delegate callback into a signal. For example, on an N\+S\+View\+: \begin{DoxyVerb}[[view rac_signalForSelector:@selector(mouseDown:)] subscribeNext:^(RACTuple *args) {
+    NSEvent *event = args.first;
+    NSLog(@"mouse button pressed: %@", event);
+}];
+\end{DoxyVerb}
+
+
+selector -\/ The selector for whose invocations are to be observed. If it doesn\textquotesingle{}t exist, it will be implemented to accept object arguments and return void. This cannot have C arrays or unions as arguments or C arrays, unions, structs, complex or vector types as return type.
+
+Returns a signal which will send a tuple of arguments upon each invocation of the selector, then completes when the receiver is deallocated. {\ttfamily next} events will be sent synchronously from the thread that invoked the method. If a runtime call fails, the signal will send an error in the R\+A\+C\+Selector\+Signal\+Error\+Domain. \mbox{\Hypertarget{category_n_s_object_07_r_a_c_selector_signal_08_ab045e731d5071c2dc76a950c9be2e5fa}\label{category_n_s_object_07_r_a_c_selector_signal_08_ab045e731d5071c2dc76a950c9be2e5fa}} 
+\index{N\+S\+Object(\+R\+A\+C\+Selector\+Signal)@{N\+S\+Object(\+R\+A\+C\+Selector\+Signal)}!rac\+\_\+signal\+For\+Selector\+:@{rac\+\_\+signal\+For\+Selector\+:}}
+\index{rac\+\_\+signal\+For\+Selector\+:@{rac\+\_\+signal\+For\+Selector\+:}!N\+S\+Object(\+R\+A\+C\+Selector\+Signal)@{N\+S\+Object(\+R\+A\+C\+Selector\+Signal)}}
+\subsubsection{\texorpdfstring{rac\+\_\+signal\+For\+Selector\+:()}{rac\_signalForSelector:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) rac\+\_\+signal\+For\+Selector\+: \begin{DoxyParamCaption}\item[{(S\+EL)}]{selector }\end{DoxyParamCaption}}
+
+Creates a signal associated with the receiver, which will send a tuple of the method\textquotesingle{}s arguments each time the given selector is invoked.
+
+If the selector is already implemented on the receiver, the existing implementation will be invoked {\itshape before} the signal fires.
+
+If the selector is not yet implemented on the receiver, the injected implementation will have a {\ttfamily void} return type and accept only object arguments. Invoking the added implementation with non-\/object values, or expecting a return value, will result in undefined behavior.
+
+This is useful for changing an event or delegate callback into a signal. For example, on an N\+S\+View\+: \begin{DoxyVerb}[[view rac_signalForSelector:@selector(mouseDown:)] subscribeNext:^(RACTuple *args) {
+    NSEvent *event = args.first;
+    NSLog(@"mouse button pressed: %@", event);
+}];
+\end{DoxyVerb}
+
+
+selector -\/ The selector for whose invocations are to be observed. If it doesn\textquotesingle{}t exist, it will be implemented to accept object arguments and return void. This cannot have C arrays or unions as arguments or C arrays, unions, structs, complex or vector types as return type.
+
+Returns a signal which will send a tuple of arguments upon each invocation of the selector, then completes when the receiver is deallocated. {\ttfamily next} events will be sent synchronously from the thread that invoked the method. If a runtime call fails, the signal will send an error in the R\+A\+C\+Selector\+Signal\+Error\+Domain. \mbox{\Hypertarget{category_n_s_object_07_r_a_c_selector_signal_08_ac1bb0fd410309fd037ae60f81fc8d55b}\label{category_n_s_object_07_r_a_c_selector_signal_08_ac1bb0fd410309fd037ae60f81fc8d55b}} 
+\index{N\+S\+Object(\+R\+A\+C\+Selector\+Signal)@{N\+S\+Object(\+R\+A\+C\+Selector\+Signal)}!rac\+\_\+signal\+For\+Selector\+:from\+Protocol\+:@{rac\+\_\+signal\+For\+Selector\+:from\+Protocol\+:}}
+\index{rac\+\_\+signal\+For\+Selector\+:from\+Protocol\+:@{rac\+\_\+signal\+For\+Selector\+:from\+Protocol\+:}!N\+S\+Object(\+R\+A\+C\+Selector\+Signal)@{N\+S\+Object(\+R\+A\+C\+Selector\+Signal)}}
+\subsubsection{\texorpdfstring{rac\+\_\+signal\+For\+Selector\+:from\+Protocol\+:()}{rac\_signalForSelector:fromProtocol:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) rac\+\_\+signal\+For\+Selector\+: \begin{DoxyParamCaption}\item[{(S\+EL)}]{selector }\item[{fromProtocol:(Protocol $\ast$)}]{protocol }\end{DoxyParamCaption}}
+
+Behaves like -\/rac\+\_\+signal\+For\+Selector\+:, but if the selector is not yet implemented on the receiver, its method signature is looked up within {\ttfamily protocol}, and may accept non-\/object arguments.
+
+If the selector is not yet implemented and has a return value, the injected method will return all zero bits (equal to {\ttfamily nil}, {\ttfamily N\+U\+LL}, 0, 0.\+0f, etc.).
+
+selector -\/ The selector for whose invocations are to be observed. If it doesn\textquotesingle{}t exist, it will be implemented using information from {\ttfamily protocol}, and may accept non-\/object arguments and return a value. This cannot have C arrays or unions as arguments or return type. protocol -\/ The protocol in which {\ttfamily selector} is declared. This will be used for type information if the selector is not already implemented on the receiver. This must not be {\ttfamily N\+U\+LL}, and {\ttfamily selector} must exist in this protocol.
+
+Returns a signal which will send a tuple of arguments on each invocation of the selector, or an error in R\+A\+C\+Selector\+Signal\+Error\+Domain if a runtime call fails. \mbox{\Hypertarget{category_n_s_object_07_r_a_c_selector_signal_08_ac1bb0fd410309fd037ae60f81fc8d55b}\label{category_n_s_object_07_r_a_c_selector_signal_08_ac1bb0fd410309fd037ae60f81fc8d55b}} 
+\index{N\+S\+Object(\+R\+A\+C\+Selector\+Signal)@{N\+S\+Object(\+R\+A\+C\+Selector\+Signal)}!rac\+\_\+signal\+For\+Selector\+:from\+Protocol\+:@{rac\+\_\+signal\+For\+Selector\+:from\+Protocol\+:}}
+\index{rac\+\_\+signal\+For\+Selector\+:from\+Protocol\+:@{rac\+\_\+signal\+For\+Selector\+:from\+Protocol\+:}!N\+S\+Object(\+R\+A\+C\+Selector\+Signal)@{N\+S\+Object(\+R\+A\+C\+Selector\+Signal)}}
+\subsubsection{\texorpdfstring{rac\+\_\+signal\+For\+Selector\+:from\+Protocol\+:()}{rac\_signalForSelector:fromProtocol:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) rac\+\_\+signal\+For\+Selector\+: \begin{DoxyParamCaption}\item[{(S\+EL)}]{selector }\item[{fromProtocol:(Protocol $\ast$)}]{protocol }\end{DoxyParamCaption}}
+
+Behaves like -\/rac\+\_\+signal\+For\+Selector\+:, but if the selector is not yet implemented on the receiver, its method signature is looked up within {\ttfamily protocol}, and may accept non-\/object arguments.
+
+If the selector is not yet implemented and has a return value, the injected method will return all zero bits (equal to {\ttfamily nil}, {\ttfamily N\+U\+LL}, 0, 0.\+0f, etc.).
+
+selector -\/ The selector for whose invocations are to be observed. If it doesn\textquotesingle{}t exist, it will be implemented using information from {\ttfamily protocol}, and may accept non-\/object arguments and return a value. This cannot have C arrays or unions as arguments or return type. protocol -\/ The protocol in which {\ttfamily selector} is declared. This will be used for type information if the selector is not already implemented on the receiver. This must not be {\ttfamily N\+U\+LL}, and {\ttfamily selector} must exist in this protocol.
+
+Returns a signal which will send a tuple of arguments on each invocation of the selector, or an error in R\+A\+C\+Selector\+Signal\+Error\+Domain if a runtime call fails. \mbox{\Hypertarget{category_n_s_object_07_r_a_c_selector_signal_08_ac1bb0fd410309fd037ae60f81fc8d55b}\label{category_n_s_object_07_r_a_c_selector_signal_08_ac1bb0fd410309fd037ae60f81fc8d55b}} 
+\index{N\+S\+Object(\+R\+A\+C\+Selector\+Signal)@{N\+S\+Object(\+R\+A\+C\+Selector\+Signal)}!rac\+\_\+signal\+For\+Selector\+:from\+Protocol\+:@{rac\+\_\+signal\+For\+Selector\+:from\+Protocol\+:}}
+\index{rac\+\_\+signal\+For\+Selector\+:from\+Protocol\+:@{rac\+\_\+signal\+For\+Selector\+:from\+Protocol\+:}!N\+S\+Object(\+R\+A\+C\+Selector\+Signal)@{N\+S\+Object(\+R\+A\+C\+Selector\+Signal)}}
+\subsubsection{\texorpdfstring{rac\+\_\+signal\+For\+Selector\+:from\+Protocol\+:()}{rac\_signalForSelector:fromProtocol:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) rac\+\_\+signal\+For\+Selector\+: \begin{DoxyParamCaption}\item[{(S\+EL)}]{selector }\item[{fromProtocol:(Protocol $\ast$)}]{protocol }\end{DoxyParamCaption}}
+
+Behaves like -\/rac\+\_\+signal\+For\+Selector\+:, but if the selector is not yet implemented on the receiver, its method signature is looked up within {\ttfamily protocol}, and may accept non-\/object arguments.
+
+If the selector is not yet implemented and has a return value, the injected method will return all zero bits (equal to {\ttfamily nil}, {\ttfamily N\+U\+LL}, 0, 0.\+0f, etc.).
+
+selector -\/ The selector for whose invocations are to be observed. If it doesn\textquotesingle{}t exist, it will be implemented using information from {\ttfamily protocol}, and may accept non-\/object arguments and return a value. This cannot have C arrays or unions as arguments or return type. protocol -\/ The protocol in which {\ttfamily selector} is declared. This will be used for type information if the selector is not already implemented on the receiver. This must not be {\ttfamily N\+U\+LL}, and {\ttfamily selector} must exist in this protocol.
+
+Returns a signal which will send a tuple of arguments on each invocation of the selector, or an error in R\+A\+C\+Selector\+Signal\+Error\+Domain if a runtime call fails. 
+
+The documentation for this category was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+Reactive\+Cocoa/N\+S\+Object+\+R\+A\+C\+Selector\+Signal.\+h\item 
+Pods/\+Reactive\+Cocoa/\+Reactive\+Cocoa/N\+S\+Object+\+R\+A\+C\+Selector\+Signal.\+m\end{DoxyCompactItemize}

@@ -1,0 +1,13 @@
+<map id="FNPartnerCenterController()" name="FNPartnerCenterController()">
+<area shape="rect" id="node2" href="$interface_f_n_normal_navigaiton_bar.html" title="FNNormalNavigaitonBar" alt="" coords="1362,17,1528,43"/>
+<area shape="rect" id="node16" href="$interface_j_m_view.html" title="JMView" alt="" coords="1252,143,1320,168"/>
+<area shape="rect" id="node4" href="$interface_f_n_partner_center_view_model.html" title="FNPartnerCenterViewModel" alt="" coords="1552,505,1740,531"/>
+<area shape="rect" id="node5" href="$interface_j_m_view_model.html" title="JMViewModel" alt="" coords="1234,505,1338,531"/>
+<area shape="rect" id="node8" href="$interface_r_a_c_disposable.html" title="RACDisposable" alt="" coords="133,600,249,625"/>
+<area shape="rect" id="node11" href="$interface_r_a_c_stream.html" title="RACStream" alt="" coords="145,417,237,443"/>
+<area shape="rect" id="node13" href="$interface_r_a_c_command.html" title="RACCommand" alt="" coords="887,301,998,327"/>
+<area shape="rect" id="node14" href="$interface_f_n_partner_center_model.html" title="FNPartnerCenterModel" alt="" coords="273,657,432,683"/>
+<area shape="rect" id="node9" href="$interface_r_a_c_subject.html" title="RACSubject" alt="" coords="896,456,990,481"/>
+<area shape="rect" id="node10" href="$interface_r_a_c_signal.html" title="RACSignal" alt="" coords="477,417,563,443"/>
+<area shape="rect" id="node15" href="$interface_f_n_partner_center_view.html" title="FNPartnerCenterView" alt="" coords="1570,143,1721,168"/>
+</map>

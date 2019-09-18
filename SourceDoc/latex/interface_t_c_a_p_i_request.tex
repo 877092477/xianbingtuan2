@@ -1,0 +1,99 @@
+\hypertarget{interface_t_c_a_p_i_request}{}\section{T\+C\+A\+P\+I\+Request Class Reference}
+\label{interface_t_c_a_p_i_request}\index{T\+C\+A\+P\+I\+Request@{T\+C\+A\+P\+I\+Request}}
+
+
+C\+G\+I请求的参数字典封装辅助基类  
+
+
+
+
+{\ttfamily \#import $<$sdkdef.\+h$>$}
+
+
+
+Inheritance diagram for T\+C\+A\+P\+I\+Request\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_t_c_a_p_i_request__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for T\+C\+A\+P\+I\+Request\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{interface_t_c_a_p_i_request__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_t_c_a_p_i_request_afe52466ae0b017da705fdbd3c4052149}{cancel}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_t_c_a_p_i_request_afe52466ae0b017da705fdbd3c4052149}{cancel}}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+U\+RL $\ast$ \mbox{\hyperlink{interface_t_c_a_p_i_request_a44d82a17741381270121ea59315405fa}{api\+U\+RL}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_t_c_a_p_i_request_ab0ced56d2a2b7dc4f8dd722bf962435e}{method}}
+\item 
+T\+C\+Required\+Id \mbox{\hyperlink{interface_t_c_a_p_i_request_a0e885d2fd2fe7cb258147c6cb860e959}{param\+User\+Data}}
+\item 
+\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$ \mbox{\hyperlink{interface_t_c_a_p_i_request_ab44c438c454d8193e574e09909249a16}{response}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C\+G\+I请求的参数字典封装辅助基类 
+
+将相应属性的值以key-\/value的形式保存到参数字典中 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_t_c_a_p_i_request_afe52466ae0b017da705fdbd3c4052149}\label{interface_t_c_a_p_i_request_afe52466ae0b017da705fdbd3c4052149}} 
+\index{T\+C\+A\+P\+I\+Request@{T\+C\+A\+P\+I\+Request}!cancel@{cancel}}
+\index{cancel@{cancel}!T\+C\+A\+P\+I\+Request@{T\+C\+A\+P\+I\+Request}}
+\subsubsection{\texorpdfstring{cancel()}{cancel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) cancel \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+取消相应的\+C\+G\+I请求任务 \mbox{\Hypertarget{interface_t_c_a_p_i_request_afe52466ae0b017da705fdbd3c4052149}\label{interface_t_c_a_p_i_request_afe52466ae0b017da705fdbd3c4052149}} 
+\index{T\+C\+A\+P\+I\+Request@{T\+C\+A\+P\+I\+Request}!cancel@{cancel}}
+\index{cancel@{cancel}!T\+C\+A\+P\+I\+Request@{T\+C\+A\+P\+I\+Request}}
+\subsubsection{\texorpdfstring{cancel()}{cancel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) cancel \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+取消相应的\+C\+G\+I请求任务 
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_t_c_a_p_i_request_a44d82a17741381270121ea59315405fa}\label{interface_t_c_a_p_i_request_a44d82a17741381270121ea59315405fa}} 
+\index{T\+C\+A\+P\+I\+Request@{T\+C\+A\+P\+I\+Request}!api\+U\+RL@{api\+U\+RL}}
+\index{api\+U\+RL@{api\+U\+RL}!T\+C\+A\+P\+I\+Request@{T\+C\+A\+P\+I\+Request}}
+\subsubsection{\texorpdfstring{api\+U\+RL}{apiURL}}
+{\footnotesize\ttfamily -\/ (N\+S\+U\+RL $\ast$) api\+U\+RL\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+C\+G\+I请求的\+U\+R\+L地址 \mbox{\Hypertarget{interface_t_c_a_p_i_request_ab0ced56d2a2b7dc4f8dd722bf962435e}\label{interface_t_c_a_p_i_request_ab0ced56d2a2b7dc4f8dd722bf962435e}} 
+\index{T\+C\+A\+P\+I\+Request@{T\+C\+A\+P\+I\+Request}!method@{method}}
+\index{method@{method}!T\+C\+A\+P\+I\+Request@{T\+C\+A\+P\+I\+Request}}
+\subsubsection{\texorpdfstring{method}{method}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) method\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+C\+G\+I请求方式：\char`\"{}\+G\+E\+T\char`\"{}，\char`\"{}\+P\+O\+S\+T\char`\"{} \mbox{\Hypertarget{interface_t_c_a_p_i_request_a0e885d2fd2fe7cb258147c6cb860e959}\label{interface_t_c_a_p_i_request_a0e885d2fd2fe7cb258147c6cb860e959}} 
+\index{T\+C\+A\+P\+I\+Request@{T\+C\+A\+P\+I\+Request}!param\+User\+Data@{param\+User\+Data}}
+\index{param\+User\+Data@{param\+User\+Data}!T\+C\+A\+P\+I\+Request@{T\+C\+A\+P\+I\+Request}}
+\subsubsection{\texorpdfstring{param\+User\+Data}{paramUserData}}
+{\footnotesize\ttfamily -\/ (T\+C\+Required\+Id) param\+User\+Data\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+A\+P\+I参数中的保留字段，可以塞入任意字典支持的类型，再调用完成后会带回给调用方 \mbox{\Hypertarget{interface_t_c_a_p_i_request_ab44c438c454d8193e574e09909249a16}\label{interface_t_c_a_p_i_request_ab44c438c454d8193e574e09909249a16}} 
+\index{T\+C\+A\+P\+I\+Request@{T\+C\+A\+P\+I\+Request}!response@{response}}
+\index{response@{response}!T\+C\+A\+P\+I\+Request@{T\+C\+A\+P\+I\+Request}}
+\subsubsection{\texorpdfstring{response}{response}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$) response\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}},A\+P\+I的返回结果 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Public/\+U\+Meng\+U\+Share/\+Tencent\+Open\+A\+P\+I/sdkdef.\+h\end{DoxyCompactItemize}

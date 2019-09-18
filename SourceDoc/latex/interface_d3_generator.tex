@@ -1,0 +1,73 @@
+\hypertarget{interface_d3_generator}{}\section{D3\+Generator Class Reference}
+\label{interface_d3_generator}\index{D3\+Generator@{D3\+Generator}}
+
+
+Inheritance diagram for D3\+Generator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{interface_d3_generator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for D3\+Generator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{interface_d3_generator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(U\+I\+View\+Controller $\ast$) + \mbox{\hyperlink{interface_d3_generator_ae6507d6ef5433366f40be9762ffb5b01}{create\+View\+Controller\+With\+Dict\+:}}
+\item 
+(U\+I\+View\+Controller $\ast$) + \mbox{\hyperlink{interface_d3_generator_a341215ec01f51ca7759029dec6b41dce}{create\+View\+Controller\+With\+Dict\+And\+Push\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_d3_generator_ae6507d6ef5433366f40be9762ffb5b01}\label{interface_d3_generator_ae6507d6ef5433366f40be9762ffb5b01}} 
+\index{D3\+Generator@{D3\+Generator}!create\+View\+Controller\+With\+Dict\+:@{create\+View\+Controller\+With\+Dict\+:}}
+\index{create\+View\+Controller\+With\+Dict\+:@{create\+View\+Controller\+With\+Dict\+:}!D3\+Generator@{D3\+Generator}}
+\subsubsection{\texorpdfstring{create\+View\+Controller\+With\+Dict\+:()}{createViewControllerWithDict:()}}
+{\footnotesize\ttfamily + (U\+I\+View\+Controller $\ast$) create\+View\+Controller\+With\+Dict\+: \begin{DoxyParamCaption}\item[{(N\+S\+Dictionary$\ast$)}]{dict }\end{DoxyParamCaption}}
+
+根据字典生成viewcontroller
+
+
+\begin{DoxyParams}{Parameters}
+{\em dict} & 字典\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+U\+I\+View\+Controller 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_d3_generator_a341215ec01f51ca7759029dec6b41dce}\label{interface_d3_generator_a341215ec01f51ca7759029dec6b41dce}} 
+\index{D3\+Generator@{D3\+Generator}!create\+View\+Controller\+With\+Dict\+And\+Push\+:@{create\+View\+Controller\+With\+Dict\+And\+Push\+:}}
+\index{create\+View\+Controller\+With\+Dict\+And\+Push\+:@{create\+View\+Controller\+With\+Dict\+And\+Push\+:}!D3\+Generator@{D3\+Generator}}
+\subsubsection{\texorpdfstring{create\+View\+Controller\+With\+Dict\+And\+Push\+:()}{createViewControllerWithDictAndPush:()}}
+{\footnotesize\ttfamily + (U\+I\+View\+Controller $\ast$) create\+View\+Controller\+With\+Dict\+And\+Push\+: \begin{DoxyParamCaption}\item[{(N\+S\+Dictionary$\ast$)}]{dict }\end{DoxyParamCaption}}
+
+根据字典生成viewcontroller 并自行跳转到vc。 ~\newline
+所在vc为navigation中则pop到根页并push。 所在vc为基本viewcontroller则直接present
+
+
+\begin{DoxyParams}{Parameters}
+{\em dict} & 字典 \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_d3_generator_a341215ec01f51ca7759029dec6b41dce_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/\+Web/D3\+Generator.\+h\item 
+T\+H\+B/\+Library/\+Web/D3\+Generator.\+m\end{DoxyCompactItemize}

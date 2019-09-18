@@ -1,0 +1,102 @@
+\hypertarget{interface_alibc_login_bridge}{}\section{Alibc\+Login\+Bridge Class Reference}
+\label{interface_alibc_login_bridge}\index{Alibc\+Login\+Bridge@{Alibc\+Login\+Bridge}}
+
+
+Inheritance diagram for Alibc\+Login\+Bridge\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{interface_alibc_login_bridge__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Alibc\+Login\+Bridge\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{interface_alibc_login_bridge__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \mbox{\hyperlink{interface_alibc_login_bridge_af0b710e9e6772da1cc343af8a77b8988}{init\+Login}}
+\item 
+(void) + \mbox{\hyperlink{interface_alibc_login_bridge_aee215752ac12eb2b672d090698a5b793}{init\+Login\+With\+Appkey\+:}}
+\begin{DoxyCompactList}\small\item\em 极简版没有依赖安全模块, 需要手动传入 Appkey \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_alibc_login_bridge_a946597df9a567e8b927b39c73d7a619a}\label{interface_alibc_login_bridge_a946597df9a567e8b927b39c73d7a619a}} 
+(B\+O\+OL) + {\bfseries is\+Login\+Svr\+Avaleable}
+\item 
+\mbox{\Hypertarget{interface_alibc_login_bridge_a6134fef5fe5f72c997377e5caf7a93bf}\label{interface_alibc_login_bridge_a6134fef5fe5f72c997377e5caf7a93bf}} 
+(void) + {\bfseries show\+Login\+:success\+Callback\+:failed\+Callback\+:}
+\item 
+\mbox{\Hypertarget{interface_alibc_login_bridge_ab48a29447934e31f69fb1c31e94c934f}\label{interface_alibc_login_bridge_ab48a29447934e31f69fb1c31e94c934f}} 
+(void) + {\bfseries logout}
+\item 
+\mbox{\Hypertarget{interface_alibc_login_bridge_a39e3c6967af87c38b5c7d622e157b44c}\label{interface_alibc_login_bridge_a39e3c6967af87c38b5c7d622e157b44c}} 
+(void) + {\bfseries set\+Environment\+:}
+\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_alibc_login_bridge_afb088a201b416ba86541dfe2f9c6e9da}{is\+Login\+U\+R\+L\+:}}
+\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_alibc_login_bridge_a6c71429da4ac9d97e103a8bb5a6141d6}{is\+Logout\+Url\+:}}
+\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_alibc_login_bridge_ad5d29a3e5ba45d759cfced3335baea4d}{is\+T\+B\+Back\+Url\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_alibc_login_bridge_a16999b3633620cdfecec73604996c179}{login\+By\+U\+R\+L\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_alibc_login_bridge_af0b710e9e6772da1cc343af8a77b8988}\label{interface_alibc_login_bridge_af0b710e9e6772da1cc343af8a77b8988}} 
+\index{Alibc\+Login\+Bridge@{Alibc\+Login\+Bridge}!init\+Login@{init\+Login}}
+\index{init\+Login@{init\+Login}!Alibc\+Login\+Bridge@{Alibc\+Login\+Bridge}}
+\subsubsection{\texorpdfstring{init\+Login()}{initLogin()}}
+{\footnotesize\ttfamily + (void) init\+Login \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+登录模块标准初始化接口 \mbox{\Hypertarget{interface_alibc_login_bridge_aee215752ac12eb2b672d090698a5b793}\label{interface_alibc_login_bridge_aee215752ac12eb2b672d090698a5b793}} 
+\index{Alibc\+Login\+Bridge@{Alibc\+Login\+Bridge}!init\+Login\+With\+Appkey\+:@{init\+Login\+With\+Appkey\+:}}
+\index{init\+Login\+With\+Appkey\+:@{init\+Login\+With\+Appkey\+:}!Alibc\+Login\+Bridge@{Alibc\+Login\+Bridge}}
+\subsubsection{\texorpdfstring{init\+Login\+With\+Appkey\+:()}{initLoginWithAppkey:()}}
+{\footnotesize\ttfamily + (void) init\+Login\+With\+Appkey\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{appkey }\end{DoxyParamCaption}}
+
+
+
+极简版没有依赖安全模块, 需要手动传入 Appkey 
+
+登录模块极简版初始化接口
+
+
+\begin{DoxyParams}{Parameters}
+{\em appkey} & appkey \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_alibc_login_bridge_afb088a201b416ba86541dfe2f9c6e9da}\label{interface_alibc_login_bridge_afb088a201b416ba86541dfe2f9c6e9da}} 
+\index{Alibc\+Login\+Bridge@{Alibc\+Login\+Bridge}!is\+Login\+U\+R\+L\+:@{is\+Login\+U\+R\+L\+:}}
+\index{is\+Login\+U\+R\+L\+:@{is\+Login\+U\+R\+L\+:}!Alibc\+Login\+Bridge@{Alibc\+Login\+Bridge}}
+\subsubsection{\texorpdfstring{is\+Login\+U\+R\+L\+:()}{isLoginURL:()}}
+{\footnotesize\ttfamily + (B\+O\+OL) is\+Login\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{url }\end{DoxyParamCaption}}
+
+是否是登陆\+U\+RL \mbox{\Hypertarget{interface_alibc_login_bridge_a6c71429da4ac9d97e103a8bb5a6141d6}\label{interface_alibc_login_bridge_a6c71429da4ac9d97e103a8bb5a6141d6}} 
+\index{Alibc\+Login\+Bridge@{Alibc\+Login\+Bridge}!is\+Logout\+Url\+:@{is\+Logout\+Url\+:}}
+\index{is\+Logout\+Url\+:@{is\+Logout\+Url\+:}!Alibc\+Login\+Bridge@{Alibc\+Login\+Bridge}}
+\subsubsection{\texorpdfstring{is\+Logout\+Url\+:()}{isLogoutUrl:()}}
+{\footnotesize\ttfamily + (B\+O\+OL) is\+Logout\+Url\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{url }\end{DoxyParamCaption}}
+
+是否是登出\+U\+RL \mbox{\Hypertarget{interface_alibc_login_bridge_ad5d29a3e5ba45d759cfced3335baea4d}\label{interface_alibc_login_bridge_ad5d29a3e5ba45d759cfced3335baea4d}} 
+\index{Alibc\+Login\+Bridge@{Alibc\+Login\+Bridge}!is\+T\+B\+Back\+Url\+:@{is\+T\+B\+Back\+Url\+:}}
+\index{is\+T\+B\+Back\+Url\+:@{is\+T\+B\+Back\+Url\+:}!Alibc\+Login\+Bridge@{Alibc\+Login\+Bridge}}
+\subsubsection{\texorpdfstring{is\+T\+B\+Back\+Url\+:()}{isTBBackUrl:()}}
+{\footnotesize\ttfamily + (B\+O\+OL) is\+T\+B\+Back\+Url\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{url }\end{DoxyParamCaption}}
+
+是否是手淘跳回url \mbox{\Hypertarget{interface_alibc_login_bridge_a16999b3633620cdfecec73604996c179}\label{interface_alibc_login_bridge_a16999b3633620cdfecec73604996c179}} 
+\index{Alibc\+Login\+Bridge@{Alibc\+Login\+Bridge}!login\+By\+U\+R\+L\+:@{login\+By\+U\+R\+L\+:}}
+\index{login\+By\+U\+R\+L\+:@{login\+By\+U\+R\+L\+:}!Alibc\+Login\+Bridge@{Alibc\+Login\+Bridge}}
+\subsubsection{\texorpdfstring{login\+By\+U\+R\+L\+:()}{loginByURL:()}}
+{\footnotesize\ttfamily + (void) login\+By\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{url }\end{DoxyParamCaption}}
+
+手淘跳转回来，拿到url调用 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Alibc\+Trade\+Biz.\+framework/\+Headers/Alibc\+Login\+Bridge.\+h\end{DoxyCompactItemize}

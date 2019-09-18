@@ -1,0 +1,112 @@
+\hypertarget{interface_alibc_u_r_l_bus}{}\section{Alibc\+U\+R\+L\+Bus Class Reference}
+\label{interface_alibc_u_r_l_bus}\index{Alibc\+U\+R\+L\+Bus@{Alibc\+U\+R\+L\+Bus}}
+
+
+Inheritance diagram for Alibc\+U\+R\+L\+Bus\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{interface_alibc_u_r_l_bus__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Alibc\+U\+R\+L\+Bus\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{interface_alibc_u_r_l_bus__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_alibc_u_r_l_bus_a4f31e98b0fcd2cf4292cc2a54841f6a1}{add\+Handle\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_alibc_u_r_l_bus_af4a35e8c5e4fbcef5b08ecd19620ac27}{remove\+Handle\+:}}
+\item 
+\mbox{\Hypertarget{interface_alibc_u_r_l_bus_a63b0a6851192ae76939c420466f976e3}\label{interface_alibc_u_r_l_bus_a63b0a6851192ae76939c420466f976e3}} 
+(void) -\/ {\bfseries add\+Filter\+:}
+\item 
+\mbox{\Hypertarget{interface_alibc_u_r_l_bus_a5d4b14b0de14c3897f31545fb8c27ed8}\label{interface_alibc_u_r_l_bus_a5d4b14b0de14c3897f31545fb8c27ed8}} 
+(void) -\/ {\bfseries remove\+Filter\+:}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{interface_alibc_u_r_l_bus_a899cf42bb842558727058ff261e68cfd}{handle\+U\+R\+L\+:context\+:}}
+\item 
+(\mbox{\hyperlink{interface_alibc_u_r_l_process_result}{Alibc\+U\+R\+L\+Process\+Result}} $\ast$) -\/ \mbox{\hyperlink{interface_alibc_u_r_l_bus_aec652f94f7ac2556efd091669ae76298}{process\+U\+R\+L\+:context\+:}}
+\item 
+\mbox{\Hypertarget{interface_alibc_u_r_l_bus_a7f5b59977ee11127e380512f6cb991c0}\label{interface_alibc_u_r_l_bus_a7f5b59977ee11127e380512f6cb991c0}} 
+(B\+O\+OL) -\/ {\bfseries handle\+Open\+U\+R\+L\+:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_alibc_u_r_l_bus_ae5f5a412f04cbefca2636513c81e2b2c}\label{interface_alibc_u_r_l_bus_ae5f5a412f04cbefca2636513c81e2b2c}} 
+(instancetype) + {\bfseries default\+Bus}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_alibc_u_r_l_bus_a4f31e98b0fcd2cf4292cc2a54841f6a1}\label{interface_alibc_u_r_l_bus_a4f31e98b0fcd2cf4292cc2a54841f6a1}} 
+\index{Alibc\+U\+R\+L\+Bus@{Alibc\+U\+R\+L\+Bus}!add\+Handle\+:@{add\+Handle\+:}}
+\index{add\+Handle\+:@{add\+Handle\+:}!Alibc\+U\+R\+L\+Bus@{Alibc\+U\+R\+L\+Bus}}
+\subsubsection{\texorpdfstring{add\+Handle\+:()}{addHandle:()}}
+{\footnotesize\ttfamily -\/ (void) add\+Handle\+: \begin{DoxyParamCaption}\item[{(id$<$ Alibc\+U\+R\+L\+Bus\+Handle $>$)}]{handle }\end{DoxyParamCaption}}
+
+添加一个 Handle 实现
+
+
+\begin{DoxyParams}{Parameters}
+{\em handle} & Handle 实例 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_alibc_u_r_l_bus_a899cf42bb842558727058ff261e68cfd}\label{interface_alibc_u_r_l_bus_a899cf42bb842558727058ff261e68cfd}} 
+\index{Alibc\+U\+R\+L\+Bus@{Alibc\+U\+R\+L\+Bus}!handle\+U\+R\+L\+:context\+:@{handle\+U\+R\+L\+:context\+:}}
+\index{handle\+U\+R\+L\+:context\+:@{handle\+U\+R\+L\+:context\+:}!Alibc\+U\+R\+L\+Bus@{Alibc\+U\+R\+L\+Bus}}
+\subsubsection{\texorpdfstring{handle\+U\+R\+L\+:context\+:()}{handleURL:context:()}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) handle\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{url }\item[{context:(\mbox{\hyperlink{interface_alibc_u_r_l_bus_context}{Alibc\+U\+R\+L\+Bus\+Context}} $\ast$)}]{context }\end{DoxyParamCaption}}
+
+处理\+U\+RL 
+\begin{DoxyParams}{Parameters}
+{\em url} & 原始\+U\+RL \\
+\hline
+{\em context} & 总线上下文 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+是否处理 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_alibc_u_r_l_bus_aec652f94f7ac2556efd091669ae76298}\label{interface_alibc_u_r_l_bus_aec652f94f7ac2556efd091669ae76298}} 
+\index{Alibc\+U\+R\+L\+Bus@{Alibc\+U\+R\+L\+Bus}!process\+U\+R\+L\+:context\+:@{process\+U\+R\+L\+:context\+:}}
+\index{process\+U\+R\+L\+:context\+:@{process\+U\+R\+L\+:context\+:}!Alibc\+U\+R\+L\+Bus@{Alibc\+U\+R\+L\+Bus}}
+\subsubsection{\texorpdfstring{process\+U\+R\+L\+:context\+:()}{processURL:context:()}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_alibc_u_r_l_process_result}{Alibc\+U\+R\+L\+Process\+Result}} $\ast$) process\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{url }\item[{context:(\mbox{\hyperlink{interface_alibc_u_r_l_bus_context}{Alibc\+U\+R\+L\+Bus\+Context}} $\ast$)}]{context }\end{DoxyParamCaption}}
+
+过滤并处理\+U\+RL 
+\begin{DoxyParams}{Parameters}
+{\em url} & 原始\+U\+RL \\
+\hline
+{\em context} & 总线上下文 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+处理结果 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_alibc_u_r_l_bus_af4a35e8c5e4fbcef5b08ecd19620ac27}\label{interface_alibc_u_r_l_bus_af4a35e8c5e4fbcef5b08ecd19620ac27}} 
+\index{Alibc\+U\+R\+L\+Bus@{Alibc\+U\+R\+L\+Bus}!remove\+Handle\+:@{remove\+Handle\+:}}
+\index{remove\+Handle\+:@{remove\+Handle\+:}!Alibc\+U\+R\+L\+Bus@{Alibc\+U\+R\+L\+Bus}}
+\subsubsection{\texorpdfstring{remove\+Handle\+:()}{removeHandle:()}}
+{\footnotesize\ttfamily -\/ (void) remove\+Handle\+: \begin{DoxyParamCaption}\item[{(id$<$ Alibc\+U\+R\+L\+Bus\+Handle $>$)}]{handle }\end{DoxyParamCaption}}
+
+移除一个 Handle 实现
+
+
+\begin{DoxyParams}{Parameters}
+{\em handle} & Handle 实例 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Alibc\+Trade\+Common.\+framework/\+Headers/Alibc\+U\+R\+L\+Bus.\+h\end{DoxyCompactItemize}

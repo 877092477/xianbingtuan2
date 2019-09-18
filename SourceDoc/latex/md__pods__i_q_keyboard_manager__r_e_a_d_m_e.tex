@@ -1,0 +1,167 @@
+ 
+
+\section*{\mbox{\hyperlink{interface_i_q_keyboard_manager}{I\+Q\+Keyboard\+Manager}}}
+
+
+
+\href{https://travis-ci.org/hackiftekhar/IQKeyboardManager}{\tt } \href{https://coveralls.io/r/hackiftekhar/IQKeyboardManager?branch=master}{\tt } \href{https://landscape.io/github/hackiftekhar/IQKeyboardManager/master}{\tt }
+
+Often while developing an app, We ran into an issues where the i\+Phone keyboard slide up and cover the {\ttfamily U\+I\+Text\+Field/\+U\+I\+Text\+View}. {\ttfamily \mbox{\hyperlink{interface_i_q_keyboard_manager}{I\+Q\+Keyboard\+Manager}}} allows you to prevent issues of the keyboard sliding up and cover {\ttfamily U\+I\+Text\+Field/\+U\+I\+Text\+View} without needing you to enter any code and no additional setup required. To use {\ttfamily \mbox{\hyperlink{interface_i_q_keyboard_manager}{I\+Q\+Keyboard\+Manager}}} you simply need to add source files to your project.
+
+\paragraph*{Key Features}
+
+\href{http://issuestats.com/github/hackiftekhar/iqkeyboardmanager}{\tt } \href{http://issuestats.com/github/hackiftekhar/iqkeyboardmanager}{\tt }
+
+1) {\ttfamily $\ast$$\ast$\+C\+O\+D\+E\+L\+E\+S\+S$\ast$$\ast$, Zero Line Of Code}
+
+2) {\ttfamily Works Automatically}
+
+3) {\ttfamily No More U\+I\+Scroll\+View}
+
+4) {\ttfamily No More Subclasses}
+
+5) {\ttfamily No More Manual Work}
+
+6) {\ttfamily No More \#imports}
+
+{\ttfamily \mbox{\hyperlink{interface_i_q_keyboard_manager}{I\+Q\+Keyboard\+Manager}}} works on all orientations, and with the toolbar. There are also nice optional features allowing you to customize the distance from the text field, add the next/previous done button as a keyboard U\+I\+Toolbar, play sounds when the user navigations through the form and more.
+
+\subsection*{Screenshot}
+
+\href{http://youtu.be/6nhLw6hju2A}{\tt } \href{http://youtu.be/6nhLw6hju2A}{\tt }
+
+\subsection*{G\+IF animation}
+
+\href{http://youtu.be/6nhLw6hju2A}{\tt }
+
+\subsection*{Video}
+
+\href{http://youtu.be/WAYc2Qj-OQg}{\tt }
+
+\subsection*{Warning}
+
+
+\begin{DoxyItemize}
+\item {\bfseries If you\textquotesingle{}re planning to build S\+D\+K/library/framework and wants to handle U\+I\+Text\+Field/\+U\+I\+Text\+View with \mbox{\hyperlink{interface_i_q_keyboard_manager}{I\+Q\+Keyboard\+Manager}} then you\textquotesingle{}re totally going on wrong way.} I would never suggest to add \mbox{\hyperlink{interface_i_q_keyboard_manager}{I\+Q\+Keyboard\+Manager}} as dependency/adding/shipping with any third-\/party library, instead of adding \mbox{\hyperlink{interface_i_q_keyboard_manager}{I\+Q\+Keyboard\+Manager}} you should implement your custom solution to achieve same result. \mbox{\hyperlink{interface_i_q_keyboard_manager}{I\+Q\+Keyboard\+Manager}} is totally designed for projects to help developers for their convenience, it\textquotesingle{}s not designed for adding/dependency/shipping with any third-\/party library, because {\bfseries doing this could block adoption by other developers for their projects as well(who are not using \mbox{\hyperlink{interface_i_q_keyboard_manager}{I\+Q\+Keyboard\+Manager}} and implemented their custom solution to handle U\+I\+Text\+Field/\+U\+I\+Text\+View throught the project).}
+\item If I\+Q\+Keybaord\+Manager conflicts with other third-\/party library, then it\textquotesingle{}s developer responsibility to enable/disable \mbox{\hyperlink{interface_i_q_keyboard_manager}{I\+Q\+Keyboard\+Manager}} when presenting/dismissing third-\/party library UI. Third-\/party libraries are not responsible to handle \mbox{\hyperlink{interface_i_q_keyboard_manager}{I\+Q\+Keyboard\+Manager}}.
+\end{DoxyItemize}
+
+\subsection*{Requirements}
+
+\mbox{[}\mbox{]}()
+
+\paragraph*{\mbox{\hyperlink{interface_i_q_keyboard_manager}{I\+Q\+Keyboard\+Manager}}\+:-\/}
+
+\href{https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html}{\tt }
+
+Minimum i\+OS Target\+: i\+OS 7.\+0
+
+Minimum Xcode Version\+: Xcode 5.\+1.\+1
+
+\paragraph*{I\+Q\+Keyboard\+Manager\+Swift\+:-\/}
+
+\href{https://developer.apple.com/swift}{\tt }
+
+Minimum i\+OS Target\+: i\+OS 7.\+0
+
+Minimum Xcode Version\+: Xcode 7
+
+\paragraph*{Demo Project\+:-\/}
+
+Minimum Xcode Version\+: Xcode 7
+
+\section*{Installation }
+
+\paragraph*{Cocoapod Method\+:-\/}
+
+\href{http://cocoadocs.org/docsets/IQKeyboardManager}{\tt }
+
+$\ast$$\ast$\+Note\+:-\/$\ast$$\ast$ 3.\+3.\+7 is the last i\+OS 7 supported version.
+
+$\ast$$\ast$$\ast$\+I\+Q\+Keyboard\+Manager (Objective-\/C)\+:-\/$\ast$$\ast$$\ast$ \mbox{\hyperlink{interface_i_q_keyboard_manager}{I\+Q\+Keyboard\+Manager}} is available through \href{http://cocoapods.org}{\tt Cocoa\+Pods}, to install it simply add the following line to your Podfile\+: (\href{https://github.com/hackiftekhar/IQKeyboardManager/issues/9}{\tt \#9})
+
+`pod \textquotesingle{}\mbox{\hyperlink{interface_i_q_keyboard_manager}{I\+Q\+Keyboard\+Manager}}'\`{}
+
+$\ast$$\ast$$\ast$\+I\+Q\+Keyboard\+Manager (Swift)\+:-\/$\ast$$\ast$$\ast$ I\+Q\+Keyboard\+Manager\+Swift is available through \href{http://cocoapods.org}{\tt Cocoa\+Pods}, to install it simply add the following line to your Podfile\+: (\href{https://github.com/hackiftekhar/IQKeyboardManager/issues/236}{\tt \#236})
+
+{\itshape Swift 2.\+1 (Xcode 7.\+1)}
+
+`pod \textquotesingle{}I\+Q\+Keyboard\+Manager\+Swift'\`{}
+
+{\itshape Or}
+
+`pod \textquotesingle{}I\+Q\+Keyboard\+Manager\+Swift', \textquotesingle{}3.\+3.\+4\textquotesingle{}\`{}
+
+{\itshape Swift 2.\+0 (Xcode 7.\+0)}
+
+`pod \textquotesingle{}I\+Q\+Keyboard\+Manager\+Swift', \textquotesingle{}3.\+3.\+3.\+1\textquotesingle{}\`{}
+
+{\itshape Swift 1.\+2 (Xcode 6.\+4)}
+
+`pod \textquotesingle{}I\+Q\+Keyboard\+Manager\+Swift', \textquotesingle{}3.\+3.\+1\textquotesingle{}\`{}
+
+In App\+Delegate.\+swift, just import I\+Q\+Keyboard\+Manager\+Swift framework and enable \mbox{\hyperlink{interface_i_q_keyboard_manager}{I\+Q\+Keyboard\+Manager}}.
+
+
+\begin{DoxyCode}
+import IQKeyboardManagerSwift
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate \{
+
+    var window: UIWindow?
+
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject:
+       AnyObject]?) -> Bool \{
+
+    IQKeyboardManager.sharedManager().enable = true
+
+    return true
+    \}
+\}
+\end{DoxyCode}
+
+
+\paragraph*{Source Code Method\+:-\/}
+
+\mbox{[}\mbox{]}()
+
+{\itshape {\bfseries \mbox{\hyperlink{interface_i_q_keyboard_manager}{I\+Q\+Keyboard\+Manager}} (Objective-\/C)\+:-\/$\ast$$\ast$$\ast$ Just $\ast$$\ast$$\ast$drag and drop}} {\ttfamily I\+Q\+Key\+Board\+Manager} directory from demo project to your project. That\textquotesingle{}s it.
+
+{\itshape {\bfseries \mbox{\hyperlink{interface_i_q_keyboard_manager}{I\+Q\+Keyboard\+Manager}} (Swift)\+:-\/$\ast$$\ast$$\ast$ $\ast$$\ast$$\ast$\+Drag and drop}} {\ttfamily I\+Q\+Key\+Board\+Manager\+Swift} directory from demo project to your project
+
+In App\+Delegate.\+swift, just enable \mbox{\hyperlink{interface_i_q_keyboard_manager}{I\+Q\+Keyboard\+Manager}}.
+
+
+\begin{DoxyCode}
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate \{
+
+    var window: UIWindow?
+
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject:
+       AnyObject]?) -> Bool \{
+
+    IQKeyboardManager.sharedManager().enable = true
+
+    return true
+    \}
+\}
+\end{DoxyCode}
+
+
+\subsection*{Known Issues\+:-\/}
+
+
+
+\paragraph*{1) Keyboard does not appear in i\+OS Simulator (\href{https://github.com/hackiftekhar/IQKeyboardManager/issues/62}{\tt \#62}, \href{https://github.com/hackiftekhar/IQKeyboardManager/issues/72}{\tt \#72}, \href{https://github.com/hackiftekhar/IQKeyboardManager/issues/75}{\tt \#75}, \href{https://github.com/hackiftekhar/IQKeyboardManager/issues/90}{\tt \#90}, \href{https://github.com/hackiftekhar/IQKeyboardManager/issues/100}{\tt \#100})}
+
+If keyboard does not appear in i\+OS Simulator and only toolbar is appearing over it (if enable\+Auto\+Toolbar = Y\+ES), then check this setting
+
+{\itshape {\bfseries Xcode 6\+:-\/$\ast$$\ast$$\ast$ Goto $\ast$$\ast$$\ast$i\+OS Simulator-\/$>$Menu-\/$>$Hardware-\/$>$Keyboard-\/$>$Connect Hardware Keyboard}}, and deselect that.
+
+{\itshape {\bfseries Xcode 5 and earlier\+:-\/$\ast$$\ast$$\ast$ Goto $\ast$$\ast$$\ast$i\+OS Simulator-\/$>$Menu-\/$>$Hardware-\/$>$Simulate Hardware Keyboard}}, and deselect that.
+
+\paragraph*{2) set\+Enable = NO doesn\textquotesingle{}t disable automatic U\+I\+Toolbar (\href{https://github.com/hackiftekhar/IQKeyboardManager/issues/117}{\tt \#117}, \href{https://github.com/hackiftekhar/IQKeyboardManager/issues/136}{\tt \#136}, \href{https://github.com/hackiftekhar/IQKeyboardManager/issues/147}{\tt \#147})}
+
+If you set {\itshape {\bfseries \mbox{[}\mbox{[}\mbox{\hyperlink{interface_i_q_keyboard_manager}{I\+Q\+Keyboard\+Manager}} shared\+Manager\mbox{]} set\+Enable\+:NO\mbox{]}}} and still automatic toolbar appears on text\+Fields? Probably you haven\textquotesingle{}t heard about $\ast$$\ast$$\ast$ 

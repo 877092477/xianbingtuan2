@@ -1,0 +1,148 @@
+\hypertarget{interface_view_controller}{}\section{View\+Controller Interface Reference}
+\label{interface_view_controller}\index{View\+Controller@{View\+Controller}}
+
+
+\subsection{Detailed Description}
+
+\begin{DoxyCode}
+```objective-c
+@implementation ViewController
+
+- (void)viewDidLoad
+\{
+    [super viewDidLoad];
+
+    self.magicView.navigationColor = [UIColor whiteColor];
+    self.magicView.sliderColor = [UIColor redColor];
+    self.magicView.layoutStyle = VTLayoutStyleDefault;
+    self.magicView.switchStyle = VTSwitchStyleDefault;
+    self.magicView.navigationHeight = 40.f;
+    self.magicView.dataSource = self;
+    self.magicView.delegate = self;
+
+    [self.magicView reloadData];
+\}
+\end{DoxyCode}
+
+
+\paragraph*{Protocals}
+
+You must conform to {\ttfamily $<$\mbox{\hyperlink{class_v_t_magic_view_data_source-p}{V\+T\+Magic\+View\+Data\+Source}}$>$}, {\ttfamily $<$\mbox{\hyperlink{class_v_t_magic_view_delegate-p}{V\+T\+Magic\+View\+Delegate}}$>$} and {\ttfamily $<$\mbox{\hyperlink{class_v_t_magic_reuse_protocol-p}{V\+T\+Magic\+Reuse\+Protocol}}$>$} are optional.
+
+\subparagraph*{\mbox{\hyperlink{class_v_t_magic_view_data_source-p}{V\+T\+Magic\+View\+Data\+Source}}}
+
+
+\begin{DoxyCode}
+- (NSArray<NSString *> *)menuTitlesForMagicView:(VTMagicView *)magicView
+\{
+    return \_menuList;
+\}
+
+- (UIButton *)magicView:(VTMagicView *)magicView menuItemAtIndex:(NSUInteger)itemIndex
+\{
+    static NSString *itemIdentifier = @"itemIdentifier";
+    UIButton *menuItem = [magicView dequeueReusableItemWithIdentifier:itemIdentifier];
+    if (!menuItem) \{
+        menuItem = [UIButton buttonWithType:UIButtonTypeCustom];
+        [menuItem setTitleColor:RGBCOLOR(50, 50, 50) forState:UIControlStateNormal];
+        [menuItem setTitleColor:RGBCOLOR(169, 37, 37) forState:UIControlStateSelected];
+        menuItem.titleLabel.font = [UIFont fontWithName:@"Helvetica" size:16.f];
+    \}
+    return menuItem;
+\}
+
+- (UIViewController *)magicView:(VTMagicView *)magicView viewControllerAtPage:(NSUInteger)pageIndex
+\{
+    if (0 == pageIndex) \{
+        static NSString *recomId = @"recom.identifier";
+        VTRecomViewController *recomViewController = [magicView dequeueReusablePageWithIdentifier:recomId];
+        if (!recomViewController) \{
+            recomViewController = [[VTRecomViewController alloc] init];
+        \}
+        return recomViewController;
+    \}
+
+    static NSString *gridId = @"grid.identifier";
+    VTGridViewController *gridViewController = [magicView dequeueReusablePageWithIdentifier:gridId];
+    if (!gridViewController) \{
+        gridViewController = [[VTGridViewController alloc] init];
+    \}
+    return gridViewController;
+\}
+\end{DoxyCode}
+
+
+\subparagraph*{\mbox{\hyperlink{class_v_t_magic_view_delegate-p}{V\+T\+Magic\+View\+Delegate}}}
+
+
+\begin{DoxyCode}
+- (void)magicView:(VTMagicView *)magicView viewDidAppeare:(UIViewController *)viewController
+       atPage:(NSUInteger)pageIndex
+\{
+    NSLog(@"index:%ld viewDidAppeare:%@",pageIndex, viewController.view);
+\}
+
+- (void)magicView:(VTMagicView *)magicView viewDidDisappeare:(UIViewController *)viewController
+       atPage:(NSUInteger)pageIndex
+\{
+    NSLog(@"index:%ld viewDidDisappeare:%@",pageIndex, viewController.view);
+\}
+
+- (void)magicView:(VTMagicView *)magicView didSelectItemAtIndex:(NSUInteger)itemIndex
+\{
+    NSLog(@"didSelectItemAtIndex:%ld", (long)itemIndex);
+\}
+\end{DoxyCode}
+
+
+\subparagraph*{\mbox{\hyperlink{class_v_t_magic_reuse_protocol-p}{V\+T\+Magic\+Reuse\+Protocol}}}
+
+
+\begin{DoxyCode}
+- (void)vtm\_prepareForReuse
+\{
+    NSLog(@"clear old data if needed:%@", self);
+\}
+\end{DoxyCode}
+
+
+\subsubsection*{Features}
+
+\subparagraph*{Obtain magic\+Controller}
+
+You can obtain the nearest magic\+Controller in any child view controller which is conforms to {\ttfamily $<$\mbox{\hyperlink{class_v_t_magic_protocol-p}{V\+T\+Magic\+Protocol}}$>$}, after you import file {\ttfamily V\+T\+Magic.\+h}. 
+\begin{DoxyCode}
+NSInteger currentPage = [self.magicController currentPage];
+UIViewController *viewController = self.magicController.currentViewController;
+\end{DoxyCode}
+
+
+\subparagraph*{Switch to specified page}
+
+
+\begin{DoxyCode}
+[self.magicView switchToPage:3 animated:YES];
+\end{DoxyCode}
+ or like this 
+\begin{DoxyCode}
+[self.magicController switchToPage:3 animated:YES];
+\end{DoxyCode}
+ \subparagraph*{Obtain specified view controller}
+
+
+\begin{DoxyCode}
+UIViewController *viewController = [self.magicView viewControllerAtPage:3];
+\end{DoxyCode}
+ or like this 
+\begin{DoxyCode}
+UIViewController *viewController = [self.magicController viewControllerAtPage:3];
+\end{DoxyCode}
+
+
+\subsubsection*{License}
+
+V\+T\+Magic is released under the M\+IT license. See L\+I\+C\+E\+N\+SE for details. 
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+V\+T\+Magic/R\+E\+A\+D\+M\+E.\+md\end{DoxyCompactItemize}

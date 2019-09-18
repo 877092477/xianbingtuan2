@@ -1,0 +1,5 @@
+<map id="+[SDCycleScrollView clearImagesCache]" name="+[SDCycleScrollView clearImagesCache]">
+<area shape="rect" id="node2" href="$interface_s_d_web_image_manager.html#a03e60850e7f6da2aa38b7db870c93626" title="+[SDWebImageManager\l sharedManager]" alt="" coords="209,5,377,44"/>
+<area shape="rect" id="node3" href="$interface_s_d_image_cache.html#a2a9bcc872d749959df5dd458247b3301" title="&#45;[SDImageCache clearDisk]" alt="" coords="200,68,386,93"/>
+<area shape="rect" id="node4" href="$interface_s_d_image_cache.html#ab936a83a1b711209d30f9051cc3658cc" title="&#45;[SDImageCache clearDisk\lOnCompletion:]" alt="" coords="434,61,616,100"/>
+</map>

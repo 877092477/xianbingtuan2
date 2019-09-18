@@ -1,0 +1,137 @@
+\hypertarget{interface_app_monitor_measure_set}{}\section{App\+Monitor\+Measure\+Set Class Reference}
+\label{interface_app_monitor_measure_set}\index{App\+Monitor\+Measure\+Set@{App\+Monitor\+Measure\+Set}}
+
+
+Inheritance diagram for App\+Monitor\+Measure\+Set\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{interface_app_monitor_measure_set__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for App\+Monitor\+Measure\+Set\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{interface_app_monitor_measure_set__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_app_monitor_measure_set_ae97c6d55bc329ce233358aab3c16c01a}\label{interface_app_monitor_measure_set_ae97c6d55bc329ce233358aab3c16c01a}} 
+(B\+O\+OL) -\/ {\bfseries valid\+:\+Monitor\+Point\+:measure\+Values\+:}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_app_monitor_measure_set_aa298147b064981faaa09cc60ae3cd72d}{add\+Measure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_app_monitor_measure_set_abca2f2157a4a76f42617bc9b043b6b06}{add\+Measure\+With\+Name\+:}}
+\item 
+(\mbox{\hyperlink{interface_app_monitor_measure}{App\+Monitor\+Measure}} $\ast$) -\/ \mbox{\hyperlink{interface_app_monitor_measure_set_a000f95b993f767c95c15fab2d878c868}{measure\+For\+Name\+:}}
+\item 
+(N\+S\+Mutable\+Ordered\+Set $\ast$) -\/ \mbox{\hyperlink{interface_app_monitor_measure_set_a5a5ba0cebd83395a1b1ba9f66c868c21}{measures}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_app_monitor_measure_set_a94e92d1fb4d82c1a32c59f4321945216}{set\+Constant\+Value\+:}}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_app_monitor_measure_set_af18795825db602c3c568839f8cbc6028}{set\+With\+Array\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_app_monitor_measure_set_aa298147b064981faaa09cc60ae3cd72d}\label{interface_app_monitor_measure_set_aa298147b064981faaa09cc60ae3cd72d}} 
+\index{App\+Monitor\+Measure\+Set@{App\+Monitor\+Measure\+Set}!add\+Measure\+:@{add\+Measure\+:}}
+\index{add\+Measure\+:@{add\+Measure\+:}!App\+Monitor\+Measure\+Set@{App\+Monitor\+Measure\+Set}}
+\subsubsection{\texorpdfstring{add\+Measure\+:()}{addMeasure:()}}
+{\footnotesize\ttfamily -\/ (void) add\+Measure\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_app_monitor_measure}{App\+Monitor\+Measure}} $\ast$)}]{measure }\end{DoxyParamCaption}}
+
+增加指标
+
+
+\begin{DoxyParams}{Parameters}
+{\em measure} & 指标对象 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_app_monitor_measure_set_abca2f2157a4a76f42617bc9b043b6b06}\label{interface_app_monitor_measure_set_abca2f2157a4a76f42617bc9b043b6b06}} 
+\index{App\+Monitor\+Measure\+Set@{App\+Monitor\+Measure\+Set}!add\+Measure\+With\+Name\+:@{add\+Measure\+With\+Name\+:}}
+\index{add\+Measure\+With\+Name\+:@{add\+Measure\+With\+Name\+:}!App\+Monitor\+Measure\+Set@{App\+Monitor\+Measure\+Set}}
+\subsubsection{\texorpdfstring{add\+Measure\+With\+Name\+:()}{addMeasureWithName:()}}
+{\footnotesize\ttfamily -\/ (void) add\+Measure\+With\+Name\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{name }\end{DoxyParamCaption}}
+
+增加指标对象
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & 指标名称 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_app_monitor_measure_set_a000f95b993f767c95c15fab2d878c868}\label{interface_app_monitor_measure_set_a000f95b993f767c95c15fab2d878c868}} 
+\index{App\+Monitor\+Measure\+Set@{App\+Monitor\+Measure\+Set}!measure\+For\+Name\+:@{measure\+For\+Name\+:}}
+\index{measure\+For\+Name\+:@{measure\+For\+Name\+:}!App\+Monitor\+Measure\+Set@{App\+Monitor\+Measure\+Set}}
+\subsubsection{\texorpdfstring{measure\+For\+Name\+:()}{measureForName:()}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_app_monitor_measure}{App\+Monitor\+Measure}} $\ast$) measure\+For\+Name\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{name }\end{DoxyParamCaption}}
+
+获取指标对象
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & 指标名称 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_app_monitor_measure_set_a5a5ba0cebd83395a1b1ba9f66c868c21}\label{interface_app_monitor_measure_set_a5a5ba0cebd83395a1b1ba9f66c868c21}} 
+\index{App\+Monitor\+Measure\+Set@{App\+Monitor\+Measure\+Set}!measures@{measures}}
+\index{measures@{measures}!App\+Monitor\+Measure\+Set@{App\+Monitor\+Measure\+Set}}
+\subsubsection{\texorpdfstring{measures()}{measures()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Mutable\+Ordered\+Set $\ast$) measures \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+获取指标对象的列表
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_app_monitor_measure_set_a94e92d1fb4d82c1a32c59f4321945216}\label{interface_app_monitor_measure_set_a94e92d1fb4d82c1a32c59f4321945216}} 
+\index{App\+Monitor\+Measure\+Set@{App\+Monitor\+Measure\+Set}!set\+Constant\+Value\+:@{set\+Constant\+Value\+:}}
+\index{set\+Constant\+Value\+:@{set\+Constant\+Value\+:}!App\+Monitor\+Measure\+Set@{App\+Monitor\+Measure\+Set}}
+\subsubsection{\texorpdfstring{set\+Constant\+Value\+:()}{setConstantValue:()}}
+{\footnotesize\ttfamily -\/ (void) set\+Constant\+Value\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_app_monitor_measure_value_set}{App\+Monitor\+Measure\+Value\+Set}} $\ast$)}]{measure\+Values }\end{DoxyParamCaption}}
+
+设置定值维度
+
+
+\begin{DoxyParams}{Parameters}
+{\em measure\+Values} & key为指标名称，value为内容 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_app_monitor_measure_set_af18795825db602c3c568839f8cbc6028}\label{interface_app_monitor_measure_set_af18795825db602c3c568839f8cbc6028}} 
+\index{App\+Monitor\+Measure\+Set@{App\+Monitor\+Measure\+Set}!set\+With\+Array\+:@{set\+With\+Array\+:}}
+\index{set\+With\+Array\+:@{set\+With\+Array\+:}!App\+Monitor\+Measure\+Set@{App\+Monitor\+Measure\+Set}}
+\subsubsection{\texorpdfstring{set\+With\+Array\+:()}{setWithArray:()}}
+{\footnotesize\ttfamily + (instancetype) set\+With\+Array\+: \begin{DoxyParamCaption}\item[{(N\+S\+Array $\ast$)}]{array }\end{DoxyParamCaption}}
+
+根据列表初始化指标集合对象
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & N\+S\+String类型的数组 string为\+Name; \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+U\+T\+Mini.\+framework/\+Versions/\+A/\+Headers/App\+Monitor\+Measure\+Set.\+h\end{DoxyCompactItemize}

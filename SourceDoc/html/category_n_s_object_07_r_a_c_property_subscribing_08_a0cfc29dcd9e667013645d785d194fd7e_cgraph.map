@@ -1,0 +1,14 @@
+<map id="&#45;[NSObject(RACPropertySubscribing) rac_valuesAndChangesForKeyPath:options:observer:]" name="&#45;[NSObject(RACPropertySubscribing) rac_valuesAndChangesForKeyPath:options:observer:]">
+<area shape="rect" id="node2" href="$interface_r_a_c_stream.html#a90ef5f217dc285dc831cc0d45166a529" title="+[RACStream zip:]" alt="" coords="310,5,442,31"/>
+<area shape="rect" id="node3" href="$interface_r_a_c_signal.html#a27a1b1106a2543dcd472467a7c364dc7" title="Returns a signal that never completes. " alt="" coords="306,108,445,133"/>
+<area shape="rect" id="node4" href="$interface_r_a_c_signal.html#a4ba374f148d6e2a0339c4f4202b4dc26" title="+[RACSignal createSignal:]" alt="" coords="507,160,690,185"/>
+<area shape="rect" id="node6" href="$interface_r_a_c_stream.html#aedc0b75ca3e6d0f81f006c7c3c6a1d76" title="&#45;[RACStream setNameWithFormat:]" alt="" coords="968,136,1202,161"/>
+<area shape="rect" id="node7" href="$interface_r_a_c_signal.html#afb214e9e69dc34880b306c118b8e56d4" title="&#45;[RACSignal takeUntil:]" alt="" coords="297,307,455,332"/>
+<area shape="rect" id="node5" href="$interface_r_a_c_dynamic_signal.html#aeffa754150754dd6296d5225b5c9c7fe" title="+[RACDynamicSignal\l createSignal:]" alt="" coords="756,157,906,196"/>
+<area shape="rect" id="node8" href="$interface_r_a_c_compound_disposable.html#a6352abe7deb93063a0285c4b719bd0d5" title="Creates and returns a new compound disposable. " alt="" coords="503,272,695,311"/>
+<area shape="rect" id="node9" href="$interface_r_a_c_disposable.html#a3158dc03efcf49e7a5174acc6e3711d5" title="&#45;[RACDisposable dispose]" alt="" coords="743,365,920,391"/>
+<area shape="rect" id="node10" href="$interface_r_a_c_signal.html#afa988fdb4bcfe4d9b7b944879d163a52" title="Convenience method to subscribe to the next and completed events. " alt="" coords="507,449,690,488"/>
+<area shape="rect" id="node12" href="$interface_r_a_c_compound_disposable.html#adfa5cef74d293abc13c6137289e6f908" title="&#45;[RACCompoundDisposable\l addDisposable:]" alt="" coords="504,387,693,425"/>
+<area shape="rect" id="node13" href="$interface_r_a_c_signal.html#a50b7b51715316c5da372cc0cf96039f6" title="Convenience method to subscribe to the next, completed, and error events. " alt="" coords="507,512,690,551"/>
+<area shape="rect" id="node11" href="$interface_r_a_c_signal.html#aeab76d632d98bbc321ec5e19575377eb" title="&#45;[RACSignal subscribe:]" alt="" coords="750,487,913,512"/>
+</map>

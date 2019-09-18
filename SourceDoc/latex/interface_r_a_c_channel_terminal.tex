@@ -1,0 +1,53 @@
+\hypertarget{interface_r_a_c_channel_terminal}{}\section{R\+A\+C\+Channel\+Terminal Class Reference}
+\label{interface_r_a_c_channel_terminal}\index{R\+A\+C\+Channel\+Terminal@{R\+A\+C\+Channel\+Terminal}}
+
+
+{\ttfamily \#import $<$R\+A\+C\+Channel.\+h$>$}
+
+
+
+Inheritance diagram for R\+A\+C\+Channel\+Terminal\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{interface_r_a_c_channel_terminal__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for R\+A\+C\+Channel\+Terminal\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{interface_r_a_c_channel_terminal__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_r_a_c_channel_terminal_a9292333e9c26622eabe4eea2d15abbd7}\label{interface_r_a_c_channel_terminal_a9292333e9c26622eabe4eea2d15abbd7}} 
+((unavailable(\char`\"{}Instantiate a \mbox{\hyperlink{interface_r_a_c_channel}{R\+A\+C\+Channel}} instead\char`\"{}) -\/ {\bfseries \+\_\+\+\_\+attribute\+\_\+\+\_\+}
+\item 
+\mbox{\Hypertarget{interface_r_a_c_channel_terminal_a9292333e9c26622eabe4eea2d15abbd7}\label{interface_r_a_c_channel_terminal_a9292333e9c26622eabe4eea2d15abbd7}} 
+((unavailable(\char`\"{}Instantiate a \mbox{\hyperlink{interface_r_a_c_channel}{R\+A\+C\+Channel}} instead\char`\"{}) -\/ {\bfseries \+\_\+\+\_\+attribute\+\_\+\+\_\+}
+\item 
+\mbox{\Hypertarget{interface_r_a_c_channel_terminal_a9292333e9c26622eabe4eea2d15abbd7}\label{interface_r_a_c_channel_terminal_a9292333e9c26622eabe4eea2d15abbd7}} 
+((unavailable(\char`\"{}Instantiate a \mbox{\hyperlink{interface_r_a_c_channel}{R\+A\+C\+Channel}} instead\char`\"{}) -\/ {\bfseries \+\_\+\+\_\+attribute\+\_\+\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Represents one end of a \mbox{\hyperlink{interface_r_a_c_channel}{R\+A\+C\+Channel}}.
+
+An terminal is similar to a socket or pipe -- it represents one end of a connection (the \mbox{\hyperlink{interface_r_a_c_channel}{R\+A\+C\+Channel}}, in this case). Values sent to this terminal will {\itshape not} be received by its subscribers. Instead, the values will be sent to the subscribers of the \mbox{\hyperlink{interface_r_a_c_channel}{R\+A\+C\+Channel}}\textquotesingle{}s {\itshape other} terminal.
+
+For example, when using the {\ttfamily following\+Terminal}, {\itshape sent} values can only be {\itshape received} from the {\ttfamily leading\+Terminal}, and vice versa.
+
+To make it easy to terminate a \mbox{\hyperlink{interface_r_a_c_channel}{R\+A\+C\+Channel}}, {\ttfamily error} and {\ttfamily completed} events sent to either terminal will be received by the subscribers of {\itshape both} terminals.
+
+Do not instantiate this class directly. Create a \mbox{\hyperlink{interface_r_a_c_channel}{R\+A\+C\+Channel}} instead. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+Reactive\+Cocoa/R\+A\+C\+Channel.\+h\end{DoxyCompactItemize}

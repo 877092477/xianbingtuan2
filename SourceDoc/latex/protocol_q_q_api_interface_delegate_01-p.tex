@@ -1,0 +1,91 @@
+\hypertarget{protocol_q_q_api_interface_delegate_01-p}{}\section{$<$Q\+Q\+Api\+Interface\+Delegate $>$ Protocol Reference}
+\label{protocol_q_q_api_interface_delegate_01-p}\index{$<$\+Q\+Q\+Api\+Interface\+Delegate $>$@{$<$\+Q\+Q\+Api\+Interface\+Delegate $>$}}
+
+
+处理来至\+Q\+Q的请求及响应的回调协议  
+
+
+
+
+{\ttfamily \#import $<$Q\+Q\+Api\+Interface.\+h$>$}
+
+
+
+Inheritance diagram for $<$Q\+Q\+Api\+Interface\+Delegate $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{protocol_q_q_api_interface_delegate_01-p__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for $<$Q\+Q\+Api\+Interface\+Delegate $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{protocol_q_q_api_interface_delegate_01-p__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_q_q_api_interface_delegate_01-p_a3fea44120101ae14ee97187ab622068b}{on\+Req\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_q_q_api_interface_delegate_01-p_a8be1b388f41e1031e1a7a8051ef96315}{on\+Resp\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_q_q_api_interface_delegate_01-p_ae5caa86d8c58fdc5c861a335276b88e4}{is\+Online\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_q_q_api_interface_delegate_01-p_a3fea44120101ae14ee97187ab622068b}{on\+Req\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_q_q_api_interface_delegate_01-p_a8be1b388f41e1031e1a7a8051ef96315}{on\+Resp\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_q_q_api_interface_delegate_01-p_ae5caa86d8c58fdc5c861a335276b88e4}{is\+Online\+Response\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+处理来至\+Q\+Q的请求及响应的回调协议 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{protocol_q_q_api_interface_delegate_01-p_ae5caa86d8c58fdc5c861a335276b88e4}\label{protocol_q_q_api_interface_delegate_01-p_ae5caa86d8c58fdc5c861a335276b88e4}} 
+\index{Q\+Q\+Api\+Interface\+Delegate -\/p@{Q\+Q\+Api\+Interface\+Delegate -\/p}!is\+Online\+Response\+:@{is\+Online\+Response\+:}}
+\index{is\+Online\+Response\+:@{is\+Online\+Response\+:}!Q\+Q\+Api\+Interface\+Delegate -\/p@{Q\+Q\+Api\+Interface\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{is\+Online\+Response\+:()}{isOnlineResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void Q\+Q\+Api\+Interface\+Delegate) is\+Online\+Response\+: \begin{DoxyParamCaption}\item[{(N\+S\+Dictionary $\ast$)}]{response }\end{DoxyParamCaption}}
+
+处理\+Q\+Q在线状态的回调 \mbox{\Hypertarget{protocol_q_q_api_interface_delegate_01-p_ae5caa86d8c58fdc5c861a335276b88e4}\label{protocol_q_q_api_interface_delegate_01-p_ae5caa86d8c58fdc5c861a335276b88e4}} 
+\index{Q\+Q\+Api\+Interface\+Delegate -\/p@{Q\+Q\+Api\+Interface\+Delegate -\/p}!is\+Online\+Response\+:@{is\+Online\+Response\+:}}
+\index{is\+Online\+Response\+:@{is\+Online\+Response\+:}!Q\+Q\+Api\+Interface\+Delegate -\/p@{Q\+Q\+Api\+Interface\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{is\+Online\+Response\+:()}{isOnlineResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void Q\+Q\+Api\+Interface\+Delegate) is\+Online\+Response\+: \begin{DoxyParamCaption}\item[{(N\+S\+Dictionary $\ast$)}]{response }\end{DoxyParamCaption}}
+
+处理\+Q\+Q在线状态的回调 \mbox{\Hypertarget{protocol_q_q_api_interface_delegate_01-p_a3fea44120101ae14ee97187ab622068b}\label{protocol_q_q_api_interface_delegate_01-p_a3fea44120101ae14ee97187ab622068b}} 
+\index{Q\+Q\+Api\+Interface\+Delegate -\/p@{Q\+Q\+Api\+Interface\+Delegate -\/p}!on\+Req\+:@{on\+Req\+:}}
+\index{on\+Req\+:@{on\+Req\+:}!Q\+Q\+Api\+Interface\+Delegate -\/p@{Q\+Q\+Api\+Interface\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{on\+Req\+:()}{onReq:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void Q\+Q\+Api\+Interface\+Delegate) on\+Req\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_q_q_base_req}{Q\+Q\+Base\+Req}} $\ast$)}]{req }\end{DoxyParamCaption}}
+
+处理来至\+Q\+Q的请求 \mbox{\Hypertarget{protocol_q_q_api_interface_delegate_01-p_a3fea44120101ae14ee97187ab622068b}\label{protocol_q_q_api_interface_delegate_01-p_a3fea44120101ae14ee97187ab622068b}} 
+\index{Q\+Q\+Api\+Interface\+Delegate -\/p@{Q\+Q\+Api\+Interface\+Delegate -\/p}!on\+Req\+:@{on\+Req\+:}}
+\index{on\+Req\+:@{on\+Req\+:}!Q\+Q\+Api\+Interface\+Delegate -\/p@{Q\+Q\+Api\+Interface\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{on\+Req\+:()}{onReq:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void Q\+Q\+Api\+Interface\+Delegate) on\+Req\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_q_q_base_req}{Q\+Q\+Base\+Req}} $\ast$)}]{req }\end{DoxyParamCaption}}
+
+处理来至\+Q\+Q的请求 \mbox{\Hypertarget{protocol_q_q_api_interface_delegate_01-p_a8be1b388f41e1031e1a7a8051ef96315}\label{protocol_q_q_api_interface_delegate_01-p_a8be1b388f41e1031e1a7a8051ef96315}} 
+\index{Q\+Q\+Api\+Interface\+Delegate -\/p@{Q\+Q\+Api\+Interface\+Delegate -\/p}!on\+Resp\+:@{on\+Resp\+:}}
+\index{on\+Resp\+:@{on\+Resp\+:}!Q\+Q\+Api\+Interface\+Delegate -\/p@{Q\+Q\+Api\+Interface\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{on\+Resp\+:()}{onResp:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void Q\+Q\+Api\+Interface\+Delegate) on\+Resp\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_q_q_base_resp}{Q\+Q\+Base\+Resp}} $\ast$)}]{resp }\end{DoxyParamCaption}}
+
+处理来至\+Q\+Q的响应 \mbox{\Hypertarget{protocol_q_q_api_interface_delegate_01-p_a8be1b388f41e1031e1a7a8051ef96315}\label{protocol_q_q_api_interface_delegate_01-p_a8be1b388f41e1031e1a7a8051ef96315}} 
+\index{Q\+Q\+Api\+Interface\+Delegate -\/p@{Q\+Q\+Api\+Interface\+Delegate -\/p}!on\+Resp\+:@{on\+Resp\+:}}
+\index{on\+Resp\+:@{on\+Resp\+:}!Q\+Q\+Api\+Interface\+Delegate -\/p@{Q\+Q\+Api\+Interface\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{on\+Resp\+:()}{onResp:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void Q\+Q\+Api\+Interface\+Delegate) on\+Resp\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_q_q_base_resp}{Q\+Q\+Base\+Resp}} $\ast$)}]{resp }\end{DoxyParamCaption}}
+
+处理来至\+Q\+Q的响应 
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Public/\+U\+Meng\+U\+Share/\+Tencent\+Open\+A\+P\+I/Q\+Q\+Api\+Interface.\+h\end{DoxyCompactItemize}

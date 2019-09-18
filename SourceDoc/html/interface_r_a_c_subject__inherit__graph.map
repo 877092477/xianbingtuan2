@@ -1,0 +1,7 @@
+<map id="RACSubject" name="RACSubject">
+<area shape="rect" id="node6" href="$interface_r_a_c_behavior_subject.html" title="A behavior subject sends the last value it received when it is subscribed to. " alt="" coords="5,299,152,324"/>
+<area shape="rect" id="node7" href="$interface_r_a_c_grouped_signal.html" title="A grouped signal is used by &#45;[RACSignal groupBy:transform:]. " alt="" coords="176,299,315,324"/>
+<area shape="rect" id="node8" href="$interface_r_a_c_replay_subject.html" title="RACReplaySubject" alt="" coords="339,299,474,324"/>
+<area shape="rect" id="node2" href="$interface_r_a_c_signal.html" title="RACSignal" alt="" coords="137,152,223,177"/>
+<area shape="rect" id="node3" href="$interface_r_a_c_stream.html" title="RACStream" alt="" coords="134,79,226,104"/>
+</map>

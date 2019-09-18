@@ -1,0 +1,5 @@
+<map id="QQApiGroupTribeImageObject" name="QQApiGroupTribeImageObject">
+<area shape="rect" id="node2" href="$interface_q_q_api_image_object.html" title="图片对象 用于分享图片内容的对象，是一个指定为图片类型的QQApiExtendObject " alt="" coords="39,225,176,251"/>
+<area shape="rect" id="node3" href="$interface_q_q_api_extend_object.html" title="扩展数据类型 " alt="" coords="37,152,178,177"/>
+<area shape="rect" id="node4" href="$interface_q_q_api_object.html" title="所有在QQ及插件间发送的数据对象的根类。 " alt="" coords="57,79,157,104"/>
+</map>

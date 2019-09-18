@@ -1,0 +1,94 @@
+ \section*{M\+J\+Extension }
+
+
+\begin{DoxyItemize}
+\item A fast, convenient and nonintrusive conversion between J\+S\+ON and model.
+\item 转换速度快、使用简单方便的字典转模型框架
+\end{DoxyItemize}
+
+Git\+Hub：\href{https://github.com/CoderMJLee}{\tt Coder\+M\+J\+Lee} ｜ Blog：\href{http://www.cnblogs.com/mjios}{\tt mjios(\+Chinese)} ｜ PR is welcome，or \href{mailto:richermj123go@vip.qq.com}{\tt feedback}
+
+\subsection*{Contents}
+
+
+\begin{DoxyItemize}
+\item \href{#Getting_Started}{\tt Getting Started 【开始使用】}
+\begin{DoxyItemize}
+\item \href{#Features}{\tt Features 【能做什么】}
+\item \href{#Installation}{\tt Installation 【安装】}
+\end{DoxyItemize}
+\item \href{#Examples}{\tt Examples 【示例】}
+\begin{DoxyItemize}
+\item \href{#JSON_Model}{\tt J\+S\+ON -\/$>$ Model}
+\item \href{#JSONString_Model}{\tt J\+S\+O\+N\+String -\/$>$ Model}
+\item \href{#Model_contains_model}{\tt Model contains model}
+\item \href{#Model_contains_model_array}{\tt Model contains model-\/array}
+\item \href{#Model_name_JSON_key_mapping}{\tt Model name -\/ J\+S\+ON key mapping}
+\item \href{#JSON_array_model_array}{\tt J\+S\+ON array -\/$>$ model array}
+\item \href{#Model_JSON}{\tt Model -\/$>$ J\+S\+ON}
+\item \href{#Model_array_JSON_array}{\tt Model array -\/$>$ J\+S\+ON array}
+\item \href{#Core_Data}{\tt Core Data}
+\item \href{#Coding}{\tt Coding}
+\item \href{#Camel_underline}{\tt Camel -\/$>$ underline}
+\item \href{#NSString_NSDate}{\tt N\+S\+String -\/$>$ N\+S\+Date, nil -\/$>$ "\char`\"{}$<$/a$>$
+    $\ast$ $<$a href=\char`\"{}\#\+More\+\_\+use\+\_\+cases"$>$More use cases} 
+
+
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\section*{Getting Started【开始使用】}
+
+\subsection*{Features【能做什么】}
+
+
+\begin{DoxyItemize}
+\item M\+J\+Extension是一套字典和模型之间互相转换的超轻量级框架
+\item {\ttfamily J\+S\+ON} --$>$ {\ttfamily Model}、{\ttfamily Core Data Model}
+\item {\ttfamily J\+S\+O\+N\+String} --$>$ {\ttfamily Model}、{\ttfamily Core Data Model}
+\item {\ttfamily Model}、{\ttfamily Core Data Model} --$>$ {\ttfamily J\+S\+ON}
+\item {\ttfamily J\+S\+ON Array} --$>$ {\ttfamily Model Array}、{\ttfamily Core Data Model Array}
+\item {\ttfamily J\+S\+O\+N\+String} --$>$ {\ttfamily Model Array}、{\ttfamily Core Data Model Array}
+\item {\ttfamily Model Array}、{\ttfamily Core Data Model Array} --$>$ {\ttfamily J\+S\+ON Array}
+\item Coding all properties of model in one line code.
+\begin{DoxyItemize}
+\item 只需要一行代码，就能实现模型的所有属性进行\+Coding（归档和解档）
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsection*{Installation【安装】}
+
+\subsubsection*{From Cocoa\+Pods【使用\+Cocoa\+Pods】}
+
+
+\begin{DoxyCode}
+pod 'MJExtension'
+\end{DoxyCode}
+
+
+\subsubsection*{Manually【手动导入】}
+
+
+\begin{DoxyItemize}
+\item Drag all source files under floder {\ttfamily M\+J\+Extension} to your project.\+【将$<$tt$>$M\+J\+Extension文件夹中的所有源代码拽入项目中】
+\item Import the main header file：$<$tt$>$\+::import \char`\"{}\+M\+J\+Extension.\+h\char`\"{}【导入主头文件：$<$tt$>$\+::import \char`\"{}\+M\+J\+Extension.\+h\char`\"{}】
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}
+MJExtension.h
+MJConst.h               MJConst.m
+MJFoundation.h          MJFoundation.m
+MJProperty.h            MJProperty.m
+MJType.h                MJType.m
+NSObject+MJCoding.h     NSObject+MJCoding.m
+NSObject+MJProperty.h   NSObject+MJProperty.m
+NSObject+MJKeyValue.h   NSObject+MJKeyValue.m
+\end{DoxyCode}
+
+
+\section*{Examples【示例】}
+
+\subsubsection*{The most simple J\+S\+ON -\/$>$ Model【最简单的字典转模型】}
+
+\`{}\`{}\`{}objc typedef enum \{ Sex\+Male, Sex\+Female \} Sex; 

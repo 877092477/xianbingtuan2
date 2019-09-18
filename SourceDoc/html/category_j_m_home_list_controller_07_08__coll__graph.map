@@ -1,0 +1,5 @@
+<map id="JMHomeListController()" name="JMHomeListController()">
+<area shape="rect" id="node4" href="$interface_j_m_home_header_reusable_view.html" title="JMHomeHeaderReusableView" alt="" coords="332,153,535,179"/>
+<area shape="rect" id="node8" href="$interface_j_m_home_category_grid_view.html" title="JMHomeCategoryGridView" alt="" coords="342,104,525,129"/>
+<area shape="rect" id="node6" href="$interface_j_m_home_model.html" title="JMHomeModel" alt="" coords="133,171,244,196"/>
+</map>

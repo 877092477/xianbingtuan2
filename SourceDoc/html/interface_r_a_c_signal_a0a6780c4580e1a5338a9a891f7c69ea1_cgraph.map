@@ -1,0 +1,10 @@
+<map id="&#45;[RACSignal switchToLatest]" name="&#45;[RACSignal switchToLatest]">
+<area shape="rect" id="node2" href="$interface_r_a_c_signal.html#a4ba374f148d6e2a0339c4f4202b4dc26" title="+[RACSignal createSignal:]" alt="" coords="468,57,651,83"/>
+<area shape="rect" id="node4" href="$interface_r_a_c_stream.html#aedc0b75ca3e6d0f81f006c7c3c6a1d76" title="&#45;[RACStream setNameWithFormat:]" alt="" coords="906,80,1139,105"/>
+<area shape="rect" id="node5" href="$interface_r_a_c_signal.html#a16f260eea2cfd9a3953b95926d442a93" title="&#45;[RACSignal publish]" alt="" coords="259,157,404,183"/>
+<area shape="rect" id="node8" href="$interface_r_a_c_signal.html#a27a1b1106a2543dcd472467a7c364dc7" title="Returns a signal that never completes. " alt="" coords="262,108,401,133"/>
+<area shape="rect" id="node9" href="$interface_r_a_c_disposable.html#a3158dc03efcf49e7a5174acc6e3711d5" title="&#45;[RACDisposable dispose]" alt="" coords="243,207,420,232"/>
+<area shape="rect" id="node3" href="$interface_r_a_c_dynamic_signal.html#aeffa754150754dd6296d5225b5c9c7fe" title="+[RACDynamicSignal\l createSignal:]" alt="" coords="703,44,853,83"/>
+<area shape="rect" id="node6" href="$interface_r_a_c_subject.html#a80ceeef3605f5bf5c76c45ecb5532bf6" title="Returns a new subject. " alt="" coords="482,209,637,235"/>
+<area shape="rect" id="node7" href="$interface_r_a_c_signal.html#a55b43f4fbef7e430a4587ce13eab18cb" title="&#45;[RACSignal multicast:]" alt="" coords="699,159,858,184"/>
+</map>

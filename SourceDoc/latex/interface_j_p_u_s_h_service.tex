@@ -1,0 +1,469 @@
+\hypertarget{interface_j_p_u_s_h_service}{}\section{J\+P\+U\+S\+H\+Service Class Reference}
+\label{interface_j_p_u_s_h_service}\index{J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}}
+
+
+{\ttfamily \#import $<$J\+P\+U\+S\+H\+Service.\+h$>$}
+
+
+
+Inheritance diagram for J\+P\+U\+S\+H\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{interface_j_p_u_s_h_service__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for J\+P\+U\+S\+H\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{interface_j_p_u_s_h_service__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{Indent}\textbf{ Setup 启动相关}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) + \mbox{\hyperlink{interface_j_p_u_s_h_service_a2266fd57b52be8614de9da9673bb24d8}{setup\+With\+Option\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_j_p_u_s_h_service_a8c68e03465a687861b8a2e680a433881}{setup\+With\+Option\+:app\+Key\+:channel\+:aps\+For\+Production\+:}}
+\item 
+\mbox{\Hypertarget{interface_j_p_u_s_h_service_aa4df1125dce69d55ef9a2279624e9805}\label{interface_j_p_u_s_h_service_aa4df1125dce69d55ef9a2279624e9805}} 
+(void) + {\bfseries setup\+With\+Option\+:app\+Key\+:channel\+:aps\+For\+Production\+:advertising\+Identifier\+:}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ A\+P\+Ns about 通知相关}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) + \mbox{\hyperlink{interface_j_p_u_s_h_service_a99d9c562921d4809b9691bf668146f91}{register\+For\+Remote\+Notification\+Types\+:categories\+:}}
+\item 
+\mbox{\Hypertarget{interface_j_p_u_s_h_service_a6ef8667fd7cdb21e4287d580115afb37}\label{interface_j_p_u_s_h_service_a6ef8667fd7cdb21e4287d580115afb37}} 
+(void) + {\bfseries register\+Device\+Token\+:}
+\item 
+(void) + \mbox{\hyperlink{interface_j_p_u_s_h_service_a287e834670c83a68e1e3423bf9880125}{handle\+Remote\+Notification\+:}}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Tag alias setting 设置别名与标签}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) + \mbox{\hyperlink{interface_j_p_u_s_h_service_a9c53d751eccc46892d03a4cd50380ed4}{set\+Tags\+:alias\+:callback\+Selector\+:target\+:}}
+\item 
+\mbox{\Hypertarget{interface_j_p_u_s_h_service_ae2f61b6c48ea62beaa41c26a03f4123c}\label{interface_j_p_u_s_h_service_ae2f61b6c48ea62beaa41c26a03f4123c}} 
+(void) + {\bfseries set\+Tags\+:alias\+:callback\+Selector\+:object\+:}
+\item 
+\mbox{\Hypertarget{interface_j_p_u_s_h_service_a124c288eb56fa9eabbfa09b77cd5fd01}\label{interface_j_p_u_s_h_service_a124c288eb56fa9eabbfa09b77cd5fd01}} 
+(void) + {\bfseries set\+Tags\+:callback\+Selector\+:object\+:}
+\item 
+\mbox{\Hypertarget{interface_j_p_u_s_h_service_a7d28b3fdee14657e1c08a991f41bad16}\label{interface_j_p_u_s_h_service_a7d28b3fdee14657e1c08a991f41bad16}} 
+(void) + {\bfseries set\+Tags\+:alias\+:fetch\+Completion\+Handle\+:}
+\item 
+\mbox{\Hypertarget{interface_j_p_u_s_h_service_a4c6042730dca7f881dd259dd6e9b2f4c}\label{interface_j_p_u_s_h_service_a4c6042730dca7f881dd259dd6e9b2f4c}} 
+(void) + {\bfseries set\+Tags\+:alias\+Inbackground\+:}
+\item 
+\mbox{\Hypertarget{interface_j_p_u_s_h_service_ac008d505d9fabba54e6dfe337163532c}\label{interface_j_p_u_s_h_service_ac008d505d9fabba54e6dfe337163532c}} 
+(void) + {\bfseries set\+Alias\+:callback\+Selector\+:object\+:}
+\item 
+(N\+S\+Set $\ast$) + \mbox{\hyperlink{interface_j_p_u_s_h_service_a9e643240a63cbf4e3e3d1d073c027fe1}{filter\+Valid\+Tags\+:}}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Stats 统计功能}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(void) + \mbox{\hyperlink{interface_j_p_u_s_h_service_a02b4f0cc1cdeb640b38850840d9d285d}{start\+Log\+Page\+View\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_j_p_u_s_h_service_ab86f867ba03f2be249784a9f2e703f69}{stop\+Log\+Page\+View\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_j_p_u_s_h_service_a3460a947b8d147f41c9942e1f2dc0288}{begin\+Log\+Page\+View\+:duration\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_j_p_u_s_h_service_a6c2aee92bdedee92fa820e1b39b8e5de}{crash\+Log\+ON}}
+\item 
+(void) + \mbox{\hyperlink{interface_j_p_u_s_h_service_a05825c4d2424a0236f560aff984f1c50}{set\+Latitude\+:longitude\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_j_p_u_s_h_service_a8f3c37f1d5e52c913410e94a0cc76f14}{set\+Location\+:}}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Local Notification 本地通知}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(U\+I\+Local\+Notification $\ast$) + \mbox{\hyperlink{interface_j_p_u_s_h_service_a4b5b624f876845be5bde8dbfec2a4732}{set\+Local\+Notification\+:alert\+Body\+:badge\+:alert\+Action\+:identifier\+Key\+:user\+Info\+:sound\+Name\+:}}
+\item 
+(U\+I\+Local\+Notification $\ast$) + \mbox{\hyperlink{interface_j_p_u_s_h_service_a3fe29feeeb2f497fab6cd5d5c3d2cd88}{set\+Local\+Notification\+:alert\+Body\+:badge\+:alert\+Action\+:identifier\+Key\+:user\+Info\+:sound\+Name\+:region\+:region\+Triggers\+Once\+:category\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_j_p_u_s_h_service_a0d0d9358bf5625cb55f689c522bd1d00}{show\+Local\+Notification\+At\+Front\+:identifier\+Key\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_j_p_u_s_h_service_a9383bccd2a6b50aa70c6bdfcd8072a51}{delete\+Local\+Notification\+With\+Identifier\+Key\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_j_p_u_s_h_service_a8a339f1cf749a4bc1be1b13cf865378a}{delete\+Local\+Notification\+:}}
+\item 
+(N\+S\+Array $\ast$) + \mbox{\hyperlink{interface_j_p_u_s_h_service_adceb39b009c27d29cfe19d2afade75ec}{find\+Local\+Notification\+With\+Identifier\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_j_p_u_s_h_service_aa0147bec665d5c8b76a954169288b2b0}{clear\+All\+Local\+Notifications}}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Server badge 服务器端 badge 功能}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_j_p_u_s_h_service_a3d77239b5fc4483e4dd6bfbf312d98d3}{set\+Badge\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_j_p_u_s_h_service_acedc38cd5a3960208bf4338525c679c9}{reset\+Badge}}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Logs and others 日志与其他}\par
+{\em 
+
+ 
+
+ }\begin{DoxyCompactItemize}
+\item 
+(N\+S\+String $\ast$) + \mbox{\hyperlink{interface_j_p_u_s_h_service_aaf7a20d918b1518f605c581d83e2c968}{registration\+ID}}
+\item 
+(void) + \mbox{\hyperlink{interface_j_p_u_s_h_service_a7bf32721e896ecd7070c85cdd709a957}{set\+Debug\+Mode}}
+\item 
+(void) + \mbox{\hyperlink{interface_j_p_u_s_h_service_a5e6a84cfe4e196798cc2af81eee2ec22}{set\+Log\+O\+FF}}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+J\+Push 核心头文件 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_j_p_u_s_h_service_a3460a947b8d147f41c9942e1f2dc0288}\label{interface_j_p_u_s_h_service_a3460a947b8d147f41c9942e1f2dc0288}} 
+\index{J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}!begin\+Log\+Page\+View\+:duration\+:@{begin\+Log\+Page\+View\+:duration\+:}}
+\index{begin\+Log\+Page\+View\+:duration\+:@{begin\+Log\+Page\+View\+:duration\+:}!J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}}
+\subsubsection{\texorpdfstring{begin\+Log\+Page\+View\+:duration\+:()}{beginLogPageView:duration:()}}
+{\footnotesize\ttfamily + (void) begin\+Log\+Page\+View\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{page\+Name }\item[{duration:(int)}]{seconds }\end{DoxyParamCaption}}
+
+直接上报在页面的停留时工
+
+
+\begin{DoxyParams}{Parameters}
+{\em page\+Name} & 页面 \\
+\hline
+{\em seconds} & 停留的秒数 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_j_p_u_s_h_service_aa0147bec665d5c8b76a954169288b2b0}\label{interface_j_p_u_s_h_service_aa0147bec665d5c8b76a954169288b2b0}} 
+\index{J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}!clear\+All\+Local\+Notifications@{clear\+All\+Local\+Notifications}}
+\index{clear\+All\+Local\+Notifications@{clear\+All\+Local\+Notifications}!J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}}
+\subsubsection{\texorpdfstring{clear\+All\+Local\+Notifications()}{clearAllLocalNotifications()}}
+{\footnotesize\ttfamily + (void) clear\+All\+Local\+Notifications \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+清除所有本地推送对象 \mbox{\Hypertarget{interface_j_p_u_s_h_service_a6c2aee92bdedee92fa820e1b39b8e5de}\label{interface_j_p_u_s_h_service_a6c2aee92bdedee92fa820e1b39b8e5de}} 
+\index{J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}!crash\+Log\+ON@{crash\+Log\+ON}}
+\index{crash\+Log\+ON@{crash\+Log\+ON}!J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}}
+\subsubsection{\texorpdfstring{crash\+Log\+O\+N()}{crashLogON()}}
+{\footnotesize\ttfamily + (void) crash\+Log\+ON \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+开启\+Crash日志收集
+
+默认是关闭状态. \mbox{\Hypertarget{interface_j_p_u_s_h_service_a8a339f1cf749a4bc1be1b13cf865378a}\label{interface_j_p_u_s_h_service_a8a339f1cf749a4bc1be1b13cf865378a}} 
+\index{J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}!delete\+Local\+Notification\+:@{delete\+Local\+Notification\+:}}
+\index{delete\+Local\+Notification\+:@{delete\+Local\+Notification\+:}!J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}}
+\subsubsection{\texorpdfstring{delete\+Local\+Notification\+:()}{deleteLocalNotification:()}}
+{\footnotesize\ttfamily + (void) delete\+Local\+Notification\+: \begin{DoxyParamCaption}\item[{(U\+I\+Local\+Notification $\ast$)}]{local\+Notification }\end{DoxyParamCaption}}
+
+删除本地推送定义 \mbox{\Hypertarget{interface_j_p_u_s_h_service_a9383bccd2a6b50aa70c6bdfcd8072a51}\label{interface_j_p_u_s_h_service_a9383bccd2a6b50aa70c6bdfcd8072a51}} 
+\index{J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}!delete\+Local\+Notification\+With\+Identifier\+Key\+:@{delete\+Local\+Notification\+With\+Identifier\+Key\+:}}
+\index{delete\+Local\+Notification\+With\+Identifier\+Key\+:@{delete\+Local\+Notification\+With\+Identifier\+Key\+:}!J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}}
+\subsubsection{\texorpdfstring{delete\+Local\+Notification\+With\+Identifier\+Key\+:()}{deleteLocalNotificationWithIdentifierKey:()}}
+{\footnotesize\ttfamily + (void) delete\+Local\+Notification\+With\+Identifier\+Key\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{notification\+Key }\end{DoxyParamCaption}}
+
+删除本地推送定义
+
+
+\begin{DoxyParams}{Parameters}
+{\em notification\+Key} & 本地推送标示符 \\
+\hline
+{\em my\+U\+I\+Local\+Notification} & 本地推送对象 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_j_p_u_s_h_service_a9e643240a63cbf4e3e3d1d073c027fe1}\label{interface_j_p_u_s_h_service_a9e643240a63cbf4e3e3d1d073c027fe1}} 
+\index{J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}!filter\+Valid\+Tags\+:@{filter\+Valid\+Tags\+:}}
+\index{filter\+Valid\+Tags\+:@{filter\+Valid\+Tags\+:}!J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}}
+\subsubsection{\texorpdfstring{filter\+Valid\+Tags\+:()}{filterValidTags:()}}
+{\footnotesize\ttfamily + (N\+S\+Set $\ast$) filter\+Valid\+Tags\+: \begin{DoxyParamCaption}\item[{(N\+S\+Set $\ast$)}]{tags }\end{DoxyParamCaption}}
+
+过滤掉无效的 tags
+
+如果 tags 数量超过限制数量, 则返回靠前的有效的 tags. 建议设置 tags 前用此接口校验. S\+DK 内部也会基于此接口来做过滤. \mbox{\Hypertarget{interface_j_p_u_s_h_service_adceb39b009c27d29cfe19d2afade75ec}\label{interface_j_p_u_s_h_service_adceb39b009c27d29cfe19d2afade75ec}} 
+\index{J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}!find\+Local\+Notification\+With\+Identifier\+:@{find\+Local\+Notification\+With\+Identifier\+:}}
+\index{find\+Local\+Notification\+With\+Identifier\+:@{find\+Local\+Notification\+With\+Identifier\+:}!J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}}
+\subsubsection{\texorpdfstring{find\+Local\+Notification\+With\+Identifier\+:()}{findLocalNotificationWithIdentifier:()}}
+{\footnotesize\ttfamily + (N\+S\+Array $\ast$) find\+Local\+Notification\+With\+Identifier\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{notification\+Key }\end{DoxyParamCaption}}
+
+获取指定通知
+
+
+\begin{DoxyParams}{Parameters}
+{\em notification\+Key} & 本地推送标示符 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+本地推送对象数组, \mbox{[}array count\mbox{]}为0时表示没找到 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_j_p_u_s_h_service_a287e834670c83a68e1e3423bf9880125}\label{interface_j_p_u_s_h_service_a287e834670c83a68e1e3423bf9880125}} 
+\index{J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}!handle\+Remote\+Notification\+:@{handle\+Remote\+Notification\+:}}
+\index{handle\+Remote\+Notification\+:@{handle\+Remote\+Notification\+:}!J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}}
+\subsubsection{\texorpdfstring{handle\+Remote\+Notification\+:()}{handleRemoteNotification:()}}
+{\footnotesize\ttfamily + (void) handle\+Remote\+Notification\+: \begin{DoxyParamCaption}\item[{(N\+S\+Dictionary $\ast$)}]{remote\+Info }\end{DoxyParamCaption}}
+
+处理收到的 A\+P\+Ns 消息 \mbox{\Hypertarget{interface_j_p_u_s_h_service_a99d9c562921d4809b9691bf668146f91}\label{interface_j_p_u_s_h_service_a99d9c562921d4809b9691bf668146f91}} 
+\index{J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}!register\+For\+Remote\+Notification\+Types\+:categories\+:@{register\+For\+Remote\+Notification\+Types\+:categories\+:}}
+\index{register\+For\+Remote\+Notification\+Types\+:categories\+:@{register\+For\+Remote\+Notification\+Types\+:categories\+:}!J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}}
+\subsubsection{\texorpdfstring{register\+For\+Remote\+Notification\+Types\+:categories\+:()}{registerForRemoteNotificationTypes:categories:()}}
+{\footnotesize\ttfamily + (void) register\+For\+Remote\+Notification\+Types\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+Integer)}]{types }\item[{categories:(N\+S\+Set $\ast$)}]{categories }\end{DoxyParamCaption}}
+
+注册要处理的远程通知类型
+
+
+\begin{DoxyParams}{Parameters}
+{\em types} & 通知类型 \\
+\hline
+{\em categories} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_j_p_u_s_h_service_aaf7a20d918b1518f605c581d83e2c968}\label{interface_j_p_u_s_h_service_aaf7a20d918b1518f605c581d83e2c968}} 
+\index{J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}!registration\+ID@{registration\+ID}}
+\index{registration\+ID@{registration\+ID}!J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}}
+\subsubsection{\texorpdfstring{registration\+I\+D()}{registrationID()}}
+{\footnotesize\ttfamily + (N\+S\+String $\ast$) registration\+ID \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+J\+Push标识此设备的 registration\+ID
+
+S\+D\+K注册成功后, 调用此接口获取到 registration\+ID 才能够获取到.
+
+J\+Push 支持根据 registration\+ID 来进行推送. 如果你需要此功能, 应该通过此接口获取到 registration\+ID 后, 上报到你自己的服务器端, 并保存下来.
+
+更多的理解请参考 J\+Push 的文档网站. \mbox{\Hypertarget{interface_j_p_u_s_h_service_acedc38cd5a3960208bf4338525c679c9}\label{interface_j_p_u_s_h_service_acedc38cd5a3960208bf4338525c679c9}} 
+\index{J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}!reset\+Badge@{reset\+Badge}}
+\index{reset\+Badge@{reset\+Badge}!J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}}
+\subsubsection{\texorpdfstring{reset\+Badge()}{resetBadge()}}
+{\footnotesize\ttfamily + (void) reset\+Badge \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+重置脚标(为0)
+
+相当于 \mbox{[}set\+Badge\+:0\mbox{]} 的效果. 参考 \mbox{[}\mbox{\hyperlink{interface_j_p_u_s_h_service}{J\+P\+U\+S\+H\+Service}} set\+Badge\+:\mbox{]} 说明来理解其作用. \mbox{\Hypertarget{interface_j_p_u_s_h_service_a3d77239b5fc4483e4dd6bfbf312d98d3}\label{interface_j_p_u_s_h_service_a3d77239b5fc4483e4dd6bfbf312d98d3}} 
+\index{J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}!set\+Badge\+:@{set\+Badge\+:}}
+\index{set\+Badge\+:@{set\+Badge\+:}!J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}}
+\subsubsection{\texorpdfstring{set\+Badge\+:()}{setBadge:()}}
+{\footnotesize\ttfamily + (B\+O\+OL) set\+Badge\+: \begin{DoxyParamCaption}\item[{(N\+S\+Integer)}]{value }\end{DoxyParamCaption}}
+
+设置角标(到服务器)
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & 新的值. 会覆盖服务器上保存的值(这个用户)\\
+\hline
+\end{DoxyParams}
+本接口不会改变应用本地的角标值. 本地仍须调用 U\+I\+Application\+:set\+Application\+Icon\+Badge\+Number 函数来设置脚标.
+
+本接口用于配合 J\+Push 提供的服务器端角标功能. 该功能解决的问题是, 服务器端推送 A\+P\+Ns 时, 并不知道客户端原来已经存在的角标是多少, 指定一个固定的数字不太合理.
+
+J\+Push 服务器端脚标功能提供\+:
+
+
+\begin{DoxyItemize}
+\item 通过本 A\+PI 把当前客户端(当前这个用户的) 的实际 badge 设置到服务器端保存起来;
+\item 调用服务器端 A\+PI 发 A\+P\+Ns 时(通常这个调用是批量针对大量用户), 使用 \char`\"{}+1\char`\"{} 的语义, 来表达需要基于目标用户实际的 badge 值(保存的) +1 来下发通知时带上新的 badge 值; 
+\end{DoxyItemize}\mbox{\Hypertarget{interface_j_p_u_s_h_service_a7bf32721e896ecd7070c85cdd709a957}\label{interface_j_p_u_s_h_service_a7bf32721e896ecd7070c85cdd709a957}} 
+\index{J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}!set\+Debug\+Mode@{set\+Debug\+Mode}}
+\index{set\+Debug\+Mode@{set\+Debug\+Mode}!J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}}
+\subsubsection{\texorpdfstring{set\+Debug\+Mode()}{setDebugMode()}}
+{\footnotesize\ttfamily + (void) set\+Debug\+Mode \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+打开日志级别到 Debug
+
+J\+Message i\+OS 的日志系统参考 Android 设计了级别. 从低到高是\+: Verbose, Debug, Info, Warning, Error. 对日志级别的进一步理解, 请参考 Android 相关的说明.
+
+S\+DK 默认开启的日志级别为\+: Info. 只显示必要的信息, 不打印调试日志.
+
+调用本接口可打开日志级别为\+: Debug, 打印调试日志. \mbox{\Hypertarget{interface_j_p_u_s_h_service_a05825c4d2424a0236f560aff984f1c50}\label{interface_j_p_u_s_h_service_a05825c4d2424a0236f560aff984f1c50}} 
+\index{J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}!set\+Latitude\+:longitude\+:@{set\+Latitude\+:longitude\+:}}
+\index{set\+Latitude\+:longitude\+:@{set\+Latitude\+:longitude\+:}!J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}}
+\subsubsection{\texorpdfstring{set\+Latitude\+:longitude\+:()}{setLatitude:longitude:()}}
+{\footnotesize\ttfamily + (void) set\+Latitude\+: \begin{DoxyParamCaption}\item[{(double)}]{latitude }\item[{longitude:(double)}]{longitude }\end{DoxyParamCaption}}
+
+地理位置上报
+
+
+\begin{DoxyParams}{Parameters}
+{\em latitude} & 纬度. \\
+\hline
+{\em longitude} & 经度. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_j_p_u_s_h_service_a4b5b624f876845be5bde8dbfec2a4732}\label{interface_j_p_u_s_h_service_a4b5b624f876845be5bde8dbfec2a4732}} 
+\index{J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}!set\+Local\+Notification\+:alert\+Body\+:badge\+:alert\+Action\+:identifier\+Key\+:user\+Info\+:sound\+Name\+:@{set\+Local\+Notification\+:alert\+Body\+:badge\+:alert\+Action\+:identifier\+Key\+:user\+Info\+:sound\+Name\+:}}
+\index{set\+Local\+Notification\+:alert\+Body\+:badge\+:alert\+Action\+:identifier\+Key\+:user\+Info\+:sound\+Name\+:@{set\+Local\+Notification\+:alert\+Body\+:badge\+:alert\+Action\+:identifier\+Key\+:user\+Info\+:sound\+Name\+:}!J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}}
+\subsubsection{\texorpdfstring{set\+Local\+Notification\+:alert\+Body\+:badge\+:alert\+Action\+:identifier\+Key\+:user\+Info\+:sound\+Name\+:()}{setLocalNotification:alertBody:badge:alertAction:identifierKey:userInfo:soundName:()}}
+{\footnotesize\ttfamily + (U\+I\+Local\+Notification $\ast$) set\+Local\+Notification\+: \begin{DoxyParamCaption}\item[{(N\+S\+Date $\ast$)}]{fire\+Date }\item[{alertBody:(N\+S\+String $\ast$)}]{alert\+Body }\item[{badge:(int)}]{badge }\item[{alertAction:(N\+S\+String $\ast$)}]{alert\+Action }\item[{identifierKey:(N\+S\+String $\ast$)}]{notification\+Key }\item[{userInfo:(N\+S\+Dictionary $\ast$)}]{user\+Info }\item[{soundName:(N\+S\+String $\ast$)}]{sound\+Name }\end{DoxyParamCaption}}
+
+本地推送，最多支持64个
+
+
+\begin{DoxyParams}{Parameters}
+{\em fire\+Date} & 本地推送触发的时间 \\
+\hline
+{\em alert\+Body} & 本地推送需要显示的内容 \\
+\hline
+{\em badge} & 角标的数字。如果不需要改变角标传-\/1 \\
+\hline
+{\em alert\+Action} & 弹框的按钮显示的内容（\+I\+OS 8默认为\char`\"{}打开\char`\"{}, 其他默认为\char`\"{}启动\char`\"{}） \\
+\hline
+{\em notification\+Key} & 本地推送标示符 \\
+\hline
+{\em user\+Info} & 自定义参数，可以用来标识推送和增加附加信息 \\
+\hline
+{\em sound\+Name} & 自定义通知声音，设置为nil为默认声音\\
+\hline
+\end{DoxyParams}
+最多支持 64 个定义 \mbox{\Hypertarget{interface_j_p_u_s_h_service_a3fe29feeeb2f497fab6cd5d5c3d2cd88}\label{interface_j_p_u_s_h_service_a3fe29feeeb2f497fab6cd5d5c3d2cd88}} 
+\index{J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}!set\+Local\+Notification\+:alert\+Body\+:badge\+:alert\+Action\+:identifier\+Key\+:user\+Info\+:sound\+Name\+:region\+:region\+Triggers\+Once\+:category\+:@{set\+Local\+Notification\+:alert\+Body\+:badge\+:alert\+Action\+:identifier\+Key\+:user\+Info\+:sound\+Name\+:region\+:region\+Triggers\+Once\+:category\+:}}
+\index{set\+Local\+Notification\+:alert\+Body\+:badge\+:alert\+Action\+:identifier\+Key\+:user\+Info\+:sound\+Name\+:region\+:region\+Triggers\+Once\+:category\+:@{set\+Local\+Notification\+:alert\+Body\+:badge\+:alert\+Action\+:identifier\+Key\+:user\+Info\+:sound\+Name\+:region\+:region\+Triggers\+Once\+:category\+:}!J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}}
+\subsubsection{\texorpdfstring{set\+Local\+Notification\+:alert\+Body\+:badge\+:alert\+Action\+:identifier\+Key\+:user\+Info\+:sound\+Name\+:region\+:region\+Triggers\+Once\+:category\+:()}{setLocalNotification:alertBody:badge:alertAction:identifierKey:userInfo:soundName:region:regionTriggersOnce:category:()}}
+{\footnotesize\ttfamily + (U\+I\+Local\+Notification $\ast$) set\+Local\+Notification\+: \begin{DoxyParamCaption}\item[{(N\+S\+Date $\ast$)}]{fire\+Date }\item[{alertBody:(N\+S\+String $\ast$)}]{alert\+Body }\item[{badge:(int)}]{badge }\item[{alertAction:(N\+S\+String $\ast$)}]{alert\+Action }\item[{identifierKey:(N\+S\+String $\ast$)}]{notification\+Key }\item[{userInfo:(N\+S\+Dictionary $\ast$)}]{user\+Info }\item[{soundName:(N\+S\+String $\ast$)}]{sound\+Name }\item[{region:(C\+L\+Region $\ast$)}]{region }\item[{regionTriggersOnce:(B\+O\+OL)}]{region\+Triggers\+Once }\item[{category:(8\+\_\+0)}]{N\+S\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E\+\_\+\+I\+OS }\end{DoxyParamCaption}}
+
+本地推送 (支持 i\+O\+S8 新参数)
+
+I\+O\+S8新参数 
+\begin{DoxyParams}{Parameters}
+{\em region} & 自定义参数 \\
+\hline
+{\em region\+Triggers\+Once} & 自定义参数 \\
+\hline
+{\em category} & 自定义参数 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_j_p_u_s_h_service_a8f3c37f1d5e52c913410e94a0cc76f14}\label{interface_j_p_u_s_h_service_a8f3c37f1d5e52c913410e94a0cc76f14}} 
+\index{J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}!set\+Location\+:@{set\+Location\+:}}
+\index{set\+Location\+:@{set\+Location\+:}!J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}}
+\subsubsection{\texorpdfstring{set\+Location\+:()}{setLocation:()}}
+{\footnotesize\ttfamily + (void) set\+Location\+: \begin{DoxyParamCaption}\item[{(C\+L\+Location $\ast$)}]{location }\end{DoxyParamCaption}}
+
+地理位置上报
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & 直接传递 C\+L\+Location $\ast$ 型的地理信息\\
+\hline
+\end{DoxyParams}
+需要链接 Core\+Location.\+framework 并且 \#import $<$Core\+Location/\+Core\+Location.\+h$>$ \mbox{\Hypertarget{interface_j_p_u_s_h_service_a5e6a84cfe4e196798cc2af81eee2ec22}\label{interface_j_p_u_s_h_service_a5e6a84cfe4e196798cc2af81eee2ec22}} 
+\index{J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}!set\+Log\+O\+FF@{set\+Log\+O\+FF}}
+\index{set\+Log\+O\+FF@{set\+Log\+O\+FF}!J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}}
+\subsubsection{\texorpdfstring{set\+Log\+O\+F\+F()}{setLogOFF()}}
+{\footnotesize\ttfamily + (void) set\+Log\+O\+FF \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+关闭日志
+
+关于日志级别的说明, 参考 \mbox{[}\mbox{\hyperlink{interface_j_p_u_s_h_service}{J\+P\+U\+S\+H\+Service}} set\+Debug\+Mode\mbox{]}
+
+虽说是关闭日志, 但还是会打印 Warning, Error 日志. 这二种日志级别, 在程序运行正常时, 不应有打印输出.
+
+建议在发布的版本里, 调用此接口, 关闭掉日志打印. \mbox{\Hypertarget{interface_j_p_u_s_h_service_a9c53d751eccc46892d03a4cd50380ed4}\label{interface_j_p_u_s_h_service_a9c53d751eccc46892d03a4cd50380ed4}} 
+\index{J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}!set\+Tags\+:alias\+:callback\+Selector\+:target\+:@{set\+Tags\+:alias\+:callback\+Selector\+:target\+:}}
+\index{set\+Tags\+:alias\+:callback\+Selector\+:target\+:@{set\+Tags\+:alias\+:callback\+Selector\+:target\+:}!J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}}
+\subsubsection{\texorpdfstring{set\+Tags\+:alias\+:callback\+Selector\+:target\+:()}{setTags:alias:callbackSelector:target:()}}
+{\footnotesize\ttfamily + (void) set\+Tags\+: \begin{DoxyParamCaption}\item[{(N\+S\+Set $\ast$)}]{tags }\item[{alias:(N\+S\+String $\ast$)}]{alias }\item[{callbackSelector:(S\+EL)}]{cb\+Selector }\item[{target:((deprecated(\char`\"{}J\+Push 2.\+1.\+1 版本已过期\char`\"{})))}]{\+\_\+\+\_\+attribute\+\_\+\+\_\+ }\end{DoxyParamCaption}}
+
+下面的接口是可选的 设置标签和(或)别名（若参数为nil，则忽略；若是空对象，则清空；详情请参考文档：http\+://docs.jpush.\+io/client/ios\+\_\+api/\#api-\/ios） set\+Tags\+:alias\+:fetch\+Completion\+Handle\+:是新的设置标签别名的方法，不再需要显示声明回调函数，只需要在block里面处理设置结果即可. W\+A\+RN\+: 使用block时需要注意循环引用问题 \mbox{\Hypertarget{interface_j_p_u_s_h_service_a2266fd57b52be8614de9da9673bb24d8}\label{interface_j_p_u_s_h_service_a2266fd57b52be8614de9da9673bb24d8}} 
+\index{J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}!setup\+With\+Option\+:@{setup\+With\+Option\+:}}
+\index{setup\+With\+Option\+:@{setup\+With\+Option\+:}!J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}}
+\subsubsection{\texorpdfstring{setup\+With\+Option\+:()}{setupWithOption:()}}
+{\footnotesize\ttfamily + (void) setup\+With\+Option\+: \begin{DoxyParamCaption}\item[{((deprecated(\char`\"{}J\+Push 2.\+1.\+0 版本已过期\char`\"{})))}]{\+\_\+\+\_\+attribute\+\_\+\+\_\+ }\end{DoxyParamCaption}}
+
+启动\+S\+DK
+
+这是旧版本的启动方法, 依赖于 Push\+Config.\+plist 文件. 建议不要使用, 已经过期. \mbox{\Hypertarget{interface_j_p_u_s_h_service_a8c68e03465a687861b8a2e680a433881}\label{interface_j_p_u_s_h_service_a8c68e03465a687861b8a2e680a433881}} 
+\index{J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}!setup\+With\+Option\+:app\+Key\+:channel\+:aps\+For\+Production\+:@{setup\+With\+Option\+:app\+Key\+:channel\+:aps\+For\+Production\+:}}
+\index{setup\+With\+Option\+:app\+Key\+:channel\+:aps\+For\+Production\+:@{setup\+With\+Option\+:app\+Key\+:channel\+:aps\+For\+Production\+:}!J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}}
+\subsubsection{\texorpdfstring{setup\+With\+Option\+:app\+Key\+:channel\+:aps\+For\+Production\+:()}{setupWithOption:appKey:channel:apsForProduction:()}}
+{\footnotesize\ttfamily + (void) \mbox{\hyperlink{interface_j_p_u_s_h_service_a2266fd57b52be8614de9da9673bb24d8}{setup\+With\+Option\+:}} \begin{DoxyParamCaption}\item[{(N\+S\+Dictionary $\ast$)}]{launching\+Option }\item[{appKey:(N\+S\+String $\ast$)}]{app\+Key }\item[{channel:(N\+S\+String $\ast$)}]{channel }\item[{apsForProduction:(B\+O\+OL)}]{is\+Production }\end{DoxyParamCaption}}
+
+启动\+S\+DK
+
+
+\begin{DoxyParams}{Parameters}
+{\em launching\+Option} & 启动参数. \\
+\hline
+{\em app\+Key} & 一个\+J\+Push 应用必须的,唯一的标识. 请参考 J\+Push 相关说明文档来获取这个标识. \\
+\hline
+{\em channel} & 发布渠道. 可选. \\
+\hline
+{\em is\+Production} & 是否生产环境. 如果为开发状态,设置为 NO; 如果为生产状态,应改为 Y\+ES. \\
+\hline
+{\em advertising\+Identifier} & 广告标识符（\+I\+D\+F\+A） 如果不需要使用\+I\+D\+F\+A，传nil.\\
+\hline
+\end{DoxyParams}
+提供\+S\+D\+K启动必须的参数, 来启动 S\+DK. 此接口必须在 App 启动时调用, 否则 J\+Push S\+DK 将无法正常工作. \mbox{\Hypertarget{interface_j_p_u_s_h_service_a0d0d9358bf5625cb55f689c522bd1d00}\label{interface_j_p_u_s_h_service_a0d0d9358bf5625cb55f689c522bd1d00}} 
+\index{J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}!show\+Local\+Notification\+At\+Front\+:identifier\+Key\+:@{show\+Local\+Notification\+At\+Front\+:identifier\+Key\+:}}
+\index{show\+Local\+Notification\+At\+Front\+:identifier\+Key\+:@{show\+Local\+Notification\+At\+Front\+:identifier\+Key\+:}!J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}}
+\subsubsection{\texorpdfstring{show\+Local\+Notification\+At\+Front\+:identifier\+Key\+:()}{showLocalNotificationAtFront:identifierKey:()}}
+{\footnotesize\ttfamily + (void) show\+Local\+Notification\+At\+Front\+: \begin{DoxyParamCaption}\item[{(U\+I\+Local\+Notification $\ast$)}]{notification }\item[{identifierKey:(N\+S\+String $\ast$)}]{notification\+Key }\end{DoxyParamCaption}}
+
+前台展示本地推送
+
+
+\begin{DoxyParams}{Parameters}
+{\em notification} & 本地推送对象 \\
+\hline
+{\em notification\+Key} & 需要前台显示的本地推送通知的标示符\\
+\hline
+\end{DoxyParams}
+默认\+App在前台运行时不会进行弹窗，在程序接收通知调用此接口可实现指定的推送弹窗。 \mbox{\Hypertarget{interface_j_p_u_s_h_service_a02b4f0cc1cdeb640b38850840d9d285d}\label{interface_j_p_u_s_h_service_a02b4f0cc1cdeb640b38850840d9d285d}} 
+\index{J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}!start\+Log\+Page\+View\+:@{start\+Log\+Page\+View\+:}}
+\index{start\+Log\+Page\+View\+:@{start\+Log\+Page\+View\+:}!J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}}
+\subsubsection{\texorpdfstring{start\+Log\+Page\+View\+:()}{startLogPageView:()}}
+{\footnotesize\ttfamily + (void) start\+Log\+Page\+View\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{page\+Name }\end{DoxyParamCaption}}
+
+开始记录页面停留
+
+
+\begin{DoxyParams}{Parameters}
+{\em page\+Name} & 页面名称 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_j_p_u_s_h_service_ab86f867ba03f2be249784a9f2e703f69}\label{interface_j_p_u_s_h_service_ab86f867ba03f2be249784a9f2e703f69}} 
+\index{J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}!stop\+Log\+Page\+View\+:@{stop\+Log\+Page\+View\+:}}
+\index{stop\+Log\+Page\+View\+:@{stop\+Log\+Page\+View\+:}!J\+P\+U\+S\+H\+Service@{J\+P\+U\+S\+H\+Service}}
+\subsubsection{\texorpdfstring{stop\+Log\+Page\+View\+:()}{stopLogPageView:()}}
+{\footnotesize\ttfamily + (void) stop\+Log\+Page\+View\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{page\+Name }\end{DoxyParamCaption}}
+
+停止记录页面停留
+
+
+\begin{DoxyParams}{Parameters}
+{\em page\+Name} & 页面 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/\+Notification/lib/J\+P\+U\+S\+H\+Service.\+h\end{DoxyCompactItemize}

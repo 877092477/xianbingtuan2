@@ -1,0 +1,8 @@
+<map id="+[RACSignal interval:onScheduler:]" name="+[RACSignal interval:onScheduler:]">
+<area shape="rect" id="node2" href="$interface_r_a_c_signal.html#acd968c129ec1afe3b5bc77db5fc13291" title="+[RACSignal interval\l:onScheduler:withLeeway:]" alt="" coords="198,112,379,151"/>
+<area shape="rect" id="node6" href="$interface_r_a_c_stream.html#aedc0b75ca3e6d0f81f006c7c3c6a1d76" title="&#45;[RACStream setNameWithFormat:]" alt="" coords="861,119,1095,144"/>
+<area shape="rect" id="node3" href="$interface_r_a_c_scheduler.html#aec2dc59d7f2bd10dc318429167154821" title="+[RACScheduler immediate\lScheduler]" alt="" coords="428,5,614,44"/>
+<area shape="rect" id="node4" href="$interface_r_a_c_signal.html#a4ba374f148d6e2a0339c4f4202b4dc26" title="+[RACSignal createSignal:]" alt="" coords="429,68,612,93"/>
+<area shape="rect" id="node7" href="$interface_r_a_c_scheduler.html#ae0e70791e20c43df48d62eedbfa236ba" title="&#45;[RACScheduler after\l:repeatingEvery:withLeeway\l:schedule:]" alt="" coords="427,169,615,221"/>
+<area shape="rect" id="node5" href="$interface_r_a_c_dynamic_signal.html#aeffa754150754dd6296d5225b5c9c7fe" title="+[RACDynamicSignal\l createSignal:]" alt="" coords="663,55,813,93"/>
+</map>

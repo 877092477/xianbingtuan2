@@ -1,0 +1,559 @@
+\hypertarget{class_web_core_1_1_transformation_matrix}{}\section{Web\+Core\+:\+:Transformation\+Matrix Class Reference}
+\label{class_web_core_1_1_transformation_matrix}\index{Web\+Core\+::\+Transformation\+Matrix@{Web\+Core\+::\+Transformation\+Matrix}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_web_core_1_1_transformation_matrix_1_1_decomposed_type}{Decomposed\+Type}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ac508929892dc7eb5994edef20d9d8fbd}\label{class_web_core_1_1_transformation_matrix_ac508929892dc7eb5994edef20d9d8fbd}} 
+typedef double {\bfseries Matrix4}\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ac508929892dc7eb5994edef20d9d8fbd}\label{class_web_core_1_1_transformation_matrix_ac508929892dc7eb5994edef20d9d8fbd}} 
+typedef double {\bfseries Matrix4}\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a0af3d2c1391e7be0b0cb1fc61281f597}\label{class_web_core_1_1_transformation_matrix_a0af3d2c1391e7be0b0cb1fc61281f597}} 
+{\bfseries Transformation\+Matrix} (const \mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \&t)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a57058fb6c94c84b0921c416dd11542d1}\label{class_web_core_1_1_transformation_matrix_a57058fb6c94c84b0921c416dd11542d1}} 
+{\bfseries Transformation\+Matrix} (double a, double b, double c, double d, double e, double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a64cc30de371a6aae57c9a162977a0241}\label{class_web_core_1_1_transformation_matrix_a64cc30de371a6aae57c9a162977a0241}} 
+{\bfseries Transformation\+Matrix} (double m11, double m12, double m13, double m14, double m21, double m22, double m23, double m24, double m31, double m32, double m33, double m34, double m41, double m42, double m43, double m44)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a0282cfc8d79f18e3af6b0cb63b0c2863}\label{class_web_core_1_1_transformation_matrix_a0282cfc8d79f18e3af6b0cb63b0c2863}} 
+void {\bfseries set\+Matrix} (double a, double b, double c, double d, double e, double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ae591912606d9e501ad82811d33c0bf16}\label{class_web_core_1_1_transformation_matrix_ae591912606d9e501ad82811d33c0bf16}} 
+void {\bfseries set\+Matrix} (double m11, double m12, double m13, double m14, double m21, double m22, double m23, double m24, double m31, double m32, double m33, double m34, double m41, double m42, double m43, double m44)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ac0f59f7096750b393fe34b5a62e28182}\label{class_web_core_1_1_transformation_matrix_ac0f59f7096750b393fe34b5a62e28182}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \&t)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a6adf56457f7544d2d522e1e20e0c6dac}\label{class_web_core_1_1_transformation_matrix_a6adf56457f7544d2d522e1e20e0c6dac}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries make\+Identity} ()
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ad792cfd21ca75d6f23852985b9859f39}\label{class_web_core_1_1_transformation_matrix_ad792cfd21ca75d6f23852985b9859f39}} 
+bool {\bfseries is\+Identity} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ae20cbdcf66baf2e71c3ddf3d95924276}\label{class_web_core_1_1_transformation_matrix_ae20cbdcf66baf2e71c3ddf3d95924276}} 
+void {\bfseries map} (double x, double y, double \&x2, double \&y2) const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a865e9de02ea5a99bc9b5885b529fbd84}\label{class_web_core_1_1_transformation_matrix_a865e9de02ea5a99bc9b5885b529fbd84}} 
+double {\bfseries m11} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a9d5ac993f6632a9434f7b2bf6dd1140e}\label{class_web_core_1_1_transformation_matrix_a9d5ac993f6632a9434f7b2bf6dd1140e}} 
+void {\bfseries set\+M11} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ac348614f9d5b35c667e3b33b40399a3a}\label{class_web_core_1_1_transformation_matrix_ac348614f9d5b35c667e3b33b40399a3a}} 
+double {\bfseries m12} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a819bd6c355f2af21e43bd5f19416fb70}\label{class_web_core_1_1_transformation_matrix_a819bd6c355f2af21e43bd5f19416fb70}} 
+void {\bfseries set\+M12} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ad8df87dd74fef70f005075fcc8bc5379}\label{class_web_core_1_1_transformation_matrix_ad8df87dd74fef70f005075fcc8bc5379}} 
+double {\bfseries m13} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a13aff514de5bfb1224a3a367ef6f0e22}\label{class_web_core_1_1_transformation_matrix_a13aff514de5bfb1224a3a367ef6f0e22}} 
+void {\bfseries set\+M13} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_abbbbfa9bcf3c73ee80ad68a6757457d6}\label{class_web_core_1_1_transformation_matrix_abbbbfa9bcf3c73ee80ad68a6757457d6}} 
+double {\bfseries m14} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_aacbb7237b64cc10464feb99a38528e64}\label{class_web_core_1_1_transformation_matrix_aacbb7237b64cc10464feb99a38528e64}} 
+void {\bfseries set\+M14} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ade53a5d5196cde2ddcf34798c5f90f11}\label{class_web_core_1_1_transformation_matrix_ade53a5d5196cde2ddcf34798c5f90f11}} 
+double {\bfseries m21} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a586fc6e4fc689fb7d001cff0b78931de}\label{class_web_core_1_1_transformation_matrix_a586fc6e4fc689fb7d001cff0b78931de}} 
+void {\bfseries set\+M21} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a3ff72e6481264c15cf62a5368f0eaa0c}\label{class_web_core_1_1_transformation_matrix_a3ff72e6481264c15cf62a5368f0eaa0c}} 
+double {\bfseries m22} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a9e01ff1a903f054d9381f832af7efd7f}\label{class_web_core_1_1_transformation_matrix_a9e01ff1a903f054d9381f832af7efd7f}} 
+void {\bfseries set\+M22} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a0287c23bda0ad08ccbcca6bd84d4aa16}\label{class_web_core_1_1_transformation_matrix_a0287c23bda0ad08ccbcca6bd84d4aa16}} 
+double {\bfseries m23} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_af448d1ead14b30aa807c55db64146554}\label{class_web_core_1_1_transformation_matrix_af448d1ead14b30aa807c55db64146554}} 
+void {\bfseries set\+M23} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a9d7570f46ffea50c378b9646e3ae5043}\label{class_web_core_1_1_transformation_matrix_a9d7570f46ffea50c378b9646e3ae5043}} 
+double {\bfseries m24} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_aada29ad928ff4eb25760eddf21480507}\label{class_web_core_1_1_transformation_matrix_aada29ad928ff4eb25760eddf21480507}} 
+void {\bfseries set\+M24} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a4ed62a4306e5f15f55de0910a985e253}\label{class_web_core_1_1_transformation_matrix_a4ed62a4306e5f15f55de0910a985e253}} 
+double {\bfseries m31} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a4c1d9446afd2263c434ee3ba3d1b4948}\label{class_web_core_1_1_transformation_matrix_a4c1d9446afd2263c434ee3ba3d1b4948}} 
+void {\bfseries set\+M31} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_afcdbe2deb269926fa451c10ca101352e}\label{class_web_core_1_1_transformation_matrix_afcdbe2deb269926fa451c10ca101352e}} 
+double {\bfseries m32} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a99256dc15b3ff5978554562b60f69b3b}\label{class_web_core_1_1_transformation_matrix_a99256dc15b3ff5978554562b60f69b3b}} 
+void {\bfseries set\+M32} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ac4093179d84228d332cfcf2cb931047a}\label{class_web_core_1_1_transformation_matrix_ac4093179d84228d332cfcf2cb931047a}} 
+double {\bfseries m33} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_afb1caf216eab1570f7fb9485ba0a5381}\label{class_web_core_1_1_transformation_matrix_afb1caf216eab1570f7fb9485ba0a5381}} 
+void {\bfseries set\+M33} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a9b0b97fb7fe466ccbd3edda4b6bfa6f5}\label{class_web_core_1_1_transformation_matrix_a9b0b97fb7fe466ccbd3edda4b6bfa6f5}} 
+double {\bfseries m34} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a45adf77e3c9ab31b20bb71306ce5fe53}\label{class_web_core_1_1_transformation_matrix_a45adf77e3c9ab31b20bb71306ce5fe53}} 
+void {\bfseries set\+M34} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a2ad6cc2bc0111907a0bbaaa270f8c898}\label{class_web_core_1_1_transformation_matrix_a2ad6cc2bc0111907a0bbaaa270f8c898}} 
+double {\bfseries m41} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ad678cfd62332a817e00afb41232a4d03}\label{class_web_core_1_1_transformation_matrix_ad678cfd62332a817e00afb41232a4d03}} 
+void {\bfseries set\+M41} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a710e88f13d2b5d122376b98cd8aa6156}\label{class_web_core_1_1_transformation_matrix_a710e88f13d2b5d122376b98cd8aa6156}} 
+double {\bfseries m42} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a91864a2be8ccc6192e99e187f7a5d13b}\label{class_web_core_1_1_transformation_matrix_a91864a2be8ccc6192e99e187f7a5d13b}} 
+void {\bfseries set\+M42} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ad54e2b85d3b0c460c0289ad182e6070a}\label{class_web_core_1_1_transformation_matrix_ad54e2b85d3b0c460c0289ad182e6070a}} 
+double {\bfseries m43} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a9f8b419bf1b51934de287f19adf63f9c}\label{class_web_core_1_1_transformation_matrix_a9f8b419bf1b51934de287f19adf63f9c}} 
+void {\bfseries set\+M43} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a5bb37e8ad4c977c3bdeb9aa7614003e8}\label{class_web_core_1_1_transformation_matrix_a5bb37e8ad4c977c3bdeb9aa7614003e8}} 
+double {\bfseries m44} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a94a8dfd0623b46966f62cb8b7b1833a4}\label{class_web_core_1_1_transformation_matrix_a94a8dfd0623b46966f62cb8b7b1833a4}} 
+void {\bfseries set\+M44} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_aa7354744a6fab8c5f64fdab8f6b08905}\label{class_web_core_1_1_transformation_matrix_aa7354744a6fab8c5f64fdab8f6b08905}} 
+double {\bfseries a} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ac1b0c49b9502dab95a21b441f2e81321}\label{class_web_core_1_1_transformation_matrix_ac1b0c49b9502dab95a21b441f2e81321}} 
+void {\bfseries setA} (double a)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ae8e1db457c8f0e6eb90c175c49980132}\label{class_web_core_1_1_transformation_matrix_ae8e1db457c8f0e6eb90c175c49980132}} 
+double {\bfseries b} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a7c9234f326f1e2379119c1eb8f86ba1f}\label{class_web_core_1_1_transformation_matrix_a7c9234f326f1e2379119c1eb8f86ba1f}} 
+void {\bfseries setB} (double b)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a495669b6105fff14a592141beb220d73}\label{class_web_core_1_1_transformation_matrix_a495669b6105fff14a592141beb220d73}} 
+double {\bfseries c} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a7048345453203464ca121b6e59ea11a7}\label{class_web_core_1_1_transformation_matrix_a7048345453203464ca121b6e59ea11a7}} 
+void {\bfseries setC} (double c)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_aa79b6dcc8dd52100031f6d3e39b9bca2}\label{class_web_core_1_1_transformation_matrix_aa79b6dcc8dd52100031f6d3e39b9bca2}} 
+double {\bfseries d} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ad33825ea15442ee7297c9d64d391f72d}\label{class_web_core_1_1_transformation_matrix_ad33825ea15442ee7297c9d64d391f72d}} 
+void {\bfseries setD} (double d)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a08e5bd2aecab30bec14a73a12761ec39}\label{class_web_core_1_1_transformation_matrix_a08e5bd2aecab30bec14a73a12761ec39}} 
+double {\bfseries e} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a16ac6e001a668dc80062c5bac90543cc}\label{class_web_core_1_1_transformation_matrix_a16ac6e001a668dc80062c5bac90543cc}} 
+void {\bfseries setE} (double e)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a2d721f33a62a2b0b44e6757d7752f74d}\label{class_web_core_1_1_transformation_matrix_a2d721f33a62a2b0b44e6757d7752f74d}} 
+double {\bfseries f} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a41b35d4f5b63df0cee882c96cb2075c0}\label{class_web_core_1_1_transformation_matrix_a41b35d4f5b63df0cee882c96cb2075c0}} 
+void {\bfseries setF} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a38933f62af3f0245096b06e35d6ae579}\label{class_web_core_1_1_transformation_matrix_a38933f62af3f0245096b06e35d6ae579}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries multiply} (const \mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \&)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ad77c78b8db35c605f5e17407bf6fda26}\label{class_web_core_1_1_transformation_matrix_ad77c78b8db35c605f5e17407bf6fda26}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries scale} (double)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_abbf2b5affc1ea8991e2979b90322394f}\label{class_web_core_1_1_transformation_matrix_abbf2b5affc1ea8991e2979b90322394f}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries scale\+Non\+Uniform} (double sx, double sy)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_aac01e34250d3719d99ec3a35fce98e4e}\label{class_web_core_1_1_transformation_matrix_aac01e34250d3719d99ec3a35fce98e4e}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries scale3d} (double sx, double sy, double sz)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a5e54a4d0bfb9bbef427007ddd0a94435}\label{class_web_core_1_1_transformation_matrix_a5e54a4d0bfb9bbef427007ddd0a94435}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries rotate} (double d)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a533c6cccde47c9405ea99d04edec8f37}\label{class_web_core_1_1_transformation_matrix_a533c6cccde47c9405ea99d04edec8f37}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries rotate\+From\+Vector} (double x, double y)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a4086d2db2d4d83cba0d703f0f847de89}\label{class_web_core_1_1_transformation_matrix_a4086d2db2d4d83cba0d703f0f847de89}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries rotate3d} (double rx, double ry, double rz)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a777e99cb7c33e80c45b974962743ad3c}\label{class_web_core_1_1_transformation_matrix_a777e99cb7c33e80c45b974962743ad3c}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries rotate3d} (double x, double y, double z, double angle)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_afc8778e6953f8b9cf9277559ca5487ff}\label{class_web_core_1_1_transformation_matrix_afc8778e6953f8b9cf9277559ca5487ff}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries translate} (double tx, double ty)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a06ca330c6e062654c7cd4c9b6024b6ee}\label{class_web_core_1_1_transformation_matrix_a06ca330c6e062654c7cd4c9b6024b6ee}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries translate3d} (double tx, double ty, double tz)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_aabcc34f0248bab8c55fdb57a45e726bf}\label{class_web_core_1_1_transformation_matrix_aabcc34f0248bab8c55fdb57a45e726bf}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries translate\+Right} (double tx, double ty)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_afbe138630d468c25799f4a84775cf11f}\label{class_web_core_1_1_transformation_matrix_afbe138630d468c25799f4a84775cf11f}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries translate\+Right3d} (double tx, double ty, double tz)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a09d9706567125e3101c2dbe68048545f}\label{class_web_core_1_1_transformation_matrix_a09d9706567125e3101c2dbe68048545f}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries flipX} ()
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a4e5ac5bc77ec3d07266836d5fb3e10af}\label{class_web_core_1_1_transformation_matrix_a4e5ac5bc77ec3d07266836d5fb3e10af}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries flipY} ()
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a735fbb626143164f11164ec434700f06}\label{class_web_core_1_1_transformation_matrix_a735fbb626143164f11164ec434700f06}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries skew} (double angleX, double angleY)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a0e23e5d444015d0abe2148ac0289e64e}\label{class_web_core_1_1_transformation_matrix_a0e23e5d444015d0abe2148ac0289e64e}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries skewX} (double angle)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a313d27ff9b3a1f4f610cbf50ad7f2e3c}\label{class_web_core_1_1_transformation_matrix_a313d27ff9b3a1f4f610cbf50ad7f2e3c}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries skewY} (double angle)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a5f0fce557817a95c106386d50f15b562}\label{class_web_core_1_1_transformation_matrix_a5f0fce557817a95c106386d50f15b562}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries apply\+Perspective} (double p)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_abc4a77370ac7456e97fce6a9d1d7f472}\label{class_web_core_1_1_transformation_matrix_abc4a77370ac7456e97fce6a9d1d7f472}} 
+bool {\bfseries has\+Perspective} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a86fc5891cad0b3492e90ef4e8e0391a5}\label{class_web_core_1_1_transformation_matrix_a86fc5891cad0b3492e90ef4e8e0391a5}} 
+bool {\bfseries is\+Invertible} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a2dcabaa25983ac9eb972cdef6d7cd4cf}\label{class_web_core_1_1_transformation_matrix_a2dcabaa25983ac9eb972cdef6d7cd4cf}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} {\bfseries inverse} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a3ac23efda2366e7f160fb8c0e0b39bf2}\label{class_web_core_1_1_transformation_matrix_a3ac23efda2366e7f160fb8c0e0b39bf2}} 
+bool {\bfseries decompose} (\mbox{\hyperlink{struct_web_core_1_1_transformation_matrix_1_1_decomposed_type}{Decomposed\+Type}} \&decomp) const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a930065af80a1154a5396f11a436ccb64}\label{class_web_core_1_1_transformation_matrix_a930065af80a1154a5396f11a436ccb64}} 
+void {\bfseries recompose} (const \mbox{\hyperlink{struct_web_core_1_1_transformation_matrix_1_1_decomposed_type}{Decomposed\+Type}} \&decomp, bool use\+Euler\+Angle=false)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a89e8cbe67be97912a7bfe6fe8fd33950}\label{class_web_core_1_1_transformation_matrix_a89e8cbe67be97912a7bfe6fe8fd33950}} 
+void {\bfseries blend} (const \mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \&from, double progress)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ac8be699ca618796d0c6aa399fd81d049}\label{class_web_core_1_1_transformation_matrix_ac8be699ca618796d0c6aa399fd81d049}} 
+bool {\bfseries is\+Affine} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a53770087a1c1bba8ec33682ef0afc695}\label{class_web_core_1_1_transformation_matrix_a53770087a1c1bba8ec33682ef0afc695}} 
+void {\bfseries make\+Affine} ()
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a7cb423e8e003fc2ee2d6fd4b5446a7da}\label{class_web_core_1_1_transformation_matrix_a7cb423e8e003fc2ee2d6fd4b5446a7da}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \&m2) const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a000c67719e597456fbdafd1005458c49}\label{class_web_core_1_1_transformation_matrix_a000c67719e597456fbdafd1005458c49}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \&other) const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a4b3d015df02c9f241cb83e08482405ac}\label{class_web_core_1_1_transformation_matrix_a4b3d015df02c9f241cb83e08482405ac}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries operator$\ast$=} (const \mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \&t)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a227d4b57577ed36a211067e4b044e2d3}\label{class_web_core_1_1_transformation_matrix_a227d4b57577ed36a211067e4b044e2d3}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} {\bfseries operator$\ast$} (const \mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \&t)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a72818df3480f56ae5b4df4c2b2ba1f74}\label{class_web_core_1_1_transformation_matrix_a72818df3480f56ae5b4df4c2b2ba1f74}} 
+C\+A\+Transform3D {\bfseries transform3d} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a96aaffb9040267d812f222375bc00203}\label{class_web_core_1_1_transformation_matrix_a96aaffb9040267d812f222375bc00203}} 
+C\+G\+Affine\+Transform {\bfseries affine\+Transform} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a8b7856b0bec3a13b937b4c09d52e662d}\label{class_web_core_1_1_transformation_matrix_a8b7856b0bec3a13b937b4c09d52e662d}} 
+{\bfseries Transformation\+Matrix} (const C\+A\+Transform3D \&)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a01e0f378f3e3fe395ce7639ca4a203b6}\label{class_web_core_1_1_transformation_matrix_a01e0f378f3e3fe395ce7639ca4a203b6}} 
+{\bfseries operator C\+A\+Transform3D} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a3e1120e8e7e3cdec1d2f034f644c1139}\label{class_web_core_1_1_transformation_matrix_a3e1120e8e7e3cdec1d2f034f644c1139}} 
+{\bfseries Transformation\+Matrix} (const C\+G\+Affine\+Transform \&)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a069d426c3fcb6e88bf07942488e95e17}\label{class_web_core_1_1_transformation_matrix_a069d426c3fcb6e88bf07942488e95e17}} 
+{\bfseries operator C\+G\+Affine\+Transform} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a0af3d2c1391e7be0b0cb1fc61281f597}\label{class_web_core_1_1_transformation_matrix_a0af3d2c1391e7be0b0cb1fc61281f597}} 
+{\bfseries Transformation\+Matrix} (const \mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \&t)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a57058fb6c94c84b0921c416dd11542d1}\label{class_web_core_1_1_transformation_matrix_a57058fb6c94c84b0921c416dd11542d1}} 
+{\bfseries Transformation\+Matrix} (double a, double b, double c, double d, double e, double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a64cc30de371a6aae57c9a162977a0241}\label{class_web_core_1_1_transformation_matrix_a64cc30de371a6aae57c9a162977a0241}} 
+{\bfseries Transformation\+Matrix} (double m11, double m12, double m13, double m14, double m21, double m22, double m23, double m24, double m31, double m32, double m33, double m34, double m41, double m42, double m43, double m44)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a0282cfc8d79f18e3af6b0cb63b0c2863}\label{class_web_core_1_1_transformation_matrix_a0282cfc8d79f18e3af6b0cb63b0c2863}} 
+void {\bfseries set\+Matrix} (double a, double b, double c, double d, double e, double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ae591912606d9e501ad82811d33c0bf16}\label{class_web_core_1_1_transformation_matrix_ae591912606d9e501ad82811d33c0bf16}} 
+void {\bfseries set\+Matrix} (double m11, double m12, double m13, double m14, double m21, double m22, double m23, double m24, double m31, double m32, double m33, double m34, double m41, double m42, double m43, double m44)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ac0f59f7096750b393fe34b5a62e28182}\label{class_web_core_1_1_transformation_matrix_ac0f59f7096750b393fe34b5a62e28182}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \&t)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a6adf56457f7544d2d522e1e20e0c6dac}\label{class_web_core_1_1_transformation_matrix_a6adf56457f7544d2d522e1e20e0c6dac}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries make\+Identity} ()
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ad792cfd21ca75d6f23852985b9859f39}\label{class_web_core_1_1_transformation_matrix_ad792cfd21ca75d6f23852985b9859f39}} 
+bool {\bfseries is\+Identity} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ae20cbdcf66baf2e71c3ddf3d95924276}\label{class_web_core_1_1_transformation_matrix_ae20cbdcf66baf2e71c3ddf3d95924276}} 
+void {\bfseries map} (double x, double y, double \&x2, double \&y2) const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a865e9de02ea5a99bc9b5885b529fbd84}\label{class_web_core_1_1_transformation_matrix_a865e9de02ea5a99bc9b5885b529fbd84}} 
+double {\bfseries m11} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a9d5ac993f6632a9434f7b2bf6dd1140e}\label{class_web_core_1_1_transformation_matrix_a9d5ac993f6632a9434f7b2bf6dd1140e}} 
+void {\bfseries set\+M11} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ac348614f9d5b35c667e3b33b40399a3a}\label{class_web_core_1_1_transformation_matrix_ac348614f9d5b35c667e3b33b40399a3a}} 
+double {\bfseries m12} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a819bd6c355f2af21e43bd5f19416fb70}\label{class_web_core_1_1_transformation_matrix_a819bd6c355f2af21e43bd5f19416fb70}} 
+void {\bfseries set\+M12} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ad8df87dd74fef70f005075fcc8bc5379}\label{class_web_core_1_1_transformation_matrix_ad8df87dd74fef70f005075fcc8bc5379}} 
+double {\bfseries m13} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a13aff514de5bfb1224a3a367ef6f0e22}\label{class_web_core_1_1_transformation_matrix_a13aff514de5bfb1224a3a367ef6f0e22}} 
+void {\bfseries set\+M13} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_abbbbfa9bcf3c73ee80ad68a6757457d6}\label{class_web_core_1_1_transformation_matrix_abbbbfa9bcf3c73ee80ad68a6757457d6}} 
+double {\bfseries m14} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_aacbb7237b64cc10464feb99a38528e64}\label{class_web_core_1_1_transformation_matrix_aacbb7237b64cc10464feb99a38528e64}} 
+void {\bfseries set\+M14} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ade53a5d5196cde2ddcf34798c5f90f11}\label{class_web_core_1_1_transformation_matrix_ade53a5d5196cde2ddcf34798c5f90f11}} 
+double {\bfseries m21} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a586fc6e4fc689fb7d001cff0b78931de}\label{class_web_core_1_1_transformation_matrix_a586fc6e4fc689fb7d001cff0b78931de}} 
+void {\bfseries set\+M21} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a3ff72e6481264c15cf62a5368f0eaa0c}\label{class_web_core_1_1_transformation_matrix_a3ff72e6481264c15cf62a5368f0eaa0c}} 
+double {\bfseries m22} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a9e01ff1a903f054d9381f832af7efd7f}\label{class_web_core_1_1_transformation_matrix_a9e01ff1a903f054d9381f832af7efd7f}} 
+void {\bfseries set\+M22} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a0287c23bda0ad08ccbcca6bd84d4aa16}\label{class_web_core_1_1_transformation_matrix_a0287c23bda0ad08ccbcca6bd84d4aa16}} 
+double {\bfseries m23} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_af448d1ead14b30aa807c55db64146554}\label{class_web_core_1_1_transformation_matrix_af448d1ead14b30aa807c55db64146554}} 
+void {\bfseries set\+M23} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a9d7570f46ffea50c378b9646e3ae5043}\label{class_web_core_1_1_transformation_matrix_a9d7570f46ffea50c378b9646e3ae5043}} 
+double {\bfseries m24} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_aada29ad928ff4eb25760eddf21480507}\label{class_web_core_1_1_transformation_matrix_aada29ad928ff4eb25760eddf21480507}} 
+void {\bfseries set\+M24} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a4ed62a4306e5f15f55de0910a985e253}\label{class_web_core_1_1_transformation_matrix_a4ed62a4306e5f15f55de0910a985e253}} 
+double {\bfseries m31} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a4c1d9446afd2263c434ee3ba3d1b4948}\label{class_web_core_1_1_transformation_matrix_a4c1d9446afd2263c434ee3ba3d1b4948}} 
+void {\bfseries set\+M31} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_afcdbe2deb269926fa451c10ca101352e}\label{class_web_core_1_1_transformation_matrix_afcdbe2deb269926fa451c10ca101352e}} 
+double {\bfseries m32} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a99256dc15b3ff5978554562b60f69b3b}\label{class_web_core_1_1_transformation_matrix_a99256dc15b3ff5978554562b60f69b3b}} 
+void {\bfseries set\+M32} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ac4093179d84228d332cfcf2cb931047a}\label{class_web_core_1_1_transformation_matrix_ac4093179d84228d332cfcf2cb931047a}} 
+double {\bfseries m33} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_afb1caf216eab1570f7fb9485ba0a5381}\label{class_web_core_1_1_transformation_matrix_afb1caf216eab1570f7fb9485ba0a5381}} 
+void {\bfseries set\+M33} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a9b0b97fb7fe466ccbd3edda4b6bfa6f5}\label{class_web_core_1_1_transformation_matrix_a9b0b97fb7fe466ccbd3edda4b6bfa6f5}} 
+double {\bfseries m34} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a45adf77e3c9ab31b20bb71306ce5fe53}\label{class_web_core_1_1_transformation_matrix_a45adf77e3c9ab31b20bb71306ce5fe53}} 
+void {\bfseries set\+M34} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a2ad6cc2bc0111907a0bbaaa270f8c898}\label{class_web_core_1_1_transformation_matrix_a2ad6cc2bc0111907a0bbaaa270f8c898}} 
+double {\bfseries m41} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ad678cfd62332a817e00afb41232a4d03}\label{class_web_core_1_1_transformation_matrix_ad678cfd62332a817e00afb41232a4d03}} 
+void {\bfseries set\+M41} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a710e88f13d2b5d122376b98cd8aa6156}\label{class_web_core_1_1_transformation_matrix_a710e88f13d2b5d122376b98cd8aa6156}} 
+double {\bfseries m42} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a91864a2be8ccc6192e99e187f7a5d13b}\label{class_web_core_1_1_transformation_matrix_a91864a2be8ccc6192e99e187f7a5d13b}} 
+void {\bfseries set\+M42} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ad54e2b85d3b0c460c0289ad182e6070a}\label{class_web_core_1_1_transformation_matrix_ad54e2b85d3b0c460c0289ad182e6070a}} 
+double {\bfseries m43} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a9f8b419bf1b51934de287f19adf63f9c}\label{class_web_core_1_1_transformation_matrix_a9f8b419bf1b51934de287f19adf63f9c}} 
+void {\bfseries set\+M43} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a5bb37e8ad4c977c3bdeb9aa7614003e8}\label{class_web_core_1_1_transformation_matrix_a5bb37e8ad4c977c3bdeb9aa7614003e8}} 
+double {\bfseries m44} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a94a8dfd0623b46966f62cb8b7b1833a4}\label{class_web_core_1_1_transformation_matrix_a94a8dfd0623b46966f62cb8b7b1833a4}} 
+void {\bfseries set\+M44} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_aa7354744a6fab8c5f64fdab8f6b08905}\label{class_web_core_1_1_transformation_matrix_aa7354744a6fab8c5f64fdab8f6b08905}} 
+double {\bfseries a} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ac1b0c49b9502dab95a21b441f2e81321}\label{class_web_core_1_1_transformation_matrix_ac1b0c49b9502dab95a21b441f2e81321}} 
+void {\bfseries setA} (double a)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ae8e1db457c8f0e6eb90c175c49980132}\label{class_web_core_1_1_transformation_matrix_ae8e1db457c8f0e6eb90c175c49980132}} 
+double {\bfseries b} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a7c9234f326f1e2379119c1eb8f86ba1f}\label{class_web_core_1_1_transformation_matrix_a7c9234f326f1e2379119c1eb8f86ba1f}} 
+void {\bfseries setB} (double b)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a495669b6105fff14a592141beb220d73}\label{class_web_core_1_1_transformation_matrix_a495669b6105fff14a592141beb220d73}} 
+double {\bfseries c} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a7048345453203464ca121b6e59ea11a7}\label{class_web_core_1_1_transformation_matrix_a7048345453203464ca121b6e59ea11a7}} 
+void {\bfseries setC} (double c)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_aa79b6dcc8dd52100031f6d3e39b9bca2}\label{class_web_core_1_1_transformation_matrix_aa79b6dcc8dd52100031f6d3e39b9bca2}} 
+double {\bfseries d} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ad33825ea15442ee7297c9d64d391f72d}\label{class_web_core_1_1_transformation_matrix_ad33825ea15442ee7297c9d64d391f72d}} 
+void {\bfseries setD} (double d)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a08e5bd2aecab30bec14a73a12761ec39}\label{class_web_core_1_1_transformation_matrix_a08e5bd2aecab30bec14a73a12761ec39}} 
+double {\bfseries e} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a16ac6e001a668dc80062c5bac90543cc}\label{class_web_core_1_1_transformation_matrix_a16ac6e001a668dc80062c5bac90543cc}} 
+void {\bfseries setE} (double e)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a2d721f33a62a2b0b44e6757d7752f74d}\label{class_web_core_1_1_transformation_matrix_a2d721f33a62a2b0b44e6757d7752f74d}} 
+double {\bfseries f} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a41b35d4f5b63df0cee882c96cb2075c0}\label{class_web_core_1_1_transformation_matrix_a41b35d4f5b63df0cee882c96cb2075c0}} 
+void {\bfseries setF} (double f)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a96081a70c7be96a05518adf2a5d58e67}\label{class_web_core_1_1_transformation_matrix_a96081a70c7be96a05518adf2a5d58e67}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries multiply} (const \mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \&)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ae2326161e9dc16224c18a420c66b7f82}\label{class_web_core_1_1_transformation_matrix_ae2326161e9dc16224c18a420c66b7f82}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries scale} (double)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a9a6c498c7d5ab63fb38017bd644bc5e1}\label{class_web_core_1_1_transformation_matrix_a9a6c498c7d5ab63fb38017bd644bc5e1}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries scale\+Non\+Uniform} (double sx, double sy)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ad788b7f48e70d7c2c45c42ed69b672dc}\label{class_web_core_1_1_transformation_matrix_ad788b7f48e70d7c2c45c42ed69b672dc}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries scale3d} (double sx, double sy, double sz)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a5e54a4d0bfb9bbef427007ddd0a94435}\label{class_web_core_1_1_transformation_matrix_a5e54a4d0bfb9bbef427007ddd0a94435}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries rotate} (double d)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a5f651c156d64a36c5eca2c897588a439}\label{class_web_core_1_1_transformation_matrix_a5f651c156d64a36c5eca2c897588a439}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries rotate\+From\+Vector} (double x, double y)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a42d207a76ab8ffee52703307cae6bac8}\label{class_web_core_1_1_transformation_matrix_a42d207a76ab8ffee52703307cae6bac8}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries rotate3d} (double rx, double ry, double rz)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a89bccb7f7d5edf93e45cc9382cffc632}\label{class_web_core_1_1_transformation_matrix_a89bccb7f7d5edf93e45cc9382cffc632}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries rotate3d} (double x, double y, double z, double angle)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a6d24d4130fc95cbd391faaa6389559ef}\label{class_web_core_1_1_transformation_matrix_a6d24d4130fc95cbd391faaa6389559ef}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries translate} (double tx, double ty)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a124c03dbbd1076f9df7f08b4eb4f3504}\label{class_web_core_1_1_transformation_matrix_a124c03dbbd1076f9df7f08b4eb4f3504}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries translate3d} (double tx, double ty, double tz)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_afcd6741aa1a87e91ac139764f2d771d7}\label{class_web_core_1_1_transformation_matrix_afcd6741aa1a87e91ac139764f2d771d7}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries translate\+Right} (double tx, double ty)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a2959ae4a78b79567c0a37b14387f1a03}\label{class_web_core_1_1_transformation_matrix_a2959ae4a78b79567c0a37b14387f1a03}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries translate\+Right3d} (double tx, double ty, double tz)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a2766e42193ab9555403a43726f6ff8a8}\label{class_web_core_1_1_transformation_matrix_a2766e42193ab9555403a43726f6ff8a8}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries flipX} ()
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_aec84729892d8cbe8e7c9cf5cbb724308}\label{class_web_core_1_1_transformation_matrix_aec84729892d8cbe8e7c9cf5cbb724308}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries flipY} ()
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a08b8d4d29dc0fb7c45cd5894ec50bd4f}\label{class_web_core_1_1_transformation_matrix_a08b8d4d29dc0fb7c45cd5894ec50bd4f}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries skew} (double angleX, double angleY)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a0e23e5d444015d0abe2148ac0289e64e}\label{class_web_core_1_1_transformation_matrix_a0e23e5d444015d0abe2148ac0289e64e}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries skewX} (double angle)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a313d27ff9b3a1f4f610cbf50ad7f2e3c}\label{class_web_core_1_1_transformation_matrix_a313d27ff9b3a1f4f610cbf50ad7f2e3c}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries skewY} (double angle)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ac555aee5d60fb400469115218a774b85}\label{class_web_core_1_1_transformation_matrix_ac555aee5d60fb400469115218a774b85}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries apply\+Perspective} (double p)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_abc4a77370ac7456e97fce6a9d1d7f472}\label{class_web_core_1_1_transformation_matrix_abc4a77370ac7456e97fce6a9d1d7f472}} 
+bool {\bfseries has\+Perspective} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a86fc5891cad0b3492e90ef4e8e0391a5}\label{class_web_core_1_1_transformation_matrix_a86fc5891cad0b3492e90ef4e8e0391a5}} 
+bool {\bfseries is\+Invertible} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a2dcabaa25983ac9eb972cdef6d7cd4cf}\label{class_web_core_1_1_transformation_matrix_a2dcabaa25983ac9eb972cdef6d7cd4cf}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} {\bfseries inverse} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a3ac23efda2366e7f160fb8c0e0b39bf2}\label{class_web_core_1_1_transformation_matrix_a3ac23efda2366e7f160fb8c0e0b39bf2}} 
+bool {\bfseries decompose} (\mbox{\hyperlink{struct_web_core_1_1_transformation_matrix_1_1_decomposed_type}{Decomposed\+Type}} \&decomp) const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a930065af80a1154a5396f11a436ccb64}\label{class_web_core_1_1_transformation_matrix_a930065af80a1154a5396f11a436ccb64}} 
+void {\bfseries recompose} (const \mbox{\hyperlink{struct_web_core_1_1_transformation_matrix_1_1_decomposed_type}{Decomposed\+Type}} \&decomp, bool use\+Euler\+Angle=false)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a89e8cbe67be97912a7bfe6fe8fd33950}\label{class_web_core_1_1_transformation_matrix_a89e8cbe67be97912a7bfe6fe8fd33950}} 
+void {\bfseries blend} (const \mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \&from, double progress)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_ac8be699ca618796d0c6aa399fd81d049}\label{class_web_core_1_1_transformation_matrix_ac8be699ca618796d0c6aa399fd81d049}} 
+bool {\bfseries is\+Affine} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a53770087a1c1bba8ec33682ef0afc695}\label{class_web_core_1_1_transformation_matrix_a53770087a1c1bba8ec33682ef0afc695}} 
+void {\bfseries make\+Affine} ()
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a7cb423e8e003fc2ee2d6fd4b5446a7da}\label{class_web_core_1_1_transformation_matrix_a7cb423e8e003fc2ee2d6fd4b5446a7da}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \&m2) const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a000c67719e597456fbdafd1005458c49}\label{class_web_core_1_1_transformation_matrix_a000c67719e597456fbdafd1005458c49}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \&other) const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a4b3d015df02c9f241cb83e08482405ac}\label{class_web_core_1_1_transformation_matrix_a4b3d015df02c9f241cb83e08482405ac}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \& {\bfseries operator$\ast$=} (const \mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \&t)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a227d4b57577ed36a211067e4b044e2d3}\label{class_web_core_1_1_transformation_matrix_a227d4b57577ed36a211067e4b044e2d3}} 
+\mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} {\bfseries operator$\ast$} (const \mbox{\hyperlink{class_web_core_1_1_transformation_matrix}{Transformation\+Matrix}} \&t)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a72818df3480f56ae5b4df4c2b2ba1f74}\label{class_web_core_1_1_transformation_matrix_a72818df3480f56ae5b4df4c2b2ba1f74}} 
+C\+A\+Transform3D {\bfseries transform3d} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a96aaffb9040267d812f222375bc00203}\label{class_web_core_1_1_transformation_matrix_a96aaffb9040267d812f222375bc00203}} 
+C\+G\+Affine\+Transform {\bfseries affine\+Transform} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a8b7856b0bec3a13b937b4c09d52e662d}\label{class_web_core_1_1_transformation_matrix_a8b7856b0bec3a13b937b4c09d52e662d}} 
+{\bfseries Transformation\+Matrix} (const C\+A\+Transform3D \&)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a01e0f378f3e3fe395ce7639ca4a203b6}\label{class_web_core_1_1_transformation_matrix_a01e0f378f3e3fe395ce7639ca4a203b6}} 
+{\bfseries operator C\+A\+Transform3D} () const
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a3e1120e8e7e3cdec1d2f034f644c1139}\label{class_web_core_1_1_transformation_matrix_a3e1120e8e7e3cdec1d2f034f644c1139}} 
+{\bfseries Transformation\+Matrix} (const C\+G\+Affine\+Transform \&)
+\item 
+\mbox{\Hypertarget{class_web_core_1_1_transformation_matrix_a069d426c3fcb6e88bf07942488e95e17}\label{class_web_core_1_1_transformation_matrix_a069d426c3fcb6e88bf07942488e95e17}} 
+{\bfseries operator C\+G\+Affine\+Transform} () const
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/pop/Transformation\+Matrix.\+h\item 
+Pods/pop/pop/\+Web\+Core/Transformation\+Matrix.\+cpp\end{DoxyCompactItemize}

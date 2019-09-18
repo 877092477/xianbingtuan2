@@ -1,0 +1,6 @@
+<map id="FNHomeSecKillViewController()" name="FNHomeSecKillViewController()">
+<area shape="rect" id="node4" href="$interface_f_n_h_sec_kill_schedule_tool_view.html" title="FNHSecKillScheduleToolView" alt="" coords="415,117,613,143"/>
+<area shape="rect" id="node6" href="$interface_f_n_seckill_home_model.html" title="FNSeckillHomeModel" alt="" coords="133,152,283,177"/>
+<area shape="rect" id="node8" href="$interface_f_n_sec_kill_title_view.html" title="FNSecKillTitleView" alt="" coords="447,229,580,255"/>
+<area shape="rect" id="node10" href="$interface_m_z_timer_label.html" title="MZTimerLabel" alt="" coords="154,264,261,289"/>
+</map>

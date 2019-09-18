@@ -1,0 +1,6 @@
+<map id="AFHTTPRequestOperationManager" name="AFHTTPRequestOperationManager">
+<area shape="rect" id="node5" href="$interface_a_f_network_reachability_manager.html" title="AFNetworkReachabilityManager" alt="" coords="198,70,411,95"/>
+<area shape="rect" id="node8" href="$interface_a_f_security_policy.html" title="AFSecurityPolicy" alt="" coords="244,232,366,258"/>
+<area shape="rect" id="node6" href="$interface_a_f_h_t_t_p_request_serializer.html" title="AFHTTPRequestSerializer\l\&lt; AFURLRequestSerialization \&gt;" alt="" coords="200,382,409,420"/>
+<area shape="rect" id="node7" href="$interface_a_f_h_t_t_p_response_serializer.html" title="AFHTTPResponseSerializer\l\&lt; AFURLResponseSerialization \&gt;" alt="" coords="195,444,415,483"/>
+</map>

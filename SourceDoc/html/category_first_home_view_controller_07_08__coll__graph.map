@@ -1,0 +1,8 @@
+<map id="FirstHomeViewController()" name="FirstHomeViewController()">
+<area shape="rect" id="node9" href="$interface_x_y_title_model.html" title="XYTitleModel" alt="" coords="254,353,354,379"/>
+<area shape="rect" id="node17" href="$interface_menu_model.html" title="MenuModel" alt="" coords="136,400,227,425"/>
+<area shape="rect" id="node11" href="$interface_x_y_find_goods_view.html" title="XYFindGoodsView" alt="" coords="424,476,557,501"/>
+<area shape="rect" id="node13" href="$interface_s_d_cycle_scroll_view.html" title="SDCycleScrollView" alt="" coords="423,529,558,555"/>
+<area shape="rect" id="node16" href="$interface_x_y_quick_menu_view.html" title="XYQuickMenuView" alt="" coords="423,427,558,452"/>
+<area shape="rect" id="node14" href="$interface_q_j_slide_button_view.html" title="QJSlideButtonView" alt="" coords="423,583,558,608"/>
+</map>

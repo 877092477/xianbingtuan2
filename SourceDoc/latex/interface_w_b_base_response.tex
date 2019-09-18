@@ -1,0 +1,108 @@
+\hypertarget{interface_w_b_base_response}{}\section{W\+B\+Base\+Response Class Reference}
+\label{interface_w_b_base_response}\index{W\+B\+Base\+Response@{W\+B\+Base\+Response}}
+
+
+{\ttfamily \#import $<$Weibo\+S\+D\+K.\+h$>$}
+
+
+
+Inheritance diagram for W\+B\+Base\+Response\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_w_b_base_response__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for W\+B\+Base\+Response\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{interface_w_b_base_response__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \mbox{\hyperlink{interface_w_b_base_response_adbd83297d349925f1964bc854589da24}{response}}
+\item 
+(id) + \mbox{\hyperlink{interface_w_b_base_response_adbd83297d349925f1964bc854589da24}{response}}
+\item 
+(id) + \mbox{\hyperlink{interface_w_b_base_response_adbd83297d349925f1964bc854589da24}{response}}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+Dictionary $\ast$ \mbox{\hyperlink{interface_w_b_base_response_ab0e1042b2da7e0301eba30c2231d36a8}{request\+User\+Info}}
+\item 
+Weibo\+S\+D\+K\+Response\+Status\+Code \mbox{\hyperlink{interface_w_b_base_response_a68f57eeafc84a0b04c4986f2be081c61}{status\+Code}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+微博\+S\+D\+K所有响应类的基类 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_w_b_base_response_adbd83297d349925f1964bc854589da24}\label{interface_w_b_base_response_adbd83297d349925f1964bc854589da24}} 
+\index{W\+B\+Base\+Response@{W\+B\+Base\+Response}!response@{response}}
+\index{response@{response}!W\+B\+Base\+Response@{W\+B\+Base\+Response}}
+\subsubsection{\texorpdfstring{response()}{response()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily + (id) response \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+返回一个 \mbox{\hyperlink{interface_w_b_base_response}{W\+B\+Base\+Response}} 对象
+
+\begin{DoxyReturn}{Returns}
+返回一个$\ast$自动释放的$\ast$\+W\+B\+Base\+Response对象 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_b_base_response_adbd83297d349925f1964bc854589da24}\label{interface_w_b_base_response_adbd83297d349925f1964bc854589da24}} 
+\index{W\+B\+Base\+Response@{W\+B\+Base\+Response}!response@{response}}
+\index{response@{response}!W\+B\+Base\+Response@{W\+B\+Base\+Response}}
+\subsubsection{\texorpdfstring{response()}{response()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily + (id) response \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+返回一个 \mbox{\hyperlink{interface_w_b_base_response}{W\+B\+Base\+Response}} 对象
+
+\begin{DoxyReturn}{Returns}
+返回一个$\ast$自动释放的$\ast$\+W\+B\+Base\+Response对象 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_b_base_response_adbd83297d349925f1964bc854589da24}\label{interface_w_b_base_response_adbd83297d349925f1964bc854589da24}} 
+\index{W\+B\+Base\+Response@{W\+B\+Base\+Response}!response@{response}}
+\index{response@{response}!W\+B\+Base\+Response@{W\+B\+Base\+Response}}
+\subsubsection{\texorpdfstring{response()}{response()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily + (id) response \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+返回一个 \mbox{\hyperlink{interface_w_b_base_response}{W\+B\+Base\+Response}} 对象
+
+\begin{DoxyReturn}{Returns}
+返回一个$\ast$自动释放的$\ast$\+W\+B\+Base\+Response对象 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_w_b_base_response_ab0e1042b2da7e0301eba30c2231d36a8}\label{interface_w_b_base_response_ab0e1042b2da7e0301eba30c2231d36a8}} 
+\index{W\+B\+Base\+Response@{W\+B\+Base\+Response}!request\+User\+Info@{request\+User\+Info}}
+\index{request\+User\+Info@{request\+User\+Info}!W\+B\+Base\+Response@{W\+B\+Base\+Response}}
+\subsubsection{\texorpdfstring{request\+User\+Info}{requestUserInfo}}
+{\footnotesize\ttfamily -\/ (N\+S\+Dictionary $\ast$) request\+User\+Info\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+对应的 request 中的自定义信息字典
+
+如果当前 response 是由微博客户端响应给第三方应用的，则 request\+User\+Info 中会包含原 request.\+user\+Info 中的所有数据
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interface_w_b_data_transfer_object_ab9b7bf91e1470d29782202c04d1a86fe}{W\+B\+Base\+Request.\+user\+Info}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{interface_w_b_base_response_a68f57eeafc84a0b04c4986f2be081c61}\label{interface_w_b_base_response_a68f57eeafc84a0b04c4986f2be081c61}} 
+\index{W\+B\+Base\+Response@{W\+B\+Base\+Response}!status\+Code@{status\+Code}}
+\index{status\+Code@{status\+Code}!W\+B\+Base\+Response@{W\+B\+Base\+Response}}
+\subsubsection{\texorpdfstring{status\+Code}{statusCode}}
+{\footnotesize\ttfamily -\/ (Weibo\+S\+D\+K\+Response\+Status\+Code) status\+Code\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+响应状态码
+
+第三方应用可以通过status\+Code判断请求的处理结果 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+U\+Meng\+U\+Share/Weibo\+S\+D\+K.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="FNPartnerApplyInputView" name="FNPartnerApplyInputView">
+<area shape="rect" id="node2" href="$interface_j_m_view.html" title="JMView" alt="" coords="297,153,365,179"/>
+<area shape="rect" id="node9" href="$interface_f_n_partner_apply_title_view.html" title="FNPartnerApplyTitleView" alt="" coords="453,153,623,179"/>
+<area shape="rect" id="node10" href="$interface_f_n_custome_text_view.html" title="FNCustomeTextView" alt="" coords="258,40,404,65"/>
+</map>

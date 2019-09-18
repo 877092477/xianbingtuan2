@@ -1,0 +1,111 @@
+\hypertarget{interface_u_t_device}{}\section{U\+T\+Device Class Reference}
+\label{interface_u_t_device}\index{U\+T\+Device@{U\+T\+Device}}
+
+
+Inheritance diagram for U\+T\+Device\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=140pt]{interface_u_t_device__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for U\+T\+Device\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=140pt]{interface_u_t_device__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\+S\+String $\ast$) + \mbox{\hyperlink{interface_u_t_device_a679ac9f6e75a769943db507089abb879}{utdid}}
+\begin{DoxyCompactList}\small\item\em 获取\+S\+D\+K生成的设备唯一标识. \end{DoxyCompactList}\item 
+(N\+S\+String $\ast$) + \mbox{\hyperlink{interface_u_t_device_a679ac9f6e75a769943db507089abb879}{utdid}}
+\begin{DoxyCompactList}\small\item\em 获取\+S\+D\+K生成的设备唯一标识. \end{DoxyCompactList}\item 
+(N\+S\+String $\ast$) + \mbox{\hyperlink{interface_u_t_device_a5c96a441650c66ed5454615fa2b3bbfe}{aid\+:token\+:}}
+\begin{DoxyCompactList}\small\item\em 同步获得\+A\+ID. \end{DoxyCompactList}\item 
+(void) + \mbox{\hyperlink{interface_u_t_device_a3298d219e8f1c7d2de24e68828cf347b}{aid\+Async\+:token\+:aid\+Delegate\+:}}
+\begin{DoxyCompactList}\small\item\em 异步请求\+A\+ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_u_t_device_a5c96a441650c66ed5454615fa2b3bbfe}\label{interface_u_t_device_a5c96a441650c66ed5454615fa2b3bbfe}} 
+\index{U\+T\+Device@{U\+T\+Device}!aid\+:token\+:@{aid\+:token\+:}}
+\index{aid\+:token\+:@{aid\+:token\+:}!U\+T\+Device@{U\+T\+Device}}
+\subsubsection{\texorpdfstring{aid\+:token\+:()}{aid:token:()}}
+{\footnotesize\ttfamily + (N\+S\+String $\ast$) aid\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{app\+Name }\item[{token:(N\+S\+String $\ast$)}]{token }\end{DoxyParamCaption}}
+
+
+
+同步获得\+A\+ID. 
+
+\begin{DoxyWarning}{Warning}
+调用说明\+:若本地端没有最新\+A\+I\+D，将耗费远程通信时间并阻塞线程，建议将此调用置于非主线程，或使用\mbox{\hyperlink{}{get\+Aid\+Async}}异步获得\+A\+I\+D。 \begin{DoxyVerb}                         调用顺序:aid任意时刻都可以调用.
+\end{DoxyVerb}
+
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+A\+ID. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_u_t_device_a3298d219e8f1c7d2de24e68828cf347b}\label{interface_u_t_device_a3298d219e8f1c7d2de24e68828cf347b}} 
+\index{U\+T\+Device@{U\+T\+Device}!aid\+Async\+:token\+:aid\+Delegate\+:@{aid\+Async\+:token\+:aid\+Delegate\+:}}
+\index{aid\+Async\+:token\+:aid\+Delegate\+:@{aid\+Async\+:token\+:aid\+Delegate\+:}!U\+T\+Device@{U\+T\+Device}}
+\subsubsection{\texorpdfstring{aid\+Async\+:token\+:aid\+Delegate\+:()}{aidAsync:token:aidDelegate:()}}
+{\footnotesize\ttfamily + (void) aid\+Async\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{app\+Name }\item[{token:(N\+S\+String $\ast$)}]{token }\item[{aidDelegate:(id$<$ Aid\+Protocol\+Delegate $>$)}]{aid\+Delegate }\end{DoxyParamCaption}}
+
+
+
+异步请求\+A\+ID. 
+
+\begin{DoxyWarning}{Warning}
+调用说明\+:若本地端没有最新\+A\+I\+D，将建立异步请求获得\+A\+I\+D， \begin{DoxyVerb}                         调用顺序:aidAsync任意时刻都可以调用.
+\end{DoxyVerb}
+
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+A\+ID. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_u_t_device_a679ac9f6e75a769943db507089abb879}\label{interface_u_t_device_a679ac9f6e75a769943db507089abb879}} 
+\index{U\+T\+Device@{U\+T\+Device}!utdid@{utdid}}
+\index{utdid@{utdid}!U\+T\+Device@{U\+T\+Device}}
+\subsubsection{\texorpdfstring{utdid()}{utdid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (N\+S\+String $\ast$) utdid \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+获取\+S\+D\+K生成的设备唯一标识. 
+
+\begin{DoxyWarning}{Warning}
+调用说明\+:这个设备唯一标识是持久的,并且格式安全,i\+O\+S6以及以下,多应用互通. \begin{DoxyVerb}                         调用顺序:utdid任意时刻都可以调用.
+\end{DoxyVerb}
+
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+24字节的设备唯一标识. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_u_t_device_a679ac9f6e75a769943db507089abb879}\label{interface_u_t_device_a679ac9f6e75a769943db507089abb879}} 
+\index{U\+T\+Device@{U\+T\+Device}!utdid@{utdid}}
+\index{utdid@{utdid}!U\+T\+Device@{U\+T\+Device}}
+\subsubsection{\texorpdfstring{utdid()}{utdid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (N\+S\+String $\ast$) utdid \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+获取\+S\+D\+K生成的设备唯一标识. 
+
+\begin{DoxyWarning}{Warning}
+调用说明\+:这个设备唯一标识是持久的,并且格式安全,i\+O\+S6以及以下,多应用互通. \begin{DoxyVerb}                         调用顺序:utdid任意时刻都可以调用.
+\end{DoxyVerb}
+
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+24字节的设备唯一标识. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Classes(类文件)/\+Main(主要)/view/\+Tab\+Bar/U\+T\+Device.\+h\end{DoxyCompactItemize}

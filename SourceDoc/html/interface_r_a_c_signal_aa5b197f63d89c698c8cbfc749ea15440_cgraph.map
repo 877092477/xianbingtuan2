@@ -1,0 +1,11 @@
+<map id="&#45;[RACSignal dematerialize]" name="&#45;[RACSignal dematerialize]">
+<area shape="rect" id="node2" href="$interface_r_a_c_stream.html#a8638bfba1497aa1b14b098857b4c62e2" title="&#45;[RACStream bind:]" alt="" coords="238,5,375,31"/>
+<area shape="rect" id="node3" href="$interface_r_a_c_signal.html#a7905f73a3de844e28a19d9d63cd37214" title="Returns a signal that immediately completes. " alt="" coords="236,55,378,80"/>
+<area shape="rect" id="node5" href="$interface_r_a_c_signal.html#aedd4ad7b4b8c1f7b26d41b5be6c83d83" title="Returns a signal that immediately sends the given error. " alt="" coords="238,104,375,129"/>
+<area shape="rect" id="node8" href="$interface_r_a_c_signal.html#a41b2f3cea45bb3a14911299cb572b7d9" title="Returns a signal that immediately sends the given value and then completes. " alt="" coords="235,153,379,179"/>
+<area shape="rect" id="node4" href="$interface_r_a_c_empty_signal.html#a44bac13fa94e1789f84fc8fb9e7d40b9" title="Returns a signal that immediately completes. " alt="" coords="429,55,608,80"/>
+<area shape="rect" id="node6" href="$interface_r_a_c_error_signal.html#a485a8d10bb972a6294010ab3f4ae0452" title="Returns a signal that immediately sends the given error. " alt="" coords="435,104,602,129"/>
+<area shape="rect" id="node7" href="$interface_r_a_c_stream.html#aedc0b75ca3e6d0f81f006c7c3c6a1d76" title="&#45;[RACStream setNameWithFormat:]" alt="" coords="659,104,893,129"/>
+<area shape="rect" id="node9" href="$interface_r_a_c_return_signal.html#acaf96978eeb78adb2409b717f26ce665" title="Returns a signal that immediately sends the given value and then completes. " alt="" coords="427,153,611,179"/>
+<area shape="rect" id="node10" href="$interface_r_a_c_unit.html#a69ef370b51c8d2af28761fcf5109a74a" title="A singleton instance. " alt="" coords="698,153,854,179"/>
+</map>

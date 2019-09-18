@@ -1,0 +1,125 @@
+\hypertarget{interface_j_m_theme_street_a_p_i_tool}{}\section{J\+M\+Theme\+Street\+A\+P\+I\+Tool Class Reference}
+\label{interface_j_m_theme_street_a_p_i_tool}\index{J\+M\+Theme\+Street\+A\+P\+I\+Tool@{J\+M\+Theme\+Street\+A\+P\+I\+Tool}}
+
+
+Inheritance diagram for J\+M\+Theme\+Street\+A\+P\+I\+Tool\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{interface_j_m_theme_street_a_p_i_tool__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for J\+M\+Theme\+Street\+A\+P\+I\+Tool\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{interface_j_m_theme_street_a_p_i_tool__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \mbox{\hyperlink{interface_j_m_theme_street_a_p_i_tool_a4f9ffd7be9460f6ca8ccf11ef143f627}{api\+Theme\+Request\+Theme\+List\+With\+Params\+:success\+:failure\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_j_m_theme_street_a_p_i_tool_ae01b88a76ed3c16d4567fd6703352bd9}{api\+Theme\+Request\+Theme\+Detail\+With\+Params\+:success\+:failure\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_j_m_theme_street_a_p_i_tool_abeb10df61208e3b6b6b05329080bee58}{api\+Theme\+Request\+Theme\+Following\+With\+Params\+:success\+:failure\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_j_m_theme_street_a_p_i_tool_a063f8abd59fa67a2689aacde8e0491de}{api\+Theme\+Request\+Theme\+Following\+Cancel\+With\+Params\+:success\+:failure\+:}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_j_m_theme_street_a_p_i_tool_ae01b88a76ed3c16d4567fd6703352bd9}\label{interface_j_m_theme_street_a_p_i_tool_ae01b88a76ed3c16d4567fd6703352bd9}} 
+\index{J\+M\+Theme\+Street\+A\+P\+I\+Tool@{J\+M\+Theme\+Street\+A\+P\+I\+Tool}!api\+Theme\+Request\+Theme\+Detail\+With\+Params\+:success\+:failure\+:@{api\+Theme\+Request\+Theme\+Detail\+With\+Params\+:success\+:failure\+:}}
+\index{api\+Theme\+Request\+Theme\+Detail\+With\+Params\+:success\+:failure\+:@{api\+Theme\+Request\+Theme\+Detail\+With\+Params\+:success\+:failure\+:}!J\+M\+Theme\+Street\+A\+P\+I\+Tool@{J\+M\+Theme\+Street\+A\+P\+I\+Tool}}
+\subsubsection{\texorpdfstring{api\+Theme\+Request\+Theme\+Detail\+With\+Params\+:success\+:failure\+:()}{apiThemeRequestThemeDetailWithParams:success:failure:()}}
+{\footnotesize\ttfamily + (void) api\+Theme\+Request\+Theme\+Detail\+With\+Params\+: \begin{DoxyParamCaption}\item[{(N\+S\+Mutable\+Dictionary $\ast$)}]{params }\item[{success:(Request\+Success)}]{success }\item[{failure:(Request\+Failure)}]{failure }\end{DoxyParamCaption}}
+
+4.\+1主题+商品（文） 接口描述：主题
+
+请求\+U\+R\+L：
+
+?act=apptheme\&ctrl=get\+Themegoods
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & time sign aid \\
+\hline
+{\em success} & 请求成功回调 \\
+\hline
+{\em failure} & 请求失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_j_m_theme_street_a_p_i_tool_a063f8abd59fa67a2689aacde8e0491de}\label{interface_j_m_theme_street_a_p_i_tool_a063f8abd59fa67a2689aacde8e0491de}} 
+\index{J\+M\+Theme\+Street\+A\+P\+I\+Tool@{J\+M\+Theme\+Street\+A\+P\+I\+Tool}!api\+Theme\+Request\+Theme\+Following\+Cancel\+With\+Params\+:success\+:failure\+:@{api\+Theme\+Request\+Theme\+Following\+Cancel\+With\+Params\+:success\+:failure\+:}}
+\index{api\+Theme\+Request\+Theme\+Following\+Cancel\+With\+Params\+:success\+:failure\+:@{api\+Theme\+Request\+Theme\+Following\+Cancel\+With\+Params\+:success\+:failure\+:}!J\+M\+Theme\+Street\+A\+P\+I\+Tool@{J\+M\+Theme\+Street\+A\+P\+I\+Tool}}
+\subsubsection{\texorpdfstring{api\+Theme\+Request\+Theme\+Following\+Cancel\+With\+Params\+:success\+:failure\+:()}{apiThemeRequestThemeFollowingCancelWithParams:success:failure:()}}
+{\footnotesize\ttfamily + (void) api\+Theme\+Request\+Theme\+Following\+Cancel\+With\+Params\+: \begin{DoxyParamCaption}\item[{(N\+S\+Mutable\+Dictionary $\ast$)}]{params }\item[{success:(Request\+Success)}]{success }\item[{failure:(Request\+Failure)}]{failure }\end{DoxyParamCaption}}
+
+4.\+12取消关注主题功能 接口描述：用于取消关注主题功能
+
+请求\+U\+R\+L：
+
+?mod=mlt\&act=xrfl\&ctrl=cancel\+GZ
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & time sign aid \\
+\hline
+{\em success} & 请求成功回调 \\
+\hline
+{\em failure} & 请求失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_j_m_theme_street_a_p_i_tool_abeb10df61208e3b6b6b05329080bee58}\label{interface_j_m_theme_street_a_p_i_tool_abeb10df61208e3b6b6b05329080bee58}} 
+\index{J\+M\+Theme\+Street\+A\+P\+I\+Tool@{J\+M\+Theme\+Street\+A\+P\+I\+Tool}!api\+Theme\+Request\+Theme\+Following\+With\+Params\+:success\+:failure\+:@{api\+Theme\+Request\+Theme\+Following\+With\+Params\+:success\+:failure\+:}}
+\index{api\+Theme\+Request\+Theme\+Following\+With\+Params\+:success\+:failure\+:@{api\+Theme\+Request\+Theme\+Following\+With\+Params\+:success\+:failure\+:}!J\+M\+Theme\+Street\+A\+P\+I\+Tool@{J\+M\+Theme\+Street\+A\+P\+I\+Tool}}
+\subsubsection{\texorpdfstring{api\+Theme\+Request\+Theme\+Following\+With\+Params\+:success\+:failure\+:()}{apiThemeRequestThemeFollowingWithParams:success:failure:()}}
+{\footnotesize\ttfamily + (void) api\+Theme\+Request\+Theme\+Following\+With\+Params\+: \begin{DoxyParamCaption}\item[{(N\+S\+Mutable\+Dictionary $\ast$)}]{params }\item[{success:(Request\+Success)}]{success }\item[{failure:(Request\+Failure)}]{failure }\end{DoxyParamCaption}}
+
+4.\+11关注主题功能 接口描述：用于关注主题功能
+
+请求\+U\+R\+L：
+
+?mod=mlt\&act=xrfl\&ctrl=add\+GZ
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & time sign aid \\
+\hline
+{\em success} & 请求成功回调 \\
+\hline
+{\em failure} & 请求失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_j_m_theme_street_a_p_i_tool_a4f9ffd7be9460f6ca8ccf11ef143f627}\label{interface_j_m_theme_street_a_p_i_tool_a4f9ffd7be9460f6ca8ccf11ef143f627}} 
+\index{J\+M\+Theme\+Street\+A\+P\+I\+Tool@{J\+M\+Theme\+Street\+A\+P\+I\+Tool}!api\+Theme\+Request\+Theme\+List\+With\+Params\+:success\+:failure\+:@{api\+Theme\+Request\+Theme\+List\+With\+Params\+:success\+:failure\+:}}
+\index{api\+Theme\+Request\+Theme\+List\+With\+Params\+:success\+:failure\+:@{api\+Theme\+Request\+Theme\+List\+With\+Params\+:success\+:failure\+:}!J\+M\+Theme\+Street\+A\+P\+I\+Tool@{J\+M\+Theme\+Street\+A\+P\+I\+Tool}}
+\subsubsection{\texorpdfstring{api\+Theme\+Request\+Theme\+List\+With\+Params\+:success\+:failure\+:()}{apiThemeRequestThemeListWithParams:success:failure:()}}
+{\footnotesize\ttfamily + (void) api\+Theme\+Request\+Theme\+List\+With\+Params\+: \begin{DoxyParamCaption}\item[{(N\+S\+Mutable\+Dictionary $\ast$)}]{params }\item[{success:(Request\+Success)}]{success }\item[{failure:(Request\+Failure)}]{failure }\end{DoxyParamCaption}}
+
+4.\+2主题列表 接口描述：主题类表
+
+请求\+U\+R\+L：
+
+?act=apptheme\&ctrl=get\+Theme
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & time sign aid \\
+\hline
+{\em success} & 请求成功回调 \\
+\hline
+{\em failure} & 请求失败回调 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Classes(类文件)/附加首页/美利淘/\+Home/api/\+Theme\+Street/J\+M\+Theme\+Street\+A\+P\+I\+Tool.\+h\item 
+T\+H\+B/\+Classes(类文件)/附加首页/美利淘/\+Home/api/\+Theme\+Street/J\+M\+Theme\+Street\+A\+P\+I\+Tool.\+m\end{DoxyCompactItemize}

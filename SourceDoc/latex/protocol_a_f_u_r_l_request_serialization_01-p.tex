@@ -1,0 +1,106 @@
+\hypertarget{protocol_a_f_u_r_l_request_serialization_01-p}{}\section{$<$A\+F\+U\+R\+L\+Request\+Serialization $>$ Protocol Reference}
+\label{protocol_a_f_u_r_l_request_serialization_01-p}\index{$<$\+A\+F\+U\+R\+L\+Request\+Serialization $>$@{$<$\+A\+F\+U\+R\+L\+Request\+Serialization $>$}}
+
+
+{\ttfamily \#import $<$A\+F\+U\+R\+L\+Request\+Serialization.\+h$>$}
+
+
+
+Inheritance diagram for $<$A\+F\+U\+R\+L\+Request\+Serialization $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{protocol_a_f_u_r_l_request_serialization_01-p__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for $<$A\+F\+U\+R\+L\+Request\+Serialization $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{protocol_a_f_u_r_l_request_serialization_01-p__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(nullable N\+S\+U\+R\+L\+Request $\ast$) -\/ \mbox{\hyperlink{protocol_a_f_u_r_l_request_serialization_01-p_a9a5ee0c078bd3bfc56b0a1c16151c923}{request\+By\+Serializing\+Request\+:with\+Parameters\+:error\+:}}
+\item 
+(nullable N\+S\+U\+R\+L\+Request $\ast$) -\/ \mbox{\hyperlink{protocol_a_f_u_r_l_request_serialization_01-p_a9a5ee0c078bd3bfc56b0a1c16151c923}{request\+By\+Serializing\+Request\+:with\+Parameters\+:error\+:}}
+\item 
+(nullable N\+S\+U\+R\+L\+Request $\ast$) -\/ \mbox{\hyperlink{protocol_a_f_u_r_l_request_serialization_01-p_a9a5ee0c078bd3bfc56b0a1c16151c923}{request\+By\+Serializing\+Request\+:with\+Parameters\+:error\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{class_a_f_u_r_l_request_serialization-p}{A\+F\+U\+R\+L\+Request\+Serialization}}} protocol is adopted by an object that encodes parameters for a specified H\+T\+TP requests. Request serializers may encode parameters as query strings, H\+T\+TP bodies, setting the appropriate H\+T\+TP header fields as necessary.
+
+For example, a J\+S\+ON request serializer may set the H\+T\+TP body of the request to a J\+S\+ON representation, and set the {\ttfamily Content-\/\+Type} H\+T\+TP header field value to {\ttfamily application/json}. 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{protocol_a_f_u_r_l_request_serialization_01-p_a9a5ee0c078bd3bfc56b0a1c16151c923}\label{protocol_a_f_u_r_l_request_serialization_01-p_a9a5ee0c078bd3bfc56b0a1c16151c923}} 
+\index{A\+F\+U\+R\+L\+Request\+Serialization -\/p@{A\+F\+U\+R\+L\+Request\+Serialization -\/p}!request\+By\+Serializing\+Request\+:with\+Parameters\+:error\+:@{request\+By\+Serializing\+Request\+:with\+Parameters\+:error\+:}}
+\index{request\+By\+Serializing\+Request\+:with\+Parameters\+:error\+:@{request\+By\+Serializing\+Request\+:with\+Parameters\+:error\+:}!A\+F\+U\+R\+L\+Request\+Serialization -\/p@{A\+F\+U\+R\+L\+Request\+Serialization -\/p}}
+\subsubsection{\texorpdfstring{request\+By\+Serializing\+Request\+:with\+Parameters\+:error\+:()}{requestBySerializingRequest:withParameters:error:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (nullable N\+S\+U\+R\+L\+Request $\ast$ A\+F\+U\+R\+L\+Request\+Serialization) request\+By\+Serializing\+Request\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+R\+L\+Request $\ast$)}]{request }\item[{withParameters:(nullable id)}]{parameters }\item[{error:(N\+S\+Error $\ast$\+\_\+\+\_\+nullable \+\_\+\+\_\+autoreleasing $\ast$)}]{error }\end{DoxyParamCaption}}
+
+Returns a request with the specified parameters encoded into a copy of the original request.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The original request. \\
+\hline
+{\em parameters} & The parameters to be encoded. \\
+\hline
+{\em error} & The error that occurred while attempting to encode the request parameters.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A serialized request. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_a_f_u_r_l_request_serialization_01-p_a9a5ee0c078bd3bfc56b0a1c16151c923}\label{protocol_a_f_u_r_l_request_serialization_01-p_a9a5ee0c078bd3bfc56b0a1c16151c923}} 
+\index{A\+F\+U\+R\+L\+Request\+Serialization -\/p@{A\+F\+U\+R\+L\+Request\+Serialization -\/p}!request\+By\+Serializing\+Request\+:with\+Parameters\+:error\+:@{request\+By\+Serializing\+Request\+:with\+Parameters\+:error\+:}}
+\index{request\+By\+Serializing\+Request\+:with\+Parameters\+:error\+:@{request\+By\+Serializing\+Request\+:with\+Parameters\+:error\+:}!A\+F\+U\+R\+L\+Request\+Serialization -\/p@{A\+F\+U\+R\+L\+Request\+Serialization -\/p}}
+\subsubsection{\texorpdfstring{request\+By\+Serializing\+Request\+:with\+Parameters\+:error\+:()}{requestBySerializingRequest:withParameters:error:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (nullable N\+S\+U\+R\+L\+Request $\ast$ A\+F\+U\+R\+L\+Request\+Serialization) request\+By\+Serializing\+Request\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+R\+L\+Request $\ast$)}]{request }\item[{withParameters:(nullable id)}]{parameters }\item[{error:(N\+S\+Error $\ast$\+\_\+\+\_\+nullable \+\_\+\+\_\+autoreleasing $\ast$)}]{error }\end{DoxyParamCaption}}
+
+Returns a request with the specified parameters encoded into a copy of the original request.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The original request. \\
+\hline
+{\em parameters} & The parameters to be encoded. \\
+\hline
+{\em error} & The error that occurred while attempting to encode the request parameters.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A serialized request. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_a_f_u_r_l_request_serialization_01-p_a9a5ee0c078bd3bfc56b0a1c16151c923}\label{protocol_a_f_u_r_l_request_serialization_01-p_a9a5ee0c078bd3bfc56b0a1c16151c923}} 
+\index{A\+F\+U\+R\+L\+Request\+Serialization -\/p@{A\+F\+U\+R\+L\+Request\+Serialization -\/p}!request\+By\+Serializing\+Request\+:with\+Parameters\+:error\+:@{request\+By\+Serializing\+Request\+:with\+Parameters\+:error\+:}}
+\index{request\+By\+Serializing\+Request\+:with\+Parameters\+:error\+:@{request\+By\+Serializing\+Request\+:with\+Parameters\+:error\+:}!A\+F\+U\+R\+L\+Request\+Serialization -\/p@{A\+F\+U\+R\+L\+Request\+Serialization -\/p}}
+\subsubsection{\texorpdfstring{request\+By\+Serializing\+Request\+:with\+Parameters\+:error\+:()}{requestBySerializingRequest:withParameters:error:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (nullable N\+S\+U\+R\+L\+Request $\ast$ A\+F\+U\+R\+L\+Request\+Serialization) request\+By\+Serializing\+Request\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+R\+L\+Request $\ast$)}]{request }\item[{withParameters:(nullable id)}]{parameters }\item[{error:(N\+S\+Error $\ast$\+\_\+\+\_\+nullable \+\_\+\+\_\+autoreleasing $\ast$)}]{error }\end{DoxyParamCaption}}
+
+Returns a request with the specified parameters encoded into a copy of the original request.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The original request. \\
+\hline
+{\em parameters} & The parameters to be encoded. \\
+\hline
+{\em error} & The error that occurred while attempting to encode the request parameters.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A serialized request. 
+\end{DoxyReturn}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+A\+F\+Networking/\+A\+F\+Networking/A\+F\+U\+R\+L\+Request\+Serialization.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="WBBaseMediaObject" name="WBBaseMediaObject">
+<area shape="rect" id="node3" href="$interface_w_b_music_object.html" title="WBMusicObject" alt="" coords="5,152,121,177"/>
+<area shape="rect" id="node4" href="$interface_w_b_video_object.html" title="WBVideoObject" alt="" coords="146,152,261,177"/>
+<area shape="rect" id="node5" href="$interface_w_b_webpage_object.html" title="WBWebpageObject" alt="" coords="285,152,423,177"/>
+</map>

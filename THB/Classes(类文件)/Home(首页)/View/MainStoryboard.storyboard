@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="04T-rN-LYo">
+    <dependencies>
+        <deployment version="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="gUh-vn-aiH">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="04T-rN-LYo" customClass="XYNavigationController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PHN-hK-tNV">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Qm0-qq-grd" kind="relationship" relationship="rootViewController" id="ZmG-Zx-YS8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IpJ-cq-B2M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="115"/>
+        </scene>
+        <!--Brand Base View Controller-->
+        <scene sceneID="22A-6X-PC0">
+            <objects>
+                <viewController storyboardIdentifier="BrandVC" id="Qm0-qq-grd" customClass="BrandBaseViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1BT-D4-hgy"/>
+                        <viewControllerLayoutGuide type="bottom" id="NU3-v2-LVx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gd3-ZI-2R2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6sa-vz-VVt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wbv-E7-K6y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="650" y="115"/>
+        </scene>
+        <!--WillViewController-->
+        <scene sceneID="6LM-EA-ku9">
+            <objects>
+                <viewController storyboardIdentifier="WillView" title="即将开始" id="pR7-7j-bGU" userLabel="WillViewController" customClass="WillViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gEe-d8-0bW"/>
+                        <viewControllerLayoutGuide type="bottom" id="ez0-A1-hqF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fg1-SU-un9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kEH-1F-ygd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1164" y="488"/>
+        </scene>
+        <!--BrandViewController-->
+        <scene sceneID="io2-mp-rlD">
+            <objects>
+                <viewController storyboardIdentifier="BrandView" title="商城返利" automaticallyAdjustsScrollViewInsets="NO" id="2Ul-Eo-ue9" userLabel="BrandViewController" customClass="BrandViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tyG-LL-F8U"/>
+                        <viewControllerLayoutGuide type="bottom" id="VMM-83-jbp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Bv-av-pgd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kJf-fV-jXw"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Noh-Ee-2y8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="286" y="-423"/>
+        </scene>
+        <!--Brand Sales View Controller-->
+        <scene sceneID="TC9-n4-Qys">
+            <objects>
+                <viewController storyboardIdentifier="BrandSalesVC" id="AnD-7k-dMH" customClass="BrandSalesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CFh-Xn-Di1"/>
+                        <viewControllerLayoutGuide type="bottom" id="x7Z-ZD-BLY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nEx-wx-Gsm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qxd-y5-LMi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mdC-eT-kVL" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="730" y="-514"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

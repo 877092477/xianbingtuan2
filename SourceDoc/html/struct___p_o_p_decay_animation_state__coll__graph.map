@@ -1,0 +1,8 @@
+<map id="_POPDecayAnimationState" name="_POPDecayAnimationState">
+<area shape="rect" id="node2" href="$struct___p_o_p_property_animation_state.html" title="_POPPropertyAnimationState" alt="" coords="220,380,418,405"/>
+<area shape="rect" id="node3" href="$struct___p_o_p_animation_state.html" title="_POPAnimationState" alt="" coords="190,293,336,319"/>
+<area shape="rect" id="node4" href="$interface_p_o_p_animation.html" title="POPAnimation" alt="" coords="5,167,113,192"/>
+<area shape="rect" id="node6" href="$interface_p_o_p_animation_tracer.html" title="POPAnimationTracer" alt="" coords="121,80,267,105"/>
+<area shape="rect" id="node7" href="$interface_p_o_p_animatable_property.html" title="POPAnimatableProperty" alt="" coords="291,80,457,105"/>
+<area shape="rect" id="node10" href="$struct_p_o_p_progress_marker.html" title="POPProgressMarker" alt="" coords="411,293,555,319"/>
+</map>

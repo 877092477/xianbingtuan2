@@ -1,0 +1,115 @@
+\hypertarget{category_u_i_alert_view_07_r_a_c_signal_support_08}{}\section{U\+I\+Alert\+View(R\+A\+C\+Signal\+Support) Category Reference}
+\label{category_u_i_alert_view_07_r_a_c_signal_support_08}\index{U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)}}
+
+
+Collaboration diagram for U\+I\+Alert\+View(R\+A\+C\+Signal\+Support)\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{category_u_i_alert_view_07_r_a_c_signal_support_08__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) -\/ \mbox{\hyperlink{category_u_i_alert_view_07_r_a_c_signal_support_08_afc61c8b02f0adc4622f827eef4a8c2af}{rac\+\_\+button\+Clicked\+Signal}}
+\item 
+(\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) -\/ \mbox{\hyperlink{category_u_i_alert_view_07_r_a_c_signal_support_08_aa0ae17a8658125f05c58f479cbaf2472}{rac\+\_\+will\+Dismiss\+Signal}}
+\item 
+(\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) -\/ \mbox{\hyperlink{category_u_i_alert_view_07_r_a_c_signal_support_08_afc61c8b02f0adc4622f827eef4a8c2af}{rac\+\_\+button\+Clicked\+Signal}}
+\item 
+(\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) -\/ \mbox{\hyperlink{category_u_i_alert_view_07_r_a_c_signal_support_08_aa0ae17a8658125f05c58f479cbaf2472}{rac\+\_\+will\+Dismiss\+Signal}}
+\item 
+(\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) -\/ \mbox{\hyperlink{category_u_i_alert_view_07_r_a_c_signal_support_08_afc61c8b02f0adc4622f827eef4a8c2af}{rac\+\_\+button\+Clicked\+Signal}}
+\item 
+(\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) -\/ \mbox{\hyperlink{category_u_i_alert_view_07_r_a_c_signal_support_08_aa0ae17a8658125f05c58f479cbaf2472}{rac\+\_\+will\+Dismiss\+Signal}}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_r_a_c_delegate_proxy}{R\+A\+C\+Delegate\+Proxy}} $\ast$ \mbox{\hyperlink{category_u_i_alert_view_07_r_a_c_signal_support_08_ae9b1bde4434c5912958337650d7aff85}{rac\+\_\+delegate\+Proxy}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{category_u_i_alert_view_07_r_a_c_signal_support_08_afc61c8b02f0adc4622f827eef4a8c2af}\label{category_u_i_alert_view_07_r_a_c_signal_support_08_afc61c8b02f0adc4622f827eef4a8c2af}} 
+\index{U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)}!rac\+\_\+button\+Clicked\+Signal@{rac\+\_\+button\+Clicked\+Signal}}
+\index{rac\+\_\+button\+Clicked\+Signal@{rac\+\_\+button\+Clicked\+Signal}!U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)}}
+\subsubsection{\texorpdfstring{rac\+\_\+button\+Clicked\+Signal()}{rac\_buttonClickedSignal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) rac\+\_\+button\+Clicked\+Signal \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Creates a signal for button clicks on the receiver.
+
+When this method is invoked, the {\ttfamily rac\+\_\+delegate\+Proxy} will become the receiver\textquotesingle{}s delegate. Any previous delegate will become the -\/\mbox{[}\mbox{\hyperlink{interface_r_a_c_delegate_proxy}{R\+A\+C\+Delegate\+Proxy}} rac\+\_\+proxied\+Delegate\mbox{]}, so that it receives any messages that the proxy doesn\textquotesingle{}t know how to handle. Setting the receiver\textquotesingle{}s {\ttfamily delegate} afterward is considered undefined behavior.
+
+Note that this signal will not send a value when the alert is dismissed programatically.
+
+Returns a signal which will send the index of the specific button clicked. The signal will complete itself when the receiver is deallocated. \mbox{\Hypertarget{category_u_i_alert_view_07_r_a_c_signal_support_08_afc61c8b02f0adc4622f827eef4a8c2af}\label{category_u_i_alert_view_07_r_a_c_signal_support_08_afc61c8b02f0adc4622f827eef4a8c2af}} 
+\index{U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)}!rac\+\_\+button\+Clicked\+Signal@{rac\+\_\+button\+Clicked\+Signal}}
+\index{rac\+\_\+button\+Clicked\+Signal@{rac\+\_\+button\+Clicked\+Signal}!U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)}}
+\subsubsection{\texorpdfstring{rac\+\_\+button\+Clicked\+Signal()}{rac\_buttonClickedSignal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) rac\+\_\+button\+Clicked\+Signal \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Creates a signal for button clicks on the receiver.
+
+When this method is invoked, the {\ttfamily rac\+\_\+delegate\+Proxy} will become the receiver\textquotesingle{}s delegate. Any previous delegate will become the -\/\mbox{[}\mbox{\hyperlink{interface_r_a_c_delegate_proxy}{R\+A\+C\+Delegate\+Proxy}} rac\+\_\+proxied\+Delegate\mbox{]}, so that it receives any messages that the proxy doesn\textquotesingle{}t know how to handle. Setting the receiver\textquotesingle{}s {\ttfamily delegate} afterward is considered undefined behavior.
+
+Note that this signal will not send a value when the alert is dismissed programatically.
+
+Returns a signal which will send the index of the specific button clicked. The signal will complete itself when the receiver is deallocated. \mbox{\Hypertarget{category_u_i_alert_view_07_r_a_c_signal_support_08_afc61c8b02f0adc4622f827eef4a8c2af}\label{category_u_i_alert_view_07_r_a_c_signal_support_08_afc61c8b02f0adc4622f827eef4a8c2af}} 
+\index{U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)}!rac\+\_\+button\+Clicked\+Signal@{rac\+\_\+button\+Clicked\+Signal}}
+\index{rac\+\_\+button\+Clicked\+Signal@{rac\+\_\+button\+Clicked\+Signal}!U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)}}
+\subsubsection{\texorpdfstring{rac\+\_\+button\+Clicked\+Signal()}{rac\_buttonClickedSignal()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) rac\+\_\+button\+Clicked\+Signal \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Creates a signal for button clicks on the receiver.
+
+When this method is invoked, the {\ttfamily rac\+\_\+delegate\+Proxy} will become the receiver\textquotesingle{}s delegate. Any previous delegate will become the -\/\mbox{[}\mbox{\hyperlink{interface_r_a_c_delegate_proxy}{R\+A\+C\+Delegate\+Proxy}} rac\+\_\+proxied\+Delegate\mbox{]}, so that it receives any messages that the proxy doesn\textquotesingle{}t know how to handle. Setting the receiver\textquotesingle{}s {\ttfamily delegate} afterward is considered undefined behavior.
+
+Note that this signal will not send a value when the alert is dismissed programatically.
+
+Returns a signal which will send the index of the specific button clicked. The signal will complete itself when the receiver is deallocated. \mbox{\Hypertarget{category_u_i_alert_view_07_r_a_c_signal_support_08_aa0ae17a8658125f05c58f479cbaf2472}\label{category_u_i_alert_view_07_r_a_c_signal_support_08_aa0ae17a8658125f05c58f479cbaf2472}} 
+\index{U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)}!rac\+\_\+will\+Dismiss\+Signal@{rac\+\_\+will\+Dismiss\+Signal}}
+\index{rac\+\_\+will\+Dismiss\+Signal@{rac\+\_\+will\+Dismiss\+Signal}!U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)}}
+\subsubsection{\texorpdfstring{rac\+\_\+will\+Dismiss\+Signal()}{rac\_willDismissSignal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) rac\+\_\+will\+Dismiss\+Signal \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Creates a signal for dismissal of the receiver.
+
+When this method is invoked, the {\ttfamily rac\+\_\+delegate\+Proxy} will become the receiver\textquotesingle{}s delegate. Any previous delegate will become the -\/\mbox{[}\mbox{\hyperlink{interface_r_a_c_delegate_proxy}{R\+A\+C\+Delegate\+Proxy}} rac\+\_\+proxied\+Delegate\mbox{]}, so that it receives any messages that the proxy doesn\textquotesingle{}t know how to handle. Setting the receiver\textquotesingle{}s {\ttfamily delegate} afterward is considered undefined behavior.
+
+Returns a signal which will send the index of the button associated with the dismissal. The signal will complete itself when the receiver is deallocated. \mbox{\Hypertarget{category_u_i_alert_view_07_r_a_c_signal_support_08_aa0ae17a8658125f05c58f479cbaf2472}\label{category_u_i_alert_view_07_r_a_c_signal_support_08_aa0ae17a8658125f05c58f479cbaf2472}} 
+\index{U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)}!rac\+\_\+will\+Dismiss\+Signal@{rac\+\_\+will\+Dismiss\+Signal}}
+\index{rac\+\_\+will\+Dismiss\+Signal@{rac\+\_\+will\+Dismiss\+Signal}!U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)}}
+\subsubsection{\texorpdfstring{rac\+\_\+will\+Dismiss\+Signal()}{rac\_willDismissSignal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) rac\+\_\+will\+Dismiss\+Signal \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Creates a signal for dismissal of the receiver.
+
+When this method is invoked, the {\ttfamily rac\+\_\+delegate\+Proxy} will become the receiver\textquotesingle{}s delegate. Any previous delegate will become the -\/\mbox{[}\mbox{\hyperlink{interface_r_a_c_delegate_proxy}{R\+A\+C\+Delegate\+Proxy}} rac\+\_\+proxied\+Delegate\mbox{]}, so that it receives any messages that the proxy doesn\textquotesingle{}t know how to handle. Setting the receiver\textquotesingle{}s {\ttfamily delegate} afterward is considered undefined behavior.
+
+Returns a signal which will send the index of the button associated with the dismissal. The signal will complete itself when the receiver is deallocated. \mbox{\Hypertarget{category_u_i_alert_view_07_r_a_c_signal_support_08_aa0ae17a8658125f05c58f479cbaf2472}\label{category_u_i_alert_view_07_r_a_c_signal_support_08_aa0ae17a8658125f05c58f479cbaf2472}} 
+\index{U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)}!rac\+\_\+will\+Dismiss\+Signal@{rac\+\_\+will\+Dismiss\+Signal}}
+\index{rac\+\_\+will\+Dismiss\+Signal@{rac\+\_\+will\+Dismiss\+Signal}!U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)}}
+\subsubsection{\texorpdfstring{rac\+\_\+will\+Dismiss\+Signal()}{rac\_willDismissSignal()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_signal}{R\+A\+C\+Signal}} $\ast$) rac\+\_\+will\+Dismiss\+Signal \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Creates a signal for dismissal of the receiver.
+
+When this method is invoked, the {\ttfamily rac\+\_\+delegate\+Proxy} will become the receiver\textquotesingle{}s delegate. Any previous delegate will become the -\/\mbox{[}\mbox{\hyperlink{interface_r_a_c_delegate_proxy}{R\+A\+C\+Delegate\+Proxy}} rac\+\_\+proxied\+Delegate\mbox{]}, so that it receives any messages that the proxy doesn\textquotesingle{}t know how to handle. Setting the receiver\textquotesingle{}s {\ttfamily delegate} afterward is considered undefined behavior.
+
+Returns a signal which will send the index of the button associated with the dismissal. The signal will complete itself when the receiver is deallocated. 
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{category_u_i_alert_view_07_r_a_c_signal_support_08_ae9b1bde4434c5912958337650d7aff85}\label{category_u_i_alert_view_07_r_a_c_signal_support_08_ae9b1bde4434c5912958337650d7aff85}} 
+\index{U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)}!rac\+\_\+delegate\+Proxy@{rac\+\_\+delegate\+Proxy}}
+\index{rac\+\_\+delegate\+Proxy@{rac\+\_\+delegate\+Proxy}!U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)@{U\+I\+Alert\+View(\+R\+A\+C\+Signal\+Support)}}
+\subsubsection{\texorpdfstring{rac\+\_\+delegate\+Proxy}{rac\_delegateProxy}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_r_a_c_delegate_proxy}{R\+A\+C\+Delegate\+Proxy}} $\ast$) rac\+\_\+delegate\+Proxy\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+A delegate proxy which will be set as the receiver\textquotesingle{}s delegate when any of the methods in this category are used. 
+
+The documentation for this category was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+Reactive\+Cocoa/U\+I\+Alert\+View+\+R\+A\+C\+Signal\+Support.\+h\item 
+Pods/\+Reactive\+Cocoa/\+Reactive\+Cocoa/U\+I\+Alert\+View+\+R\+A\+C\+Signal\+Support.\+m\end{DoxyCompactItemize}

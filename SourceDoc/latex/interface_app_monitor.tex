@@ -1,0 +1,71 @@
+\hypertarget{interface_app_monitor}{}\section{App\+Monitor Class Reference}
+\label{interface_app_monitor}\index{App\+Monitor@{App\+Monitor}}
+
+
+Inheritance diagram for App\+Monitor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{interface_app_monitor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for App\+Monitor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{interface_app_monitor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_app_monitor_ad784f79b8882dc39f146847fb1fb7c58}\label{interface_app_monitor_ad784f79b8882dc39f146847fb1fb7c58}} 
+(B\+O\+OL) + {\bfseries is\+Init}
+\item 
+\mbox{\Hypertarget{interface_app_monitor_a8998cf299c9229340092bcf7e918a3e6}\label{interface_app_monitor_a8998cf299c9229340092bcf7e918a3e6}} 
+(instancetype) + {\bfseries shared\+Instance}
+\item 
+\mbox{\Hypertarget{interface_app_monitor_a2dc1e92a804ab13ba5a4a72ad4c3550c}\label{interface_app_monitor_a2dc1e92a804ab13ba5a4a72ad4c3550c}} 
+(void) + {\bfseries set\+Sampling\+Config\+With\+Json\+:}
+\item 
+(void) + \mbox{\hyperlink{interface_app_monitor_a20bd877ea45f47a4b2a1952b80be73ee}{disable\+Sample}}
+\item 
+(void) + \mbox{\hyperlink{interface_app_monitor_aa20ec8d80e9bd57158a485c1519a9547}{set\+Sampling\+:}}
+\item 
+\mbox{\Hypertarget{interface_app_monitor_ae9f0233bc95672a41baa971a6bbe77f5}\label{interface_app_monitor_ae9f0233bc95672a41baa971a6bbe77f5}} 
+(B\+O\+OL) + {\bfseries is\+Turn\+On\+Real\+Time\+Debug}
+\item 
+\mbox{\Hypertarget{interface_app_monitor_a75de2032aa9969e9d69dd52e4da19531}\label{interface_app_monitor_a75de2032aa9969e9d69dd52e4da19531}} 
+(N\+S\+String $\ast$) + {\bfseries real\+Time\+Debug\+Upload\+Url}
+\item 
+\mbox{\Hypertarget{interface_app_monitor_abe93c9dcfd209703809f4123166ec515}\label{interface_app_monitor_abe93c9dcfd209703809f4123166ec515}} 
+(N\+S\+String $\ast$) + {\bfseries real\+Time\+Debug\+Id}
+\item 
+\mbox{\Hypertarget{interface_app_monitor_a277bb0afc4c1c2491a3c6d150f89a02c}\label{interface_app_monitor_a277bb0afc4c1c2491a3c6d150f89a02c}} 
+(void) + {\bfseries turn\+On\+App\+Monitor\+Realtime\+Debug\+:}
+\item 
+\mbox{\Hypertarget{interface_app_monitor_a8f6a36613ff16afc12f5f5b28e1eebc0}\label{interface_app_monitor_a8f6a36613ff16afc12f5f5b28e1eebc0}} 
+(void) + {\bfseries turn\+Off\+App\+Monitor\+Realtime\+Debug}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_app_monitor_a20bd877ea45f47a4b2a1952b80be73ee}\label{interface_app_monitor_a20bd877ea45f47a4b2a1952b80be73ee}} 
+\index{App\+Monitor@{App\+Monitor}!disable\+Sample@{disable\+Sample}}
+\index{disable\+Sample@{disable\+Sample}!App\+Monitor@{App\+Monitor}}
+\subsubsection{\texorpdfstring{disable\+Sample()}{disableSample()}}
+{\footnotesize\ttfamily + (void) disable\+Sample \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+关闭采样，紧开发调试用。线上版本请勿调用此\+A\+PI \mbox{\Hypertarget{interface_app_monitor_aa20ec8d80e9bd57158a485c1519a9547}\label{interface_app_monitor_aa20ec8d80e9bd57158a485c1519a9547}} 
+\index{App\+Monitor@{App\+Monitor}!set\+Sampling\+:@{set\+Sampling\+:}}
+\index{set\+Sampling\+:@{set\+Sampling\+:}!App\+Monitor@{App\+Monitor}}
+\subsubsection{\texorpdfstring{set\+Sampling\+:()}{setSampling:()}}
+{\footnotesize\ttfamily + (void) set\+Sampling\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{sampling }\end{DoxyParamCaption}}
+
+设置采样率(默认是 50\%) 值范围在\mbox{[}0$\sim$10000\mbox{]} (0表示不上传，10000表示100上传，5000表示50上传) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+U\+T\+Mini.\+framework/\+Versions/\+A/\+Headers/App\+Monitor.\+h\end{DoxyCompactItemize}

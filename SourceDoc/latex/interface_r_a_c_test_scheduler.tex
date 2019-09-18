@@ -1,0 +1,170 @@
+\hypertarget{interface_r_a_c_test_scheduler}{}\section{R\+A\+C\+Test\+Scheduler Class Reference}
+\label{interface_r_a_c_test_scheduler}\index{R\+A\+C\+Test\+Scheduler@{R\+A\+C\+Test\+Scheduler}}
+
+
+{\ttfamily \#import $<$R\+A\+C\+Test\+Scheduler.\+h$>$}
+
+
+
+Inheritance diagram for R\+A\+C\+Test\+Scheduler\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{interface_r_a_c_test_scheduler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for R\+A\+C\+Test\+Scheduler\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{interface_r_a_c_test_scheduler__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_r_a_c_test_scheduler_abefb74ab14dfb660f84f8fa6e05b3f93}\label{interface_r_a_c_test_scheduler_abefb74ab14dfb660f84f8fa6e05b3f93}} 
+(instancetype) -\/ \mbox{\hyperlink{interface_r_a_c_test_scheduler_abefb74ab14dfb660f84f8fa6e05b3f93}{init}}
+\begin{DoxyCompactList}\small\item\em Initializes a new test scheduler. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_r_a_c_test_scheduler_a178d7eadc1d9f6a24e228dbc725d1ede}{step}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_r_a_c_test_scheduler_a74b5961a618f9692baf91bbd52ab08e7}{step\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_r_a_c_test_scheduler_a2577a57067b00fa4e08414f168359370}{step\+All}}
+\item 
+\mbox{\Hypertarget{interface_r_a_c_test_scheduler_abefb74ab14dfb660f84f8fa6e05b3f93}\label{interface_r_a_c_test_scheduler_abefb74ab14dfb660f84f8fa6e05b3f93}} 
+(instancetype) -\/ \mbox{\hyperlink{interface_r_a_c_test_scheduler_abefb74ab14dfb660f84f8fa6e05b3f93}{init}}
+\begin{DoxyCompactList}\small\item\em Initializes a new test scheduler. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_r_a_c_test_scheduler_a178d7eadc1d9f6a24e228dbc725d1ede}{step}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_r_a_c_test_scheduler_a74b5961a618f9692baf91bbd52ab08e7}{step\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_r_a_c_test_scheduler_a2577a57067b00fa4e08414f168359370}{step\+All}}
+\item 
+\mbox{\Hypertarget{interface_r_a_c_test_scheduler_abefb74ab14dfb660f84f8fa6e05b3f93}\label{interface_r_a_c_test_scheduler_abefb74ab14dfb660f84f8fa6e05b3f93}} 
+(instancetype) -\/ \mbox{\hyperlink{interface_r_a_c_test_scheduler_abefb74ab14dfb660f84f8fa6e05b3f93}{init}}
+\begin{DoxyCompactList}\small\item\em Initializes a new test scheduler. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_r_a_c_test_scheduler_a178d7eadc1d9f6a24e228dbc725d1ede}{step}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_r_a_c_test_scheduler_a74b5961a618f9692baf91bbd52ab08e7}{step\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_r_a_c_test_scheduler_a2577a57067b00fa4e08414f168359370}{step\+All}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A special kind of scheduler that steps through virtualized time.
+
+This scheduler class can be used in unit tests to verify asynchronous behaviors without spending significant time waiting.
+
+This class can be used from multiple threads, but only one thread can {\ttfamily step} through the enqueued actions at a time. Other threads will wait while the scheduled blocks are being executed. 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_r_a_c_test_scheduler_a178d7eadc1d9f6a24e228dbc725d1ede}\label{interface_r_a_c_test_scheduler_a178d7eadc1d9f6a24e228dbc725d1ede}} 
+\index{R\+A\+C\+Test\+Scheduler@{R\+A\+C\+Test\+Scheduler}!step@{step}}
+\index{step@{step}!R\+A\+C\+Test\+Scheduler@{R\+A\+C\+Test\+Scheduler}}
+\subsubsection{\texorpdfstring{step()}{step()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (void) step \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Executes the next scheduled block, if any.
+
+This method will block until the scheduled action has completed. \mbox{\Hypertarget{interface_r_a_c_test_scheduler_a178d7eadc1d9f6a24e228dbc725d1ede}\label{interface_r_a_c_test_scheduler_a178d7eadc1d9f6a24e228dbc725d1ede}} 
+\index{R\+A\+C\+Test\+Scheduler@{R\+A\+C\+Test\+Scheduler}!step@{step}}
+\index{step@{step}!R\+A\+C\+Test\+Scheduler@{R\+A\+C\+Test\+Scheduler}}
+\subsubsection{\texorpdfstring{step()}{step()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (void) step \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Executes the next scheduled block, if any.
+
+This method will block until the scheduled action has completed. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_r_a_c_test_scheduler_a178d7eadc1d9f6a24e228dbc725d1ede_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{interface_r_a_c_test_scheduler_a178d7eadc1d9f6a24e228dbc725d1ede}\label{interface_r_a_c_test_scheduler_a178d7eadc1d9f6a24e228dbc725d1ede}} 
+\index{R\+A\+C\+Test\+Scheduler@{R\+A\+C\+Test\+Scheduler}!step@{step}}
+\index{step@{step}!R\+A\+C\+Test\+Scheduler@{R\+A\+C\+Test\+Scheduler}}
+\subsubsection{\texorpdfstring{step()}{step()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (void) step \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Executes the next scheduled block, if any.
+
+This method will block until the scheduled action has completed. \mbox{\Hypertarget{interface_r_a_c_test_scheduler_a74b5961a618f9692baf91bbd52ab08e7}\label{interface_r_a_c_test_scheduler_a74b5961a618f9692baf91bbd52ab08e7}} 
+\index{R\+A\+C\+Test\+Scheduler@{R\+A\+C\+Test\+Scheduler}!step\+:@{step\+:}}
+\index{step\+:@{step\+:}!R\+A\+C\+Test\+Scheduler@{R\+A\+C\+Test\+Scheduler}}
+\subsubsection{\texorpdfstring{step\+:()}{step:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (void) step\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+Integer)}]{ticks }\end{DoxyParamCaption}}
+
+Executes up to the next {\ttfamily ticks} scheduled blocks.
+
+This method will block until the scheduled actions have completed.
+
+ticks -\/ The number of scheduled blocks to execute. If there aren\textquotesingle{}t this many blocks enqueued, all scheduled blocks are executed. \mbox{\Hypertarget{interface_r_a_c_test_scheduler_a74b5961a618f9692baf91bbd52ab08e7}\label{interface_r_a_c_test_scheduler_a74b5961a618f9692baf91bbd52ab08e7}} 
+\index{R\+A\+C\+Test\+Scheduler@{R\+A\+C\+Test\+Scheduler}!step\+:@{step\+:}}
+\index{step\+:@{step\+:}!R\+A\+C\+Test\+Scheduler@{R\+A\+C\+Test\+Scheduler}}
+\subsubsection{\texorpdfstring{step\+:()}{step:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (void) step\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+Integer)}]{ticks }\end{DoxyParamCaption}}
+
+Executes up to the next {\ttfamily ticks} scheduled blocks.
+
+This method will block until the scheduled actions have completed.
+
+ticks -\/ The number of scheduled blocks to execute. If there aren\textquotesingle{}t this many blocks enqueued, all scheduled blocks are executed. \mbox{\Hypertarget{interface_r_a_c_test_scheduler_a74b5961a618f9692baf91bbd52ab08e7}\label{interface_r_a_c_test_scheduler_a74b5961a618f9692baf91bbd52ab08e7}} 
+\index{R\+A\+C\+Test\+Scheduler@{R\+A\+C\+Test\+Scheduler}!step\+:@{step\+:}}
+\index{step\+:@{step\+:}!R\+A\+C\+Test\+Scheduler@{R\+A\+C\+Test\+Scheduler}}
+\subsubsection{\texorpdfstring{step\+:()}{step:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (void) step\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+Integer)}]{ticks }\end{DoxyParamCaption}}
+
+Executes up to the next {\ttfamily ticks} scheduled blocks.
+
+This method will block until the scheduled actions have completed.
+
+ticks -\/ The number of scheduled blocks to execute. If there aren\textquotesingle{}t this many blocks enqueued, all scheduled blocks are executed. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_r_a_c_test_scheduler_a74b5961a618f9692baf91bbd52ab08e7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{interface_r_a_c_test_scheduler_a2577a57067b00fa4e08414f168359370}\label{interface_r_a_c_test_scheduler_a2577a57067b00fa4e08414f168359370}} 
+\index{R\+A\+C\+Test\+Scheduler@{R\+A\+C\+Test\+Scheduler}!step\+All@{step\+All}}
+\index{step\+All@{step\+All}!R\+A\+C\+Test\+Scheduler@{R\+A\+C\+Test\+Scheduler}}
+\subsubsection{\texorpdfstring{step\+All()}{stepAll()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (void) step\+All \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Executes all of the scheduled blocks on the receiver.
+
+This method will block until the scheduled actions have completed. \mbox{\Hypertarget{interface_r_a_c_test_scheduler_a2577a57067b00fa4e08414f168359370}\label{interface_r_a_c_test_scheduler_a2577a57067b00fa4e08414f168359370}} 
+\index{R\+A\+C\+Test\+Scheduler@{R\+A\+C\+Test\+Scheduler}!step\+All@{step\+All}}
+\index{step\+All@{step\+All}!R\+A\+C\+Test\+Scheduler@{R\+A\+C\+Test\+Scheduler}}
+\subsubsection{\texorpdfstring{step\+All()}{stepAll()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (void) step\+All \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Executes all of the scheduled blocks on the receiver.
+
+This method will block until the scheduled actions have completed. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_r_a_c_test_scheduler_a2577a57067b00fa4e08414f168359370_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{interface_r_a_c_test_scheduler_a2577a57067b00fa4e08414f168359370}\label{interface_r_a_c_test_scheduler_a2577a57067b00fa4e08414f168359370}} 
+\index{R\+A\+C\+Test\+Scheduler@{R\+A\+C\+Test\+Scheduler}!step\+All@{step\+All}}
+\index{step\+All@{step\+All}!R\+A\+C\+Test\+Scheduler@{R\+A\+C\+Test\+Scheduler}}
+\subsubsection{\texorpdfstring{step\+All()}{stepAll()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (void) step\+All \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Executes all of the scheduled blocks on the receiver.
+
+This method will block until the scheduled actions have completed. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+Reactive\+Cocoa/R\+A\+C\+Test\+Scheduler.\+h\item 
+Pods/\+Reactive\+Cocoa/\+Reactive\+Cocoa/R\+A\+C\+Test\+Scheduler.\+m\end{DoxyCompactItemize}

@@ -1,0 +1,143 @@
+\hypertarget{interface_tencent_api_req}{}\section{Tencent\+Api\+Req Class Reference}
+\label{interface_tencent_api_req}\index{Tencent\+Api\+Req@{Tencent\+Api\+Req}}
+
+
+请求包  
+
+
+
+
+{\ttfamily \#import $<$Tencent\+Message\+Object.\+h$>$}
+
+
+
+Inheritance diagram for Tencent\+Api\+Req\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{interface_tencent_api_req__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Tencent\+Api\+Req\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{interface_tencent_api_req__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\mbox{\hyperlink{interface_tencent_api_req}{Tencent\+Api\+Req}} $\ast$) + \mbox{\hyperlink{interface_tencent_api_req_ae0301f606ff6da9edd28298b1f59df10}{req\+From\+Seq\+:type\+:}}
+\item 
+(\mbox{\hyperlink{interface_tencent_api_req}{Tencent\+Api\+Req}} $\ast$) + \mbox{\hyperlink{interface_tencent_api_req_ae0301f606ff6da9edd28298b1f59df10}{req\+From\+Seq\+:type\+:}}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+T\+C\+Required\+Int \mbox{\hyperlink{interface_tencent_api_req_a92df264f6ffe96db9c3031991c99070d}{n\+Message\+Type}}
+\item 
+N\+S\+Integer \mbox{\hyperlink{interface_tencent_api_req_ac063480068312580107509479ca6ff78}{n\+Platform}}
+\item 
+N\+S\+Integer \mbox{\hyperlink{interface_tencent_api_req_a231ee69395d097c96df3ff395a56eda7}{n\+Sdk\+Version}}
+\item 
+T\+C\+Required\+Int \mbox{\hyperlink{interface_tencent_api_req_a94284ae9d2dfef823004d68e443c296f}{n\+Seq}}
+\item 
+T\+C\+Required\+Str \mbox{\hyperlink{interface_tencent_api_req_a7c67c89447a66af8f7f3087277cc8e49}{s\+App\+ID}}
+\item 
+T\+C\+Optional\+Array \mbox{\hyperlink{interface_tencent_api_req_a6585a0dabcd262c39da97b75af1556dc}{arr\+Message}}
+\item 
+T\+C\+Optional\+Str \mbox{\hyperlink{interface_tencent_api_req_a6dabf04ecc537c1f4d23691cdb499649}{s\+Description}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+请求包 
+
+Tencent\+Api\+Req用来向其他业务发送请求包 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_tencent_api_req_ae0301f606ff6da9edd28298b1f59df10}\label{interface_tencent_api_req_ae0301f606ff6da9edd28298b1f59df10}} 
+\index{Tencent\+Api\+Req@{Tencent\+Api\+Req}!req\+From\+Seq\+:type\+:@{req\+From\+Seq\+:type\+:}}
+\index{req\+From\+Seq\+:type\+:@{req\+From\+Seq\+:type\+:}!Tencent\+Api\+Req@{Tencent\+Api\+Req}}
+\subsubsection{\texorpdfstring{req\+From\+Seq\+:type\+:()}{reqFromSeq:type:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_tencent_api_req}{Tencent\+Api\+Req}} $\ast$) req\+From\+Seq\+: \begin{DoxyParamCaption}\item[{(N\+S\+Integer)}]{api\+Seq }\item[{type:(Tencent\+Req\+Message\+Type)}]{type }\end{DoxyParamCaption}}
+
+根据序列号生成一个请求包 
+\begin{DoxyParams}{Parameters}
+{\em api\+Seq} & 请求序列号 \\
+\hline
+{\em type} & 请求类型 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tencent\+Api\+Req实例 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_tencent_api_req_ae0301f606ff6da9edd28298b1f59df10}\label{interface_tencent_api_req_ae0301f606ff6da9edd28298b1f59df10}} 
+\index{Tencent\+Api\+Req@{Tencent\+Api\+Req}!req\+From\+Seq\+:type\+:@{req\+From\+Seq\+:type\+:}}
+\index{req\+From\+Seq\+:type\+:@{req\+From\+Seq\+:type\+:}!Tencent\+Api\+Req@{Tencent\+Api\+Req}}
+\subsubsection{\texorpdfstring{req\+From\+Seq\+:type\+:()}{reqFromSeq:type:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_tencent_api_req}{Tencent\+Api\+Req}} $\ast$) req\+From\+Seq\+: \begin{DoxyParamCaption}\item[{(N\+S\+Integer)}]{api\+Seq }\item[{type:(Tencent\+Req\+Message\+Type)}]{type }\end{DoxyParamCaption}}
+
+根据序列号生成一个请求包 
+\begin{DoxyParams}{Parameters}
+{\em api\+Seq} & 请求序列号 \\
+\hline
+{\em type} & 请求类型 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tencent\+Api\+Req实例 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_tencent_api_req_a6585a0dabcd262c39da97b75af1556dc}\label{interface_tencent_api_req_a6585a0dabcd262c39da97b75af1556dc}} 
+\index{Tencent\+Api\+Req@{Tencent\+Api\+Req}!arr\+Message@{arr\+Message}}
+\index{arr\+Message@{arr\+Message}!Tencent\+Api\+Req@{Tencent\+Api\+Req}}
+\subsubsection{\texorpdfstring{arr\+Message}{arrMessage}}
+{\footnotesize\ttfamily -\/ (T\+C\+Optional\+Array) arr\+Message\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+请求内容 Tencent\+Base\+Message\+Obj对象数组 \mbox{\Hypertarget{interface_tencent_api_req_a92df264f6ffe96db9c3031991c99070d}\label{interface_tencent_api_req_a92df264f6ffe96db9c3031991c99070d}} 
+\index{Tencent\+Api\+Req@{Tencent\+Api\+Req}!n\+Message\+Type@{n\+Message\+Type}}
+\index{n\+Message\+Type@{n\+Message\+Type}!Tencent\+Api\+Req@{Tencent\+Api\+Req}}
+\subsubsection{\texorpdfstring{n\+Message\+Type}{nMessageType}}
+{\footnotesize\ttfamily -\/ (T\+C\+Required\+Int) n\+Message\+Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+请求类型 \mbox{\Hypertarget{interface_tencent_api_req_ac063480068312580107509479ca6ff78}\label{interface_tencent_api_req_ac063480068312580107509479ca6ff78}} 
+\index{Tencent\+Api\+Req@{Tencent\+Api\+Req}!n\+Platform@{n\+Platform}}
+\index{n\+Platform@{n\+Platform}!Tencent\+Api\+Req@{Tencent\+Api\+Req}}
+\subsubsection{\texorpdfstring{n\+Platform}{nPlatform}}
+{\footnotesize\ttfamily -\/ (N\+S\+Integer) n\+Platform\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+请求平台 \mbox{\Hypertarget{interface_tencent_api_req_a231ee69395d097c96df3ff395a56eda7}\label{interface_tencent_api_req_a231ee69395d097c96df3ff395a56eda7}} 
+\index{Tencent\+Api\+Req@{Tencent\+Api\+Req}!n\+Sdk\+Version@{n\+Sdk\+Version}}
+\index{n\+Sdk\+Version@{n\+Sdk\+Version}!Tencent\+Api\+Req@{Tencent\+Api\+Req}}
+\subsubsection{\texorpdfstring{n\+Sdk\+Version}{nSdkVersion}}
+{\footnotesize\ttfamily -\/ (N\+S\+Integer) n\+Sdk\+Version\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+请求的\+S\+D\+K版本号 \mbox{\Hypertarget{interface_tencent_api_req_a94284ae9d2dfef823004d68e443c296f}\label{interface_tencent_api_req_a94284ae9d2dfef823004d68e443c296f}} 
+\index{Tencent\+Api\+Req@{Tencent\+Api\+Req}!n\+Seq@{n\+Seq}}
+\index{n\+Seq@{n\+Seq}!Tencent\+Api\+Req@{Tencent\+Api\+Req}}
+\subsubsection{\texorpdfstring{n\+Seq}{nSeq}}
+{\footnotesize\ttfamily -\/ (T\+C\+Required\+Int) n\+Seq\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+请求序列号 \mbox{\Hypertarget{interface_tencent_api_req_a7c67c89447a66af8f7f3087277cc8e49}\label{interface_tencent_api_req_a7c67c89447a66af8f7f3087277cc8e49}} 
+\index{Tencent\+Api\+Req@{Tencent\+Api\+Req}!s\+App\+ID@{s\+App\+ID}}
+\index{s\+App\+ID@{s\+App\+ID}!Tencent\+Api\+Req@{Tencent\+Api\+Req}}
+\subsubsection{\texorpdfstring{s\+App\+ID}{sAppID}}
+{\footnotesize\ttfamily -\/ (T\+C\+Required\+Str) s\+App\+ID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+第三方的\+A\+P\+P\+ID \mbox{\Hypertarget{interface_tencent_api_req_a6dabf04ecc537c1f4d23691cdb499649}\label{interface_tencent_api_req_a6dabf04ecc537c1f4d23691cdb499649}} 
+\index{Tencent\+Api\+Req@{Tencent\+Api\+Req}!s\+Description@{s\+Description}}
+\index{s\+Description@{s\+Description}!Tencent\+Api\+Req@{Tencent\+Api\+Req}}
+\subsubsection{\texorpdfstring{s\+Description}{sDescription}}
+{\footnotesize\ttfamily -\/ (T\+C\+Optional\+Str) s\+Description\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+请求的描述 可以用于告诉对方这个请求的特定场景 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Public/\+U\+Meng\+U\+Share/\+Tencent\+Open\+A\+P\+I/Tencent\+Message\+Object.\+h\end{DoxyCompactItemize}

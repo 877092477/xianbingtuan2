@@ -1,0 +1,141 @@
+\hypertarget{protocol_i_security_guard_open_safe_token_01-p}{}\section{$<$I\+Security\+Guard\+Open\+Safe\+Token $>$ Protocol Reference}
+\label{protocol_i_security_guard_open_safe_token_01-p}\index{$<$\+I\+Security\+Guard\+Open\+Safe\+Token $>$@{$<$\+I\+Security\+Guard\+Open\+Safe\+Token $>$}}
+
+
+Inheritance diagram for $<$I\+Security\+Guard\+Open\+Safe\+Token $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{protocol_i_security_guard_open_safe_token_01-p__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for $<$I\+Security\+Guard\+Open\+Safe\+Token $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{protocol_i_security_guard_open_safe_token_01-p__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{protocol_i_security_guard_open_safe_token_01-p_a338e40aa027688a3008acb785c8cf401}{save\+Token\+:for\+Key\+:additional\+:flag\+:}}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{protocol_i_security_guard_open_safe_token_01-p_a268907dd042f2d04030c8ffdf8a312b5}{is\+Token\+Exist\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_i_security_guard_open_safe_token_01-p_a7221b60a32a5817b8593c019dbbea3cc}{remove\+Token\+:}}
+\item 
+(N\+S\+Data $\ast$) -\/ \mbox{\hyperlink{protocol_i_security_guard_open_safe_token_01-p_a67008b2b4eb54fff1aea9e663d89459c}{encrypt\+With\+Token\+:input\+Data\+:flag\+:}}
+\item 
+(N\+S\+Data $\ast$) -\/ \mbox{\hyperlink{protocol_i_security_guard_open_safe_token_01-p_a003506f519acb7f4d825e100d09b0dee}{decrypt\+With\+Token\+:input\+Data\+:flag\+:}}
+\item 
+(N\+S\+String $\ast$) -\/ \mbox{\hyperlink{protocol_i_security_guard_open_safe_token_01-p_ad746c3459ce7226442ae0f76c175aa4a}{sign\+With\+Token\+:input\+Data\+:flag\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{protocol_i_security_guard_open_safe_token_01-p_a003506f519acb7f4d825e100d09b0dee}\label{protocol_i_security_guard_open_safe_token_01-p_a003506f519acb7f4d825e100d09b0dee}} 
+\index{I\+Security\+Guard\+Open\+Safe\+Token -\/p@{I\+Security\+Guard\+Open\+Safe\+Token -\/p}!decrypt\+With\+Token\+:input\+Data\+:flag\+:@{decrypt\+With\+Token\+:input\+Data\+:flag\+:}}
+\index{decrypt\+With\+Token\+:input\+Data\+:flag\+:@{decrypt\+With\+Token\+:input\+Data\+:flag\+:}!I\+Security\+Guard\+Open\+Safe\+Token -\/p@{I\+Security\+Guard\+Open\+Safe\+Token -\/p}}
+\subsubsection{\texorpdfstring{decrypt\+With\+Token\+:input\+Data\+:flag\+:()}{decryptWithToken:inputData:flag:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Data$\ast$ I\+Security\+Guard\+Open\+Safe\+Token) decrypt\+With\+Token\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{key }\item[{inputData:(N\+S\+Data $\ast$)}]{encrypted }\item[{flag:(int)}]{flag }\end{DoxyParamCaption}}
+
+使用token解密数据 
+\begin{DoxyParams}{Parameters}
+{\em key} & token值对应的key \\
+\hline
+{\em encrypted} & 待解密的数据 \\
+\hline
+{\em flag} & 扩展参数，缺省为0 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+返回解密结果，解密失败返回nil 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_i_security_guard_open_safe_token_01-p_a67008b2b4eb54fff1aea9e663d89459c}\label{protocol_i_security_guard_open_safe_token_01-p_a67008b2b4eb54fff1aea9e663d89459c}} 
+\index{I\+Security\+Guard\+Open\+Safe\+Token -\/p@{I\+Security\+Guard\+Open\+Safe\+Token -\/p}!encrypt\+With\+Token\+:input\+Data\+:flag\+:@{encrypt\+With\+Token\+:input\+Data\+:flag\+:}}
+\index{encrypt\+With\+Token\+:input\+Data\+:flag\+:@{encrypt\+With\+Token\+:input\+Data\+:flag\+:}!I\+Security\+Guard\+Open\+Safe\+Token -\/p@{I\+Security\+Guard\+Open\+Safe\+Token -\/p}}
+\subsubsection{\texorpdfstring{encrypt\+With\+Token\+:input\+Data\+:flag\+:()}{encryptWithToken:inputData:flag:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Data$\ast$ I\+Security\+Guard\+Open\+Safe\+Token) encrypt\+With\+Token\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{key }\item[{inputData:(N\+S\+Data $\ast$)}]{plaintext }\item[{flag:(int)}]{flag }\end{DoxyParamCaption}}
+
+使用token加密数据 
+\begin{DoxyParams}{Parameters}
+{\em key} & token值对应的key \\
+\hline
+{\em plaintext} & 待加密的byte数组 \\
+\hline
+{\em flag} & 扩展参数，缺省为0 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+返回加密结果，加密失败返回nil 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_i_security_guard_open_safe_token_01-p_a268907dd042f2d04030c8ffdf8a312b5}\label{protocol_i_security_guard_open_safe_token_01-p_a268907dd042f2d04030c8ffdf8a312b5}} 
+\index{I\+Security\+Guard\+Open\+Safe\+Token -\/p@{I\+Security\+Guard\+Open\+Safe\+Token -\/p}!is\+Token\+Exist\+:@{is\+Token\+Exist\+:}}
+\index{is\+Token\+Exist\+:@{is\+Token\+Exist\+:}!I\+Security\+Guard\+Open\+Safe\+Token -\/p@{I\+Security\+Guard\+Open\+Safe\+Token -\/p}}
+\subsubsection{\texorpdfstring{is\+Token\+Exist\+:()}{isTokenExist:()}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL I\+Security\+Guard\+Open\+Safe\+Token) is\+Token\+Exist\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{key }\end{DoxyParamCaption}}
+
+检测token是否存在 
+\begin{DoxyParams}{Parameters}
+{\em key} & string值对应的key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+检测token是否存在的结果 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_i_security_guard_open_safe_token_01-p_a7221b60a32a5817b8593c019dbbea3cc}\label{protocol_i_security_guard_open_safe_token_01-p_a7221b60a32a5817b8593c019dbbea3cc}} 
+\index{I\+Security\+Guard\+Open\+Safe\+Token -\/p@{I\+Security\+Guard\+Open\+Safe\+Token -\/p}!remove\+Token\+:@{remove\+Token\+:}}
+\index{remove\+Token\+:@{remove\+Token\+:}!I\+Security\+Guard\+Open\+Safe\+Token -\/p@{I\+Security\+Guard\+Open\+Safe\+Token -\/p}}
+\subsubsection{\texorpdfstring{remove\+Token\+:()}{removeToken:()}}
+{\footnotesize\ttfamily -\/ (void I\+Security\+Guard\+Open\+Safe\+Token) remove\+Token\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{key }\end{DoxyParamCaption}}
+
+删除本地存储的token 
+\begin{DoxyParams}{Parameters}
+{\em key} & 存储值要使用的key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+存储操作结果 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_i_security_guard_open_safe_token_01-p_a338e40aa027688a3008acb785c8cf401}\label{protocol_i_security_guard_open_safe_token_01-p_a338e40aa027688a3008acb785c8cf401}} 
+\index{I\+Security\+Guard\+Open\+Safe\+Token -\/p@{I\+Security\+Guard\+Open\+Safe\+Token -\/p}!save\+Token\+:for\+Key\+:additional\+:flag\+:@{save\+Token\+:for\+Key\+:additional\+:flag\+:}}
+\index{save\+Token\+:for\+Key\+:additional\+:flag\+:@{save\+Token\+:for\+Key\+:additional\+:flag\+:}!I\+Security\+Guard\+Open\+Safe\+Token -\/p@{I\+Security\+Guard\+Open\+Safe\+Token -\/p}}
+\subsubsection{\texorpdfstring{save\+Token\+:for\+Key\+:additional\+:flag\+:()}{saveToken:forKey:additional:flag:()}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL I\+Security\+Guard\+Open\+Safe\+Token) save\+Token\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{value }\item[{forKey:(N\+S\+String $\ast$)}]{key }\item[{additional:(N\+S\+String $\ast$)}]{additional }\item[{flag:(int)}]{flag }\end{DoxyParamCaption}}
+
+存储token 
+\begin{DoxyParams}{Parameters}
+{\em value} & 存储的value \\
+\hline
+{\em key} & token值对应的key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+存储操作的结果 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_i_security_guard_open_safe_token_01-p_ad746c3459ce7226442ae0f76c175aa4a}\label{protocol_i_security_guard_open_safe_token_01-p_ad746c3459ce7226442ae0f76c175aa4a}} 
+\index{I\+Security\+Guard\+Open\+Safe\+Token -\/p@{I\+Security\+Guard\+Open\+Safe\+Token -\/p}!sign\+With\+Token\+:input\+Data\+:flag\+:@{sign\+With\+Token\+:input\+Data\+:flag\+:}}
+\index{sign\+With\+Token\+:input\+Data\+:flag\+:@{sign\+With\+Token\+:input\+Data\+:flag\+:}!I\+Security\+Guard\+Open\+Safe\+Token -\/p@{I\+Security\+Guard\+Open\+Safe\+Token -\/p}}
+\subsubsection{\texorpdfstring{sign\+With\+Token\+:input\+Data\+:flag\+:()}{signWithToken:inputData:flag:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$ I\+Security\+Guard\+Open\+Safe\+Token) sign\+With\+Token\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{key }\item[{inputData:(N\+S\+Data $\ast$)}]{data }\item[{flag:(int)}]{flag }\end{DoxyParamCaption}}
+
+使用token对数据进行签名 
+\begin{DoxyParams}{Parameters}
+{\em key} & token值对应的key \\
+\hline
+{\em data} & 待签名的byte数组 \\
+\hline
+{\em flag} & 扩展参数，缺省为0 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+返回签名结果，签名失败返回nil 
+\end{DoxyReturn}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+S\+G\+Main.\+framework/\+Headers/I\+Security\+Guard\+Open\+Safe\+Token.\+h\end{DoxyCompactItemize}

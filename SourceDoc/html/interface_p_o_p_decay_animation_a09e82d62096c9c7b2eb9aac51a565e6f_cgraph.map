@@ -1,0 +1,5 @@
+<map id="+[POPDecayAnimation animationWithPropertyNamed:]" name="+[POPDecayAnimation animationWithPropertyNamed:]">
+<area shape="rect" id="node2" href="$interface_p_o_p_decay_animation.html#ada86965ca405f665e5e0ac41a2175e28" title="+[POPDecayAnimation\l animation]" alt="" coords="273,5,431,44"/>
+<area shape="rect" id="node3" href="$interface_p_o_p_animatable_property.html#ad11b0dd7ba703f4ba087052ce57c12b4" title="+[POPAnimatableProperty\l propertyWithName:]" alt="" coords="264,68,441,107"/>
+<area shape="rect" id="node4" href="$interface_p_o_p_animatable_property.html#aad3690254419e0353ebfa982a22d8c6e" title="+[POPAnimatableProperty\l propertyWithName:initializer:]" alt="" coords="489,68,688,107"/>
+</map>

@@ -1,0 +1,111 @@
+\hypertarget{interface_r_a_c_k_v_o_proxy}{}\section{R\+A\+C\+K\+V\+O\+Proxy Class Reference}
+\label{interface_r_a_c_k_v_o_proxy}\index{R\+A\+C\+K\+V\+O\+Proxy@{R\+A\+C\+K\+V\+O\+Proxy}}
+
+
+{\ttfamily \#import $<$R\+A\+C\+K\+V\+O\+Proxy.\+h$>$}
+
+
+
+Inheritance diagram for R\+A\+C\+K\+V\+O\+Proxy\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{interface_r_a_c_k_v_o_proxy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for R\+A\+C\+K\+V\+O\+Proxy\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{interface_r_a_c_k_v_o_proxy__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_r_a_c_k_v_o_proxy_a0ec4ef4f07c0068901c7d606de89a1fd}{add\+Observer\+:for\+Context\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_r_a_c_k_v_o_proxy_a1b7a8cc1af60353400c05976d9078d73}{remove\+Observer\+:for\+Context\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_r_a_c_k_v_o_proxy_a0ec4ef4f07c0068901c7d606de89a1fd}{add\+Observer\+:for\+Context\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_r_a_c_k_v_o_proxy_a1b7a8cc1af60353400c05976d9078d73}{remove\+Observer\+:for\+Context\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_r_a_c_k_v_o_proxy_a0ec4ef4f07c0068901c7d606de89a1fd}{add\+Observer\+:for\+Context\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_r_a_c_k_v_o_proxy_a1b7a8cc1af60353400c05976d9078d73}{remove\+Observer\+:for\+Context\+:}}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_r_a_c_k_v_o_proxy_a44fc0745be832a507feada809c9d299b}\label{interface_r_a_c_k_v_o_proxy_a44fc0745be832a507feada809c9d299b}} 
+(instancetype) + \mbox{\hyperlink{interface_r_a_c_k_v_o_proxy_a44fc0745be832a507feada809c9d299b}{shared\+Proxy}}
+\begin{DoxyCompactList}\small\item\em Returns the singleton K\+VO proxy object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_r_a_c_k_v_o_proxy_a44fc0745be832a507feada809c9d299b}\label{interface_r_a_c_k_v_o_proxy_a44fc0745be832a507feada809c9d299b}} 
+(instancetype) + \mbox{\hyperlink{interface_r_a_c_k_v_o_proxy_a44fc0745be832a507feada809c9d299b}{shared\+Proxy}}
+\begin{DoxyCompactList}\small\item\em Returns the singleton K\+VO proxy object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_r_a_c_k_v_o_proxy_a44fc0745be832a507feada809c9d299b}\label{interface_r_a_c_k_v_o_proxy_a44fc0745be832a507feada809c9d299b}} 
+(instancetype) + \mbox{\hyperlink{interface_r_a_c_k_v_o_proxy_a44fc0745be832a507feada809c9d299b}{shared\+Proxy}}
+\begin{DoxyCompactList}\small\item\em Returns the singleton K\+VO proxy object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A singleton that can act as a proxy between a K\+VO observation and a R\+AC subscriber, in order to protect against K\+VO lifetime issues. 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_r_a_c_k_v_o_proxy_a0ec4ef4f07c0068901c7d606de89a1fd}\label{interface_r_a_c_k_v_o_proxy_a0ec4ef4f07c0068901c7d606de89a1fd}} 
+\index{R\+A\+C\+K\+V\+O\+Proxy@{R\+A\+C\+K\+V\+O\+Proxy}!add\+Observer\+:for\+Context\+:@{add\+Observer\+:for\+Context\+:}}
+\index{add\+Observer\+:for\+Context\+:@{add\+Observer\+:for\+Context\+:}!R\+A\+C\+K\+V\+O\+Proxy@{R\+A\+C\+K\+V\+O\+Proxy}}
+\subsubsection{\texorpdfstring{add\+Observer\+:for\+Context\+:()}{addObserver:forContext:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (void) add\+Observer\+: \begin{DoxyParamCaption}\item[{(\+\_\+\+\_\+weak N\+S\+Object $\ast$)}]{observer }\item[{forContext:(void $\ast$)}]{context }\end{DoxyParamCaption}}
+
+Registers an observer with the proxy, such that when the proxy receives a K\+VO change with the given context, it forwards it to the observer.
+
+observer -\/ True observer of the K\+VO change. Must not be nil. context -\/ Arbitrary context object used to differentiate multiple observations of the same keypath. Must be unique, cannot be nil. \mbox{\Hypertarget{interface_r_a_c_k_v_o_proxy_a0ec4ef4f07c0068901c7d606de89a1fd}\label{interface_r_a_c_k_v_o_proxy_a0ec4ef4f07c0068901c7d606de89a1fd}} 
+\index{R\+A\+C\+K\+V\+O\+Proxy@{R\+A\+C\+K\+V\+O\+Proxy}!add\+Observer\+:for\+Context\+:@{add\+Observer\+:for\+Context\+:}}
+\index{add\+Observer\+:for\+Context\+:@{add\+Observer\+:for\+Context\+:}!R\+A\+C\+K\+V\+O\+Proxy@{R\+A\+C\+K\+V\+O\+Proxy}}
+\subsubsection{\texorpdfstring{add\+Observer\+:for\+Context\+:()}{addObserver:forContext:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (void) add\+Observer\+: \begin{DoxyParamCaption}\item[{(\+\_\+\+\_\+weak N\+S\+Object $\ast$)}]{observer }\item[{forContext:(void $\ast$)}]{context }\end{DoxyParamCaption}}
+
+Registers an observer with the proxy, such that when the proxy receives a K\+VO change with the given context, it forwards it to the observer.
+
+observer -\/ True observer of the K\+VO change. Must not be nil. context -\/ Arbitrary context object used to differentiate multiple observations of the same keypath. Must be unique, cannot be nil. \mbox{\Hypertarget{interface_r_a_c_k_v_o_proxy_a0ec4ef4f07c0068901c7d606de89a1fd}\label{interface_r_a_c_k_v_o_proxy_a0ec4ef4f07c0068901c7d606de89a1fd}} 
+\index{R\+A\+C\+K\+V\+O\+Proxy@{R\+A\+C\+K\+V\+O\+Proxy}!add\+Observer\+:for\+Context\+:@{add\+Observer\+:for\+Context\+:}}
+\index{add\+Observer\+:for\+Context\+:@{add\+Observer\+:for\+Context\+:}!R\+A\+C\+K\+V\+O\+Proxy@{R\+A\+C\+K\+V\+O\+Proxy}}
+\subsubsection{\texorpdfstring{add\+Observer\+:for\+Context\+:()}{addObserver:forContext:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (void) add\+Observer\+: \begin{DoxyParamCaption}\item[{(\+\_\+\+\_\+weak N\+S\+Object $\ast$)}]{observer }\item[{forContext:(void $\ast$)}]{context }\end{DoxyParamCaption}}
+
+Registers an observer with the proxy, such that when the proxy receives a K\+VO change with the given context, it forwards it to the observer.
+
+observer -\/ True observer of the K\+VO change. Must not be nil. context -\/ Arbitrary context object used to differentiate multiple observations of the same keypath. Must be unique, cannot be nil. \mbox{\Hypertarget{interface_r_a_c_k_v_o_proxy_a1b7a8cc1af60353400c05976d9078d73}\label{interface_r_a_c_k_v_o_proxy_a1b7a8cc1af60353400c05976d9078d73}} 
+\index{R\+A\+C\+K\+V\+O\+Proxy@{R\+A\+C\+K\+V\+O\+Proxy}!remove\+Observer\+:for\+Context\+:@{remove\+Observer\+:for\+Context\+:}}
+\index{remove\+Observer\+:for\+Context\+:@{remove\+Observer\+:for\+Context\+:}!R\+A\+C\+K\+V\+O\+Proxy@{R\+A\+C\+K\+V\+O\+Proxy}}
+\subsubsection{\texorpdfstring{remove\+Observer\+:for\+Context\+:()}{removeObserver:forContext:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Observer\+: \begin{DoxyParamCaption}\item[{(N\+S\+Object $\ast$)}]{observer }\item[{forContext:(void $\ast$)}]{context }\end{DoxyParamCaption}}
+
+Removes an observer from the proxy. Parameters must match those passed to add\+Observer\+:for\+Context\+:.
+
+observer -\/ True observer of the K\+VO change. Must not be nil. context -\/ Arbitrary context object used to differentiate multiple observations of the same keypath. Must be unique, cannot be nil. \mbox{\Hypertarget{interface_r_a_c_k_v_o_proxy_a1b7a8cc1af60353400c05976d9078d73}\label{interface_r_a_c_k_v_o_proxy_a1b7a8cc1af60353400c05976d9078d73}} 
+\index{R\+A\+C\+K\+V\+O\+Proxy@{R\+A\+C\+K\+V\+O\+Proxy}!remove\+Observer\+:for\+Context\+:@{remove\+Observer\+:for\+Context\+:}}
+\index{remove\+Observer\+:for\+Context\+:@{remove\+Observer\+:for\+Context\+:}!R\+A\+C\+K\+V\+O\+Proxy@{R\+A\+C\+K\+V\+O\+Proxy}}
+\subsubsection{\texorpdfstring{remove\+Observer\+:for\+Context\+:()}{removeObserver:forContext:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Observer\+: \begin{DoxyParamCaption}\item[{(N\+S\+Object $\ast$)}]{observer }\item[{forContext:(void $\ast$)}]{context }\end{DoxyParamCaption}}
+
+Removes an observer from the proxy. Parameters must match those passed to add\+Observer\+:for\+Context\+:.
+
+observer -\/ True observer of the K\+VO change. Must not be nil. context -\/ Arbitrary context object used to differentiate multiple observations of the same keypath. Must be unique, cannot be nil. \mbox{\Hypertarget{interface_r_a_c_k_v_o_proxy_a1b7a8cc1af60353400c05976d9078d73}\label{interface_r_a_c_k_v_o_proxy_a1b7a8cc1af60353400c05976d9078d73}} 
+\index{R\+A\+C\+K\+V\+O\+Proxy@{R\+A\+C\+K\+V\+O\+Proxy}!remove\+Observer\+:for\+Context\+:@{remove\+Observer\+:for\+Context\+:}}
+\index{remove\+Observer\+:for\+Context\+:@{remove\+Observer\+:for\+Context\+:}!R\+A\+C\+K\+V\+O\+Proxy@{R\+A\+C\+K\+V\+O\+Proxy}}
+\subsubsection{\texorpdfstring{remove\+Observer\+:for\+Context\+:()}{removeObserver:forContext:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Observer\+: \begin{DoxyParamCaption}\item[{(N\+S\+Object $\ast$)}]{observer }\item[{forContext:(void $\ast$)}]{context }\end{DoxyParamCaption}}
+
+Removes an observer from the proxy. Parameters must match those passed to add\+Observer\+:for\+Context\+:.
+
+observer -\/ True observer of the K\+VO change. Must not be nil. context -\/ Arbitrary context object used to differentiate multiple observations of the same keypath. Must be unique, cannot be nil. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+Reactive\+Cocoa/R\+A\+C\+K\+V\+O\+Proxy.\+h\item 
+Pods/\+Reactive\+Cocoa/\+Reactive\+Cocoa/R\+A\+C\+K\+V\+O\+Proxy.\+m\end{DoxyCompactItemize}

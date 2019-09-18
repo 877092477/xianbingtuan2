@@ -1,0 +1,73 @@
+\hypertarget{interface_alibc_trade_show_params}{}\section{Alibc\+Trade\+Show\+Params Class Reference}
+\label{interface_alibc_trade_show_params}\index{Alibc\+Trade\+Show\+Params@{Alibc\+Trade\+Show\+Params}}
+
+
+Inheritance diagram for Alibc\+Trade\+Show\+Params\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{interface_alibc_trade_show_params__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Alibc\+Trade\+Show\+Params\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{interface_alibc_trade_show_params__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+B\+O\+OL \mbox{\hyperlink{interface_alibc_trade_show_params_ad0066946016fceaa7ee01a308f73860f}{is\+Need\+Push}}
+\item 
+Alibc\+Open\+Type \mbox{\hyperlink{interface_alibc_trade_show_params_a7ac6bca730a8368eadf1d6ca5a129ed6}{open\+Type}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_alibc_trade_show_params_aaf15de1ba2f023bb55aade091e21af15}{back\+Url}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_alibc_trade_show_params_a2f172992993ff2be1b269b25b2af8153}{link\+Key}}
+\item 
+Alibc\+Native\+Fail\+Mode \mbox{\hyperlink{interface_alibc_trade_show_params_a29420ac73c7fd3a90af8ab566460745b}{native\+Fail\+Mode}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_alibc_trade_show_params_aaf15de1ba2f023bb55aade091e21af15}\label{interface_alibc_trade_show_params_aaf15de1ba2f023bb55aade091e21af15}} 
+\index{Alibc\+Trade\+Show\+Params@{Alibc\+Trade\+Show\+Params}!back\+Url@{back\+Url}}
+\index{back\+Url@{back\+Url}!Alibc\+Trade\+Show\+Params@{Alibc\+Trade\+Show\+Params}}
+\subsubsection{\texorpdfstring{back\+Url}{backUrl}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) back\+Url\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+指定手淘回跳的地址，跳转至isv指定的url 规则\+: tbopen\$\{appkey\}\+://xx.xx.\+xx \mbox{\Hypertarget{interface_alibc_trade_show_params_ad0066946016fceaa7ee01a308f73860f}\label{interface_alibc_trade_show_params_ad0066946016fceaa7ee01a308f73860f}} 
+\index{Alibc\+Trade\+Show\+Params@{Alibc\+Trade\+Show\+Params}!is\+Need\+Push@{is\+Need\+Push}}
+\index{is\+Need\+Push@{is\+Need\+Push}!Alibc\+Trade\+Show\+Params@{Alibc\+Trade\+Show\+Params}}
+\subsubsection{\texorpdfstring{is\+Need\+Push}{isNeedPush}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) is\+Need\+Push\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+是否为push方式打开新页面 当show page时传入自定义webview时,本参数没有实际意义
+
+NO \+: 在当前view controller上present新页面 Y\+ES\+: 在传入的\+U\+I\+Navigation\+Controller中push新页面 默认值\+:NO \mbox{\Hypertarget{interface_alibc_trade_show_params_a2f172992993ff2be1b269b25b2af8153}\label{interface_alibc_trade_show_params_a2f172992993ff2be1b269b25b2af8153}} 
+\index{Alibc\+Trade\+Show\+Params@{Alibc\+Trade\+Show\+Params}!link\+Key@{link\+Key}}
+\index{link\+Key@{link\+Key}!Alibc\+Trade\+Show\+Params@{Alibc\+Trade\+Show\+Params}}
+\subsubsection{\texorpdfstring{link\+Key}{linkKey}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$) link\+Key\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+applink使用，优先拉起的link\+Key，手淘："taobao\+\_\+scheme" \mbox{\Hypertarget{interface_alibc_trade_show_params_a29420ac73c7fd3a90af8ab566460745b}\label{interface_alibc_trade_show_params_a29420ac73c7fd3a90af8ab566460745b}} 
+\index{Alibc\+Trade\+Show\+Params@{Alibc\+Trade\+Show\+Params}!native\+Fail\+Mode@{native\+Fail\+Mode}}
+\index{native\+Fail\+Mode@{native\+Fail\+Mode}!Alibc\+Trade\+Show\+Params@{Alibc\+Trade\+Show\+Params}}
+\subsubsection{\texorpdfstring{native\+Fail\+Mode}{nativeFailMode}}
+{\footnotesize\ttfamily -\/ (Alibc\+Native\+Fail\+Mode) native\+Fail\+Mode\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+跳手淘/天猫失败后的处理策略, 默认值为\+: Alibc\+Native\+Fail\+Mode\+Jump\+H5 \mbox{\Hypertarget{interface_alibc_trade_show_params_a7ac6bca730a8368eadf1d6ca5a129ed6}\label{interface_alibc_trade_show_params_a7ac6bca730a8368eadf1d6ca5a129ed6}} 
+\index{Alibc\+Trade\+Show\+Params@{Alibc\+Trade\+Show\+Params}!open\+Type@{open\+Type}}
+\index{open\+Type@{open\+Type}!Alibc\+Trade\+Show\+Params@{Alibc\+Trade\+Show\+Params}}
+\subsubsection{\texorpdfstring{open\+Type}{openType}}
+{\footnotesize\ttfamily -\/ (Alibc\+Open\+Type) open\+Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+打开页面的方式,详见\+Alibc\+Open\+Type 默认值\+:Auto 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Alibc\+Trade\+S\+D\+K.\+framework/\+Headers/Alibc\+Trade\+Show\+Params.\+h\end{DoxyCompactItemize}

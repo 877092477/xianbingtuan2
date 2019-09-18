@@ -1,0 +1,4 @@
+<map id="TCUploadPicDic" name="TCUploadPicDic">
+<area shape="rect" id="node2" href="$interface_t_c_a_p_i_request.html" title="CGI请求的参数字典封装辅助基类 " alt="" coords="23,167,134,192"/>
+<area shape="rect" id="node4" href="$interface_a_p_i_response.html" title="封装服务器返回的结果 " alt="" coords="177,80,279,105"/>
+</map>

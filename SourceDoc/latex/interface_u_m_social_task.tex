@@ -1,0 +1,137 @@
+\hypertarget{interface_u_m_social_task}{}\section{U\+M\+Social\+Task Class Reference}
+\label{interface_u_m_social_task}\index{U\+M\+Social\+Task@{U\+M\+Social\+Task}}
+
+
+{\ttfamily \#import $<$U\+M\+Social\+Task.\+h$>$}
+
+
+
+Inheritance diagram for U\+M\+Social\+Task\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{interface_u_m_social_task__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for U\+M\+Social\+Task\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{interface_u_m_social_task__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\+S\+U\+R\+L\+Request $\ast$) -\/ \mbox{\hyperlink{interface_u_m_social_task_a632c408ac0132dedcf3428e65d4a0010}{make\+U\+R\+L\+Request}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_u_m_social_task_a79e5336ee23aa654eb48defea5450245}{execute\+Task\+With\+Operation\+Queue\+:}}
+\item 
+(N\+S\+U\+R\+L\+Request $\ast$) -\/ \mbox{\hyperlink{interface_u_m_social_task_a632c408ac0132dedcf3428e65d4a0010}{make\+U\+R\+L\+Request}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_u_m_social_task_a79e5336ee23aa654eb48defea5450245}{execute\+Task\+With\+Operation\+Queue\+:}}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_u_m_social_task_af9817fa4e994e10ea441415c9d1d5aba}\label{interface_u_m_social_task_af9817fa4e994e10ea441415c9d1d5aba}} 
+U\+M\+Social\+Http\+Method\+Type {\bfseries http\+Method\+Type}
+\item 
+\mbox{\Hypertarget{interface_u_m_social_task_a0cb7efa997217cff2feb68745bd6e35e}\label{interface_u_m_social_task_a0cb7efa997217cff2feb68745bd6e35e}} 
+N\+S\+String $\ast$ {\bfseries host\+Url\+Path}
+\item 
+\mbox{\Hypertarget{interface_u_m_social_task_ab1b9a1c0eba531058e59c0fbfb898c9b}\label{interface_u_m_social_task_ab1b9a1c0eba531058e59c0fbfb898c9b}} 
+N\+S\+String $\ast$ {\bfseries related\+Url\+Path}
+\item 
+\mbox{\Hypertarget{interface_u_m_social_task_a5830480db108025c858fb70ec90d6214}\label{interface_u_m_social_task_a5830480db108025c858fb70ec90d6214}} 
+N\+S\+Dictionary $\ast$ {\bfseries param\+Dic}
+\item 
+\mbox{\Hypertarget{interface_u_m_social_task_a96ce7bc98619aa2d9fa1e444487e315b}\label{interface_u_m_social_task_a96ce7bc98619aa2d9fa1e444487e315b}} 
+U\+M\+Social\+Task\+Completion {\bfseries completion}
+\item 
+\mbox{\Hypertarget{interface_u_m_social_task_a5af3247df70695d78bb5e06fd3927132}\label{interface_u_m_social_task_a5af3247df70695d78bb5e06fd3927132}} 
+N\+S\+Integer {\bfseries task\+Identifier}
+\item 
+\mbox{\Hypertarget{interface_u_m_social_task_a60f0ecdf49ab72950ba9b3e54619a9dc}\label{interface_u_m_social_task_a60f0ecdf49ab72950ba9b3e54619a9dc}} 
+N\+S\+Integer {\bfseries retry\+Count}
+\item 
+\mbox{\Hypertarget{interface_u_m_social_task_aa9050d5106746e20b22bfd36556bfb9d}\label{interface_u_m_social_task_aa9050d5106746e20b22bfd36556bfb9d}} 
+U\+M\+Soical\+Task\+State {\bfseries task\+State}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+所有网络请求的基本任务类 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_u_m_social_task_a79e5336ee23aa654eb48defea5450245}\label{interface_u_m_social_task_a79e5336ee23aa654eb48defea5450245}} 
+\index{U\+M\+Social\+Task@{U\+M\+Social\+Task}!execute\+Task\+With\+Operation\+Queue\+:@{execute\+Task\+With\+Operation\+Queue\+:}}
+\index{execute\+Task\+With\+Operation\+Queue\+:@{execute\+Task\+With\+Operation\+Queue\+:}!U\+M\+Social\+Task@{U\+M\+Social\+Task}}
+\subsubsection{\texorpdfstring{execute\+Task\+With\+Operation\+Queue\+:()}{executeTaskWithOperationQueue:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) execute\+Task\+With\+Operation\+Queue\+: \begin{DoxyParamCaption}\item[{(N\+S\+Operation\+Queue $\ast$)}]{operation\+Task\+Queue }\end{DoxyParamCaption}}
+
+在指定的operation\+Task\+Queue的执行对应task的任务
+
+
+\begin{DoxyParams}{Parameters}
+{\em operation\+Task\+Queue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+N\+S\+Operation\+Queue  本函数不需要直接调用，\+U\+M\+Social\+Network\+Core会自动调用 
+
+\mbox{\hyperlink{interface_u_m_social_task_manager}{U\+M\+Social\+Task\+Manager}} -\/(void)add\+And\+Excute\+Social\+Task\+:(\+U\+M\+Social\+Task$\ast$)task 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{interface_u_m_social_task_a79e5336ee23aa654eb48defea5450245}\label{interface_u_m_social_task_a79e5336ee23aa654eb48defea5450245}} 
+\index{U\+M\+Social\+Task@{U\+M\+Social\+Task}!execute\+Task\+With\+Operation\+Queue\+:@{execute\+Task\+With\+Operation\+Queue\+:}}
+\index{execute\+Task\+With\+Operation\+Queue\+:@{execute\+Task\+With\+Operation\+Queue\+:}!U\+M\+Social\+Task@{U\+M\+Social\+Task}}
+\subsubsection{\texorpdfstring{execute\+Task\+With\+Operation\+Queue\+:()}{executeTaskWithOperationQueue:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) execute\+Task\+With\+Operation\+Queue\+: \begin{DoxyParamCaption}\item[{(N\+S\+Operation\+Queue $\ast$)}]{operation\+Task\+Queue }\end{DoxyParamCaption}}
+
+在指定的operation\+Task\+Queue的执行对应task的任务
+
+
+\begin{DoxyParams}{Parameters}
+{\em operation\+Task\+Queue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+N\+S\+Operation\+Queue  本函数不需要直接调用，\+U\+M\+Social\+Network\+Core会自动调用 
+
+\mbox{\hyperlink{interface_u_m_social_task_manager}{U\+M\+Social\+Task\+Manager}} -\/(void)add\+And\+Excute\+Social\+Task\+:(\+U\+M\+Social\+Task$\ast$)task 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{interface_u_m_social_task_a632c408ac0132dedcf3428e65d4a0010}\label{interface_u_m_social_task_a632c408ac0132dedcf3428e65d4a0010}} 
+\index{U\+M\+Social\+Task@{U\+M\+Social\+Task}!make\+U\+R\+L\+Request@{make\+U\+R\+L\+Request}}
+\index{make\+U\+R\+L\+Request@{make\+U\+R\+L\+Request}!U\+M\+Social\+Task@{U\+M\+Social\+Task}}
+\subsubsection{\texorpdfstring{make\+U\+R\+L\+Request()}{makeURLRequest()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (N\+S\+U\+R\+L\+Request$\ast$) make\+U\+R\+L\+Request \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+创建的\+N\+S\+U\+R\+L\+Request
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+N\+S\+U\+R\+L\+Request  用户可以重载此函数，自己实现make\+U\+R\+L\+Request的逻辑， 如果不重载此函数会用 默认会用http\+Method\+Type,related\+Url\+Path，param\+Dic来产生对应的\+N\+S\+U\+R\+L\+Request 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{interface_u_m_social_task_a632c408ac0132dedcf3428e65d4a0010}\label{interface_u_m_social_task_a632c408ac0132dedcf3428e65d4a0010}} 
+\index{U\+M\+Social\+Task@{U\+M\+Social\+Task}!make\+U\+R\+L\+Request@{make\+U\+R\+L\+Request}}
+\index{make\+U\+R\+L\+Request@{make\+U\+R\+L\+Request}!U\+M\+Social\+Task@{U\+M\+Social\+Task}}
+\subsubsection{\texorpdfstring{make\+U\+R\+L\+Request()}{makeURLRequest()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (N\+S\+U\+R\+L\+Request$\ast$) make\+U\+R\+L\+Request \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+创建的\+N\+S\+U\+R\+L\+Request
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+N\+S\+U\+R\+L\+Request  用户可以重载此函数，自己实现make\+U\+R\+L\+Request的逻辑， 如果不重载此函数会用 默认会用http\+Method\+Type,related\+Url\+Path，param\+Dic来产生对应的\+N\+S\+U\+R\+L\+Request 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Public/\+U\+Meng\+U\+Share/\+U\+M\+Social\+Network/U\+M\+Social\+Task.\+h\end{DoxyCompactItemize}

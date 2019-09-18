@@ -1,0 +1,5 @@
+<map id="RACChannel" name="RACChannel">
+<area shape="rect" id="node5" href="$interface_r_a_c_stream.html" title="RACStream" alt="" coords="117,80,209,105"/>
+<area shape="rect" id="node3" href="$interface_r_a_c_channel_terminal.html" title="RACChannelTerminal" alt="" coords="116,229,266,255"/>
+<area shape="rect" id="node4" href="$interface_r_a_c_signal.html" title="RACSignal" alt="" coords="120,155,206,180"/>
+</map>

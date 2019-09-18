@@ -1,0 +1,73 @@
+\hypertarget{interface_alibc_alipay_bridge}{}\section{Alibc\+Alipay\+Bridge Class Reference}
+\label{interface_alibc_alipay_bridge}\index{Alibc\+Alipay\+Bridge@{Alibc\+Alipay\+Bridge}}
+
+
+Inheritance diagram for Alibc\+Alipay\+Bridge\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{interface_alibc_alipay_bridge__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Alibc\+Alipay\+Bridge\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{interface_alibc_alipay_bridge__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_alibc_alipay_bridge_a91043c94a597d5e0d8f4e1268a21abd2}{pay\+Order\+:scheme\+:callback\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_alibc_alipay_bridge_a756c20159c33976347ab4d48cabae60f}{receipt\+U\+R\+L\+:callback\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_alibc_alipay_bridge_ab68b0aaa81801cd073f23a1ff72fabda}{process\+Payment\+:callback\+:}}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_alibc_alipay_bridge_a08dcf2a6e3040506d5cd70da14d6a3a7}\label{interface_alibc_alipay_bridge_a08dcf2a6e3040506d5cd70da14d6a3a7}} 
+(nonnull instancetype) + {\bfseries shared\+Instance}
+\item 
+\mbox{\Hypertarget{interface_alibc_alipay_bridge_a14c57728ed4cfc3269cac9b065433908}\label{interface_alibc_alipay_bridge_a14c57728ed4cfc3269cac9b065433908}} 
+(B\+O\+OL) + {\bfseries is\+Alipay\+Avaleable}
+\item 
+\mbox{\Hypertarget{interface_alibc_alipay_bridge_aa130925e46f72cc79066f0e7088a45c8}\label{interface_alibc_alipay_bridge_aa130925e46f72cc79066f0e7088a45c8}} 
+(B\+O\+OL) + {\bfseries is\+Payment\+Success\+:}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_alibc_alipay_bridge_aaec84ded0036a906fe873d997d954301}\label{interface_alibc_alipay_bridge_aaec84ded0036a906fe873d997d954301}} 
+N\+S\+Array$<$ N\+S\+String $\ast$ $>$ $\ast$ {\bfseries order\+Ids}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_alibc_alipay_bridge_a91043c94a597d5e0d8f4e1268a21abd2}\label{interface_alibc_alipay_bridge_a91043c94a597d5e0d8f4e1268a21abd2}} 
+\index{Alibc\+Alipay\+Bridge@{Alibc\+Alipay\+Bridge}!pay\+Order\+:scheme\+:callback\+:@{pay\+Order\+:scheme\+:callback\+:}}
+\index{pay\+Order\+:scheme\+:callback\+:@{pay\+Order\+:scheme\+:callback\+:}!Alibc\+Alipay\+Bridge@{Alibc\+Alipay\+Bridge}}
+\subsubsection{\texorpdfstring{pay\+Order\+:scheme\+:callback\+:()}{payOrder:scheme:callback:()}}
+{\footnotesize\ttfamily -\/ (void) pay\+Order\+: \begin{DoxyParamCaption}\item[{(nonnull N\+S\+String $\ast$)}]{order }\item[{scheme:(nonnull N\+S\+String $\ast$)}]{scheme }\item[{callback:(nullable void($^\wedge$)(N\+S\+Dictionary $\ast$\+\_\+\+\_\+nullable result))}]{callback }\end{DoxyParamCaption}}
+
+支付订单 \mbox{\Hypertarget{interface_alibc_alipay_bridge_ab68b0aaa81801cd073f23a1ff72fabda}\label{interface_alibc_alipay_bridge_ab68b0aaa81801cd073f23a1ff72fabda}} 
+\index{Alibc\+Alipay\+Bridge@{Alibc\+Alipay\+Bridge}!process\+Payment\+:callback\+:@{process\+Payment\+:callback\+:}}
+\index{process\+Payment\+:callback\+:@{process\+Payment\+:callback\+:}!Alibc\+Alipay\+Bridge@{Alibc\+Alipay\+Bridge}}
+\subsubsection{\texorpdfstring{process\+Payment\+:callback\+:()}{processPayment:callback:()}}
+{\footnotesize\ttfamily -\/ (void) process\+Payment\+: \begin{DoxyParamCaption}\item[{(N\+S\+Dictionary $\ast$\+\_\+\+\_\+nullable)}]{payment }\item[{callback:(nullable void($^\wedge$)(\mbox{\hyperlink{interface_alibc_trade_pay_result}{Alibc\+Trade\+Pay\+Result}} $\ast$\+\_\+\+\_\+nullable result, N\+S\+Error $\ast$\+\_\+\+\_\+nullable error))}]{callback }\end{DoxyParamCaption}}
+
+解析支付结果 \mbox{\Hypertarget{interface_alibc_alipay_bridge_a756c20159c33976347ab4d48cabae60f}\label{interface_alibc_alipay_bridge_a756c20159c33976347ab4d48cabae60f}} 
+\index{Alibc\+Alipay\+Bridge@{Alibc\+Alipay\+Bridge}!receipt\+U\+R\+L\+:callback\+:@{receipt\+U\+R\+L\+:callback\+:}}
+\index{receipt\+U\+R\+L\+:callback\+:@{receipt\+U\+R\+L\+:callback\+:}!Alibc\+Alipay\+Bridge@{Alibc\+Alipay\+Bridge}}
+\subsubsection{\texorpdfstring{receipt\+U\+R\+L\+:callback\+:()}{receiptURL:callback:()}}
+{\footnotesize\ttfamily -\/ (void) receipt\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(nullable N\+S\+U\+RL $\ast$)}]{url }\item[{callback:(nullable void($^\wedge$)(N\+S\+Dictionary $\ast$\+\_\+\+\_\+nullable result))}]{callback }\end{DoxyParamCaption}}
+
+支付结果 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Alibc\+Trade\+Biz.\+framework/\+Headers/Alibc\+Alipay\+Bridge.\+h\end{DoxyCompactItemize}

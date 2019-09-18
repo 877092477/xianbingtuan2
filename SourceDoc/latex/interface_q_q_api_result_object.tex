@@ -1,0 +1,64 @@
+\hypertarget{interface_q_q_api_result_object}{}\section{Q\+Q\+Api\+Result\+Object Class Reference}
+\label{interface_q_q_api_result_object}\index{Q\+Q\+Api\+Result\+Object@{Q\+Q\+Api\+Result\+Object}}
+
+
+用于请求回应的数据类型。  
+
+
+
+
+{\ttfamily \#import $<$Q\+Q\+Api\+Interface\+Object.\+h$>$}
+
+
+
+Inheritance diagram for Q\+Q\+Api\+Result\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{interface_q_q_api_result_object__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Q\+Q\+Api\+Result\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{interface_q_q_api_result_object__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_q_q_api_result_object_a6bf3ae499a2246d1ca0d2f48d3afb5a7}\label{interface_q_q_api_result_object_a6bf3ae499a2246d1ca0d2f48d3afb5a7}} 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_q_q_api_result_object_a6bf3ae499a2246d1ca0d2f48d3afb5a7}{error}}
+\begin{DoxyCompactList}\small\item\em 错误 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_q_q_api_result_object_a19965c4c2ed8c4a04f2abeb389512507}\label{interface_q_q_api_result_object_a19965c4c2ed8c4a04f2abeb389512507}} 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_q_q_api_result_object_a19965c4c2ed8c4a04f2abeb389512507}{error\+Description}}
+\begin{DoxyCompactList}\small\item\em 错误描述 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_q_q_api_result_object_ac553cd83cdeb0541f11271d0c6f435fc}\label{interface_q_q_api_result_object_ac553cd83cdeb0541f11271d0c6f435fc}} 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_q_q_api_result_object_ac553cd83cdeb0541f11271d0c6f435fc}{extend\+Info}}
+\begin{DoxyCompactList}\small\item\em 扩展信息 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+用于请求回应的数据类型。 
+
+\paragraph*{可能错误码及描述如下\+:}
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+error&error\+Description&注释 \\\cline{1-3}
+0&nil&成功 \\\cline{1-3}
+-\/1&param error&参数错误 \\\cline{1-3}
+-\/2&group code is invalid&该群不在自己的群列表里面 \\\cline{1-3}
+-\/3&upload photo failed&上传图片失败 \\\cline{1-3}
+-\/4&user give up the current operation&用户放弃当前操作 \\\cline{1-3}
+-\/5&client internal error&客户端内部处理错误 \\\cline{1-3}
+\end{longtabu}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Public/\+U\+Meng\+U\+Share/\+Tencent\+Open\+A\+P\+I/Q\+Q\+Api\+Interface\+Object.\+h\end{DoxyCompactItemize}

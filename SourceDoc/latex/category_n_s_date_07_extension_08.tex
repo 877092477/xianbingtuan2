@@ -1,0 +1,87 @@
+\hypertarget{category_n_s_date_07_extension_08}{}\section{N\+S\+Date(Extension) Category Reference}
+\label{category_n_s_date_07_extension_08}\index{N\+S\+Date(\+Extension)@{N\+S\+Date(\+Extension)}}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\+S\+String $\ast$) -\/ \mbox{\hyperlink{category_n_s_date_07_extension_08_af5f3353fd9e43a477a49ba24077dbfb8}{ff\+\_\+date\+Description}}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{category_n_s_date_07_extension_08_ade9d65de41cd69aee4773827f7399636}{is\+Today}}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{category_n_s_date_07_extension_08_af5ff9da017719ae7291510bd099f95c3}{is\+Yesterday}}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{category_n_s_date_07_extension_08_ad3f3bdead59789ff6279f9c25c4dc419}{is\+This\+Year}}
+\item 
+(N\+S\+Date $\ast$) -\/ \mbox{\hyperlink{category_n_s_date_07_extension_08_adf59848f31a11d418c7fb4c72e0c243f}{date\+With\+Y\+MD}}
+\item 
+(N\+S\+Date\+Components $\ast$) -\/ \mbox{\hyperlink{category_n_s_date_07_extension_08_af9dad03178e4542299133b9463069953}{delta\+With\+Now}}
+\item 
+(N\+S\+Date\+Components $\ast$) -\/ \mbox{\hyperlink{category_n_s_date_07_extension_08_a250ade5ba1e474c78557633670ad6e9d}{delta\+From\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{category_n_s_date_07_extension_08_adf59848f31a11d418c7fb4c72e0c243f}\label{category_n_s_date_07_extension_08_adf59848f31a11d418c7fb4c72e0c243f}} 
+\index{N\+S\+Date(\+Extension)@{N\+S\+Date(\+Extension)}!date\+With\+Y\+MD@{date\+With\+Y\+MD}}
+\index{date\+With\+Y\+MD@{date\+With\+Y\+MD}!N\+S\+Date(\+Extension)@{N\+S\+Date(\+Extension)}}
+\subsubsection{\texorpdfstring{date\+With\+Y\+M\+D()}{dateWithYMD()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Date $\ast$) date\+With\+Y\+MD \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+返回一个只有年月日的时间 \mbox{\Hypertarget{category_n_s_date_07_extension_08_a250ade5ba1e474c78557633670ad6e9d}\label{category_n_s_date_07_extension_08_a250ade5ba1e474c78557633670ad6e9d}} 
+\index{N\+S\+Date(\+Extension)@{N\+S\+Date(\+Extension)}!delta\+From\+:@{delta\+From\+:}}
+\index{delta\+From\+:@{delta\+From\+:}!N\+S\+Date(\+Extension)@{N\+S\+Date(\+Extension)}}
+\subsubsection{\texorpdfstring{delta\+From\+:()}{deltaFrom:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Date\+Components $\ast$) delta\+From\+: \begin{DoxyParamCaption}\item[{(N\+S\+Date $\ast$)}]{from }\end{DoxyParamCaption}}
+
+比较from和self的时间差值 \mbox{\Hypertarget{category_n_s_date_07_extension_08_af9dad03178e4542299133b9463069953}\label{category_n_s_date_07_extension_08_af9dad03178e4542299133b9463069953}} 
+\index{N\+S\+Date(\+Extension)@{N\+S\+Date(\+Extension)}!delta\+With\+Now@{delta\+With\+Now}}
+\index{delta\+With\+Now@{delta\+With\+Now}!N\+S\+Date(\+Extension)@{N\+S\+Date(\+Extension)}}
+\subsubsection{\texorpdfstring{delta\+With\+Now()}{deltaWithNow()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Date\+Components $\ast$) delta\+With\+Now \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+获得与当前时间的差距 \mbox{\Hypertarget{category_n_s_date_07_extension_08_af5f3353fd9e43a477a49ba24077dbfb8}\label{category_n_s_date_07_extension_08_af5f3353fd9e43a477a49ba24077dbfb8}} 
+\index{N\+S\+Date(\+Extension)@{N\+S\+Date(\+Extension)}!ff\+\_\+date\+Description@{ff\+\_\+date\+Description}}
+\index{ff\+\_\+date\+Description@{ff\+\_\+date\+Description}!N\+S\+Date(\+Extension)@{N\+S\+Date(\+Extension)}}
+\subsubsection{\texorpdfstring{ff\+\_\+date\+Description()}{ff\_dateDescription()}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) ff\+\_\+date\+Description \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+日期描述字符串
+
+格式如下
+\begin{DoxyItemize}
+\item 刚刚(一分钟内)
+\item X分钟前(一小时内)
+\item X小时前(当天)
+\item 昨天 HH\+:mm(昨天)
+\item M\+M-\/dd HH\+:mm(一年内)
+\item yyyy-\/\+M\+M-\/dd HH\+:mm(更早期) 
+\end{DoxyItemize}\mbox{\Hypertarget{category_n_s_date_07_extension_08_ad3f3bdead59789ff6279f9c25c4dc419}\label{category_n_s_date_07_extension_08_ad3f3bdead59789ff6279f9c25c4dc419}} 
+\index{N\+S\+Date(\+Extension)@{N\+S\+Date(\+Extension)}!is\+This\+Year@{is\+This\+Year}}
+\index{is\+This\+Year@{is\+This\+Year}!N\+S\+Date(\+Extension)@{N\+S\+Date(\+Extension)}}
+\subsubsection{\texorpdfstring{is\+This\+Year()}{isThisYear()}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) is\+This\+Year \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+是否为今年 \mbox{\Hypertarget{category_n_s_date_07_extension_08_ade9d65de41cd69aee4773827f7399636}\label{category_n_s_date_07_extension_08_ade9d65de41cd69aee4773827f7399636}} 
+\index{N\+S\+Date(\+Extension)@{N\+S\+Date(\+Extension)}!is\+Today@{is\+Today}}
+\index{is\+Today@{is\+Today}!N\+S\+Date(\+Extension)@{N\+S\+Date(\+Extension)}}
+\subsubsection{\texorpdfstring{is\+Today()}{isToday()}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) is\+Today \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+是否为今天 \mbox{\Hypertarget{category_n_s_date_07_extension_08_af5ff9da017719ae7291510bd099f95c3}\label{category_n_s_date_07_extension_08_af5ff9da017719ae7291510bd099f95c3}} 
+\index{N\+S\+Date(\+Extension)@{N\+S\+Date(\+Extension)}!is\+Yesterday@{is\+Yesterday}}
+\index{is\+Yesterday@{is\+Yesterday}!N\+S\+Date(\+Extension)@{N\+S\+Date(\+Extension)}}
+\subsubsection{\texorpdfstring{is\+Yesterday()}{isYesterday()}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) is\+Yesterday \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+是否为昨天 Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{category_n_s_date_07_extension_08_af5ff9da017719ae7291510bd099f95c3_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this category was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Categories(类目)/\+N\+S\+Date/N\+S\+Date+\+Extension.\+h\item 
+T\+H\+B/\+Categories(类目)/\+N\+S\+Date/N\+S\+Date+\+Extension.\+m\end{DoxyCompactItemize}

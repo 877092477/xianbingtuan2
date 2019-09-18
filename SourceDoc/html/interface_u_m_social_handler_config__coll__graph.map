@@ -1,0 +1,13 @@
+<map id="UMSocialHandlerConfig" name="UMSocialHandlerConfig">
+<area shape="rect" id="node4" href="$interface_u_m_social_share_object_config.html" title="UMSocialShareObjectConfig" alt="" coords="133,330,324,355"/>
+<area shape="rect" id="node3" href="$interface_u_m_social_share_extend_object_config.html" title="UMSocialShareExtendObject\lConfig" alt="" coords="385,78,579,117"/>
+<area shape="rect" id="node5" href="$interface_u_m_social_share_image_object_config.html" title="UMSocialShareImageObject\lConfig" alt="" coords="388,141,577,179"/>
+<area shape="rect" id="node6" href="$interface_u_m_social_share_music_object_config.html" title="UMSocialShareMusicObject\lConfig" alt="" coords="389,203,576,242"/>
+<area shape="rect" id="node7" href="$interface_u_m_social_share_webpage_object_config.html" title="UMSocialShareWebpageObject\lConfig" alt="" coords="378,266,587,305"/>
+<area shape="rect" id="node8" href="$interface_u_m_social_share_emotion_object_config.html" title="UMSocialShareEmotionObject\lConfig" alt="" coords="382,329,583,367"/>
+<area shape="rect" id="node9" href="$interface_u_m_social_share_sms_object_config.html" title="UMSocialShareSmsObjectConfig" alt="" coords="373,391,591,417"/>
+<area shape="rect" id="node10" href="$interface_u_m_social_share_video_object_config.html" title="UMSocialShareVideoObject\lConfig" alt="" coords="389,441,575,479"/>
+<area shape="rect" id="node11" href="$interface_u_m_social_share_email_object_config.html" title="UMSocialShareEmailObject\lConfig" alt="" coords="389,503,575,542"/>
+<area shape="rect" id="node12" href="$interface_u_m_social_share_text_object_config.html" title="UMSocialShareTextObjectConfig" alt="" coords="375,566,590,591"/>
+<area shape="rect" id="node13" href="$interface_u_m_social_share_file_object_config.html" title="UMSocialShareFileObjectConfig" alt="" coords="376,617,589,642"/>
+</map>

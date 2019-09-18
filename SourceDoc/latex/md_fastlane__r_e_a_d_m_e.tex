@@ -1,0 +1,45 @@
+\section*{Installation}
+
+Make sure you have the latest version of the Xcode command line tools installed\+:
+
+
+\begin{DoxyCode}
+xcode-select --install
+\end{DoxyCode}
+
+
+Install {\itshape fastlane} using 
+\begin{DoxyCode}
+[sudo] gem install fastlane -NV
+\end{DoxyCode}
+ or alternatively using {\ttfamily brew cask install fastlane}
+
+\section*{Available Actions}
+
+\subsection*{i\+OS}
+
+\#\#\# ios release\+\_\+all\+\_\+apple 
+\begin{DoxyCode}
+fastlane ios release\_all\_apple
+\end{DoxyCode}
+ 发布到 苹果商店 \#\#\# ios release\+\_\+apple 
+\begin{DoxyCode}
+fastlane ios release\_apple
+\end{DoxyCode}
+ 发布 指定版本 到 苹果商店 \#\#\# ios increment\+\_\+version\+\_\+major 
+\begin{DoxyCode}
+fastlane ios increment\_version\_major
+\end{DoxyCode}
+
+
+\#\#\# ios increment\+\_\+build 
+\begin{DoxyCode}
+fastlane ios increment\_build
+\end{DoxyCode}
+
+
+
+
+
+
+This R\+E\+A\+D\+M\+E.\+md is auto-\/generated and will be re-\/generated every time \href{https://fastlane.tools}{\tt fastlane} is run. More information about fastlane can be found on \href{https://fastlane.tools}{\tt fastlane.\+tools}. The documentation of fastlane can be found on \href{https://docs.fastlane.tools}{\tt docs.\+fastlane.\+tools}. 

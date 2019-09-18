@@ -1,0 +1,147 @@
+\hypertarget{protocol_w_x_api_delegate_01-p}{}\section{$<$W\+X\+Api\+Delegate $>$ Protocol Reference}
+\label{protocol_w_x_api_delegate_01-p}\index{$<$\+W\+X\+Api\+Delegate $>$@{$<$\+W\+X\+Api\+Delegate $>$}}
+
+
+接收并处理来自微信终端程序的事件消息  
+
+
+
+
+{\ttfamily \#import $<$W\+X\+Api.\+h$>$}
+
+
+
+Inheritance diagram for $<$W\+X\+Api\+Delegate $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{protocol_w_x_api_delegate_01-p__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for $<$W\+X\+Api\+Delegate $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{protocol_w_x_api_delegate_01-p__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_x_api_delegate_01-p_a185c8b9b51ff2398667dbf8cedffc8d6}{on\+Req\+:}}
+\begin{DoxyCompactList}\small\item\em 收到一个来自微信的请求，第三方应用程序处理完后调用send\+Resp向微信发送结果 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_x_api_delegate_01-p_a241d3c0bbfa2c223235df0f1b118b687}{on\+Resp\+:}}
+\begin{DoxyCompactList}\small\item\em 发送一个send\+Req后，收到微信的回应 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_x_api_delegate_01-p_a185c8b9b51ff2398667dbf8cedffc8d6}{on\+Req\+:}}
+\begin{DoxyCompactList}\small\item\em 收到一个来自微信的请求，第三方应用程序处理完后调用send\+Resp向微信发送结果 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_x_api_delegate_01-p_a241d3c0bbfa2c223235df0f1b118b687}{on\+Resp\+:}}
+\begin{DoxyCompactList}\small\item\em 发送一个send\+Req后，收到微信的回应 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_x_api_delegate_01-p_a185c8b9b51ff2398667dbf8cedffc8d6}{on\+Req\+:}}
+\begin{DoxyCompactList}\small\item\em 收到一个来自微信的请求，第三方应用程序处理完后调用send\+Resp向微信发送结果 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_x_api_delegate_01-p_a241d3c0bbfa2c223235df0f1b118b687}{on\+Resp\+:}}
+\begin{DoxyCompactList}\small\item\em 发送一个send\+Req后，收到微信的回应 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+接收并处理来自微信终端程序的事件消息 
+
+接收并处理来自微信终端程序的事件消息，期间微信界面会切换到第三方应用程序。 \mbox{\hyperlink{class_w_x_api_delegate-p}{W\+X\+Api\+Delegate}} 会在handle\+Open\+U\+R\+L\+:delegate\+:中使用并触发。 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{protocol_w_x_api_delegate_01-p_a185c8b9b51ff2398667dbf8cedffc8d6}\label{protocol_w_x_api_delegate_01-p_a185c8b9b51ff2398667dbf8cedffc8d6}} 
+\index{W\+X\+Api\+Delegate -\/p@{W\+X\+Api\+Delegate -\/p}!on\+Req\+:@{on\+Req\+:}}
+\index{on\+Req\+:@{on\+Req\+:}!W\+X\+Api\+Delegate -\/p@{W\+X\+Api\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{on\+Req\+:()}{onReq:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (void W\+X\+Api\+Delegate) on\+Req\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_base_req}{Base\+Req}} $\ast$)}]{req }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+收到一个来自微信的请求，第三方应用程序处理完后调用send\+Resp向微信发送结果 
+
+收到一个来自微信的请求，异步处理完成后必须调用send\+Resp发送处理结果给微信。 可能收到的请求有\+Get\+Message\+From\+W\+X\+Req、\+Show\+Message\+From\+W\+X\+Req等。 
+\begin{DoxyParams}{Parameters}
+{\em req} & 具体请求内容，是自动释放的 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_w_x_api_delegate_01-p_a185c8b9b51ff2398667dbf8cedffc8d6}\label{protocol_w_x_api_delegate_01-p_a185c8b9b51ff2398667dbf8cedffc8d6}} 
+\index{W\+X\+Api\+Delegate -\/p@{W\+X\+Api\+Delegate -\/p}!on\+Req\+:@{on\+Req\+:}}
+\index{on\+Req\+:@{on\+Req\+:}!W\+X\+Api\+Delegate -\/p@{W\+X\+Api\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{on\+Req\+:()}{onReq:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (void W\+X\+Api\+Delegate) on\+Req\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_base_req}{Base\+Req}} $\ast$)}]{req }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+收到一个来自微信的请求，第三方应用程序处理完后调用send\+Resp向微信发送结果 
+
+收到一个来自微信的请求，异步处理完成后必须调用send\+Resp发送处理结果给微信。 可能收到的请求有\+Get\+Message\+From\+W\+X\+Req、\+Show\+Message\+From\+W\+X\+Req等。 
+\begin{DoxyParams}{Parameters}
+{\em req} & 具体请求内容，是自动释放的 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_w_x_api_delegate_01-p_a185c8b9b51ff2398667dbf8cedffc8d6}\label{protocol_w_x_api_delegate_01-p_a185c8b9b51ff2398667dbf8cedffc8d6}} 
+\index{W\+X\+Api\+Delegate -\/p@{W\+X\+Api\+Delegate -\/p}!on\+Req\+:@{on\+Req\+:}}
+\index{on\+Req\+:@{on\+Req\+:}!W\+X\+Api\+Delegate -\/p@{W\+X\+Api\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{on\+Req\+:()}{onReq:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (void W\+X\+Api\+Delegate) on\+Req\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_base_req}{Base\+Req}} $\ast$)}]{req }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+收到一个来自微信的请求，第三方应用程序处理完后调用send\+Resp向微信发送结果 
+
+收到一个来自微信的请求，异步处理完成后必须调用send\+Resp发送处理结果给微信。 可能收到的请求有\+Get\+Message\+From\+W\+X\+Req、\+Show\+Message\+From\+W\+X\+Req等。 
+\begin{DoxyParams}{Parameters}
+{\em req} & 具体请求内容，是自动释放的 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_w_x_api_delegate_01-p_a241d3c0bbfa2c223235df0f1b118b687}\label{protocol_w_x_api_delegate_01-p_a241d3c0bbfa2c223235df0f1b118b687}} 
+\index{W\+X\+Api\+Delegate -\/p@{W\+X\+Api\+Delegate -\/p}!on\+Resp\+:@{on\+Resp\+:}}
+\index{on\+Resp\+:@{on\+Resp\+:}!W\+X\+Api\+Delegate -\/p@{W\+X\+Api\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{on\+Resp\+:()}{onResp:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (void W\+X\+Api\+Delegate) on\+Resp\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_base_resp}{Base\+Resp}} $\ast$)}]{resp }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+发送一个send\+Req后，收到微信的回应 
+
+收到一个来自微信的处理结果。调用一次send\+Req后会收到on\+Resp。 可能收到的处理结果有\+Send\+Message\+To\+W\+X\+Resp、\+Send\+Auth\+Resp等。 
+\begin{DoxyParams}{Parameters}
+{\em resp具体的回应内容，是自动释放的} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_w_x_api_delegate_01-p_a241d3c0bbfa2c223235df0f1b118b687}\label{protocol_w_x_api_delegate_01-p_a241d3c0bbfa2c223235df0f1b118b687}} 
+\index{W\+X\+Api\+Delegate -\/p@{W\+X\+Api\+Delegate -\/p}!on\+Resp\+:@{on\+Resp\+:}}
+\index{on\+Resp\+:@{on\+Resp\+:}!W\+X\+Api\+Delegate -\/p@{W\+X\+Api\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{on\+Resp\+:()}{onResp:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (void W\+X\+Api\+Delegate) on\+Resp\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_base_resp}{Base\+Resp}} $\ast$)}]{resp }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+发送一个send\+Req后，收到微信的回应 
+
+收到一个来自微信的处理结果。调用一次send\+Req后会收到on\+Resp。 可能收到的处理结果有\+Send\+Message\+To\+W\+X\+Resp、\+Send\+Auth\+Resp等。 
+\begin{DoxyParams}{Parameters}
+{\em resp具体的回应内容，是自动释放的} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_w_x_api_delegate_01-p_a241d3c0bbfa2c223235df0f1b118b687}\label{protocol_w_x_api_delegate_01-p_a241d3c0bbfa2c223235df0f1b118b687}} 
+\index{W\+X\+Api\+Delegate -\/p@{W\+X\+Api\+Delegate -\/p}!on\+Resp\+:@{on\+Resp\+:}}
+\index{on\+Resp\+:@{on\+Resp\+:}!W\+X\+Api\+Delegate -\/p@{W\+X\+Api\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{on\+Resp\+:()}{onResp:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (void W\+X\+Api\+Delegate) on\+Resp\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_base_resp}{Base\+Resp}} $\ast$)}]{resp }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+发送一个send\+Req后，收到微信的回应 
+
+收到一个来自微信的处理结果。调用一次send\+Req后会收到on\+Resp。 可能收到的处理结果有\+Send\+Message\+To\+W\+X\+Resp、\+Send\+Auth\+Resp等。 
+\begin{DoxyParams}{Parameters}
+{\em resp具体的回应内容，是自动释放的} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+U\+Meng\+U\+Share/W\+X\+Api.\+h\end{DoxyCompactItemize}

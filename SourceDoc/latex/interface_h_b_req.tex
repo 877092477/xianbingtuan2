@@ -1,0 +1,80 @@
+\hypertarget{interface_h_b_req}{}\section{H\+B\+Req Class Reference}
+\label{interface_h_b_req}\index{H\+B\+Req@{H\+B\+Req}}
+
+
+第三方向微信终端发起拆企业红包的消息结构体  
+
+
+
+
+{\ttfamily \#import $<$W\+X\+Api\+Object.\+h$>$}
+
+
+
+Inheritance diagram for H\+B\+Req\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{interface_h_b_req__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for H\+B\+Req\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{interface_h_b_req__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_h_b_req_a281154c25f083fb1ae88de03f5d63a62}{nonce\+Str}}
+\item 
+U\+Int32 \mbox{\hyperlink{interface_h_b_req_aafcc0456aab227fa1b3e379a1419c878}{time\+Stamp}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_h_b_req_a0a2cdc7e84f8d80f421636c266b78eae}{package}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_h_b_req_aa7fe9c560352d6419a38005069e1a404}{sign}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+第三方向微信终端发起拆企业红包的消息结构体 
+
+第三方向微信终端发起拆企业红包的消息结构体，微信终端处理后会向第三方返回处理结果 \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interface_h_b_req}{H\+B\+Req}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_h_b_req_a281154c25f083fb1ae88de03f5d63a62}\label{interface_h_b_req_a281154c25f083fb1ae88de03f5d63a62}} 
+\index{H\+B\+Req@{H\+B\+Req}!nonce\+Str@{nonce\+Str}}
+\index{nonce\+Str@{nonce\+Str}!H\+B\+Req@{H\+B\+Req}}
+\subsubsection{\texorpdfstring{nonce\+Str}{nonceStr}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) nonce\+Str\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+随机串，防重发 \mbox{\Hypertarget{interface_h_b_req_a0a2cdc7e84f8d80f421636c266b78eae}\label{interface_h_b_req_a0a2cdc7e84f8d80f421636c266b78eae}} 
+\index{H\+B\+Req@{H\+B\+Req}!package@{package}}
+\index{package@{package}!H\+B\+Req@{H\+B\+Req}}
+\subsubsection{\texorpdfstring{package}{package}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) package\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+商家根据微信企业红包开发文档填写的数据和签名 \mbox{\Hypertarget{interface_h_b_req_aa7fe9c560352d6419a38005069e1a404}\label{interface_h_b_req_aa7fe9c560352d6419a38005069e1a404}} 
+\index{H\+B\+Req@{H\+B\+Req}!sign@{sign}}
+\index{sign@{sign}!H\+B\+Req@{H\+B\+Req}}
+\subsubsection{\texorpdfstring{sign}{sign}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) sign\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+商家根据微信企业红包开发文档对数据做的签名 \mbox{\Hypertarget{interface_h_b_req_aafcc0456aab227fa1b3e379a1419c878}\label{interface_h_b_req_aafcc0456aab227fa1b3e379a1419c878}} 
+\index{H\+B\+Req@{H\+B\+Req}!time\+Stamp@{time\+Stamp}}
+\index{time\+Stamp@{time\+Stamp}!H\+B\+Req@{H\+B\+Req}}
+\subsubsection{\texorpdfstring{time\+Stamp}{timeStamp}}
+{\footnotesize\ttfamily -\/ (U\+Int32) time\+Stamp\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+时间戳，防重发 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+U\+Meng\+U\+Share/W\+X\+Api\+Object.\+h\end{DoxyCompactItemize}

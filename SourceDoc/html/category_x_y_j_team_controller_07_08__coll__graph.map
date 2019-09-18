@@ -1,0 +1,13 @@
+<map id="XYJTeamController()" name="XYJTeamController()">
+<area shape="rect" id="node2" href="$interface_x_y_j_team_view.html" title="XYJTeamView" alt="" coords="1276,441,1383,467"/>
+<area shape="rect" id="node3" href="$interface_j_m_view.html" title="JMView" alt="" coords="1123,153,1190,179"/>
+<area shape="rect" id="node10" href="$interface_x_y_j_team_view_model.html" title="XYJTeamViewModel" alt="" coords="1258,587,1401,612"/>
+<area shape="rect" id="node11" href="$interface_j_m_view_model.html" title="JMViewModel" alt="" coords="1104,587,1208,612"/>
+<area shape="rect" id="node14" href="$interface_r_a_c_disposable.html" title="RACDisposable" alt="" coords="133,415,249,440"/>
+<area shape="rect" id="node17" href="$interface_r_a_c_stream.html" title="RACStream" alt="" coords="145,496,237,521"/>
+<area shape="rect" id="node19" href="$interface_r_a_c_command.html" title="RACCommand" alt="" coords="758,587,868,612"/>
+<area shape="rect" id="node20" href="$interface_x_y_j_team_model.html" title="XYJTeamModel" alt="" coords="333,753,448,779"/>
+<area shape="rect" id="node21" href="$interface_x_y_j___t_m__left.html" title="XYJ_TM_left" alt="" coords="142,753,240,779"/>
+<area shape="rect" id="node15" href="$interface_r_a_c_subject.html" title="RACSubject" alt="" coords="766,303,860,328"/>
+<area shape="rect" id="node16" href="$interface_r_a_c_signal.html" title="RACSignal" alt="" coords="347,496,434,521"/>
+</map>

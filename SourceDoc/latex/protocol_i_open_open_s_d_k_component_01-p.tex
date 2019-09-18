@@ -1,0 +1,57 @@
+\hypertarget{protocol_i_open_open_s_d_k_component_01-p}{}\section{$<$I\+Open\+Open\+S\+D\+K\+Component $>$ Protocol Reference}
+\label{protocol_i_open_open_s_d_k_component_01-p}\index{$<$\+I\+Open\+Open\+S\+D\+K\+Component $>$@{$<$\+I\+Open\+Open\+S\+D\+K\+Component $>$}}
+
+
+Inheritance diagram for $<$I\+Open\+Open\+S\+D\+K\+Component $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{protocol_i_open_open_s_d_k_component_01-p__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for $<$I\+Open\+Open\+S\+D\+K\+Component $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{protocol_i_open_open_s_d_k_component_01-p__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\+S\+Number $\ast$) -\/ \mbox{\hyperlink{protocol_i_open_open_s_d_k_component_01-p_a1e851758f5fa630b4866a5868e3ba610}{analyze\+Open\+Id\+:app\+Id\+Key\+:salt\+Key\+:biz\+Type\+:auth\+Code\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{protocol_i_open_open_s_d_k_component_01-p_a1e851758f5fa630b4866a5868e3ba610}\label{protocol_i_open_open_s_d_k_component_01-p_a1e851758f5fa630b4866a5868e3ba610}} 
+\index{I\+Open\+Open\+S\+D\+K\+Component -\/p@{I\+Open\+Open\+S\+D\+K\+Component -\/p}!analyze\+Open\+Id\+:app\+Id\+Key\+:salt\+Key\+:biz\+Type\+:auth\+Code\+:@{analyze\+Open\+Id\+:app\+Id\+Key\+:salt\+Key\+:biz\+Type\+:auth\+Code\+:}}
+\index{analyze\+Open\+Id\+:app\+Id\+Key\+:salt\+Key\+:biz\+Type\+:auth\+Code\+:@{analyze\+Open\+Id\+:app\+Id\+Key\+:salt\+Key\+:biz\+Type\+:auth\+Code\+:}!I\+Open\+Open\+S\+D\+K\+Component -\/p@{I\+Open\+Open\+S\+D\+K\+Component -\/p}}
+\subsubsection{\texorpdfstring{analyze\+Open\+Id\+:app\+Id\+Key\+:salt\+Key\+:biz\+Type\+:auth\+Code\+:()}{analyzeOpenId:appIdKey:saltKey:bizType:authCode:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Number$\ast$ I\+Open\+Open\+S\+D\+K\+Component) analyze\+Open\+Id\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{open\+Id }\item[{appIdKey:(N\+S\+String $\ast$)}]{app\+Id\+Key }\item[{saltKey:(N\+S\+String $\ast$)}]{salt\+Key }\item[{bizType:(N\+S\+Data $\ast$)}]{biz\+Type }\item[{authCode:(N\+S\+String $\ast$)}]{auth\+Code }\end{DoxyParamCaption}}
+
+分析 Open ID
+
+
+\begin{DoxyParams}{Parameters}
+{\em open\+Id} & open\+Id的数值\\
+\hline
+{\em app\+Id\+Key} & app\+Id对应的key值\\
+\hline
+{\em salt\+Key} & salt对应的key值\\
+\hline
+{\em biz\+Type} & 解析类型\\
+\hline
+{\em auth\+Code} & S\+D\+K的授权码，不传或为空串，使用默认加密文件\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+open\+Id中包含的指定内容，传人非法参数时返回nil 
+\end{DoxyReturn}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Security\+Guard\+S\+D\+K.\+framework/\+Headers/\+Open/\+Open\+Open\+S\+D\+K/I\+Open\+Open\+S\+D\+K\+Component.\+h\end{DoxyCompactItemize}

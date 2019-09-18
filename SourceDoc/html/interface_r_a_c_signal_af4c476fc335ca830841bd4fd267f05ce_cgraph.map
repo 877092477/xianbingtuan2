@@ -1,0 +1,7 @@
+<map id="&#45;[RACSignal waitUntilCompleted:]" name="&#45;[RACSignal waitUntilCompleted:]">
+<area shape="rect" id="node2" href="$interface_r_a_c_signal.html#a2997862d443d16efa3197facb6a354d1" title="&#45;[RACSignal ignoreValues]" alt="" coords="302,5,480,31"/>
+<area shape="rect" id="node6" href="$interface_r_a_c_stream.html#aedc0b75ca3e6d0f81f006c7c3c6a1d76" title="&#45;[RACStream setNameWithFormat:]" alt="" coords="274,55,508,80"/>
+<area shape="rect" id="node3" href="$interface_r_a_c_stream.html#ae6a990d05708acea33f1c31102f4989b" title="&#45;[RACStream filter:]" alt="" coords="556,5,693,31"/>
+<area shape="rect" id="node4" href="$interface_r_a_c_stream.html#a2441b0306adc6ae2845219f8b116119a" title="&#45;[RACStream flattenMap:]" alt="" coords="741,5,915,31"/>
+<area shape="rect" id="node5" href="$interface_r_a_c_stream.html#a8638bfba1497aa1b14b098857b4c62e2" title="&#45;[RACStream bind:]" alt="" coords="963,5,1100,31"/>
+</map>

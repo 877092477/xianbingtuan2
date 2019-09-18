@@ -1,0 +1,89 @@
+\hypertarget{interface_send_message_to_w_x_req}{}\section{Send\+Message\+To\+W\+X\+Req Class Reference}
+\label{interface_send_message_to_w_x_req}\index{Send\+Message\+To\+W\+X\+Req@{Send\+Message\+To\+W\+X\+Req}}
+
+
+第三方程序发送消息至微信终端程序的消息结构体  
+
+
+
+
+{\ttfamily \#import $<$W\+X\+Api\+Object.\+h$>$}
+
+
+
+Inheritance diagram for Send\+Message\+To\+W\+X\+Req\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{interface_send_message_to_w_x_req__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Send\+Message\+To\+W\+X\+Req\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{interface_send_message_to_w_x_req__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_send_message_to_w_x_req_a483ee902e3c1f6b1748f886b197f2371}{text}}
+\item 
+\mbox{\hyperlink{interface_w_x_media_message}{W\+X\+Media\+Message}} $\ast$ \mbox{\hyperlink{interface_send_message_to_w_x_req_ab681e833acc946f6ecc42242347a992f}{message}}
+\item 
+B\+O\+OL \mbox{\hyperlink{interface_send_message_to_w_x_req_a1a44728c5eb41af902cef15ed0339f11}{b\+Text}}
+\item 
+int \mbox{\hyperlink{interface_send_message_to_w_x_req_a40e26a162d0611b30050b20dccf39d14}{scene}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+第三方程序发送消息至微信终端程序的消息结构体 
+
+第三方程序向微信发送信息需要传入\+Send\+Message\+To\+W\+X\+Req结构体，信息类型包括文本消息和多媒体消息， 分别对应于text和message成员。调用该方法后，微信处理完信息会向第三方程序发送一个处理结果。 \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interface_send_message_to_w_x_resp}{Send\+Message\+To\+W\+X\+Resp}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_send_message_to_w_x_req_a1a44728c5eb41af902cef15ed0339f11}\label{interface_send_message_to_w_x_req_a1a44728c5eb41af902cef15ed0339f11}} 
+\index{Send\+Message\+To\+W\+X\+Req@{Send\+Message\+To\+W\+X\+Req}!b\+Text@{b\+Text}}
+\index{b\+Text@{b\+Text}!Send\+Message\+To\+W\+X\+Req@{Send\+Message\+To\+W\+X\+Req}}
+\subsubsection{\texorpdfstring{b\+Text}{bText}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) b\+Text\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+发送消息的类型，包括文本消息和多媒体消息两种，两者只能选择其一，不能同时发送文本和多媒体消息 \mbox{\Hypertarget{interface_send_message_to_w_x_req_ab681e833acc946f6ecc42242347a992f}\label{interface_send_message_to_w_x_req_ab681e833acc946f6ecc42242347a992f}} 
+\index{Send\+Message\+To\+W\+X\+Req@{Send\+Message\+To\+W\+X\+Req}!message@{message}}
+\index{message@{message}!Send\+Message\+To\+W\+X\+Req@{Send\+Message\+To\+W\+X\+Req}}
+\subsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_w_x_media_message}{W\+X\+Media\+Message}} $\ast$) message\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+发送消息的多媒体内容 \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interface_w_x_media_message}{W\+X\+Media\+Message}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{interface_send_message_to_w_x_req_a40e26a162d0611b30050b20dccf39d14}\label{interface_send_message_to_w_x_req_a40e26a162d0611b30050b20dccf39d14}} 
+\index{Send\+Message\+To\+W\+X\+Req@{Send\+Message\+To\+W\+X\+Req}!scene@{scene}}
+\index{scene@{scene}!Send\+Message\+To\+W\+X\+Req@{Send\+Message\+To\+W\+X\+Req}}
+\subsubsection{\texorpdfstring{scene}{scene}}
+{\footnotesize\ttfamily -\/ (int) scene\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+发送的目标场景，可以选择发送到会话(\+W\+X\+Scene\+Session)或者朋友圈(\+W\+X\+Scene\+Timeline)。 默认发送到会话。 \begin{DoxySeeAlso}{See also}
+W\+X\+Scene 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{interface_send_message_to_w_x_req_a483ee902e3c1f6b1748f886b197f2371}\label{interface_send_message_to_w_x_req_a483ee902e3c1f6b1748f886b197f2371}} 
+\index{Send\+Message\+To\+W\+X\+Req@{Send\+Message\+To\+W\+X\+Req}!text@{text}}
+\index{text@{text}!Send\+Message\+To\+W\+X\+Req@{Send\+Message\+To\+W\+X\+Req}}
+\subsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) text\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+发送消息的文本内容 \begin{DoxyNote}{Note}
+文本长度必须大于0且小于10K 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+U\+Meng\+U\+Share/W\+X\+Api\+Object.\+h\end{DoxyCompactItemize}

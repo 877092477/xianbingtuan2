@@ -1,0 +1,36 @@
+\hypertarget{category_p_o_p_animation_07_n_s_copying_08}{}\section{P\+O\+P\+Animation(N\+S\+Copying) Category Reference}
+\label{category_p_o_p_animation_07_n_s_copying_08}\index{P\+O\+P\+Animation(\+N\+S\+Copying)@{P\+O\+P\+Animation(\+N\+S\+Copying)}}
+
+
+{\ttfamily \#import $<$P\+O\+P\+Animation.\+h$>$}
+
+
+
+Inheritance diagram for P\+O\+P\+Animation(N\+S\+Copying)\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{category_p_o_p_animation_07_n_s_copying_08__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for P\+O\+P\+Animation(N\+S\+Copying)\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{category_p_o_p_animation_07_n_s_copying_08__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+This implementation of \mbox{\hyperlink{class_n_s_copying-p}{N\+S\+Copying}} does not do any copying of animation\textquotesingle{}s state, but only configuration. i.\+e. you cannot copy an animation and expect to apply it to a view and have the copied animation pick up where the original left off. Two common uses of copying animations\+:
+\begin{DoxyItemize}
+\item you need to apply the same animation to multiple different views.
+\item you need to absolutely ensure that the the caller of your function cannot mutate the animation once it\textquotesingle{}s been passed in. 
+\end{DoxyItemize}
+
+The documentation for this category was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/pop/P\+O\+P\+Animation.\+h\end{DoxyCompactItemize}

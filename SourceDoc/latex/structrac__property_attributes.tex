@@ -1,0 +1,115 @@
+\hypertarget{structrac__property_attributes}{}\section{rac\+\_\+property\+Attributes Struct Reference}
+\label{structrac__property_attributes}\index{rac\+\_\+property\+Attributes@{rac\+\_\+property\+Attributes}}
+
+
+{\ttfamily \#include $<$R\+A\+C\+E\+X\+T\+Runtime\+Extensions.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+B\+O\+OL \mbox{\hyperlink{structrac__property_attributes_abb7d2cfe35836a37e19bba2982a9f063}{readonly}}
+\item 
+B\+O\+OL \mbox{\hyperlink{structrac__property_attributes_a3bef2ed70200ccc5d4ca48613e49ab2a}{nonatomic}}
+\item 
+B\+O\+OL \mbox{\hyperlink{structrac__property_attributes_ad5781075af21b27167f149d755de00f6}{weak}}
+\item 
+B\+O\+OL \mbox{\hyperlink{structrac__property_attributes_ab0d64d842154116da09678bd4959e337}{can\+Be\+Collected}}
+\item 
+B\+O\+OL \mbox{\hyperlink{structrac__property_attributes_acd179d0b198fbaa34ff802b4f8e6a762}{dynamic}}
+\item 
+rac\+\_\+property\+Memory\+Management\+Policy \mbox{\hyperlink{structrac__property_attributes_a7a204711220b63a21ced867e5eb173df}{memory\+Management\+Policy}}
+\item 
+S\+EL \mbox{\hyperlink{structrac__property_attributes_a57d596adf835ce2ac623b8454d007d4d}{getter}}
+\item 
+S\+EL \mbox{\hyperlink{structrac__property_attributes_ab23ef6a9f0a4efe6546a63ff716556ae}{setter}}
+\item 
+const char $\ast$ \mbox{\hyperlink{structrac__property_attributes_ae91fbfecdff5d2e465a1a6f6b784d9bd}{ivar}}
+\item 
+Class \mbox{\hyperlink{structrac__property_attributes_a73053fdbc4bc9014ccb6148b05b74521}{object\+Class}}
+\item 
+char \mbox{\hyperlink{structrac__property_attributes_a977dc6d9be17be26f0969e0eef2c79ae}{type}} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Describes the attributes and type information of a property. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structrac__property_attributes_ab0d64d842154116da09678bd4959e337}\label{structrac__property_attributes_ab0d64d842154116da09678bd4959e337}} 
+\index{rac\+\_\+property\+Attributes@{rac\+\_\+property\+Attributes}!can\+Be\+Collected@{can\+Be\+Collected}}
+\index{can\+Be\+Collected@{can\+Be\+Collected}!rac\+\_\+property\+Attributes@{rac\+\_\+property\+Attributes}}
+\subsubsection{\texorpdfstring{can\+Be\+Collected}{canBeCollected}}
+{\footnotesize\ttfamily B\+O\+OL rac\+\_\+property\+Attributes\+::can\+Be\+Collected}
+
+Whether the property is eligible for garbage collection. \mbox{\Hypertarget{structrac__property_attributes_acd179d0b198fbaa34ff802b4f8e6a762}\label{structrac__property_attributes_acd179d0b198fbaa34ff802b4f8e6a762}} 
+\index{rac\+\_\+property\+Attributes@{rac\+\_\+property\+Attributes}!dynamic@{dynamic}}
+\index{dynamic@{dynamic}!rac\+\_\+property\+Attributes@{rac\+\_\+property\+Attributes}}
+\subsubsection{\texorpdfstring{dynamic}{dynamic}}
+{\footnotesize\ttfamily B\+O\+OL rac\+\_\+property\+Attributes\+::dynamic}
+
+Whether this property is defined with {\ttfamily @dynamic}. \mbox{\Hypertarget{structrac__property_attributes_a57d596adf835ce2ac623b8454d007d4d}\label{structrac__property_attributes_a57d596adf835ce2ac623b8454d007d4d}} 
+\index{rac\+\_\+property\+Attributes@{rac\+\_\+property\+Attributes}!getter@{getter}}
+\index{getter@{getter}!rac\+\_\+property\+Attributes@{rac\+\_\+property\+Attributes}}
+\subsubsection{\texorpdfstring{getter}{getter}}
+{\footnotesize\ttfamily S\+EL rac\+\_\+property\+Attributes\+::getter}
+
+The selector for the getter of this property. This will reflect any custom {\ttfamily getter=} attribute provided in the property declaration, or the inferred getter name otherwise. \mbox{\Hypertarget{structrac__property_attributes_ae91fbfecdff5d2e465a1a6f6b784d9bd}\label{structrac__property_attributes_ae91fbfecdff5d2e465a1a6f6b784d9bd}} 
+\index{rac\+\_\+property\+Attributes@{rac\+\_\+property\+Attributes}!ivar@{ivar}}
+\index{ivar@{ivar}!rac\+\_\+property\+Attributes@{rac\+\_\+property\+Attributes}}
+\subsubsection{\texorpdfstring{ivar}{ivar}}
+{\footnotesize\ttfamily const char $\ast$ rac\+\_\+property\+Attributes\+::ivar}
+
+The backing instance variable for this property, or {\ttfamily N\+U\+LL} if {\ttfamily {\ttfamily } } was not used, and therefore no instance variable exists. This would also be the case if the property is implemented dynamically. \mbox{\Hypertarget{structrac__property_attributes_a7a204711220b63a21ced867e5eb173df}\label{structrac__property_attributes_a7a204711220b63a21ced867e5eb173df}} 
+\index{rac\+\_\+property\+Attributes@{rac\+\_\+property\+Attributes}!memory\+Management\+Policy@{memory\+Management\+Policy}}
+\index{memory\+Management\+Policy@{memory\+Management\+Policy}!rac\+\_\+property\+Attributes@{rac\+\_\+property\+Attributes}}
+\subsubsection{\texorpdfstring{memory\+Management\+Policy}{memoryManagementPolicy}}
+{\footnotesize\ttfamily rac\+\_\+property\+Memory\+Management\+Policy rac\+\_\+property\+Attributes\+::memory\+Management\+Policy}
+
+The memory management policy for this property. This will always be \#rac\+\_\+property\+Memory\+Management\+Policy\+Assign if \mbox{\hyperlink{structrac__property_attributes_abb7d2cfe35836a37e19bba2982a9f063}{readonly}} is {\ttfamily Y\+ES}. \mbox{\Hypertarget{structrac__property_attributes_a3bef2ed70200ccc5d4ca48613e49ab2a}\label{structrac__property_attributes_a3bef2ed70200ccc5d4ca48613e49ab2a}} 
+\index{rac\+\_\+property\+Attributes@{rac\+\_\+property\+Attributes}!nonatomic@{nonatomic}}
+\index{nonatomic@{nonatomic}!rac\+\_\+property\+Attributes@{rac\+\_\+property\+Attributes}}
+\subsubsection{\texorpdfstring{nonatomic}{nonatomic}}
+{\footnotesize\ttfamily B\+O\+OL rac\+\_\+property\+Attributes\+::nonatomic}
+
+Whether this property was declared with the {\ttfamily nonatomic} attribute. \mbox{\Hypertarget{structrac__property_attributes_a73053fdbc4bc9014ccb6148b05b74521}\label{structrac__property_attributes_a73053fdbc4bc9014ccb6148b05b74521}} 
+\index{rac\+\_\+property\+Attributes@{rac\+\_\+property\+Attributes}!object\+Class@{object\+Class}}
+\index{object\+Class@{object\+Class}!rac\+\_\+property\+Attributes@{rac\+\_\+property\+Attributes}}
+\subsubsection{\texorpdfstring{object\+Class}{objectClass}}
+{\footnotesize\ttfamily Class rac\+\_\+property\+Attributes\+::object\+Class}
+
+If this property is defined as being an instance of a specific class, this will be the class object representing it.
+
+This will be {\ttfamily nil} if the property was defined as type {\ttfamily id}, if the property is not of an object type, or if the class could not be found at runtime. \mbox{\Hypertarget{structrac__property_attributes_abb7d2cfe35836a37e19bba2982a9f063}\label{structrac__property_attributes_abb7d2cfe35836a37e19bba2982a9f063}} 
+\index{rac\+\_\+property\+Attributes@{rac\+\_\+property\+Attributes}!readonly@{readonly}}
+\index{readonly@{readonly}!rac\+\_\+property\+Attributes@{rac\+\_\+property\+Attributes}}
+\subsubsection{\texorpdfstring{readonly}{readonly}}
+{\footnotesize\ttfamily B\+O\+OL rac\+\_\+property\+Attributes\+::readonly}
+
+Whether this property was declared with the {\ttfamily readonly} attribute. \mbox{\Hypertarget{structrac__property_attributes_ab23ef6a9f0a4efe6546a63ff716556ae}\label{structrac__property_attributes_ab23ef6a9f0a4efe6546a63ff716556ae}} 
+\index{rac\+\_\+property\+Attributes@{rac\+\_\+property\+Attributes}!setter@{setter}}
+\index{setter@{setter}!rac\+\_\+property\+Attributes@{rac\+\_\+property\+Attributes}}
+\subsubsection{\texorpdfstring{setter}{setter}}
+{\footnotesize\ttfamily S\+EL rac\+\_\+property\+Attributes\+::setter}
+
+The selector for the setter of this property. This will reflect any custom {\ttfamily setter=} attribute provided in the property declaration, or the inferred setter name otherwise.
+
+\begin{DoxyNote}{Note}
+If \mbox{\hyperlink{structrac__property_attributes_abb7d2cfe35836a37e19bba2982a9f063}{readonly}} is {\ttfamily Y\+ES}, this value will represent what the setter {\itshape would} be, if the property were writable. 
+\end{DoxyNote}
+\mbox{\Hypertarget{structrac__property_attributes_a977dc6d9be17be26f0969e0eef2c79ae}\label{structrac__property_attributes_a977dc6d9be17be26f0969e0eef2c79ae}} 
+\index{rac\+\_\+property\+Attributes@{rac\+\_\+property\+Attributes}!type@{type}}
+\index{type@{type}!rac\+\_\+property\+Attributes@{rac\+\_\+property\+Attributes}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily char rac\+\_\+property\+Attributes\+::type}
+
+The type encoding for the value of this property. This is the type as it would be returned by the {\ttfamily @encode()} directive. \mbox{\Hypertarget{structrac__property_attributes_ad5781075af21b27167f149d755de00f6}\label{structrac__property_attributes_ad5781075af21b27167f149d755de00f6}} 
+\index{rac\+\_\+property\+Attributes@{rac\+\_\+property\+Attributes}!weak@{weak}}
+\index{weak@{weak}!rac\+\_\+property\+Attributes@{rac\+\_\+property\+Attributes}}
+\subsubsection{\texorpdfstring{weak}{weak}}
+{\footnotesize\ttfamily B\+O\+OL rac\+\_\+property\+Attributes\+::weak}
+
+Whether the property is a weak reference. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+Reactive\+Cocoa/R\+A\+C\+E\+X\+T\+Runtime\+Extensions.\+h\end{DoxyCompactItemize}

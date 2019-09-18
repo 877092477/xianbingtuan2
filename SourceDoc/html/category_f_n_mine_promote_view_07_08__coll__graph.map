@@ -1,0 +1,12 @@
+<map id="FNMinePromoteView()" name="FNMinePromoteView()">
+<area shape="rect" id="node2" href="$interface_f_n_mine_promote_view_model.html" title="FNMinePromoteViewModel" alt="" coords="1390,483,1574,509"/>
+<area shape="rect" id="node3" href="$interface_j_m_view_model.html" title="JMViewModel" alt="" coords="1237,358,1341,383"/>
+<area shape="rect" id="node6" href="$interface_r_a_c_disposable.html" title="RACDisposable" alt="" coords="133,157,249,182"/>
+<area shape="rect" id="node9" href="$interface_r_a_c_stream.html" title="RACStream" alt="" coords="145,238,237,263"/>
+<area shape="rect" id="node11" href="$interface_r_a_c_command.html" title="RACCommand" alt="" coords="890,329,1001,354"/>
+<area shape="rect" id="node12" href="$interface_f_n_promote_public_model.html" title="FNPromotePublicModel" alt="" coords="273,471,435,497"/>
+<area shape="rect" id="node7" href="$interface_r_a_c_subject.html" title="RACSubject" alt="" coords="899,45,992,70"/>
+<area shape="rect" id="node8" href="$interface_r_a_c_signal.html" title="RACSignal" alt="" coords="480,238,566,263"/>
+<area shape="rect" id="node13" href="$interface_f_n_mine_promote_cate_view.html" title="FNMinePromoteCateView" alt="" coords="1394,561,1570,586"/>
+<area shape="rect" id="node14" href="$interface_j_m_view.html" title="JMView" alt="" coords="1255,643,1323,669"/>
+</map>

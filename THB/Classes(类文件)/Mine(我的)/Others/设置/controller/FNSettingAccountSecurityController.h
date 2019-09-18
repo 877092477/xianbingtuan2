@@ -1,0 +1,13 @@
+//
+//  FNSettingAccountSecurityController.h
+//  THB
+//
+//  Created by jimmy on 2017/5/20.
+//  Copyright © 2017年 方诺科技. All rights reserved.
+//
+
+#import "SuperViewController.h"
+
+@interface FNSettingAccountSecurityController : SuperViewController
+
+@end

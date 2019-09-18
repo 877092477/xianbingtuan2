@@ -1,0 +1,738 @@
+\hypertarget{interface_w_x_api}{}\section{W\+X\+Api Class Reference}
+\label{interface_w_x_api}\index{W\+X\+Api@{W\+X\+Api}}
+
+
+微信\+Api接口函数类  
+
+
+
+
+{\ttfamily \#import $<$W\+X\+Api.\+h$>$}
+
+
+
+Inheritance diagram for W\+X\+Api\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{interface_w_x_api__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for W\+X\+Api\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{interface_w_x_api__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_a84341d7a4aea16c2fd6e74708a569564}{register\+App\+:}}
+\begin{DoxyCompactList}\small\item\em W\+X\+Api的成员函数，向微信终端程序注册第三方应用。 \end{DoxyCompactList}\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_a76af46b7bb7e49aef40476a0dc377472}{register\+App\+:with\+Description\+:}}
+\begin{DoxyCompactList}\small\item\em W\+X\+Api的成员函数，向微信终端程序注册第三方应用。 \end{DoxyCompactList}\item 
+(void) + \mbox{\hyperlink{interface_w_x_api_a3a8dd85dbe67ae84d4c75d674d781c9b}{register\+App\+Support\+Content\+Flag\+:}}
+\begin{DoxyCompactList}\small\item\em W\+X\+Api的成员函数，向微信终端程序注册应用支持打开的文件类型。 \end{DoxyCompactList}\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_aab36d7c09414d7bc3d7ca200b48f2f9c}{handle\+Open\+U\+R\+L\+:delegate\+:}}
+\begin{DoxyCompactList}\small\item\em 处理微信通过\+U\+R\+L启动\+App时传递的数据 \end{DoxyCompactList}\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_a3684676bea249fdd0708a38ee74f0604}{is\+W\+X\+App\+Installed}}
+\begin{DoxyCompactList}\small\item\em 检查微信是否已被用户安装 \end{DoxyCompactList}\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_a1ae34dd86ae2c2f553dd6981a35397ee}{is\+W\+X\+App\+Support\+Api}}
+\begin{DoxyCompactList}\small\item\em 判断当前微信的版本是否支持\+Open\+Api \end{DoxyCompactList}\item 
+(N\+S\+String $\ast$) + \mbox{\hyperlink{interface_w_x_api_a5e8a0217bef24a40c7d2edd9b3c5cdb9}{get\+W\+X\+App\+Install\+Url}}
+\begin{DoxyCompactList}\small\item\em 获取微信的itunes安装地址 \end{DoxyCompactList}\item 
+(N\+S\+String $\ast$) + \mbox{\hyperlink{interface_w_x_api_a5995d42d92822722f7ebf11663db2d33}{get\+Api\+Version}}
+\begin{DoxyCompactList}\small\item\em 获取当前微信\+S\+D\+K的版本号 \end{DoxyCompactList}\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_ac238ad8f1aa670ea9b26836f77701dc2}{open\+W\+X\+App}}
+\begin{DoxyCompactList}\small\item\em 打开微信 \end{DoxyCompactList}\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_a1a30bc4f39815920b6e45901375bee8e}{send\+Req\+:}}
+\begin{DoxyCompactList}\small\item\em 发送请求到微信，等待微信返回on\+Resp \end{DoxyCompactList}\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_a646e42926ec7378a087674e54150b2c9}{send\+Auth\+Req\+:view\+Controller\+:delegate\+:}}
+\begin{DoxyCompactList}\small\item\em 发送\+Auth请求到微信，支持用户没安装微信，等待微信返回on\+Resp \end{DoxyCompactList}\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_ab026294e5601cd15d7b792c3de7b81d5}{send\+Resp\+:}}
+\begin{DoxyCompactList}\small\item\em 收到微信on\+Req的请求，发送对应的应答给微信，并切换到微信界面 \end{DoxyCompactList}\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_a84341d7a4aea16c2fd6e74708a569564}{register\+App\+:}}
+\begin{DoxyCompactList}\small\item\em W\+X\+Api的成员函数，向微信终端程序注册第三方应用。 \end{DoxyCompactList}\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_a76af46b7bb7e49aef40476a0dc377472}{register\+App\+:with\+Description\+:}}
+\begin{DoxyCompactList}\small\item\em W\+X\+Api的成员函数，向微信终端程序注册第三方应用。 \end{DoxyCompactList}\item 
+(void) + \mbox{\hyperlink{interface_w_x_api_a3a8dd85dbe67ae84d4c75d674d781c9b}{register\+App\+Support\+Content\+Flag\+:}}
+\begin{DoxyCompactList}\small\item\em W\+X\+Api的成员函数，向微信终端程序注册应用支持打开的文件类型。 \end{DoxyCompactList}\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_aab36d7c09414d7bc3d7ca200b48f2f9c}{handle\+Open\+U\+R\+L\+:delegate\+:}}
+\begin{DoxyCompactList}\small\item\em 处理微信通过\+U\+R\+L启动\+App时传递的数据 \end{DoxyCompactList}\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_a3684676bea249fdd0708a38ee74f0604}{is\+W\+X\+App\+Installed}}
+\begin{DoxyCompactList}\small\item\em 检查微信是否已被用户安装 \end{DoxyCompactList}\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_a1ae34dd86ae2c2f553dd6981a35397ee}{is\+W\+X\+App\+Support\+Api}}
+\begin{DoxyCompactList}\small\item\em 判断当前微信的版本是否支持\+Open\+Api \end{DoxyCompactList}\item 
+(N\+S\+String $\ast$) + \mbox{\hyperlink{interface_w_x_api_a5e8a0217bef24a40c7d2edd9b3c5cdb9}{get\+W\+X\+App\+Install\+Url}}
+\begin{DoxyCompactList}\small\item\em 获取微信的itunes安装地址 \end{DoxyCompactList}\item 
+(N\+S\+String $\ast$) + \mbox{\hyperlink{interface_w_x_api_a5995d42d92822722f7ebf11663db2d33}{get\+Api\+Version}}
+\begin{DoxyCompactList}\small\item\em 获取当前微信\+S\+D\+K的版本号 \end{DoxyCompactList}\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_ac238ad8f1aa670ea9b26836f77701dc2}{open\+W\+X\+App}}
+\begin{DoxyCompactList}\small\item\em 打开微信 \end{DoxyCompactList}\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_a1a30bc4f39815920b6e45901375bee8e}{send\+Req\+:}}
+\begin{DoxyCompactList}\small\item\em 发送请求到微信，等待微信返回on\+Resp \end{DoxyCompactList}\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_a646e42926ec7378a087674e54150b2c9}{send\+Auth\+Req\+:view\+Controller\+:delegate\+:}}
+\begin{DoxyCompactList}\small\item\em 发送\+Auth请求到微信，支持用户没安装微信，等待微信返回on\+Resp \end{DoxyCompactList}\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_ab026294e5601cd15d7b792c3de7b81d5}{send\+Resp\+:}}
+\begin{DoxyCompactList}\small\item\em 收到微信on\+Req的请求，发送对应的应答给微信，并切换到微信界面 \end{DoxyCompactList}\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_a84341d7a4aea16c2fd6e74708a569564}{register\+App\+:}}
+\begin{DoxyCompactList}\small\item\em W\+X\+Api的成员函数，向微信终端程序注册第三方应用。 \end{DoxyCompactList}\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_a76af46b7bb7e49aef40476a0dc377472}{register\+App\+:with\+Description\+:}}
+\begin{DoxyCompactList}\small\item\em W\+X\+Api的成员函数，向微信终端程序注册第三方应用。 \end{DoxyCompactList}\item 
+(void) + \mbox{\hyperlink{interface_w_x_api_a3a8dd85dbe67ae84d4c75d674d781c9b}{register\+App\+Support\+Content\+Flag\+:}}
+\begin{DoxyCompactList}\small\item\em W\+X\+Api的成员函数，向微信终端程序注册应用支持打开的文件类型。 \end{DoxyCompactList}\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_aab36d7c09414d7bc3d7ca200b48f2f9c}{handle\+Open\+U\+R\+L\+:delegate\+:}}
+\begin{DoxyCompactList}\small\item\em 处理微信通过\+U\+R\+L启动\+App时传递的数据 \end{DoxyCompactList}\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_a3684676bea249fdd0708a38ee74f0604}{is\+W\+X\+App\+Installed}}
+\begin{DoxyCompactList}\small\item\em 检查微信是否已被用户安装 \end{DoxyCompactList}\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_a1ae34dd86ae2c2f553dd6981a35397ee}{is\+W\+X\+App\+Support\+Api}}
+\begin{DoxyCompactList}\small\item\em 判断当前微信的版本是否支持\+Open\+Api \end{DoxyCompactList}\item 
+(N\+S\+String $\ast$) + \mbox{\hyperlink{interface_w_x_api_a5e8a0217bef24a40c7d2edd9b3c5cdb9}{get\+W\+X\+App\+Install\+Url}}
+\begin{DoxyCompactList}\small\item\em 获取微信的itunes安装地址 \end{DoxyCompactList}\item 
+(N\+S\+String $\ast$) + \mbox{\hyperlink{interface_w_x_api_a5995d42d92822722f7ebf11663db2d33}{get\+Api\+Version}}
+\begin{DoxyCompactList}\small\item\em 获取当前微信\+S\+D\+K的版本号 \end{DoxyCompactList}\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_ac238ad8f1aa670ea9b26836f77701dc2}{open\+W\+X\+App}}
+\begin{DoxyCompactList}\small\item\em 打开微信 \end{DoxyCompactList}\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_a1a30bc4f39815920b6e45901375bee8e}{send\+Req\+:}}
+\begin{DoxyCompactList}\small\item\em 发送请求到微信，等待微信返回on\+Resp \end{DoxyCompactList}\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_a646e42926ec7378a087674e54150b2c9}{send\+Auth\+Req\+:view\+Controller\+:delegate\+:}}
+\begin{DoxyCompactList}\small\item\em 发送\+Auth请求到微信，支持用户没安装微信，等待微信返回on\+Resp \end{DoxyCompactList}\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_w_x_api_ab026294e5601cd15d7b792c3de7b81d5}{send\+Resp\+:}}
+\begin{DoxyCompactList}\small\item\em 收到微信on\+Req的请求，发送对应的应答给微信，并切换到微信界面 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+微信\+Api接口函数类 
+
+该类封装了微信终端\+S\+D\+K的所有接口 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_w_x_api_a5995d42d92822722f7ebf11663db2d33}\label{interface_w_x_api_a5995d42d92822722f7ebf11663db2d33}} 
+\index{W\+X\+Api@{W\+X\+Api}!get\+Api\+Version@{get\+Api\+Version}}
+\index{get\+Api\+Version@{get\+Api\+Version}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{get\+Api\+Version()}{getApiVersion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily + (N\+S\+String $\ast$) get\+Api\+Version \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+获取当前微信\+S\+D\+K的版本号 
+
+\begin{DoxyReturn}{Returns}
+返回当前微信\+S\+D\+K的版本号 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_a5995d42d92822722f7ebf11663db2d33}\label{interface_w_x_api_a5995d42d92822722f7ebf11663db2d33}} 
+\index{W\+X\+Api@{W\+X\+Api}!get\+Api\+Version@{get\+Api\+Version}}
+\index{get\+Api\+Version@{get\+Api\+Version}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{get\+Api\+Version()}{getApiVersion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily + (N\+S\+String $\ast$) get\+Api\+Version \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+获取当前微信\+S\+D\+K的版本号 
+
+\begin{DoxyReturn}{Returns}
+返回当前微信\+S\+D\+K的版本号 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_a5995d42d92822722f7ebf11663db2d33}\label{interface_w_x_api_a5995d42d92822722f7ebf11663db2d33}} 
+\index{W\+X\+Api@{W\+X\+Api}!get\+Api\+Version@{get\+Api\+Version}}
+\index{get\+Api\+Version@{get\+Api\+Version}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{get\+Api\+Version()}{getApiVersion()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily + (N\+S\+String $\ast$) get\+Api\+Version \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+获取当前微信\+S\+D\+K的版本号 
+
+\begin{DoxyReturn}{Returns}
+返回当前微信\+S\+D\+K的版本号 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_a5e8a0217bef24a40c7d2edd9b3c5cdb9}\label{interface_w_x_api_a5e8a0217bef24a40c7d2edd9b3c5cdb9}} 
+\index{W\+X\+Api@{W\+X\+Api}!get\+W\+X\+App\+Install\+Url@{get\+W\+X\+App\+Install\+Url}}
+\index{get\+W\+X\+App\+Install\+Url@{get\+W\+X\+App\+Install\+Url}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{get\+W\+X\+App\+Install\+Url()}{getWXAppInstallUrl()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily + (N\+S\+String $\ast$) get\+W\+X\+App\+Install\+Url \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+获取微信的itunes安装地址 
+
+\begin{DoxyReturn}{Returns}
+微信的安装地址字符串。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_a5e8a0217bef24a40c7d2edd9b3c5cdb9}\label{interface_w_x_api_a5e8a0217bef24a40c7d2edd9b3c5cdb9}} 
+\index{W\+X\+Api@{W\+X\+Api}!get\+W\+X\+App\+Install\+Url@{get\+W\+X\+App\+Install\+Url}}
+\index{get\+W\+X\+App\+Install\+Url@{get\+W\+X\+App\+Install\+Url}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{get\+W\+X\+App\+Install\+Url()}{getWXAppInstallUrl()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily + (N\+S\+String $\ast$) get\+W\+X\+App\+Install\+Url \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+获取微信的itunes安装地址 
+
+\begin{DoxyReturn}{Returns}
+微信的安装地址字符串。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_a5e8a0217bef24a40c7d2edd9b3c5cdb9}\label{interface_w_x_api_a5e8a0217bef24a40c7d2edd9b3c5cdb9}} 
+\index{W\+X\+Api@{W\+X\+Api}!get\+W\+X\+App\+Install\+Url@{get\+W\+X\+App\+Install\+Url}}
+\index{get\+W\+X\+App\+Install\+Url@{get\+W\+X\+App\+Install\+Url}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{get\+W\+X\+App\+Install\+Url()}{getWXAppInstallUrl()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily + (N\+S\+String $\ast$) get\+W\+X\+App\+Install\+Url \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+获取微信的itunes安装地址 
+
+\begin{DoxyReturn}{Returns}
+微信的安装地址字符串。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_aab36d7c09414d7bc3d7ca200b48f2f9c}\label{interface_w_x_api_aab36d7c09414d7bc3d7ca200b48f2f9c}} 
+\index{W\+X\+Api@{W\+X\+Api}!handle\+Open\+U\+R\+L\+:delegate\+:@{handle\+Open\+U\+R\+L\+:delegate\+:}}
+\index{handle\+Open\+U\+R\+L\+:delegate\+:@{handle\+Open\+U\+R\+L\+:delegate\+:}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{handle\+Open\+U\+R\+L\+:delegate\+:()}{handleOpenURL:delegate:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) handle\+Open\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{url }\item[{delegate:(id$<$ W\+X\+Api\+Delegate $>$)}]{delegate }\end{DoxyParamCaption}}
+
+
+
+处理微信通过\+U\+R\+L启动\+App时传递的数据 
+
+需要在 application\+:open\+U\+R\+L\+:source\+Application\+:annotation\+:或者application\+:handle\+Open\+U\+R\+L中调用。 
+\begin{DoxyParams}{Parameters}
+{\em url} & 微信启动第三方应用时传递过来的\+U\+RL \\
+\hline
+{\em delegate} & W\+X\+Api\+Delegate对象，用来接收微信触发的消息。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成功返回\+Y\+E\+S，失败返回\+N\+O。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_aab36d7c09414d7bc3d7ca200b48f2f9c}\label{interface_w_x_api_aab36d7c09414d7bc3d7ca200b48f2f9c}} 
+\index{W\+X\+Api@{W\+X\+Api}!handle\+Open\+U\+R\+L\+:delegate\+:@{handle\+Open\+U\+R\+L\+:delegate\+:}}
+\index{handle\+Open\+U\+R\+L\+:delegate\+:@{handle\+Open\+U\+R\+L\+:delegate\+:}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{handle\+Open\+U\+R\+L\+:delegate\+:()}{handleOpenURL:delegate:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) handle\+Open\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{url }\item[{delegate:(id$<$ W\+X\+Api\+Delegate $>$)}]{delegate }\end{DoxyParamCaption}}
+
+
+
+处理微信通过\+U\+R\+L启动\+App时传递的数据 
+
+需要在 application\+:open\+U\+R\+L\+:source\+Application\+:annotation\+:或者application\+:handle\+Open\+U\+R\+L中调用。 
+\begin{DoxyParams}{Parameters}
+{\em url} & 微信启动第三方应用时传递过来的\+U\+RL \\
+\hline
+{\em delegate} & W\+X\+Api\+Delegate对象，用来接收微信触发的消息。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成功返回\+Y\+E\+S，失败返回\+N\+O。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_aab36d7c09414d7bc3d7ca200b48f2f9c}\label{interface_w_x_api_aab36d7c09414d7bc3d7ca200b48f2f9c}} 
+\index{W\+X\+Api@{W\+X\+Api}!handle\+Open\+U\+R\+L\+:delegate\+:@{handle\+Open\+U\+R\+L\+:delegate\+:}}
+\index{handle\+Open\+U\+R\+L\+:delegate\+:@{handle\+Open\+U\+R\+L\+:delegate\+:}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{handle\+Open\+U\+R\+L\+:delegate\+:()}{handleOpenURL:delegate:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) handle\+Open\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{url }\item[{delegate:(id$<$ W\+X\+Api\+Delegate $>$)}]{delegate }\end{DoxyParamCaption}}
+
+
+
+处理微信通过\+U\+R\+L启动\+App时传递的数据 
+
+需要在 application\+:open\+U\+R\+L\+:source\+Application\+:annotation\+:或者application\+:handle\+Open\+U\+R\+L中调用。 
+\begin{DoxyParams}{Parameters}
+{\em url} & 微信启动第三方应用时传递过来的\+U\+RL \\
+\hline
+{\em delegate} & W\+X\+Api\+Delegate对象，用来接收微信触发的消息。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成功返回\+Y\+E\+S，失败返回\+N\+O。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_a3684676bea249fdd0708a38ee74f0604}\label{interface_w_x_api_a3684676bea249fdd0708a38ee74f0604}} 
+\index{W\+X\+Api@{W\+X\+Api}!is\+W\+X\+App\+Installed@{is\+W\+X\+App\+Installed}}
+\index{is\+W\+X\+App\+Installed@{is\+W\+X\+App\+Installed}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{is\+W\+X\+App\+Installed()}{isWXAppInstalled()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) is\+W\+X\+App\+Installed \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+检查微信是否已被用户安装 
+
+\begin{DoxyReturn}{Returns}
+微信已安装返回\+Y\+E\+S，未安装返回\+N\+O。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_a3684676bea249fdd0708a38ee74f0604}\label{interface_w_x_api_a3684676bea249fdd0708a38ee74f0604}} 
+\index{W\+X\+Api@{W\+X\+Api}!is\+W\+X\+App\+Installed@{is\+W\+X\+App\+Installed}}
+\index{is\+W\+X\+App\+Installed@{is\+W\+X\+App\+Installed}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{is\+W\+X\+App\+Installed()}{isWXAppInstalled()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) is\+W\+X\+App\+Installed \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+检查微信是否已被用户安装 
+
+\begin{DoxyReturn}{Returns}
+微信已安装返回\+Y\+E\+S，未安装返回\+N\+O。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_a3684676bea249fdd0708a38ee74f0604}\label{interface_w_x_api_a3684676bea249fdd0708a38ee74f0604}} 
+\index{W\+X\+Api@{W\+X\+Api}!is\+W\+X\+App\+Installed@{is\+W\+X\+App\+Installed}}
+\index{is\+W\+X\+App\+Installed@{is\+W\+X\+App\+Installed}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{is\+W\+X\+App\+Installed()}{isWXAppInstalled()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) is\+W\+X\+App\+Installed \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+检查微信是否已被用户安装 
+
+\begin{DoxyReturn}{Returns}
+微信已安装返回\+Y\+E\+S，未安装返回\+N\+O。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_a1ae34dd86ae2c2f553dd6981a35397ee}\label{interface_w_x_api_a1ae34dd86ae2c2f553dd6981a35397ee}} 
+\index{W\+X\+Api@{W\+X\+Api}!is\+W\+X\+App\+Support\+Api@{is\+W\+X\+App\+Support\+Api}}
+\index{is\+W\+X\+App\+Support\+Api@{is\+W\+X\+App\+Support\+Api}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{is\+W\+X\+App\+Support\+Api()}{isWXAppSupportApi()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) is\+W\+X\+App\+Support\+Api \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+判断当前微信的版本是否支持\+Open\+Api 
+
+\begin{DoxyReturn}{Returns}
+支持返回\+Y\+E\+S，不支持返回\+N\+O。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_a1ae34dd86ae2c2f553dd6981a35397ee}\label{interface_w_x_api_a1ae34dd86ae2c2f553dd6981a35397ee}} 
+\index{W\+X\+Api@{W\+X\+Api}!is\+W\+X\+App\+Support\+Api@{is\+W\+X\+App\+Support\+Api}}
+\index{is\+W\+X\+App\+Support\+Api@{is\+W\+X\+App\+Support\+Api}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{is\+W\+X\+App\+Support\+Api()}{isWXAppSupportApi()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) is\+W\+X\+App\+Support\+Api \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+判断当前微信的版本是否支持\+Open\+Api 
+
+\begin{DoxyReturn}{Returns}
+支持返回\+Y\+E\+S，不支持返回\+N\+O。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_a1ae34dd86ae2c2f553dd6981a35397ee}\label{interface_w_x_api_a1ae34dd86ae2c2f553dd6981a35397ee}} 
+\index{W\+X\+Api@{W\+X\+Api}!is\+W\+X\+App\+Support\+Api@{is\+W\+X\+App\+Support\+Api}}
+\index{is\+W\+X\+App\+Support\+Api@{is\+W\+X\+App\+Support\+Api}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{is\+W\+X\+App\+Support\+Api()}{isWXAppSupportApi()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) is\+W\+X\+App\+Support\+Api \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+判断当前微信的版本是否支持\+Open\+Api 
+
+\begin{DoxyReturn}{Returns}
+支持返回\+Y\+E\+S，不支持返回\+N\+O。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_ac238ad8f1aa670ea9b26836f77701dc2}\label{interface_w_x_api_ac238ad8f1aa670ea9b26836f77701dc2}} 
+\index{W\+X\+Api@{W\+X\+Api}!open\+W\+X\+App@{open\+W\+X\+App}}
+\index{open\+W\+X\+App@{open\+W\+X\+App}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{open\+W\+X\+App()}{openWXApp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) open\+W\+X\+App \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+打开微信 
+
+\begin{DoxyReturn}{Returns}
+成功返回\+Y\+E\+S，失败返回\+N\+O。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_ac238ad8f1aa670ea9b26836f77701dc2}\label{interface_w_x_api_ac238ad8f1aa670ea9b26836f77701dc2}} 
+\index{W\+X\+Api@{W\+X\+Api}!open\+W\+X\+App@{open\+W\+X\+App}}
+\index{open\+W\+X\+App@{open\+W\+X\+App}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{open\+W\+X\+App()}{openWXApp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) open\+W\+X\+App \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+打开微信 
+
+\begin{DoxyReturn}{Returns}
+成功返回\+Y\+E\+S，失败返回\+N\+O。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_ac238ad8f1aa670ea9b26836f77701dc2}\label{interface_w_x_api_ac238ad8f1aa670ea9b26836f77701dc2}} 
+\index{W\+X\+Api@{W\+X\+Api}!open\+W\+X\+App@{open\+W\+X\+App}}
+\index{open\+W\+X\+App@{open\+W\+X\+App}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{open\+W\+X\+App()}{openWXApp()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) open\+W\+X\+App \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+打开微信 
+
+\begin{DoxyReturn}{Returns}
+成功返回\+Y\+E\+S，失败返回\+N\+O。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_a84341d7a4aea16c2fd6e74708a569564}\label{interface_w_x_api_a84341d7a4aea16c2fd6e74708a569564}} 
+\index{W\+X\+Api@{W\+X\+Api}!register\+App\+:@{register\+App\+:}}
+\index{register\+App\+:@{register\+App\+:}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{register\+App\+:()}{registerApp:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) register\+App\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{appid }\end{DoxyParamCaption}}
+
+
+
+W\+X\+Api的成员函数，向微信终端程序注册第三方应用。 
+
+需要在每次启动第三方应用程序时调用。第一次调用后，会在微信的可用应用列表中出现。 i\+O\+S7及以上系统需要调起一次微信才会出现在微信的可用应用列表中。 \begin{DoxyAttention}{Attention}
+请保证在主线程中调用此函数 
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em appid} & 微信开发者\+ID \\
+\hline
+{\em type\+Flag} & 应用支持打开的文件类型 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成功返回\+Y\+E\+S，失败返回\+N\+O。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_a84341d7a4aea16c2fd6e74708a569564}\label{interface_w_x_api_a84341d7a4aea16c2fd6e74708a569564}} 
+\index{W\+X\+Api@{W\+X\+Api}!register\+App\+:@{register\+App\+:}}
+\index{register\+App\+:@{register\+App\+:}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{register\+App\+:()}{registerApp:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) register\+App\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{appid }\end{DoxyParamCaption}}
+
+
+
+W\+X\+Api的成员函数，向微信终端程序注册第三方应用。 
+
+需要在每次启动第三方应用程序时调用。第一次调用后，会在微信的可用应用列表中出现。 i\+O\+S7及以上系统需要调起一次微信才会出现在微信的可用应用列表中。 \begin{DoxyAttention}{Attention}
+请保证在主线程中调用此函数 
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em appid} & 微信开发者\+ID \\
+\hline
+{\em type\+Flag} & 应用支持打开的文件类型 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成功返回\+Y\+E\+S，失败返回\+N\+O。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_a84341d7a4aea16c2fd6e74708a569564}\label{interface_w_x_api_a84341d7a4aea16c2fd6e74708a569564}} 
+\index{W\+X\+Api@{W\+X\+Api}!register\+App\+:@{register\+App\+:}}
+\index{register\+App\+:@{register\+App\+:}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{register\+App\+:()}{registerApp:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) register\+App\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{appid }\end{DoxyParamCaption}}
+
+
+
+W\+X\+Api的成员函数，向微信终端程序注册第三方应用。 
+
+需要在每次启动第三方应用程序时调用。第一次调用后，会在微信的可用应用列表中出现。 i\+O\+S7及以上系统需要调起一次微信才会出现在微信的可用应用列表中。 \begin{DoxyAttention}{Attention}
+请保证在主线程中调用此函数 
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em appid} & 微信开发者\+ID \\
+\hline
+{\em type\+Flag} & 应用支持打开的文件类型 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成功返回\+Y\+E\+S，失败返回\+N\+O。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_a76af46b7bb7e49aef40476a0dc377472}\label{interface_w_x_api_a76af46b7bb7e49aef40476a0dc377472}} 
+\index{W\+X\+Api@{W\+X\+Api}!register\+App\+:with\+Description\+:@{register\+App\+:with\+Description\+:}}
+\index{register\+App\+:with\+Description\+:@{register\+App\+:with\+Description\+:}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{register\+App\+:with\+Description\+:()}{registerApp:withDescription:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) \mbox{\hyperlink{interface_w_x_api_a84341d7a4aea16c2fd6e74708a569564}{register\+App\+:}} \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{appid }\item[{withDescription:(N\+S\+String $\ast$)}]{appdesc }\end{DoxyParamCaption}}
+
+
+
+W\+X\+Api的成员函数，向微信终端程序注册第三方应用。 
+
+需要在每次启动第三方应用程序时调用。第一次调用后，会在微信的可用应用列表中出现。 \begin{DoxySeeAlso}{See also}
+register\+App 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em appid} & 微信开发者\+ID \\
+\hline
+{\em appdesc} & 应用附加信息，长度不超过1024字节 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成功返回\+Y\+E\+S，失败返回\+N\+O。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_a76af46b7bb7e49aef40476a0dc377472}\label{interface_w_x_api_a76af46b7bb7e49aef40476a0dc377472}} 
+\index{W\+X\+Api@{W\+X\+Api}!register\+App\+:with\+Description\+:@{register\+App\+:with\+Description\+:}}
+\index{register\+App\+:with\+Description\+:@{register\+App\+:with\+Description\+:}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{register\+App\+:with\+Description\+:()}{registerApp:withDescription:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) \mbox{\hyperlink{interface_w_x_api_a84341d7a4aea16c2fd6e74708a569564}{register\+App\+:}} \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{appid }\item[{withDescription:(N\+S\+String $\ast$)}]{appdesc }\end{DoxyParamCaption}}
+
+
+
+W\+X\+Api的成员函数，向微信终端程序注册第三方应用。 
+
+需要在每次启动第三方应用程序时调用。第一次调用后，会在微信的可用应用列表中出现。 \begin{DoxySeeAlso}{See also}
+register\+App 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em appid} & 微信开发者\+ID \\
+\hline
+{\em appdesc} & 应用附加信息，长度不超过1024字节 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成功返回\+Y\+E\+S，失败返回\+N\+O。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_a76af46b7bb7e49aef40476a0dc377472}\label{interface_w_x_api_a76af46b7bb7e49aef40476a0dc377472}} 
+\index{W\+X\+Api@{W\+X\+Api}!register\+App\+:with\+Description\+:@{register\+App\+:with\+Description\+:}}
+\index{register\+App\+:with\+Description\+:@{register\+App\+:with\+Description\+:}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{register\+App\+:with\+Description\+:()}{registerApp:withDescription:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) \mbox{\hyperlink{interface_w_x_api_a84341d7a4aea16c2fd6e74708a569564}{register\+App\+:}} \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{appid }\item[{withDescription:(N\+S\+String $\ast$)}]{appdesc }\end{DoxyParamCaption}}
+
+
+
+W\+X\+Api的成员函数，向微信终端程序注册第三方应用。 
+
+需要在每次启动第三方应用程序时调用。第一次调用后，会在微信的可用应用列表中出现。 \begin{DoxySeeAlso}{See also}
+register\+App 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em appid} & 微信开发者\+ID \\
+\hline
+{\em appdesc} & 应用附加信息，长度不超过1024字节 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成功返回\+Y\+E\+S，失败返回\+N\+O。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_a3a8dd85dbe67ae84d4c75d674d781c9b}\label{interface_w_x_api_a3a8dd85dbe67ae84d4c75d674d781c9b}} 
+\index{W\+X\+Api@{W\+X\+Api}!register\+App\+Support\+Content\+Flag\+:@{register\+App\+Support\+Content\+Flag\+:}}
+\index{register\+App\+Support\+Content\+Flag\+:@{register\+App\+Support\+Content\+Flag\+:}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{register\+App\+Support\+Content\+Flag\+:()}{registerAppSupportContentFlag:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily + (void) register\+App\+Support\+Content\+Flag\+: \begin{DoxyParamCaption}\item[{(U\+Int64)}]{type\+Flag }\end{DoxyParamCaption}}
+
+
+
+W\+X\+Api的成员函数，向微信终端程序注册应用支持打开的文件类型。 
+
+需要在每次启动第三方应用程序时调用。调用后并第一次成功分享数据到微信后，会在微信的可用应用列表中出现。 \begin{DoxySeeAlso}{See also}
+register\+App 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em type\+Flag} & 应用支持打开的数据类型, en\+App\+Support\+Content\+Flag枚举类型 “$\vert$” 操作后结果 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_w_x_api_a3a8dd85dbe67ae84d4c75d674d781c9b}\label{interface_w_x_api_a3a8dd85dbe67ae84d4c75d674d781c9b}} 
+\index{W\+X\+Api@{W\+X\+Api}!register\+App\+Support\+Content\+Flag\+:@{register\+App\+Support\+Content\+Flag\+:}}
+\index{register\+App\+Support\+Content\+Flag\+:@{register\+App\+Support\+Content\+Flag\+:}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{register\+App\+Support\+Content\+Flag\+:()}{registerAppSupportContentFlag:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily + (void) register\+App\+Support\+Content\+Flag\+: \begin{DoxyParamCaption}\item[{(U\+Int64)}]{type\+Flag }\end{DoxyParamCaption}}
+
+
+
+W\+X\+Api的成员函数，向微信终端程序注册应用支持打开的文件类型。 
+
+需要在每次启动第三方应用程序时调用。调用后并第一次成功分享数据到微信后，会在微信的可用应用列表中出现。 \begin{DoxySeeAlso}{See also}
+register\+App 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em type\+Flag} & 应用支持打开的数据类型, en\+App\+Support\+Content\+Flag枚举类型 “$\vert$” 操作后结果 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_w_x_api_a3a8dd85dbe67ae84d4c75d674d781c9b}\label{interface_w_x_api_a3a8dd85dbe67ae84d4c75d674d781c9b}} 
+\index{W\+X\+Api@{W\+X\+Api}!register\+App\+Support\+Content\+Flag\+:@{register\+App\+Support\+Content\+Flag\+:}}
+\index{register\+App\+Support\+Content\+Flag\+:@{register\+App\+Support\+Content\+Flag\+:}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{register\+App\+Support\+Content\+Flag\+:()}{registerAppSupportContentFlag:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily + (void) register\+App\+Support\+Content\+Flag\+: \begin{DoxyParamCaption}\item[{(U\+Int64)}]{type\+Flag }\end{DoxyParamCaption}}
+
+
+
+W\+X\+Api的成员函数，向微信终端程序注册应用支持打开的文件类型。 
+
+需要在每次启动第三方应用程序时调用。调用后并第一次成功分享数据到微信后，会在微信的可用应用列表中出现。 \begin{DoxySeeAlso}{See also}
+register\+App 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em type\+Flag} & 应用支持打开的数据类型, en\+App\+Support\+Content\+Flag枚举类型 “$\vert$” 操作后结果 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_w_x_api_a646e42926ec7378a087674e54150b2c9}\label{interface_w_x_api_a646e42926ec7378a087674e54150b2c9}} 
+\index{W\+X\+Api@{W\+X\+Api}!send\+Auth\+Req\+:view\+Controller\+:delegate\+:@{send\+Auth\+Req\+:view\+Controller\+:delegate\+:}}
+\index{send\+Auth\+Req\+:view\+Controller\+:delegate\+:@{send\+Auth\+Req\+:view\+Controller\+:delegate\+:}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{send\+Auth\+Req\+:view\+Controller\+:delegate\+:()}{sendAuthReq:viewController:delegate:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) send\+Auth\+Req\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_send_auth_req}{Send\+Auth\+Req}} $\ast$)}]{req }\item[{viewController:(U\+I\+View\+Controller $\ast$)}]{view\+Controller }\item[{delegate:(id$<$ W\+X\+Api\+Delegate $>$)}]{delegate }\end{DoxyParamCaption}}
+
+
+
+发送\+Auth请求到微信，支持用户没安装微信，等待微信返回on\+Resp 
+
+函数调用后，会切换到微信的界面。第三方应用程序等待微信返回on\+Resp。微信在异步处理完成后一定会调用on\+Resp。支持\+Send\+Auth\+Req类型。 
+\begin{DoxyParams}{Parameters}
+{\em req} & 具体的发送请求，在调用函数后，请自己释放。 \\
+\hline
+{\em view\+Controller} & 当前界面对象。 \\
+\hline
+{\em delegate} & W\+X\+Api\+Delegate对象，用来接收微信触发的消息。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成功返回\+Y\+E\+S，失败返回\+N\+O。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_a646e42926ec7378a087674e54150b2c9}\label{interface_w_x_api_a646e42926ec7378a087674e54150b2c9}} 
+\index{W\+X\+Api@{W\+X\+Api}!send\+Auth\+Req\+:view\+Controller\+:delegate\+:@{send\+Auth\+Req\+:view\+Controller\+:delegate\+:}}
+\index{send\+Auth\+Req\+:view\+Controller\+:delegate\+:@{send\+Auth\+Req\+:view\+Controller\+:delegate\+:}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{send\+Auth\+Req\+:view\+Controller\+:delegate\+:()}{sendAuthReq:viewController:delegate:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) send\+Auth\+Req\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_send_auth_req}{Send\+Auth\+Req}} $\ast$)}]{req }\item[{viewController:(U\+I\+View\+Controller $\ast$)}]{view\+Controller }\item[{delegate:(id$<$ W\+X\+Api\+Delegate $>$)}]{delegate }\end{DoxyParamCaption}}
+
+
+
+发送\+Auth请求到微信，支持用户没安装微信，等待微信返回on\+Resp 
+
+函数调用后，会切换到微信的界面。第三方应用程序等待微信返回on\+Resp。微信在异步处理完成后一定会调用on\+Resp。支持\+Send\+Auth\+Req类型。 
+\begin{DoxyParams}{Parameters}
+{\em req} & 具体的发送请求，在调用函数后，请自己释放。 \\
+\hline
+{\em view\+Controller} & 当前界面对象。 \\
+\hline
+{\em delegate} & W\+X\+Api\+Delegate对象，用来接收微信触发的消息。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成功返回\+Y\+E\+S，失败返回\+N\+O。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_a646e42926ec7378a087674e54150b2c9}\label{interface_w_x_api_a646e42926ec7378a087674e54150b2c9}} 
+\index{W\+X\+Api@{W\+X\+Api}!send\+Auth\+Req\+:view\+Controller\+:delegate\+:@{send\+Auth\+Req\+:view\+Controller\+:delegate\+:}}
+\index{send\+Auth\+Req\+:view\+Controller\+:delegate\+:@{send\+Auth\+Req\+:view\+Controller\+:delegate\+:}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{send\+Auth\+Req\+:view\+Controller\+:delegate\+:()}{sendAuthReq:viewController:delegate:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) send\+Auth\+Req\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_send_auth_req}{Send\+Auth\+Req}} $\ast$)}]{req }\item[{viewController:(U\+I\+View\+Controller $\ast$)}]{view\+Controller }\item[{delegate:(id$<$ W\+X\+Api\+Delegate $>$)}]{delegate }\end{DoxyParamCaption}}
+
+
+
+发送\+Auth请求到微信，支持用户没安装微信，等待微信返回on\+Resp 
+
+函数调用后，会切换到微信的界面。第三方应用程序等待微信返回on\+Resp。微信在异步处理完成后一定会调用on\+Resp。支持\+Send\+Auth\+Req类型。 
+\begin{DoxyParams}{Parameters}
+{\em req} & 具体的发送请求，在调用函数后，请自己释放。 \\
+\hline
+{\em view\+Controller} & 当前界面对象。 \\
+\hline
+{\em delegate} & W\+X\+Api\+Delegate对象，用来接收微信触发的消息。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成功返回\+Y\+E\+S，失败返回\+N\+O。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_a1a30bc4f39815920b6e45901375bee8e}\label{interface_w_x_api_a1a30bc4f39815920b6e45901375bee8e}} 
+\index{W\+X\+Api@{W\+X\+Api}!send\+Req\+:@{send\+Req\+:}}
+\index{send\+Req\+:@{send\+Req\+:}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{send\+Req\+:()}{sendReq:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) send\+Req\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_base_req}{Base\+Req}} $\ast$)}]{req }\end{DoxyParamCaption}}
+
+
+
+发送请求到微信，等待微信返回on\+Resp 
+
+函数调用后，会切换到微信的界面。第三方应用程序等待微信返回on\+Resp。微信在异步处理完成后一定会调用on\+Resp。支持以下类型 Send\+Auth\+Req、\+Send\+Message\+To\+W\+X\+Req、\+Pay\+Req等。 
+\begin{DoxyParams}{Parameters}
+{\em req} & 具体的发送请求，在调用函数后，请自己释放。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成功返回\+Y\+E\+S，失败返回\+N\+O。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_a1a30bc4f39815920b6e45901375bee8e}\label{interface_w_x_api_a1a30bc4f39815920b6e45901375bee8e}} 
+\index{W\+X\+Api@{W\+X\+Api}!send\+Req\+:@{send\+Req\+:}}
+\index{send\+Req\+:@{send\+Req\+:}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{send\+Req\+:()}{sendReq:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) send\+Req\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_base_req}{Base\+Req}} $\ast$)}]{req }\end{DoxyParamCaption}}
+
+
+
+发送请求到微信，等待微信返回on\+Resp 
+
+函数调用后，会切换到微信的界面。第三方应用程序等待微信返回on\+Resp。微信在异步处理完成后一定会调用on\+Resp。支持以下类型 Send\+Auth\+Req、\+Send\+Message\+To\+W\+X\+Req、\+Pay\+Req等。 
+\begin{DoxyParams}{Parameters}
+{\em req} & 具体的发送请求，在调用函数后，请自己释放。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成功返回\+Y\+E\+S，失败返回\+N\+O。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_a1a30bc4f39815920b6e45901375bee8e}\label{interface_w_x_api_a1a30bc4f39815920b6e45901375bee8e}} 
+\index{W\+X\+Api@{W\+X\+Api}!send\+Req\+:@{send\+Req\+:}}
+\index{send\+Req\+:@{send\+Req\+:}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{send\+Req\+:()}{sendReq:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) send\+Req\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_base_req}{Base\+Req}} $\ast$)}]{req }\end{DoxyParamCaption}}
+
+
+
+发送请求到微信，等待微信返回on\+Resp 
+
+函数调用后，会切换到微信的界面。第三方应用程序等待微信返回on\+Resp。微信在异步处理完成后一定会调用on\+Resp。支持以下类型 Send\+Auth\+Req、\+Send\+Message\+To\+W\+X\+Req、\+Pay\+Req等。 
+\begin{DoxyParams}{Parameters}
+{\em req} & 具体的发送请求，在调用函数后，请自己释放。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成功返回\+Y\+E\+S，失败返回\+N\+O。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_ab026294e5601cd15d7b792c3de7b81d5}\label{interface_w_x_api_ab026294e5601cd15d7b792c3de7b81d5}} 
+\index{W\+X\+Api@{W\+X\+Api}!send\+Resp\+:@{send\+Resp\+:}}
+\index{send\+Resp\+:@{send\+Resp\+:}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{send\+Resp\+:()}{sendResp:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) send\+Resp\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_base_resp}{Base\+Resp}} $\ast$)}]{resp }\end{DoxyParamCaption}}
+
+
+
+收到微信on\+Req的请求，发送对应的应答给微信，并切换到微信界面 
+
+函数调用后，会切换到微信的界面。第三方应用程序收到微信on\+Req的请求，异步处理该请求，完成后必须调用该函数。可能发送的相应有 Get\+Message\+From\+W\+X\+Resp、\+Show\+Message\+From\+W\+X\+Resp等。 
+\begin{DoxyParams}{Parameters}
+{\em resp} & 具体的应答内容，调用函数后，请自己释放 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成功返回\+Y\+E\+S，失败返回\+N\+O。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_ab026294e5601cd15d7b792c3de7b81d5}\label{interface_w_x_api_ab026294e5601cd15d7b792c3de7b81d5}} 
+\index{W\+X\+Api@{W\+X\+Api}!send\+Resp\+:@{send\+Resp\+:}}
+\index{send\+Resp\+:@{send\+Resp\+:}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{send\+Resp\+:()}{sendResp:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) send\+Resp\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_base_resp}{Base\+Resp}} $\ast$)}]{resp }\end{DoxyParamCaption}}
+
+
+
+收到微信on\+Req的请求，发送对应的应答给微信，并切换到微信界面 
+
+函数调用后，会切换到微信的界面。第三方应用程序收到微信on\+Req的请求，异步处理该请求，完成后必须调用该函数。可能发送的相应有 Get\+Message\+From\+W\+X\+Resp、\+Show\+Message\+From\+W\+X\+Resp等。 
+\begin{DoxyParams}{Parameters}
+{\em resp} & 具体的应答内容，调用函数后，请自己释放 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成功返回\+Y\+E\+S，失败返回\+N\+O。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_x_api_ab026294e5601cd15d7b792c3de7b81d5}\label{interface_w_x_api_ab026294e5601cd15d7b792c3de7b81d5}} 
+\index{W\+X\+Api@{W\+X\+Api}!send\+Resp\+:@{send\+Resp\+:}}
+\index{send\+Resp\+:@{send\+Resp\+:}!W\+X\+Api@{W\+X\+Api}}
+\subsubsection{\texorpdfstring{send\+Resp\+:()}{sendResp:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily + (B\+O\+OL) send\+Resp\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_base_resp}{Base\+Resp}} $\ast$)}]{resp }\end{DoxyParamCaption}}
+
+
+
+收到微信on\+Req的请求，发送对应的应答给微信，并切换到微信界面 
+
+函数调用后，会切换到微信的界面。第三方应用程序收到微信on\+Req的请求，异步处理该请求，完成后必须调用该函数。可能发送的相应有 Get\+Message\+From\+W\+X\+Resp、\+Show\+Message\+From\+W\+X\+Resp等。 
+\begin{DoxyParams}{Parameters}
+{\em resp} & 具体的应答内容，调用函数后，请自己释放 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+成功返回\+Y\+E\+S，失败返回\+N\+O。 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+U\+Meng\+U\+Share/W\+X\+Api.\+h\end{DoxyCompactItemize}

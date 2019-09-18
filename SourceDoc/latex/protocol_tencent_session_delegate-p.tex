@@ -1,0 +1,841 @@
+\hypertarget{protocol_tencent_session_delegate-p}{}\section{$<$Tencent\+Session\+Delegate$>$ Protocol Reference}
+\label{protocol_tencent_session_delegate-p}\index{$<$\+Tencent\+Session\+Delegate$>$@{$<$\+Tencent\+Session\+Delegate$>$}}
+
+
+\mbox{\hyperlink{protocol_tencent_session_delegate-p}{Tencent\+Session\+Delegate}} i\+OS Open S\+DK 1.\+3 A\+P\+I回调协议  
+
+
+
+
+{\ttfamily \#import $<$Tencent\+O\+Auth.\+h$>$}
+
+
+
+Inheritance diagram for $<$Tencent\+Session\+Delegate$>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{protocol_tencent_session_delegate-p__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for $<$Tencent\+Session\+Delegate$>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{protocol_tencent_session_delegate-p__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_aa7032a93d9fac4228335c592a5cdefeb}{tencent\+Did\+Logout}}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_a0e01d339c87d58e9386068abd18fc93b}{tencent\+Need\+Perform\+Incr\+Auth\+:with\+Permissions\+:}}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_af961aa9926514b095a51a3dfa8514a38}{tencent\+Need\+Perform\+Re\+Auth\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_ab6add86989fc2acf54c93c6adb7e445e}{tencent\+Did\+Update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_aa62f3774c40da79bd17aff01b4745518}{tencent\+Failed\+Update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_a9cff2e12ed27916e865c8048ee0c176c}{get\+User\+Info\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_a51e1be4e15865ec6c54748596fffd5df}{get\+List\+Album\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_a9730f3fa053bd0a0d0d6ab2ec8692671}{get\+List\+Photo\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_a3180b739637e48ae4c986eb98caa3307}{check\+Page\+Fans\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_a216d645eacd9b1e25a941ba53dc1ee02}{add\+Share\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_a065feaea11a1a1ec423a85859b36a0c5}{add\+Album\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_ae464b20ef11dd5fbed06862bcbe2f7d2}{upload\+Pic\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_a3ba2a0c6a9f2444218b6acef8daf30d6}{add\+One\+Blog\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_a708d12ee5e08e418428f834b9e7aefd6}{add\+Topic\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_ae487da5d4b7d86179c8f98cbceac848d}{set\+User\+Headpic\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_ad0d91a95626727d1dc20fb96df2d442a}{get\+Vip\+Info\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_aa6c9ad57c523c339220224ed84c22bf3}{get\+Vip\+Rich\+Info\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_ac6628547be6fc0208797fbd6a5d7830c}{send\+Story\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_aec2b0e15cdc45c30b0f67b708f97c44a}{response\+Did\+Received\+:for\+Message\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_a389127c47a6ad7efbd1ec738efd7ad02}{tencent\+O\+Auth\+:did\+Send\+Body\+Data\+:total\+Bytes\+Written\+:total\+Bytes\+Expected\+To\+Write\+:user\+Data\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_afb8ed4decd4a2c070ae709e08bdfcab2}{tencent\+O\+Auth\+:do\+Close\+View\+Controller\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_aa7032a93d9fac4228335c592a5cdefeb}{tencent\+Did\+Logout}}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_a0e01d339c87d58e9386068abd18fc93b}{tencent\+Need\+Perform\+Incr\+Auth\+:with\+Permissions\+:}}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_af961aa9926514b095a51a3dfa8514a38}{tencent\+Need\+Perform\+Re\+Auth\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_ab6add86989fc2acf54c93c6adb7e445e}{tencent\+Did\+Update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_aa62f3774c40da79bd17aff01b4745518}{tencent\+Failed\+Update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_a9cff2e12ed27916e865c8048ee0c176c}{get\+User\+Info\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_a51e1be4e15865ec6c54748596fffd5df}{get\+List\+Album\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_a9730f3fa053bd0a0d0d6ab2ec8692671}{get\+List\+Photo\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_a3180b739637e48ae4c986eb98caa3307}{check\+Page\+Fans\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_a216d645eacd9b1e25a941ba53dc1ee02}{add\+Share\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_a065feaea11a1a1ec423a85859b36a0c5}{add\+Album\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_ae464b20ef11dd5fbed06862bcbe2f7d2}{upload\+Pic\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_a3ba2a0c6a9f2444218b6acef8daf30d6}{add\+One\+Blog\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_a708d12ee5e08e418428f834b9e7aefd6}{add\+Topic\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_ae487da5d4b7d86179c8f98cbceac848d}{set\+User\+Headpic\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_ad0d91a95626727d1dc20fb96df2d442a}{get\+Vip\+Info\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_aa6c9ad57c523c339220224ed84c22bf3}{get\+Vip\+Rich\+Info\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_ac6628547be6fc0208797fbd6a5d7830c}{send\+Story\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_aec2b0e15cdc45c30b0f67b708f97c44a}{response\+Did\+Received\+:for\+Message\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_a389127c47a6ad7efbd1ec738efd7ad02}{tencent\+O\+Auth\+:did\+Send\+Body\+Data\+:total\+Bytes\+Written\+:total\+Bytes\+Expected\+To\+Write\+:user\+Data\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_tencent_session_delegate-p_afb8ed4decd4a2c070ae709e08bdfcab2}{tencent\+O\+Auth\+:do\+Close\+View\+Controller\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{protocol_tencent_session_delegate-p}{Tencent\+Session\+Delegate}} i\+OS Open S\+DK 1.\+3 A\+P\+I回调协议 
+
+第三方应用需要实现每条需要调用的\+A\+P\+I的回调协议 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_a065feaea11a1a1ec423a85859b36a0c5}\label{protocol_tencent_session_delegate-p_a065feaea11a1a1ec423a85859b36a0c5}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!add\+Album\+Response\+:@{add\+Album\+Response\+:}}
+\index{add\+Album\+Response\+:@{add\+Album\+Response\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{add\+Album\+Response\+:()}{addAlbumResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+Album\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+在\+Q\+Zone相册中创建一个新的相册回调 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+正确返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 错误返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+
+\end{DoxyRemark}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_a065feaea11a1a1ec423a85859b36a0c5}\label{protocol_tencent_session_delegate-p_a065feaea11a1a1ec423a85859b36a0c5}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!add\+Album\+Response\+:@{add\+Album\+Response\+:}}
+\index{add\+Album\+Response\+:@{add\+Album\+Response\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{add\+Album\+Response\+:()}{addAlbumResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+Album\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+在\+Q\+Zone相册中创建一个新的相册回调 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+正确返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 错误返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+
+\end{DoxyRemark}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_a3ba2a0c6a9f2444218b6acef8daf30d6}\label{protocol_tencent_session_delegate-p_a3ba2a0c6a9f2444218b6acef8daf30d6}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!add\+One\+Blog\+Response\+:@{add\+One\+Blog\+Response\+:}}
+\index{add\+One\+Blog\+Response\+:@{add\+One\+Blog\+Response\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{add\+One\+Blog\+Response\+:()}{addOneBlogResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+One\+Blog\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+在\+Q\+Zone中发表一篇日志回调 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+正确返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 错误返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+
+\end{DoxyRemark}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_a3ba2a0c6a9f2444218b6acef8daf30d6}\label{protocol_tencent_session_delegate-p_a3ba2a0c6a9f2444218b6acef8daf30d6}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!add\+One\+Blog\+Response\+:@{add\+One\+Blog\+Response\+:}}
+\index{add\+One\+Blog\+Response\+:@{add\+One\+Blog\+Response\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{add\+One\+Blog\+Response\+:()}{addOneBlogResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+One\+Blog\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+在\+Q\+Zone中发表一篇日志回调 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+正确返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 错误返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+
+\end{DoxyRemark}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_a216d645eacd9b1e25a941ba53dc1ee02}\label{protocol_tencent_session_delegate-p_a216d645eacd9b1e25a941ba53dc1ee02}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!add\+Share\+Response\+:@{add\+Share\+Response\+:}}
+\index{add\+Share\+Response\+:@{add\+Share\+Response\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{add\+Share\+Response\+:()}{addShareResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+Share\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+分享到\+Q\+Zone回调 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+正确返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 错误返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+
+\end{DoxyRemark}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_a216d645eacd9b1e25a941ba53dc1ee02}\label{protocol_tencent_session_delegate-p_a216d645eacd9b1e25a941ba53dc1ee02}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!add\+Share\+Response\+:@{add\+Share\+Response\+:}}
+\index{add\+Share\+Response\+:@{add\+Share\+Response\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{add\+Share\+Response\+:()}{addShareResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+Share\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+分享到\+Q\+Zone回调 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+正确返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 错误返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+
+\end{DoxyRemark}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_a708d12ee5e08e418428f834b9e7aefd6}\label{protocol_tencent_session_delegate-p_a708d12ee5e08e418428f834b9e7aefd6}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!add\+Topic\+Response\+:@{add\+Topic\+Response\+:}}
+\index{add\+Topic\+Response\+:@{add\+Topic\+Response\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{add\+Topic\+Response\+:()}{addTopicResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+Topic\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+在\+Q\+Zone中发表一条说说回调 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+正确返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 错误返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+
+\end{DoxyRemark}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_a708d12ee5e08e418428f834b9e7aefd6}\label{protocol_tencent_session_delegate-p_a708d12ee5e08e418428f834b9e7aefd6}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!add\+Topic\+Response\+:@{add\+Topic\+Response\+:}}
+\index{add\+Topic\+Response\+:@{add\+Topic\+Response\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{add\+Topic\+Response\+:()}{addTopicResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+Topic\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+在\+Q\+Zone中发表一条说说回调 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+正确返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 错误返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+
+\end{DoxyRemark}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_a3180b739637e48ae4c986eb98caa3307}\label{protocol_tencent_session_delegate-p_a3180b739637e48ae4c986eb98caa3307}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!check\+Page\+Fans\+Response\+:@{check\+Page\+Fans\+Response\+:}}
+\index{check\+Page\+Fans\+Response\+:@{check\+Page\+Fans\+Response\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{check\+Page\+Fans\+Response\+:()}{checkPageFansResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) check\+Page\+Fans\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+检查是否是\+Q\+Zone某个用户的粉丝回调 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+正确返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 错误返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+
+\end{DoxyRemark}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_a3180b739637e48ae4c986eb98caa3307}\label{protocol_tencent_session_delegate-p_a3180b739637e48ae4c986eb98caa3307}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!check\+Page\+Fans\+Response\+:@{check\+Page\+Fans\+Response\+:}}
+\index{check\+Page\+Fans\+Response\+:@{check\+Page\+Fans\+Response\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{check\+Page\+Fans\+Response\+:()}{checkPageFansResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) check\+Page\+Fans\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+检查是否是\+Q\+Zone某个用户的粉丝回调 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+正确返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 错误返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+
+\end{DoxyRemark}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_a51e1be4e15865ec6c54748596fffd5df}\label{protocol_tencent_session_delegate-p_a51e1be4e15865ec6c54748596fffd5df}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!get\+List\+Album\+Response\+:@{get\+List\+Album\+Response\+:}}
+\index{get\+List\+Album\+Response\+:@{get\+List\+Album\+Response\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{get\+List\+Album\+Response\+:()}{getListAlbumResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+List\+Album\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+获取用户\+Q\+Zone相册列表回调 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+正确返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 错误返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+
+\end{DoxyRemark}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_a51e1be4e15865ec6c54748596fffd5df}\label{protocol_tencent_session_delegate-p_a51e1be4e15865ec6c54748596fffd5df}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!get\+List\+Album\+Response\+:@{get\+List\+Album\+Response\+:}}
+\index{get\+List\+Album\+Response\+:@{get\+List\+Album\+Response\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{get\+List\+Album\+Response\+:()}{getListAlbumResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+List\+Album\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+获取用户\+Q\+Zone相册列表回调 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+正确返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 错误返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+
+\end{DoxyRemark}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_a9730f3fa053bd0a0d0d6ab2ec8692671}\label{protocol_tencent_session_delegate-p_a9730f3fa053bd0a0d0d6ab2ec8692671}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!get\+List\+Photo\+Response\+:@{get\+List\+Photo\+Response\+:}}
+\index{get\+List\+Photo\+Response\+:@{get\+List\+Photo\+Response\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{get\+List\+Photo\+Response\+:()}{getListPhotoResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+List\+Photo\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+获取用户\+Q\+Zone相片列表 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+正确返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 错误返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+
+\end{DoxyRemark}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_a9730f3fa053bd0a0d0d6ab2ec8692671}\label{protocol_tencent_session_delegate-p_a9730f3fa053bd0a0d0d6ab2ec8692671}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!get\+List\+Photo\+Response\+:@{get\+List\+Photo\+Response\+:}}
+\index{get\+List\+Photo\+Response\+:@{get\+List\+Photo\+Response\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{get\+List\+Photo\+Response\+:()}{getListPhotoResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+List\+Photo\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+获取用户\+Q\+Zone相片列表 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+正确返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 错误返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+
+\end{DoxyRemark}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_a9cff2e12ed27916e865c8048ee0c176c}\label{protocol_tencent_session_delegate-p_a9cff2e12ed27916e865c8048ee0c176c}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!get\+User\+Info\+Response\+:@{get\+User\+Info\+Response\+:}}
+\index{get\+User\+Info\+Response\+:@{get\+User\+Info\+Response\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{get\+User\+Info\+Response\+:()}{getUserInfoResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+User\+Info\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+获取用户个人信息回调 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+正确返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 错误返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+
+\end{DoxyRemark}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_a9cff2e12ed27916e865c8048ee0c176c}\label{protocol_tencent_session_delegate-p_a9cff2e12ed27916e865c8048ee0c176c}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!get\+User\+Info\+Response\+:@{get\+User\+Info\+Response\+:}}
+\index{get\+User\+Info\+Response\+:@{get\+User\+Info\+Response\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{get\+User\+Info\+Response\+:()}{getUserInfoResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+User\+Info\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+获取用户个人信息回调 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+正确返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 错误返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+
+\end{DoxyRemark}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_ad0d91a95626727d1dc20fb96df2d442a}\label{protocol_tencent_session_delegate-p_ad0d91a95626727d1dc20fb96df2d442a}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!get\+Vip\+Info\+Response\+:@{get\+Vip\+Info\+Response\+:}}
+\index{get\+Vip\+Info\+Response\+:@{get\+Vip\+Info\+Response\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{get\+Vip\+Info\+Response\+:()}{getVipInfoResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Vip\+Info\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+获取\+Q\+Q会员信息回调 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+正确返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 错误返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+
+\end{DoxyRemark}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_ad0d91a95626727d1dc20fb96df2d442a}\label{protocol_tencent_session_delegate-p_ad0d91a95626727d1dc20fb96df2d442a}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!get\+Vip\+Info\+Response\+:@{get\+Vip\+Info\+Response\+:}}
+\index{get\+Vip\+Info\+Response\+:@{get\+Vip\+Info\+Response\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{get\+Vip\+Info\+Response\+:()}{getVipInfoResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Vip\+Info\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+获取\+Q\+Q会员信息回调 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+正确返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 错误返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+
+\end{DoxyRemark}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_aa6c9ad57c523c339220224ed84c22bf3}\label{protocol_tencent_session_delegate-p_aa6c9ad57c523c339220224ed84c22bf3}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!get\+Vip\+Rich\+Info\+Response\+:@{get\+Vip\+Rich\+Info\+Response\+:}}
+\index{get\+Vip\+Rich\+Info\+Response\+:@{get\+Vip\+Rich\+Info\+Response\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{get\+Vip\+Rich\+Info\+Response\+:()}{getVipRichInfoResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Vip\+Rich\+Info\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+获取\+Q\+Q会员详细信息回调 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_aa6c9ad57c523c339220224ed84c22bf3}\label{protocol_tencent_session_delegate-p_aa6c9ad57c523c339220224ed84c22bf3}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!get\+Vip\+Rich\+Info\+Response\+:@{get\+Vip\+Rich\+Info\+Response\+:}}
+\index{get\+Vip\+Rich\+Info\+Response\+:@{get\+Vip\+Rich\+Info\+Response\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{get\+Vip\+Rich\+Info\+Response\+:()}{getVipRichInfoResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Vip\+Rich\+Info\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+获取\+Q\+Q会员详细信息回调 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_aec2b0e15cdc45c30b0f67b708f97c44a}\label{protocol_tencent_session_delegate-p_aec2b0e15cdc45c30b0f67b708f97c44a}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!response\+Did\+Received\+:for\+Message\+:@{response\+Did\+Received\+:for\+Message\+:}}
+\index{response\+Did\+Received\+:for\+Message\+:@{response\+Did\+Received\+:for\+Message\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{response\+Did\+Received\+:for\+Message\+:()}{responseDidReceived:forMessage:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) response\+Did\+Received\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\item[{forMessage:(N\+S\+String $\ast$)}]{message }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+社交\+A\+P\+I统一回调接口 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+{\em message} & 响应的消息，目前支持‘\+Send\+Story’,‘\+App\+Invitation’，‘\+App\+Challenge’，‘\+App\+Gift\+Request’ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_aec2b0e15cdc45c30b0f67b708f97c44a}\label{protocol_tencent_session_delegate-p_aec2b0e15cdc45c30b0f67b708f97c44a}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!response\+Did\+Received\+:for\+Message\+:@{response\+Did\+Received\+:for\+Message\+:}}
+\index{response\+Did\+Received\+:for\+Message\+:@{response\+Did\+Received\+:for\+Message\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{response\+Did\+Received\+:for\+Message\+:()}{responseDidReceived:forMessage:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) response\+Did\+Received\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\item[{forMessage:(N\+S\+String $\ast$)}]{message }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+社交\+A\+P\+I统一回调接口 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+{\em message} & 响应的消息，目前支持‘\+Send\+Story’,‘\+App\+Invitation’，‘\+App\+Challenge’，‘\+App\+Gift\+Request’ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_ac6628547be6fc0208797fbd6a5d7830c}\label{protocol_tencent_session_delegate-p_ac6628547be6fc0208797fbd6a5d7830c}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!send\+Story\+Response\+:@{send\+Story\+Response\+:}}
+\index{send\+Story\+Response\+:@{send\+Story\+Response\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{send\+Story\+Response\+:()}{sendStoryResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) send\+Story\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+send\+Story分享的回调（已废弃，使用response\+Did\+Received\+:for\+Message\+:） 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_ac6628547be6fc0208797fbd6a5d7830c}\label{protocol_tencent_session_delegate-p_ac6628547be6fc0208797fbd6a5d7830c}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!send\+Story\+Response\+:@{send\+Story\+Response\+:}}
+\index{send\+Story\+Response\+:@{send\+Story\+Response\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{send\+Story\+Response\+:()}{sendStoryResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) send\+Story\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+send\+Story分享的回调（已废弃，使用response\+Did\+Received\+:for\+Message\+:） 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_ae487da5d4b7d86179c8f98cbceac848d}\label{protocol_tencent_session_delegate-p_ae487da5d4b7d86179c8f98cbceac848d}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!set\+User\+Headpic\+Response\+:@{set\+User\+Headpic\+Response\+:}}
+\index{set\+User\+Headpic\+Response\+:@{set\+User\+Headpic\+Response\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{set\+User\+Headpic\+Response\+:()}{setUserHeadpicResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) set\+User\+Headpic\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+设置\+Q\+Q头像回调 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+正确返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 错误返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+
+\end{DoxyRemark}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_ae487da5d4b7d86179c8f98cbceac848d}\label{protocol_tencent_session_delegate-p_ae487da5d4b7d86179c8f98cbceac848d}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!set\+User\+Headpic\+Response\+:@{set\+User\+Headpic\+Response\+:}}
+\index{set\+User\+Headpic\+Response\+:@{set\+User\+Headpic\+Response\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{set\+User\+Headpic\+Response\+:()}{setUserHeadpicResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) set\+User\+Headpic\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+设置\+Q\+Q头像回调 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+正确返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 错误返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+
+\end{DoxyRemark}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_aa7032a93d9fac4228335c592a5cdefeb}\label{protocol_tencent_session_delegate-p_aa7032a93d9fac4228335c592a5cdefeb}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!tencent\+Did\+Logout@{tencent\+Did\+Logout}}
+\index{tencent\+Did\+Logout@{tencent\+Did\+Logout}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{tencent\+Did\+Logout()}{tencentDidLogout()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) tencent\+Did\+Logout \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+退出登录的回调 \mbox{\Hypertarget{protocol_tencent_session_delegate-p_aa7032a93d9fac4228335c592a5cdefeb}\label{protocol_tencent_session_delegate-p_aa7032a93d9fac4228335c592a5cdefeb}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!tencent\+Did\+Logout@{tencent\+Did\+Logout}}
+\index{tencent\+Did\+Logout@{tencent\+Did\+Logout}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{tencent\+Did\+Logout()}{tencentDidLogout()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) tencent\+Did\+Logout \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+退出登录的回调 \mbox{\Hypertarget{protocol_tencent_session_delegate-p_ab6add86989fc2acf54c93c6adb7e445e}\label{protocol_tencent_session_delegate-p_ab6add86989fc2acf54c93c6adb7e445e}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!tencent\+Did\+Update\+:@{tencent\+Did\+Update\+:}}
+\index{tencent\+Did\+Update\+:@{tencent\+Did\+Update\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{tencent\+Did\+Update\+:()}{tencentDidUpdate:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) tencent\+Did\+Update\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_tencent_o_auth}{Tencent\+O\+Auth}} $\ast$)}]{tencent\+O\+Auth }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+用户通过增量授权流程重新授权登录，token及有效期限等信息已被更新。 
+\begin{DoxyParams}{Parameters}
+{\em tencent\+O\+Auth} & token及有效期限等信息更新后的授权实例对象 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+第三方应用需更新已保存的token及有效期限等信息。 
+\end{DoxyNote}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_ab6add86989fc2acf54c93c6adb7e445e}\label{protocol_tencent_session_delegate-p_ab6add86989fc2acf54c93c6adb7e445e}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!tencent\+Did\+Update\+:@{tencent\+Did\+Update\+:}}
+\index{tencent\+Did\+Update\+:@{tencent\+Did\+Update\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{tencent\+Did\+Update\+:()}{tencentDidUpdate:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) tencent\+Did\+Update\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_tencent_o_auth}{Tencent\+O\+Auth}} $\ast$)}]{tencent\+O\+Auth }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+用户通过增量授权流程重新授权登录，token及有效期限等信息已被更新。 
+\begin{DoxyParams}{Parameters}
+{\em tencent\+O\+Auth} & token及有效期限等信息更新后的授权实例对象 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+第三方应用需更新已保存的token及有效期限等信息。 
+\end{DoxyNote}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_aa62f3774c40da79bd17aff01b4745518}\label{protocol_tencent_session_delegate-p_aa62f3774c40da79bd17aff01b4745518}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!tencent\+Failed\+Update\+:@{tencent\+Failed\+Update\+:}}
+\index{tencent\+Failed\+Update\+:@{tencent\+Failed\+Update\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{tencent\+Failed\+Update\+:()}{tencentFailedUpdate:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) tencent\+Failed\+Update\+: \begin{DoxyParamCaption}\item[{(Update\+Fail\+Type)}]{reason }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+用户增量授权过程中因取消或网络问题导致授权失败 
+\begin{DoxyParams}{Parameters}
+{\em reason} & 授权失败原因，具体失败原因参见sdkdef.\+h文件中Update\+Fail\+Type \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_aa62f3774c40da79bd17aff01b4745518}\label{protocol_tencent_session_delegate-p_aa62f3774c40da79bd17aff01b4745518}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!tencent\+Failed\+Update\+:@{tencent\+Failed\+Update\+:}}
+\index{tencent\+Failed\+Update\+:@{tencent\+Failed\+Update\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{tencent\+Failed\+Update\+:()}{tencentFailedUpdate:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) tencent\+Failed\+Update\+: \begin{DoxyParamCaption}\item[{(Update\+Fail\+Type)}]{reason }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+用户增量授权过程中因取消或网络问题导致授权失败 
+\begin{DoxyParams}{Parameters}
+{\em reason} & 授权失败原因，具体失败原因参见sdkdef.\+h文件中Update\+Fail\+Type \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_a0e01d339c87d58e9386068abd18fc93b}\label{protocol_tencent_session_delegate-p_a0e01d339c87d58e9386068abd18fc93b}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!tencent\+Need\+Perform\+Incr\+Auth\+:with\+Permissions\+:@{tencent\+Need\+Perform\+Incr\+Auth\+:with\+Permissions\+:}}
+\index{tencent\+Need\+Perform\+Incr\+Auth\+:with\+Permissions\+:@{tencent\+Need\+Perform\+Incr\+Auth\+:with\+Permissions\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{tencent\+Need\+Perform\+Incr\+Auth\+:with\+Permissions\+:()}{tencentNeedPerformIncrAuth:withPermissions:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) tencent\+Need\+Perform\+Incr\+Auth\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_tencent_o_auth}{Tencent\+O\+Auth}} $\ast$)}]{tencent\+O\+Auth }\item[{withPermissions:(N\+S\+Array $\ast$)}]{permissions }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+因用户未授予相应权限而需要执行增量授权。在用户调用某个api接口时，如果服务器返回操作未被授权，则触发该回调协议接口，由第三方决定是否跳转到增量授权页面，让用户重新授权。 
+\begin{DoxyParams}{Parameters}
+{\em tencent\+O\+Auth} & 登录授权对象。 \\
+\hline
+{\em permissions} & 需增量授权的权限列表。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+是否仍然回调返回原始的api请求结果。 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+不实现该协议接口则默认为不开启增量授权流程。若需要增量授权请调用\mbox{\hyperlink{interface_tencent_o_auth_abe9ca35d1c305cc9219cb6738606df2d}{incr\+Auth\+With\+Permissions\+: (Tencent\+O\+Auth)}} ~\newline
+注意：增量授权时用户可能会修改登录的帐号 
+\end{DoxyNote}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_a0e01d339c87d58e9386068abd18fc93b}\label{protocol_tencent_session_delegate-p_a0e01d339c87d58e9386068abd18fc93b}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!tencent\+Need\+Perform\+Incr\+Auth\+:with\+Permissions\+:@{tencent\+Need\+Perform\+Incr\+Auth\+:with\+Permissions\+:}}
+\index{tencent\+Need\+Perform\+Incr\+Auth\+:with\+Permissions\+:@{tencent\+Need\+Perform\+Incr\+Auth\+:with\+Permissions\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{tencent\+Need\+Perform\+Incr\+Auth\+:with\+Permissions\+:()}{tencentNeedPerformIncrAuth:withPermissions:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) tencent\+Need\+Perform\+Incr\+Auth\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_tencent_o_auth}{Tencent\+O\+Auth}} $\ast$)}]{tencent\+O\+Auth }\item[{withPermissions:(N\+S\+Array $\ast$)}]{permissions }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+因用户未授予相应权限而需要执行增量授权。在用户调用某个api接口时，如果服务器返回操作未被授权，则触发该回调协议接口，由第三方决定是否跳转到增量授权页面，让用户重新授权。 
+\begin{DoxyParams}{Parameters}
+{\em tencent\+O\+Auth} & 登录授权对象。 \\
+\hline
+{\em permissions} & 需增量授权的权限列表。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+是否仍然回调返回原始的api请求结果。 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+不实现该协议接口则默认为不开启增量授权流程。若需要增量授权请调用\mbox{\hyperlink{interface_tencent_o_auth_abe9ca35d1c305cc9219cb6738606df2d}{incr\+Auth\+With\+Permissions\+: (Tencent\+O\+Auth)}} ~\newline
+注意：增量授权时用户可能会修改登录的帐号 
+\end{DoxyNote}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_af961aa9926514b095a51a3dfa8514a38}\label{protocol_tencent_session_delegate-p_af961aa9926514b095a51a3dfa8514a38}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!tencent\+Need\+Perform\+Re\+Auth\+:@{tencent\+Need\+Perform\+Re\+Auth\+:}}
+\index{tencent\+Need\+Perform\+Re\+Auth\+:@{tencent\+Need\+Perform\+Re\+Auth\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{tencent\+Need\+Perform\+Re\+Auth\+:()}{tencentNeedPerformReAuth:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) tencent\+Need\+Perform\+Re\+Auth\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_tencent_o_auth}{Tencent\+O\+Auth}} $\ast$)}]{tencent\+O\+Auth }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{[}该逻辑未实现\mbox{]}因token失效而需要执行重新登录授权。在用户调用某个api接口时，如果服务器返回token失效，则触发该回调协议接口，由第三方决定是否跳转到登录授权页面，让用户重新授权。 
+\begin{DoxyParams}{Parameters}
+{\em tencent\+O\+Auth} & 登录授权对象。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+是否仍然回调返回原始的api请求结果。 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+不实现该协议接口则默认为不开启重新登录授权流程。若需要重新登录授权请调用\mbox{\hyperlink{interface_tencent_o_auth_a0cae2d11a0ac52e1877a05c05100669d}{reauthorize\+With\+Permissions\+: (Tencent\+O\+Auth)}} ~\newline
+注意：重新登录授权时用户可能会修改登录的帐号 
+\end{DoxyNote}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_af961aa9926514b095a51a3dfa8514a38}\label{protocol_tencent_session_delegate-p_af961aa9926514b095a51a3dfa8514a38}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!tencent\+Need\+Perform\+Re\+Auth\+:@{tencent\+Need\+Perform\+Re\+Auth\+:}}
+\index{tencent\+Need\+Perform\+Re\+Auth\+:@{tencent\+Need\+Perform\+Re\+Auth\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{tencent\+Need\+Perform\+Re\+Auth\+:()}{tencentNeedPerformReAuth:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) tencent\+Need\+Perform\+Re\+Auth\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_tencent_o_auth}{Tencent\+O\+Auth}} $\ast$)}]{tencent\+O\+Auth }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{[}该逻辑未实现\mbox{]}因token失效而需要执行重新登录授权。在用户调用某个api接口时，如果服务器返回token失效，则触发该回调协议接口，由第三方决定是否跳转到登录授权页面，让用户重新授权。 
+\begin{DoxyParams}{Parameters}
+{\em tencent\+O\+Auth} & 登录授权对象。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+是否仍然回调返回原始的api请求结果。 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+不实现该协议接口则默认为不开启重新登录授权流程。若需要重新登录授权请调用\mbox{\hyperlink{interface_tencent_o_auth_a0cae2d11a0ac52e1877a05c05100669d}{reauthorize\+With\+Permissions\+: (Tencent\+O\+Auth)}} ~\newline
+注意：重新登录授权时用户可能会修改登录的帐号 
+\end{DoxyNote}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_a389127c47a6ad7efbd1ec738efd7ad02}\label{protocol_tencent_session_delegate-p_a389127c47a6ad7efbd1ec738efd7ad02}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!tencent\+O\+Auth\+:did\+Send\+Body\+Data\+:total\+Bytes\+Written\+:total\+Bytes\+Expected\+To\+Write\+:user\+Data\+:@{tencent\+O\+Auth\+:did\+Send\+Body\+Data\+:total\+Bytes\+Written\+:total\+Bytes\+Expected\+To\+Write\+:user\+Data\+:}}
+\index{tencent\+O\+Auth\+:did\+Send\+Body\+Data\+:total\+Bytes\+Written\+:total\+Bytes\+Expected\+To\+Write\+:user\+Data\+:@{tencent\+O\+Auth\+:did\+Send\+Body\+Data\+:total\+Bytes\+Written\+:total\+Bytes\+Expected\+To\+Write\+:user\+Data\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{tencent\+O\+Auth\+:did\+Send\+Body\+Data\+:total\+Bytes\+Written\+:total\+Bytes\+Expected\+To\+Write\+:user\+Data\+:()}{tencentOAuth:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:userData:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) tencent\+O\+Auth\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_tencent_o_auth}{Tencent\+O\+Auth}} $\ast$)}]{tencent\+O\+Auth }\item[{didSendBodyData:(N\+S\+Integer)}]{bytes\+Written }\item[{totalBytesWritten:(N\+S\+Integer)}]{total\+Bytes\+Written }\item[{totalBytesExpectedToWrite:(N\+S\+Integer)}]{total\+Bytes\+Expected\+To\+Write }\item[{userData:(id)}]{user\+Data }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+post请求的上传进度 
+\begin{DoxyParams}{Parameters}
+{\em tencent\+O\+Auth} & 返回回调的tencent\+O\+Auth对象 \\
+\hline
+{\em bytes\+Written} & 本次回调上传的数据字节数 \\
+\hline
+{\em total\+Bytes\+Written} & 总共已经上传的字节数 \\
+\hline
+{\em total\+Bytes\+Expected\+To\+Write} & 总共需要上传的字节数 \\
+\hline
+{\em user\+Data} & 用户自定义数据 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_a389127c47a6ad7efbd1ec738efd7ad02}\label{protocol_tencent_session_delegate-p_a389127c47a6ad7efbd1ec738efd7ad02}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!tencent\+O\+Auth\+:did\+Send\+Body\+Data\+:total\+Bytes\+Written\+:total\+Bytes\+Expected\+To\+Write\+:user\+Data\+:@{tencent\+O\+Auth\+:did\+Send\+Body\+Data\+:total\+Bytes\+Written\+:total\+Bytes\+Expected\+To\+Write\+:user\+Data\+:}}
+\index{tencent\+O\+Auth\+:did\+Send\+Body\+Data\+:total\+Bytes\+Written\+:total\+Bytes\+Expected\+To\+Write\+:user\+Data\+:@{tencent\+O\+Auth\+:did\+Send\+Body\+Data\+:total\+Bytes\+Written\+:total\+Bytes\+Expected\+To\+Write\+:user\+Data\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{tencent\+O\+Auth\+:did\+Send\+Body\+Data\+:total\+Bytes\+Written\+:total\+Bytes\+Expected\+To\+Write\+:user\+Data\+:()}{tencentOAuth:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:userData:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) tencent\+O\+Auth\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_tencent_o_auth}{Tencent\+O\+Auth}} $\ast$)}]{tencent\+O\+Auth }\item[{didSendBodyData:(N\+S\+Integer)}]{bytes\+Written }\item[{totalBytesWritten:(N\+S\+Integer)}]{total\+Bytes\+Written }\item[{totalBytesExpectedToWrite:(N\+S\+Integer)}]{total\+Bytes\+Expected\+To\+Write }\item[{userData:(id)}]{user\+Data }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+post请求的上传进度 
+\begin{DoxyParams}{Parameters}
+{\em tencent\+O\+Auth} & 返回回调的tencent\+O\+Auth对象 \\
+\hline
+{\em bytes\+Written} & 本次回调上传的数据字节数 \\
+\hline
+{\em total\+Bytes\+Written} & 总共已经上传的字节数 \\
+\hline
+{\em total\+Bytes\+Expected\+To\+Write} & 总共需要上传的字节数 \\
+\hline
+{\em user\+Data} & 用户自定义数据 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_afb8ed4decd4a2c070ae709e08bdfcab2}\label{protocol_tencent_session_delegate-p_afb8ed4decd4a2c070ae709e08bdfcab2}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!tencent\+O\+Auth\+:do\+Close\+View\+Controller\+:@{tencent\+O\+Auth\+:do\+Close\+View\+Controller\+:}}
+\index{tencent\+O\+Auth\+:do\+Close\+View\+Controller\+:@{tencent\+O\+Auth\+:do\+Close\+View\+Controller\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{tencent\+O\+Auth\+:do\+Close\+View\+Controller\+:()}{tencentOAuth:doCloseViewController:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) tencent\+O\+Auth\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_tencent_o_auth}{Tencent\+O\+Auth}} $\ast$)}]{tencent\+O\+Auth }\item[{doCloseViewController:(U\+I\+View\+Controller $\ast$)}]{view\+Controller }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+通知第三方界面需要被关闭 
+\begin{DoxyParams}{Parameters}
+{\em tencent\+O\+Auth} & 返回回调的tencent\+O\+Auth对象 \\
+\hline
+{\em view\+Controller} & 需要关闭的view\+Controller \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_afb8ed4decd4a2c070ae709e08bdfcab2}\label{protocol_tencent_session_delegate-p_afb8ed4decd4a2c070ae709e08bdfcab2}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!tencent\+O\+Auth\+:do\+Close\+View\+Controller\+:@{tencent\+O\+Auth\+:do\+Close\+View\+Controller\+:}}
+\index{tencent\+O\+Auth\+:do\+Close\+View\+Controller\+:@{tencent\+O\+Auth\+:do\+Close\+View\+Controller\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{tencent\+O\+Auth\+:do\+Close\+View\+Controller\+:()}{tencentOAuth:doCloseViewController:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) tencent\+O\+Auth\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_tencent_o_auth}{Tencent\+O\+Auth}} $\ast$)}]{tencent\+O\+Auth }\item[{doCloseViewController:(U\+I\+View\+Controller $\ast$)}]{view\+Controller }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+通知第三方界面需要被关闭 
+\begin{DoxyParams}{Parameters}
+{\em tencent\+O\+Auth} & 返回回调的tencent\+O\+Auth对象 \\
+\hline
+{\em view\+Controller} & 需要关闭的view\+Controller \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_ae464b20ef11dd5fbed06862bcbe2f7d2}\label{protocol_tencent_session_delegate-p_ae464b20ef11dd5fbed06862bcbe2f7d2}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!upload\+Pic\+Response\+:@{upload\+Pic\+Response\+:}}
+\index{upload\+Pic\+Response\+:@{upload\+Pic\+Response\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{upload\+Pic\+Response\+:()}{uploadPicResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) upload\+Pic\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+上传照片到\+Q\+Zone指定相册回调 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+正确返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 错误返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+
+\end{DoxyRemark}
+\mbox{\Hypertarget{protocol_tencent_session_delegate-p_ae464b20ef11dd5fbed06862bcbe2f7d2}\label{protocol_tencent_session_delegate-p_ae464b20ef11dd5fbed06862bcbe2f7d2}} 
+\index{Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}!upload\+Pic\+Response\+:@{upload\+Pic\+Response\+:}}
+\index{upload\+Pic\+Response\+:@{upload\+Pic\+Response\+:}!Tencent\+Session\+Delegate-\/p@{Tencent\+Session\+Delegate-\/p}}
+\subsubsection{\texorpdfstring{upload\+Pic\+Response\+:()}{uploadPicResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) upload\+Pic\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+上传照片到\+Q\+Zone指定相册回调 
+\begin{DoxyParams}{Parameters}
+{\em response} & A\+P\+I返回结果，具体定义参见sdkdef.\+h文件中\mbox{\hyperlink{interface_a_p_i_response}{A\+P\+I\+Response}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+正确返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 错误返回示例\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+
+\end{DoxyRemark}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Public/\+U\+Meng\+U\+Share/\+Tencent\+Open\+A\+P\+I/Tencent\+O\+Auth.\+h\end{DoxyCompactItemize}

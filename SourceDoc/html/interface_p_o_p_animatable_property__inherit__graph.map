@@ -1,0 +1,6 @@
+<map id="POPAnimatableProperty" name="POPAnimatableProperty">
+<area shape="rect" id="node5" href="$interface_p_o_p_concrete_animatable_property.html" title="POPConcreteAnimatableProperty" alt="" coords="419,5,639,31"/>
+<area shape="rect" id="node6" href="$interface_p_o_p_mutable_animatable_property.html" title="POPMutableAnimatableProperty" alt="" coords="422,55,636,80"/>
+<area shape="rect" id="node7" href="$interface_p_o_p_placeholder_animatable_property.html" title="POPPlaceholderAnimatable\lProperty" alt="" coords="436,104,622,143"/>
+<area shape="rect" id="node8" href="$interface_p_o_p_static_animatable_property.html" title="POPStaticAnimatableProperty" alt="" coords="429,167,629,192"/>
+</map>

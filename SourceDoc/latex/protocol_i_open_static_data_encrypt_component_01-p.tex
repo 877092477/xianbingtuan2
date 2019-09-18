@@ -1,0 +1,182 @@
+\hypertarget{protocol_i_open_static_data_encrypt_component_01-p}{}\section{$<$I\+Open\+Static\+Data\+Encrypt\+Component $>$ Protocol Reference}
+\label{protocol_i_open_static_data_encrypt_component_01-p}\index{$<$\+I\+Open\+Static\+Data\+Encrypt\+Component $>$@{$<$\+I\+Open\+Static\+Data\+Encrypt\+Component $>$}}
+
+
+{\ttfamily \#import $<$I\+Open\+Static\+Data\+Encrypt\+Component.\+h$>$}
+
+
+
+Inheritance diagram for $<$I\+Open\+Static\+Data\+Encrypt\+Component $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{protocol_i_open_static_data_encrypt_component_01-p__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for $<$I\+Open\+Static\+Data\+Encrypt\+Component $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{protocol_i_open_static_data_encrypt_component_01-p__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\+S\+String $\ast$) -\/ \mbox{\hyperlink{protocol_i_open_static_data_encrypt_component_01-p_ae9cf27ee8ba201a8301ed2203f054a91}{static\+Safe\+Encrypt\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:}}
+\item 
+(N\+S\+String $\ast$) -\/ \mbox{\hyperlink{protocol_i_open_static_data_encrypt_component_01-p_a13515b4080b8829fdb8a08d432498fed}{static\+Safe\+Decrypt\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:}}
+\item 
+(N\+S\+Data $\ast$) -\/ \mbox{\hyperlink{protocol_i_open_static_data_encrypt_component_01-p_a7221e47b36d729180d20d1efbaedde78}{static\+Binary\+Safe\+Encrypt\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:}}
+\item 
+(N\+S\+Data $\ast$) -\/ \mbox{\hyperlink{protocol_i_open_static_data_encrypt_component_01-p_a55b365d73c01bf7ad325985bbd83ee64}{static\+Binary\+Safe\+Decrypt\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:}}
+\item 
+(N\+S\+Data $\ast$) -\/ \mbox{\hyperlink{protocol_i_open_static_data_encrypt_component_01-p_a907c76770df9f876dfd14da3b81c75d0}{static\+Binary\+Safe\+Encrypt\+No\+B64\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:}}
+\item 
+(N\+S\+Data $\ast$) -\/ \mbox{\hyperlink{protocol_i_open_static_data_encrypt_component_01-p_ad03f7147c6e686a8dfa8a25d9de50083}{static\+Binary\+Safe\+Decrypt\+No\+B64\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+静态加解密算法 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{protocol_i_open_static_data_encrypt_component_01-p_a55b365d73c01bf7ad325985bbd83ee64}\label{protocol_i_open_static_data_encrypt_component_01-p_a55b365d73c01bf7ad325985bbd83ee64}} 
+\index{I\+Open\+Static\+Data\+Encrypt\+Component -\/p@{I\+Open\+Static\+Data\+Encrypt\+Component -\/p}!static\+Binary\+Safe\+Decrypt\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:@{static\+Binary\+Safe\+Decrypt\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:}}
+\index{static\+Binary\+Safe\+Decrypt\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:@{static\+Binary\+Safe\+Decrypt\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:}!I\+Open\+Static\+Data\+Encrypt\+Component -\/p@{I\+Open\+Static\+Data\+Encrypt\+Component -\/p}}
+\subsubsection{\texorpdfstring{static\+Binary\+Safe\+Decrypt\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:()}{staticBinarySafeDecrypt:forKey:forNeedProcessValue:authCode:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Data$\ast$ I\+Open\+Static\+Data\+Encrypt\+Component) static\+Binary\+Safe\+Decrypt\+: \begin{DoxyParamCaption}\item[{(N\+S\+Integer)}]{mode }\item[{forKey:(N\+S\+String $\ast$)}]{key }\item[{forNeedProcessValue:(N\+S\+Data $\ast$)}]{need\+Process\+Value }\item[{authCode:(N\+S\+String $\ast$)}]{auth\+Code }\end{DoxyParamCaption}}
+
+传入解密算法,使用的key，需要处理的数据，生成解密的字符数组结果返回
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & 算法，定义见\+Open\+Static\+Data\+Store\+Define.\+h\\
+\hline
+{\em key} & 安全key，用于获取内嵌的key\+Data\\
+\hline
+{\em need\+Process\+Value} & 需要解密的数据\\
+\hline
+{\em auth\+Code} & S\+D\+K的授权码，不传或为空串，使用默认加密文件\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+返回解密的字符数组结果，失败时返回nil 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_i_open_static_data_encrypt_component_01-p_ad03f7147c6e686a8dfa8a25d9de50083}\label{protocol_i_open_static_data_encrypt_component_01-p_ad03f7147c6e686a8dfa8a25d9de50083}} 
+\index{I\+Open\+Static\+Data\+Encrypt\+Component -\/p@{I\+Open\+Static\+Data\+Encrypt\+Component -\/p}!static\+Binary\+Safe\+Decrypt\+No\+B64\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:@{static\+Binary\+Safe\+Decrypt\+No\+B64\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:}}
+\index{static\+Binary\+Safe\+Decrypt\+No\+B64\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:@{static\+Binary\+Safe\+Decrypt\+No\+B64\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:}!I\+Open\+Static\+Data\+Encrypt\+Component -\/p@{I\+Open\+Static\+Data\+Encrypt\+Component -\/p}}
+\subsubsection{\texorpdfstring{static\+Binary\+Safe\+Decrypt\+No\+B64\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:()}{staticBinarySafeDecryptNoB64:forKey:forNeedProcessValue:authCode:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Data$\ast$ I\+Open\+Static\+Data\+Encrypt\+Component) static\+Binary\+Safe\+Decrypt\+No\+B64\+: \begin{DoxyParamCaption}\item[{(N\+S\+Integer)}]{mode }\item[{forKey:(N\+S\+String $\ast$)}]{key }\item[{forNeedProcessValue:(N\+S\+Data $\ast$)}]{need\+Process\+Value }\item[{authCode:(N\+S\+String $\ast$)}]{auth\+Code }\end{DoxyParamCaption}}
+
+传入解密算法,使用的key，需要处理的数据，生成解密的字符数组结果返回(static\+Binary\+Safe\+Encrypt\+No\+B64对应的解密接口)
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & 算法，定义见\+Open\+Static\+Data\+Store\+Define.\+h\\
+\hline
+{\em key} & 安全key，用于获取内嵌的key\+Data\\
+\hline
+{\em need\+Process\+Value} & 需要解密的数据\\
+\hline
+{\em auth\+Code} & S\+D\+K的授权码，不传或为空串，使用默认加密文件\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+返回解密的字符数组结果，失败时返回nil 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_i_open_static_data_encrypt_component_01-p_a7221e47b36d729180d20d1efbaedde78}\label{protocol_i_open_static_data_encrypt_component_01-p_a7221e47b36d729180d20d1efbaedde78}} 
+\index{I\+Open\+Static\+Data\+Encrypt\+Component -\/p@{I\+Open\+Static\+Data\+Encrypt\+Component -\/p}!static\+Binary\+Safe\+Encrypt\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:@{static\+Binary\+Safe\+Encrypt\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:}}
+\index{static\+Binary\+Safe\+Encrypt\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:@{static\+Binary\+Safe\+Encrypt\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:}!I\+Open\+Static\+Data\+Encrypt\+Component -\/p@{I\+Open\+Static\+Data\+Encrypt\+Component -\/p}}
+\subsubsection{\texorpdfstring{static\+Binary\+Safe\+Encrypt\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:()}{staticBinarySafeEncrypt:forKey:forNeedProcessValue:authCode:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Data$\ast$ I\+Open\+Static\+Data\+Encrypt\+Component) static\+Binary\+Safe\+Encrypt\+: \begin{DoxyParamCaption}\item[{(N\+S\+Integer)}]{mode }\item[{forKey:(N\+S\+String $\ast$)}]{key }\item[{forNeedProcessValue:(N\+S\+Data $\ast$)}]{need\+Process\+Value }\item[{authCode:(N\+S\+String $\ast$)}]{auth\+Code }\end{DoxyParamCaption}}
+
+传入加密算法,使用的key，需要处理的数据，生成加密的字符数组结果返回
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & 算法，定义见\+Open\+Static\+Data\+Store\+Define.\+h\\
+\hline
+{\em key} & 安全key，用于获取内嵌的key\+Data\\
+\hline
+{\em need\+Process\+Value} & 需要加密的数据\\
+\hline
+{\em auth\+Code} & S\+D\+K的授权码，不传或为空串，使用默认加密文件\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+返回加密的字符数组结果，失败时返回nil 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_i_open_static_data_encrypt_component_01-p_a907c76770df9f876dfd14da3b81c75d0}\label{protocol_i_open_static_data_encrypt_component_01-p_a907c76770df9f876dfd14da3b81c75d0}} 
+\index{I\+Open\+Static\+Data\+Encrypt\+Component -\/p@{I\+Open\+Static\+Data\+Encrypt\+Component -\/p}!static\+Binary\+Safe\+Encrypt\+No\+B64\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:@{static\+Binary\+Safe\+Encrypt\+No\+B64\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:}}
+\index{static\+Binary\+Safe\+Encrypt\+No\+B64\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:@{static\+Binary\+Safe\+Encrypt\+No\+B64\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:}!I\+Open\+Static\+Data\+Encrypt\+Component -\/p@{I\+Open\+Static\+Data\+Encrypt\+Component -\/p}}
+\subsubsection{\texorpdfstring{static\+Binary\+Safe\+Encrypt\+No\+B64\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:()}{staticBinarySafeEncryptNoB64:forKey:forNeedProcessValue:authCode:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+Data$\ast$ I\+Open\+Static\+Data\+Encrypt\+Component) static\+Binary\+Safe\+Encrypt\+No\+B64\+: \begin{DoxyParamCaption}\item[{(N\+S\+Integer)}]{mode }\item[{forKey:(N\+S\+String $\ast$)}]{key }\item[{forNeedProcessValue:(N\+S\+Data $\ast$)}]{need\+Process\+Value }\item[{authCode:(N\+S\+String $\ast$)}]{auth\+Code }\end{DoxyParamCaption}}
+
+传入加密算法,使用的key，需要处理的数据，生成加密的字符数组结果返回(与static\+Binary\+Safe\+Encrypt接口区别在于：对加密结果不做base64)
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & 算法，定义见\+Open\+Static\+Data\+Store\+Define.\+h\\
+\hline
+{\em key} & 安全key，用于获取内嵌的key\+Data\\
+\hline
+{\em need\+Process\+Value} & 需要加密的数据\\
+\hline
+{\em auth\+Code} & S\+D\+K的授权码，不传或为空串，使用默认加密文件\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+返回加密的字符数组结果，失败时返回nil 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_i_open_static_data_encrypt_component_01-p_a13515b4080b8829fdb8a08d432498fed}\label{protocol_i_open_static_data_encrypt_component_01-p_a13515b4080b8829fdb8a08d432498fed}} 
+\index{I\+Open\+Static\+Data\+Encrypt\+Component -\/p@{I\+Open\+Static\+Data\+Encrypt\+Component -\/p}!static\+Safe\+Decrypt\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:@{static\+Safe\+Decrypt\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:}}
+\index{static\+Safe\+Decrypt\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:@{static\+Safe\+Decrypt\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:}!I\+Open\+Static\+Data\+Encrypt\+Component -\/p@{I\+Open\+Static\+Data\+Encrypt\+Component -\/p}}
+\subsubsection{\texorpdfstring{static\+Safe\+Decrypt\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:()}{staticSafeDecrypt:forKey:forNeedProcessValue:authCode:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$ I\+Open\+Static\+Data\+Encrypt\+Component) static\+Safe\+Decrypt\+: \begin{DoxyParamCaption}\item[{(N\+S\+Integer)}]{mode }\item[{forKey:(N\+S\+String $\ast$)}]{key }\item[{forNeedProcessValue:(N\+S\+String $\ast$)}]{need\+Process\+Value }\item[{authCode:(N\+S\+String $\ast$)}]{auth\+Code }\end{DoxyParamCaption}}
+
+传入解密算法,使用的key，需要处理的数据，生成解密结果返回
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & 算法，定义见\+Open\+Static\+Data\+Store\+Define.\+h\\
+\hline
+{\em key} & 安全key，用于获取内嵌的key\+Data\\
+\hline
+{\em need\+Process\+Value} & 需要加密的数据\\
+\hline
+{\em auth\+Code} & S\+D\+K的授权码，不传或为空串，使用默认加密文件\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+返回解密的字符串，失败时返回nil 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_i_open_static_data_encrypt_component_01-p_ae9cf27ee8ba201a8301ed2203f054a91}\label{protocol_i_open_static_data_encrypt_component_01-p_ae9cf27ee8ba201a8301ed2203f054a91}} 
+\index{I\+Open\+Static\+Data\+Encrypt\+Component -\/p@{I\+Open\+Static\+Data\+Encrypt\+Component -\/p}!static\+Safe\+Encrypt\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:@{static\+Safe\+Encrypt\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:}}
+\index{static\+Safe\+Encrypt\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:@{static\+Safe\+Encrypt\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:}!I\+Open\+Static\+Data\+Encrypt\+Component -\/p@{I\+Open\+Static\+Data\+Encrypt\+Component -\/p}}
+\subsubsection{\texorpdfstring{static\+Safe\+Encrypt\+:for\+Key\+:for\+Need\+Process\+Value\+:auth\+Code\+:()}{staticSafeEncrypt:forKey:forNeedProcessValue:authCode:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$ I\+Open\+Static\+Data\+Encrypt\+Component) static\+Safe\+Encrypt\+: \begin{DoxyParamCaption}\item[{(N\+S\+Integer)}]{mode }\item[{forKey:(N\+S\+String $\ast$)}]{key }\item[{forNeedProcessValue:(N\+S\+String $\ast$)}]{need\+Process\+Value }\item[{authCode:(N\+S\+String $\ast$)}]{auth\+Code }\end{DoxyParamCaption}}
+
+传入加密算法,使用的key，需要处理的数据，生成加密结果返回
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & 算法，定义见\+Open\+Static\+Data\+Store\+Define.\+h\\
+\hline
+{\em key} & 安全key，用于获取内嵌的key\+Data\\
+\hline
+{\em need\+Process\+Value} & 需要加密的数据\\
+\hline
+{\em auth\+Code} & S\+D\+K的授权码，不传或为空串，使用默认加密文件\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+返回加密的字符串，失败时返回nil 
+\end{DoxyReturn}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Security\+Guard\+S\+D\+K.\+framework/\+Headers/\+Open/\+Open\+Static\+Data\+Encrypt/I\+Open\+Static\+Data\+Encrypt\+Component.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,26 @@
+//
+//  FNStoreGoodsManagerController.h
+//  新版嗨如意
+//
+//  Created by Weller on 2019/8/8.
+//  Copyright © 2019年 方诺科技. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@class FNStoreGoodsManagerController;
+@protocol FNStoreGoodsManagerControllerDelegate <NSObject>
+
+- (void)headerViewDidSortClick: (FNStoreGoodsManagerController*)headerView;
+
+@end
+
+@interface FNStoreGoodsManagerController : SuperViewController
+
+@property (nonatomic, weak) id<FNStoreGoodsManagerControllerDelegate> delegate;
+
+@end
+
+NS_ASSUME_NONNULL_END

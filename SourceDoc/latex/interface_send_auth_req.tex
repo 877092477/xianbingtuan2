@@ -1,0 +1,73 @@
+\hypertarget{interface_send_auth_req}{}\section{Send\+Auth\+Req Class Reference}
+\label{interface_send_auth_req}\index{Send\+Auth\+Req@{Send\+Auth\+Req}}
+
+
+第三方程序向微信终端请求认证的消息结构  
+
+
+
+
+{\ttfamily \#import $<$W\+X\+Api\+Object.\+h$>$}
+
+
+
+Inheritance diagram for Send\+Auth\+Req\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{interface_send_auth_req__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Send\+Auth\+Req\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{interface_send_auth_req__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_send_auth_req_a14d6333822e8c12b42d4d62c3e906a1a}{scope}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_send_auth_req_a7e9608c87df942448564ba1be8d11ac5}{state}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+第三方程序向微信终端请求认证的消息结构 
+
+第三方程序要向微信申请认证，并请求某些权限，需要调用\+W\+X\+Api的send\+Req成员函数， 向微信终端发送一个\+Send\+Auth\+Req消息结构。微信终端处理完后会向第三方程序发送一个处理结果。 \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interface_send_auth_resp}{Send\+Auth\+Resp}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_send_auth_req_a14d6333822e8c12b42d4d62c3e906a1a}\label{interface_send_auth_req_a14d6333822e8c12b42d4d62c3e906a1a}} 
+\index{Send\+Auth\+Req@{Send\+Auth\+Req}!scope@{scope}}
+\index{scope@{scope}!Send\+Auth\+Req@{Send\+Auth\+Req}}
+\subsubsection{\texorpdfstring{scope}{scope}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) scope\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+第三方程序要向微信申请认证，并请求某些权限，需要调用\+W\+X\+Api的send\+Req成员函数，向微信终端发送一个\+Send\+Auth\+Req消息结构。微信终端处理完后会向第三方程序发送一个处理结果。 \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interface_send_auth_resp}{Send\+Auth\+Resp}} 
+\end{DoxySeeAlso}
+\begin{DoxyNote}{Note}
+scope字符串长度不能超过1K 
+\end{DoxyNote}
+\mbox{\Hypertarget{interface_send_auth_req_a7e9608c87df942448564ba1be8d11ac5}\label{interface_send_auth_req_a7e9608c87df942448564ba1be8d11ac5}} 
+\index{Send\+Auth\+Req@{Send\+Auth\+Req}!state@{state}}
+\index{state@{state}!Send\+Auth\+Req@{Send\+Auth\+Req}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) state\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+第三方程序本身用来标识其请求的唯一性，最后跳转回第三方程序时，由微信终端回传。 \begin{DoxyNote}{Note}
+state字符串长度不能超过1K 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+U\+Meng\+U\+Share/W\+X\+Api\+Object.\+h\end{DoxyCompactItemize}

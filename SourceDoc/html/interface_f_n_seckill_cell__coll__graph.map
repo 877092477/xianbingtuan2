@@ -1,0 +1,5 @@
+<map id="FNSeckillCell" name="FNSeckillCell">
+<area shape="rect" id="node2" href="$interface_super_table_view_cell.html" title="SuperTableViewCell" alt="" coords="5,155,146,180"/>
+<area shape="rect" id="node4" href="$interface_f_n_h_sec_kill_proudct_model.html" title="FNHSecKillProudctModel" alt="" coords="170,155,341,180"/>
+<area shape="rect" id="node5" href="$interface_f_n_base_product_model.html" title="FNBaseProductModel" alt="" coords="180,80,331,105"/>
+</map>

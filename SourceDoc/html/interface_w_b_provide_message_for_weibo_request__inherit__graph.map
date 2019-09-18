@@ -1,0 +1,4 @@
+<map id="WBProvideMessageForWeiboRequest" name="WBProvideMessageForWeiboRequest">
+<area shape="rect" id="node2" href="$interface_w_b_base_request.html" title="WBBaseRequest" alt="" coords="44,152,167,177"/>
+<area shape="rect" id="node3" href="$interface_w_b_data_transfer_object.html" title="WBDataTransferObject" alt="" coords="26,79,185,104"/>
+</map>

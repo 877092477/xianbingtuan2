@@ -1,0 +1,55 @@
+\hypertarget{interface_t_b_s_d_k_server_queue}{}\section{T\+B\+S\+D\+K\+Server\+Queue Class Reference}
+\label{interface_t_b_s_d_k_server_queue}\index{T\+B\+S\+D\+K\+Server\+Queue@{T\+B\+S\+D\+K\+Server\+Queue}}
+
+
+{\ttfamily \#import $<$T\+B\+S\+D\+K\+Server\+Queue.\+h$>$}
+
+
+
+Inheritance diagram for T\+B\+S\+D\+K\+Server\+Queue\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{interface_t_b_s_d_k_server_queue__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for T\+B\+S\+D\+K\+Server\+Queue\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{interface_t_b_s_d_k_server_queue__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_server_queue_a9c7f32b1968018f6ace079bd76f8f67d}\label{interface_t_b_s_d_k_server_queue_a9c7f32b1968018f6ace079bd76f8f67d}} 
+(N\+S\+Array $\ast$) -\/ \mbox{\hyperlink{interface_t_b_s_d_k_server_queue_a9c7f32b1968018f6ace079bd76f8f67d}{get\+Request\+For\+Delegate\+:}}
+\begin{DoxyCompactList}\small\item\em 获取delegate\+\_\+对应的符合\+T\+B\+S\+D\+K\+Request\+Queue\+Protocol协议的对象。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_server_queue_a601e851d54ab2dfea01911a71e272170}\label{interface_t_b_s_d_k_server_queue_a601e851d54ab2dfea01911a71e272170}} 
+(void) -\/ \mbox{\hyperlink{interface_t_b_s_d_k_server_queue_a601e851d54ab2dfea01911a71e272170}{cancel\+Request\+Network\+And\+Clear\+Delegate\+For\+Delegate\+:}}
+\begin{DoxyCompactList}\small\item\em 退出符合\+T\+B\+S\+D\+K\+Request\+Queue\+Protocol协议的对象的网络请求，并把符合\+T\+B\+S\+D\+K\+Request\+Queue\+Protocol协议的对象的delegate设置为nil。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_server_queue_a1f49ce0495f9d1b456b167e0b85168ab}\label{interface_t_b_s_d_k_server_queue_a1f49ce0495f9d1b456b167e0b85168ab}} 
+(void) -\/ \mbox{\hyperlink{interface_t_b_s_d_k_server_queue_a1f49ce0495f9d1b456b167e0b85168ab}{add\+Request\+:}}
+\begin{DoxyCompactList}\small\item\em 添加一个\+T\+B\+S\+D\+K\+Server到请求队列 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_server_queue_a9a49c2b4d5d7120147b66cb1f24a4902}\label{interface_t_b_s_d_k_server_queue_a9a49c2b4d5d7120147b66cb1f24a4902}} 
+(void) -\/ \mbox{\hyperlink{interface_t_b_s_d_k_server_queue_a9a49c2b4d5d7120147b66cb1f24a4902}{remove\+Request\+:}}
+\begin{DoxyCompactList}\small\item\em 从请求队列中删除一个\+T\+B\+S\+D\+K\+Server。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_t_b_s_d_k_server_queue_a46810cd71718a2bf1d7119e1eb3f6f7b}\label{interface_t_b_s_d_k_server_queue_a46810cd71718a2bf1d7119e1eb3f6f7b}} 
+(\mbox{\hyperlink{interface_t_b_s_d_k_server_queue}{T\+B\+S\+D\+K\+Server\+Queue}} $\ast$) + {\bfseries share\+Instance}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+T\+B\+S\+D\+K的请求池。
+
+T\+B\+S\+D\+K的请求池，是单例模式。保存了\+T\+B\+S\+D\+K的所有的网络请求 用户可以获取获取自己的网络请求，而不需要将网络请求保存为实例变量 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Open\+Mtop\+S\+D\+K.\+framework/\+Headers/T\+B\+S\+D\+K\+Server\+Queue.\+h\end{DoxyCompactItemize}

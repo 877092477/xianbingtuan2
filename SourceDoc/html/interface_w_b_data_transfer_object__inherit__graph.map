@@ -1,0 +1,16 @@
+<map id="WBDataTransferObject" name="WBDataTransferObject">
+<area shape="rect" id="node3" href="$interface_w_b_base_request.html" title="WBBaseRequest" alt="" coords="344,174,466,200"/>
+<area shape="rect" id="node10" href="$interface_w_b_base_response.html" title="WBBaseResponse" alt="" coords="338,428,472,453"/>
+<area shape="rect" id="node4" href="$interface_w_b_authorize_request.html" title="WBAuthorizeRequest" alt="" coords="572,13,720,38"/>
+<area shape="rect" id="node5" href="$interface_w_b_payment_request.html" title="WBPaymentRequest" alt="" coords="573,62,718,88"/>
+<area shape="rect" id="node6" href="$interface_w_b_provide_message_for_weibo_request.html" title="WBProvideMessageForWeibo\lRequest" alt="" coords="546,112,746,150"/>
+<area shape="rect" id="node7" href="$interface_w_b_s_d_k_app_recommend_request.html" title="WBSDKAppRecommendRequest" alt="" coords="536,174,756,200"/>
+<area shape="rect" id="node8" href="$interface_w_b_send_message_to_weibo_request.html" title="WBSendMessageToWeiboRequest" alt="" coords="531,224,761,249"/>
+<area shape="rect" id="node9" href="$interface_w_b_share_message_to_contact_request.html" title="WBShareMessageToContactRequest" alt="" coords="525,273,767,298"/>
+<area shape="rect" id="node11" href="$interface_w_b_authorize_response.html" title="WBAuthorizeResponse" alt="" coords="566,322,726,348"/>
+<area shape="rect" id="node12" href="$interface_w_b_payment_response.html" title="WBPaymentResponse" alt="" coords="568,372,724,397"/>
+<area shape="rect" id="node13" href="$interface_w_b_provide_message_for_weibo_response.html" title="WBProvideMessageForWeibo\lResponse" alt="" coords="546,421,746,460"/>
+<area shape="rect" id="node14" href="$interface_w_b_s_d_k_app_recommend_response.html" title="WBSDKAppRecommendResponse" alt="" coords="531,484,761,509"/>
+<area shape="rect" id="node15" href="$interface_w_b_send_message_to_weibo_response.html" title="WBSendMessageToWeiboResponse" alt="" coords="526,533,766,558"/>
+<area shape="rect" id="node16" href="$interface_w_b_share_message_to_contact_response.html" title="WBShareMessageToContactResponse" alt="" coords="520,582,772,608"/>
+</map>

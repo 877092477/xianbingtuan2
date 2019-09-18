@@ -1,0 +1,128 @@
+\hypertarget{protocol_weibo_s_d_k_delegate_01-p}{}\section{$<$Weibo\+S\+D\+K\+Delegate $>$ Protocol Reference}
+\label{protocol_weibo_s_d_k_delegate_01-p}\index{$<$\+Weibo\+S\+D\+K\+Delegate $>$@{$<$\+Weibo\+S\+D\+K\+Delegate $>$}}
+
+
+{\ttfamily \#import $<$Weibo\+S\+D\+K.\+h$>$}
+
+
+
+Inheritance diagram for $<$Weibo\+S\+D\+K\+Delegate $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{protocol_weibo_s_d_k_delegate_01-p__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for $<$Weibo\+S\+D\+K\+Delegate $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{protocol_weibo_s_d_k_delegate_01-p__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_weibo_s_d_k_delegate_01-p_ab90ef15bbc631a63f2b805b8bab5089e}{did\+Receive\+Weibo\+Request\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_weibo_s_d_k_delegate_01-p_ab644aa5faa87eea8ff974ac274c3c595}{did\+Receive\+Weibo\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_weibo_s_d_k_delegate_01-p_ab90ef15bbc631a63f2b805b8bab5089e}{did\+Receive\+Weibo\+Request\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_weibo_s_d_k_delegate_01-p_ab644aa5faa87eea8ff974ac274c3c595}{did\+Receive\+Weibo\+Response\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_weibo_s_d_k_delegate_01-p_ab90ef15bbc631a63f2b805b8bab5089e}{did\+Receive\+Weibo\+Request\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_weibo_s_d_k_delegate_01-p_ab644aa5faa87eea8ff974ac274c3c595}{did\+Receive\+Weibo\+Response\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+接收并处理来至微博客户端程序的事件消息 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{protocol_weibo_s_d_k_delegate_01-p_ab90ef15bbc631a63f2b805b8bab5089e}\label{protocol_weibo_s_d_k_delegate_01-p_ab90ef15bbc631a63f2b805b8bab5089e}} 
+\index{Weibo\+S\+D\+K\+Delegate -\/p@{Weibo\+S\+D\+K\+Delegate -\/p}!did\+Receive\+Weibo\+Request\+:@{did\+Receive\+Weibo\+Request\+:}}
+\index{did\+Receive\+Weibo\+Request\+:@{did\+Receive\+Weibo\+Request\+:}!Weibo\+S\+D\+K\+Delegate -\/p@{Weibo\+S\+D\+K\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{did\+Receive\+Weibo\+Request\+:()}{didReceiveWeiboRequest:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (void Weibo\+S\+D\+K\+Delegate) did\+Receive\+Weibo\+Request\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_b_base_request}{W\+B\+Base\+Request}} $\ast$)}]{request }\end{DoxyParamCaption}}
+
+收到一个来自微博客户端程序的请求
+
+收到微博的请求后，第三方应用应该按照请求类型进行处理，处理完后必须通过 \mbox{[}\mbox{\hyperlink{interface_weibo_s_d_k}{Weibo\+S\+DK}} send\+Response\+:\mbox{]} 将结果回传给微博 
+\begin{DoxyParams}{Parameters}
+{\em request} & 具体的请求对象 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_weibo_s_d_k_delegate_01-p_ab90ef15bbc631a63f2b805b8bab5089e}\label{protocol_weibo_s_d_k_delegate_01-p_ab90ef15bbc631a63f2b805b8bab5089e}} 
+\index{Weibo\+S\+D\+K\+Delegate -\/p@{Weibo\+S\+D\+K\+Delegate -\/p}!did\+Receive\+Weibo\+Request\+:@{did\+Receive\+Weibo\+Request\+:}}
+\index{did\+Receive\+Weibo\+Request\+:@{did\+Receive\+Weibo\+Request\+:}!Weibo\+S\+D\+K\+Delegate -\/p@{Weibo\+S\+D\+K\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{did\+Receive\+Weibo\+Request\+:()}{didReceiveWeiboRequest:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (void Weibo\+S\+D\+K\+Delegate) did\+Receive\+Weibo\+Request\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_b_base_request}{W\+B\+Base\+Request}} $\ast$)}]{request }\end{DoxyParamCaption}}
+
+收到一个来自微博客户端程序的请求
+
+收到微博的请求后，第三方应用应该按照请求类型进行处理，处理完后必须通过 \mbox{[}\mbox{\hyperlink{interface_weibo_s_d_k}{Weibo\+S\+DK}} send\+Response\+:\mbox{]} 将结果回传给微博 
+\begin{DoxyParams}{Parameters}
+{\em request} & 具体的请求对象 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_weibo_s_d_k_delegate_01-p_ab90ef15bbc631a63f2b805b8bab5089e}\label{protocol_weibo_s_d_k_delegate_01-p_ab90ef15bbc631a63f2b805b8bab5089e}} 
+\index{Weibo\+S\+D\+K\+Delegate -\/p@{Weibo\+S\+D\+K\+Delegate -\/p}!did\+Receive\+Weibo\+Request\+:@{did\+Receive\+Weibo\+Request\+:}}
+\index{did\+Receive\+Weibo\+Request\+:@{did\+Receive\+Weibo\+Request\+:}!Weibo\+S\+D\+K\+Delegate -\/p@{Weibo\+S\+D\+K\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{did\+Receive\+Weibo\+Request\+:()}{didReceiveWeiboRequest:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (void Weibo\+S\+D\+K\+Delegate) did\+Receive\+Weibo\+Request\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_b_base_request}{W\+B\+Base\+Request}} $\ast$)}]{request }\end{DoxyParamCaption}}
+
+收到一个来自微博客户端程序的请求
+
+收到微博的请求后，第三方应用应该按照请求类型进行处理，处理完后必须通过 \mbox{[}\mbox{\hyperlink{interface_weibo_s_d_k}{Weibo\+S\+DK}} send\+Response\+:\mbox{]} 将结果回传给微博 
+\begin{DoxyParams}{Parameters}
+{\em request} & 具体的请求对象 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_weibo_s_d_k_delegate_01-p_ab644aa5faa87eea8ff974ac274c3c595}\label{protocol_weibo_s_d_k_delegate_01-p_ab644aa5faa87eea8ff974ac274c3c595}} 
+\index{Weibo\+S\+D\+K\+Delegate -\/p@{Weibo\+S\+D\+K\+Delegate -\/p}!did\+Receive\+Weibo\+Response\+:@{did\+Receive\+Weibo\+Response\+:}}
+\index{did\+Receive\+Weibo\+Response\+:@{did\+Receive\+Weibo\+Response\+:}!Weibo\+S\+D\+K\+Delegate -\/p@{Weibo\+S\+D\+K\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{did\+Receive\+Weibo\+Response\+:()}{didReceiveWeiboResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (void Weibo\+S\+D\+K\+Delegate) did\+Receive\+Weibo\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_b_base_response}{W\+B\+Base\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}}
+
+收到一个来自微博客户端程序的响应
+
+收到微博的响应后，第三方应用可以通过响应类型、响应的数据和 \mbox{\hyperlink{interface_w_b_data_transfer_object_ab9b7bf91e1470d29782202c04d1a86fe}{W\+B\+Base\+Response.\+user\+Info}} 中的数据完成自己的功能 
+\begin{DoxyParams}{Parameters}
+{\em response} & 具体的响应对象 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_weibo_s_d_k_delegate_01-p_ab644aa5faa87eea8ff974ac274c3c595}\label{protocol_weibo_s_d_k_delegate_01-p_ab644aa5faa87eea8ff974ac274c3c595}} 
+\index{Weibo\+S\+D\+K\+Delegate -\/p@{Weibo\+S\+D\+K\+Delegate -\/p}!did\+Receive\+Weibo\+Response\+:@{did\+Receive\+Weibo\+Response\+:}}
+\index{did\+Receive\+Weibo\+Response\+:@{did\+Receive\+Weibo\+Response\+:}!Weibo\+S\+D\+K\+Delegate -\/p@{Weibo\+S\+D\+K\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{did\+Receive\+Weibo\+Response\+:()}{didReceiveWeiboResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (void Weibo\+S\+D\+K\+Delegate) did\+Receive\+Weibo\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_b_base_response}{W\+B\+Base\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}}
+
+收到一个来自微博客户端程序的响应
+
+收到微博的响应后，第三方应用可以通过响应类型、响应的数据和 \mbox{\hyperlink{interface_w_b_data_transfer_object_ab9b7bf91e1470d29782202c04d1a86fe}{W\+B\+Base\+Response.\+user\+Info}} 中的数据完成自己的功能 
+\begin{DoxyParams}{Parameters}
+{\em response} & 具体的响应对象 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_weibo_s_d_k_delegate_01-p_ab644aa5faa87eea8ff974ac274c3c595}\label{protocol_weibo_s_d_k_delegate_01-p_ab644aa5faa87eea8ff974ac274c3c595}} 
+\index{Weibo\+S\+D\+K\+Delegate -\/p@{Weibo\+S\+D\+K\+Delegate -\/p}!did\+Receive\+Weibo\+Response\+:@{did\+Receive\+Weibo\+Response\+:}}
+\index{did\+Receive\+Weibo\+Response\+:@{did\+Receive\+Weibo\+Response\+:}!Weibo\+S\+D\+K\+Delegate -\/p@{Weibo\+S\+D\+K\+Delegate -\/p}}
+\subsubsection{\texorpdfstring{did\+Receive\+Weibo\+Response\+:()}{didReceiveWeiboResponse:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (void Weibo\+S\+D\+K\+Delegate) did\+Receive\+Weibo\+Response\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_b_base_response}{W\+B\+Base\+Response}} $\ast$)}]{response }\end{DoxyParamCaption}}
+
+收到一个来自微博客户端程序的响应
+
+收到微博的响应后，第三方应用可以通过响应类型、响应的数据和 \mbox{\hyperlink{interface_w_b_data_transfer_object_ab9b7bf91e1470d29782202c04d1a86fe}{W\+B\+Base\+Response.\+user\+Info}} 中的数据完成自己的功能 
+\begin{DoxyParams}{Parameters}
+{\em response} & 具体的响应对象 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+U\+Meng\+U\+Share/Weibo\+S\+D\+K.\+h\end{DoxyCompactItemize}

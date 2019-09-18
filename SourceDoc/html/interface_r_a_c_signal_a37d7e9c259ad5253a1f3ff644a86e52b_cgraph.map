@@ -1,0 +1,8 @@
+<map id="+[RACSignal merge:]" name="+[RACSignal merge:]">
+<area shape="rect" id="node2" href="$interface_r_a_c_signal.html#a4ba374f148d6e2a0339c4f4202b4dc26" title="+[RACSignal createSignal:]" alt="" coords="200,15,384,40"/>
+<area shape="rect" id="node5" href="$interface_r_a_c_stream.html#a02767823dfe3d4682709e066e15e388c" title="&#45;[RACStream flatten]" alt="" coords="220,65,364,91"/>
+<area shape="rect" id="node3" href="$interface_r_a_c_dynamic_signal.html#aeffa754150754dd6296d5225b5c9c7fe" title="+[RACDynamicSignal\l createSignal:]" alt="" coords="444,5,593,44"/>
+<area shape="rect" id="node4" href="$interface_r_a_c_stream.html#aedc0b75ca3e6d0f81f006c7c3c6a1d76" title="&#45;[RACStream setNameWithFormat:]" alt="" coords="654,12,887,37"/>
+<area shape="rect" id="node6" href="$interface_r_a_c_stream.html#a2441b0306adc6ae2845219f8b116119a" title="&#45;[RACStream flattenMap:]" alt="" coords="432,68,606,93"/>
+<area shape="rect" id="node7" href="$interface_r_a_c_stream.html#a8638bfba1497aa1b14b098857b4c62e2" title="&#45;[RACStream bind:]" alt="" coords="702,68,839,93"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="QQBaseResp" name="QQBaseResp">
+<area shape="rect" id="node3" href="$interface_get_message_from_q_q_resp.html" title="GetMessageFromQQResp" alt="" coords="5,152,185,177"/>
+<area shape="rect" id="node4" href="$interface_send_message_to_q_q_resp.html" title="SendMessageToQQResp" alt="" coords="209,152,382,177"/>
+<area shape="rect" id="node5" href="$interface_show_message_from_q_q_resp.html" title="ShowMessageFromQQResp" alt="" coords="406,152,598,177"/>
+</map>

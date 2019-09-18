@@ -1,0 +1,86 @@
+\hypertarget{interface_w_x_card_item}{}\section{W\+X\+Card\+Item Class Reference}
+\label{interface_w_x_card_item}\index{W\+X\+Card\+Item@{W\+X\+Card\+Item}}
+
+
+Inheritance diagram for W\+X\+Card\+Item\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=153pt]{interface_w_x_card_item__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for W\+X\+Card\+Item\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=153pt]{interface_w_x_card_item__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_w_x_card_item_af414b6fb55bc3a64f412d48ca9482712}{card\+Id}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_w_x_card_item_afc1c448b8e56aba3534151a587935036}{ext\+Msg}}
+\item 
+U\+Int32 \mbox{\hyperlink{interface_w_x_card_item_a42b30677d8ca3f8d01b187371a21badf}{card\+State}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_w_x_card_item_a50a4e19e9225ca45b8618c73155b4b63}{encrypt\+Code}}
+\item 
+N\+S\+String $\ast$ \mbox{\hyperlink{interface_w_x_card_item_a57f847df7c17c0cbcfb0ecdf1eee19b0}{app\+ID}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_w_x_card_item_a57f847df7c17c0cbcfb0ecdf1eee19b0}\label{interface_w_x_card_item_a57f847df7c17c0cbcfb0ecdf1eee19b0}} 
+\index{W\+X\+Card\+Item@{W\+X\+Card\+Item}!app\+ID@{app\+ID}}
+\index{app\+ID@{app\+ID}!W\+X\+Card\+Item@{W\+X\+Card\+Item}}
+\subsubsection{\texorpdfstring{app\+ID}{appID}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) app\+ID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+\begin{DoxyAttention}{Attention}
+req不需要填，choose\+Card返回的。 
+\end{DoxyAttention}
+\mbox{\Hypertarget{interface_w_x_card_item_af414b6fb55bc3a64f412d48ca9482712}\label{interface_w_x_card_item_af414b6fb55bc3a64f412d48ca9482712}} 
+\index{W\+X\+Card\+Item@{W\+X\+Card\+Item}!card\+Id@{card\+Id}}
+\index{card\+Id@{card\+Id}!W\+X\+Card\+Item@{W\+X\+Card\+Item}}
+\subsubsection{\texorpdfstring{card\+Id}{cardId}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) card\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+卡id \begin{DoxyAttention}{Attention}
+长度不能超过1024字节 
+\end{DoxyAttention}
+\mbox{\Hypertarget{interface_w_x_card_item_a42b30677d8ca3f8d01b187371a21badf}\label{interface_w_x_card_item_a42b30677d8ca3f8d01b187371a21badf}} 
+\index{W\+X\+Card\+Item@{W\+X\+Card\+Item}!card\+State@{card\+State}}
+\index{card\+State@{card\+State}!W\+X\+Card\+Item@{W\+X\+Card\+Item}}
+\subsubsection{\texorpdfstring{card\+State}{cardState}}
+{\footnotesize\ttfamily -\/ (U\+Int32) card\+State\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+\begin{DoxyAttention}{Attention}
+卡的状态,req不需要填。resp\+:0为未添加，1为已添加。 
+\end{DoxyAttention}
+\mbox{\Hypertarget{interface_w_x_card_item_a50a4e19e9225ca45b8618c73155b4b63}\label{interface_w_x_card_item_a50a4e19e9225ca45b8618c73155b4b63}} 
+\index{W\+X\+Card\+Item@{W\+X\+Card\+Item}!encrypt\+Code@{encrypt\+Code}}
+\index{encrypt\+Code@{encrypt\+Code}!W\+X\+Card\+Item@{W\+X\+Card\+Item}}
+\subsubsection{\texorpdfstring{encrypt\+Code}{encryptCode}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) encrypt\+Code\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+\begin{DoxyAttention}{Attention}
+req不需要填，choose\+Card返回的。 
+\end{DoxyAttention}
+\mbox{\Hypertarget{interface_w_x_card_item_afc1c448b8e56aba3534151a587935036}\label{interface_w_x_card_item_afc1c448b8e56aba3534151a587935036}} 
+\index{W\+X\+Card\+Item@{W\+X\+Card\+Item}!ext\+Msg@{ext\+Msg}}
+\index{ext\+Msg@{ext\+Msg}!W\+X\+Card\+Item@{W\+X\+Card\+Item}}
+\subsubsection{\texorpdfstring{ext\+Msg}{extMsg}}
+{\footnotesize\ttfamily -\/ (N\+S\+String $\ast$) ext\+Msg\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+ext信息 \begin{DoxyAttention}{Attention}
+长度不能超过2024字节 
+\end{DoxyAttention}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Private/\+U\+Meng\+U\+Share/W\+X\+Api\+Object.\+h\end{DoxyCompactItemize}

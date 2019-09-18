@@ -1,0 +1,12 @@
+<map id="&#45;[RACSignal bufferWithTime:onScheduler:]" name="&#45;[RACSignal bufferWithTime:onScheduler:]">
+<area shape="rect" id="node2" href="$interface_r_a_c_scheduler.html#aec2dc59d7f2bd10dc318429167154821" title="+[RACScheduler immediate\lScheduler]" alt="" coords="247,5,434,44"/>
+<area shape="rect" id="node3" href="$interface_r_a_c_signal.html#a4ba374f148d6e2a0339c4f4202b4dc26" title="+[RACSignal createSignal:]" alt="" coords="249,68,432,93"/>
+<area shape="rect" id="node5" href="$interface_r_a_c_stream.html#aedc0b75ca3e6d0f81f006c7c3c6a1d76" title="&#45;[RACStream setNameWithFormat:]" alt="" coords="741,91,975,116"/>
+<area shape="rect" id="node6" href="$interface_r_a_c_tuple.html#a3a1907a961d70cac573b0a4daea43834" title="Creates a new tuple out of the array. Does not convert nulls to nils. " alt="" coords="241,169,440,208"/>
+<area shape="rect" id="node8" href="$interface_r_a_c_signal.html#a50b7b51715316c5da372cc0cf96039f6" title="Convenience method to subscribe to the next, completed, and error events. " alt="" coords="249,232,432,271"/>
+<area shape="rect" id="node10" href="$interface_r_a_c_scheduler.html#acc37181185138cba688a6e90da1a62fe" title="&#45;[RACScheduler afterDelay\l:schedule:]" alt="" coords="249,295,432,333"/>
+<area shape="rect" id="node4" href="$interface_r_a_c_dynamic_signal.html#aeffa754150754dd6296d5225b5c9c7fe" title="+[RACDynamicSignal\l createSignal:]" alt="" coords="515,55,665,93"/>
+<area shape="rect" id="node7" href="$interface_r_a_c_tuple.html#afe0710811403bf06fd2eda9062433109" title="+[RACTuple tupleWithObjects\lFromArray:convertNullsToNils:]" alt="" coords="488,169,693,208"/>
+<area shape="rect" id="node9" href="$interface_r_a_c_signal.html#aeab76d632d98bbc321ec5e19575377eb" title="&#45;[RACSignal subscribe:]" alt="" coords="509,239,672,264"/>
+<area shape="rect" id="node11" href="$interface_r_a_c_scheduler.html#ada2a84ec6cf8eed043bcef654334c601" title="&#45;[RACScheduler after\l:schedule:]" alt="" coords="516,295,664,333"/>
+</map>

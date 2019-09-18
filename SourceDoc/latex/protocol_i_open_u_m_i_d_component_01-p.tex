@@ -1,0 +1,132 @@
+\hypertarget{protocol_i_open_u_m_i_d_component_01-p}{}\section{$<$I\+Open\+U\+M\+I\+D\+Component $>$ Protocol Reference}
+\label{protocol_i_open_u_m_i_d_component_01-p}\index{$<$\+I\+Open\+U\+M\+I\+D\+Component $>$@{$<$\+I\+Open\+U\+M\+I\+D\+Component $>$}}
+
+
+Inheritance diagram for $<$I\+Open\+U\+M\+I\+D\+Component $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{protocol_i_open_u_m_i_d_component_01-p__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for $<$I\+Open\+U\+M\+I\+D\+Component $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{protocol_i_open_u_m_i_d_component_01-p__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_i_open_u_m_i_d_component_01-p_a863a2ebe56b81d8523ae881c6521af6b}{register\+Init\+Listener\+:}}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{protocol_i_open_u_m_i_d_component_01-p_ab8b891892a5d25fac9dc0aaf6c937e18}{init\+U\+M\+I\+D\+:environment\+:auth\+Code\+:handler\+:}}
+\item 
+(N\+S\+String $\ast$) -\/ \mbox{\hyperlink{protocol_i_open_u_m_i_d_component_01-p_a09ce1246774fc70ead4a86e450fd7d73}{get\+Security\+Token}}
+\item 
+(N\+S\+String $\ast$) -\/ \mbox{\hyperlink{protocol_i_open_u_m_i_d_component_01-p_aec10b3ad4633ae24d4970031cc6424ea}{get\+Security\+Token\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_i_open_u_m_i_d_component_01-p_a566a947de77796e00a566f76bd997a94}{set\+Online\+Host\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_i_open_u_m_i_d_component_01-p_a7690ec941a6f7877ea574bff0a0b88f6}{reset\+Client\+Data\+:}}
+\item 
+(N\+S\+String $\ast$) -\/ \mbox{\hyperlink{protocol_i_open_u_m_i_d_component_01-p_a076c29135560130eb1ed1061b4ba6311}{get\+U\+M\+I\+D\+Version}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{protocol_i_open_u_m_i_d_component_01-p_a09ce1246774fc70ead4a86e450fd7d73}\label{protocol_i_open_u_m_i_d_component_01-p_a09ce1246774fc70ead4a86e450fd7d73}} 
+\index{I\+Open\+U\+M\+I\+D\+Component -\/p@{I\+Open\+U\+M\+I\+D\+Component -\/p}!get\+Security\+Token@{get\+Security\+Token}}
+\index{get\+Security\+Token@{get\+Security\+Token}!I\+Open\+U\+M\+I\+D\+Component -\/p@{I\+Open\+U\+M\+I\+D\+Component -\/p}}
+\subsubsection{\texorpdfstring{get\+Security\+Token()}{getSecurityToken()}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$ I\+Open\+U\+M\+I\+D\+Component) get\+Security\+Token \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+返回\+U\+M\+ID Token，长度为32的字符串
+
+\begin{DoxyReturn}{Returns}
+如果失败，返回内容为24个0的字符串 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_i_open_u_m_i_d_component_01-p_aec10b3ad4633ae24d4970031cc6424ea}\label{protocol_i_open_u_m_i_d_component_01-p_aec10b3ad4633ae24d4970031cc6424ea}} 
+\index{I\+Open\+U\+M\+I\+D\+Component -\/p@{I\+Open\+U\+M\+I\+D\+Component -\/p}!get\+Security\+Token\+:@{get\+Security\+Token\+:}}
+\index{get\+Security\+Token\+:@{get\+Security\+Token\+:}!I\+Open\+U\+M\+I\+D\+Component -\/p@{I\+Open\+U\+M\+I\+D\+Component -\/p}}
+\subsubsection{\texorpdfstring{get\+Security\+Token\+:()}{getSecurityToken:()}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$ I\+Open\+U\+M\+I\+D\+Component) get\+Security\+Token\+: \begin{DoxyParamCaption}\item[{(S\+D\+P\+\_\+\+E\+N\+V\+I\+R\+O\+N\+M\+E\+NT)}]{env\+For\+Token }\end{DoxyParamCaption}}
+
+返回\+U\+M\+ID Token，长度为32的字符串
+
+\begin{DoxyReturn}{Returns}
+如果失败，返回内容为24个0的字符串 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_i_open_u_m_i_d_component_01-p_a076c29135560130eb1ed1061b4ba6311}\label{protocol_i_open_u_m_i_d_component_01-p_a076c29135560130eb1ed1061b4ba6311}} 
+\index{I\+Open\+U\+M\+I\+D\+Component -\/p@{I\+Open\+U\+M\+I\+D\+Component -\/p}!get\+U\+M\+I\+D\+Version@{get\+U\+M\+I\+D\+Version}}
+\index{get\+U\+M\+I\+D\+Version@{get\+U\+M\+I\+D\+Version}!I\+Open\+U\+M\+I\+D\+Component -\/p@{I\+Open\+U\+M\+I\+D\+Component -\/p}}
+\subsubsection{\texorpdfstring{get\+U\+M\+I\+D\+Version()}{getUMIDVersion()}}
+{\footnotesize\ttfamily -\/ (N\+S\+String$\ast$ I\+Open\+U\+M\+I\+D\+Component) get\+U\+M\+I\+D\+Version \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+获取 umid
+
+\begin{DoxyReturn}{Returns}
+umid版本号 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_i_open_u_m_i_d_component_01-p_ab8b891892a5d25fac9dc0aaf6c937e18}\label{protocol_i_open_u_m_i_d_component_01-p_ab8b891892a5d25fac9dc0aaf6c937e18}} 
+\index{I\+Open\+U\+M\+I\+D\+Component -\/p@{I\+Open\+U\+M\+I\+D\+Component -\/p}!init\+U\+M\+I\+D\+:environment\+:auth\+Code\+:handler\+:@{init\+U\+M\+I\+D\+:environment\+:auth\+Code\+:handler\+:}}
+\index{init\+U\+M\+I\+D\+:environment\+:auth\+Code\+:handler\+:@{init\+U\+M\+I\+D\+:environment\+:auth\+Code\+:handler\+:}!I\+Open\+U\+M\+I\+D\+Component -\/p@{I\+Open\+U\+M\+I\+D\+Component -\/p}}
+\subsubsection{\texorpdfstring{init\+U\+M\+I\+D\+:environment\+:auth\+Code\+:handler\+:()}{initUMID:environment:authCode:handler:()}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL I\+Open\+U\+M\+I\+D\+Component) init\+U\+M\+I\+D\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{app\+Key }\item[{environment:(S\+D\+P\+\_\+\+E\+N\+V\+I\+R\+O\+N\+M\+E\+NT)}]{sdp\+Env }\item[{authCode:(N\+S\+String $\ast$)}]{auth\+Code }\item[{handler:(void($^\wedge$)(N\+S\+String $\ast$security\+Token, N\+S\+Error $\ast$error))}]{handler }\end{DoxyParamCaption}}
+
+初始化umid
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Key} & appkey，注意此值要与 dp\+Env 对应，线上环境对应传线上的 appkey，以此类推 \\
+\hline
+{\em sdp\+Env} & 接入应用当前的环境，包括线上，预发，线上 \\
+\hline
+{\em auth\+Code} & 授权码，指定umid使用哪个加密文件，注意入参appkey在auth\+Code对应的图片中要存在 \\
+\hline
+{\em handler} & 初始化结果回调，本函数必须在主线程内完成（推荐在 appdelegate中，应用启动时调用） \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_i_open_u_m_i_d_component_01-p_a863a2ebe56b81d8523ae881c6521af6b}\label{protocol_i_open_u_m_i_d_component_01-p_a863a2ebe56b81d8523ae881c6521af6b}} 
+\index{I\+Open\+U\+M\+I\+D\+Component -\/p@{I\+Open\+U\+M\+I\+D\+Component -\/p}!register\+Init\+Listener\+:@{register\+Init\+Listener\+:}}
+\index{register\+Init\+Listener\+:@{register\+Init\+Listener\+:}!I\+Open\+U\+M\+I\+D\+Component -\/p@{I\+Open\+U\+M\+I\+D\+Component -\/p}}
+\subsubsection{\texorpdfstring{register\+Init\+Listener\+:()}{registerInitListener:()}}
+{\footnotesize\ttfamily -\/ (void I\+Open\+U\+M\+I\+D\+Component) register\+Init\+Listener\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(N\+S\+String $\ast$security\+Token, N\+S\+Error $\ast$error))}]{listener }\end{DoxyParamCaption}}
+
+初始化 umid
+
+
+\begin{DoxyParams}{Parameters}
+{\em result\+Handler} & 初始化结果回调，本函数必须在主线程内完成（推荐在 appdelegate中，应用启动时调用）\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+调用成功结果 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_i_open_u_m_i_d_component_01-p_a7690ec941a6f7877ea574bff0a0b88f6}\label{protocol_i_open_u_m_i_d_component_01-p_a7690ec941a6f7877ea574bff0a0b88f6}} 
+\index{I\+Open\+U\+M\+I\+D\+Component -\/p@{I\+Open\+U\+M\+I\+D\+Component -\/p}!reset\+Client\+Data\+:@{reset\+Client\+Data\+:}}
+\index{reset\+Client\+Data\+:@{reset\+Client\+Data\+:}!I\+Open\+U\+M\+I\+D\+Component -\/p@{I\+Open\+U\+M\+I\+D\+Component -\/p}}
+\subsubsection{\texorpdfstring{reset\+Client\+Data\+:()}{resetClientData:()}}
+{\footnotesize\ttfamily -\/ (void I\+Open\+U\+M\+I\+D\+Component) reset\+Client\+Data\+: \begin{DoxyParamCaption}\item[{(S\+D\+P\+\_\+\+E\+N\+V\+I\+R\+O\+N\+M\+E\+NT)}]{env }\end{DoxyParamCaption}}
+
+清空 umid 本地数据（mock接口，正常情况不要调用！） \mbox{\Hypertarget{protocol_i_open_u_m_i_d_component_01-p_a566a947de77796e00a566f76bd997a94}\label{protocol_i_open_u_m_i_d_component_01-p_a566a947de77796e00a566f76bd997a94}} 
+\index{I\+Open\+U\+M\+I\+D\+Component -\/p@{I\+Open\+U\+M\+I\+D\+Component -\/p}!set\+Online\+Host\+:@{set\+Online\+Host\+:}}
+\index{set\+Online\+Host\+:@{set\+Online\+Host\+:}!I\+Open\+U\+M\+I\+D\+Component -\/p@{I\+Open\+U\+M\+I\+D\+Component -\/p}}
+\subsubsection{\texorpdfstring{set\+Online\+Host\+:()}{setOnlineHost:()}}
+{\footnotesize\ttfamily -\/ (void I\+Open\+U\+M\+I\+D\+Component) set\+Online\+Host\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{host }\end{DoxyParamCaption}}
+
+设置\+U\+M\+I\+D线上访问地址
+
+
+\begin{DoxyParams}{Parameters}
+{\em host} & 要设置的线上地址，如ynuf.\+alipay.\+com，不要带协议头，不要带后面的参数，只能传纯host地址 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/lib/\+Security\+Guard\+S\+D\+K.\+framework/\+Headers/\+Open/\+Open\+U\+M\+I\+D/I\+Open\+U\+M\+I\+D\+Component.\+h\end{DoxyCompactItemize}

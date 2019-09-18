@@ -1,0 +1,5 @@
+<map id="FNProductDetailHeaderView()" name="FNProductDetailHeaderView()">
+<area shape="rect" id="node2" href="$interface_s_d_cycle_scroll_view.html" title="SDCycleScrollView" alt="" coords="5,167,141,192"/>
+<area shape="rect" id="node4" href="$interface_f_n_product_detail_header_subview.html" title="FNProductDetailHeaderSubview" alt="" coords="165,167,378,192"/>
+<area shape="rect" id="node5" href="$interface_discount_label.html" title="DiscountLabel" alt="" coords="219,80,325,105"/>
+</map>

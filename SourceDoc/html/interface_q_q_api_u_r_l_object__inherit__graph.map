@@ -1,0 +1,6 @@
+<map id="QQApiURLObject" name="QQApiURLObject">
+<area shape="rect" id="node4" href="$interface_q_q_api_audio_object.html" title="音频URL对象 用于分享目标内容为音频的URL的对象 " alt="" coords="5,225,139,251"/>
+<area shape="rect" id="node5" href="$interface_q_q_api_news_object.html" title="新闻URL对象 用于分享目标内容为新闻的URL的对象 " alt="" coords="163,225,296,251"/>
+<area shape="rect" id="node6" href="$interface_q_q_api_video_object.html" title="视频URL对象 用于分享目标内容为视频的URL的对象 " alt="" coords="320,225,454,251"/>
+<area shape="rect" id="node2" href="$interface_q_q_api_object.html" title="所有在QQ及插件间发送的数据对象的根类。 " alt="" coords="180,79,280,104"/>
+</map>

@@ -1,0 +1,216 @@
+\hypertarget{interface_tencent_api_interface}{}\section{Tencent\+Api\+Interface Class Reference}
+\label{interface_tencent_api_interface}\index{Tencent\+Api\+Interface@{Tencent\+Api\+Interface}}
+
+
+Tencent\+Api\+Interface的回调  
+
+
+
+
+{\ttfamily \#import $<$Tencent\+Api\+Interface.\+h$>$}
+
+
+
+Inheritance diagram for Tencent\+Api\+Interface\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{interface_tencent_api_interface__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Tencent\+Api\+Interface\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{interface_tencent_api_interface__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(Tencent\+Api\+Ret\+Code) + \mbox{\hyperlink{interface_tencent_api_interface_a9c499a7e750658a6f81c92d1b0b27908}{send\+Resp\+Message\+To\+Tencent\+App\+:}}
+\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_tencent_api_interface_a83503ce75857d63f305322e0632ffea3}{can\+Open\+U\+R\+L\+:delegate\+:}}
+\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_tencent_api_interface_a3c0606f58a848dcfa3f76e11f8046612}{handle\+Open\+U\+R\+L\+:delegate\+:}}
+\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_tencent_api_interface_ad336d33ff09293be98acb49a6509a9d0}{is\+Tencent\+App\+Install\+:}}
+\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_tencent_api_interface_a5286611f97530ca889a83d0b34bc74d1}{is\+Tencent\+App\+Support\+Tencent\+Api\+:}}
+\item 
+(Tencent\+Api\+Ret\+Code) + \mbox{\hyperlink{interface_tencent_api_interface_a9c499a7e750658a6f81c92d1b0b27908}{send\+Resp\+Message\+To\+Tencent\+App\+:}}
+\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_tencent_api_interface_a83503ce75857d63f305322e0632ffea3}{can\+Open\+U\+R\+L\+:delegate\+:}}
+\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_tencent_api_interface_a3c0606f58a848dcfa3f76e11f8046612}{handle\+Open\+U\+R\+L\+:delegate\+:}}
+\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_tencent_api_interface_ad336d33ff09293be98acb49a6509a9d0}{is\+Tencent\+App\+Install\+:}}
+\item 
+(B\+O\+OL) + \mbox{\hyperlink{interface_tencent_api_interface_a5286611f97530ca889a83d0b34bc74d1}{is\+Tencent\+App\+Support\+Tencent\+Api\+:}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Tencent\+Api\+Interface的回调 
+
+Tencent\+Api\+Interface的调用接口 \begin{DoxyNote}{Note}
+v1.\+0版本只支持第三方答复内容 
+\end{DoxyNote}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_tencent_api_interface_a83503ce75857d63f305322e0632ffea3}\label{interface_tencent_api_interface_a83503ce75857d63f305322e0632ffea3}} 
+\index{Tencent\+Api\+Interface@{Tencent\+Api\+Interface}!can\+Open\+U\+R\+L\+:delegate\+:@{can\+Open\+U\+R\+L\+:delegate\+:}}
+\index{can\+Open\+U\+R\+L\+:delegate\+:@{can\+Open\+U\+R\+L\+:delegate\+:}!Tencent\+Api\+Interface@{Tencent\+Api\+Interface}}
+\subsubsection{\texorpdfstring{can\+Open\+U\+R\+L\+:delegate\+:()}{canOpenURL:delegate:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (B\+O\+OL) can\+Open\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{url }\item[{delegate:(id$<$ Tencent\+Api\+Interface\+Delegate $>$)}]{delegate }\end{DoxyParamCaption}}
+
+是否可以处理拉起协议 
+\begin{DoxyParams}{Parameters}
+{\em url} & \\
+\hline
+{\em delegate} & 指定的回调 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+是否是腾讯\+A\+P\+I认识的消息类型 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_tencent_api_interface_a83503ce75857d63f305322e0632ffea3}\label{interface_tencent_api_interface_a83503ce75857d63f305322e0632ffea3}} 
+\index{Tencent\+Api\+Interface@{Tencent\+Api\+Interface}!can\+Open\+U\+R\+L\+:delegate\+:@{can\+Open\+U\+R\+L\+:delegate\+:}}
+\index{can\+Open\+U\+R\+L\+:delegate\+:@{can\+Open\+U\+R\+L\+:delegate\+:}!Tencent\+Api\+Interface@{Tencent\+Api\+Interface}}
+\subsubsection{\texorpdfstring{can\+Open\+U\+R\+L\+:delegate\+:()}{canOpenURL:delegate:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (B\+O\+OL) can\+Open\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{url }\item[{delegate:(id$<$ Tencent\+Api\+Interface\+Delegate $>$)}]{delegate }\end{DoxyParamCaption}}
+
+是否可以处理拉起协议 
+\begin{DoxyParams}{Parameters}
+{\em url} & \\
+\hline
+{\em delegate} & 指定的回调 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+是否是腾讯\+A\+P\+I认识的消息类型 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_tencent_api_interface_a3c0606f58a848dcfa3f76e11f8046612}\label{interface_tencent_api_interface_a3c0606f58a848dcfa3f76e11f8046612}} 
+\index{Tencent\+Api\+Interface@{Tencent\+Api\+Interface}!handle\+Open\+U\+R\+L\+:delegate\+:@{handle\+Open\+U\+R\+L\+:delegate\+:}}
+\index{handle\+Open\+U\+R\+L\+:delegate\+:@{handle\+Open\+U\+R\+L\+:delegate\+:}!Tencent\+Api\+Interface@{Tencent\+Api\+Interface}}
+\subsubsection{\texorpdfstring{handle\+Open\+U\+R\+L\+:delegate\+:()}{handleOpenURL:delegate:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (B\+O\+OL) handle\+Open\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{url }\item[{delegate:(id$<$ Tencent\+Api\+Interface\+Delegate $>$)}]{delegate }\end{DoxyParamCaption}}
+
+处理应用拉起协议 
+\begin{DoxyParams}{Parameters}
+{\em url} & \\
+\hline
+{\em delegate} & 指定的回调 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+是否是腾讯\+A\+P\+I认识的消息类型 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_tencent_api_interface_a3c0606f58a848dcfa3f76e11f8046612}\label{interface_tencent_api_interface_a3c0606f58a848dcfa3f76e11f8046612}} 
+\index{Tencent\+Api\+Interface@{Tencent\+Api\+Interface}!handle\+Open\+U\+R\+L\+:delegate\+:@{handle\+Open\+U\+R\+L\+:delegate\+:}}
+\index{handle\+Open\+U\+R\+L\+:delegate\+:@{handle\+Open\+U\+R\+L\+:delegate\+:}!Tencent\+Api\+Interface@{Tencent\+Api\+Interface}}
+\subsubsection{\texorpdfstring{handle\+Open\+U\+R\+L\+:delegate\+:()}{handleOpenURL:delegate:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (B\+O\+OL) handle\+Open\+U\+R\+L\+: \begin{DoxyParamCaption}\item[{(N\+S\+U\+RL $\ast$)}]{url }\item[{delegate:(id$<$ Tencent\+Api\+Interface\+Delegate $>$)}]{delegate }\end{DoxyParamCaption}}
+
+处理应用拉起协议 
+\begin{DoxyParams}{Parameters}
+{\em url} & \\
+\hline
+{\em delegate} & 指定的回调 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+是否是腾讯\+A\+P\+I认识的消息类型 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_tencent_api_interface_ad336d33ff09293be98acb49a6509a9d0}\label{interface_tencent_api_interface_ad336d33ff09293be98acb49a6509a9d0}} 
+\index{Tencent\+Api\+Interface@{Tencent\+Api\+Interface}!is\+Tencent\+App\+Install\+:@{is\+Tencent\+App\+Install\+:}}
+\index{is\+Tencent\+App\+Install\+:@{is\+Tencent\+App\+Install\+:}!Tencent\+Api\+Interface@{Tencent\+Api\+Interface}}
+\subsubsection{\texorpdfstring{is\+Tencent\+App\+Install\+:()}{isTencentAppInstall:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (B\+O\+OL) is\+Tencent\+App\+Install\+: \begin{DoxyParamCaption}\item[{(Tecnent\+Platform\+Type)}]{platform }\end{DoxyParamCaption}}
+
+用户设备是否安装腾讯\+A\+PP 
+\begin{DoxyParams}{Parameters}
+{\em platform} & 指定的腾讯业务 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Y\+ES\+:安装 NO\+:未安装 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_tencent_api_interface_ad336d33ff09293be98acb49a6509a9d0}\label{interface_tencent_api_interface_ad336d33ff09293be98acb49a6509a9d0}} 
+\index{Tencent\+Api\+Interface@{Tencent\+Api\+Interface}!is\+Tencent\+App\+Install\+:@{is\+Tencent\+App\+Install\+:}}
+\index{is\+Tencent\+App\+Install\+:@{is\+Tencent\+App\+Install\+:}!Tencent\+Api\+Interface@{Tencent\+Api\+Interface}}
+\subsubsection{\texorpdfstring{is\+Tencent\+App\+Install\+:()}{isTencentAppInstall:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (B\+O\+OL) is\+Tencent\+App\+Install\+: \begin{DoxyParamCaption}\item[{(Tecnent\+Platform\+Type)}]{platform }\end{DoxyParamCaption}}
+
+用户设备是否安装腾讯\+A\+PP 
+\begin{DoxyParams}{Parameters}
+{\em platform} & 指定的腾讯业务 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Y\+ES\+:安装 NO\+:未安装 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_tencent_api_interface_a5286611f97530ca889a83d0b34bc74d1}\label{interface_tencent_api_interface_a5286611f97530ca889a83d0b34bc74d1}} 
+\index{Tencent\+Api\+Interface@{Tencent\+Api\+Interface}!is\+Tencent\+App\+Support\+Tencent\+Api\+:@{is\+Tencent\+App\+Support\+Tencent\+Api\+:}}
+\index{is\+Tencent\+App\+Support\+Tencent\+Api\+:@{is\+Tencent\+App\+Support\+Tencent\+Api\+:}!Tencent\+Api\+Interface@{Tencent\+Api\+Interface}}
+\subsubsection{\texorpdfstring{is\+Tencent\+App\+Support\+Tencent\+Api\+:()}{isTencentAppSupportTencentApi:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (B\+O\+OL) is\+Tencent\+App\+Support\+Tencent\+Api\+: \begin{DoxyParamCaption}\item[{(Tecnent\+Platform\+Type)}]{platform }\end{DoxyParamCaption}}
+
+用户设备是否支持调用\+S\+DK 
+\begin{DoxyParams}{Parameters}
+{\em platform} & 指定的腾讯业务 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Y\+ES\+:支持 NO\+:不支持 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_tencent_api_interface_a5286611f97530ca889a83d0b34bc74d1}\label{interface_tencent_api_interface_a5286611f97530ca889a83d0b34bc74d1}} 
+\index{Tencent\+Api\+Interface@{Tencent\+Api\+Interface}!is\+Tencent\+App\+Support\+Tencent\+Api\+:@{is\+Tencent\+App\+Support\+Tencent\+Api\+:}}
+\index{is\+Tencent\+App\+Support\+Tencent\+Api\+:@{is\+Tencent\+App\+Support\+Tencent\+Api\+:}!Tencent\+Api\+Interface@{Tencent\+Api\+Interface}}
+\subsubsection{\texorpdfstring{is\+Tencent\+App\+Support\+Tencent\+Api\+:()}{isTencentAppSupportTencentApi:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (B\+O\+OL) is\+Tencent\+App\+Support\+Tencent\+Api\+: \begin{DoxyParamCaption}\item[{(Tecnent\+Platform\+Type)}]{platform }\end{DoxyParamCaption}}
+
+用户设备是否支持调用\+S\+DK 
+\begin{DoxyParams}{Parameters}
+{\em platform} & 指定的腾讯业务 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Y\+ES\+:支持 NO\+:不支持 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_tencent_api_interface_a9c499a7e750658a6f81c92d1b0b27908}\label{interface_tencent_api_interface_a9c499a7e750658a6f81c92d1b0b27908}} 
+\index{Tencent\+Api\+Interface@{Tencent\+Api\+Interface}!send\+Resp\+Message\+To\+Tencent\+App\+:@{send\+Resp\+Message\+To\+Tencent\+App\+:}}
+\index{send\+Resp\+Message\+To\+Tencent\+App\+:@{send\+Resp\+Message\+To\+Tencent\+App\+:}!Tencent\+Api\+Interface@{Tencent\+Api\+Interface}}
+\subsubsection{\texorpdfstring{send\+Resp\+Message\+To\+Tencent\+App\+:()}{sendRespMessageToTencentApp:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (Tencent\+Api\+Ret\+Code) send\+Resp\+Message\+To\+Tencent\+App\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_tencent_api_resp}{Tencent\+Api\+Resp}} $\ast$)}]{resp }\end{DoxyParamCaption}}
+
+发送答复返回腾讯业务 
+\begin{DoxyParams}{Parameters}
+{\em resp} & 答复内容 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+返回码 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_tencent_api_interface_a9c499a7e750658a6f81c92d1b0b27908}\label{interface_tencent_api_interface_a9c499a7e750658a6f81c92d1b0b27908}} 
+\index{Tencent\+Api\+Interface@{Tencent\+Api\+Interface}!send\+Resp\+Message\+To\+Tencent\+App\+:@{send\+Resp\+Message\+To\+Tencent\+App\+:}}
+\index{send\+Resp\+Message\+To\+Tencent\+App\+:@{send\+Resp\+Message\+To\+Tencent\+App\+:}!Tencent\+Api\+Interface@{Tencent\+Api\+Interface}}
+\subsubsection{\texorpdfstring{send\+Resp\+Message\+To\+Tencent\+App\+:()}{sendRespMessageToTencentApp:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (Tencent\+Api\+Ret\+Code) send\+Resp\+Message\+To\+Tencent\+App\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_tencent_api_resp}{Tencent\+Api\+Resp}} $\ast$)}]{resp }\end{DoxyParamCaption}}
+
+发送答复返回腾讯业务 
+\begin{DoxyParams}{Parameters}
+{\em resp} & 答复内容 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+返回码 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Public/\+U\+Meng\+U\+Share/\+Tencent\+Open\+A\+P\+I/Tencent\+Api\+Interface.\+h\end{DoxyCompactItemize}

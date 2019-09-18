@@ -1,0 +1,47 @@
+V\+T\+Magic is a page manager library, you can custom every page controller by different identifier if you need. It\textquotesingle{}s so easy to use!
+
+\subsection*{Usage}
+
+To run the example project, clone the repo, and run {\ttfamily pod install} from the Project directory first.
+
+\subsubsection*{Installation}
+
+V\+T\+Magic is available through \href{http://cocoapods.org}{\tt Cocoa\+Pods}. To install it, simply add the following line to your Podfile\+:
+
+
+\begin{DoxyCode}
+pod "VTMagic"
+\end{DoxyCode}
+
+
+\subsubsection*{Integrate}
+
+
+\begin{DoxyCode}
+- (void)viewDidLoad
+\{
+    [super viewDidLoad];
+
+    [self addChildViewController:self.magicController];
+    [self.view addSubview:\_magicController.view];
+    [\_magicController didMoveToParentViewController:self];
+
+    [\_magicController.magicView reloadData];
+\}
+
+- (VTMagicController *)magicController
+\{
+    if (!\_magicController) \{
+        \_magicController = [[VTMagicController alloc] init];
+        \_magicController.magicView.navigationColor = [UIColor whiteColor];
+        \_magicController.magicView.sliderColor = [UIColor redColor];
+        \_magicController.magicView.layoutStyle = VTLayoutStyleDivide;
+        \_magicController.magicView.switchStyle = VTSwitchStyleDefault;
+        \_magicController.magicView.navigationHeight = 40.f;
+        \_magicController.magicView.dataSource = self;
+        \_magicController.magicView.delegate = self;
+    \}
+    return \_magicController;
+\}
+\end{DoxyCode}
+ or like this \`{}\`{}\`{}objective-\/c \#import \char`\"{}\+V\+T\+Magic\+Controller.\+h\char`\"{} 

@@ -1,0 +1,257 @@
+\hypertarget{interface_j_m_home_a_p_i_tool}{}\section{J\+M\+Home\+A\+P\+I\+Tool Class Reference}
+\label{interface_j_m_home_a_p_i_tool}\index{J\+M\+Home\+A\+P\+I\+Tool@{J\+M\+Home\+A\+P\+I\+Tool}}
+
+
+{\ttfamily \#import $<$J\+M\+Home\+A\+P\+I\+Tool.\+h$>$}
+
+
+
+Inheritance diagram for J\+M\+Home\+A\+P\+I\+Tool\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{interface_j_m_home_a_p_i_tool__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for J\+M\+Home\+A\+P\+I\+Tool\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{interface_j_m_home_a_p_i_tool__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \mbox{\hyperlink{interface_j_m_home_a_p_i_tool_aa4578b6bddc62adc508e93686db8c4a0}{api\+Home\+Request\+Home\+With\+Params\+:success\+:failure\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_j_m_home_a_p_i_tool_a1f2e5700e33362601f1682d7d31b2a2b}{api\+Home\+Request\+Product\+With\+Params\+:success\+:failure\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_j_m_home_a_p_i_tool_a077cf647e4039008d195ff2f836bf0d9}{api\+Home\+Request\+Rebate\+Banner\+With\+Params\+:success\+:failure\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_j_m_home_a_p_i_tool_a5fc144f0453f18debc9b3f95d062406f}{api\+Home\+Request\+Friends\+Invited\+With\+Params\+:success\+:failure\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_j_m_home_a_p_i_tool_abb5f695c4a44f2f4a7380b42cd38c662}{api\+Home\+Request\+Product\+Detail\+Tool\+With\+Params\+:success\+:failure\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_j_m_home_a_p_i_tool_a6d88c878495e9188d16b10d42498f32d}{api\+Home\+Request\+Get\+R\+P\+Everyday\+With\+Params\+:success\+:failure\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_j_m_home_a_p_i_tool_a514f122302008e896816757dd10ece18}{api\+Home\+Request\+Set\+Notice\+With\+Params\+:success\+:failure\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_j_m_home_a_p_i_tool_a64d270e0c5159fcf2b81514c221e9ca4}{api\+Home\+Request\+Open\+Red\+Packet\+With\+Params\+:success\+:failure\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_j_m_home_a_p_i_tool_a10e7a84225e25cce60d34a82c817e6bc}{api\+Home\+Request\+Invited\+Test\+With\+Params\+:success\+:failure\+:}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+============================================================================
+
+版权所有 ©2013-\/2016 方诺科技，并保留所有权利。
+
+网站地址\+: \href{http://www.fnuo123.com}{\tt http\+://www.\+fnuo123.\+com}； 
+
+
+
+这不是一个自由软件！您只能在不用于商业目的的前提下对程序代码进行修改和
+
+使用；不允许对程序代码以任何形式任何目的的再发布。 
+
+ 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_j_m_home_a_p_i_tool_a5fc144f0453f18debc9b3f95d062406f}\label{interface_j_m_home_a_p_i_tool_a5fc144f0453f18debc9b3f95d062406f}} 
+\index{J\+M\+Home\+A\+P\+I\+Tool@{J\+M\+Home\+A\+P\+I\+Tool}!api\+Home\+Request\+Friends\+Invited\+With\+Params\+:success\+:failure\+:@{api\+Home\+Request\+Friends\+Invited\+With\+Params\+:success\+:failure\+:}}
+\index{api\+Home\+Request\+Friends\+Invited\+With\+Params\+:success\+:failure\+:@{api\+Home\+Request\+Friends\+Invited\+With\+Params\+:success\+:failure\+:}!J\+M\+Home\+A\+P\+I\+Tool@{J\+M\+Home\+A\+P\+I\+Tool}}
+\subsubsection{\texorpdfstring{api\+Home\+Request\+Friends\+Invited\+With\+Params\+:success\+:failure\+:()}{apiHomeRequestFriendsInvitedWithParams:success:failure:()}}
+{\footnotesize\ttfamily + (void) api\+Home\+Request\+Friends\+Invited\+With\+Params\+: \begin{DoxyParamCaption}\item[{(N\+S\+Mutable\+Dictionary $\ast$)}]{params }\item[{success:(Request\+Success)}]{success }\item[{failure:(Request\+Failure)}]{failure }\end{DoxyParamCaption}}
+
+1.\+6邀请好友页面（俊） 接口描述：用于获取店铺列表
+
+请求\+U\+R\+L：
+
+?mod=mlt\&act=xrfl\&ctrl=yq\+Friend
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & is\+\_\+index 是否为首页 1是 0不是,如果不是传cid \\
+\hline
+{\em success} & 请求成功回调 \\
+\hline
+{\em failure} & 请求失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_j_m_home_a_p_i_tool_a6d88c878495e9188d16b10d42498f32d}\label{interface_j_m_home_a_p_i_tool_a6d88c878495e9188d16b10d42498f32d}} 
+\index{J\+M\+Home\+A\+P\+I\+Tool@{J\+M\+Home\+A\+P\+I\+Tool}!api\+Home\+Request\+Get\+R\+P\+Everyday\+With\+Params\+:success\+:failure\+:@{api\+Home\+Request\+Get\+R\+P\+Everyday\+With\+Params\+:success\+:failure\+:}}
+\index{api\+Home\+Request\+Get\+R\+P\+Everyday\+With\+Params\+:success\+:failure\+:@{api\+Home\+Request\+Get\+R\+P\+Everyday\+With\+Params\+:success\+:failure\+:}!J\+M\+Home\+A\+P\+I\+Tool@{J\+M\+Home\+A\+P\+I\+Tool}}
+\subsubsection{\texorpdfstring{api\+Home\+Request\+Get\+R\+P\+Everyday\+With\+Params\+:success\+:failure\+:()}{apiHomeRequestGetRPEverydayWithParams:success:failure:()}}
+{\footnotesize\ttfamily + (void) api\+Home\+Request\+Get\+R\+P\+Everyday\+With\+Params\+: \begin{DoxyParamCaption}\item[{(N\+S\+Mutable\+Dictionary $\ast$)}]{params }\item[{success:(Request\+Success)}]{success }\item[{failure:(Request\+Failure)}]{failure }\end{DoxyParamCaption}}
+
+4.\+5天天领红包 接口描述：用于天天领红包
+
+请求\+U\+R\+L：
+
+?mod=mlt\&act=qhb\&ctrl=index
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & is\+\_\+index 是否为首页 1是 0不是,如果不是传cid \\
+\hline
+{\em success} & 请求成功回调 \\
+\hline
+{\em failure} & 请求失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_j_m_home_a_p_i_tool_aa4578b6bddc62adc508e93686db8c4a0}\label{interface_j_m_home_a_p_i_tool_aa4578b6bddc62adc508e93686db8c4a0}} 
+\index{J\+M\+Home\+A\+P\+I\+Tool@{J\+M\+Home\+A\+P\+I\+Tool}!api\+Home\+Request\+Home\+With\+Params\+:success\+:failure\+:@{api\+Home\+Request\+Home\+With\+Params\+:success\+:failure\+:}}
+\index{api\+Home\+Request\+Home\+With\+Params\+:success\+:failure\+:@{api\+Home\+Request\+Home\+With\+Params\+:success\+:failure\+:}!J\+M\+Home\+A\+P\+I\+Tool@{J\+M\+Home\+A\+P\+I\+Tool}}
+\subsubsection{\texorpdfstring{api\+Home\+Request\+Home\+With\+Params\+:success\+:failure\+:()}{apiHomeRequestHomeWithParams:success:failure:()}}
+{\footnotesize\ttfamily + (void) api\+Home\+Request\+Home\+With\+Params\+: \begin{DoxyParamCaption}\item[{(N\+S\+Mutable\+Dictionary $\ast$)}]{params }\item[{success:(Request\+Success)}]{success }\item[{failure:(Request\+Failure)}]{failure }\end{DoxyParamCaption}}
+
+1.\+1\+A\+PP首页 接口描述：\+A\+P\+P首页
+
+请求\+U\+R\+L：
+
+?act=appindex\&ctrl=get\+Index
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & is\+\_\+index 是否为首页 1是 0不是,如果不是传cid \\
+\hline
+{\em success} & 请求成功回调 \\
+\hline
+{\em failure} & 请求失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_j_m_home_a_p_i_tool_a10e7a84225e25cce60d34a82c817e6bc}\label{interface_j_m_home_a_p_i_tool_a10e7a84225e25cce60d34a82c817e6bc}} 
+\index{J\+M\+Home\+A\+P\+I\+Tool@{J\+M\+Home\+A\+P\+I\+Tool}!api\+Home\+Request\+Invited\+Test\+With\+Params\+:success\+:failure\+:@{api\+Home\+Request\+Invited\+Test\+With\+Params\+:success\+:failure\+:}}
+\index{api\+Home\+Request\+Invited\+Test\+With\+Params\+:success\+:failure\+:@{api\+Home\+Request\+Invited\+Test\+With\+Params\+:success\+:failure\+:}!J\+M\+Home\+A\+P\+I\+Tool@{J\+M\+Home\+A\+P\+I\+Tool}}
+\subsubsection{\texorpdfstring{api\+Home\+Request\+Invited\+Test\+With\+Params\+:success\+:failure\+:()}{apiHomeRequestInvitedTestWithParams:success:failure:()}}
+{\footnotesize\ttfamily + (void) api\+Home\+Request\+Invited\+Test\+With\+Params\+: \begin{DoxyParamCaption}\item[{(N\+S\+Mutable\+Dictionary $\ast$)}]{params }\item[{success:(Request\+Success)}]{success }\item[{failure:(Request\+Failure)}]{failure }\end{DoxyParamCaption}}
+
+4.\+10邀请好友 实时文字（左上角） 接口描述：用于邀请好友 实时文字（左上角）
+
+请求\+U\+R\+L：
+
+?mod=mlt\&act=xrfl\&ctrl=yqdt
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & is\+\_\+index 是否为首页 1是 0不是,如果不是传cid \\
+\hline
+{\em success} & 请求成功回调 \\
+\hline
+{\em failure} & 请求失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_j_m_home_a_p_i_tool_a64d270e0c5159fcf2b81514c221e9ca4}\label{interface_j_m_home_a_p_i_tool_a64d270e0c5159fcf2b81514c221e9ca4}} 
+\index{J\+M\+Home\+A\+P\+I\+Tool@{J\+M\+Home\+A\+P\+I\+Tool}!api\+Home\+Request\+Open\+Red\+Packet\+With\+Params\+:success\+:failure\+:@{api\+Home\+Request\+Open\+Red\+Packet\+With\+Params\+:success\+:failure\+:}}
+\index{api\+Home\+Request\+Open\+Red\+Packet\+With\+Params\+:success\+:failure\+:@{api\+Home\+Request\+Open\+Red\+Packet\+With\+Params\+:success\+:failure\+:}!J\+M\+Home\+A\+P\+I\+Tool@{J\+M\+Home\+A\+P\+I\+Tool}}
+\subsubsection{\texorpdfstring{api\+Home\+Request\+Open\+Red\+Packet\+With\+Params\+:success\+:failure\+:()}{apiHomeRequestOpenRedPacketWithParams:success:failure:()}}
+{\footnotesize\ttfamily + (void) api\+Home\+Request\+Open\+Red\+Packet\+With\+Params\+: \begin{DoxyParamCaption}\item[{(N\+S\+Mutable\+Dictionary $\ast$)}]{params }\item[{success:(Request\+Success)}]{success }\item[{failure:(Request\+Failure)}]{failure }\end{DoxyParamCaption}}
+
+4.\+7领红包操作 接口描述：用于领红包操作
+
+请求\+U\+R\+L：
+
+?mod=mlt\&act=qhb\&ctrl=lqhb
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & is\+\_\+index 是否为首页 1是 0不是,如果不是传cid \\
+\hline
+{\em success} & 请求成功回调 \\
+\hline
+{\em failure} & 请求失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_j_m_home_a_p_i_tool_abb5f695c4a44f2f4a7380b42cd38c662}\label{interface_j_m_home_a_p_i_tool_abb5f695c4a44f2f4a7380b42cd38c662}} 
+\index{J\+M\+Home\+A\+P\+I\+Tool@{J\+M\+Home\+A\+P\+I\+Tool}!api\+Home\+Request\+Product\+Detail\+Tool\+With\+Params\+:success\+:failure\+:@{api\+Home\+Request\+Product\+Detail\+Tool\+With\+Params\+:success\+:failure\+:}}
+\index{api\+Home\+Request\+Product\+Detail\+Tool\+With\+Params\+:success\+:failure\+:@{api\+Home\+Request\+Product\+Detail\+Tool\+With\+Params\+:success\+:failure\+:}!J\+M\+Home\+A\+P\+I\+Tool@{J\+M\+Home\+A\+P\+I\+Tool}}
+\subsubsection{\texorpdfstring{api\+Home\+Request\+Product\+Detail\+Tool\+With\+Params\+:success\+:failure\+:()}{apiHomeRequestProductDetailToolWithParams:success:failure:()}}
+{\footnotesize\ttfamily + (void) api\+Home\+Request\+Product\+Detail\+Tool\+With\+Params\+: \begin{DoxyParamCaption}\item[{(N\+S\+Mutable\+Dictionary $\ast$)}]{params }\item[{success:(Request\+Success)}]{success }\item[{failure:(Request\+Failure)}]{failure }\end{DoxyParamCaption}}
+
+1.\+8商品详情最下面的显示（俊） 接口描述：用于获取商品详情最下面的显示（1.1）
+
+请求\+U\+R\+L：
+
+?mod=mlt\&act=xrfl\&ctrl=tburl
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & is\+\_\+index 是否为首页 1是 0不是,如果不是传cid \\
+\hline
+{\em success} & 请求成功回调 \\
+\hline
+{\em failure} & 请求失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_j_m_home_a_p_i_tool_a1f2e5700e33362601f1682d7d31b2a2b}\label{interface_j_m_home_a_p_i_tool_a1f2e5700e33362601f1682d7d31b2a2b}} 
+\index{J\+M\+Home\+A\+P\+I\+Tool@{J\+M\+Home\+A\+P\+I\+Tool}!api\+Home\+Request\+Product\+With\+Params\+:success\+:failure\+:@{api\+Home\+Request\+Product\+With\+Params\+:success\+:failure\+:}}
+\index{api\+Home\+Request\+Product\+With\+Params\+:success\+:failure\+:@{api\+Home\+Request\+Product\+With\+Params\+:success\+:failure\+:}!J\+M\+Home\+A\+P\+I\+Tool@{J\+M\+Home\+A\+P\+I\+Tool}}
+\subsubsection{\texorpdfstring{api\+Home\+Request\+Product\+With\+Params\+:success\+:failure\+:()}{apiHomeRequestProductWithParams:success:failure:()}}
+{\footnotesize\ttfamily + (void) api\+Home\+Request\+Product\+With\+Params\+: \begin{DoxyParamCaption}\item[{(N\+S\+Mutable\+Dictionary $\ast$)}]{params }\item[{success:(Request\+Success)}]{success }\item[{failure:(Request\+Failure)}]{failure }\end{DoxyParamCaption}}
+
+1.\+2 获取商品 接口描述：用于获取商品
+
+请求\+U\+R\+L：
+
+?mod=mlt\&act=qhb\&ctrl=lqhb
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & is\+\_\+index 是否为首页 1是 0不是,如果不是传cid \\
+\hline
+{\em success} & 请求成功回调 \\
+\hline
+{\em failure} & 请求失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_j_m_home_a_p_i_tool_a077cf647e4039008d195ff2f836bf0d9}\label{interface_j_m_home_a_p_i_tool_a077cf647e4039008d195ff2f836bf0d9}} 
+\index{J\+M\+Home\+A\+P\+I\+Tool@{J\+M\+Home\+A\+P\+I\+Tool}!api\+Home\+Request\+Rebate\+Banner\+With\+Params\+:success\+:failure\+:@{api\+Home\+Request\+Rebate\+Banner\+With\+Params\+:success\+:failure\+:}}
+\index{api\+Home\+Request\+Rebate\+Banner\+With\+Params\+:success\+:failure\+:@{api\+Home\+Request\+Rebate\+Banner\+With\+Params\+:success\+:failure\+:}!J\+M\+Home\+A\+P\+I\+Tool@{J\+M\+Home\+A\+P\+I\+Tool}}
+\subsubsection{\texorpdfstring{api\+Home\+Request\+Rebate\+Banner\+With\+Params\+:success\+:failure\+:()}{apiHomeRequestRebateBannerWithParams:success:failure:()}}
+{\footnotesize\ttfamily + (void) api\+Home\+Request\+Rebate\+Banner\+With\+Params\+: \begin{DoxyParamCaption}\item[{(N\+S\+Mutable\+Dictionary $\ast$)}]{params }\item[{success:(Request\+Success)}]{success }\item[{failure:(Request\+Failure)}]{failure }\end{DoxyParamCaption}}
+
+1.\+5商城返利幻灯片(俊) 接口描述：用于获取商城返利幻灯片
+
+请求\+U\+R\+L：
+
+?mod=default\&act=api\&ctrl=get\+Slides
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & is\+\_\+index 是否为首页 1是 0不是,如果不是传cid \\
+\hline
+{\em success} & 请求成功回调 \\
+\hline
+{\em failure} & 请求失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_j_m_home_a_p_i_tool_a514f122302008e896816757dd10ece18}\label{interface_j_m_home_a_p_i_tool_a514f122302008e896816757dd10ece18}} 
+\index{J\+M\+Home\+A\+P\+I\+Tool@{J\+M\+Home\+A\+P\+I\+Tool}!api\+Home\+Request\+Set\+Notice\+With\+Params\+:success\+:failure\+:@{api\+Home\+Request\+Set\+Notice\+With\+Params\+:success\+:failure\+:}}
+\index{api\+Home\+Request\+Set\+Notice\+With\+Params\+:success\+:failure\+:@{api\+Home\+Request\+Set\+Notice\+With\+Params\+:success\+:failure\+:}!J\+M\+Home\+A\+P\+I\+Tool@{J\+M\+Home\+A\+P\+I\+Tool}}
+\subsubsection{\texorpdfstring{api\+Home\+Request\+Set\+Notice\+With\+Params\+:success\+:failure\+:()}{apiHomeRequestSetNoticeWithParams:success:failure:()}}
+{\footnotesize\ttfamily + (void) api\+Home\+Request\+Set\+Notice\+With\+Params\+: \begin{DoxyParamCaption}\item[{(N\+S\+Mutable\+Dictionary $\ast$)}]{params }\item[{success:(Request\+Success)}]{success }\item[{failure:(Request\+Failure)}]{failure }\end{DoxyParamCaption}}
+
+4.\+6红包提示设置 接口描述：用于红包提示设置 请求\+U\+R\+L：
+
+?mod=mlt\&act=qhb\&ctrl=hbtx
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & is\+\_\+index 是否为首页 1是 0不是,如果不是传cid \\
+\hline
+{\em success} & 请求成功回调 \\
+\hline
+{\em failure} & 请求失败回调 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Classes(类文件)/附加首页/美利淘/\+Home/api/\+Home/J\+M\+Home\+A\+P\+I\+Tool.\+h\item 
+T\+H\+B/\+Classes(类文件)/附加首页/美利淘/\+Home/api/\+Home/J\+M\+Home\+A\+P\+I\+Tool.\+m\end{DoxyCompactItemize}

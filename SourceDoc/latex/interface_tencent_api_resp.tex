@@ -1,0 +1,107 @@
+\hypertarget{interface_tencent_api_resp}{}\section{Tencent\+Api\+Resp Class Reference}
+\label{interface_tencent_api_resp}\index{Tencent\+Api\+Resp@{Tencent\+Api\+Resp}}
+
+
+答复包  
+
+
+
+
+{\ttfamily \#import $<$Tencent\+Message\+Object.\+h$>$}
+
+
+
+Inheritance diagram for Tencent\+Api\+Resp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{interface_tencent_api_resp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Tencent\+Api\+Resp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{interface_tencent_api_resp__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\mbox{\hyperlink{interface_tencent_api_resp}{Tencent\+Api\+Resp}} $\ast$) + \mbox{\hyperlink{interface_tencent_api_resp_a2859c22affd763f1da5b5aaa3a442d7c}{resp\+From\+Req\+:}}
+\item 
+(\mbox{\hyperlink{interface_tencent_api_resp}{Tencent\+Api\+Resp}} $\ast$) + \mbox{\hyperlink{interface_tencent_api_resp_a2859c22affd763f1da5b5aaa3a442d7c}{resp\+From\+Req\+:}}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+T\+C\+Optional\+Int \mbox{\hyperlink{interface_tencent_api_resp_acadc81491ece925fc38f2c9bfde626b1}{n\+Ret\+Code}}
+\item 
+T\+C\+Optional\+Str \mbox{\hyperlink{interface_tencent_api_resp_a114465068484407c6d1735a06aaf9091}{s\+Ret\+Msg}}
+\item 
+\mbox{\hyperlink{interface_tencent_api_req}{T\+C\+Optional\+Req}} \mbox{\hyperlink{interface_tencent_api_resp_af8228b8ebb3a1804ca137726ba774c27}{obj\+Req}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+答复包 
+
+Tencent\+Api\+Resp用来向其他业务发送答复包 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_tencent_api_resp_a2859c22affd763f1da5b5aaa3a442d7c}\label{interface_tencent_api_resp_a2859c22affd763f1da5b5aaa3a442d7c}} 
+\index{Tencent\+Api\+Resp@{Tencent\+Api\+Resp}!resp\+From\+Req\+:@{resp\+From\+Req\+:}}
+\index{resp\+From\+Req\+:@{resp\+From\+Req\+:}!Tencent\+Api\+Resp@{Tencent\+Api\+Resp}}
+\subsubsection{\texorpdfstring{resp\+From\+Req\+:()}{respFromReq:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_tencent_api_resp}{Tencent\+Api\+Resp}} $\ast$) resp\+From\+Req\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_tencent_api_req}{Tencent\+Api\+Req}} $\ast$)}]{req }\end{DoxyParamCaption}}
+
+根据序列号生成一个答复包 
+\begin{DoxyParams}{Parameters}
+{\em req} & 答复对应的请求包（如果req不是\+Tencent\+Api\+Req或者他的子类，会抛出异常） \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+答复包体 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_tencent_api_resp_a2859c22affd763f1da5b5aaa3a442d7c}\label{interface_tencent_api_resp_a2859c22affd763f1da5b5aaa3a442d7c}} 
+\index{Tencent\+Api\+Resp@{Tencent\+Api\+Resp}!resp\+From\+Req\+:@{resp\+From\+Req\+:}}
+\index{resp\+From\+Req\+:@{resp\+From\+Req\+:}!Tencent\+Api\+Resp@{Tencent\+Api\+Resp}}
+\subsubsection{\texorpdfstring{resp\+From\+Req\+:()}{respFromReq:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_tencent_api_resp}{Tencent\+Api\+Resp}} $\ast$) resp\+From\+Req\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_tencent_api_req}{Tencent\+Api\+Req}} $\ast$)}]{req }\end{DoxyParamCaption}}
+
+根据序列号生成一个答复包 
+\begin{DoxyParams}{Parameters}
+{\em req} & 答复对应的请求包（如果req不是\+Tencent\+Api\+Req或者他的子类，会抛出异常） \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+答复包体 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_tencent_api_resp_acadc81491ece925fc38f2c9bfde626b1}\label{interface_tencent_api_resp_acadc81491ece925fc38f2c9bfde626b1}} 
+\index{Tencent\+Api\+Resp@{Tencent\+Api\+Resp}!n\+Ret\+Code@{n\+Ret\+Code}}
+\index{n\+Ret\+Code@{n\+Ret\+Code}!Tencent\+Api\+Resp@{Tencent\+Api\+Resp}}
+\subsubsection{\texorpdfstring{n\+Ret\+Code}{nRetCode}}
+{\footnotesize\ttfamily -\/ (T\+C\+Optional\+Int) n\+Ret\+Code\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+返回码 \mbox{\Hypertarget{interface_tencent_api_resp_af8228b8ebb3a1804ca137726ba774c27}\label{interface_tencent_api_resp_af8228b8ebb3a1804ca137726ba774c27}} 
+\index{Tencent\+Api\+Resp@{Tencent\+Api\+Resp}!obj\+Req@{obj\+Req}}
+\index{obj\+Req@{obj\+Req}!Tencent\+Api\+Resp@{Tencent\+Api\+Resp}}
+\subsubsection{\texorpdfstring{obj\+Req}{objReq}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_tencent_api_req}{T\+C\+Optional\+Req}}) obj\+Req\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+答复对应的请求包 \mbox{\Hypertarget{interface_tencent_api_resp_a114465068484407c6d1735a06aaf9091}\label{interface_tencent_api_resp_a114465068484407c6d1735a06aaf9091}} 
+\index{Tencent\+Api\+Resp@{Tencent\+Api\+Resp}!s\+Ret\+Msg@{s\+Ret\+Msg}}
+\index{s\+Ret\+Msg@{s\+Ret\+Msg}!Tencent\+Api\+Resp@{Tencent\+Api\+Resp}}
+\subsubsection{\texorpdfstring{s\+Ret\+Msg}{sRetMsg}}
+{\footnotesize\ttfamily -\/ (T\+C\+Optional\+Str) s\+Ret\+Msg\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}
+
+返回消息 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+Headers/\+Public/\+U\+Meng\+U\+Share/\+Tencent\+Open\+A\+P\+I/Tencent\+Message\+Object.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="TencentImageAndVideoMessageObjV1" name="TencentImageAndVideoMessageObjV1">
+<area shape="rect" id="node2" href="$interface_tencent_base_message_obj.html" title="消息体 " alt="" coords="147,80,320,105"/>
+<area shape="rect" id="node5" href="$interface_tencent_image_message_obj_v1.html" title="图片的消息体 " alt="" coords="136,155,332,180"/>
+<area shape="rect" id="node6" href="$interface_tencent_video_message_v1.html" title="视频的消息体 " alt="" coords="356,155,528,180"/>
+</map>

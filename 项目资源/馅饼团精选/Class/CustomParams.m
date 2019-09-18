@@ -1,0 +1,14 @@
+NSString* const IP = @"http://www.51xbt.com/?";
+NSString* const BaiChuanKey = @"27443820";
+NSString* const UmengAppkey = @"5ce2690c3fc195cd7e00138b" ;
+NSString* const QQKey = @"GsxoAPy58exer2uS" ;
+NSString* const QQAppId = @"1108964264" ;
+NSString* const WeChatAppID = @"wx2c9b7d1c19fc8e6c" ;
+NSString* const TempWeChatAppSecret = @"3eaf1d544504c734f67f3a5799e1da5f" ;
+NSString* const SinaAppKey = @"655785470" ;
+NSString* const SinaAppSecret = @"56eaf657adefdc4546edbb6f5565b3d5" ;
+NSString* const JPushKey = @"8fc03ab1b6c2d8b6627b733f" ;
+NSString* const YD_Num = @"3" ;
+NSString* const JM_isHidePC = @"0" ;
+NSString* const JM_isHideSTBtn = @"1" ;
+NSString* const JM_isHideSTBtnTitle = @"开始体验" ;

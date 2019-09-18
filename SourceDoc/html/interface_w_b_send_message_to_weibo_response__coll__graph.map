@@ -1,0 +1,5 @@
+<map id="WBSendMessageToWeiboResponse" name="WBSendMessageToWeiboResponse">
+<area shape="rect" id="node2" href="$interface_w_b_base_response.html" title="WBBaseResponse" alt="" coords="99,155,232,180"/>
+<area shape="rect" id="node5" href="$interface_w_b_authorize_response.html" title="WBAuthorizeResponse" alt="" coords="187,229,346,255"/>
+<area shape="rect" id="node3" href="$interface_w_b_data_transfer_object.html" title="WBDataTransferObject" alt="" coords="86,80,245,105"/>
+</map>

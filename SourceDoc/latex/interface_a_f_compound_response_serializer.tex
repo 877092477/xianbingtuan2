@@ -1,0 +1,100 @@
+\hypertarget{interface_a_f_compound_response_serializer}{}\section{A\+F\+Compound\+Response\+Serializer Class Reference}
+\label{interface_a_f_compound_response_serializer}\index{A\+F\+Compound\+Response\+Serializer@{A\+F\+Compound\+Response\+Serializer}}
+
+
+{\ttfamily \#import $<$A\+F\+U\+R\+L\+Response\+Serialization.\+h$>$}
+
+
+
+Inheritance diagram for A\+F\+Compound\+Response\+Serializer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{interface_a_f_compound_response_serializer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for A\+F\+Compound\+Response\+Serializer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{interface_a_f_compound_response_serializer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_a_f_compound_response_serializer_a48bf2d3d5a18d9cc73b6e29ef30c6e56}{compound\+Serializer\+With\+Response\+Serializers\+:}}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_a_f_compound_response_serializer_a48bf2d3d5a18d9cc73b6e29ef30c6e56}{compound\+Serializer\+With\+Response\+Serializers\+:}}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_a_f_compound_response_serializer_a48bf2d3d5a18d9cc73b6e29ef30c6e56}{compound\+Serializer\+With\+Response\+Serializers\+:}}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\+S\+Array $\ast$ \mbox{\hyperlink{interface_a_f_compound_response_serializer_aefd03c34697b76eeafca950a999f92b5}{response\+Serializers}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+{\ttfamily A\+F\+Compound\+Serializer} is a subclass of {\ttfamily \mbox{\hyperlink{interface_a_f_h_t_t_p_response_serializer}{A\+F\+H\+T\+T\+P\+Response\+Serializer}}} that delegates the response serialization to the first {\ttfamily \mbox{\hyperlink{interface_a_f_h_t_t_p_response_serializer}{A\+F\+H\+T\+T\+P\+Response\+Serializer}}} object that returns an object for {\ttfamily response\+Object\+For\+Response\+:data\+:error\+:}, falling back on the default behavior of {\ttfamily \mbox{\hyperlink{interface_a_f_h_t_t_p_response_serializer}{A\+F\+H\+T\+T\+P\+Response\+Serializer}}}. This is useful for supporting multiple potential types and structures of server responses with a single serializer. 
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_a_f_compound_response_serializer_a48bf2d3d5a18d9cc73b6e29ef30c6e56}\label{interface_a_f_compound_response_serializer_a48bf2d3d5a18d9cc73b6e29ef30c6e56}} 
+\index{A\+F\+Compound\+Response\+Serializer@{A\+F\+Compound\+Response\+Serializer}!compound\+Serializer\+With\+Response\+Serializers\+:@{compound\+Serializer\+With\+Response\+Serializers\+:}}
+\index{compound\+Serializer\+With\+Response\+Serializers\+:@{compound\+Serializer\+With\+Response\+Serializers\+:}!A\+F\+Compound\+Response\+Serializer@{A\+F\+Compound\+Response\+Serializer}}
+\subsubsection{\texorpdfstring{compound\+Serializer\+With\+Response\+Serializers\+:()}{compoundSerializerWithResponseSerializers:()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily + (instancetype) compound\+Serializer\+With\+Response\+Serializers\+: \begin{DoxyParamCaption}\item[{(N\+S\+Array $\ast$)}]{response\+Serializers }\end{DoxyParamCaption}}
+
+Creates and returns a compound serializer comprised of the specified response serializers.
+
+\begin{DoxyWarning}{Warning}
+Each response serializer specified must be a subclass of {\ttfamily \mbox{\hyperlink{interface_a_f_h_t_t_p_response_serializer}{A\+F\+H\+T\+T\+P\+Response\+Serializer}}}, and response to {\ttfamily -\/validate\+Response\+:data\+:error\+:}. 
+\end{DoxyWarning}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_a_f_compound_response_serializer_a48bf2d3d5a18d9cc73b6e29ef30c6e56_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{interface_a_f_compound_response_serializer_a48bf2d3d5a18d9cc73b6e29ef30c6e56}\label{interface_a_f_compound_response_serializer_a48bf2d3d5a18d9cc73b6e29ef30c6e56}} 
+\index{A\+F\+Compound\+Response\+Serializer@{A\+F\+Compound\+Response\+Serializer}!compound\+Serializer\+With\+Response\+Serializers\+:@{compound\+Serializer\+With\+Response\+Serializers\+:}}
+\index{compound\+Serializer\+With\+Response\+Serializers\+:@{compound\+Serializer\+With\+Response\+Serializers\+:}!A\+F\+Compound\+Response\+Serializer@{A\+F\+Compound\+Response\+Serializer}}
+\subsubsection{\texorpdfstring{compound\+Serializer\+With\+Response\+Serializers\+:()}{compoundSerializerWithResponseSerializers:()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily + (instancetype) compound\+Serializer\+With\+Response\+Serializers\+: \begin{DoxyParamCaption}\item[{(N\+S\+Array $\ast$)}]{response\+Serializers }\end{DoxyParamCaption}}
+
+Creates and returns a compound serializer comprised of the specified response serializers.
+
+\begin{DoxyWarning}{Warning}
+Each response serializer specified must be a subclass of {\ttfamily \mbox{\hyperlink{interface_a_f_h_t_t_p_response_serializer}{A\+F\+H\+T\+T\+P\+Response\+Serializer}}}, and response to {\ttfamily -\/validate\+Response\+:data\+:error\+:}. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{interface_a_f_compound_response_serializer_a48bf2d3d5a18d9cc73b6e29ef30c6e56}\label{interface_a_f_compound_response_serializer_a48bf2d3d5a18d9cc73b6e29ef30c6e56}} 
+\index{A\+F\+Compound\+Response\+Serializer@{A\+F\+Compound\+Response\+Serializer}!compound\+Serializer\+With\+Response\+Serializers\+:@{compound\+Serializer\+With\+Response\+Serializers\+:}}
+\index{compound\+Serializer\+With\+Response\+Serializers\+:@{compound\+Serializer\+With\+Response\+Serializers\+:}!A\+F\+Compound\+Response\+Serializer@{A\+F\+Compound\+Response\+Serializer}}
+\subsubsection{\texorpdfstring{compound\+Serializer\+With\+Response\+Serializers\+:()}{compoundSerializerWithResponseSerializers:()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily + (instancetype) compound\+Serializer\+With\+Response\+Serializers\+: \begin{DoxyParamCaption}\item[{(N\+S\+Array $\ast$)}]{response\+Serializers }\end{DoxyParamCaption}}
+
+Creates and returns a compound serializer comprised of the specified response serializers.
+
+\begin{DoxyWarning}{Warning}
+Each response serializer specified must be a subclass of {\ttfamily \mbox{\hyperlink{interface_a_f_h_t_t_p_response_serializer}{A\+F\+H\+T\+T\+P\+Response\+Serializer}}}, and response to {\ttfamily -\/validate\+Response\+:data\+:error\+:}. 
+\end{DoxyWarning}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_a_f_compound_response_serializer_aefd03c34697b76eeafca950a999f92b5}\label{interface_a_f_compound_response_serializer_aefd03c34697b76eeafca950a999f92b5}} 
+\index{A\+F\+Compound\+Response\+Serializer@{A\+F\+Compound\+Response\+Serializer}!response\+Serializers@{response\+Serializers}}
+\index{response\+Serializers@{response\+Serializers}!A\+F\+Compound\+Response\+Serializer@{A\+F\+Compound\+Response\+Serializer}}
+\subsubsection{\texorpdfstring{response\+Serializers}{responseSerializers}}
+{\footnotesize\ttfamily -\/ (N\+S\+Array $\ast$) response\+Serializers\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+The component response serializers. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pods/\+A\+F\+Networking/\+A\+F\+Networking/A\+F\+U\+R\+L\+Response\+Serialization.\+h\item 
+Pods/\+A\+F\+Networking/\+A\+F\+Networking/A\+F\+U\+R\+L\+Response\+Serialization.\+m\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="SDWebImagePrefetcher()" name="SDWebImagePrefetcher()">
+<area shape="rect" id="node2" href="$interface_s_d_web_image_manager.html" title="SDWebImageManager" alt="" coords="14,167,171,192"/>
+<area shape="rect" id="node4" href="$interface_s_d_web_image_downloader.html" title="SDWebImageDownloader" alt="" coords="154,80,330,105"/>
+<area shape="rect" id="node5" href="$interface_s_d_image_cache.html" title="SDImageCache" alt="" coords="354,80,469,105"/>
+</map>

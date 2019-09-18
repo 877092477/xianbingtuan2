@@ -1,0 +1,117 @@
+\hypertarget{interface_p_o_p_base_control}{}\section{P\+O\+P\+Base\+Control Class Reference}
+\label{interface_p_o_p_base_control}\index{P\+O\+P\+Base\+Control@{P\+O\+P\+Base\+Control}}
+
+
+Inheritance diagram for P\+O\+P\+Base\+Control\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{interface_p_o_p_base_control__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for P\+O\+P\+Base\+Control\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{interface_p_o_p_base_control__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_p_o_p_base_control_a8e8d12b9f61d08e2d1441480cd4e450e}{current\+Percent\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_p_o_p_base_control_a96e39b203098160b78db82035ae4208f}{controll\+Event\+Actived}}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id$<$ P\+O\+P\+Base\+Control\+Delegate $>$ \mbox{\hyperlink{interface_p_o_p_base_control_a09c6e575d74b89f2d14dd218ca1af183}{delegate}}
+\item 
+C\+F\+Time\+Interval \mbox{\hyperlink{interface_p_o_p_base_control_aee9d1d4e75a50d9298601871373136cf}{animation\+Duration}}
+\item 
+id \mbox{\hyperlink{interface_p_o_p_base_control_a5f6b7b05c669723d12f2729cda155937}{target}}
+\item 
+S\+EL \mbox{\hyperlink{interface_p_o_p_base_control_a6f75c1c6b50de97c64ac4469bbfe7843}{selector}}
+\item 
+B\+O\+OL \mbox{\hyperlink{interface_p_o_p_base_control_a35025732593edf44425d3e7e433221b2}{enabled}}
+\item 
+B\+O\+OL \mbox{\hyperlink{interface_p_o_p_base_control_ac8547b921941dd710d412819f133a754}{selected}}
+\item 
+U\+I\+View $\ast$ \mbox{\hyperlink{interface_p_o_p_base_control_a9435811830054abb95e90d21766003f7}{content\+View}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\mbox{\Hypertarget{interface_p_o_p_base_control_a96e39b203098160b78db82035ae4208f}\label{interface_p_o_p_base_control_a96e39b203098160b78db82035ae4208f}} 
+\index{P\+O\+P\+Base\+Control@{P\+O\+P\+Base\+Control}!controll\+Event\+Actived@{controll\+Event\+Actived}}
+\index{controll\+Event\+Actived@{controll\+Event\+Actived}!P\+O\+P\+Base\+Control@{P\+O\+P\+Base\+Control}}
+\subsubsection{\texorpdfstring{controll\+Event\+Actived()}{controllEventActived()}}
+{\footnotesize\ttfamily -\/ (void) controll\+Event\+Actived \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+事件激活了 \mbox{\Hypertarget{interface_p_o_p_base_control_a8e8d12b9f61d08e2d1441480cd4e450e}\label{interface_p_o_p_base_control_a8e8d12b9f61d08e2d1441480cd4e450e}} 
+\index{P\+O\+P\+Base\+Control@{P\+O\+P\+Base\+Control}!current\+Percent\+:@{current\+Percent\+:}}
+\index{current\+Percent\+:@{current\+Percent\+:}!P\+O\+P\+Base\+Control@{P\+O\+P\+Base\+Control}}
+\subsubsection{\texorpdfstring{current\+Percent\+:()}{currentPercent:()}}
+{\footnotesize\ttfamily -\/ (void) current\+Percent\+: \begin{DoxyParamCaption}\item[{(C\+G\+Float)}]{percent }\end{DoxyParamCaption}}
+
+当前动画比例(子类继承的时候重载)
+
+
+\begin{DoxyParams}{Parameters}
+{\em percent} & 比例 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{interface_p_o_p_base_control_aee9d1d4e75a50d9298601871373136cf}\label{interface_p_o_p_base_control_aee9d1d4e75a50d9298601871373136cf}} 
+\index{P\+O\+P\+Base\+Control@{P\+O\+P\+Base\+Control}!animation\+Duration@{animation\+Duration}}
+\index{animation\+Duration@{animation\+Duration}!P\+O\+P\+Base\+Control@{P\+O\+P\+Base\+Control}}
+\subsubsection{\texorpdfstring{animation\+Duration}{animationDuration}}
+{\footnotesize\ttfamily -\/ (C\+F\+Time\+Interval) animation\+Duration\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+动画时间,默认值为0.4 \mbox{\Hypertarget{interface_p_o_p_base_control_a9435811830054abb95e90d21766003f7}\label{interface_p_o_p_base_control_a9435811830054abb95e90d21766003f7}} 
+\index{P\+O\+P\+Base\+Control@{P\+O\+P\+Base\+Control}!content\+View@{content\+View}}
+\index{content\+View@{content\+View}!P\+O\+P\+Base\+Control@{P\+O\+P\+Base\+Control}}
+\subsubsection{\texorpdfstring{content\+View}{contentView}}
+{\footnotesize\ttfamily -\/ (U\+I\+View$\ast$) content\+View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+容器view,用于子类添加控件 \mbox{\Hypertarget{interface_p_o_p_base_control_a09c6e575d74b89f2d14dd218ca1af183}\label{interface_p_o_p_base_control_a09c6e575d74b89f2d14dd218ca1af183}} 
+\index{P\+O\+P\+Base\+Control@{P\+O\+P\+Base\+Control}!delegate@{delegate}}
+\index{delegate@{delegate}!P\+O\+P\+Base\+Control@{P\+O\+P\+Base\+Control}}
+\subsubsection{\texorpdfstring{delegate}{delegate}}
+{\footnotesize\ttfamily -\/ (id$<$P\+O\+P\+Base\+Control\+Delegate$>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+代理 \mbox{\Hypertarget{interface_p_o_p_base_control_a35025732593edf44425d3e7e433221b2}\label{interface_p_o_p_base_control_a35025732593edf44425d3e7e433221b2}} 
+\index{P\+O\+P\+Base\+Control@{P\+O\+P\+Base\+Control}!enabled@{enabled}}
+\index{enabled@{enabled}!P\+O\+P\+Base\+Control@{P\+O\+P\+Base\+Control}}
+\subsubsection{\texorpdfstring{enabled}{enabled}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) enabled\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+是否有效 \mbox{\Hypertarget{interface_p_o_p_base_control_ac8547b921941dd710d412819f133a754}\label{interface_p_o_p_base_control_ac8547b921941dd710d412819f133a754}} 
+\index{P\+O\+P\+Base\+Control@{P\+O\+P\+Base\+Control}!selected@{selected}}
+\index{selected@{selected}!P\+O\+P\+Base\+Control@{P\+O\+P\+Base\+Control}}
+\subsubsection{\texorpdfstring{selected}{selected}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) selected\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+是否选中 \mbox{\Hypertarget{interface_p_o_p_base_control_a6f75c1c6b50de97c64ac4469bbfe7843}\label{interface_p_o_p_base_control_a6f75c1c6b50de97c64ac4469bbfe7843}} 
+\index{P\+O\+P\+Base\+Control@{P\+O\+P\+Base\+Control}!selector@{selector}}
+\index{selector@{selector}!P\+O\+P\+Base\+Control@{P\+O\+P\+Base\+Control}}
+\subsubsection{\texorpdfstring{selector}{selector}}
+{\footnotesize\ttfamily -\/ (S\+EL) selector\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+事件 \mbox{\Hypertarget{interface_p_o_p_base_control_a5f6b7b05c669723d12f2729cda155937}\label{interface_p_o_p_base_control_a5f6b7b05c669723d12f2729cda155937}} 
+\index{P\+O\+P\+Base\+Control@{P\+O\+P\+Base\+Control}!target@{target}}
+\index{target@{target}!P\+O\+P\+Base\+Control@{P\+O\+P\+Base\+Control}}
+\subsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily -\/ (id) target\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+目标对象 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+T\+H\+B/\+Library/\+Base\+Control/P\+O\+P\+Base\+Control.\+h\item 
+T\+H\+B/\+Library/\+Base\+Control/P\+O\+P\+Base\+Control.\+m\end{DoxyCompactItemize}
