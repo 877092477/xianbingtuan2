@@ -63,7 +63,7 @@
     
     [self configBottomView];
     
-    NSLog(@"wujianliang");
+    NSLog(@"wujianliang32323");
     
     self.headerView = [[FNFreeProductDetailHeaderView alloc] initWithFrame:CGRectMake(0, 0, XYScreenWidth, XYScreenWidth + 92)];
 
