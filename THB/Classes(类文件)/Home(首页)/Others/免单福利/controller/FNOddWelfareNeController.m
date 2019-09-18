@@ -260,6 +260,8 @@
 
         [self inSeletedGoodsItemTouchClick:model.list[indexPath.row]];
         
+        
+        
     }
     
 }
