@@ -115,7 +115,9 @@
 //    .heightIs(22).leftSpaceToView(self, inter_10/2).bottomSpaceToView(self, inter_10).widthIs(45);
     
     [self.grabBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.goodsImageView.mas_right).offset(inter_10);
+//        make.left.equalTo(self.goodsImageView.mas_right).offset(inter_10);
+            make.right.lessThanOrEqualTo(@-20);
+        
          make.bottom.equalTo(@-10);
 //        make.right.lessThanOrEqualTo(@-10);
          make.size.mas_equalTo(CGSizeMake(45, 22));
@@ -128,8 +130,10 @@
     
     [self.amountLB mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(@-10);
-        make.left.equalTo(self.grabBtn.mas_right).offset(inter_10);
-        make.height.mas_equalTo(12);
+//        make.left.equalTo(self.grabBtn.mas_right).offset(inter_10);
+        make.left.equalTo(self.goodsImageView.mas_right).offset(inter_10);
+
+        make.height.mas_equalTo(20);
 //        make.right.lessThanOrEqualTo(@-10);
 //        make.size.mas_equalTo(CGSizeMake(45, 12));
     }];
@@ -162,9 +166,10 @@
     
     [self.rawLB mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.left.equalTo(self.priceLB.mas_right).offset(inter_10);
+//        make.left.equalTo(self.priceLB.mas_right).offset(inter_10);
+         make.right.lessThanOrEqualTo(@-20);
         make.bottom.equalTo(self.grabBtn.mas_top).offset(-10);
-       make.height.mas_equalTo(12);
+       make.height.mas_equalTo(20);
         //        make.right.lessThanOrEqualTo(@-10);
 //        make.size.mas_equalTo(CGSizeMake(80, 20));
     }];

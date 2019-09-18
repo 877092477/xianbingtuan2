@@ -63,6 +63,8 @@
     
     [self configBottomView];
     
+    NSLog(@"wujianliang");
+    
     self.headerView = [[FNFreeProductDetailHeaderView alloc] initWithFrame:CGRectMake(0, 0, XYScreenWidth, XYScreenWidth + 92)];
 
     self.jm_tableview = [[UITableView alloc] init];

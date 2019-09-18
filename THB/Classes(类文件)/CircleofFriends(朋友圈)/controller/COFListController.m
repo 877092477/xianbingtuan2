@@ -4,7 +4,7 @@
 //
 //  Created by Jimmy on 2018/8/22.
 //  Copyright © 2018年 方诺科技. All rights reserved.
-//   爆款分享
+//   后续爆款分享
 //朋友圈
 #import "COFListController.h"
 #import "FNNewProDetailController.h"
